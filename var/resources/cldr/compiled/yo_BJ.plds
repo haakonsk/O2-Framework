@@ -1,0 +1,993 @@
+{
+  'territory' => 'BJ',
+  'language' => 'yo',
+  'number' => {
+                'percentFormat' => {
+                                     'percentFormatLength' => {
+                                                              'standard' => '#,##0%'
+                                                            }
+                                   },
+                'measurement' => {},
+                'symbols' => {
+                               'infinity' => "\x{221e}",
+                               'nan' => 'NaN',
+                               'plusSign' => '+',
+                               'superscriptingExponent' => "×",
+                               'exponential' => 'E',
+                               'group' => ',',
+                               'percentSign' => '%',
+                               'decimal' => '.',
+                               'perMille' => "\x{2030}",
+                               'alias' => '',
+                               'minusSign' => '-',
+                               'list' => ';'
+                             },
+                'scientificFormat' => {
+                                        'scientificFormatLength' => {
+                                                                    'standard' => '#E0'
+                                                                  }
+                                      },
+                'decimalFormat' => {
+                                     'decimalFormatLength' => {
+                                                              'short' => '0K00K000K0M00M000M0G00G000G0T00T000T',
+                                                              'standard' => '#,##0.###'
+                                                            }
+                                   },
+                'currencyFormat' => {
+                                      'currencyFormatLength' => {
+                                                                'standard' => "¤#,##0.00;(¤#,##0.00)"
+                                                              }
+                                    },
+                'currencies' => {
+                                  'BZD' => {
+                                           'symbol' => '$'
+                                         },
+                                  'SGD' => {
+                                           'symbol' => '$'
+                                         },
+                                  'TWD' => {
+                                           'symbol' => 'NT$'
+                                         },
+                                  'SLL' => {
+                                           'displayName' => 'Lioni'
+                                         },
+                                  'USD' => {
+                                           'symbol' => '$',
+                                           'displayName' => "D\x{254}la ti Oríl\x{25b}\x{301}ède Amerika"
+                                         },
+                                  'MAD' => {
+                                           'displayName' => "Dirami ti Oríl\x{25b}\x{301}ède Moroko"
+                                         },
+                                  'ERN' => {
+                                           'displayName' => "Nakifa ti Oríl\x{25b}\x{301}ède Eriteriani"
+                                         },
+                                  'SAR' => {
+                                           'displayName' => "Riya ti Oríl\x{25b}\x{301}ède Saudi"
+                                         },
+                                  'SSP' => {
+                                           'symbol' => "£"
+                                         },
+                                  'KYD' => {
+                                           'symbol' => '$'
+                                         },
+                                  'AUD' => {
+                                           'symbol' => '$',
+                                           'displayName' => "D\x{254}la ti Oríl\x{25b}\x{301}ède Ástràlìá"
+                                         },
+                                  'NGN' => {
+                                           'symbol' => "\x{20a6}",
+                                           'displayName' => "Naira ti Oríl\x{25b}\x{301}ède Nàìjíríà"
+                                         },
+                                  'CRC' => {
+                                           'symbol' => "\x{20a1}"
+                                         },
+                                  'GHC' => {
+                                           'displayName' => "shidi ti Oríl\x{25b}\x{301}ède Gana"
+                                         },
+                                  'KRW' => {
+                                           'symbol' => "\x{20a9}"
+                                         },
+                                  'TRY' => {
+                                           'symbol' => 'TL'
+                                         },
+                                  'GIP' => {
+                                           'symbol' => "£"
+                                         },
+                                  'LAK' => {
+                                           'symbol' => "\x{20ad}"
+                                         },
+                                  'CLP' => {
+                                           'symbol' => '$'
+                                         },
+                                  'NAD' => {
+                                           'symbol' => '$',
+                                           'displayName' => "D\x{254}la ti Oríl\x{25b}\x{301}ède Namibia"
+                                         },
+                                  'DZD' => {
+                                           'displayName' => "Dina ti Oríl\x{25b}\x{301}ède Àlùgèríánì"
+                                         },
+                                  'JMD' => {
+                                           'symbol' => '$'
+                                         },
+                                  'BSD' => {
+                                           'symbol' => '$'
+                                         },
+                                  'SZL' => {
+                                           'displayName' => 'Lilangeni'
+                                         },
+                                  'UYU' => {
+                                           'symbol' => '$'
+                                         },
+                                  'MXN' => {
+                                           'symbol' => '$'
+                                         },
+                                  'BWP' => {
+                                           'displayName' => "Pula ti Oríl\x{25b}\x{301}ède B\x{254}\x{300}tìsúwánà"
+                                         },
+                                  'GYD' => {
+                                           'symbol' => '$'
+                                         },
+                                  'LYD' => {
+                                           'displayName' => "Dina ti Oríl\x{25b}\x{301}ède Libiya"
+                                         },
+                                  'BYR' => {
+                                           'symbol' => "\x{440}."
+                                         },
+                                  'EGP' => {
+                                           'displayName' => "p\x{254}\x{254}n ti Oríl\x{25b}\x{301}ède Egipiti"
+                                         },
+                                  'THB' => {
+                                           'symbol' => "\x{e3f}"
+                                         },
+                                  'MUR' => {
+                                           'displayName' => "Rupi ti Oríl\x{25b}\x{301}ède Maritiusi"
+                                         },
+                                  'SDG' => {
+                                           'displayName' => "Dina ti Oríl\x{25b}\x{301}ède Sudani"
+                                         },
+                                  'LRD' => {
+                                           'symbol' => '$',
+                                           'displayName' => "D\x{254}la ti Oríl\x{25b}\x{301}ède Liberia"
+                                         },
+                                  'AED' => {
+                                           'displayName' => "Diami ti Awon Oríl\x{25b}\x{301}ède Arabu"
+                                         },
+                                  'JPY' => {
+                                           'symbol' => "¥",
+                                           'displayName' => "Yeni ti Oríl\x{25b}\x{301}ède Japani"
+                                         },
+                                  'ZAR' => {
+                                           'displayName' => "Randi ti Oríl\x{25b}\x{301}ède Ariwa Afirika"
+                                         },
+                                  'RWF' => {
+                                           'displayName' => "Faransi ti Oríl\x{25b}\x{301}ède Ruwanda"
+                                         },
+                                  'AOA' => {
+                                           'displayName' => "Wansa ti Oríl\x{25b}\x{301}ède Àngólà"
+                                         },
+                                  'PYG' => {
+                                           'symbol' => "\x{20b2}"
+                                         },
+                                  'CAD' => {
+                                           'symbol' => '$',
+                                           'displayName' => "D\x{254}la ti Oríl\x{25b}\x{301}ède Kánádà"
+                                         },
+                                  'CUP' => {
+                                           'symbol' => '$'
+                                         },
+                                  'TTD' => {
+                                           'symbol' => '$'
+                                         },
+                                  'RUR' => {
+                                           'symbol' => "\x{440}."
+                                         },
+                                  'XCD' => {
+                                           'symbol' => 'EC$'
+                                         },
+                                  'BBD' => {
+                                           'symbol' => '$'
+                                         },
+                                  'XOF' => {
+                                           'symbol' => 'CFA',
+                                           'displayName' => "Faransi ti Oríl\x{25b}\x{301}ède BIKEAO"
+                                         },
+                                  'KMF' => {
+                                           'displayName' => "Faransi ti Oríl\x{25b}\x{301}ède shomoriani"
+                                         },
+                                  'CNY' => {
+                                           'symbol' => "¥",
+                                           'displayName' => "Reminibi ti Oríl\x{25b}\x{301}ède sháínà"
+                                         },
+                                  'GNS' => {
+                                           'displayName' => "Faransi ti Oríl\x{25b}\x{301}ède Gini"
+                                         },
+                                  'MNT' => {
+                                           'symbol' => "\x{20ae}"
+                                         },
+                                  'INR' => {
+                                           'symbol' => "\x{20b9}",
+                                           'displayName' => "Rupi ti Oríl\x{25b}\x{301}ède Indina"
+                                         },
+                                  'KES' => {
+                                           'displayName' => "shiili ti Oríl\x{25b}\x{301}ède Kenya"
+                                         },
+                                  'GBP' => {
+                                           'symbol' => "£",
+                                           'displayName' => "P\x{254}\x{254}n ti Oríl\x{25b}\x{301}ède Bírítísì"
+                                         },
+                                  'CDF' => {
+                                           'displayName' => "Faransi ti Oríl\x{25b}\x{301}ède Kóngò"
+                                         },
+                                  'PHP' => {
+                                           'symbol' => "\x{20b1}"
+                                         },
+                                  'KZT' => {
+                                           'symbol' => "\x{20b8}"
+                                         },
+                                  'ZMK' => {
+                                           'displayName' => "Kawasha ti Oríl\x{25b}\x{301}ède Saabia (1968\x{2013}2012)"
+                                         },
+                                  'HKD' => {
+                                           'symbol' => '$'
+                                         },
+                                  'NZD' => {
+                                           'symbol' => '$'
+                                         },
+                                  'BRL' => {
+                                           'symbol' => 'R$'
+                                         },
+                                  'SOS' => {
+                                           'displayName' => "Sile ti Oríl\x{25b}\x{301}ède Somali"
+                                         },
+                                  'SCR' => {
+                                           'displayName' => "Rupi ti Oríl\x{25b}\x{301}ède Sayiselesi"
+                                         },
+                                  'FJD' => {
+                                           'symbol' => '$'
+                                         },
+                                  'SHP' => {
+                                           'displayName' => "P\x{254}\x{254}un ti Oríl\x{25b}\x{301}ède \x{323}Elena"
+                                         },
+                                  'ILS' => {
+                                           'symbol' => "\x{20aa}"
+                                         },
+                                  'LSL' => {
+                                           'displayName' => "Loti ti Oríl\x{25b}\x{301}ède Lesoto"
+                                         },
+                                  'ESP' => {
+                                           'symbol' => "\x{20a7}"
+                                         },
+                                  'UAH' => {
+                                           'symbol' => "\x{20b4}"
+                                         },
+                                  'ZMW' => {
+                                           'displayName' => "Kawasha ti Oríl\x{25b}\x{301}ède Saabia"
+                                         },
+                                  'UGX' => {
+                                           'displayName' => "Siile ti Oríl\x{25b}\x{301}ède Uganda"
+                                         },
+                                  'DJF' => {
+                                           'displayName' => "Faransi ti Oríl\x{25b}\x{301}ède Dibouti"
+                                         },
+                                  'BND' => {
+                                           'symbol' => '$'
+                                         },
+                                  'MGA' => {
+                                           'displayName' => "Faransi ti Oríl\x{25b}\x{301}ède Malagasi"
+                                         },
+                                  'BMD' => {
+                                           'symbol' => '$'
+                                         },
+                                  'TND' => {
+                                           'displayName' => "Dina ti Oríl\x{25b}\x{301}ède Tunisia"
+                                         },
+                                  'MRO' => {
+                                           'displayName' => "Ouguiya ti Oríl\x{25b}\x{301}ède Maritania"
+                                         },
+                                  'VND' => {
+                                           'symbol' => "\x{20ab}"
+                                         },
+                                  'SBD' => {
+                                           'symbol' => '$'
+                                         },
+                                  'GHS' => {
+                                           'symbol' => "\x{20b5}"
+                                         },
+                                  'MZM' => {
+                                           'displayName' => "Metika ti Oríl\x{25b}\x{301}ède Mosamibiki"
+                                         },
+                                  'SDP' => {
+                                           'displayName' => "P\x{254}\x{254}un ti Oríl\x{25b}\x{301}ède Sudani"
+                                         },
+                                  'CVE' => {
+                                           'displayName' => "Kabofediano ti Oríl\x{25b}\x{301}ède Esuodo"
+                                         },
+                                  'COP' => {
+                                           'symbol' => '$'
+                                         },
+                                  'TZS' => {
+                                           'displayName' => "Sile ti Oríl\x{25b}\x{301}ède Tansania"
+                                         },
+                                  'BIF' => {
+                                           'displayName' => "Faransi ti Oríl\x{25b}\x{301}ède Bùùrúndì"
+                                         },
+                                  'GMD' => {
+                                           'displayName' => "Dalasi ti Oríl\x{25b}\x{301}ède Gamibia"
+                                         },
+                                  'ARS' => {
+                                           'symbol' => '$'
+                                         },
+                                  'ZWD' => {
+                                           'displayName' => "D\x{254}la ti Oríl\x{25b}\x{301}ède Siibabuwe"
+                                         },
+                                  'MWK' => {
+                                           'displayName' => "Kasha ti Oríl\x{25b}\x{301}ède Malawi"
+                                         },
+                                  'BDT' => {
+                                           'symbol' => "\x{9f3}"
+                                         },
+                                  'KHR' => {
+                                           'symbol' => "\x{17db}"
+                                         },
+                                  'EUR' => {
+                                           'symbol' => "\x{20ac}",
+                                           'displayName' => 'Uro'
+                                         },
+                                  'CHF' => {
+                                           'displayName' => "Faransi ti Oríl\x{25b}\x{301}ède Siwisi"
+                                         },
+                                  'BHD' => {
+                                           'displayName' => "Dina ti Oríl\x{25b}\x{301}ède Báránì"
+                                         },
+                                  'SRD' => {
+                                           'symbol' => '$'
+                                         },
+                                  'STD' => {
+                                           'displayName' => "Dobira ti Oríl\x{25b}\x{301}ède Sao tome Ati Pirisipe"
+                                         },
+                                  'XAF' => {
+                                           'symbol' => 'FCFA',
+                                           'displayName' => "Faransi ti Oríl\x{25b}\x{301}ède BEKA"
+                                         },
+                                  'DOP' => {
+                                           'symbol' => '$'
+                                         },
+                                  'ETB' => {
+                                           'displayName' => "Biri ti Oríl\x{25b}\x{301}ède Eutopia"
+                                         },
+                                  'XPF' => {
+                                           'symbol' => 'CFPF'
+                                         }
+                                }
+              },
+  'locale' => 'yo_BJ',
+  'characters' => {
+                    'word-initial' => "\x{2026} {0}",
+                    'standard' => '?',
+                    'word-medial' => "{0} \x{2026} {1}",
+                    'index' => '[A B C D E F G H I J K L M N O P Q R S T U V W X Y Z]',
+                    'medial' => "{0}\x{2026}{1}",
+                    'word-final' => "{0} \x{2026}",
+                    'final' => "{0}\x{2026}",
+                    'auxiliary' => '[c q v x z]',
+                    'initial' => "\x{2026}{0}",
+                    'punctuation' => '[\\- , ; \\: ! ? . ( ) \\[ \\] \\{ \\}]'
+                  },
+  'calendar' => {
+                  'calendarType' => 'gregorian',
+                  'timeFormat' => {
+                                    'short' => 'h:mm a',
+                                    'pm' => '',
+                                    'am' => '',
+                                    'medium' => 'h:mm:ss a',
+                                    'long' => 'h:mm:ss a z',
+                                    'full' => 'h:mm:ss a zzzz'
+                                  },
+                  'timeZones' => {
+                                   'regionFormat' => '{0} (+0)',
+                                   'gmtFormat' => 'GMT{0}',
+                                   'hourFormat' => '+HH:mm;-HH:mm',
+                                   'zones' => {
+                                                'Antarctica/DumontDUrville' => {
+                                                                               'type' => 'Antarctica/DumontDUrville',
+                                                                               'exemplarCity' => "Dumont d\x{2019}Urville"
+                                                                             },
+                                                'America/Indiana/Tell_City' => {
+                                                                               'type' => 'America/Indiana/Tell_City',
+                                                                               'exemplarCity' => 'Tell City, Indiana'
+                                                                             },
+                                                'America/St_Lucia' => {
+                                                                      'type' => 'America/St_Lucia',
+                                                                      'exemplarCity' => 'St. Lucia'
+                                                                    },
+                                                'Asia/Calcutta' => {
+                                                                   'type' => 'Asia/Calcutta',
+                                                                   'exemplarCity' => 'Kolkata'
+                                                                 },
+                                                'America/Indiana/Knox' => {
+                                                                          'type' => 'America/Indiana/Knox',
+                                                                          'exemplarCity' => 'Knox, Indiana'
+                                                                        },
+                                                'America/Indiana/Vincennes' => {
+                                                                               'type' => 'America/Indiana/Vincennes',
+                                                                               'exemplarCity' => 'Vincennes, Indiana'
+                                                                             },
+                                                'Africa/Asmera' => {
+                                                                   'type' => 'Africa/Asmera',
+                                                                   'exemplarCity' => 'Asmara'
+                                                                 },
+                                                'America/Indiana/Winamac' => {
+                                                                             'type' => 'America/Indiana/Winamac',
+                                                                             'exemplarCity' => 'Winamac, Indiana'
+                                                                           },
+                                                'America/St_Thomas' => {
+                                                                       'type' => 'America/St_Thomas',
+                                                                       'exemplarCity' => 'St. Thomas'
+                                                                     },
+                                                'America/Indiana/Marengo' => {
+                                                                             'type' => 'America/Indiana/Marengo',
+                                                                             'exemplarCity' => 'Marengo, Indiana'
+                                                                           },
+                                                'America/Indiana/Petersburg' => {
+                                                                                'type' => 'America/Indiana/Petersburg',
+                                                                                'exemplarCity' => 'Petersburg, Indiana'
+                                                                              },
+                                                'America/Lower_Princes' => {
+                                                                           'type' => 'America/Lower_Princes',
+                                                                           'exemplarCity' => 'Lower Prince\'s Quarter'
+                                                                         },
+                                                'America/North_Dakota/Beulah' => {
+                                                                                 'type' => 'America/North_Dakota/Beulah',
+                                                                                 'exemplarCity' => 'Beulah, North Dakota'
+                                                                               },
+                                                'Atlantic/St_Helena' => {
+                                                                        'type' => 'Atlantic/St_Helena',
+                                                                        'exemplarCity' => 'St. Helena'
+                                                                      },
+                                                'Asia/Saigon' => {
+                                                                 'type' => 'Asia/Saigon',
+                                                                 'exemplarCity' => 'Ho Chi Minh'
+                                                               },
+                                                'America/Indiana/Vevay' => {
+                                                                           'type' => 'America/Indiana/Vevay',
+                                                                           'exemplarCity' => 'Vevay, Indiana'
+                                                                         },
+                                                'America/Coral_Harbour' => {
+                                                                           'type' => 'America/Coral_Harbour',
+                                                                           'exemplarCity' => 'Atikokan'
+                                                                         },
+                                                'America/St_Barthelemy' => {
+                                                                           'type' => 'America/St_Barthelemy',
+                                                                           'exemplarCity' => 'St. Barthelemy'
+                                                                         },
+                                                'America/North_Dakota/New_Salem' => {
+                                                                                    'type' => 'America/North_Dakota/New_Salem',
+                                                                                    'exemplarCity' => 'New Salem, North Dakota'
+                                                                                  },
+                                                'Etc/Unknown' => {
+                                                                 'type' => 'Etc/Unknown',
+                                                                 'exemplarCity' => 'Unknown'
+                                                               },
+                                                'Atlantic/Faeroe' => {
+                                                                     'type' => 'Atlantic/Faeroe',
+                                                                     'exemplarCity' => 'Faroe'
+                                                                   },
+                                                'America/Godthab' => {
+                                                                     'type' => 'America/Godthab',
+                                                                     'exemplarCity' => 'Nuuk'
+                                                                   },
+                                                'America/St_Kitts' => {
+                                                                      'type' => 'America/St_Kitts',
+                                                                      'exemplarCity' => 'St. Kitts'
+                                                                    },
+                                                'America/Scoresbysund' => {
+                                                                          'type' => 'America/Scoresbysund',
+                                                                          'exemplarCity' => 'Ittoqqortoormiit'
+                                                                        },
+                                                'America/St_Johns' => {
+                                                                      'type' => 'America/St_Johns',
+                                                                      'exemplarCity' => "St. John\x{2019}s"
+                                                                    },
+                                                'Pacific/Ponape' => {
+                                                                    'type' => 'Pacific/Ponape',
+                                                                    'exemplarCity' => 'Pohnpei'
+                                                                  },
+                                                'Asia/Katmandu' => {
+                                                                   'type' => 'Asia/Katmandu',
+                                                                   'exemplarCity' => 'Kathmandu'
+                                                                 },
+                                                'America/Kentucky/Monticello' => {
+                                                                                 'type' => 'America/Kentucky/Monticello',
+                                                                                 'exemplarCity' => 'Monticello, Kentucky'
+                                                                               },
+                                                'America/St_Vincent' => {
+                                                                        'type' => 'America/St_Vincent',
+                                                                        'exemplarCity' => 'St. Vincent'
+                                                                      },
+                                                'America/North_Dakota/Center' => {
+                                                                                 'type' => 'America/North_Dakota/Center',
+                                                                                 'exemplarCity' => 'Center, North Dakota'
+                                                                               },
+                                                'Pacific/Truk' => {
+                                                                  'type' => 'Pacific/Truk',
+                                                                  'exemplarCity' => 'Chuuk'
+                                                                }
+                                              },
+                                   'fallbackFormat' => '{1} ({0})',
+                                   'gmtZeroFormat' => 'GMT'
+                                 },
+                  'eras' => {
+                              'eraNames' => {
+                                            'alias' => {
+                                                       '' => ''
+                                                     },
+                                            'era' => {
+                                                     '1' => 'Lehin Kristi',
+                                                     '0' => 'Saju Kristi'
+                                                   }
+                                          },
+                              'eraNarrow' => {
+                                             'alias' => {
+                                                        '' => ''
+                                                      }
+                                           },
+                              'eraAbbr' => {
+                                           'era' => {
+                                                    '1' => 'LK',
+                                                    '0' => 'SK'
+                                                  }
+                                         }
+                            },
+                  'days' => {
+                              'format' => {
+                                          'short' => {
+                                                     '' => ''
+                                                   },
+                                          'abbreviated' => {
+                                                           '' => '',
+                                                           'fri' => "\x{190}tì",
+                                                           'wed' => "\x{186}j\x{254}\x{301}rú",
+                                                           'sun' => "Àìkú",
+                                                           'tue' => "Ìs\x{25b}\x{301}gun",
+                                                           'mon' => "Ajé",
+                                                           'sat' => "Àbám\x{25b}\x{301}ta",
+                                                           'thu' => "\x{186}j\x{254}\x{301}b\x{254}"
+                                                         },
+                                          'narrow' => {
+                                                      '' => ''
+                                                    },
+                                          'wide' => {
+                                                    'fri' => "\x{186}j\x{254}\x{301} \x{190}tì",
+                                                    'tue' => "\x{186}j\x{254}\x{301} Ìs\x{25b}\x{301}gun",
+                                                    'sun' => "\x{186}j\x{254}\x{301} Àìkú",
+                                                    'sat' => "\x{186}j\x{254}\x{301} Àbám\x{25b}\x{301}ta",
+                                                    'mon' => "\x{186}j\x{254}\x{301} Ajé",
+                                                    'wed' => "\x{186}j\x{254}\x{301}rú",
+                                                    'thu' => "\x{186}j\x{254}\x{301}b\x{254}"
+                                                  }
+                                        },
+                              'stand-alone' => {
+                                               'short' => {
+                                                          '' => ''
+                                                        },
+                                               'abbreviated' => {
+                                                                '' => ''
+                                                              },
+                                               'narrow' => {
+                                                           'fri' => 'F',
+                                                           'tue' => 'T',
+                                                           'sun' => 'S',
+                                                           'sat' => 'S',
+                                                           'mon' => 'M',
+                                                           'wed' => 'W',
+                                                           'thu' => 'T'
+                                                         },
+                                               'wide' => {
+                                                         '' => ''
+                                                       }
+                                             }
+                            },
+                  'months' => {
+                                'format' => {
+                                            'abbreviated' => {
+                                                             '' => '',
+                                                             '6' => "Òkúdu",
+                                                             '11' => "Bélú",
+                                                             '3' => "\x{190}r\x{25b}\x{300}nà",
+                                                             '7' => "Ag\x{25b}m\x{254}",
+                                                             '9' => 'Owewe',
+                                                             '12' => "\x{186}\x{300}p\x{25b}\x{300}",
+                                                             '2' => "Èrèlè",
+                                                             '8' => "Ògún",
+                                                             '1' => "Sh\x{25b}\x{301}r\x{25b}\x{301}",
+                                                             '4' => "Ìgbé",
+                                                             '10' => "\x{186}\x{300}wàrà",
+                                                             '5' => "\x{190}\x{300}bibi"
+                                                           },
+                                            'narrow' => {
+                                                        '' => ''
+                                                      },
+                                            'wide' => {
+                                                      '6' => "Oshù Òkúdu",
+                                                      '11' => "Oshù Bélú",
+                                                      '3' => "Oshù \x{190}r\x{25b}\x{300}nà",
+                                                      '7' => "Oshù Ag\x{25b}m\x{254}",
+                                                      '9' => "Oshù Owewe",
+                                                      '12' => "Oshù \x{186}\x{300}p\x{25b}\x{300}",
+                                                      '2' => "Oshù Èrèlè",
+                                                      '8' => "Oshù Ògún",
+                                                      '1' => "Oshù Sh\x{25b}\x{301}r\x{25b}\x{301}",
+                                                      '4' => "Oshù Ìgbé",
+                                                      '10' => "Oshù \x{186}\x{300}wàrà",
+                                                      '5' => "Oshù \x{190}\x{300}bibi"
+                                                    }
+                                          },
+                                'stand-alone' => {
+                                                 'abbreviated' => {
+                                                                  '' => ''
+                                                                },
+                                                 'narrow' => {
+                                                             '6' => '6',
+                                                             '11' => '11',
+                                                             '3' => '3',
+                                                             '7' => '7',
+                                                             '9' => '9',
+                                                             '12' => '12',
+                                                             '2' => '2',
+                                                             '8' => '8',
+                                                             '1' => '1',
+                                                             '4' => '4',
+                                                             '10' => '10',
+                                                             '5' => '5'
+                                                           },
+                                                 'wide' => {
+                                                           '' => ''
+                                                         }
+                                               }
+                              },
+                  'dateFormat' => {
+                                    'short' => 'dd/MM/y',
+                                    'medium' => 'd MMM y',
+                                    'long' => 'd MMMM y',
+                                    'full' => 'EEEE, d MMMM y'
+                                  }
+                },
+  'displayNames' => {
+                      'territories' => {
+                                         'GL' => "Oríl\x{25b}\x{301}ède Gerelandi",
+                                         'DJ' => "Oríl\x{25b}\x{301}ède Díb\x{254}\x{301}ótì",
+                                         'JM' => "Oríl\x{25b}\x{301}ède Jamaika",
+                                         'PG' => "Oríl\x{25b}\x{301}ède Paapu ti Giini",
+                                         'AT' => "Oríl\x{25b}\x{301}ède Asítíríà",
+                                         'KI' => "Oríl\x{25b}\x{301}ède Kiribati",
+                                         'SZ' => "Oríl\x{25b}\x{301}ède Sashiland",
+                                         'YT' => "Oríl\x{25b}\x{301}ède Mayote",
+                                         'BN' => "Oríl\x{25b}\x{301}ède Búrún\x{25b}\x{301}lì",
+                                         'ZM' => "Oríl\x{25b}\x{301}ède shamibia",
+                                         'CD' => "Oril\x{25b}\x{301}ède Kóngò",
+                                         'BW' => "Oríl\x{25b}\x{301}ède B\x{254}\x{300}tìsúwánà",
+                                         'AO' => "Oríl\x{25b}\x{301}ède Ààngólà",
+                                         'ZW' => "Oríl\x{25b}\x{301}ède shimibabe",
+                                         'VC' => "Oríl\x{25b}\x{301}ède Fis\x{25b}nnti ati Genadina",
+                                         'PR' => "Oríl\x{25b}\x{301}ède P\x{254}to Riko",
+                                         'JP' => "Oríl\x{25b}\x{301}ède Japani",
+                                         'NA' => "Oríl\x{25b}\x{301}ède Namibia",
+                                         'SH' => "Oríl\x{25b}\x{301}ède H\x{25b}lena",
+                                         'TJ' => "Oríl\x{25b}\x{301}ède Takisitani",
+                                         'LC' => "Oríl\x{25b}\x{301}ède Lushia",
+                                         'MA' => "Oríl\x{25b}\x{301}ède Moroko",
+                                         'VU' => "Oríl\x{25b}\x{301}ède Faniatu",
+                                         'SV' => "Oríl\x{25b}\x{301}ède \x{190}\x{25b}sáfádò",
+                                         'MT' => "Oríl\x{25b}\x{301}ède Malata",
+                                         'MN' => "Oríl\x{25b}\x{301}ède Mogolia",
+                                         'MP' => "Oríl\x{25b}\x{301}ède Etikun Guusu Mariana",
+                                         'IT' => "Oríl\x{25b}\x{301}ède Italiyi",
+                                         'RE' => "Oríl\x{25b}\x{301}ède Riuniyan",
+                                         'WS' => "Oríl\x{25b}\x{301}ède Sam\x{254}",
+                                         'FR' => "Oríl\x{25b}\x{301}ède Faranse",
+                                         'EG' => "Oríl\x{25b}\x{301}ède Égípítì",
+                                         'UZ' => "Oríl\x{25b}\x{301}ède Nshib\x{25b}kisitani",
+                                         'PW' => "Oríl\x{25b}\x{301}ède Paalu",
+                                         'TK' => "Oríl\x{25b}\x{301}ède Tokelau",
+                                         'LR' => "Oríl\x{25b}\x{301}ède Laberia",
+                                         'RW' => "Oríl\x{25b}\x{301}ède Ruwanda",
+                                         'TN' => "Oríl\x{25b}\x{301}ède Tunishia",
+                                         'BE' => "Oríl\x{25b}\x{301}ède Bégí\x{254}\x{301}mù",
+                                         'EE' => "Oríl\x{25b}\x{301}ède Esitonia",
+                                         'CK' => "Oríl\x{25b}\x{301}ède Etíokun Kùúkù",
+                                         'BY' => "Oríl\x{25b}\x{301}ède Bélárúsì",
+                                         'SA' => "Oríl\x{25b}\x{301}ède Saudi Arabia",
+                                         'NO' => "Oríl\x{25b}\x{301}ède N\x{254}\x{254}wii",
+                                         'LS' => "Oríl\x{25b}\x{301}ède Lesoto",
+                                         'KR' => "Oríl\x{25b}\x{301}ède Ariwa K\x{254}ria",
+                                         'ZA' => "Oríl\x{25b}\x{301}ède Ariwa Afirika",
+                                         'PT' => "Oríl\x{25b}\x{301}ède P\x{254}tugi",
+                                         'BF' => "Oríl\x{25b}\x{301}ède Bùùkíná Fasò",
+                                         'CA' => "Oríl\x{25b}\x{301}ède Kánádà",
+                                         'AM' => "Oríl\x{25b}\x{301}ède Améníà",
+                                         'CM' => "Oríl\x{25b}\x{301}ède Kamerúúnì",
+                                         'SR' => "Oríl\x{25b}\x{301}ède Surinami",
+                                         'MG' => "Oríl\x{25b}\x{301}ède Madasika",
+                                         'NP' => "Oríl\x{25b}\x{301}ède Nepa",
+                                         'BT' => "Oríl\x{25b}\x{301}ède Bútánì",
+                                         'PL' => "Oríl\x{25b}\x{301}ède Polandi",
+                                         'TM' => "Oríl\x{25b}\x{301}ède T\x{254}\x{254}kimenisita",
+                                         'GA' => "Oríl\x{25b}\x{301}ède Gabon",
+                                         'CF' => "Oríl\x{25b}\x{301}ède Àrin gùngun Áfíríkà",
+                                         'BA' => "Oríl\x{25b}\x{301}ède B\x{254}\x{300}síníà àti \x{190}tis\x{25b}gófínà",
+                                         'AE' => "Oríl\x{25b}\x{301}ède \x{190}mirate ti Aw\x{254}n Arabu",
+                                         'TH' => "Oríl\x{25b}\x{301}ède Tailandi",
+                                         'KY' => "Oríl\x{25b}\x{301}ède Etíokun Kámánì",
+                                         'LA' => "Oríl\x{25b}\x{301}ède Laosi",
+                                         'PH' => "Oríl\x{25b}\x{301}ède filipini",
+                                         'NI' => "Oríl\x{25b}\x{301}ède NIkaragua",
+                                         'NC' => "Oríl\x{25b}\x{301}ède Kaledonia Titun",
+                                         'GU' => "Oríl\x{25b}\x{301}ède Guamu",
+                                         'KZ' => "Oríl\x{25b}\x{301}ède Kashashatani",
+                                         'MM' => "Oríl\x{25b}\x{301}ède Manamari",
+                                         'NR' => "Oríl\x{25b}\x{301}ède Nauru",
+                                         'NE' => "Oríl\x{25b}\x{301}ède Nàìjá",
+                                         'DM' => "Oríl\x{25b}\x{301}ède Dòmíníkà",
+                                         'TO' => "Oríl\x{25b}\x{301}ède Tonga",
+                                         'MR' => "Oríl\x{25b}\x{301}ède Maritania",
+                                         'AD' => "Oríl\x{25b}\x{301}ède Ààndórà",
+                                         'SE' => "Oríl\x{25b}\x{301}ède Swidini",
+                                         'AZ' => "Oríl\x{25b}\x{301}ède As\x{25b}\x{301}bájánì",
+                                         'AF' => "Oríl\x{25b}\x{301}ède Àfùgànístánì",
+                                         'NG' => "Oríl\x{25b}\x{301}ède Nàìjíríà",
+                                         'KE' => "Oríl\x{25b}\x{301}ède Kenya",
+                                         'BJ' => "Oríl\x{25b}\x{301}ède B\x{25b}\x{300}n\x{25b}\x{300}",
+                                         'OM' => "Oríl\x{25b}\x{301}ède \x{186}\x{254}ma",
+                                         'VN' => "Oríl\x{25b}\x{301}ède F\x{25b}tinami",
+                                         'VG' => "Oríl\x{25b}\x{301}ède Etíkun Fágínì ti ìlú Bírítísì",
+                                         'YE' => "Oríl\x{25b}\x{301}ède yemeni",
+                                         'CI' => "Oríl\x{25b}\x{301}ède Kóútè forà",
+                                         'DZ' => "Oríl\x{25b}\x{301}ède Àlùgèríánì",
+                                         'LK' => "Oríl\x{25b}\x{301}ède Siri Lanka",
+                                         'ID' => "Oríl\x{25b}\x{301}ède Indonesia",
+                                         'FM' => "Oríl\x{25b}\x{301}ède Makoronesia",
+                                         'GE' => "Oríl\x{25b}\x{301}ède G\x{254}gia",
+                                         'GM' => "Oríl\x{25b}\x{301}ède Gambia",
+                                         'LV' => "Oríl\x{25b}\x{301}ède Latifia",
+                                         'RU' => "Oríl\x{25b}\x{301}ède R\x{254}shia",
+                                         'LB' => "Oríl\x{25b}\x{301}ède Lebanoni",
+                                         'FK' => "Oríl\x{25b}\x{301}ède Etikun Fakalandi",
+                                         'DE' => "Oríl\x{25b}\x{301}ède Gemani",
+                                         'FI' => "Oríl\x{25b}\x{301}ède Filandi",
+                                         'MV' => "Oríl\x{25b}\x{301}ède Maladifi",
+                                         'LU' => "Oríl\x{25b}\x{301}ède Lusemogi",
+                                         'VE' => "Oríl\x{25b}\x{301}ède F\x{25b}n\x{25b}shu\x{25b}la",
+                                         'PN' => "Oríl\x{25b}\x{301}ède Pikarini",
+                                         'BH' => "Oríl\x{25b}\x{301}ède Báránì",
+                                         'GI' => "Oríl\x{25b}\x{301}ède Gibaratara",
+                                         'WF' => "Oríl\x{25b}\x{301}ède Wali ati futuna",
+                                         'RO' => "Oríl\x{25b}\x{301}ède Romaniya",
+                                         'VI' => "Oríl\x{25b}\x{301}ède Etikun Fagini ti Am\x{25b}rika",
+                                         'TV' => "Oríl\x{25b}\x{301}ède Tufalu",
+                                         'IN' => "Oríl\x{25b}\x{301}ède India",
+                                         'GP' => "Oríl\x{25b}\x{301}ède Gadelope",
+                                         'AR' => "Oríl\x{25b}\x{301}ède Agentínà",
+                                         'SN' => "Oríl\x{25b}\x{301}ède S\x{25b}n\x{25b}ga",
+                                         'MX' => "Oríl\x{25b}\x{301}ède Mesiko",
+                                         'AW' => "Oríl\x{25b}\x{301}ède Árúbà",
+                                         'MC' => "Oríl\x{25b}\x{301}ède Monako",
+                                         'HN' => "Oríl\x{25b}\x{301}ède Hondurasi",
+                                         'BR' => "Oríl\x{25b}\x{301}ède Bàràsílì",
+                                         'IL' => "Oríl\x{25b}\x{301}ède Iser\x{25b}li",
+                                         'SB' => "Oríl\x{25b}\x{301}ède Etikun Solomoni",
+                                         'PS' => "Oríl\x{25b}\x{301}ède Iw\x{254}orun Pakisitian ati Gasha",
+                                         'NZ' => "Oríl\x{25b}\x{301}ède shilandi Titun",
+                                         'HU' => "Oríl\x{25b}\x{301}ède Hungari",
+                                         'DO' => "Oril\x{25b}\x{301}ède Dòmíníkánì",
+                                         'UG' => "Oríl\x{25b}\x{301}ède Uganda",
+                                         'KH' => "Oríl\x{25b}\x{301}ède Kàmùbódíà",
+                                         'TG' => "Oríl\x{25b}\x{301}ède Togo",
+                                         'GB' => "Oríl\x{25b}\x{301}ède Omobabirin",
+                                         'BB' => "Oríl\x{25b}\x{301}ède Bábádósì",
+                                         'HT' => "Oríl\x{25b}\x{301}ède Haati",
+                                         'DK' => "Oríl\x{25b}\x{301}ède D\x{25b}\x{301}mákì",
+                                         'PA' => "Oríl\x{25b}\x{301}ède Panama",
+                                         'QA' => "Oríl\x{25b}\x{301}ède Kota",
+                                         'CV' => "Oríl\x{25b}\x{301}ède Etíokun Kápé féndè",
+                                         'GD' => "Oríl\x{25b}\x{301}ède Genada",
+                                         'SS' => "Gúúsù Sudan",
+                                         'GF' => "Oríl\x{25b}\x{301}ède Firenshi Guana",
+                                         'KM' => "Oríl\x{25b}\x{301}ède Kòmòrósì",
+                                         'HR' => "Oríl\x{25b}\x{301}ède Kòróátíà",
+                                         'KW' => "Oríl\x{25b}\x{301}ède Kuweti",
+                                         'TC' => "Oríl\x{25b}\x{301}ède T\x{254}\x{254}ki ati Etikun Kak\x{254}si",
+                                         'MQ' => "Oríl\x{25b}\x{301}ède Matinikuwi",
+                                         'CZ' => "Oríl\x{25b}\x{301}ède sh\x{25b}\x{301}\x{25b}\x{301}kì",
+                                         'MZ' => "Oríl\x{25b}\x{301}ède Moshamibiku",
+                                         'ES' => "Oríl\x{25b}\x{301}ède Sipani",
+                                         'BO' => "Oríl\x{25b}\x{301}ède B\x{254}\x{300}lífíyà",
+                                         'ST' => "Oríl\x{25b}\x{301}ède Sao tomi ati piriishipi",
+                                         'AU' => "Oríl\x{25b}\x{301}ède Ástràlìá",
+                                         'AL' => "Oríl\x{25b}\x{301}ède Àlùbàníánì",
+                                         'IR' => "Oríl\x{25b}\x{301}ède Irani",
+                                         'CG' => "Oríl\x{25b}\x{301}ède Kóngò",
+                                         'TR' => "Oríl\x{25b}\x{301}ède T\x{254}\x{254}ki",
+                                         'MD' => "Oríl\x{25b}\x{301}ède Modofia",
+                                         'BI' => "Oríl\x{25b}\x{301}ède Bùùrúndì",
+                                         'GN' => "Oríl\x{25b}\x{301}ède Gene",
+                                         'GW' => "Oríl\x{25b}\x{301}ède Gene-Busau",
+                                         'MK' => "Oríl\x{25b}\x{301}ède Masidonia",
+                                         'GR' => "Oríl\x{25b}\x{301}ède Geriisi",
+                                         'AG' => "Oríl\x{25b}\x{301}ède Ààntígúà àti Báríbúdà",
+                                         'SI' => "Oríl\x{25b}\x{301}ède Silofania",
+                                         'CO' => "Oríl\x{25b}\x{301}ède Kòlómíbìa",
+                                         'AI' => "Oríl\x{25b}\x{301}ède Ààngúlílà",
+                                         'AN' => "Oríl\x{25b}\x{301}ède Nedalandi ti Antelisi",
+                                         'JO' => "Oríl\x{25b}\x{301}ède J\x{254}dani",
+                                         'SM' => "Oríl\x{25b}\x{301}ède Sani Marino",
+                                         'UA' => "Oríl\x{25b}\x{301}ède Ukarini",
+                                         'CL' => "Oríl\x{25b}\x{301}ède shílè",
+                                         'CU' => "Oríl\x{25b}\x{301}ède Kúbà",
+                                         'KN' => "Oríl\x{25b}\x{301}ède Kiiti ati Neefi",
+                                         'ML' => "Oríl\x{25b}\x{301}ède Mali",
+                                         'SC' => "Oríl\x{25b}\x{301}ède sesh\x{25b}l\x{25b}si",
+                                         'ET' => "Oríl\x{25b}\x{301}ède Etopia",
+                                         'IS' => "Oríl\x{25b}\x{301}ède Ashilandi",
+                                         'NL' => "Oríl\x{25b}\x{301}ède Nedalandi",
+                                         'MS' => "Oríl\x{25b}\x{301}ède Motserati",
+                                         'EC' => "Oríl\x{25b}\x{301}ède Ekuádò",
+                                         'MY' => "Oríl\x{25b}\x{301}ède Malasia",
+                                         'CR' => "Oríl\x{25b}\x{301}ède Kuusita Ríkà",
+                                         'VA' => "Oríl\x{25b}\x{301}ède Fatikani",
+                                         'IO' => "Oríl\x{25b}\x{301}ède Etíkun Índíánì ti Ìlú Bírítísì",
+                                         'SD' => "Oríl\x{25b}\x{301}ède Sudani",
+                                         'CN' => "Oríl\x{25b}\x{301}ède sháínà",
+                                         'BG' => "Oríl\x{25b}\x{301}ède Bùùgáríà",
+                                         'MH' => "Oríl\x{25b}\x{301}ède Etikun Máshali",
+                                         'UY' => "Oríl\x{25b}\x{301}ède Nruguayi",
+                                         'PY' => "Oríl\x{25b}\x{301}ède Paraguye",
+                                         'BS' => "Oríl\x{25b}\x{301}ède Bàhámásì",
+                                         'TL' => "Oríl\x{25b}\x{301}ède ÌlàOòrùn Tím\x{254}\x{300}",
+                                         'MU' => "Oríl\x{25b}\x{301}ède Maritiusi",
+                                         'CH' => "Oríl\x{25b}\x{301}ède switishilandi",
+                                         'LI' => "Oríl\x{25b}\x{301}ède L\x{25b}shit\x{25b}nisiteni",
+                                         'GH' => "Oríl\x{25b}\x{301}ède Gana",
+                                         'KG' => "Oríl\x{25b}\x{301}ède Kurishisitani",
+                                         'NU' => "Oríl\x{25b}\x{301}ède Niue",
+                                         'US' => "Oríl\x{25b}\x{301}ède Oril\x{25b}ede Amerika",
+                                         'PE' => "Oríl\x{25b}\x{301}ède Peru",
+                                         'SL' => "Oríl\x{25b}\x{301}ède Siria looni",
+                                         'BZ' => "Oríl\x{25b}\x{301}ède Bèlís\x{25b}\x{300}",
+                                         'CY' => "Oríl\x{25b}\x{301}ède Kúrúsì",
+                                         'FJ' => "Oríl\x{25b}\x{301}ède Fiji",
+                                         'IE' => "Oríl\x{25b}\x{301}ède Ailandi",
+                                         'TW' => "Oríl\x{25b}\x{301}ède Taiwani",
+                                         'KP' => "Oríl\x{25b}\x{301}ède Guusu K\x{254}ria",
+                                         'PF' => "Oríl\x{25b}\x{301}ède Firenshi Polinesia",
+                                         'ER' => "Oríl\x{25b}\x{301}ède Eritira",
+                                         'IQ' => "Oríl\x{25b}\x{301}ède Iraki",
+                                         'AS' => "Sámóánì ti Oríl\x{25b}\x{301}ède Àméríkà",
+                                         'TZ' => "Oríl\x{25b}\x{301}ède Tanshania",
+                                         'MW' => "Oríl\x{25b}\x{301}ède Malawi",
+                                         'LY' => "Oríl\x{25b}\x{301}ède Libiya",
+                                         'GT' => "Oríl\x{25b}\x{301}ède Guatemala",
+                                         'GY' => "Oríl\x{25b}\x{301}ède Guyana",
+                                         'BM' => "Oríl\x{25b}\x{301}ède Bémúdà",
+                                         'PK' => "Oríl\x{25b}\x{301}ède Pakisitan",
+                                         'GQ' => "Oríl\x{25b}\x{301}ède Ekutoria Gini",
+                                         'LT' => "Oríl\x{25b}\x{301}ède Lituania",
+                                         'SG' => "Oríl\x{25b}\x{301}ède Singapo",
+                                         'PM' => "Oríl\x{25b}\x{301}ède P\x{25b}\x{25b}ri ati mikuloni",
+                                         'TT' => "Oríl\x{25b}\x{301}ède Tirinida ati Tobaga",
+                                         'NF' => "Oríl\x{25b}\x{301}ède Etikun N\x{254}\x{301}úfókì",
+                                         'TD' => "Oríl\x{25b}\x{301}ède shààdì",
+                                         'SO' => "Oríl\x{25b}\x{301}ède Somalia",
+                                         'SY' => "Oríl\x{25b}\x{301}ède Siria",
+                                         'SK' => "Oríl\x{25b}\x{301}ède Silofakia",
+                                         'BD' => "Oríl\x{25b}\x{301}ède Bángáládésì"
+                                       },
+                      'languages' => {
+                                       'su' => "Èdè Sudani",
+                                       'ne' => "Èdè Nepali",
+                                       'tr' => "Èdè T\x{254}\x{254}kisi",
+                                       'tlh' => "Èdè Klingoni",
+                                       'da' => "Èdè Il\x{25b}\x{300} Denmark",
+                                       'ru' => "Èdè \x{323}R\x{254}\x{254}sia",
+                                       'my' => "Èdè Bumiisi",
+                                       'gl' => "Èdè Galicia",
+                                       'ia' => "Èdè pipo",
+                                       'ro' => "Èdè Romania",
+                                       'vi' => "Èdè Jetinamu",
+                                       'az' => "Èdè Azerbaijani",
+                                       'ta' => "Èdè Tamili",
+                                       'rw' => "Èdè Ruwanda",
+                                       'br' => "Èdè Bretoni",
+                                       'cy' => "Èdè Welshi",
+                                       'st' => "Èdè Sesoto",
+                                       'ko' => "Èdè Koria",
+                                       'ak' => "Èdè Akani",
+                                       'uz' => "Èdè Uzbek",
+                                       'cs' => "Èdè seeki",
+                                       'km' => "Èdè kameri",
+                                       'af' => "Èdè Afrikani",
+                                       'is' => "Èdè Icelandic",
+                                       'bs' => "Èdè Bosnia",
+                                       'ti' => "Èdè Tigrinya",
+                                       'mt' => "Èdè Malta",
+                                       'yo' => "Èdè Yorùbá",
+                                       'la' => "Èdè Latini",
+                                       'hy' => "Èdè Ile Armenia",
+                                       'ga' => "Èdè Ireland",
+                                       'ms' => "Èdè Malaya",
+                                       'bh' => "Èdè Bihari",
+                                       'ka' => "Èdè Georgia",
+                                       'eu' => "Èdè Baski",
+                                       'oc' => "Èdè Occitani",
+                                       'gu' => "Èdè Gujarati",
+                                       'bg' => "Èdè Bugaria",
+                                       'sv' => "Èdè Suwidiisi",
+                                       'it' => "Èdè Italiani",
+                                       'hu' => "Èdè Hungaria",
+                                       'sq' => "Èdè Albania",
+                                       'pl' => "Èdè Il\x{25b}\x{300} Polandi",
+                                       'ca' => "Èdè Catala",
+                                       'fa' => "Èdè Pasia",
+                                       'sk' => "Èdè Slovaki",
+                                       'jv' => "Èdè Javanasi",
+                                       'uk' => "Èdè Ukania",
+                                       'pt' => "Èdè P\x{254}tugi",
+                                       'hi' => "Èdè Hindi",
+                                       'es' => "Èdè Sipanisi",
+                                       'sw' => "Èdè Swahili",
+                                       'no' => "Èdè Norway",
+                                       'lv' => "Èdè Latvianu",
+                                       'fo' => "Èdè Faroesi",
+                                       'fr' => "Èdè Faransé",
+                                       'sh' => "Èdè Serbo-Croatiani",
+                                       'sa' => "Èdè awon ara Indo",
+                                       'id' => "Èdè Indonasia",
+                                       'xh' => "Èdè Xhosa",
+                                       'th' => "Èdè Tai",
+                                       'sr' => "Èdè Serbia",
+                                       'so' => "Èdè ara Somalia",
+                                       'si' => "Èdè Sinhalese",
+                                       'et' => "Èdè Estonia",
+                                       'ie' => "Iru Èdè",
+                                       'mk' => "Èdè Macedonia",
+                                       'en' => "Èdè G\x{25b}\x{300}\x{25b}\x{301}sì",
+                                       'fi' => "Èdè Finisi",
+                                       'lt' => "Èdè Lithuania",
+                                       'de' => "Èdè Il\x{25b}\x{300} Gemani",
+                                       'gn' => "Èdè Guarani",
+                                       'hr' => "Èdè Kroatia",
+                                       'be' => "Èdè Belarusi",
+                                       'zu' => "Èdè Shulu",
+                                       'sd' => "Èdè Sindhi",
+                                       'ur' => "Èdè Udu",
+                                       'yi' => "Èdè Yiddishi",
+                                       'ha' => "Èdè Hausa",
+                                       'fil' => "Èdè Tagalogi",
+                                       'pa' => "Èdè Punjabi",
+                                       'sl' => "Èdè Slovenia",
+                                       'bn' => "Èdè Bengali",
+                                       'am' => "Èdè Amariki",
+                                       'ja' => "Èdè Japanisi",
+                                       'mr' => "Èdè marathi",
+                                       'te' => "Èdè Telugu",
+                                       'he' => "Èdè Heberu",
+                                       'kn' => "Èdè Kannada",
+                                       'zh' => "Èdè Mandari",
+                                       'fy' => "Èdè Frisia",
+                                       'eo' => "Èdè Esperanto",
+                                       'ig' => "Èdè Ibo",
+                                       'ar' => "Èdè Arabiki",
+                                       'nl' => "Èdè Duki",
+                                       'gd' => "Èdè Gaelik ti Ilu Scotland",
+                                       'as' => 'Ti Assam',
+                                       'el' => "Èdè Giriki",
+                                       'tk' => "Èdè Turkmen"
+                                     }
+                    },
+  'delimiters' => {
+                    'alternateQuotationEnd' => "\x{2019}",
+                    'quotationEnd' => "\x{201d}",
+                    'quotationStart' => "\x{201c}",
+                    'alternateQuotationStart' => "\x{2018}"
+                  },
+  'iso4217' => 'XOF'
+};

@@ -1,0 +1,17 @@
+<o2 use O2Doc::Tutorial />
+
+<o2 docSection title="ajaxScheduleCalls">
+  Makes a call to a server side function every x seconds, where x is the value of the interval attribute.
+  <o2 docSection title="Syntax">
+    <o2 docCode lang="o2ml">
+      <o2 ajaxScheduleCalls interval="60" setMethod="getNumUnreadMessages" target="numUnreadMessages" where="replace" onError="ignore" />
+      <span id="numUnreadMessages"></span>
+    </o2:docCode>
+  </o2:docSection>
+  <o2 docSection title="Attributes">
+    <o2 docList class="attributes">
+      <o2 docListItem class="required">Interval - the number of seconds between each call to the server side method</o2:docListItem>
+      <o2 include "$ENV->{O2ROOT}/var/doc/tutorials/taglib/Html/Ajax/ajaxAttributes.html.inc" />
+    </o2:docList>
+  </o2:docSection>
+</o2:docSection>

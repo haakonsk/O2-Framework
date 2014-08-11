@@ -1,0 +1,12 @@
+Rules for test scripts
+======================
+1. Run tests. Don't just print things.
+2. Don't use print. Use diag if you have to write something. If you use O2::Script::Test::Common,
+   diag only prints if the "verbose" (or "v") commmand line option is set.
+3. Clean up after yourself.
+  - The database and file system should be in the same state before and after the test has executed.
+  - Write clean-up code in an END method, so the code will run even if the script dies.
+
+To run all tests:
+perl runTests.pl
+perl runTests.pl --harness

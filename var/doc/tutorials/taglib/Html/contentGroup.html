@@ -1,0 +1,27 @@
+<o2 use O2Doc::Tutorial />
+
+<o2 docSection title="contentGroup">
+  Creates a fieldset tag with a legend (the title). Using the "disabled" attribute, an entire form inside the contentGroup tag may be disabled. When the
+  contents of the fieldset is disabled, the fieldset's transparency is set to 40%, and if you try to click on some element in the contentGroup, an alert
+  informs you that the contentGroup is disabled.
+  <o2 docSection title="Syntax">
+    <o2 docCode lang="o2ml">
+      <o2 contentGroup bgColor="#aaccee" width="50%" disabled="1" title="A test-form">
+        <o2 form method="post" action="">
+          Name: <o2 input type="text" name="name" />
+          <o2 input type="submit" value="Send" />
+        </o2:form>
+      </o2:contentGroup>
+    </o2:docCode>
+    <o2 docCodeResult useModule="Html::Form" />
+  </o2:docSection>
+  <o2 docSection title="Attributes">
+    <o2 docList class="attributes">
+      <o2 docListItem class="optional">title</o2:docListItem>
+      <o2 docListItem class="optional">bgColor</o2:docListItem>
+      <o2 docListItem class="optional">width</o2:docListItem>
+      <o2 docListItem class="optional">disabled [0]</o2:docListItem>
+      <o2 docListItem class="content required">content - the content of the fieldset tag (in addition to the legend)</o2:docListItem>
+    </o2:docList>
+  </o2:docSection>
+</o2:docSection>

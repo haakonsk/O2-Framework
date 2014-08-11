@@ -1,0 +1,49 @@
+<o2 use O2Doc::Tutorial />
+
+<o2 docSection title="header">
+  Prints HTML for the top of a web page (html, head and body tags, also calls &lt;o2 incJavascript&gt;, &lt;o2 incStylesheet&gt; and &lt;o2 incMetaHeader&gt;).
+  <o2 docSection title="Syntax">
+    <o2 docCode lang="o2ml">
+      <o2 header />
+    </o2:docCode>
+    or
+    <o2 docCode lang="o2ml">
+      <o2 header title="A great page" omitBody="1" />
+    </o2:docCode>
+    or
+    <o2 docCode lang="o2ml">
+      <o2 header title="A great page" omitBody disableScrollbars />
+    </o2:docCode>
+    or
+    <o2 docCode lang="o2ml">
+      <o2 header title="A great page">
+        <meta name="keywords" content="$keywords">
+      </o2:header>
+    </o2:docCode>
+    <o2 docNote>
+      In most cases, a main template should be responsible for including the header as well as the <o2 docLink type="tag" id="footer" /> tag.
+    </o2:docNote>
+  </o2:docSection>
+  <o2 docSection title="Attributes">
+    <o2 docList class="attributes">
+      <o2 docListItem class="optional">title [No title]</o2:docListitem>
+      <o2 docListItem class="optional">bgColor [white]</o2:docListitem>
+      <o2 docListItem class="optional">onLoad - Javascript code to be executed when the page loads</o2:docListitem>
+      <o2 docListItem class="optional">quirksMode [0] - outputs a different DOCTYPE if this attribute is set to true (1). The browser may do things a little differently than
+        normal if quirks mode is enabled</o2:docListItem>
+      <o2 docListItem class="param optional">omitBody - The body tag is omitted if omitBody is true or given without assigning a value to it</o2:docListitem>
+      <o2 docListItem class="param optional">disableScrollbars - Scrollbars are disabled if disableScrollbars is true or given without assigning a value to it</o2:docListitem>
+      <o2 docListItem class="content optional">content - html that will be inserted into the &lt;head&gt; tag.</o2:docListItem>
+      <o2 docListItem>Other html attributes - they are set on the body tag</o2:docListitem>
+    </o2:docList>
+  </o2:docSection>
+  <o2 docSection>
+    <o2 docNote>
+      Some tags require the &lt;o2 header&gt; tag or &lt;o2 incJavascript&gt; or &lt;o2 incStylesheet&gt; to be included in order to work as expected.
+    </o2:docNote>
+  </o2:docSection>
+  <o2 docSection>
+    See also <o2 docLink type="tag" id="footer" />, <o2 docLink type="tag" id="incJavascript" />, <o2 docLink type="tag" id="incStylesheet" /> and
+    <o2 docLink type="tag" id="incMetaHeader" />.
+  </o2:docSection>
+</o2:docSection>

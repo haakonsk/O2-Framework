@@ -1,0 +1,60 @@
+<o2 use O2Doc::Tutorial />
+
+<o2 docSection title="checkboxGroup, checkbox">
+  Creates a checkbox group.
+  <o2 docSection title="Syntax">
+    <o2 docCode lang="o2ml">
+      <o2 form method="post" action="">
+        <o2 checkboxGroup name="number[]" label="Choose numbers" values="1,3" display="inline" rule="numChecked:1,*" ruleMsg="numChecked must be at least 1">
+          <o2 checkbox value="1" label="One"   accesskey="o" />
+          <o2 checkbox value="2" label="Two"   accesskey="t" />
+          <o2 checkbox value="3" label="Three" accesskey="h" lineBreakAfter="1" />
+          <o2 checkbox value="4" label="Four"  accesskey="f" />
+          <o2 checkbox value="5" label="Five"  accesskey="i" />
+        </o2:checkboxGroup>
+        <o2 input type="submit" value="Send" />
+      </o2:form>
+    </o2:docCode>
+    <o2 docCodeResult useModule="Html::Form" />
+    <o2 docNote>
+      This example has not been styled.
+    </o2:docNote>
+    Another way to write forms is to use the <o2 docLink type="tag" id="formTable" /> tag - the form fields are then put inside table cells.
+  </o2:docSection>
+
+  <o2 docSection title="checkboxGroup attributes">
+    <o2 docList class="attributes">
+      <o2 docListItem class="required">name            - the name of the checkboxes / input tags</o2:docListItem>
+      <o2 docListItem class="optional">values          - which checkboxes should be checked when the page loads (comma-separated list or array reference)</o2:docListItem>
+      <o2 docListItem class="optional">label           - a text associated with the entire checkbox group</o2:docListItem>
+      <o2 docListItem class="optional">labelClass      - extra class for the label</o2:docListItem>
+      <o2 docListItem class="optional">focus [0]       - should this checkbox group receive focus when the page loads? (At most one focused field per page)</o2:docListItem>
+      <o2 docListItem class="optional">display         - must be one of {inline, block} - if the checkboxes should be displayed on the same row (inline) or one checkbox
+      per line (block). In the CSS example below the default is set to block (last rule).</o2:docListItem>
+      <o2 docListItem class="optional">rule            - a rule that must be obeyed (see the <o2 docLink type="tag" id="input" />)</o2:docListItem>
+      <o2 docListItem class="optional">ruleMsg         - the text that will be displayed to the user in case the rule wasn't obeyed</o2:docListItem>
+      <o2 docListItem class="content required">content - checkbox tags</o2:docListItem>
+    </o2:docList>
+  </o2:docSection>
+
+  <o2 docSection title="checkbox attributes">
+    <o2 docList class="attributes">
+      <o2 docListItem class="required">value              - the value of the checkbox - same as the value attribute of the generated input tag.</o2:docListItem>
+      <o2 docListItem class="required">label              - a text associated with this particular checkbox</o2:docListItem>
+      <o2 docListItem class="optional">labelClass         - extra class for the label</o2:docListItem>
+      <o2 docListItem class="optional">accesskey</o2:docListItem>
+      <o2 docListItem class="optional">checked [0]        - same as the "value" attribute of the checkboxGroup tag</o2:docListItem>
+      <o2 docListItem class="optional">lineBreakAfter [0] - adds a line break after the checkbox (if "display" is "inline")</o2:docListItem>
+      <o2 docListItem class="optional">id                 - by default a concatenation of the name and value will be used as the ID</o2:docListItem>
+    </o2:docList>
+
+    In order to look good, for example together with multiple <o2 docLink type="tag" id="input" /> fields or other radio button or checkbox groups,
+    the HTML output by checkboxGroup and checkbox tags must be styled with CSS, or the <o2 docLink type="tag" id="formTable" /> tag could be used.
+    See the <o2 docLink type="tag" id="form" /> tag for example CSS.
+
+    <o2 docNote>
+      The "checkbox" tag can only exist inside a "checkboxGroup" tag.
+    </o2:docNote>
+  </o2:docSection>
+  See also <o2 docLink type="tag" id="form" />, <o2 docLink type="tag" id="formTable" /> and <o2 docLink type="tag" id="radioGroup" />.
+</o2:docSection>

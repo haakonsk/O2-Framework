@@ -1,0 +1,73 @@
+<o2 use O2Doc::Tutorial />
+
+<o2 docSection title="multiInput, row, cell">
+  Multiple input-fields with the same name. The name should end with "[]", f ex name="urls[]". You can then extract the values as an array in Perl. If you want more
+  than one input field in a row, it's possible to specify column titles with the columnTitles attribute; you must also use the row and cell tags if you use this
+  attribute.
+  <o2 docSection title="Syntax">
+
+    <o2 docCode lang="o2ml">
+      <o2 push "$names">John Smith</o2:push>
+      <o2 push "$names">John Doe</o2:push>
+      <o2 multiInput label="Firstname" name="firstname[]" rule="regex:/^\w+$/" ruleMsg="Firstname rule failed" values="$names" />
+    </o2:docCode>
+    <o2 docCodeResult useModule="Html::Form" />
+    or
+    <o2 docCode lang="o2ml">
+      <o2 multiInput type="text" label="Firstname" name="firstname2[]" rearrangeable="1" resizable="1" minNumLines="5">
+        <o2 row><o2 input value="John" /></o2:row>
+        <o2 row><o2 input value="Joe"  /></o2:row>
+        <o2 row><o2 input value="Jill" /></o2:row>
+      </o2:multiInput>
+    </o2:docCode>
+    <o2 docCodeResult useModule="Html::Form" />
+    or
+    <o2 docCode lang="o2ml">
+      <o2 multiInput label="Urls" columnTitles="Link type|Url|Link name|Move/Delete" minNumLines="2" resizable="1" rearrangeable="1">
+        
+        <o2 foreach "$url in $urls">
+          <o2 row>
+            <o2 cell>
+              <o2 select name="urlTypes[]">
+                <o2 option value="external" />
+                <o2 option value="internal" />
+              </o2:select>
+            </o2:cell>
+            <o2 cell> <o2 input type="url"  name="urls[]"       value="$url->getUrl()"      /> </o2:cell>
+            <o2 cell> <o2 input type="text" name="metaTitles[]" value="$url->getMetaName()" /> </o2:cell>
+          </o2:row>
+        </o2:foreach>
+        
+        <o2 if "!$urls">
+          <o2 row>
+            <o2 cell>
+              <o2 select name="urlTypes[]">
+                <o2 option value="external" />
+                <o2 option value="internal" />
+              </o2:select>
+            </o2:cell>
+            <o2 cell> <o2 input type="url"  name="urls[]"      /> </o2:cell>
+            <o2 cell> <o2 input type="text" name="urlTitles[]" /> </o2:cell>
+          </o2:row>
+        </o2:if>
+        
+      </o2:multiInput>
+    </o2:docCode>
+    <o2 docCodeResult useModule="Html::Form" />
+
+  </o2:docSection>
+  <o2 docSection title="Attributes">
+    <o2 docList class="attributes">
+      <o2 docListItem class="optional">values            - an array reference holding the values for all the input fields. Can't be used if there are input fields with more than one name (if there are differnt "types" of input fields)</o2:docListItem>
+      <o2 docListItem class="optional">rearrangeable [0] - adds arrows after the input fields, so that the order of the input fields can be changed</o2:docListItem>
+      <o2 docListItem class="optional">resizable [0]     - adds minus signs after the input fields, so the input fields can be removed (only if the number of input fields is greater than minNumLines).
+      Also adds a plus button below the input fields.</o2:docListItem>
+      <o2 docListItem class="optional">minNumLines [1]   - the minimum number of input fields that must be displayed</o2:docListItem>
+      <o2 docListItem class="optional">columnTitles      - when there's more than one input field in a row, it might be smart to specify header titles for each input field column. Separate the column titles with vertical bars (|).</o2:docListItem>
+      <o2 docListItem class="optional">newRowHandler     - name of javascript method to be called when a new row is added. The method receives the newly created row and the multiInput element as parameters.</o2:docListItem>
+      <o2 docListItem class="optional">onDeleteRow       - javascript code to be executed when a row is deleted.</o2:docListItem>
+      <o2 docListItem class="optional content">content   - the input fields with attributes that differ between the input fields. The input fields in the multiInput group can be defined here. If not specified, the default is to use an input field.</o2:docListItem>
+      <o2 docListItem>Other <o2 docLink type="tag" id="input" /> attributes</o2:docListItem>
+    </o2:docList>
+  </o2:docSection>
+</o2:docSection>

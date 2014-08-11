@@ -1,0 +1,40 @@
+<o2 use O2Doc::Tutorial />
+
+<o2 docSection title="textarea">
+  Similar to a normal textarea, but also supports input counters, form validation and the attributes "label" and "accesskey".
+  <o2 docSection title="Syntax">
+    <o2 docCode lang="o2ml">
+      <o2 form method="post" action="">
+        <o2 textarea name="message" rule="required" ruleMsg="Message field is required" />
+      </o2:form>
+    </o2:docCode>
+    <o2 docCodeResult useModule="Html::Form" />
+    or
+    <o2 docCode lang="o2ml">
+      <o2 form method="post" action="">
+        <o2 formTable>
+          <o2 textarea name="comments" label="Comments" accesskey="c" value="Contents of the textarea here." />
+        </o2:formTable>
+      </o2:form>
+    </o2:docCode>
+    <o2 docCodeResult useModule="Html::Form" />
+  </o2:docSection>
+  <o2 docSection title="Attributes">
+    <o2 docList class="attributes">
+      <o2 docListItem class="optional">counterId</o2:docListItem>
+      <o2 docListItem class="optional">rule</o2:docListItem>
+      <o2 docListItem class="optional">ruleMsg</o2:docListItem>
+      <o2 docListItem class="optional">label          - the text associated with the textarea</o2:docListItem>
+      <o2 docListItem class="optional">labelClass     - extra class for the label</o2:docListItem>
+      <o2 docListItem class="optional">value          - the text in the textarea</o2:docListItem>
+      <o2 docListItem class="optional">accesskey      - if label is specified, you can also specify an accesskey</o2:docListItem>
+      <o2 docListItem class="optional">focus [0]      - should this field receive focus when the page loads? (At most one focused field per page)</o2:docListItem>
+      <o2 docListItem class="optional">multilingual   - should the user be able to edit the textarea in more than one language? (Aslo see
+        <o2 docLink type="tag" id="multilingualController" />)</o2:docListItem>
+      <o2 docListItem class="optional">autoResize [0] - if the textarea should resize itself vertically when the number of lines changes (doesn't shrink in IE)</o2:docListItem>
+      <o2 docListItem>Other html attributes</o2:docListItem>
+    </o2:docList>
+  </o2:docSection>
+  See also <o2 docLink type="tag" id="form" />, <o2 docLink type="tag" id="formTable" />, <o2 docLink type="tag" id="inputCounter" />
+  and <o2 docLink type="tag" id="multilingualController" />.
+</o2:docSection>

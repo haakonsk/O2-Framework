@@ -1,0 +1,13 @@
+<html>
+  <head>
+    <title>Redirecting...</title>
+  </head>
+  <body onLoad="document.getElementById('submitButton').click()">
+    <form method="post" action="$url" style="display: none;">
+      <o2 foreach "$name => $value in $params">
+        <input name="$name" value="$value">
+      </o2:foreach>
+      <input type="submit" id="submitButton">
+    </form>
+  </body>
+</html>

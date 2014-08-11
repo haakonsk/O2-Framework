@@ -1,0 +1,27 @@
+<o2 header />
+
+<o2 addCssFile file="o2mlDocStyle" />
+<o2 addCssFile file="defaultStyle" />
+
+<o2 addCss>
+  .navigation {
+    float        : left;
+    height       : 100%;
+    margin-right : 15px;
+  }
+  .mainDoc {
+    overflow : hidden;
+  }
+</o2:addCss>
+
+<h1>O2 Markup Language Documentation</h1>
+
+<div class="navigation">
+  <o2 include "navigation.html" module="$module" tags="$tags" tag="$tag" />
+</div>
+
+<div class="mainDoc">
+  <o2 include "$filePath" />
+</div>
+
+<o2 footer />

@@ -1,0 +1,82 @@
+.formWrapper {
+  margin-left: 20px;
+}
+
+.btnUpHidden, .btnDownHidden, .btnDeleteHidden {
+  visibility : hidden;
+}
+.btnAddHidden {
+  display : none !important;
+}
+.multiInput .item {
+  float : left;
+  clear : left;
+}
+a.addBtn {
+  display : block;
+  clear   : left;
+}
+.iconBtn {
+  display      : block;
+  height       : 16px;
+  padding-left : 20px;
+  background   : no-repeat left center;
+  float        : left;
+  line-height  : 16px;
+}
+.noText {
+  text-indent : -9999px;
+  overflow    : hidden;
+  width       : 16px;
+  padding     : 0;
+  margin      : 0 2px;
+}
+.deleteBtn {
+  background-image : url("/images/system/del_16.gif");
+}
+.addBtn {
+  background-image : url("/images/system/add_16.gif");
+}
+.upBtn {
+  background-image : url("/images/system/up_16.gif");
+}
+.downBtn {
+  background-image : url("/images/system/down_16.gif");
+}
+
+.multiInput th {
+  font-size   : 12px;
+  font-weight : normal;
+  text-align  : left;
+  color       : #555;
+}
+
+.multiInput div.rows, {
+  float : left;
+}
+
+.multiInput div.rowContent {
+  float : left;
+  clear : left;
+}
+
+div.multiInput {
+  padding: 1px;
+}
+
+div.multiInputLabel {
+  float   : left;
+  padding : 1px 5px 1px 1px;
+}
+
+div.multiInput div.rows {
+  float : left;
+}
+
+div.multiInput div.rowContent {
+  padding : 1px;
+}
+
+div.controls {
+  float : left;
+}

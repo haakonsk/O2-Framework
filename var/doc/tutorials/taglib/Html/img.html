@@ -1,0 +1,45 @@
+<o2 use O2Doc::Tutorial />
+
+<o2 docSection title="img">
+  <p>Displays an o2 image. Which image to display is specified with the id attribute.</p>
+  <p>If the keepAspectRatio-attribute is set to "0", the image is resized to exactly match the available/maximum space (the image may be stretched). It does not make sence to use
+    other values than "resize" for the onTooBig- and onTooSmall-attributes when keepAspectRatio is "0".</p>
+  <p>If the original image is larger than the available space (in both directions), the image is resized down until either the height equals the height of the available space,
+    or the width equals the width of the available space. (The image is not stetched) Then, if the onTooBig-attribute is "crop", the image is centered with respect to the
+    available space (either horizontally or vertically), and what's outside the available space-box is cut away. If, on the other hand, the onTooBig-attribute is "resize",
+    the image is resized down further, until the available space surrounds it completely (still no stretching).</p>
+  <p>If the original image is smaller than the available space, and the onTooSmall-attribute is "ignore", no resizing is done on the image. If the onTooSmall-attribute is
+    "resize", the image is resized up until either the the width equals the available width or the height equals the available height.</p>
+  <p>But what happens if the image is both larger and smaller than the available space? In other words that it is larger in one direction and smaller in the other. Let's
+    say the image is broader than the maximum allowed width and lower than the maximum allowed height:
+    <ul>
+      <li><span style="text-decoration: underline;">onTooBig="crop" onTooSmall="ignore"</span><br>
+        In this case, no resizing is done. The image is centered relative to the available space, and what's outside the available space is cut away.
+      </li>
+      <li><span style="text-decoration: underline;">onTooBig="crop" onTooSmall="resize"</span><br>
+        The image is resized up until the height equals the maxiumum allowed height, the image is centered relative to the available space and what's outside
+        the available space is cut away.
+      </li>
+      <li><span style="text-decoration: underline;">onTooBig="resize"</span><br>
+        The image is resized down until it is completely covered by the available space.
+      </li>
+    </ul>
+  </p>
+    
+  <o2 docSection title="Syntax">
+    <o2 docCode lang="o2ml">
+      <o2 img id="3879" width="200" height="180" onTooBig="crop" />
+    </o2:docCode>
+    <o2 docCodeResult useModule="Html" />
+  </o2:docSection>
+  <o2 docSection title="Attributes">
+    <o2 docList class="attributes">
+      <o2 docListItem class="required">id                  - the o2 id of the image</o2:docListItem>
+      <o2 docListItem class="optional">width               - maximum width  of the image in pixels</o2:docListItem>
+      <o2 docListItem class="optional">height              - maximum height of the image in pixels</o2:docListItem>
+      <o2 docListItem class="optional">onTooBig [resize]   - {resize, crop}   - What to do if the image is bigger  than the avialable space</o2:docListItem>
+      <o2 docListItem class="optional">onTooSmall [resize] - {resize, ignore} - What to do if the image is smaller than the avialable space</o2:docListItem>
+      <o2 docListItem class="optional">keepAspectRatio [1] - if this is true, the image will never be stretched</o2:docListItem>
+    </o2:docList>
+  </o2:docSection>
+</o2:docSection>

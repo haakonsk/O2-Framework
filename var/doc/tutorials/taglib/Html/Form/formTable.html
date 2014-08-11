@@ -1,0 +1,54 @@
+<o2 use O2Doc::Tutorial />
+
+<o2 docSection title="formTable">
+  Generates a &lt;table&gt; tag and saves a variable that tells input field tags that they should add &lt;tr&gt; and &lt;td&gt; tags around the input fields
+  inside &lt;o2 formTable&gt;. This is done only for input fields where the "label" attribute is set.
+  <o2 docSection title="Syntax">
+    <o2 docCode lang="o2ml">
+      <o2 form method="post" action="">
+        <o2 formTable>
+          <o2 input type="text" name="name"  label="Name"   accesskey="n" focus="1" />
+          <o2 input type="text" name="email" label="E-mail" accesskey="e" />
+          <o2 radioGroup name="number" label="Choose a number" value="3" display="inline">
+            <o2 radio value="1" label="One"   accesskey="o" />
+            <o2 radio value="2" label="Two"   accesskey="t" />
+            <o2 radio value="3" label="Three" accesskey="h" lineBreakAfter="1" />
+            <o2 radio value="4" label="Four"  accesskey="f" />
+            <o2 radio value="5" label="Five"  accesskey="i" />
+          </o2:radioGroup>
+          <o2 checkboxGroup name="number2[]" label="Choose numbers" values="1,2" display="block">
+            <o2 checkbox value="1" label="One" />
+            <o2 checkbox value="2" label="Two" accesskey="w" />
+          </o2:checkboxGroup>
+          <o2 select name="year[]" label="Choose year(s)" multiple="multiple" size="3" values="2005,2004" accesskey="c">
+            <o2 option value="2006">This year</o2:option>
+            <o2 option value="2005" />
+            <o2 option value="2004" />
+            <o2 option value="2003" />
+          </o2:select>
+          <o2 textarea name="comments" label="Comments" accesskey="m" cols="80" rows="6" />
+          <o2 dateSelect name="date" label="Date" accesskey="d" />
+        </o2:formTable>
+      </o2:form>
+    </o2:docCode>
+    <o2 docCodeResult useModule="Html::Form" />
+  </o2:docSection>
+  <o2 docSection title="Attributes">
+    <o2 docList class="attributes">
+      <o2 docListItem class="optional">class [o2FormTable]</o2:docListItem>
+      <o2 docListItem>Normal html table attributes</o2:docListItem>
+    </o2:docList>
+  </o2:docSection>
+  <o2 docSection>
+    In order to always make the labels and input fields appear "on top", the following CSS can be used:
+    <o2 docCode lang="css">
+      .o2FormTable td {
+        vertical-align: top;
+      }
+    </o2:docCode>
+  </o2:docSection>
+  <o2 docSection>
+    See also <o2 docLink type="tag" id="tr" />, <o2 docLink type="tag" id="form" />, <o2 docLink type="tag" id="input" />, <o2 docLink type="tag" id="select" />,
+    <o2 docLink type="tag" id="radioGroup" />, <o2 docLink type="tag" id="checkboxGroup" />, <o2 docLink type="tag" id="textarea" /> and <o2 docLink type="tag" id="dateSelect" />.
+  </o2:docSection>
+</o2:docSection>

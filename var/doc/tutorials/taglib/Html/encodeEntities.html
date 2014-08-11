@@ -1,0 +1,32 @@
+<o2 use O2Doc::Tutorial />
+
+<o2 docSection title="encodeEntities">
+  The config variable o2.encodeEntities determines if html special characters in variable values are translated to the corresponding entities by default or not.
+  You can change this temporarily or permanently for the rest of the file with this tag. If encodeEntities is off, then tags inside variable values will be interpreted
+  by the browser,
+  <o2 docSection title="Syntax">
+    <o2 docCode lang="o2ml">
+      <o2 setVar "$txt"><b>Bold 'text'</b></o2:setVar>
+      <o2 encodeEntities off>
+        <p>$txt</p>
+      </o2:encodeEntities>
+    </o2:docCode>
+    <o2 docCodeResult useModule="Html" />
+    This is the normal behavior:
+    <o2 docCode lang="o2ml">
+      <o2 setVar "$txt"><b>Bold 'text'</b></o2:setVar>
+      <p>$txt</p>
+    </o2:docCode>
+    <o2 docCodeResult useModule="Html" />
+  </o2:docSection>
+  <o2 docSection title="Attributes">
+    <o2 docList class="attributes">
+      <o2 docListItem class="content required">content - the text in which HTML entities in variables should not be encoded</o2:docListItem>
+      <o2 docListItem class="param required">
+        off/on/&lt;characters to encode&gt; - determines which (if any) of the following characters to encode in variables:
+        <b>&lt;</b>, <b>&amp;</b>, <b>&gt;</b>, <b>&#39;</b>, <b>&quot;</b>, <b>&#36;</b><br>
+        Encode "on" means to encode all of the characters above except for the dollar sign.
+      </o2:docListItem>
+    </o2:docList>
+  </o2:docSection>
+</o2:docSection>

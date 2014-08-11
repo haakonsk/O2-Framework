@@ -1,0 +1,19 @@
+#!/usr/bin/perl
+
+use O2::Context;
+my $context = O2::Context->new();
+my $dbh = $context->getDbh();
+
+unless( @ARGV ) {
+  print "Dump table as plds data\nUsage: $0 <table-name>\n";
+  exit;
+}
+
+my $table = $ARGV[0];
+my $sth = $dbh->prepare("select * from $table");
+$sth->execute();
+while( my $row = $sth->nextHashRef() ) {
+  push @table, $row;
+}
+use Data::Dumper;print Dumper(\@table);
+

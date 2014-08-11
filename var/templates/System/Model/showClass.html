@@ -1,0 +1,186 @@
+<o2 use Html::Form />
+<o2 use Html::PopupDialog />
+
+<o2 use I18N />
+<o2 setResourcePath>System.Model</o2:setResourcePath>
+
+<o2 use Js::Lang />
+<o2 addJsLangFile file="System/Model" />
+
+<o2 header />
+
+<o2 addCssFile file="gui/system/model/showClass" />
+<o2 addJsFile  file="gui/system/model/showClass" />
+
+<o2 addJs where="onLoad">
+  if (top.o2) {
+    top.o2.addFrameScrollbarEvents(parent.left, window);
+  }
+</o2:addJs>
+
+<o2 include "includes/iconUrls.html" />
+
+<o2 temporaryMessage message="$q->{msg}" type="$q->{msgType}" duration="15" id="tmpMsg" />
+
+
+<div class="content">
+
+  <div id="tmpMsgContainer">
+    <div id="tmpMsg"></div>
+  </div>
+
+  <div class="mainObject">
+    <div class="className">
+      <o2 setVar "$classIconUrl"><o2 iconUrl class="$model->getClassName()" size="24" /></o2:setVar>
+      <h1 class="className">
+        <o2 link type="image" src="$deleteIconUrl" alt="X" onClick="o2.systemModel.deleteClass(this);"   title="$lang->getString('helpTextDeleteClass')" setMethod="deleteClass" class="$model->getClassName()" />
+        <o2 link type="image" src="$editIconUrl"   alt="M" onClick="o2.popupDialog.display('editClass')" title="$lang->getString('helpTextEditClassName')" />
+        <img src="$classIconUrl"> $model->getClassName()
+      </h1>
+
+      <div class="optionsMenu">
+        <div class="header" onClick="o2.systemModel.toggleDisplay( document.getElementById('optionsMenuBody'), 'block' )">$lang->getString("optionsMenuTitle")</div>
+        <div class="body" id="optionsMenuBody" onClick="this.style.display = 'none'">
+          <o2 if "$context->pluginIsEnabled('CMS')">
+            <div class="item">
+              <o2 popupDialog setMethod="showRegisterClassForm" setParams="package=$model->getClassName()" width="800" height="450"
+                submitText="$lang->getString('btnRegister')" closeText="$lang->getString('btnClose')" linkText="$lang->getString('optionRegisterClass')">
+                <o2 button text="$lang->getString('btnReset')" priority="secondary" onClick="document.forms.registerClass.reset()" />
+              </o2:popupDialog>
+            </div>
+          </o2:if>
+          <div class="item"><o2 popupDialog setMethod="showIconUploadForm"  setParams="package=$model->getClassName()" width="800" height="600" linkText="$lang->getString('optionUploadOrSelectIcon')" submitText="$lang->getString('btnSubmit')" closeText="$lang->getString('btnCancel')" /></div>
+          <div class="item"><o2 popupDialog setMethod="showManageIndexForm" setParams="package=$model->getClassName()" width="600" height="400" linkText="$lang->getString('optionManageIndexes')" closeText="$lang->getString('btnClose')" /></div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="classComment comment">
+      <o2 link type="image" src="$editIconUrl" alt="M" onClick="o2.popupDialog.display('editComment')" title="$lang->getString('helpTextEditComment')" />
+      <o2 encodeEntities off>/* $classComment */</o2:encodeEntities>
+    </div>
+
+    <o2 if "$model->getClassName() ne $model->getSuperClassName()">
+      <div class="superClass">
+        <o2 link type="image" src="$deleteIconUrl" alt="X" onClick="o2.systemModel.deleteBaseClass(this);"   title="$lang->getString('helpTextDeleteBaseClass')" setMethod="deleteBaseClass" baseClass="$model->getSuperClassName()" />
+        <o2 link type="image" src="$editIconUrl"   alt="M" onClick="o2.popupDialog.display('editBaseClass')" title="$lang->getString('helpTextEditBaseClass')" />
+        $lang->getString("txtInherits") <o2 link setParams="package=$model->getSuperClassName()">$model->getSuperClassName()</o2:link>
+      </div>
+    </o2:if>
+
+    <o2 if "@{$inheritedFields}">
+      <p class="toggler"><a href="javascript:o2.systemModel.toggleDisplay( document.getElementById('inheritedFields'), 'table-row-group' );">$lang->getString("linkToggleInheritedFields")</a></p>
+    </o2:if>
+
+    <table class="fields">
+      <tbody class="inherited" id="inheritedFields">
+        <o2 foreach "$field in $inheritedFields" sortBy="$field->getName()">
+          <o2 include "includes/field.html" isInherited="1" />
+        </o2:foreach>
+      </tbody>
+      <tbody class="native">
+        <o2 foreach "$field in $nativeFields" sortBy="$field->getName()">
+          <o2 include "includes/field.html" isInherited="0" />
+        </o2:foreach>
+      </tbody>
+    </table>
+
+    <div class="navigate">
+      <o2 link type="image" src="$addIconUrl" alt="+" setMethod="newField" title="$lang->getString('linkNewField')" onClick="o2.popupDialog.display('addField')" />
+    </div>
+
+    <span class="methodsExplanation">$lang->getString("hdrPublicMethods"):</span>
+    <o2 if "$model->getClassName() ne 'O2::Obj::Object'  &&  @{$o2ObjObjectMethods}">
+      <p class="toggler"><a href="javascript:o2.systemModel.toggleDisplay( document.getElementById('o2ObjObjectMethods'), 'list-item' );">$lang->getString("linkToggleMethodsInheritedFromO2ObjObject")</a></p>
+      <ul id="o2ObjObjectMethods">
+        <o2 foreach "$methodName in $o2ObjObjectMethods">
+          <li>$methodName</li>
+        </o2:foreach>
+      </ul>
+    </o2:if>
+    <o2 if "@{$inheritedMethods}">
+      <p class="toggler"><a href="javascript:o2.systemModel.toggleDisplay( document.getElementById('inheritedMethods'), 'list-item' );">$lang->getString("linkToggleOtherInheritedMethods")</a></p>
+      <ul id="inheritedMethods">
+        <o2 foreach "$methodName in $inheritedMethods">
+          <li>$methodName</li>
+        </o2:foreach>
+      </ul>
+    </o2:if>
+    <span class="nativeMethodsExplanation">$lang->getString("hdrNativeMethods")</span>
+    <ul id="publicNativeMethods">
+      <o2 foreach "$methodName in $publicNativeMethods">
+        <li>$methodName</li>
+      </o2:foreach>
+    </ul>
+    <o2 if "@{$overriddenMethods}">
+      <span class="overriddenMethodsExplanation">$lang->getString("hdrOverriddenMethods")</span>
+      <ul id="overriddenMethods">
+        <o2 foreach "$methodName in $overriddenMethods">
+          <li>$methodName</li>
+        </o2:foreach>
+      </ul>
+    </o2:if>
+
+    <o2 if "@{$subClasses}">
+      <span class="subClassExplanation">$lang->getString("hdrClassesThatInheritFrom", className => $model->getClassName()):</span>
+      <ul class="subClasses">
+        <o2 foreach "$class in $subClasses">
+          <li><o2 link setParams="package=$class">$class</o2:link></li>
+        </o2:foreach>
+      </ul>
+    </o2:if>
+
+  </div>
+</div>
+
+
+<div class="navigate">
+  <o2 link type="image" src="$addIconUrl" alt="+" setMethod="newClass" removeParams="1" title="$lang->getString('linkNewClass')" onClick="o2.popupDialog.display('addClass')" />
+</div>
+
+
+<o2 popupDialog id="editBaseClass" submitText="$lang->getString('btnSave')" closeText="$lang->getString('btnCancel')">
+  <o2 form method="post" name="baseClass" setMethod="saveBaseClass">
+    <o2 input type="text" label="$lang->getString('lblBaseClass')" name="baseClass" value="$model->getSuperClassName()" />
+  </o2:form>
+</o2:popupDialog>
+
+
+<o2 popupDialog id="editClass" submitText="$lang->getString('btnSave')" closeText="$lang->getString('btnCancel')">
+  <o2 form method="post" name="editClass" setMethod="saveClassName">
+    <o2 input type="hidden" name="package" value="$model->getClassName()" />
+    <o2 input type="text" label="$lang->getString('lblNewClassName')" name="newClassName" value="$model->getClassName()" /> 
+  </o2:form>
+</o2:popupDialog>
+
+
+<o2 popupDialog id="editComment" submitText="$lang->getString('btnSave')" closeText="$lang->getString('btnCancel')">
+  <o2 form method="post" name="classComment" setMethod="saveComment">
+    <o2 textarea type="text" label="$lang->getString('lblComment')" name="comment" value="$model->getClassComment()" rows="10" />
+  </o2:form>
+</o2:popupDialog>
+
+
+<o2 foreach "$field in $nativeFields">
+  <o2 include "includes/editField.html" type="edit" field="$field" popupDialogId="$field->getName()_edit" formName="$field->getName()Form" title="$field->getName()" />
+</o2:foreach>
+
+<o2 include "includes/editField.html" field="$newField" popupDialogId="addField" type="add" formName="addField" title="$lang->getString('hdrCreateNewField')" />
+
+
+<o2 popupDialog id="addClass" submitText="$lang->getString('btnSave')" closeText="$lang->getString('btnCancel')">
+  <h1>$lang->getString('hdrCreateNewClass')</h1>
+  <o2 form method="post" name="addClass" setMethod="saveNewClass">
+    <o2 if "$model->getClassName() ne 'O2::Obj::Object'">
+      <o2 input type="hidden" name="baseClass" value="$model->getClassName()" />
+      <o2 checkboxGroup name="useGivenBaseClass" label=" ">
+        <o2 checkbox label="$lang->getString('lblUseAsBaseClass', className => $model->getClassName())" value="1" />
+      </o2:checkboxGroup>
+    </o2:if>
+    <o2 input type="text" name="name" label="$lang->getString('lblClassName')" />
+  </o2:form>
+</o2:popupDialog>
+
+
+<o2 footer />

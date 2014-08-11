@@ -1,0 +1,38 @@
+<o2 use O2Doc::Tutorial />
+
+<o2 docSection title="button">
+  Creates an input field of type button.
+  <o2 docSection title="Syntax">
+    <o2 docCode lang="o2ml">
+      <o2 button onClick="alert('You clicked');">Click here</o2:button>
+    </o2:docCode>
+    <o2 docCodeResult useModule="Html::Form" />
+    or
+    <o2 docCode lang="o2ml">
+      <o2 button href="http://vg.no" image="desktop">Click here</o2:button>
+    </o2:docCode>
+    <o2 docCodeResult useModule="Html::Form" />
+    or
+    <o2 docCode lang="o2ml">
+      <o2 button setClass="System-Documentation-Taglibs" setMethod="showDocumentation">Profile</o2:button>
+    </o2:docCode>
+    <o2 docCodeResult useModule="Html::Form" />
+  </o2:docSection>
+  <o2 docSection title="Attributes">
+    <o2 docList class="attributes">
+      <o2 docListItem class="optional">image - if the full path isn't given, the image must be in /images/buttons/. If file extension is omitted, ".gif" is assumed.</o2:docListItem>
+      <o2 docListItem class="optional">imageWidth [18]</o2:docListItem>
+      <o2 docListItem class="optional">imageHeight [18]</o2:docListItem>
+      <o2 docListItem class="optional">onClick</o2:docListItem>
+      <o2 docListItem class="optional">href  - used if onClick is not specified</o2:docListItem>
+      <o2 docListItem class="optional">title - tooltip text</o2:docListItem>
+      <o2 docListItem class="optional">class [defaultButton] - if an image is used, this class is set on a span-tag surrounding the input-tag.
+        The input tag itself gets class="defaultImgButton".</o2:docListItem>
+      <o2 docListItem class="optional"><o2 docLink type="tag" id="Html-urlMod" /> attributes</o2:docListItem>
+      <o2 docListItem class="optional content">content - the button text</o2:docListItem>
+    </o2:docList>
+  </o2:docSection>
+  <o2 docNote>
+    Use either onClick, href or urlMod attributes.
+  </o2:docNote>
+</o2:docSection>

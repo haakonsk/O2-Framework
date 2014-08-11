@@ -1,0 +1,19 @@
+<o2 use O2Doc::Tutorial />
+
+<o2 docSection title="ajaxCall">
+  Performs an immidiate call to a server-side method using an ajax call.
+  <o2 docSection title="Syntax">
+    <o2 docCode lang="o2ml">
+      <o2 ajaxCall setMethod="getWeekday" target="weekday" where="replace" onError="ignore" />
+      <span id="weekday"></span>
+    </o2:docCode>
+  </o2:docSection>
+  <o2 docNote>
+    In this case there's no need to use Ajax. We could have just sent the weekday as a parameter to display instead.
+  </o2:docNote>
+  <o2 docSection title="Attributes">
+    <o2 docList class="attributes">
+      <o2 include "$ENV->{O2ROOT}/var/doc/tutorials/taglib/Html/Ajax/ajaxAttributes.html.inc" />
+    </o2:docList>
+  </o2:docSection>
+</o2:docSection>

@@ -1,0 +1,31 @@
+$model->getClassName() is an object class
+------------------------------------
+$classComment
+
+<o2 if "$model->getClassName() ne $model->getSuperClassName()">Inherits $model->getSuperClassName()</o2:if>
+<o2 if "$inheritedFields && $inheritedFields->[0]">
+Inherited fields:
+------------------------------------
+<o2 foreach "$field in $inheritedFields" sortBy="$field->getName()">- <o2 include "includes/fieldPlain.txt" isInherited="1" /></o2:foreach>
+</o2:if><o2 if "$nativeFields && $nativeFields->[0]">
+Native fields:
+------------------------------------
+<o2 foreach "$field in $nativeFields" sortBy="$field->getName()">- <o2 include "includes/fieldPlain.txt" isInherited="0" /></o2:foreach>
+</o2:if>
+
+Methods:
+------------------------------------
+<o2 foreach "$methodName in $publicNativeMethods">- $methodName
+</o2:foreach><o2 foreach "$methodName in $inheritedMethods">- $methodName*
+</o2:foreach><o2 foreach "$methodName in $overriddenMethods">- $methodName+
+</o2:foreach>
+* Inherited
++ Overriden
+<o2 if "$model->getClassName() ne 'O2::Obj::Object'">
+NOTE! O2::Obj::Object-methods is not shown. Use 'o2doc O2::Obj::Object' to view these</o2:if>
+
+<o2 if "@{$subClasses}">Classes that inherit from $model->getClassName():
+------------------------------------<o2 foreach "$class in $subClasses">
+- $class
+</o2:foreach>
+</o2:if>

@@ -1,0 +1,33 @@
+<o2 use O2Doc::Tutorial />
+<o2 use NumberFormat locale="en_US" />
+
+<o2 docSection title="numberFormat">
+  Formats a number based on the decimal format of a locale. If not specified, the default locale is used.
+  Format, decimalSymbol and groupSymbol may also be given explicitly.
+  <o2 docSection title="Syntax">
+    <o2 docCode lang="o2ml">
+      <o2 use NumberFormat locale="en_US" />
+      
+      <o2 numberFormat>12345678.012</o2:numberFormat>
+    </o2:docCode>
+    <o2 docCodeResult useModule="NumberFormat" seeGeneratedHtmlAsDisplayed="0" />
+    or
+    <o2 docCode lang="o2ml">
+      <o2 numberFormat locale="nb_NO">12345678.012</o2:numberFormat>
+    </o2:docCode>
+    <o2 docCodeResult useModule="NumberFormat" seeGeneratedHtmlAsDisplayed="0" />
+    or
+    <o2 docCode lang="o2ml">
+      <o2 numberFormat format="0.#">1.867</o2:numberFormat>
+    </o2:docCode>
+    <o2 docCodeResult useModule="NumberFormat" seeGeneratedHtmlAsDisplayed="0" />
+  </o2:docSection>
+  <o2 docSection title="Attributes">
+    <o2 docList class="attributes">
+      <o2 docListItem class="optional">locale</o2:docListItem>
+      <o2 docListItem class="content required">content - the number to be formatted</o2:docListItem>
+      <o2 docListItem class="param">format             - The default depends on the locale. For Norwegian Bokmål as well as for American English, the default format is "#,##0.###"</o2:docListItem>
+      <o2 docListItem class="optional">aggregateTo     - If you want to add up the values from several numberFormat tags, you can specify the variable name in this parameter. Must start with a dollar sign.</o2:docListItem>
+    </o2:docList>
+  </o2:docSection>
+</o2:docSection>

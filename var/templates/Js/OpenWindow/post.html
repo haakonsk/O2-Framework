@@ -1,0 +1,30 @@
+<o2 use Html />
+
+<o2 addJs where="pre">
+  function postUrl() {
+    var url = window.opener.o2.openWindow.getUrlToPost();
+    
+    var matches = url.match(/^(.+)[?](.+)$/);
+    var script      = matches[1];
+    var queryString = matches[2];
+    
+    var form = document.forms.openwindowPostForm;
+    form.action = script;
+    var params = queryString.split("&");
+    var html = "";
+    for (var i = 0; i < params.length; i++) {
+      var keyAndValue = params[i].split("=", 2);
+      var key   = keyAndValue[0];
+      var value = keyAndValue[1];
+      html += "<input type='hidden' name='" + key + "' value='" + value + "'>";
+    }
+    form.innerHTML += html;
+    form.submit();
+  }
+</o2:addJs>
+
+<o2 header onLoad="postUrl()" />
+
+<form method="post" name="openwindowPostForm"></form>
+
+<o2 footer />

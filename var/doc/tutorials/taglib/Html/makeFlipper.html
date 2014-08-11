@@ -1,0 +1,17 @@
+<o2 use O2Doc::Tutorial />
+
+<o2 docSection title="MakeFlipper">
+  Creates a variable that changes value each time it is accessed.
+  <o2 docSection title="Syntax">
+    <o2 docCode lang="o2ml">
+      <o2 makeFlipper var="bgColor" values="#444444, #888888, #bbbbbb" />
+    </o2:docCode>
+    The first time \$bgColor is used, the value will be #444444, the next time #888888, then #bbbbbb, then #444444 and so on.
+  </o2:docSection>
+  <o2 docSection title="Attributes">
+    <o2 docList class="attributes">
+      <o2 docListItem class="required">var</o2:docListItem>
+      <o2 docListItem class="required">values</o2:docListItem>
+    </o2:docList>
+  </o2:docSection>
+</o2:docSection>

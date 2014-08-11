@@ -1,0 +1,26 @@
+body, td {
+  color           : #333;
+  font-family     : Verdana, Arial, Geneva, Helvetica, sans-serif;
+  font-size       : 11px;
+  text-decoration : none;
+  margin          : 0;
+}
+
+.error {
+  color : red;
+}
+.info {
+  color : green;
+}
+
+.popupBox {
+  display               : none;
+  background-color      : white;
+  position              : absolute;
+  left                  : 400px;
+  top                   : 150px;
+  width                 : 450px;
+  border                : 1px solid black;
+  -moz-border-radius    : 5px;
+  -webkit-border-radius : 7px;
+}

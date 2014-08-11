@@ -1,0 +1,47 @@
+.o2ComboBox {
+  position : relative;
+}
+.o2ComboBoxLabel {
+  width       : 80px;
+  display     : block;
+  float       : left;
+  line-height : 30px;
+  margin      : 0;
+}
+input.comboBox {
+  width              : 194px;
+  border             : 1px solid #ccc;
+  border-right-width : 0;
+  padding            : 4px 3px;
+  height             : 20px;
+  line-height        : 20px;
+}
+.o2ComboBoxList {
+  position         : absolute;
+  left             : 80px;
+  top              : 30px;
+  width            : 229px;
+  margin           : 0;
+  padding          : 0;
+  list-style       : none;
+  border           : 1px solid #ccc;
+  border-top-width : 0;
+}
+.o2ComboBoxList li {
+  padding : 4px 3px;
+}
+.o2ComboBoxList li:hover {
+  background : #eee;
+}
+.comboBoxToggleButton {
+  text-indent : -9999px;
+  background  : #ccc url("/images/comboBox/expandDown.png") no-repeat center center;
+  border      : 1px solid #ccc;
+  height      : 30px;
+  width       : 30px;
+  position    : relative;
+  top         : 1px;
+}
+.comboBoxToggleButton:hover {
+  cursor : pointer;
+}

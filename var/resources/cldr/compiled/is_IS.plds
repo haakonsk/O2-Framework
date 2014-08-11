@@ -1,0 +1,2472 @@
+{
+  'territory' => 'IS',
+  'language' => 'is',
+  'number' => {
+                'percentFormat' => {
+                                     'percentFormatLength' => {
+                                                              'standard' => '#,##0%'
+                                                            }
+                                   },
+                'measurement' => {},
+                'symbols' => {
+                               'infinity' => "\x{221e}",
+                               'nan' => 'NaN',
+                               'plusSign' => '+',
+                               'superscriptingExponent' => "×",
+                               'exponential' => 'E',
+                               'group' => '.',
+                               'percentSign' => '%',
+                               'decimal' => ',',
+                               'perMille' => "\x{2030}",
+                               'alias' => '',
+                               'minusSign' => '-',
+                               'list' => ';'
+                             },
+                'scientificFormat' => {
+                                        'scientificFormatLength' => {
+                                                                    'standard' => '#E0'
+                                                                  }
+                                      },
+                'decimalFormat' => {
+                                     'decimalFormatLength' => {
+                                                              'short' => "0 þ'.'0 þ'.'00 þ'.'00 þ'.'000 þ'.'000 þ'.'0 m'.'0 m'.'00 m'.'00 m'.'000 m'.'000 m'.'0 ma'.'0 ma'.'00 ma'.'00 ma'.'000 ma'.'000 ma'.'0 bn0 bn00 bn00 bn000 bn000 bn",
+                                                              'standard' => '#,##0.###',
+                                                              'long' => "0 þúsund0 þúsund00 þúsund00 þúsund000 þúsund000 þúsund0 milljón0 milljónir00 milljónir00 milljónir000 milljón000 milljónir0 milljarður0 milljarðar00 milljarðar00 milljarðar000 milljarðar000 milljarðar0 billjón0 billjónir00 billjónir00 billjónir000 billjónir000 billjónir"
+                                                            }
+                                   },
+                'currencyFormat' => {
+                                      'currencyFormatLength' => {
+                                                                'standard' => "#,##0.00 ¤"
+                                                              }
+                                    },
+                'currencies' => {
+                                  'YUM' => {
+                                           'displayName' => "Júgóslavneskur denari"
+                                         },
+                                  'BZD' => {
+                                           'symbol' => '$',
+                                           'displayName' => "belískir dalir"
+                                         },
+                                  'YER' => {
+                                           'displayName' => "jemensk ríöl"
+                                         },
+                                  'MXP' => {
+                                           'displayName' => "Mexíkóskur silfurpesi (1861\x{2013}1992)"
+                                         },
+                                  'NLG' => {
+                                           'displayName' => 'Hollenskt gyllini'
+                                         },
+                                  'SLL' => {
+                                           'displayName' => "síerraleónskar ljónur"
+                                         },
+                                  'ERN' => {
+                                           'displayName' => "erítreskar nökfur"
+                                         },
+                                  'ILP' => {
+                                           'displayName' => "Ísraelskt pund"
+                                         },
+                                  'FRF' => {
+                                           'displayName' => 'Franskur franki'
+                                         },
+                                  'NGN' => {
+                                           'symbol' => "\x{20a6}",
+                                           'displayName' => "nígerískar nærur"
+                                         },
+                                  'CRC' => {
+                                           'symbol' => "\x{20a1}",
+                                           'displayName' => "kostarísk kólon"
+                                         },
+                                  'TJR' => {
+                                           'displayName' => "Tadsjiksk rúbla"
+                                         },
+                                  'VEF' => {
+                                           'displayName' => "venesúelskir bólívarar"
+                                         },
+                                  'LAK' => {
+                                           'symbol' => "\x{20ad}",
+                                           'displayName' => 'laosk kip'
+                                         },
+                                  'CLP' => {
+                                           'symbol' => '$',
+                                           'displayName' => "síleskir pesar"
+                                         },
+                                  'DZD' => {
+                                           'displayName' => "alsírskir denarar"
+                                         },
+                                  'CUC' => {
+                                           'displayName' => "kúbverskir skiptanlegir pesar"
+                                         },
+                                  'SZL' => {
+                                           'displayName' => "svasílenskir lílangenar"
+                                         },
+                                  'TPE' => {
+                                           'displayName' => "Tímorskur skúti"
+                                         },
+                                  'MOP' => {
+                                           'displayName' => "Makaópatökur"
+                                         },
+                                  'BYR' => {
+                                           'symbol' => "\x{440}.",
+                                           'displayName' => "hvítrússneskar rúblur"
+                                         },
+                                  'MUR' => {
+                                           'displayName' => "máritískar rúpíur"
+                                         },
+                                  'WST' => {
+                                           'displayName' => "Samóatölur"
+                                         },
+                                  'SUR' => {
+                                           'displayName' => 'Soviet Rouble'
+                                         },
+                                  'LRD' => {
+                                           'symbol' => '$',
+                                           'displayName' => "líberískir dalir"
+                                         },
+                                  'MMK' => {
+                                           'displayName' => "mjanmörsk kjöt"
+                                         },
+                                  'KGS' => {
+                                           'displayName' => 'kirgisk som'
+                                         },
+                                  'IDR' => {
+                                           'displayName' => "indónesískar rúpíur"
+                                         },
+                                  'PYG' => {
+                                           'symbol' => "\x{20b2}",
+                                           'displayName' => "paragvæsk gvaraní"
+                                         },
+                                  'MTP' => {
+                                           'displayName' => 'Maltneskt pund'
+                                         },
+                                  'GTQ' => {
+                                           'displayName' => "gvatemölsk kvesöl"
+                                         },
+                                  'CAD' => {
+                                           'symbol' => 'CAD',
+                                           'displayName' => "kanadískir dalir"
+                                         },
+                                  'AWG' => {
+                                           'displayName' => "arúbanskar flórínur"
+                                         },
+                                  'PKR' => {
+                                           'displayName' => "pakistanskar rúpíur"
+                                         },
+                                  'TTD' => {
+                                           'symbol' => '$',
+                                           'displayName' => "Trínidad og Tóbagó-dalir"
+                                         },
+                                  'RUR' => {
+                                           'symbol' => "\x{440}.",
+                                           'displayName' => "Rússnesk rúbla (1991\x{2013}1998)"
+                                         },
+                                  'UZS' => {
+                                           'displayName' => "úsbeksk súm"
+                                         },
+                                  'XCD' => {
+                                           'symbol' => 'EC$',
+                                           'displayName' => "austurkarabískir dalir"
+                                         },
+                                  'VUV' => {
+                                           'displayName' => "vanúatúsk vatú"
+                                         },
+                                  'XOF' => {
+                                           'symbol' => 'CFA',
+                                           'displayName' => "vesturafrískir frankar"
+                                         },
+                                  'ROL' => {
+                                           'displayName' => "Rúmenskt lei (1952\x{2013}2006)"
+                                         },
+                                  'KMF' => {
+                                           'displayName' => "kómoreyskir frankar"
+                                         },
+                                  'AZN' => {
+                                           'displayName' => "asersk manöt"
+                                         },
+                                  'XPD' => {
+                                           'displayName' => "unse palladín"
+                                         },
+                                  'SIT' => {
+                                           'displayName' => "Slóvenskur dalur"
+                                         },
+                                  'CSK' => {
+                                           'displayName' => "Tékknesk króna, eldri"
+                                         },
+                                  'VEB' => {
+                                           'displayName' => "Bolívar í Venesúela (1871\x{2013}2008)"
+                                         },
+                                  'ANG' => {
+                                           'displayName' => 'hollensk Antillugyllini'
+                                         },
+                                  'MNT' => {
+                                           'symbol' => "\x{20ae}",
+                                           'displayName' => "mongólskir túríkar"
+                                         },
+                                  'LBP' => {
+                                           'displayName' => "líbönsk pund"
+                                         },
+                                  'KES' => {
+                                           'displayName' => "kenískir skildingar"
+                                         },
+                                  'BTN' => {
+                                           'displayName' => "bútönsk núltrum"
+                                         },
+                                  'GBP' => {
+                                           'symbol' => "£",
+                                           'displayName' => 'sterlingspund'
+                                         },
+                                  'CDF' => {
+                                           'displayName' => "kongóskir frankar"
+                                         },
+                                  'CLF' => {
+                                           'displayName' => 'Chilean Unidades de Fomento'
+                                         },
+                                  'SEK' => {
+                                           'displayName' => "sænskar krónur"
+                                         },
+                                  'AFN' => {
+                                           'displayName' => 'afganar'
+                                         },
+                                  'KZT' => {
+                                           'symbol' => "\x{20b8}",
+                                           'displayName' => "kasöksk tengi"
+                                         },
+                                  'ZMK' => {
+                                           'displayName' => "Zambian Kwacha (1968\x{2013}2012)"
+                                         },
+                                  'SKK' => {
+                                           'displayName' => "Slóvakísk króna"
+                                         },
+                                  'MLF' => {
+                                           'displayName' => "Malískur franki"
+                                         },
+                                  'DKK' => {
+                                           'displayName' => "danskar krónur"
+                                         },
+                                  'MXV' => {
+                                           'displayName' => "Mexíkóskur pesi, UDI"
+                                         },
+                                  'CYP' => {
+                                           'displayName' => "Kýpverskt pund"
+                                         },
+                                  'ZAL' => {
+                                           'displayName' => "Rand (viðskipta)"
+                                         },
+                                  'TMM' => {
+                                           'displayName' => "Túrkmenskt manat (1993\x{2013}2009)"
+                                         },
+                                  'AMD' => {
+                                           'displayName' => "armensk drömm"
+                                         },
+                                  'SCR' => {
+                                           'displayName' => "Seychellesrúpíur"
+                                         },
+                                  'FJD' => {
+                                           'symbol' => '$',
+                                           'displayName' => "fídjeyskir dalir"
+                                         },
+                                  'SRG' => {
+                                           'displayName' => 'Suriname Guilder'
+                                         },
+                                  'SHP' => {
+                                           'displayName' => 'helensk pund'
+                                         },
+                                  'ALL' => {
+                                           'displayName' => "albönsk lek"
+                                         },
+                                  'DDM' => {
+                                           'displayName' => "Austurþýskt mark"
+                                         },
+                                  'TOP' => {
+                                           'displayName' => "Tongapöngur"
+                                         },
+                                  'NIC' => {
+                                           'displayName' => "Níkaragskar kordóvur (1988\x{2013}1991)"
+                                         },
+                                  'ZMW' => {
+                                           'displayName' => "sambískar kvökur"
+                                         },
+                                  'UGX' => {
+                                           'displayName' => "úgandskir skildingur"
+                                         },
+                                  'OMR' => {
+                                           'displayName' => "ómönsk ríöl"
+                                         },
+                                  'DJF' => {
+                                           'displayName' => "djíbútískir frankar"
+                                         },
+                                  'BND' => {
+                                           'symbol' => '$',
+                                           'displayName' => "brúneiskir dalir"
+                                         },
+                                  'TND' => {
+                                           'displayName' => "túniskir denarar"
+                                         },
+                                  'PTE' => {
+                                           'displayName' => "Portúgalskur skúti"
+                                         },
+                                  'IEP' => {
+                                           'displayName' => "Írskt pund"
+                                         },
+                                  'SBD' => {
+                                           'symbol' => '$',
+                                           'displayName' => "salómonseyskir dalir"
+                                         },
+                                  'GHS' => {
+                                           'symbol' => "\x{20b5}",
+                                           'displayName' => 'ganverskir sedar'
+                                         },
+                                  'GNF' => {
+                                           'displayName' => "Gíneufrankar"
+                                         },
+                                  'SDP' => {
+                                           'displayName' => "Súdanskt pund (1957\x{2013}1998)"
+                                         },
+                                  'BOB' => {
+                                           'displayName' => "bólivíanar"
+                                         },
+                                  'CVE' => {
+                                           'displayName' => "grænhöfðeyskir skútar"
+                                         },
+                                  'GMD' => {
+                                           'displayName' => "gambískir dalasar"
+                                         },
+                                  'ARP' => {
+                                           'displayName' => "Argentískur pesi (1983\x{2013}1985)"
+                                         },
+                                  'ARS' => {
+                                           'symbol' => '$',
+                                           'displayName' => "argentínskir pesar"
+                                         },
+                                  'ZWD' => {
+                                           'displayName' => 'Simbabveskur dalur'
+                                         },
+                                  'USN' => {
+                                           'displayName' => "Bandaríkjadalur (næsta dag)"
+                                         },
+                                  'MWK' => {
+                                           'displayName' => "malavískar kvökur"
+                                         },
+                                  'BDT' => {
+                                           'symbol' => "\x{9f3}",
+                                           'displayName' => "bangladesskar tökur"
+                                         },
+                                  'GRD' => {
+                                           'displayName' => 'Drakma'
+                                         },
+                                  'KWD' => {
+                                           'displayName' => "kúveiskir denarar"
+                                         },
+                                  'EUR' => {
+                                           'symbol' => "\x{20ac}",
+                                           'displayName' => 'evrur'
+                                         },
+                                  'TRL' => {
+                                           'displayName' => "Tyrknesk líra (1922\x{2013}2005)"
+                                         },
+                                  'CHF' => {
+                                           'displayName' => 'svissneskir frankar'
+                                         },
+                                  'XAG' => {
+                                           'displayName' => 'unse silfur'
+                                         },
+                                  'SRD' => {
+                                           'symbol' => '$',
+                                           'displayName' => "Súrínamdalir"
+                                         },
+                                  'ADP' => {
+                                           'displayName' => 'Andorrskur peseti'
+                                         },
+                                  'DOP' => {
+                                           'symbol' => '$',
+                                           'displayName' => "dóminískir pesar"
+                                         },
+                                  'PEN' => {
+                                           'displayName' => "perúsk sól"
+                                         },
+                                  'KPW' => {
+                                           'displayName' => "norðurkóresk vonn"
+                                         },
+                                  'SVC' => {
+                                           'displayName' => 'El Salvador Colon'
+                                         },
+                                  'SGD' => {
+                                           'symbol' => '$',
+                                           'displayName' => "singapúrskir dalir"
+                                         },
+                                  'BOP' => {
+                                           'displayName' => "Bólivískur pesi"
+                                         },
+                                  'TWD' => {
+                                           'symbol' => 'NT$',
+                                           'displayName' => "taívanskir dalir"
+                                         },
+                                  'USD' => {
+                                           'symbol' => 'USD',
+                                           'displayName' => "Bandaríkjadalir"
+                                         },
+                                  'MAD' => {
+                                           'displayName' => "marokkósk dírhöm"
+                                         },
+                                  'BGN' => {
+                                           'displayName' => "búlgörsk lef"
+                                         },
+                                  'XXX' => {
+                                           'displayName' => "(óþekktur gjaldmiðill)"
+                                         },
+                                  'SAR' => {
+                                           'displayName' => "sádiarabísk ríöl"
+                                         },
+                                  'SSP' => {
+                                           'symbol' => "£",
+                                           'displayName' => "suðursúdönsk pund"
+                                         },
+                                  'AUD' => {
+                                           'symbol' => '$',
+                                           'displayName' => "ástralskir dalir"
+                                         },
+                                  'KYD' => {
+                                           'symbol' => '$',
+                                           'displayName' => 'caymaneyskir dalir'
+                                         },
+                                  'KRW' => {
+                                           'symbol' => "\x{20a9}",
+                                           'displayName' => "suðurkóresk vonn"
+                                         },
+                                  'GWE' => {
+                                           'displayName' => "Portúgalskur, gíneskur skúti"
+                                         },
+                                  'GIP' => {
+                                           'symbol' => "£",
+                                           'displayName' => "Gíbraltarspund"
+                                         },
+                                  'TRY' => {
+                                           'symbol' => 'TL',
+                                           'displayName' => "tyrkneskar lírur"
+                                         },
+                                  'XAU' => {
+                                           'displayName' => 'unse gull'
+                                         },
+                                  'NAD' => {
+                                           'symbol' => '$',
+                                           'displayName' => "namibískir dalir"
+                                         },
+                                  'CZK' => {
+                                           'displayName' => "tékkneskar krónur"
+                                         },
+                                  'JMD' => {
+                                           'symbol' => '$',
+                                           'displayName' => "jamaískir dalir"
+                                         },
+                                  'BSD' => {
+                                           'symbol' => '$',
+                                           'displayName' => 'Bahamadalir'
+                                         },
+                                  'MAF' => {
+                                           'displayName' => "Marokkóskur franki"
+                                         },
+                                  'LVR' => {
+                                           'displayName' => "Lettnesk rúbla"
+                                         },
+                                  'MXN' => {
+                                           'symbol' => 'MXN',
+                                           'displayName' => "mexíkóskir pesar"
+                                         },
+                                  'UYU' => {
+                                           'symbol' => '$',
+                                           'displayName' => "úrúgvæskir pesar"
+                                         },
+                                  'GYD' => {
+                                           'symbol' => '$',
+                                           'displayName' => "gvæjanskir dalir"
+                                         },
+                                  'BWP' => {
+                                           'displayName' => "botsvanskar púlur"
+                                         },
+                                  'LYD' => {
+                                           'displayName' => "líbískir denarar"
+                                         },
+                                  'THB' => {
+                                           'symbol' => "\x{e3f}",
+                                           'displayName' => "taílensk böt"
+                                         },
+                                  'EGP' => {
+                                           'displayName' => 'egypsk pund'
+                                         },
+                                  'SDG' => {
+                                           'displayName' => "súdönsk pund"
+                                         },
+                                  'MKD' => {
+                                           'displayName' => "makedónskir denarar"
+                                         },
+                                  'AED' => {
+                                           'displayName' => "arabísk dírhöm"
+                                         },
+                                  'JPY' => {
+                                           'symbol' => "JP¥",
+                                           'displayName' => "japönsk jen"
+                                         },
+                                  'JOD' => {
+                                           'displayName' => "jórdanskir denarar"
+                                         },
+                                  'ZAR' => {
+                                           'displayName' => "suðurafrísk rönd"
+                                         },
+                                  'HRK' => {
+                                           'displayName' => "króatískar kúnur"
+                                         },
+                                  'RWF' => {
+                                           'displayName' => "rúandskir frankar"
+                                         },
+                                  'AOA' => {
+                                           'displayName' => "angólskar kvönsur"
+                                         },
+                                  'CUP' => {
+                                           'symbol' => '$',
+                                           'displayName' => "kúbverskir pesar"
+                                         },
+                                  'XFO' => {
+                                           'displayName' => 'Franskur gullfranki'
+                                         },
+                                  'PGK' => {
+                                           'displayName' => "papúskar kínur"
+                                         },
+                                  'BBD' => {
+                                           'symbol' => '$',
+                                           'displayName' => 'barbadoskir dalir'
+                                         },
+                                  'RON' => {
+                                           'displayName' => "rúmensk lei"
+                                         },
+                                  'LKR' => {
+                                           'displayName' => "srílanskar rúpíur"
+                                         },
+                                  'BEF' => {
+                                           'displayName' => "Belgískur franki"
+                                         },
+                                  'PLN' => {
+                                           'displayName' => "pólsk slot"
+                                         },
+                                  'TJS' => {
+                                           'displayName' => "tadsjikskir sómónar"
+                                         },
+                                  'IQD' => {
+                                           'displayName' => "írakskir denarar"
+                                         },
+                                  'MDL' => {
+                                           'displayName' => "moldavísk lei"
+                                         },
+                                  'MYR' => {
+                                           'displayName' => "malasísk ringit"
+                                         },
+                                  'FIM' => {
+                                           'displayName' => 'Finnskt mark'
+                                         },
+                                  'SDD' => {
+                                           'displayName' => "Súdanskur denari"
+                                         },
+                                  'CNY' => {
+                                           'symbol' => "CN¥",
+                                           'displayName' => "kínversk júön"
+                                         },
+                                  'LVL' => {
+                                           'displayName' => "lettnesk löt"
+                                         },
+                                  'ITL' => {
+                                           'displayName' => "Ítölsk líra"
+                                         },
+                                  'INR' => {
+                                           'symbol' => "\x{20b9}",
+                                           'displayName' => "indverskar rúpíur"
+                                         },
+                                  'FKP' => {
+                                           'displayName' => 'falklensk pund'
+                                         },
+                                  'NIO' => {
+                                           'displayName' => "níkaragskar kordóvur"
+                                         },
+                                  'PHP' => {
+                                           'symbol' => "\x{20b1}",
+                                           'displayName' => 'filippseyskir pesar'
+                                         },
+                                  'YDD' => {
+                                           'displayName' => 'Jemenskur denari'
+                                         },
+                                  'HNL' => {
+                                           'displayName' => "hondúrskar lempírur"
+                                         },
+                                  'NZD' => {
+                                           'symbol' => '$',
+                                           'displayName' => "nýsjálenskir dalir"
+                                         },
+                                  'HKD' => {
+                                           'symbol' => '$',
+                                           'displayName' => 'Hong Kong-dalir'
+                                         },
+                                  'BRL' => {
+                                           'symbol' => 'R$',
+                                           'displayName' => "brasilísk ríöl"
+                                         },
+                                  'MTL' => {
+                                           'displayName' => "Meltnesk líra"
+                                         },
+                                  'USS' => {
+                                           'displayName' => "Bandaríkjadalur (sama dag)"
+                                         },
+                                  'ATS' => {
+                                           'displayName' => "Austurrískur skildingur"
+                                         },
+                                  'BUK' => {
+                                           'displayName' => "Búrmverskt kjat"
+                                         },
+                                  'RSD' => {
+                                           'displayName' => 'serbneskir denarar'
+                                         },
+                                  'SOS' => {
+                                           'displayName' => "sómalískir skildingar"
+                                         },
+                                  'EEK' => {
+                                           'displayName' => "eistnesku krónur"
+                                         },
+                                  'MZN' => {
+                                           'displayName' => "mósambísk metiköl"
+                                         },
+                                  'XFU' => {
+                                           'displayName' => 'Franskur franki, UIC'
+                                         },
+                                  'ARA' => {
+                                           'displayName' => 'Argentine Austral'
+                                         },
+                                  'NOK' => {
+                                           'displayName' => "norskar krónur"
+                                         },
+                                  'LTT' => {
+                                           'displayName' => 'Lithuanian Talonas'
+                                         },
+                                  'GEL' => {
+                                           'displayName' => "georgískir larar"
+                                         },
+                                  'ISK' => {
+                                           'symbol' => 'kr',
+                                           'displayName' => "íslenskar krónur"
+                                         },
+                                  'ILS' => {
+                                           'symbol' => "\x{20aa}",
+                                           'displayName' => "nýir ísraelskir siklar"
+                                         },
+                                  'LSL' => {
+                                           'displayName' => 'Lesotho Loti'
+                                         },
+                                  'ESP' => {
+                                           'symbol' => "\x{20a7}",
+                                           'displayName' => "Spænskur peseti"
+                                         },
+                                  'HUF' => {
+                                           'displayName' => "ungverskar fórintur"
+                                         },
+                                  'UAH' => {
+                                           'symbol' => "\x{20b4}",
+                                           'displayName' => "úkraínskar hrinjur"
+                                         },
+                                  'LUF' => {
+                                           'displayName' => "Lúxemborgarfranki"
+                                         },
+                                  'MZE' => {
+                                           'displayName' => "Mósambískur skúti"
+                                         },
+                                  'RUB' => {
+                                           'displayName' => "rússneskar rúblur"
+                                         },
+                                  'MGA' => {
+                                           'displayName' => 'Madagaskararjarar'
+                                         },
+                                  'BMD' => {
+                                           'symbol' => '$',
+                                           'displayName' => "Bermúdadalir"
+                                         },
+                                  'IRR' => {
+                                           'displayName' => "írönsk ríöl"
+                                         },
+                                  'BGL' => {
+                                           'displayName' => 'Lef'
+                                         },
+                                  'QAR' => {
+                                           'displayName' => "katörsk ríöl"
+                                         },
+                                  'MVR' => {
+                                           'displayName' => "maldíveyskar rúpíur"
+                                         },
+                                  'UAK' => {
+                                           'displayName' => 'Ukrainian Karbovanetz'
+                                         },
+                                  'MRO' => {
+                                           'displayName' => "máritanskar úgíur"
+                                         },
+                                  'VND' => {
+                                           'symbol' => "\x{20ab}",
+                                           'displayName' => "víetnömsk dong"
+                                         },
+                                  'ECS' => {
+                                           'displayName' => 'Ecuador Sucre'
+                                         },
+                                  'PLZ' => {
+                                           'displayName' => 'Slot'
+                                         },
+                                  'BOV' => {
+                                           'displayName' => 'Bolivian Mvdol'
+                                         },
+                                  'NPR' => {
+                                           'displayName' => "nepalskar rúpíur"
+                                         },
+                                  'COP' => {
+                                           'symbol' => '$',
+                                           'displayName' => "kólumbískir pesar"
+                                         },
+                                  'TZS' => {
+                                           'displayName' => "tansanískir skildingar"
+                                         },
+                                  'BIF' => {
+                                           'displayName' => "búrúndískir frankar"
+                                         },
+                                  'MGF' => {
+                                           'displayName' => 'Madagaskur franki'
+                                         },
+                                  'XPT' => {
+                                           'displayName' => "unse platína"
+                                         },
+                                  'SYP' => {
+                                           'displayName' => "sýrlensk pund"
+                                         },
+                                  'KHR' => {
+                                           'symbol' => "\x{17db}",
+                                           'displayName' => "kambódísk ríöl"
+                                         },
+                                  'BHD' => {
+                                           'displayName' => 'bareinskir denarar'
+                                         },
+                                  'DEM' => {
+                                           'displayName' => "Þýskt mark"
+                                         },
+                                  'HTG' => {
+                                           'displayName' => "haítískir gúrdar"
+                                         },
+                                  'XDR' => {
+                                           'displayName' => "Sérstök dráttarréttindi"
+                                         },
+                                  'STD' => {
+                                           'displayName' => "Saó Tóme og Prinsípe-dóbrur"
+                                         },
+                                  'PAB' => {
+                                           'displayName' => "balbóar"
+                                         },
+                                  'XAF' => {
+                                           'symbol' => 'FCFA',
+                                           'displayName' => "miðafrískir frankar"
+                                         },
+                                  'BAM' => {
+                                           'displayName' => "skiptanleg Bosníu og Hersegóvínu-mörk"
+                                         },
+                                  'LTL' => {
+                                           'displayName' => "litháísk lít"
+                                         },
+                                  'TMT' => {
+                                           'displayName' => "túrkmensk manöt"
+                                         },
+                                  'ETB' => {
+                                           'displayName' => "eþíópísk birr"
+                                         },
+                                  'XPF' => {
+                                           'symbol' => 'CFPF',
+                                           'displayName' => "pólinesískir frankar"
+                                         }
+                                }
+              },
+  'locale' => 'is_IS',
+  'characters' => {
+                    'word-initial' => "\x{2026} {0}",
+                    'standard' => '?',
+                    'word-medial' => "{0} \x{2026} {1}",
+                    'index' => "[A Á B C D Ð E É F G H I Í J K L M N O Ó P Q R S T U Ú V W X Y Ý Z Þ Æ Ö]",
+                    'medial' => "{0}\x{2026}{1}",
+                    'word-final' => "{0} \x{2026}",
+                    'final' => "{0}\x{2026}",
+                    'auxiliary' => '[c q w x z]',
+                    'initial' => "\x{2026}{0}",
+                    'punctuation' => '[\\- , ; \\: ! ? . ( ) \\[ \\] \\{ \\}]'
+                  },
+  'calendar' => {
+                  'calendarType' => 'gregorian',
+                  'timeFormat' => {
+                                    'short' => 'HH:mm',
+                                    'pm' => '',
+                                    'am' => '',
+                                    'medium' => 'HH:mm:ss',
+                                    'long' => 'HH:mm:ss z',
+                                    'full' => 'HH:mm:ss zzzz'
+                                  },
+                  'timeZones' => {
+                                   'regionFormat' => "{0} (staðaltími)",
+                                   'gmtFormat' => 'GMT{0}',
+                                   'hourFormat' => '+HH:mm;-HH:mm',
+                                   'metazone' => "
+				
+					Tími í Yekaterinburg
+					Staðaltími í Yekaterinborg
+					Sumartími í Yekaterinburg
+				
+			",
+                                   'zones' => {
+                                                'Antarctica/DumontDUrville' => {
+                                                                               'type' => 'Antarctica/DumontDUrville',
+                                                                               'exemplarCity' => "Dumont d\x{2019}Urville"
+                                                                             },
+                                                'Europe/Athens' => {
+                                                                   'type' => 'Europe/Athens',
+                                                                   'exemplarCity' => "Aþena"
+                                                                 },
+                                                'America/Indiana/Vincennes' => {
+                                                                               'type' => 'America/Indiana/Vincennes',
+                                                                               'exemplarCity' => 'Vincennes, Indiana'
+                                                                             },
+                                                'Asia/Tokyo' => {
+                                                                'type' => 'Asia/Tokyo',
+                                                                'exemplarCity' => "Tókýó"
+                                                              },
+                                                'Indian/Christmas' => {
+                                                                      'type' => 'Indian/Christmas',
+                                                                      'exemplarCity' => "Jólaey"
+                                                                    },
+                                                'Europe/Belgrade' => {
+                                                                     'type' => 'Europe/Belgrade',
+                                                                     'exemplarCity' => 'Belgrad'
+                                                                   },
+                                                'America/Asuncion' => {
+                                                                      'type' => 'America/Asuncion',
+                                                                      'exemplarCity' => "Asunción"
+                                                                    },
+                                                'Asia/Dhaka' => {
+                                                                'type' => 'Asia/Dhaka',
+                                                                'exemplarCity' => 'Dakka'
+                                                              },
+                                                'Asia/Damascus' => {
+                                                                   'type' => 'Asia/Damascus',
+                                                                   'exemplarCity' => 'Damaskus'
+                                                                 },
+                                                'America/Indiana/Marengo' => {
+                                                                             'type' => 'America/Indiana/Marengo',
+                                                                             'exemplarCity' => 'Marengo, Indiana'
+                                                                           },
+                                                'America/Indiana/Petersburg' => {
+                                                                                'type' => 'America/Indiana/Petersburg',
+                                                                                'exemplarCity' => 'Petersburg, Indiana'
+                                                                              },
+                                                'Asia/Qatar' => {
+                                                                'type' => 'Asia/Qatar',
+                                                                'exemplarCity' => 'Katar'
+                                                              },
+                                                'Europe/Sofia' => {
+                                                                  'type' => 'Europe/Sofia',
+                                                                  'exemplarCity' => "Sófía"
+                                                                },
+                                                'America/Mexico_City' => {
+                                                                         'type' => 'America/Mexico_City',
+                                                                         'exemplarCity' => "Mexíkóborg"
+                                                                       },
+                                                'Atlantic/St_Helena' => {
+                                                                        'type' => 'Atlantic/St_Helena',
+                                                                        'exemplarCity' => 'Sankti Helena'
+                                                                      },
+                                                'Atlantic/Azores' => {
+                                                                     'type' => 'Atlantic/Azores',
+                                                                     'exemplarCity' => 'Azoreyjar'
+                                                                   },
+                                                'Asia/Baghdad' => {
+                                                                  'type' => 'Asia/Baghdad',
+                                                                  'exemplarCity' => 'Bagdad'
+                                                                },
+                                                'Asia/Kabul' => {
+                                                                'type' => 'Asia/Kabul',
+                                                                'exemplarCity' => "Kabúl"
+                                                              },
+                                                'America/Coral_Harbour' => {
+                                                                           'type' => 'America/Coral_Harbour',
+                                                                           'exemplarCity' => 'Atikokan'
+                                                                         },
+                                                'Asia/Beirut' => {
+                                                                 'type' => 'Asia/Beirut',
+                                                                 'exemplarCity' => "Beirút"
+                                                               },
+                                                'Atlantic/Faeroe' => {
+                                                                     'type' => 'Atlantic/Faeroe',
+                                                                     'exemplarCity' => "Færeyjar"
+                                                                   },
+                                                'America/Godthab' => {
+                                                                     'type' => 'America/Godthab',
+                                                                     'exemplarCity' => 'Nuuk'
+                                                                   },
+                                                'America/St_Kitts' => {
+                                                                      'type' => 'America/St_Kitts',
+                                                                      'exemplarCity' => "Ankti Kristófer"
+                                                                    },
+                                                'Africa/Bissau' => {
+                                                                   'type' => 'Africa/Bissau',
+                                                                   'exemplarCity' => "Bissá"
+                                                                 },
+                                                'America/Scoresbysund' => {
+                                                                          'type' => 'America/Scoresbysund',
+                                                                          'exemplarCity' => 'Ittoqqortoormiit'
+                                                                        },
+                                                'Europe/London' => {
+                                                                   'long' => {
+                                                                             'daylight' => "Sumartími í Bretlandi"
+                                                                           },
+                                                                   'type' => 'Europe/London',
+                                                                   'exemplarCity' => "Lundúnir"
+                                                                 },
+                                                'America/Anguilla' => {
+                                                                      'type' => 'America/Anguilla',
+                                                                      'exemplarCity' => 'Angvilla'
+                                                                    },
+                                                'Asia/Kuala_Lumpur' => {
+                                                                       'type' => 'Asia/Kuala_Lumpur',
+                                                                       'exemplarCity' => "Kúala Lúmpúr"
+                                                                     },
+                                                'Asia/Baku' => {
+                                                               'type' => 'Asia/Baku',
+                                                               'exemplarCity' => "Bakú"
+                                                             },
+                                                'America/St_Johns' => {
+                                                                      'type' => 'America/St_Johns',
+                                                                      'exemplarCity' => "St. John\x{2019}s"
+                                                                    },
+                                                'Pacific/Guam' => {
+                                                                  'type' => 'Pacific/Guam',
+                                                                  'exemplarCity' => 'Gvam'
+                                                                },
+                                                'Europe/Rome' => {
+                                                                 'type' => 'Europe/Rome',
+                                                                 'exemplarCity' => "Róm"
+                                                               },
+                                                'Europe/Budapest' => {
+                                                                     'type' => 'Europe/Budapest',
+                                                                     'exemplarCity' => "Búdapest"
+                                                                   },
+                                                'America/Costa_Rica' => {
+                                                                        'type' => 'America/Costa_Rica',
+                                                                        'exemplarCity' => "Kostaríka"
+                                                                      },
+                                                'Europe/Oslo' => {
+                                                                 'type' => 'Europe/Oslo',
+                                                                 'exemplarCity' => "Osló"
+                                                               },
+                                                'Europe/Copenhagen' => {
+                                                                       'type' => 'Europe/Copenhagen',
+                                                                       'exemplarCity' => "Kaupmannahöfn"
+                                                                     },
+                                                'America/Indiana/Knox' => {
+                                                                          'type' => 'America/Indiana/Knox',
+                                                                          'exemplarCity' => 'Knox, Indiana'
+                                                                        },
+                                                'Africa/Tunis' => {
+                                                                  'type' => 'Africa/Tunis',
+                                                                  'exemplarCity' => "Túnisborg"
+                                                                },
+                                                'Asia/Bahrain' => {
+                                                                  'type' => 'Asia/Bahrain',
+                                                                  'exemplarCity' => 'Barein'
+                                                                },
+                                                'Africa/Asmera' => {
+                                                                   'type' => 'Africa/Asmera',
+                                                                   'exemplarCity' => 'Asmara'
+                                                                 },
+                                                'Asia/Brunei' => {
+                                                                 'type' => 'Asia/Brunei',
+                                                                 'exemplarCity' => "Brúnei"
+                                                               },
+                                                'America/Lower_Princes' => {
+                                                                           'type' => 'America/Lower_Princes',
+                                                                           'exemplarCity' => 'Lower Prince\'s Quarter'
+                                                                         },
+                                                'Asia/Ulaanbaatar' => {
+                                                                      'type' => 'Asia/Ulaanbaatar',
+                                                                      'exemplarCity' => "Úlan Bator"
+                                                                    },
+                                                'Indian/Cocos' => {
+                                                                  'type' => 'Indian/Cocos',
+                                                                  'exemplarCity' => "Kókoseyjar"
+                                                                },
+                                                'Asia/Macau' => {
+                                                                'type' => 'Asia/Macau',
+                                                                'exemplarCity' => "Makaó"
+                                                              },
+                                                'Asia/Jerusalem' => {
+                                                                    'type' => 'Asia/Jerusalem',
+                                                                    'exemplarCity' => "Jerúsalem"
+                                                                  },
+                                                'America/Cayman' => {
+                                                                    'type' => 'America/Cayman',
+                                                                    'exemplarCity' => 'Cayman-eyjar'
+                                                                  },
+                                                'America/Guyana' => {
+                                                                    'type' => 'America/Guyana',
+                                                                    'exemplarCity' => "Gvæjana"
+                                                                  },
+                                                'America/Indiana/Vevay' => {
+                                                                           'type' => 'America/Indiana/Vevay',
+                                                                           'exemplarCity' => 'Vevay, Indiana'
+                                                                         },
+                                                'Asia/Saigon' => {
+                                                                 'type' => 'Asia/Saigon',
+                                                                 'exemplarCity' => 'Ho Chi Minh-borg'
+                                                               },
+                                                'Asia/Kuwait' => {
+                                                                 'type' => 'Asia/Kuwait',
+                                                                 'exemplarCity' => "Kúveit"
+                                                               },
+                                                'Atlantic/Reykjavik' => {
+                                                                        'type' => 'Atlantic/Reykjavik',
+                                                                        'exemplarCity' => "Reykjavík"
+                                                                      },
+                                                'Europe/Bucharest' => {
+                                                                      'type' => 'Europe/Bucharest',
+                                                                      'exemplarCity' => "Búkarest"
+                                                                    },
+                                                'America/Guatemala' => {
+                                                                       'type' => 'America/Guatemala',
+                                                                       'exemplarCity' => 'Gvatemala'
+                                                                     },
+                                                'America/St_Barthelemy' => {
+                                                                           'type' => 'America/St_Barthelemy',
+                                                                           'exemplarCity' => "Saint Barthélemy"
+                                                                         },
+                                                'Pacific/Tahiti' => {
+                                                                    'type' => 'Pacific/Tahiti',
+                                                                    'exemplarCity' => "Tahítí"
+                                                                  },
+                                                'America/North_Dakota/New_Salem' => {
+                                                                                    'type' => 'America/North_Dakota/New_Salem',
+                                                                                    'exemplarCity' => 'New Salem, North Dakota'
+                                                                                  },
+                                                'Europe/Istanbul' => {
+                                                                     'type' => 'Europe/Istanbul',
+                                                                     'exemplarCity' => "Istanbúl"
+                                                                   },
+                                                'America/Cancun' => {
+                                                                    'type' => 'America/Cancun',
+                                                                    'exemplarCity' => "Kankún"
+                                                                  },
+                                                'Pacific/Fiji' => {
+                                                                  'type' => 'Pacific/Fiji',
+                                                                  'exemplarCity' => "Fídjieyjar"
+                                                                },
+                                                'Pacific/Marquesas' => {
+                                                                       'type' => 'Pacific/Marquesas',
+                                                                       'exemplarCity' => 'Marquesas-eyjar'
+                                                                     },
+                                                'Asia/Singapore' => {
+                                                                    'type' => 'Asia/Singapore',
+                                                                    'exemplarCity' => "Singapúr"
+                                                                  },
+                                                'America/Antigua' => {
+                                                                     'type' => 'America/Antigua',
+                                                                     'exemplarCity' => "Antígva"
+                                                                   },
+                                                'Europe/San_Marino' => {
+                                                                       'type' => 'Europe/San_Marino',
+                                                                       'exemplarCity' => "San Marínó"
+                                                                     },
+                                                'Atlantic/Canary' => {
+                                                                     'type' => 'Atlantic/Canary',
+                                                                     'exemplarCity' => "Kanaríeyjar"
+                                                                   },
+                                                'America/Kentucky/Monticello' => {
+                                                                                 'type' => 'America/Kentucky/Monticello',
+                                                                                 'exemplarCity' => 'Monticello, Kentucky'
+                                                                               },
+                                                'America/St_Vincent' => {
+                                                                        'type' => 'America/St_Vincent',
+                                                                        'exemplarCity' => 'Sankti Vinsent'
+                                                                      },
+                                                'America/North_Dakota/Center' => {
+                                                                                 'type' => 'America/North_Dakota/Center',
+                                                                                 'exemplarCity' => 'Center, North Dakota'
+                                                                               },
+                                                'Pacific/Palau' => {
+                                                                   'type' => 'Pacific/Palau',
+                                                                   'exemplarCity' => "Palá"
+                                                                 },
+                                                'Pacific/Easter' => {
+                                                                    'type' => 'Pacific/Easter',
+                                                                    'exemplarCity' => "Páskaeyja"
+                                                                  },
+                                                'Africa/Johannesburg' => {
+                                                                         'type' => 'Africa/Johannesburg',
+                                                                         'exemplarCity' => "Jóhannesarborg"
+                                                                       },
+                                                'Europe/Prague' => {
+                                                                   'type' => 'Europe/Prague',
+                                                                   'exemplarCity' => 'Prag'
+                                                                 },
+                                                'Europe/Vatican' => {
+                                                                    'type' => 'Europe/Vatican',
+                                                                    'exemplarCity' => "Vatíkanið"
+                                                                  },
+                                                'Asia/Calcutta' => {
+                                                                   'type' => 'Asia/Calcutta',
+                                                                   'exemplarCity' => "Kalkútta"
+                                                                 },
+                                                'Europe/Lisbon' => {
+                                                                   'type' => 'Europe/Lisbon',
+                                                                   'exemplarCity' => 'Lissabon'
+                                                                 },
+                                                'America/Indiana/Winamac' => {
+                                                                             'type' => 'America/Indiana/Winamac',
+                                                                             'exemplarCity' => 'Winamac, Indiana'
+                                                                           },
+                                                'Pacific/Nauru' => {
+                                                                   'type' => 'Pacific/Nauru',
+                                                                   'exemplarCity' => "Nárú"
+                                                                 },
+                                                'Europe/Warsaw' => {
+                                                                   'type' => 'Europe/Warsaw',
+                                                                   'exemplarCity' => "Varsjá"
+                                                                 },
+                                                'Europe/Luxembourg' => {
+                                                                       'type' => 'Europe/Luxembourg',
+                                                                       'exemplarCity' => "Lúxemborg"
+                                                                     },
+                                                'Asia/Seoul' => {
+                                                                'type' => 'Asia/Seoul',
+                                                                'exemplarCity' => "Seúl"
+                                                              },
+                                                'Europe/Brussels' => {
+                                                                     'type' => 'Europe/Brussels',
+                                                                     'exemplarCity' => 'Brussel'
+                                                                   },
+                                                'America/Dominica' => {
+                                                                      'type' => 'America/Dominica',
+                                                                      'exemplarCity' => "Dóminíka"
+                                                                    },
+                                                'America/Guadeloupe' => {
+                                                                        'type' => 'America/Guadeloupe',
+                                                                        'exemplarCity' => "Gvadelúp"
+                                                                      },
+                                                'Europe/Monaco' => {
+                                                                   'type' => 'Europe/Monaco',
+                                                                   'exemplarCity' => "Mónakó"
+                                                                 },
+                                                'Antarctica/South_Pole' => {
+                                                                           'type' => 'Antarctica/South_Pole',
+                                                                           'exemplarCity' => "Suðurpóllinn"
+                                                                         },
+                                                'Atlantic/South_Georgia' => {
+                                                                            'type' => 'Atlantic/South_Georgia',
+                                                                            'exemplarCity' => "Suður-Georgía"
+                                                                          },
+                                                'Etc/Unknown' => {
+                                                                 'type' => 'Etc/Unknown',
+                                                                 'exemplarCity' => "Óþekkt borg"
+                                                               },
+                                                'Asia/Jakarta' => {
+                                                                  'type' => 'Asia/Jakarta',
+                                                                  'exemplarCity' => 'Djakarta'
+                                                                },
+                                                'Atlantic/Cape_Verde' => {
+                                                                         'type' => 'Atlantic/Cape_Verde',
+                                                                         'exemplarCity' => "Grænhöfðaeyjar"
+                                                                       },
+                                                'Europe/Moscow' => {
+                                                                   'type' => 'Europe/Moscow',
+                                                                   'exemplarCity' => 'Moskva'
+                                                                 },
+                                                'Pacific/Ponape' => {
+                                                                    'type' => 'Pacific/Ponape',
+                                                                    'exemplarCity' => 'Pohnpei'
+                                                                  },
+                                                'Asia/Katmandu' => {
+                                                                   'type' => 'Asia/Katmandu',
+                                                                   'exemplarCity' => "Katmandú"
+                                                                 },
+                                                'Pacific/Truk' => {
+                                                                  'type' => 'Pacific/Truk',
+                                                                  'exemplarCity' => 'Chuuk'
+                                                                },
+                                                'Africa/Cairo' => {
+                                                                  'type' => 'Africa/Cairo',
+                                                                  'exemplarCity' => "Kaíró"
+                                                                },
+                                                'Europe/Isle_of_Man' => {
+                                                                        'type' => 'Europe/Isle_of_Man',
+                                                                        'exemplarCity' => "Mön"
+                                                                      },
+                                                'America/Indiana/Tell_City' => {
+                                                                               'type' => 'America/Indiana/Tell_City',
+                                                                               'exemplarCity' => 'Tell City, Indiana'
+                                                                             },
+                                                'America/St_Lucia' => {
+                                                                      'type' => 'America/St_Lucia',
+                                                                      'exemplarCity' => "Sankti Lúsía"
+                                                                    },
+                                                'Europe/Vienna' => {
+                                                                   'type' => 'Europe/Vienna',
+                                                                   'exemplarCity' => "Vín"
+                                                                 },
+                                                'Europe/Madrid' => {
+                                                                   'type' => 'Europe/Madrid',
+                                                                   'exemplarCity' => "Madríd"
+                                                                 },
+                                                'Europe/Paris' => {
+                                                                  'type' => 'Europe/Paris',
+                                                                  'exemplarCity' => "París"
+                                                                },
+                                                'America/Aruba' => {
+                                                                   'type' => 'America/Aruba',
+                                                                   'exemplarCity' => "Arúba"
+                                                                 },
+                                                'America/St_Thomas' => {
+                                                                       'type' => 'America/St_Thomas',
+                                                                       'exemplarCity' => 'St. Thomas'
+                                                                     },
+                                                'America/Jamaica' => {
+                                                                     'type' => 'America/Jamaica',
+                                                                     'exemplarCity' => "Jamaíka"
+                                                                   },
+                                                'Europe/Berlin' => {
+                                                                   'type' => 'Europe/Berlin',
+                                                                   'exemplarCity' => "Berlín"
+                                                                 },
+                                                'America/North_Dakota/Beulah' => {
+                                                                                 'type' => 'America/North_Dakota/Beulah',
+                                                                                 'exemplarCity' => 'Beulah, North Dakota'
+                                                                               },
+                                                'America/Belize' => {
+                                                                    'type' => 'America/Belize',
+                                                                    'exemplarCity' => "Belís"
+                                                                  },
+                                                'Africa/Djibouti' => {
+                                                                     'type' => 'Africa/Djibouti',
+                                                                     'exemplarCity' => "Djibútí"
+                                                                   },
+                                                'Europe/Dublin' => {
+                                                                   'long' => {
+                                                                             'daylight' => "Sumartími á Írlandi"
+                                                                           },
+                                                                   'type' => 'Europe/Dublin'
+                                                                 },
+                                                'Indian/Mauritius' => {
+                                                                      'type' => 'Indian/Mauritius',
+                                                                      'exemplarCity' => "Máritíus"
+                                                                    },
+                                                'Europe/Gibraltar' => {
+                                                                      'type' => 'Europe/Gibraltar',
+                                                                      'exemplarCity' => "Gíbraltar"
+                                                                    },
+                                                'Atlantic/Bermuda' => {
+                                                                      'type' => 'Atlantic/Bermuda',
+                                                                      'exemplarCity' => "Bermúda"
+                                                                    },
+                                                'Africa/Sao_Tome' => {
+                                                                     'type' => 'Africa/Sao_Tome',
+                                                                     'exemplarCity' => "Saó Tóme"
+                                                                   },
+                                                'Indian/Maldives' => {
+                                                                     'type' => 'Indian/Maldives',
+                                                                     'exemplarCity' => "Maldíveyjar"
+                                                                   },
+                                                'Indian/Reunion' => {
+                                                                    'type' => 'Indian/Reunion',
+                                                                    'exemplarCity' => "Réunion"
+                                                                  },
+                                                'America/Martinique' => {
+                                                                        'type' => 'America/Martinique',
+                                                                        'exemplarCity' => "Martiník"
+                                                                      },
+                                                'Asia/Tehran' => {
+                                                                 'type' => 'Asia/Tehran',
+                                                                 'exemplarCity' => 'Teheran'
+                                                               },
+                                                'Africa/Algiers' => {
+                                                                    'type' => 'Africa/Algiers',
+                                                                    'exemplarCity' => 'Algeirsborg'
+                                                                  },
+                                                'Europe/Zurich' => {
+                                                                   'type' => 'Europe/Zurich',
+                                                                   'exemplarCity' => "Zürich"
+                                                                 },
+                                                'Asia/Nicosia' => {
+                                                                  'type' => 'Asia/Nicosia',
+                                                                  'exemplarCity' => "Níkósía"
+                                                                },
+                                                'Europe/Sarajevo' => {
+                                                                     'type' => 'Europe/Sarajevo',
+                                                                     'exemplarCity' => "Sarajevó"
+                                                                   },
+                                                'Europe/Vilnius' => {
+                                                                    'type' => 'Europe/Vilnius',
+                                                                    'exemplarCity' => "Vilníus"
+                                                                  },
+                                                'America/Puerto_Rico' => {
+                                                                         'type' => 'America/Puerto_Rico',
+                                                                         'exemplarCity' => "Púertó Ríkó"
+                                                                       },
+                                                'Europe/Stockholm' => {
+                                                                      'type' => 'Europe/Stockholm',
+                                                                      'exemplarCity' => "Stokkhólmur"
+                                                                    },
+                                                'Asia/Colombo' => {
+                                                                  'type' => 'Asia/Colombo',
+                                                                  'exemplarCity' => "Kólombó"
+                                                                }
+                                              },
+                                   'fallbackFormat' => '{1} ({0})',
+                                   'gmtZeroFormat' => 'GMT'
+                                 },
+                  'eras' => {
+                              'eraNames' => {
+                                            'alias' => {
+                                                       '' => ''
+                                                     },
+                                            'era' => {
+                                                     '1' => "látlaus tímatal",
+                                                     '0' => "fyrir látlaus tímatal"
+                                                   }
+                                          },
+                              'eraNarrow' => {
+                                             'alias' => {
+                                                        '' => ''
+                                                      },
+                                             'era' => {
+                                                      '1' => 'lt',
+                                                      '0' => 'flt'
+                                                    }
+                                           },
+                              'eraAbbr' => {
+                                           'era' => {
+                                                    '1' => 'l.t.',
+                                                    '0' => 'f.l.t.'
+                                                  }
+                                         }
+                            },
+                  'days' => {
+                              'format' => {
+                                          'short' => {
+                                                     '' => '',
+                                                     'fri' => "fö.",
+                                                     'wed' => 'mi.',
+                                                     'sun' => 'su.',
+                                                     'tue' => "þr.",
+                                                     'mon' => "má.",
+                                                     'sat' => 'la.',
+                                                     'thu' => 'fi.'
+                                                   },
+                                          'abbreviated' => {
+                                                           '' => '',
+                                                           'fri' => "fös.",
+                                                           'wed' => "mið.",
+                                                           'sun' => 'sun.',
+                                                           'tue' => "þri.",
+                                                           'mon' => "mán.",
+                                                           'sat' => 'lau.',
+                                                           'thu' => 'fim.'
+                                                         },
+                                          'narrow' => {
+                                                      '' => '',
+                                                      'fri' => 'F',
+                                                      'wed' => 'M',
+                                                      'sun' => 'S',
+                                                      'tue' => "Þ",
+                                                      'mon' => 'M',
+                                                      'sat' => 'L',
+                                                      'thu' => 'F'
+                                                    },
+                                          'wide' => {
+                                                    'fri' => "föstudagur",
+                                                    'tue' => "þriðjudagur",
+                                                    'sun' => 'sunnudagur',
+                                                    'sat' => 'laugardagur',
+                                                    'mon' => "mánudagur",
+                                                    'wed' => "miðvikudagur",
+                                                    'thu' => 'fimmtudagur'
+                                                  }
+                                        },
+                              'stand-alone' => {
+                                               'short' => {
+                                                          '' => '',
+                                                          'fri' => "fö.",
+                                                          'wed' => 'mi.',
+                                                          'sun' => 'su.',
+                                                          'tue' => "þr.",
+                                                          'mon' => "má.",
+                                                          'sat' => 'la.',
+                                                          'thu' => 'fi.'
+                                                        },
+                                               'abbreviated' => {
+                                                                '' => '',
+                                                                'fri' => "fös.",
+                                                                'wed' => "mið.",
+                                                                'sun' => 'sun.',
+                                                                'tue' => "þri.",
+                                                                'mon' => "mán.",
+                                                                'sat' => 'lau.',
+                                                                'thu' => 'fim.'
+                                                              },
+                                               'narrow' => {
+                                                           'fri' => 'F',
+                                                           'tue' => "Þ",
+                                                           'sun' => 'S',
+                                                           'sat' => 'L',
+                                                           'mon' => 'M',
+                                                           'wed' => 'M',
+                                                           'thu' => 'F'
+                                                         },
+                                               'wide' => {
+                                                         '' => '',
+                                                         'fri' => "föstudagur",
+                                                         'wed' => "miðvikudagur",
+                                                         'sun' => 'sunnudagur',
+                                                         'tue' => "þriðjudagur",
+                                                         'mon' => "mánudagur",
+                                                         'sat' => 'laugardagur',
+                                                         'thu' => 'fimmtudagur'
+                                                       }
+                                             }
+                            },
+                  'months' => {
+                                'format' => {
+                                            'abbreviated' => {
+                                                             '' => '',
+                                                             '6' => "jún.",
+                                                             '11' => "nóv.",
+                                                             '3' => 'mar.',
+                                                             '7' => "júl.",
+                                                             '9' => 'sep.',
+                                                             '12' => 'des.',
+                                                             '2' => 'feb.',
+                                                             '8' => "ágú.",
+                                                             '1' => 'jan.',
+                                                             '4' => 'apr.',
+                                                             '10' => 'okt.',
+                                                             '5' => "maí"
+                                                           },
+                                            'narrow' => {
+                                                        '' => '',
+                                                        '6' => 'J',
+                                                        '11' => 'N',
+                                                        '3' => 'M',
+                                                        '7' => 'J',
+                                                        '9' => 'S',
+                                                        '12' => 'D',
+                                                        '2' => 'F',
+                                                        '8' => "Á",
+                                                        '1' => 'J',
+                                                        '4' => 'A',
+                                                        '10' => 'O',
+                                                        '5' => 'M'
+                                                      },
+                                            'wide' => {
+                                                      '6' => "júní",
+                                                      '11' => "nóvember",
+                                                      '3' => 'mars',
+                                                      '7' => "júlí",
+                                                      '9' => 'september',
+                                                      '12' => 'desember',
+                                                      '2' => "febrúar",
+                                                      '8' => "ágúst",
+                                                      '1' => "janúar",
+                                                      '4' => "apríl",
+                                                      '10' => "október",
+                                                      '5' => "maí"
+                                                    }
+                                          },
+                                'stand-alone' => {
+                                                 'abbreviated' => {
+                                                                  '' => '',
+                                                                  '6' => "jún.",
+                                                                  '11' => "nóv.",
+                                                                  '3' => 'mar.',
+                                                                  '7' => "júl.",
+                                                                  '9' => 'sep.',
+                                                                  '12' => 'des.',
+                                                                  '2' => 'feb.',
+                                                                  '8' => "ágú.",
+                                                                  '1' => 'jan.',
+                                                                  '4' => 'apr.',
+                                                                  '10' => 'okt.',
+                                                                  '5' => "maí"
+                                                                },
+                                                 'narrow' => {
+                                                             '6' => 'J',
+                                                             '11' => 'N',
+                                                             '3' => 'M',
+                                                             '7' => 'J',
+                                                             '9' => 'S',
+                                                             '12' => 'D',
+                                                             '2' => 'F',
+                                                             '8' => "Á",
+                                                             '1' => 'J',
+                                                             '4' => 'A',
+                                                             '10' => 'O',
+                                                             '5' => 'M'
+                                                           },
+                                                 'wide' => {
+                                                           '' => '',
+                                                           '6' => "júní",
+                                                           '11' => "nóvember",
+                                                           '3' => 'mars',
+                                                           '7' => "júlí",
+                                                           '9' => 'september',
+                                                           '12' => 'desember',
+                                                           '2' => "febrúar",
+                                                           '8' => "ágúst",
+                                                           '1' => "janúar",
+                                                           '4' => "apríl",
+                                                           '10' => "október",
+                                                           '5' => "maí"
+                                                         }
+                                               }
+                              },
+                  'dateFormat' => {
+                                    'short' => 'd.M.y',
+                                    'medium' => 'd. MMM y',
+                                    'long' => 'd. MMMM y',
+                                    'full' => 'EEEE, d. MMMM y'
+                                  }
+                },
+  'displayNames' => {
+                      'territories' => {
+                                         'DJ' => "Djíbútí",
+                                         'JM' => "Jamaíka",
+                                         '030' => "Austur-Asía",
+                                         'AT' => "Austurríki",
+                                         'SZ' => "Svasíland",
+                                         'YT' => 'Mayotte',
+                                         'BN' => "Brúnei",
+                                         'ZM' => "Sambía",
+                                         'PR' => "Púertó Ríkó",
+                                         'SH' => 'Sankti Helena',
+                                         'MA' => "Marokkó",
+                                         'SV' => 'El Salvador',
+                                         'MT' => 'Malta',
+                                         'MP' => "Norður-Maríanaeyjar",
+                                         'UZ' => "Úsbekistan",
+                                         'PW' => "Palá",
+                                         'TK' => "Tókelá",
+                                         'LR' => "Líbería",
+                                         'TN' => "Túnis",
+                                         'EE' => 'Eistland',
+                                         'CK' => 'Cooks-eyjar',
+                                         'BY' => "Hvíta-Rússland",
+                                         'NO' => 'Noregur',
+                                         'KR' => "Suður-Kórea",
+                                         'IC' => "Kanaríeyjar",
+                                         'BF' => "Búrkína Fasó",
+                                         'AM' => "Armenía",
+                                         'SR' => "Súrínam",
+                                         'MG' => 'Madagaskar',
+                                         'BT' => "Bútan",
+                                         '009' => "Eyjaálfa",
+                                         'CF' => "Mið-Afríkulýðveldið",
+                                         '014' => "Austur-Afríka",
+                                         'BA' => "Bosnía og Hersegóvína",
+                                         'AE' => "Sameinuðu arabísku furstadæmin",
+                                         'TH' => "Taíland",
+                                         'EA' => 'Ceuta og Melilla',
+                                         '002' => "Afríka",
+                                         '057' => "Míkrónesía",
+                                         'CC' => "Kókoseyjar (Keeling)",
+                                         'NC' => "Nýja-Kaledónía",
+                                         'EU' => "Evrópusambandið",
+                                         'TO' => 'Tonga',
+                                         'SE' => "Svíþjóð",
+                                         'AZ' => "Aserbaídsjan",
+                                         'AF' => 'Afganistan',
+                                         'NG' => "Nígería",
+                                         'KE' => "Kenía",
+                                         'BJ' => "Benín",
+                                         'XK' => "Kósóvó",
+                                         'OM' => "Óman",
+                                         '145' => "Vestur-Asía",
+                                         'LK' => "Srí Lanka",
+                                         'ID' => "Indónesía",
+                                         'FM' => "Míkrónesía (FM)",
+                                         'GM' => "Gambía",
+                                         'LV' => 'Lettland',
+                                         'RU' => "Rússland",
+                                         '154' => "Norður-Evrópa",
+                                         '034' => "Suður-Asía",
+                                         'FI' => 'Finnland',
+                                         'LU' => "Lúxemborg",
+                                         'VE' => "Venesúela",
+                                         '054' => "Melanesía",
+                                         'VI' => "Bandarísku Jómfrúaeyjar",
+                                         'TV' => "Túvalú",
+                                         'SN' => 'Senegal',
+                                         'MX' => "Mexíkó",
+                                         'IL' => "Ísrael",
+                                         'GG' => 'Guernsey',
+                                         'HU' => 'Ungverjaland',
+                                         'DO' => "Dóminíska lýðveldið",
+                                         'BQ' => "Karíbahafshluti Hollands",
+                                         'KH' => "Kambódía",
+                                         'TG' => "Tógó",
+                                         'BB' => 'Barbados',
+                                         'JE' => 'Jersey',
+                                         'DK' => "Danmörk",
+                                         'PA' => 'Panama',
+                                         'QA' => 'Katar',
+                                         'CV' => "Grænhöfðaeyjar",
+                                         'TA' => 'Tristan da Cunha',
+                                         'GD' => 'Grenada',
+                                         'MO' => "Makaó",
+                                         'MF' => 'Saint Martin',
+                                         'HR' => "Króatía",
+                                         'CZ' => "Tékkland",
+                                         'BL' => "Saint Barthélemy",
+                                         'ST' => "Saó Tóme og Prinsípe",
+                                         'AU' => "Ástralía",
+                                         'IR' => "Íran",
+                                         '003' => "Norður-Ameríka",
+                                         'CG' => "Kongó (Lýðveldið)",
+                                         'GW' => "Gínea-Bissá",
+                                         'BI' => "Búrúndí",
+                                         'MK' => "Makedónía (Fyrrverandi lýðveldi Júgóslavíu)",
+                                         'GR' => 'Grikkland',
+                                         '021' => "Ameríka norðan Mexikó",
+                                         'AG' => "Antígva og Barbúda",
+                                         'AI' => 'Angvilla',
+                                         'AN' => 'Hollensku Antillur',
+                                         'UA' => "Úkraína",
+                                         'EH' => 'Vestur-Sahara',
+                                         'KN' => "Sankti Kristófer og Nevis",
+                                         'SC' => 'Seychelles-eyjar',
+                                         'NL' => 'Holland',
+                                         'MS' => 'Montserrat',
+                                         'HK' => 'Hong Kong',
+                                         'EC' => 'Ekvador',
+                                         'MY' => "Malasía",
+                                         '013' => "Mið-Ameríka",
+                                         'CR' => "Kostaríka",
+                                         'VA' => "Páfastóll",
+                                         'IO' => 'Bresku Indlandshafseyjar',
+                                         'SD' => "Súdan",
+                                         'RS' => "Serbía",
+                                         'CN' => "Kína",
+                                         'UY' => "Úrúgvæ",
+                                         'PY' => "Paragvæ",
+                                         '053' => "Ástralasía",
+                                         'MU' => "Máritíus",
+                                         'LI' => 'Liechtenstein',
+                                         'CH' => 'Sviss',
+                                         'KG' => 'Kirgisistan',
+                                         'GH' => 'Gana',
+                                         'NU' => 'Niue',
+                                         'US' => 'BNA',
+                                         'PE' => "Perú",
+                                         'SL' => "Síerra Leóne",
+                                         '001' => 'Heimurinn',
+                                         'FJ' => "Fídjieyjar",
+                                         '143' => "Mið-Asía",
+                                         'ER' => "Erítrea",
+                                         'IQ' => "Írak",
+                                         'AS' => "Bandaríska Samóa",
+                                         'TZ' => "Tansanía",
+                                         'LY' => "Líbía",
+                                         'GT' => 'Gvatemala',
+                                         'BM' => "Bermúdaeyjar",
+                                         'BV' => 'Bouveteyja',
+                                         'LT' => "Litháen",
+                                         '017' => "Mið-Afríka",
+                                         'SG' => "Singapúr",
+                                         'PM' => 'Sankti Pierre og Miquelon',
+                                         'TT' => "Trínidad og Tóbagó",
+                                         'SY' => "Sýrland",
+                                         'SK' => "Slóvakía",
+                                         '011' => "Vestur-Afríka",
+                                         'AC' => 'Ascension-eyja',
+                                         'GL' => "Grænland",
+                                         'PG' => "Papúa Nýja-Gínea",
+                                         'KI' => "Kíribatí",
+                                         'CD' => "Kongó (Lýðstjórnarlýðveldið)",
+                                         'AO' => "Angóla",
+                                         'BW' => 'Botsvana',
+                                         'ZW' => 'Simbabve',
+                                         'VC' => "Sankti Vinsent og Grenadíneyjar",
+                                         'JP' => 'Japan',
+                                         'NA' => "Namibía",
+                                         'TJ' => 'Tadsjikistan',
+                                         'LC' => "Sankti Lúsía",
+                                         'VU' => "Vanúatú",
+                                         'MN' => "Mongólía",
+                                         'IT' => "Ítalía",
+                                         'RE' => "Réunion",
+                                         'WS' => "Samóa",
+                                         '151' => "Austur-Evrópa",
+                                         '015' => "Norður-Afríka",
+                                         'CW' => "Curaçao",
+                                         'EG' => 'Egyptaland',
+                                         'FR' => 'Frakkland',
+                                         'RW' => "Rúanda",
+                                         'UM' => "Smáeyjar Bandaríkjanna",
+                                         'BE' => "Belgía",
+                                         'LS' => "Lesótó",
+                                         'SA' => "Sádi-Arabía",
+                                         'ZA' => "Suður-Afríka",
+                                         'DG' => 'Diego Garcia',
+                                         'PT' => "Portúgal",
+                                         'CA' => 'Kanada',
+                                         'CM' => "Kamerún",
+                                         'NP' => 'Nepal',
+                                         'PL' => "Pólland",
+                                         'TM' => "Túrkmenistan",
+                                         'GA' => 'Gabon',
+                                         'KY' => 'Caymaneyjar',
+                                         'LA' => 'Laos',
+                                         'PH' => 'Filippseyjar',
+                                         'NI' => "Níkaragva",
+                                         'GU' => 'Gvam',
+                                         'TF' => "Frönsku suðlægu landsvæðin",
+                                         'KZ' => 'Kasakstan',
+                                         '029' => "Karabíska hafið",
+                                         'SJ' => "Svalbarði og Jan Mayen",
+                                         'MM' => "Mjanmar (Búrma)",
+                                         'NR' => "Nárú",
+                                         'DM' => "Dóminíka",
+                                         'NE' => "Níger",
+                                         'AD' => 'Andorra',
+                                         'MR' => "Máritanía",
+                                         '039' => "Suður-Evrópa",
+                                         'GS' => "Suður-Georgía og Suður-Sandvíkureyjar",
+                                         'ME' => 'Svartfjallaland',
+                                         'AX' => "Álandseyjar",
+                                         'VN' => "Víetnam",
+                                         'VG' => "Bresku Jómfrúaeyjar",
+                                         'YE' => 'Jemen',
+                                         'CI' => "Fílabeinsströndin",
+                                         'DZ' => "Alsír",
+                                         'GE' => "Georgía",
+                                         '005' => "Suður-Ameríka",
+                                         'CX' => "Jólaey",
+                                         'LB' => "Líbanon",
+                                         '018' => "Suðurhluti Afríku",
+                                         'FK' => 'Falklandseyjar (Malvinas)',
+                                         'DE' => "Þýskaland",
+                                         'MV' => "Maldíveyjar",
+                                         'PN' => 'Pitcairn-eyjar',
+                                         'BH' => 'Barein',
+                                         'GI' => "Gíbraltar",
+                                         'WF' => "Wallis- og Fútúnaeyjar",
+                                         'RO' => "Rúmenía",
+                                         'AR' => "Argentína",
+                                         'GP' => "Gvadelúpeyjar",
+                                         'IN' => 'Indland',
+                                         'AW' => "Arúba",
+                                         'FO' => "Færeyjar",
+                                         'BR' => "Brasilía",
+                                         'HN' => "Hondúras",
+                                         'MC' => "Mónakó",
+                                         'SB' => "Salómonseyjar",
+                                         'NZ' => "Nýja-Sjáland",
+                                         'PS' => "Palestína",
+                                         'UG' => "Úganda",
+                                         'SX' => 'Sint Maarten',
+                                         'GB' => "Stóra Bretland",
+                                         'HT' => "Haítí",
+                                         '019' => "Ameríka",
+                                         'QO' => "Ytri Eyjaálfa",
+                                         'SS' => "Suður-Súdan",
+                                         'GF' => "Franska Gvæjana",
+                                         'ZZ' => "Óþekkt svæði",
+                                         'KM' => "Kómoreyjar",
+                                         'KW' => "Kúveit",
+                                         'MQ' => "Martiník",
+                                         'TC' => 'Turks- og Caicoseyjar',
+                                         'CP' => 'Clipperton-eyja',
+                                         'ES' => "Spánn",
+                                         'MZ' => "Mósambík",
+                                         'BO' => "Bólivía",
+                                         'AL' => "Albanía",
+                                         '142' => "Asía",
+                                         '419' => "Rómanska Ameríka",
+                                         'TR' => 'Tyrkland',
+                                         'MD' => "Moldóva",
+                                         'GN' => "Gínea",
+                                         'CO' => "Kólumbía",
+                                         'SI' => "Slóvenía",
+                                         'AQ' => "Suðurskautslandið",
+                                         'JO' => "Jórdanía",
+                                         '061' => "Pólýnesía",
+                                         'SM' => "San Marínó",
+                                         'CU' => "Kúba",
+                                         'CL' => "Síle",
+                                         'ML' => "Malí",
+                                         'ET' => "Eþíópía",
+                                         'IS' => "Ísland",
+                                         '035' => "Suðaustur-Asía",
+                                         'BG' => "Búlgaría",
+                                         'MH' => 'Marshalleyjar',
+                                         'BS' => 'Bahamaeyjar',
+                                         'TL' => "Austur-Tímor",
+                                         'BZ' => "Belís",
+                                         '150' => "Evrópa",
+                                         'CY' => "Kýpur",
+                                         '155' => "Vestur-Evrópa",
+                                         'IM' => "Mön",
+                                         'IE' => "Írland",
+                                         'TW' => "Taívan",
+                                         'KP' => "Norður-Kórea",
+                                         'PF' => "Franska Pólýnesía",
+                                         'MW' => "Malaví",
+                                         'GY' => "Gvæjana",
+                                         'GQ' => "Miðbaugs-Gínea",
+                                         'PK' => 'Pakistan',
+                                         'NF' => 'Norfolkeyja',
+                                         'SO' => "Sómalía",
+                                         'TD' => 'Tsjad',
+                                         'BD' => 'Bangladess',
+                                         'HM' => 'Heard og McDonaldseyjar'
+                                       },
+                      'languages' => {
+                                       'sid' => "sídamó",
+                                       'ne' => 'nepalska',
+                                       'tr' => 'tyrkneska',
+                                       'ki' => "kíkújú",
+                                       'gl' => 'gallegska',
+                                       'lun' => "lúnda",
+                                       'kum' => "kúmík",
+                                       'fat' => "fantí",
+                                       'ckb' => "sorani-kúrdíska",
+                                       'ro' => "rúmenska",
+                                       'br' => "bretónska",
+                                       'pt_PT' => "evrópsk portúgalska",
+                                       'syc' => "klassísk sýrlenska",
+                                       'gil' => 'gilberska',
+                                       'cs' => "tékkneska",
+                                       'sux' => "súmerska",
+                                       'km' => 'kmer',
+                                       'af' => "afríkanska",
+                                       'tai' => "taímál (önnur)",
+                                       'fr_CA' => "kanadísk franska",
+                                       'mun' => "múndamál",
+                                       'ga' => "írska",
+                                       'hsb' => "hásorbneska",
+                                       'ada' => 'adangme',
+                                       'dak' => "dakóta",
+                                       'arn' => "arákaníska",
+                                       'mi' => "maórí",
+                                       'sv' => "sænska",
+                                       'za' => "súang",
+                                       'mkh' => "monkmermál (önnur)",
+                                       'fa' => 'persneska',
+                                       'pau' => "paláska",
+                                       'wal' => "valamó",
+                                       'afh' => "afríhílí",
+                                       'man' => "mandingó",
+                                       'cmc' => "kamísk mál",
+                                       've' => 'venda',
+                                       'na' => "nárúska",
+                                       'ba' => "baskír",
+                                       'pra' => "prakrítmál",
+                                       'id' => "indónesíska",
+                                       'arc' => "arameíska",
+                                       'si' => 'sinhala',
+                                       'kac' => "kasín",
+                                       'om' => 'oromo',
+                                       'fi' => 'finnska',
+                                       'mai' => "maítílí",
+                                       'wo' => 'volof',
+                                       'ii' => "sísúanjí",
+                                       'yue' => 'kantoneska',
+                                       'bi' => "bíslama",
+                                       'ace' => "akkíska",
+                                       'kj' => "kúanjama",
+                                       'en_CA' => "kanadísk enska",
+                                       'ota' => "tyrkneska, ottóman",
+                                       'xal' => "kalmúkska",
+                                       'mn' => "mongólska",
+                                       'nv' => "navahó",
+                                       'gd' => "skosk gelíska",
+                                       'map' => "ástrónesíska",
+                                       'bai' => "bamílekemál",
+                                       'ber' => "berbamál",
+                                       'cr' => "krí",
+                                       'sg' => "sangó",
+                                       'kam' => 'kamba',
+                                       'yao' => "jaó",
+                                       'ira' => "íranska",
+                                       'pon' => 'ponpeiska',
+                                       'tum' => "túmbúka",
+                                       'suk' => "súkúma",
+                                       'enm' => "miðenska",
+                                       'bej' => 'beja',
+                                       'nub' => "núbísk mál",
+                                       'dgr' => "dogríb",
+                                       'bg' => "búlgarska",
+                                       'guz' => 'gusii',
+                                       'del' => 'delaver',
+                                       'chr' => "Cherokee-mál",
+                                       'sq' => 'albanska',
+                                       'ca' => "katalónska",
+                                       'es_419' => "rómanskamerísk spænska",
+                                       'paa' => "papúsk mál (önnur)",
+                                       'nds' => "lágþýska; lágsaxneska",
+                                       'luo' => "lúó",
+                                       'es' => "spænska",
+                                       'sw' => "svahílí",
+                                       'bez' => 'bena (Tanzania)',
+                                       'yap' => "japíska",
+                                       'sla' => "slavnesk mál (önnur)",
+                                       'sa' => "sanskrít",
+                                       'anp' => "angíka",
+                                       'krl' => "karélska",
+                                       'loz' => 'lozi',
+                                       'ie' => 'interlingve',
+                                       'tl' => 'tagalog',
+                                       'dyo' => 'jola-fonyi',
+                                       'nd' => "norðurndebele",
+                                       'hil' => "híligaínon",
+                                       'udm' => "údmúrt",
+                                       'de' => "þýska",
+                                       'kbd' => "kabardíska",
+                                       'mag' => "magahí",
+                                       'hz' => "hereró",
+                                       'nai' => "indíánamál norður-ameríku (önnur)",
+                                       'haw' => "havaíska",
+                                       'sel' => "selkúp",
+                                       'frr' => "norðurfrísneska",
+                                       'fr_CH' => 'svissnesk franska',
+                                       'he' => 'hebreska',
+                                       'zh' => "kínverska",
+                                       'lol' => "mongó",
+                                       'dum' => "miðhollenska",
+                                       'en_AU' => "áströlsk enska",
+                                       'sat' => "santalí",
+                                       'tyv' => "túvínska",
+                                       'mwr' => "marvarí",
+                                       'egy' => 'fornegypska',
+                                       'pt_BR' => "brasílísk portúgalska",
+                                       'da' => 'danska',
+                                       'ug' => 'uyghur',
+                                       'moh' => "móhíska",
+                                       'ta' => "tamílska",
+                                       'ady' => "adýge",
+                                       'efi' => "efík",
+                                       'rw' => "kínjarvanda",
+                                       'mos' => "mossí",
+                                       'doi' => "dogrí",
+                                       'sem' => "semísk mál (önnur)",
+                                       'zun' => "súní",
+                                       'cus' => "kúsitísk mál (önnur)",
+                                       'mo' => "moldóvska",
+                                       'cop' => "koptíska",
+                                       'mis' => "ýmis mál",
+                                       'ps' => 'afghanska',
+                                       'ksf' => 'bafia',
+                                       'av' => "avaríska",
+                                       'fon' => "fón",
+                                       'kab' => "kabíle",
+                                       'nic' => "nígerkordófanmál (önnur)",
+                                       'is' => "íslenska",
+                                       'qu' => "kvesjúa",
+                                       'shn' => 'sjan',
+                                       'mt' => 'maltneska',
+                                       'men' => 'mende',
+                                       'la' => "latína",
+                                       'bh' => "bíharísk mál",
+                                       'oc' => "oksítaníska",
+                                       'pap' => "papíamentó",
+                                       'zxx' => "ekkert tungumálaefni",
+                                       'art' => "alþjóðamál (önnur)",
+                                       'nyo' => "njóró",
+                                       'kha' => "kasí",
+                                       'hai' => "haída",
+                                       'ach' => 'acoli',
+                                       'ng' => 'ndonga',
+                                       'dv' => "dívehí",
+                                       'jv' => 'javanska',
+                                       'smj' => "lúlesamíska",
+                                       'hi' => "hindí",
+                                       'lad' => "ladínska",
+                                       'csb' => "kasúbíska",
+                                       'os' => "ossetíska",
+                                       'fr' => 'franska',
+                                       'got' => 'gotneska',
+                                       'jmc' => "masjáme",
+                                       'kaa' => 'karakalpak',
+                                       'sr' => 'serbneska',
+                                       'kok' => "konkaní",
+                                       'vo' => 'volapyk',
+                                       'tet' => "tetúm",
+                                       'fj' => "fídjeyska",
+                                       'srr' => 'serer',
+                                       'pam' => 'pampanga',
+                                       'cpe' => "kreól- og pidginmál á enskum grunni",
+                                       'kaw' => "kaví",
+                                       'sd' => "sindí",
+                                       'bho' => "bojpúrí",
+                                       'gon' => "gondí",
+                                       'ha' => "hása",
+                                       'gba' => 'gbaja',
+                                       'hit' => "hettitíska",
+                                       'lg' => 'ganda',
+                                       'bug' => "búgíska",
+                                       'mul' => "margvísleg mál",
+                                       'dua' => "dúala",
+                                       'tig' => "tígre",
+                                       'mr' => "maratí",
+                                       'cad' => "kaddó",
+                                       'rm' => "rómanska",
+                                       'kaj' => 'jju',
+                                       'ilo' => "ílokó",
+                                       'kn' => 'kannada',
+                                       'rn' => "rúndí",
+                                       'uga' => "úgarítíska",
+                                       'nog' => "nógaí",
+                                       'cho' => "sjoktá",
+                                       'ik' => "ínúpíak",
+                                       'hmn' => 'hmong',
+                                       'mg' => "malagasíska",
+                                       'es_MX' => "mexíkósk spænska",
+                                       'ru' => "rússneska",
+                                       'kar' => 'karen',
+                                       'ku' => "kúrdneska",
+                                       'znd' => 'sande',
+                                       'lo' => "laó",
+                                       'lb' => "lúxemborgíska",
+                                       'mus' => "krík",
+                                       'ml' => 'malajalam',
+                                       'grc' => "forngríska",
+                                       'sas' => 'sasak',
+                                       'nah' => "nahúatl",
+                                       'peo' => 'fornpersneska',
+                                       'bal' => "balúkí",
+                                       'nyn' => 'nyankole',
+                                       'kho' => 'kotaska',
+                                       'kl' => "grænlenska",
+                                       'bs' => "bosníska",
+                                       'to' => 'tongverska',
+                                       'cu' => 'kirkjuslavneska',
+                                       'es_ES' => "evrópsk spænska",
+                                       'ch' => "kamorró",
+                                       'eu' => 'baskneska',
+                                       'wa' => "vallónska",
+                                       'ine' => "indóevrópsk mál (önnur)",
+                                       'pl' => "pólska",
+                                       'ay' => "aímara",
+                                       'lez' => "lesgíska",
+                                       'den' => 'slavneska',
+                                       'non' => "norræna",
+                                       'apa' => "apatsjamál",
+                                       'lua' => 'luba-lulua',
+                                       'an' => 'aragonska',
+                                       'kfo' => 'koro',
+                                       'khi' => "koímál (önnur)",
+                                       'ceb' => "kebúanó",
+                                       'tt' => 'tatarska',
+                                       'ast' => "astúríska",
+                                       'ss' => "svatí",
+                                       'or' => "óría",
+                                       'dra' => "dravidísk mál (önnur)",
+                                       'xh' => "sósa",
+                                       'th' => "taílenska",
+                                       'tut' => "altaísk mál (önnur)",
+                                       'iba' => "íban",
+                                       'sam' => "samversk arameíska",
+                                       'chg' => "sjagataí",
+                                       'gn' => "gvaraní",
+                                       'hr' => "króatíska",
+                                       'ypk' => "júpísk mál",
+                                       'niu' => "níveska",
+                                       'cv' => "sjúvas",
+                                       'tmh' => 'tamasjek',
+                                       'chn' => "sínúk",
+                                       'awa' => "avadí",
+                                       'ja' => 'japanska',
+                                       'dsb' => "lágsorbneska",
+                                       'ijo' => "íjó",
+                                       'bla' => 'siksika',
+                                       'cay' => "kajúga",
+                                       'nl' => 'hollenska',
+                                       'ebu' => 'embu',
+                                       'nap' => "napólíska",
+                                       'el' => "gríska",
+                                       'kk' => 'kasakska',
+                                       'elx' => "elamít",
+                                       'gor' => "gorontaló",
+                                       'tlh' => 'klingonska',
+                                       'my' => 'burmneska',
+                                       'sog' => "sogdíen",
+                                       'krc' => "karasaíbalkar",
+                                       'mno' => "manóbómál",
+                                       'tn' => "tsúana",
+                                       'co' => "korsíska",
+                                       'bas' => 'basa',
+                                       'bnt' => "bantúmál",
+                                       'lam' => 'lamba',
+                                       'bo' => "tíbeska",
+                                       'cy' => 'velska',
+                                       'de_CH' => "svissnesk háþýska",
+                                       'mwl' => "mirandesíska",
+                                       'frm' => "miðfranska",
+                                       'kut' => "kútenaí",
+                                       'ky' => 'kirgiska',
+                                       'ti' => "tígrinja",
+                                       'rar' => "rarótongska",
+                                       'bax' => 'bamun',
+                                       'ka' => "georgíska",
+                                       'iro' => "írókesk mál",
+                                       'kea' => 'kappverdiska',
+                                       'sal' => "salísmál",
+                                       'und' => "óþekkt tungumál",
+                                       'hu' => 'ungverska',
+                                       'byn' => "blín",
+                                       'ssa' => "nílósaharamál (önnur)",
+                                       'se' => "norðursamíska",
+                                       'dyu' => "djúla",
+                                       'mic' => 'mikmak',
+                                       'kv' => "komíska",
+                                       'dje' => 'zarma',
+                                       'son' => "songhaí",
+                                       'bin' => "bíní",
+                                       'kcg' => 'tyap',
+                                       'sco' => 'skoska',
+                                       'no' => 'norska',
+                                       'lv' => 'lettneska',
+                                       'zgh' => "staðlað marokkóskt tamazight",
+                                       'ln' => 'lingala',
+                                       'rom' => "romaní",
+                                       'kde' => "makónde",
+                                       'mas' => "masaí",
+                                       'ab' => "abkasíska",
+                                       'roa' => "rómönsk mál (önnur)",
+                                       'chm' => "marí",
+                                       'kkj' => 'kako',
+                                       'li' => "limbúrgíska",
+                                       'kpe' => 'kpelle',
+                                       'jpr' => "gyðingapersneska",
+                                       'fan' => 'fang',
+                                       'zen' => 'senaga',
+                                       'gmh' => "miðháþýska",
+                                       'gv' => 'manx',
+                                       'bra' => "braí",
+                                       'nia' => "nías",
+                                       'fil' => 'filippseyska',
+                                       'pa' => "púnjabí",
+                                       'am' => "amharíska",
+                                       'gay' => "gajó",
+                                       'gem' => "germönsk mál (önnur)",
+                                       'ee' => 'ewe',
+                                       'bat' => "baltnesk mál (önnur)",
+                                       'umb' => "úmbúndú",
+                                       'alt' => "suðuraltaíska",
+                                       'bem' => 'bemba',
+                                       'car' => "karíbamál",
+                                       'eo' => "esperantó",
+                                       'fy' => "vesturfrísneska",
+                                       'as' => 'assamska',
+                                       'ae' => "avestíska",
+                                       'nqo' => "n\x{2019}ko",
+                                       'bua' => "búríat",
+                                       'ia' => "alþjóðatunga",
+                                       'vi' => "víetnamska",
+                                       'day' => 'dajak',
+                                       'bm' => 'bambara',
+                                       'mdf' => 'moksa',
+                                       'nl_BE' => "flæmska",
+                                       'nr' => "suðurndebele",
+                                       'luy' => "olulujía",
+                                       'kw' => "korníska",
+                                       'nym' => "njamvesí",
+                                       'pag' => "pangasínmál",
+                                       'ang' => 'fornenska',
+                                       'fiu' => "finnskúgrísk mál (önnur)",
+                                       'uz' => "úsbekska",
+                                       'ht' => "haítíska",
+                                       'brx' => 'bodo',
+                                       'yo' => "jórúba",
+                                       'bad' => 'banda',
+                                       'ter' => "terenó",
+                                       'gu' => "gújaratí",
+                                       'mni' => "manípúrí",
+                                       'kos' => 'kosraska',
+                                       'raj' => "rajastaní",
+                                       'asa' => 'asu (Tanzania)',
+                                       'srn' => 'sranan tongo',
+                                       'oj' => 'ojibva',
+                                       'sk' => "slóvakíska",
+                                       'cai' => "indíánamál mið-ameríku (önnur)",
+                                       'eka' => "ekajúk",
+                                       'ty' => "tahítíska",
+                                       'gaa' => 'ga',
+                                       'jrb' => "gyðingaarabíska",
+                                       'hup' => "húpa",
+                                       'phi' => "filippseysk mál (önnur)",
+                                       'akk' => "akkadíska",
+                                       'new' => "nevarí",
+                                       'osa' => "ósage",
+                                       'et' => 'eistneska',
+                                       'sad' => 'sandave',
+                                       'mk' => "makedónska",
+                                       'cpf' => "kreól- og pidginmál á frönskum grunni",
+                                       'en' => 'enska',
+                                       'aus' => "áströlsk mál",
+                                       'zza' => "zázáíska",
+                                       'chb' => "síbsja",
+                                       'zu' => "súlú",
+                                       'alg' => "algonkvínsk mál",
+                                       'snk' => "sóninke",
+                                       'pro' => "fornpróvensalska",
+                                       'mga' => "miðírska",
+                                       'wak' => "vakasmál",
+                                       'nn' => "nýnorska",
+                                       'bn' => 'bengalska',
+                                       'pal' => "palaví",
+                                       'ban' => "balíska",
+                                       'min' => "mínangkabá",
+                                       'ar' => "arabíska",
+                                       'sm' => "samóska",
+                                       'grb' => "gerbó",
+                                       'ny' => "njanja; sísjeva; sjeva",
+                                       'was' => "vasjó",
+                                       'sus' => "súsú",
+                                       'ksh' => "kölníska",
+                                       'cel' => "keltnesk (önnur)",
+                                       'gsw' => "svissnesk þýska",
+                                       'him' => "hímasjalí",
+                                       'tpi' => 'tokpisin',
+                                       'ibb' => 'ibibio',
+                                       'nzi' => "nsíma",
+                                       'ain' => "aínu (Japan)",
+                                       'st' => "suðursótó",
+                                       'ko' => "kóreska",
+                                       'sit' => "sínótíbesk mál",
+                                       'ak' => 'akan',
+                                       'chp' => "sípevíska",
+                                       'bss' => 'bakossi',
+                                       'mfe' => 'morisyen',
+                                       'zh_Hant' => "kínverska (hefðbundin)",
+                                       'ssy' => 'saho',
+                                       'wen' => "sorbnesk mál",
+                                       'nwc' => "klassísk nevaríska",
+                                       'sms' => "skoltesamíska",
+                                       'rap' => "rapanúí",
+                                       'oto' => "ótommál",
+                                       'hy' => 'armenska',
+                                       'ms' => "malaíska",
+                                       'fro' => 'fornfranska',
+                                       'myv' => 'ersja',
+                                       'tsi' => "tsimsíska",
+                                       'it' => "ítalska",
+                                       'tiv' => "tív",
+                                       'scn' => 'sikileyska',
+                                       'mdr' => 'mandar',
+                                       'sma' => "suðursamíska",
+                                       'ale' => "aleúska",
+                                       'vot' => "votíska",
+                                       'vai' => "vaí",
+                                       'kru' => "kúrúk",
+                                       'sai' => "indíánamál suður-ameríku (önnur)",
+                                       'lu' => "lúbakatanga",
+                                       'ks' => "kasmírska",
+                                       'pt' => "portúgalska",
+                                       'swb' => "shimaoríska",
+                                       'tli' => 'tlingit',
+                                       'mh' => 'marshallska',
+                                       'gwi' => "gvísín",
+                                       'kg' => "kongóska",
+                                       'smn' => "enaresamíska",
+                                       'ho' => "hírímótú",
+                                       'ewo' => "evondó",
+                                       'afa' => "afróasísk mál (önnur)",
+                                       'ff' => "fúla",
+                                       'tem' => "tímne",
+                                       'lus' => "lúsaí",
+                                       'tkl' => "tókeláska",
+                                       'inh' => "ingús",
+                                       'sn' => "shóna",
+                                       'ath' => "atapaskísk mál",
+                                       'yi' => "jiddíska",
+                                       'cch' => 'atsam',
+                                       'frs' => "austurfrísneska",
+                                       'arp' => "arapahó",
+                                       'mad' => "madúrska",
+                                       'war' => "varaí",
+                                       'sl' => "slóvenska",
+                                       'rup' => "arúmenska",
+                                       'dz' => 'dsongka',
+                                       'jbo' => 'lojban',
+                                       'crh' => "krímtyrkneska",
+                                       'cpp' => "kreól- og pidginmál á portúgölskum grunni",
+                                       'sga' => "fornírska",
+                                       'tk' => "túrkmenska",
+                                       'tup' => "túpímál",
+                                       'de_AT' => "austurrísk þýska",
+                                       'su' => "súndanska",
+                                       'en_US' => "bandarísk enska",
+                                       'sc' => "sardínska",
+                                       'chy' => 'sjeyen',
+                                       'sgn' => "táknmál",
+                                       'sio' => "síúmál",
+                                       'goh' => "fornháþýska",
+                                       'zap' => "sapótek",
+                                       'nb' => "norskt bókmál",
+                                       'nso' => "norðursótó",
+                                       'az' => 'azeri',
+                                       'sah' => "jakút",
+                                       'aa' => "afár",
+                                       'fur' => "fríúlska",
+                                       'ts' => 'tsonga',
+                                       'en_GB' => 'bresk enska',
+                                       'btk' => 'batak',
+                                       'agq' => 'aghem',
+                                       'dav' => "taíta",
+                                       'zbl' => "blisstákn",
+                                       'inc' => "indversk mál (önnur)",
+                                       'crp' => "kreól- og pidginmál (önnur)",
+                                       'iu' => "inúktitút",
+                                       'lah' => 'landa',
+                                       'root' => "rót",
+                                       'zh_Hans' => "kínverska (einfölduð)",
+                                       'cau' => "kákasusmál (önnur)",
+                                       'lui' => "lúisenó",
+                                       'mak' => 'makasar',
+                                       'gez' => "gís",
+                                       'uk' => "úkraínska",
+                                       'kr' => "kanúrí",
+                                       'smi' => "samísk mál (önnur)",
+                                       'fo' => "færeyska",
+                                       'syr' => "sýrlenska",
+                                       'sh' => "serbókróatíska",
+                                       'io' => "ídó",
+                                       'so' => "sómalska",
+                                       'kmb' => "kimbúndú",
+                                       'dar' => 'dargva',
+                                       'phn' => "fönikíska",
+                                       'bik' => "bíkol",
+                                       'lt' => "litháíska",
+                                       'be' => "hvítrússneska",
+                                       'din' => 'dinka',
+                                       'ur' => "úrdú",
+                                       'arw' => 'aravakska',
+                                       'chk' => "sjúkíska",
+                                       'tw' => "tví",
+                                       'ce' => 'tsjetsjenska',
+                                       'kro' => "krú",
+                                       'tvl' => "túvalúska",
+                                       'pi' => "palí",
+                                       'tg' => 'tadsjikska',
+                                       'tog' => 'tongverska (nyasa)',
+                                       'ar_001' => "stöðluð nútímaarabíska",
+                                       'te' => "telúgú",
+                                       'ig' => "ígbó",
+                                       'myn' => "majamál",
+                                       'cgg' => "sjíga",
+                                       'mnc' => "mansjú"
+                                     },
+                      'scripts' => {
+                                     'Knda' => 'kannada',
+                                     'Cakm' => 'chakma',
+                                     'Hant' => "hefðbundið han",
+                                     'Brah' => "brahmíska",
+                                     'Lepc' => 'lepcha',
+                                     'Hrkt' => "katakana eða hiragana",
+                                     'Ethi' => "eþíópískt",
+                                     'Samr' => "samaríska",
+                                     'Runr' => "rúntégn",
+                                     'Zsym' => "tákn",
+                                     'Hans' => "einfaldað han",
+                                     'Mero' => "meroitíska",
+                                     'Olck' => 'ol chiki',
+                                     'Mand' => "mandaíska",
+                                     'Kali' => 'kayah li',
+                                     'Armi' => "impéríska araméíska",
+                                     'Buhd' => 'buhid',
+                                     'Sara' => "saratí",
+                                     'Yiii' => "yí",
+                                     'Tale' => 'tai le',
+                                     'Ogam' => 'ogham',
+                                     'Ugar' => "ugaritíska",
+                                     'Thaa' => 'thaana',
+                                     'Teng' => 'tengvar',
+                                     'Bali' => "balinesíska",
+                                     'Thai' => "taílenskt",
+                                     'Copt' => "koptíska",
+                                     'Tavt' => 'tai viet',
+                                     'Mtei' => 'meitei mayek',
+                                     'Mlym' => 'malalajam',
+                                     'Nkoo' => "n-kó",
+                                     'Kore' => "kóreskt",
+                                     'Zxxx' => "óskrifað",
+                                     'Tfng' => 'tifinagh',
+                                     'Hang' => 'hangul',
+                                     'Sinh' => 'sinhala',
+                                     'Mymr' => 'mjanmarskt',
+                                     'Laoo' => 'lao',
+                                     'Deva' => 'devanagari',
+                                     'Orkh' => 'orkhon',
+                                     'Bugi' => "buginesíska",
+                                     'Cher' => "cherokí",
+                                     'Latn' => 'latneskt',
+                                     'Kana' => 'katakana',
+                                     'Lyci' => "lykíska",
+                                     'Jpan' => 'japanskt',
+                                     'Beng' => 'bengalskt',
+                                     'Gujr' => "gújaratí",
+                                     'Zinh' => "(erfðir)",
+                                     'Orya' => 'oriya',
+                                     'Cprt' => "kypriotíska",
+                                     'Cari' => "karíska",
+                                     'Hira' => 'hiragana',
+                                     'Zzzz' => "óþekkt letur",
+                                     'Mong' => "mongólskt",
+                                     'Bamu' => 'bamun',
+                                     'Dsrt' => 'deseret',
+                                     'Roro' => 'rongorongo',
+                                     'Hani' => "kínverskt",
+                                     'Kthi' => "kaithíska",
+                                     'Mani' => "manikeíska",
+                                     'Lisu' => 'Fraser',
+                                     'Java' => "javanesíska",
+                                     'Khmr' => 'kmer',
+                                     'Zyyy' => 'almennt',
+                                     'Vaii' => 'vai',
+                                     'Shaw' => "shavíska",
+                                     'Lana' => 'lanna',
+                                     'Tglg' => 'tagalog',
+                                     'Sund' => "sundanesíska",
+                                     'Limb' => 'limbu',
+                                     'Plrd' => 'Pollard',
+                                     'Tibt' => "tíbeskt",
+                                     'Avst' => "avestíska",
+                                     'Saur' => 'saurashtra',
+                                     'Geor' => "georgískt",
+                                     'Batk' => "batakíska",
+                                     'Guru' => 'gurmukhi',
+                                     'Syrc' => "syriakíska",
+                                     'Latg' => "gaeliklatnéska",
+                                     'Rjng' => 'rejang',
+                                     'Grek' => "grískt",
+                                     'Blis' => "blisstégn",
+                                     'Taml' => "tamílskt",
+                                     'Cham' => "chamíska",
+                                     'Sylo' => 'syloti nagri',
+                                     'Arab' => "persneskt-arabískt",
+                                     'Moon' => 'moon',
+                                     'Brai' => 'blindraletur',
+                                     'Bopo' => 'bopomofo',
+                                     'Lydi' => "lydíska",
+                                     'Armn' => 'armenskt',
+                                     'Geok' => "georgíska (khutsuri)",
+                                     'Hebr' => 'hebreskt',
+                                     'Latf' => "frakturlatnéska",
+                                     'Telu' => "telúgú",
+                                     'Cyrl' => "kyrillískt",
+                                     'Cirt' => "círth"
+                                   }
+                    },
+  'delimiters' => {
+                    'alternateQuotationEnd' => "\x{2019}",
+                    'quotationEnd' => "\x{201d}",
+                    'quotationStart' => "\x{201c}",
+                    'alternateQuotationStart' => "\x{2018}"
+                  },
+  'iso4217' => 'ISK'
+};

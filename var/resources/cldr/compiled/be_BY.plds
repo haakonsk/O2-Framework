@@ -1,0 +1,1129 @@
+{
+  'territory' => 'BY',
+  'language' => 'be',
+  'number' => {
+                'percentFormat' => {
+                                     'percentFormatLength' => {
+                                                              'standard' => '#,##0%'
+                                                            }
+                                   },
+                'measurement' => {},
+                'symbols' => {
+                               'infinity' => "\x{221e}",
+                               'nan' => 'NaN',
+                               'plusSign' => '+',
+                               'superscriptingExponent' => "×",
+                               'exponential' => 'E',
+                               'group' => " ",
+                               'percentSign' => '%',
+                               'decimal' => ',',
+                               'perMille' => "\x{2030}",
+                               'alias' => '',
+                               'minusSign' => '-',
+                               'list' => ';'
+                             },
+                'scientificFormat' => {
+                                        'scientificFormatLength' => {
+                                                                    'standard' => '#E0'
+                                                                  }
+                                      },
+                'decimalFormat' => {
+                                     'decimalFormatLength' => {
+                                                              'short' => '0K00K000K0M00M000M0G00G000G0T00T000T',
+                                                              'standard' => '#,##0.###'
+                                                            }
+                                   },
+                'currencyFormat' => {
+                                      'currencyFormatLength' => {
+                                                                'standard' => "¤#,##0.00"
+                                                              }
+                                    },
+                'currencies' => {
+                                  'KZT' => {
+                                           'symbol' => "\x{20b8}"
+                                         },
+                                  'NZD' => {
+                                           'symbol' => '$'
+                                         },
+                                  'HKD' => {
+                                           'symbol' => '$'
+                                         },
+                                  'BZD' => {
+                                           'symbol' => '$'
+                                         },
+                                  'BRL' => {
+                                           'symbol' => 'R$',
+                                           'displayName' => "\x{431}\x{440}\x{430}\x{437}\x{456}\x{43b}\x{44c}\x{441}\x{43a}\x{456} \x{440}\x{44d}\x{430}\x{43b}"
+                                         },
+                                  'SGD' => {
+                                           'symbol' => '$'
+                                         },
+                                  'TWD' => {
+                                           'symbol' => 'NT$'
+                                         },
+                                  'USD' => {
+                                           'symbol' => '$',
+                                           'displayName' => "\x{434}\x{43e}\x{43b}\x{430}\x{440} \x{417}\x{428}\x{410}"
+                                         },
+                                  'ERN' => {
+                                           'displayName' => "\x{44d}\x{440}\x{44b}\x{442}\x{440}\x{44d}\x{439}\x{441}\x{43a}\x{430}\x{44f} \x{43d}\x{430}\x{43a}\x{444}\x{430}"
+                                         },
+                                  'XXX' => {
+                                           'displayName' => "\x{43d}\x{435}\x{432}\x{44f}\x{434}\x{43e}\x{43c}\x{430}\x{44f} \x{430}\x{431}\x{43e} \x{43d}\x{435}\x{434}\x{430}\x{43f}\x{443}\x{448}\x{447}\x{430}\x{43b}\x{44c}\x{43d}\x{430}\x{44f} \x{432}\x{430}\x{43b}\x{44e}\x{442}\x{430}"
+                                         },
+                                  'SSP' => {
+                                           'symbol' => "£"
+                                         },
+                                  'KYD' => {
+                                           'symbol' => '$'
+                                         },
+                                  'AUD' => {
+                                           'symbol' => '$',
+                                           'displayName' => "\x{430}\x{45e}\x{441}\x{442}\x{440}\x{430}\x{43b}\x{456}\x{439}\x{441}\x{43a}\x{456} \x{434}\x{430}\x{43b}\x{44f}\x{440}"
+                                         },
+                                  'NGN' => {
+                                           'symbol' => "\x{20a6}"
+                                         },
+                                  'CRC' => {
+                                           'symbol' => "\x{20a1}"
+                                         },
+                                  'KRW' => {
+                                           'symbol' => "\x{20a9}"
+                                         },
+                                  'TRY' => {
+                                           'symbol' => 'TL'
+                                         },
+                                  'GIP' => {
+                                           'symbol' => "£"
+                                         },
+                                  'NOK' => {
+                                           'displayName' => "\x{43d}\x{430}\x{440}\x{432}\x{44d}\x{441}\x{43a}\x{430}\x{44f} \x{43a}\x{440}\x{43e}\x{43d}\x{430}"
+                                         },
+                                  'LAK' => {
+                                           'symbol' => "\x{20ad}"
+                                         },
+                                  'FJD' => {
+                                           'symbol' => '$'
+                                         },
+                                  'CLP' => {
+                                           'symbol' => '$'
+                                         },
+                                  'NAD' => {
+                                           'symbol' => '$'
+                                         },
+                                  'JMD' => {
+                                           'symbol' => '$'
+                                         },
+                                  'ILS' => {
+                                           'symbol' => "\x{20aa}"
+                                         },
+                                  'BSD' => {
+                                           'symbol' => '$'
+                                         },
+                                  'ESP' => {
+                                           'symbol' => "\x{20a7}"
+                                         },
+                                  'UYU' => {
+                                           'symbol' => '$'
+                                         },
+                                  'UAH' => {
+                                           'symbol' => "\x{20b4}"
+                                         },
+                                  'MXN' => {
+                                           'symbol' => '$'
+                                         },
+                                  'GYD' => {
+                                           'symbol' => '$'
+                                         },
+                                  'BYR' => {
+                                           'symbol' => "\x{440}.",
+                                           'displayName' => "\x{431}\x{435}\x{43b}\x{430}\x{440}\x{443}\x{441}\x{43a}\x{456} \x{440}\x{443}\x{431}\x{435}\x{43b}\x{44c}"
+                                         },
+                                  'THB' => {
+                                           'symbol' => "\x{e3f}"
+                                         },
+                                  'LRD' => {
+                                           'symbol' => '$'
+                                         },
+                                  'BND' => {
+                                           'symbol' => '$'
+                                         },
+                                  'RUB' => {
+                                           'symbol' => "\x{440}\x{430}\x{441}. \x{440}\x{443}\x{431}.",
+                                           'displayName' => "\x{440}\x{443}\x{441}\x{43a}\x{456} \x{440}\x{443}\x{431}\x{435}\x{43b}\x{44c}"
+                                         },
+                                  'JPY' => {
+                                           'symbol' => "¥",
+                                           'displayName' => "\x{44f}\x{43f}\x{43e}\x{43d}\x{441}\x{43a}\x{430}\x{44f} \x{456}\x{435}\x{43d}\x{430}"
+                                         },
+                                  'BMD' => {
+                                           'symbol' => '$'
+                                         },
+                                  'PYG' => {
+                                           'symbol' => "\x{20b2}"
+                                         },
+                                  'VND' => {
+                                           'symbol' => "\x{20ab}"
+                                         },
+                                  'CAD' => {
+                                           'symbol' => '$'
+                                         },
+                                  'CUP' => {
+                                           'symbol' => '$'
+                                         },
+                                  'SBD' => {
+                                           'symbol' => '$'
+                                         },
+                                  'GHS' => {
+                                           'symbol' => "\x{20b5}"
+                                         },
+                                  'TTD' => {
+                                           'symbol' => '$'
+                                         },
+                                  'RUR' => {
+                                           'symbol' => "\x{440}."
+                                         },
+                                  'XCD' => {
+                                           'symbol' => 'EC$'
+                                         },
+                                  'BBD' => {
+                                           'symbol' => '$'
+                                         },
+                                  'COP' => {
+                                           'symbol' => '$'
+                                         },
+                                  'XOF' => {
+                                           'symbol' => 'CFA'
+                                         },
+                                  'ARS' => {
+                                           'symbol' => '$'
+                                         },
+                                  'BDT' => {
+                                           'symbol' => "\x{9f3}"
+                                         },
+                                  'KHR' => {
+                                           'symbol' => "\x{17db}"
+                                         },
+                                  'CNY' => {
+                                           'symbol' => "¥",
+                                           'displayName' => "\x{43a}\x{456}\x{442}\x{430}\x{439}\x{441}\x{43a}\x{456} \x{44e}\x{430}\x{43d}\x{44c}"
+                                         },
+                                  'MNT' => {
+                                           'symbol' => "\x{20ae}"
+                                         },
+                                  'EUR' => {
+                                           'symbol' => "\x{20ac}",
+                                           'displayName' => "\x{435}\x{45e}\x{440}\x{430}"
+                                         },
+                                  'INR' => {
+                                           'symbol' => "\x{20b9}",
+                                           'displayName' => "\x{456}\x{43d}\x{434}\x{44b}\x{439}\x{441}\x{43a}\x{430}\x{44f} \x{440}\x{443}\x{43f}\x{456}\x{44f}"
+                                         },
+                                  'SRD' => {
+                                           'symbol' => '$'
+                                         },
+                                  'GBP' => {
+                                           'symbol' => "£",
+                                           'displayName' => "\x{430}\x{43d}\x{433}\x{43b}\x{456}\x{439}\x{441}\x{43a}\x{456} \x{444}\x{443}\x{43d}\x{442}"
+                                         },
+                                  'XAF' => {
+                                           'symbol' => 'FCFA'
+                                         },
+                                  'PHP' => {
+                                           'symbol' => "\x{20b1}"
+                                         },
+                                  'DOP' => {
+                                           'symbol' => '$'
+                                         },
+                                  'XPF' => {
+                                           'symbol' => 'CFPF'
+                                         }
+                                }
+              },
+  'locale' => 'be_BY',
+  'characters' => {
+                    'word-initial' => "\x{2026} {0}",
+                    'standard' => '?',
+                    'word-medial' => "{0} \x{2026} {1}",
+                    'index' => "[\x{410} \x{411} \x{412} \x{413} \x{414} \x{415} \x{416} \x{417} \x{406} \x{419} \x{41a} \x{41b} \x{41c} \x{41d} \x{41e} \x{41f} \x{420} \x{421} \x{422} \x{423} \x{424} \x{425} \x{426} \x{427} \x{428} \x{42b} \x{42d} \x{42e} \x{42f}]",
+                    'medial' => "{0}\x{2026}{1}",
+                    'word-final' => "{0} \x{2026}",
+                    'final' => "{0}\x{2026}",
+                    'auxiliary' => "[{\x{430}\\u0301} {\x{435}\\u0301} {\x{451}\\u0301} {\x{456}\\u0301} {\x{43e}\\u0301} {\x{443}\\u0301} {\x{44b}\\u0301} {\x{44d}\\u0301} {\x{44e}\\u0301} {\x{44f}\\u0301}]",
+                    'initial' => "\x{2026}{0}",
+                    'punctuation' => '[\\- , ; \\: ! ? . ( ) \\[ \\] \\{ \\}]'
+                  },
+  'calendar' => {
+                  'calendarType' => 'gregorian',
+                  'timeFormat' => {
+                                    'short' => 'HH.mm',
+                                    'pm' => '',
+                                    'am' => '',
+                                    'medium' => 'HH.mm.ss',
+                                    'long' => 'HH.mm.ss z',
+                                    'full' => 'HH.mm.ss zzzz'
+                                  },
+                  'timeZones' => {
+                                   'regionFormat' => "\x{427}\x{430}\x{441}: {0}",
+                                   'gmtFormat' => 'GMT{0}',
+                                   'hourFormat' => '+HH:mm;-HH:mm',
+                                   'metazone' => "
+				
+					\x{413}\x{440}\x{44b}\x{43d}\x{432}\x{456}\x{447}\x{441}\x{43a}\x{456} \x{447}\x{430}\x{441}
+				
+			",
+                                   'zones' => {
+                                                'Antarctica/DumontDUrville' => {
+                                                                               'type' => 'Antarctica/DumontDUrville',
+                                                                               'exemplarCity' => "Dumont d\x{2019}Urville"
+                                                                             },
+                                                'Asia/Calcutta' => {
+                                                                   'type' => 'Asia/Calcutta',
+                                                                   'exemplarCity' => 'Kolkata'
+                                                                 },
+                                                'America/Campo_Grande' => {
+                                                                          'type' => 'America/Campo_Grande',
+                                                                          'exemplarCity' => {
+                                                                                            'draft' => 'contributed',
+                                                                                            'content' => "\x{41a}\x{430}\x{43c}\x{43f}\x{430} \x{413}\x{440}\x{430}\x{43d}\x{434}\x{44d}"
+                                                                                          }
+                                                                        },
+                                                'America/Indiana/Vincennes' => {
+                                                                               'type' => 'America/Indiana/Vincennes',
+                                                                               'exemplarCity' => 'Vincennes, Indiana'
+                                                                             },
+                                                'America/Indiana/Winamac' => {
+                                                                             'type' => 'America/Indiana/Winamac',
+                                                                             'exemplarCity' => 'Winamac, Indiana'
+                                                                           },
+                                                'America/Los_Angeles' => {
+                                                                         'type' => 'America/Los_Angeles',
+                                                                         'exemplarCity' => {
+                                                                                           'draft' => 'contributed',
+                                                                                           'content' => "\x{41b}\x{43e}\x{441}-\x{410}\x{43d}\x{434}\x{436}\x{44d}\x{43b}\x{430}\x{441}"
+                                                                                         }
+                                                                       },
+                                                'America/Indiana/Marengo' => {
+                                                                             'type' => 'America/Indiana/Marengo',
+                                                                             'exemplarCity' => 'Marengo, Indiana'
+                                                                           },
+                                                'America/Indiana/Petersburg' => {
+                                                                                'type' => 'America/Indiana/Petersburg',
+                                                                                'exemplarCity' => 'Petersburg, Indiana'
+                                                                              },
+                                                'Atlantic/St_Helena' => {
+                                                                        'type' => 'Atlantic/St_Helena',
+                                                                        'exemplarCity' => 'St. Helena'
+                                                                      },
+                                                'America/Coral_Harbour' => {
+                                                                           'type' => 'America/Coral_Harbour',
+                                                                           'exemplarCity' => 'Atikokan'
+                                                                         },
+                                                'Etc/Unknown' => {
+                                                                 'type' => 'Etc/Unknown',
+                                                                 'exemplarCity' => "\x{41d}\x{435}\x{432}\x{44f}\x{434}\x{43e}\x{43c}\x{44b}"
+                                                               },
+                                                'Atlantic/Faeroe' => {
+                                                                     'type' => 'Atlantic/Faeroe',
+                                                                     'exemplarCity' => 'Faroe'
+                                                                   },
+                                                'America/Godthab' => {
+                                                                     'type' => 'America/Godthab',
+                                                                     'exemplarCity' => 'Nuuk'
+                                                                   },
+                                                'America/St_Kitts' => {
+                                                                      'type' => 'America/St_Kitts',
+                                                                      'exemplarCity' => 'St. Kitts'
+                                                                    },
+                                                'America/Scoresbysund' => {
+                                                                          'type' => 'America/Scoresbysund',
+                                                                          'exemplarCity' => 'Ittoqqortoormiit'
+                                                                        },
+                                                'America/St_Johns' => {
+                                                                      'type' => 'America/St_Johns',
+                                                                      'exemplarCity' => "St. John\x{2019}s"
+                                                                    },
+                                                'Pacific/Ponape' => {
+                                                                    'type' => 'Pacific/Ponape',
+                                                                    'exemplarCity' => 'Pohnpei'
+                                                                  },
+                                                'Asia/Katmandu' => {
+                                                                   'type' => 'Asia/Katmandu',
+                                                                   'exemplarCity' => 'Kathmandu'
+                                                                 },
+                                                'America/Phoenix' => {
+                                                                     'type' => 'America/Phoenix',
+                                                                     'exemplarCity' => {
+                                                                                       'draft' => 'contributed',
+                                                                                       'content' => "\x{424}\x{44d}\x{43d}\x{456}\x{43a}\x{441}"
+                                                                                     }
+                                                                   },
+                                                'America/Chicago' => {
+                                                                     'type' => 'America/Chicago',
+                                                                     'exemplarCity' => {
+                                                                                       'draft' => 'contributed',
+                                                                                       'content' => "\x{427}\x{44b}\x{43a}\x{430}\x{433}\x{430}"
+                                                                                     }
+                                                                   },
+                                                'Pacific/Truk' => {
+                                                                  'type' => 'Pacific/Truk',
+                                                                  'exemplarCity' => 'Chuuk'
+                                                                },
+                                                'America/St_Lucia' => {
+                                                                      'type' => 'America/St_Lucia',
+                                                                      'exemplarCity' => 'St. Lucia'
+                                                                    },
+                                                'America/Indiana/Tell_City' => {
+                                                                               'type' => 'America/Indiana/Tell_City',
+                                                                               'exemplarCity' => 'Tell City, Indiana'
+                                                                             },
+                                                'America/Denver' => {
+                                                                    'type' => 'America/Denver',
+                                                                    'exemplarCity' => {
+                                                                                      'draft' => 'contributed',
+                                                                                      'content' => "\x{414}\x{44d}\x{43d}\x{432}\x{44d}\x{440}"
+                                                                                    }
+                                                                  },
+                                                'America/Indiana/Knox' => {
+                                                                          'type' => 'America/Indiana/Knox',
+                                                                          'exemplarCity' => 'Knox, Indiana'
+                                                                        },
+                                                'Africa/Asmera' => {
+                                                                   'type' => 'Africa/Asmera',
+                                                                   'exemplarCity' => 'Asmara'
+                                                                 },
+                                                'America/St_Thomas' => {
+                                                                       'type' => 'America/St_Thomas',
+                                                                       'exemplarCity' => 'St. Thomas'
+                                                                     },
+                                                'America/Lower_Princes' => {
+                                                                           'type' => 'America/Lower_Princes',
+                                                                           'exemplarCity' => 'Lower Prince\'s Quarter'
+                                                                         },
+                                                'America/Anchorage' => {
+                                                                       'type' => 'America/Anchorage',
+                                                                       'exemplarCity' => {
+                                                                                         'draft' => 'contributed',
+                                                                                         'content' => "\x{410}\x{43d}\x{43a}\x{43e}\x{440}\x{44b}\x{434}\x{436}"
+                                                                                       }
+                                                                     },
+                                                'America/North_Dakota/Beulah' => {
+                                                                                 'type' => 'America/North_Dakota/Beulah',
+                                                                                 'exemplarCity' => 'Beulah, North Dakota'
+                                                                               },
+                                                'Pacific/Honolulu' => {
+                                                                      'type' => 'Pacific/Honolulu',
+                                                                      'exemplarCity' => {
+                                                                                        'draft' => 'contributed',
+                                                                                        'content' => "\x{413}\x{430}\x{43d}\x{430}\x{43b}\x{443}\x{43b}\x{443}"
+                                                                                      }
+                                                                    },
+                                                'America/Indiana/Vevay' => {
+                                                                           'type' => 'America/Indiana/Vevay',
+                                                                           'exemplarCity' => 'Vevay, Indiana'
+                                                                         },
+                                                'Asia/Saigon' => {
+                                                                 'type' => 'Asia/Saigon',
+                                                                 'exemplarCity' => 'Ho Chi Minh'
+                                                               },
+                                                'America/St_Barthelemy' => {
+                                                                           'type' => 'America/St_Barthelemy',
+                                                                           'exemplarCity' => 'St. Barthelemy'
+                                                                         },
+                                                'America/Rio_Branco' => {
+                                                                        'type' => 'America/Rio_Branco',
+                                                                        'exemplarCity' => {
+                                                                                          'draft' => 'contributed',
+                                                                                          'content' => "\x{420}\x{44b}\x{451} \x{411}\x{440}\x{430}\x{43d}\x{43a}\x{430}"
+                                                                                        }
+                                                                      },
+                                                'America/North_Dakota/New_Salem' => {
+                                                                                    'type' => 'America/North_Dakota/New_Salem',
+                                                                                    'exemplarCity' => 'New Salem, North Dakota'
+                                                                                  },
+                                                'America/Sao_Paulo' => {
+                                                                       'type' => 'America/Sao_Paulo',
+                                                                       'exemplarCity' => {
+                                                                                         'draft' => 'contributed',
+                                                                                         'content' => "\x{421}\x{430}\x{43d}-\x{41f}\x{430}\x{45e}\x{43b}\x{443}"
+                                                                                       }
+                                                                     },
+                                                'America/New_York' => {
+                                                                      'type' => 'America/New_York',
+                                                                      'exemplarCity' => {
+                                                                                        'draft' => 'contributed',
+                                                                                        'content' => "\x{41d}\x{44c}\x{44e}-\x{401}\x{440}\x{43a}"
+                                                                                      }
+                                                                    },
+                                                'America/Kentucky/Monticello' => {
+                                                                                 'type' => 'America/Kentucky/Monticello',
+                                                                                 'exemplarCity' => 'Monticello, Kentucky'
+                                                                               },
+                                                'America/Indianapolis' => {
+                                                                          'type' => 'America/Indianapolis',
+                                                                          'exemplarCity' => {
+                                                                                            'draft' => 'contributed',
+                                                                                            'content' => "\x{406}\x{43d}\x{434}\x{44b}\x{44f}\x{43d}\x{430}\x{43f}\x{430}\x{43b}\x{456}\x{441}"
+                                                                                          }
+                                                                        },
+                                                'America/St_Vincent' => {
+                                                                        'type' => 'America/St_Vincent',
+                                                                        'exemplarCity' => 'St. Vincent'
+                                                                      },
+                                                'America/North_Dakota/Center' => {
+                                                                                 'type' => 'America/North_Dakota/Center',
+                                                                                 'exemplarCity' => 'Center, North Dakota'
+                                                                               }
+                                              },
+                                   'fallbackFormat' => '{1} ({0})',
+                                   'gmtZeroFormat' => 'GMT'
+                                 },
+                  'eras' => {
+                              'eraNames' => {
+                                            'alias' => {
+                                                       '' => ''
+                                                     }
+                                          },
+                              'eraNarrow' => {
+                                             'alias' => {
+                                                        '' => ''
+                                                      }
+                                           },
+                              'eraAbbr' => {
+                                           'era' => {
+                                                    '1' => "\x{43d}.\x{44d}.",
+                                                    '0' => "\x{434}\x{430} \x{43d}.\x{44d}."
+                                                  }
+                                         }
+                            },
+                  'days' => {
+                              'format' => {
+                                          'short' => {
+                                                     '' => ''
+                                                   },
+                                          'abbreviated' => {
+                                                           '' => '',
+                                                           'fri' => "\x{43f}\x{442}",
+                                                           'wed' => "\x{441}\x{440}",
+                                                           'sun' => "\x{43d}\x{434}",
+                                                           'tue' => "\x{430}\x{45e}",
+                                                           'mon' => "\x{43f}\x{43d}",
+                                                           'sat' => "\x{441}\x{431}",
+                                                           'thu' => "\x{447}\x{446}"
+                                                         },
+                                          'narrow' => {
+                                                      '' => ''
+                                                    },
+                                          'wide' => {
+                                                    'fri' => "\x{43f}\x{44f}\x{442}\x{43d}\x{456}\x{446}\x{430}",
+                                                    'tue' => "\x{430}\x{45e}\x{442}\x{43e}\x{440}\x{430}\x{43a}",
+                                                    'sun' => "\x{43d}\x{44f}\x{434}\x{437}\x{435}\x{43b}\x{44f}",
+                                                    'sat' => "\x{441}\x{443}\x{431}\x{43e}\x{442}\x{430}",
+                                                    'mon' => "\x{43f}\x{430}\x{43d}\x{44f}\x{434}\x{437}\x{435}\x{43b}\x{430}\x{43a}",
+                                                    'wed' => "\x{441}\x{435}\x{440}\x{430}\x{434}\x{430}",
+                                                    'thu' => "\x{447}\x{430}\x{446}\x{432}\x{435}\x{440}"
+                                                  }
+                                        },
+                              'stand-alone' => {
+                                               'short' => {
+                                                          '' => ''
+                                                        },
+                                               'abbreviated' => {
+                                                                '' => ''
+                                                              },
+                                               'narrow' => {
+                                                           'fri' => "\x{43f}",
+                                                           'tue' => "\x{430}",
+                                                           'sun' => "\x{43d}",
+                                                           'sat' => "\x{441}",
+                                                           'mon' => "\x{43f}",
+                                                           'wed' => "\x{441}",
+                                                           'thu' => "\x{447}"
+                                                         },
+                                               'wide' => {
+                                                         '' => ''
+                                                       }
+                                             }
+                            },
+                  'months' => {
+                                'format' => {
+                                            'abbreviated' => {
+                                                             '' => '',
+                                                             '6' => "\x{447}\x{44d}\x{440}",
+                                                             '11' => "\x{43b}\x{456}\x{441}",
+                                                             '3' => "\x{441}\x{430}\x{43a}",
+                                                             '7' => "\x{43b}\x{456}\x{43f}",
+                                                             '9' => "\x{432}\x{435}\x{440}",
+                                                             '12' => "\x{441}\x{43d}\x{435}",
+                                                             '2' => "\x{43b}\x{44e}\x{442}",
+                                                             '8' => "\x{436}\x{43d}\x{456}",
+                                                             '1' => "\x{441}\x{442}\x{443}",
+                                                             '4' => "\x{43a}\x{440}\x{430}",
+                                                             '10' => "\x{43a}\x{430}\x{441}",
+                                                             '5' => "\x{43c}\x{430}\x{44f}"
+                                                           },
+                                            'narrow' => {
+                                                        '' => '',
+                                                        '6' => "\x{447}",
+                                                        '11' => "\x{43b}",
+                                                        '3' => "\x{441}",
+                                                        '7' => "\x{43b}",
+                                                        '9' => "\x{432}",
+                                                        '12' => "\x{441}",
+                                                        '2' => "\x{43b}",
+                                                        '8' => "\x{436}",
+                                                        '1' => "\x{441}",
+                                                        '4' => "\x{43a}",
+                                                        '10' => "\x{43a}",
+                                                        '5' => "\x{43c}"
+                                                      },
+                                            'wide' => {
+                                                      '6' => "\x{447}\x{44d}\x{440}\x{432}\x{435}\x{43d}\x{44f}",
+                                                      '11' => "\x{43b}\x{456}\x{441}\x{442}\x{430}\x{43f}\x{430}\x{434}\x{430}",
+                                                      '3' => "\x{441}\x{430}\x{43a}\x{430}\x{432}\x{456}\x{43a}\x{430}",
+                                                      '7' => "\x{43b}\x{456}\x{43f}\x{435}\x{43d}\x{44f}",
+                                                      '9' => "\x{432}\x{435}\x{440}\x{430}\x{441}\x{43d}\x{44f}",
+                                                      '12' => "\x{441}\x{43d}\x{435}\x{436}\x{43d}\x{44f}",
+                                                      '2' => "\x{43b}\x{44e}\x{442}\x{430}\x{433}\x{430}",
+                                                      '8' => "\x{436}\x{43d}\x{456}\x{45e}\x{43d}\x{44f}",
+                                                      '1' => "\x{441}\x{442}\x{443}\x{434}\x{437}\x{435}\x{43d}\x{44f}",
+                                                      '4' => "\x{43a}\x{440}\x{430}\x{441}\x{430}\x{432}\x{456}\x{43a}\x{430}",
+                                                      '10' => "\x{43a}\x{430}\x{441}\x{442}\x{440}\x{44b}\x{447}\x{43d}\x{456}\x{43a}\x{430}",
+                                                      '5' => "\x{43c}\x{430}\x{44f}"
+                                                    }
+                                          },
+                                'stand-alone' => {
+                                                 'abbreviated' => {
+                                                                  '' => '',
+                                                                  '6' => "\x{447}\x{44d}\x{440}",
+                                                                  '11' => "\x{43b}\x{456}\x{441}",
+                                                                  '3' => "\x{441}\x{430}\x{43a}",
+                                                                  '7' => "\x{43b}\x{456}\x{43f}",
+                                                                  '9' => "\x{432}\x{435}\x{440}",
+                                                                  '12' => "\x{441}\x{43d}\x{435}",
+                                                                  '2' => "\x{43b}\x{44e}\x{442}",
+                                                                  '8' => "\x{436}\x{43d}\x{456}",
+                                                                  '1' => "\x{441}\x{442}\x{443}",
+                                                                  '4' => "\x{43a}\x{440}\x{430}",
+                                                                  '10' => "\x{43a}\x{430}\x{441}",
+                                                                  '5' => "\x{43c}\x{430}\x{439}"
+                                                                },
+                                                 'narrow' => {
+                                                             '6' => "\x{447}",
+                                                             '11' => "\x{43b}",
+                                                             '3' => "\x{441}",
+                                                             '7' => "\x{43b}",
+                                                             '9' => "\x{432}",
+                                                             '12' => "\x{441}",
+                                                             '2' => "\x{43b}",
+                                                             '8' => "\x{436}",
+                                                             '1' => "\x{441}",
+                                                             '4' => "\x{43a}",
+                                                             '10' => "\x{43a}",
+                                                             '5' => "\x{43c}"
+                                                           },
+                                                 'wide' => {
+                                                           '' => '',
+                                                           '6' => "\x{447}\x{44d}\x{440}\x{432}\x{435}\x{43d}\x{44c}",
+                                                           '11' => "\x{43b}\x{456}\x{441}\x{442}\x{430}\x{43f}\x{430}\x{434}",
+                                                           '3' => "\x{441}\x{430}\x{43a}\x{430}\x{432}\x{456}\x{43a}",
+                                                           '7' => "\x{43b}\x{456}\x{43f}\x{435}\x{43d}\x{44c}",
+                                                           '9' => "\x{432}\x{435}\x{440}\x{430}\x{441}\x{435}\x{43d}\x{44c}",
+                                                           '12' => "\x{441}\x{43d}\x{435}\x{436}\x{430}\x{43d}\x{44c}",
+                                                           '2' => "\x{43b}\x{44e}\x{442}\x{44b}",
+                                                           '8' => "\x{436}\x{43d}\x{456}\x{432}\x{435}\x{43d}\x{44c}",
+                                                           '1' => "\x{441}\x{442}\x{443}\x{434}\x{437}\x{435}\x{43d}\x{44c}",
+                                                           '4' => "\x{43a}\x{440}\x{430}\x{441}\x{430}\x{432}\x{456}\x{43a}",
+                                                           '10' => "\x{43a}\x{430}\x{441}\x{442}\x{440}\x{44b}\x{447}\x{43d}\x{456}\x{43a}",
+                                                           '5' => "\x{43c}\x{430}\x{439}"
+                                                         }
+                                               }
+                              },
+                  'dateFormat' => {
+                                    'short' => 'd.M.yy',
+                                    'medium' => 'd.M.y',
+                                    'long' => 'd MMMM y',
+                                    'full' => 'EEEE, d MMMM y'
+                                  }
+                },
+  'displayNames' => {
+                      'territories' => {
+                                         'DJ' => "\x{414}\x{436}\x{44b}\x{431}\x{443}\x{446}\x{456}",
+                                         'JM' => "\x{42f}\x{43c}\x{430}\x{439}\x{43a}\x{430}",
+                                         '030' => "\x{423}\x{441}\x{445}\x{43e}\x{434}\x{43d}\x{44f}\x{44f} \x{410}\x{437}\x{456}\x{44f}",
+                                         'AT' => "\x{410}\x{45e}\x{441}\x{442}\x{440}\x{44b}\x{44f}",
+                                         'SZ' => "\x{421}\x{432}\x{430}\x{437}\x{456}\x{43b}\x{435}\x{43d}\x{434}",
+                                         'YT' => "\x{412}\x{43e}\x{441}\x{442}\x{440}\x{430}\x{45e} \x{41c}\x{430}\x{451}\x{442}\x{430}",
+                                         'BN' => "\x{411}\x{440}\x{443}\x{43d}\x{435}\x{439}",
+                                         'ZM' => "\x{417}\x{430}\x{43c}\x{431}\x{456}\x{44f}",
+                                         'PR' => "\x{41f}\x{443}\x{44d}\x{440}\x{442}\x{430}-\x{420}\x{44b}\x{43a}\x{430}",
+                                         'SH' => "\x{421}\x{432}\x{44f}\x{442}\x{43e}\x{439} \x{410}\x{43b}\x{435}\x{43d}\x{44b}, \x{412}\x{43e}\x{441}\x{442}\x{440}\x{430}\x{45e}",
+                                         'MA' => "\x{41c}\x{430}\x{440}\x{43e}\x{43a}\x{430}",
+                                         'SV' => "\x{421}\x{430}\x{43b}\x{44c}\x{432}\x{430}\x{434}\x{43e}\x{440}",
+                                         'MT' => "\x{41c}\x{430}\x{43b}\x{44c}\x{442}\x{430}",
+                                         'MP' => "\x{41f}\x{430}\x{45e}\x{43d}\x{43e}\x{447}\x{43d}\x{44b}\x{44f} \x{41c}\x{430}\x{440}\x{44b}\x{44f}\x{43d}\x{441}\x{43a}\x{456}\x{44f} \x{430}\x{441}\x{442}\x{440}\x{430}\x{432}\x{44b}",
+                                         'UZ' => "\x{423}\x{437}\x{431}\x{435}\x{43a}\x{456}\x{441}\x{442}\x{430}\x{43d}",
+                                         'PW' => "\x{41f}\x{430}\x{43b}\x{430}\x{443}",
+                                         'TK' => "\x{422}\x{430}\x{43a}\x{435}\x{43b}\x{430}\x{443}",
+                                         'LR' => "\x{41b}\x{456}\x{431}\x{435}\x{440}\x{44b}\x{44f}",
+                                         'TN' => "\x{422}\x{443}\x{43d}\x{456}\x{441}",
+                                         'EE' => "\x{42d}\x{441}\x{442}\x{43e}\x{43d}\x{456}\x{44f}",
+                                         'CK' => "\x{410}\x{441}\x{442}\x{440}\x{430}\x{432}\x{44b} \x{41a}\x{443}\x{43a}\x{430}",
+                                         'BY' => "\x{411}\x{435}\x{43b}\x{430}\x{440}\x{443}\x{441}\x{44c}",
+                                         'NO' => "\x{41d}\x{430}\x{440}\x{432}\x{435}\x{433}\x{456}\x{44f}",
+                                         'KR' => "\x{41f}\x{430}\x{45e}\x{434}\x{43d}\x{451}\x{432}\x{430}\x{44f} \x{41a}\x{430}\x{440}\x{44d}\x{44f}",
+                                         'BF' => "\x{411}\x{443}\x{440}\x{43a}\x{456}\x{43d}\x{430}-\x{424}\x{430}\x{441}\x{43e}",
+                                         'AM' => "\x{410}\x{440}\x{43c}\x{435}\x{43d}\x{456}\x{44f}",
+                                         'SR' => "\x{421}\x{443}\x{440}\x{44b}\x{43d}\x{430}\x{43c}",
+                                         'MG' => "\x{41c}\x{430}\x{434}\x{430}\x{433}\x{430}\x{441}\x{43a}\x{430}\x{440}",
+                                         'BT' => "\x{411}\x{443}\x{442}\x{430}\x{43d}",
+                                         '009' => "\x{410}\x{43a}\x{456}\x{44f}\x{43d}\x{456}\x{44f}",
+                                         'CF' => "\x{426}\x{44d}\x{43d}\x{442}\x{440}\x{430}\x{43b}\x{44c}\x{43d}\x{430}-\x{410}\x{444}\x{440}\x{44b}\x{43a}\x{430}\x{43d}\x{441}\x{43a}\x{430}\x{44f} \x{420}\x{44d}\x{441}\x{43f}\x{443}\x{431}\x{43b}\x{456}\x{43a}\x{430}",
+                                         '014' => "\x{423}\x{441}\x{445}\x{43e}\x{434}\x{43d}\x{44f}\x{44f} \x{410}\x{444}\x{440}\x{44b}\x{43a}\x{430}",
+                                         'BA' => "\x{411}\x{43e}\x{441}\x{43d}\x{456}\x{44f} \x{456} \x{413}\x{435}\x{440}\x{446}\x{430}\x{433}\x{430}\x{432}\x{456}\x{43d}\x{430}",
+                                         'AE' => "\x{410}\x{431}'\x{44f}\x{434}\x{43d}\x{430}\x{43d}\x{44b}\x{44f} \x{410}\x{440}\x{430}\x{431}\x{441}\x{43a}\x{456}\x{44f} \x{42d}\x{43c}\x{456}\x{440}\x{430}\x{442}\x{44b}",
+                                         'TH' => "\x{422}\x{430}\x{439}\x{43b}\x{430}\x{43d}\x{434}",
+                                         '002' => "\x{410}\x{444}\x{440}\x{44b}\x{43a}\x{430}",
+                                         'CC' => "\x{41a}\x{430}\x{43a}\x{43e}\x{441}\x{430}\x{432}\x{44b}\x{44f} \x{430}\x{441}\x{442}\x{440}\x{430}\x{432}\x{44b}",
+                                         'NC' => "\x{41d}\x{43e}\x{432}\x{430}\x{44f} \x{41a}\x{430}\x{43b}\x{435}\x{434}\x{43e}\x{43d}\x{456}\x{44f}",
+                                         'EU' => "\x{415}\x{45e}\x{440}\x{430}\x{43f}\x{435}\x{439}\x{441}\x{43a}\x{456} \x{417}\x{432}\x{44f}\x{437}",
+                                         'TO' => "\x{422}\x{43e}\x{43d}\x{433}\x{430}",
+                                         'SE' => "\x{428}\x{432}\x{435}\x{446}\x{44b}\x{44f}",
+                                         'AZ' => "\x{410}\x{437}\x{435}\x{440}\x{431}\x{430}\x{439}\x{434}\x{436}\x{430}\x{43d}",
+                                         'AF' => "\x{410}\x{444}\x{433}\x{430}\x{43d}\x{456}\x{441}\x{442}\x{430}\x{43d}",
+                                         'NG' => "\x{41d}\x{456}\x{433}\x{435}\x{440}\x{44b}\x{44f}",
+                                         'KE' => "\x{41a}\x{435}\x{43d}\x{456}\x{44f}",
+                                         'BJ' => "\x{411}\x{435}\x{43d}\x{456}\x{43d}",
+                                         'OM' => "\x{410}\x{43c}\x{430}\x{43d}",
+                                         '145' => "\x{417}\x{430}\x{445}\x{43e}\x{434}\x{43d}\x{44f}\x{44f} \x{410}\x{437}\x{456}\x{44f}",
+                                         'LK' => "\x{428}\x{440}\x{44b}-\x{41b}\x{430}\x{43d}\x{43a}\x{430}",
+                                         'ID' => "\x{406}\x{43d}\x{434}\x{430}\x{43d}\x{435}\x{437}\x{456}\x{44f}",
+                                         'FM' => "\x{41c}\x{456}\x{43a}\x{440}\x{430}\x{43d}\x{435}\x{437}\x{456}\x{44f}",
+                                         'GM' => "\x{413}\x{430}\x{43c}\x{431}\x{456}\x{44f}",
+                                         'LV' => "\x{41b}\x{430}\x{442}\x{432}\x{456}\x{44f}",
+                                         'RU' => "\x{420}\x{430}\x{441}\x{456}\x{44f}",
+                                         '154' => "\x{41f}\x{430}\x{45e}\x{43d}\x{43e}\x{447}\x{43d}\x{430}\x{44f} \x{415}\x{45e}\x{440}\x{43e}\x{43f}\x{430}",
+                                         '034' => "\x{41f}\x{430}\x{45e}\x{434}\x{43d}\x{451}\x{432}\x{430}\x{44f} \x{410}\x{437}\x{456}\x{44f}",
+                                         'FI' => "\x{424}\x{456}\x{43d}\x{43b}\x{44f}\x{43d}\x{434}\x{44b}\x{44f}",
+                                         'LU' => "\x{41b}\x{44e}\x{43a}\x{441}\x{435}\x{43c}\x{431}\x{443}\x{440}\x{433}",
+                                         'VE' => "\x{412}\x{435}\x{43d}\x{435}\x{441}\x{443}\x{44d}\x{43b}\x{430}",
+                                         'VI' => "\x{410}\x{43c}\x{435}\x{440}\x{44b}\x{43a}\x{430}\x{43d}\x{441}\x{43a}\x{456}\x{44f} \x{412}\x{456}\x{440}\x{433}\x{456}\x{43d}\x{441}\x{43a}\x{456}\x{44f} \x{430}\x{441}\x{442}\x{440}\x{430}\x{432}\x{44b}",
+                                         'TV' => "\x{422}\x{443}\x{432}\x{430}\x{43b}\x{443}",
+                                         'SN' => "\x{421}\x{435}\x{43d}\x{435}\x{433}\x{430}\x{43b}",
+                                         'MX' => "\x{41c}\x{435}\x{43a}\x{441}\x{456}\x{43a}\x{430}",
+                                         'IL' => "\x{406}\x{437}\x{440}\x{430}\x{456}\x{43b}\x{44c}",
+                                         'GG' => "\x{412}\x{43e}\x{441}\x{442}\x{440}\x{430}\x{45e} \x{413}\x{435}\x{440}\x{43d}\x{441}\x{456}",
+                                         'HU' => "\x{412}\x{435}\x{43d}\x{433}\x{440}\x{44b}\x{44f}",
+                                         'DO' => "\x{414}\x{430}\x{43c}\x{456}\x{43d}\x{456}\x{43a}\x{430}\x{43d}\x{441}\x{43a}\x{430}\x{44f} \x{420}\x{44d}\x{441}\x{43f}\x{443}\x{431}\x{43b}\x{456}\x{43a}\x{430}",
+                                         'KH' => "\x{41a}\x{430}\x{43c}\x{431}\x{43e}\x{434}\x{436}\x{430}",
+                                         'TG' => "\x{422}\x{43e}\x{433}\x{430}",
+                                         'BB' => "\x{411}\x{430}\x{440}\x{431}\x{430}\x{434}\x{430}\x{441}",
+                                         'JE' => "\x{412}\x{43e}\x{441}\x{442}\x{440}\x{430}\x{45e} \x{414}\x{436}\x{44d}\x{440}\x{441}\x{456}",
+                                         'DK' => "\x{414}\x{430}\x{43d}\x{456}\x{44f}",
+                                         'PA' => "\x{41f}\x{430}\x{43d}\x{430}\x{43c}\x{430}",
+                                         'QA' => "\x{41a}\x{430}\x{442}\x{430}\x{440}",
+                                         'CV' => "\x{41a}\x{430}\x{431}\x{430}-\x{412}\x{435}\x{440}\x{434}\x{44d}",
+                                         'GD' => "\x{413}\x{440}\x{44d}\x{43d}\x{430}\x{434}\x{430}",
+                                         'MO' => "\x{41c}\x{430}\x{43a}\x{430}\x{430}",
+                                         'HR' => "\x{425}\x{430}\x{440}\x{432}\x{430}\x{442}\x{44b}\x{44f}",
+                                         'CZ' => "\x{427}\x{44d}\x{445}\x{456}\x{44f}",
+                                         'BL' => "\x{421}\x{435}\x{43d}-\x{411}\x{430}\x{440}\x{442}\x{44d}\x{43b}\x{44c}\x{43c}\x{456}",
+                                         'ST' => "\x{421}\x{430}\x{43d}-\x{422}\x{430}\x{43c}\x{44d} \x{456} \x{41f}\x{440}\x{44b}\x{43d}\x{441}\x{456}\x{43f}\x{456}",
+                                         'AU' => "\x{410}\x{45e}\x{441}\x{442}\x{440}\x{430}\x{43b}\x{456}\x{44f}",
+                                         'IR' => "\x{406}\x{440}\x{430}\x{43d}",
+                                         '003' => "\x{41f}\x{430}\x{45e}\x{43d}\x{43e}\x{447}\x{43d}\x{430}\x{44f} \x{410}\x{43c}\x{44d}\x{440}\x{44b}\x{43a}\x{430}",
+                                         'CG' => "\x{420}\x{44d}\x{441}\x{43f}\x{443}\x{431}\x{43b}\x{456}\x{43a}\x{430} \x{41a}\x{43e}\x{43d}\x{433}\x{430}",
+                                         'BI' => "\x{411}\x{443}\x{440}\x{443}\x{43d}\x{434}\x{437}\x{456}",
+                                         'GW' => "\x{413}\x{432}\x{456}\x{43d}\x{435}\x{44f}-\x{411}\x{456}\x{441}\x{430}\x{443}",
+                                         'MK' => "\x{420}\x{44d}\x{441}\x{43f}\x{443}\x{431}\x{43b}\x{456}\x{43a}\x{430} \x{41c}\x{430}\x{43a}\x{435}\x{434}\x{43e}\x{43d}\x{456}\x{44f}",
+                                         'GR' => "\x{413}\x{440}\x{44d}\x{446}\x{44b}\x{44f}",
+                                         'AG' => "\x{410}\x{43d}\x{442}\x{44b}\x{433}\x{443}\x{430} \x{456} \x{411}\x{430}\x{440}\x{431}\x{443}\x{434}\x{430}",
+                                         '021' => "\x{417}\x{428}\x{410} \x{456} \x{41a}\x{430}\x{43d}\x{430}\x{434}\x{430}",
+                                         'AI' => "\x{410}\x{43d}\x{433}\x{456}\x{43b}\x{44c}\x{44f}",
+                                         'AN' => "\x{41d}\x{456}\x{434}\x{44d}\x{440}\x{43b}\x{430}\x{43d}\x{434}\x{441}\x{43a}\x{456}\x{44f} \x{410}\x{43d}\x{442}\x{44b}\x{43b}\x{44b}",
+                                         'UA' => "\x{423}\x{43a}\x{440}\x{430}\x{456}\x{43d}\x{430}",
+                                         'EH' => "\x{417}\x{430}\x{445}\x{43e}\x{434}\x{43d}\x{44f}\x{44f} \x{421}\x{430}\x{445}\x{430}\x{440}\x{430}",
+                                         'KN' => "\x{421}\x{435}\x{43d}\x{442}-\x{41a}\x{456}\x{442}\x{441} \x{456} \x{41d}\x{435}\x{432}\x{456}\x{441}",
+                                         'SC' => "\x{421}\x{435}\x{439}\x{448}\x{44d}\x{43b}\x{44c}\x{441}\x{43a}\x{456}\x{44f} \x{410}\x{441}\x{442}\x{440}\x{430}\x{432}\x{44b}",
+                                         'NL' => "\x{41d}\x{456}\x{434}\x{44d}\x{440}\x{43b}\x{430}\x{43d}\x{434}\x{44b}",
+                                         'MS' => "\x{41c}\x{430}\x{43d}\x{442}\x{441}\x{435}\x{440}\x{430}\x{442}",
+                                         'EC' => "\x{42d}\x{43a}\x{432}\x{430}\x{434}\x{43e}\x{440}",
+                                         'HK' => "\x{413}\x{430}\x{43d}\x{43a}\x{43e}\x{43d}\x{433}",
+                                         'MY' => "\x{41c}\x{430}\x{43b}\x{430}\x{439}\x{437}\x{456}\x{44f}",
+                                         '013' => "\x{426}\x{44d}\x{43d}\x{442}\x{440}\x{430}\x{43b}\x{44c}\x{43d}\x{430}\x{44f} \x{410}\x{43c}\x{44d}\x{440}\x{44b}\x{43a}\x{430}",
+                                         'CR' => "\x{41a}\x{43e}\x{441}\x{442}\x{430}-\x{420}\x{44b}\x{43a}\x{430}",
+                                         'VA' => "\x{412}\x{430}\x{442}\x{44b}\x{43a}\x{430}\x{43d}",
+                                         'IO' => "\x{411}\x{440}\x{44b}\x{442}\x{430}\x{43d}\x{441}\x{43a}\x{430}\x{44f} \x{442}\x{44d}\x{440}\x{44b}\x{442}\x{43e}\x{440}\x{44b}\x{44f} \x{45e} \x{406}\x{43d}\x{434}\x{44b}\x{439}\x{441}\x{43a}\x{456}\x{43c} \x{430}\x{43a}\x{456}\x{44f}\x{43d}\x{435}",
+                                         'SD' => "\x{421}\x{443}\x{434}\x{430}\x{43d}",
+                                         'RS' => "\x{421}\x{435}\x{440}\x{431}\x{456}\x{44f}",
+                                         'CN' => "\x{41a}\x{456}\x{442}\x{430}\x{439}",
+                                         'UY' => "\x{423}\x{440}\x{443}\x{433}\x{432}\x{430}\x{439}",
+                                         'PY' => "\x{41f}\x{430}\x{440}\x{430}\x{433}\x{432}\x{430}\x{439}",
+                                         '053' => "\x{410}\x{45e}\x{441}\x{442}\x{440}\x{430}\x{43b}\x{456}\x{44f} \x{456} \x{41d}\x{43e}\x{432}\x{430}\x{44f} \x{417}\x{44d}\x{43b}\x{430}\x{43d}\x{434}\x{44b}\x{44f}",
+                                         'MU' => "\x{41c}\x{430}\x{45e}\x{440}\x{44b}\x{43a}\x{456}\x{439}",
+                                         'LI' => "\x{41b}\x{456}\x{445}\x{442}\x{44d}\x{43d}\x{448}\x{442}\x{44d}\x{439}\x{43d}",
+                                         'CH' => "\x{428}\x{432}\x{435}\x{439}\x{446}\x{430}\x{440}\x{44b}\x{44f}",
+                                         'KG' => "\x{41a}\x{44b}\x{440}\x{433}\x{44b}\x{437}\x{441}\x{442}\x{430}\x{43d}",
+                                         'GH' => "\x{413}\x{430}\x{43d}\x{430}",
+                                         'NU' => "\x{41d}\x{456}\x{443}\x{44d}",
+                                         'US' => "\x{417}\x{43b}\x{443}\x{447}\x{430}\x{43d}\x{44b}\x{44f} \x{428}\x{442}\x{430}\x{442}\x{44b} \x{410}\x{43c}\x{435}\x{440}\x{44b}\x{43a}\x{456}",
+                                         'PE' => "\x{41f}\x{435}\x{440}\x{443}",
+                                         'SL' => "\x{421}\x{44c}\x{435}\x{440}\x{430}-\x{41b}\x{435}\x{43e}\x{43d}\x{44d}",
+                                         '001' => "\x{421}\x{432}\x{435}\x{442}",
+                                         'FJ' => "\x{424}\x{456}\x{434}\x{436}\x{44b}",
+                                         '143' => "\x{426}\x{44d}\x{43d}\x{442}\x{440}\x{430}\x{43b}\x{44c}\x{43d}\x{430}\x{44f} \x{410}\x{437}\x{456}\x{44f}",
+                                         'ER' => "\x{42d}\x{440}\x{44b}\x{442}\x{440}\x{44d}\x{44f}",
+                                         'IQ' => "\x{406}\x{440}\x{430}\x{43a}",
+                                         'AS' => "\x{410}\x{43c}\x{435}\x{440}\x{44b}\x{43a}\x{430}\x{43d}\x{441}\x{43a}\x{430}\x{435} \x{421}\x{430}\x{43c}\x{43e}\x{430}",
+                                         'TZ' => "\x{422}\x{430}\x{43d}\x{437}\x{430}\x{43d}\x{456}\x{44f}",
+                                         'LY' => "\x{41b}\x{456}\x{432}\x{456}\x{44f}",
+                                         'GT' => "\x{413}\x{432}\x{430}\x{442}\x{44d}\x{43c}\x{430}\x{43b}\x{430}",
+                                         'BM' => "\x{411}\x{435}\x{440}\x{43c}\x{443}\x{434}\x{441}\x{43a}\x{456}\x{44f} \x{430}\x{441}\x{442}\x{440}\x{430}\x{432}\x{44b}",
+                                         'BV' => "\x{411}\x{443}\x{432}\x{44d} \x{432}\x{43e}\x{441}\x{442}\x{440}\x{430}\x{45e}",
+                                         'LT' => "\x{41b}\x{456}\x{442}\x{432}\x{430}",
+                                         '017' => "\x{426}\x{44d}\x{43d}\x{442}\x{440}\x{430}\x{43b}\x{44c}\x{43d}\x{430}\x{44f} \x{410}\x{444}\x{440}\x{44b}\x{43a}\x{430}",
+                                         'SG' => "\x{421}\x{456}\x{43d}\x{433}\x{430}\x{43f}\x{443}\x{440}",
+                                         'PM' => "\x{421}\x{435}\x{43d}-\x{41f}'\x{435}\x{440} \x{456} \x{41c}\x{456}\x{43a}\x{435}\x{43b}\x{43e}\x{43d}",
+                                         'TT' => "\x{422}\x{440}\x{44b}\x{43d}\x{456}\x{434}\x{430}\x{434} \x{456} \x{422}\x{430}\x{431}\x{430}\x{433}\x{430}",
+                                         'SY' => "\x{421}\x{456}\x{440}\x{44b}\x{44f}",
+                                         'SK' => "\x{421}\x{43b}\x{430}\x{432}\x{430}\x{43a}\x{456}\x{44f}",
+                                         '011' => "\x{417}\x{430}\x{445}\x{43e}\x{434}\x{43d}\x{44f}\x{44f} \x{410}\x{444}\x{440}\x{44b}\x{43a}\x{430}",
+                                         'GL' => "\x{413}\x{440}\x{44d}\x{43d}\x{43b}\x{430}\x{43d}\x{434}\x{44b}\x{44f}",
+                                         'PG' => "\x{41f}\x{430}\x{43f}\x{443}\x{430} \x{2014} \x{41d}\x{43e}\x{432}\x{430}\x{44f} \x{413}\x{432}\x{456}\x{43d}\x{435}\x{44f}",
+                                         'KI' => "\x{41a}\x{456}\x{440}\x{44b}\x{431}\x{430}\x{446}\x{456}",
+                                         'CD' => "\x{414}\x{44d}\x{43c}\x{430}\x{43a}\x{440}\x{430}\x{442}\x{44b}\x{447}\x{43d}\x{430}\x{44f} \x{420}\x{44d}\x{441}\x{43f}\x{443}\x{431}\x{43b}\x{456}\x{43a}\x{430} \x{41a}\x{43e}\x{43d}\x{433}\x{430}",
+                                         'AO' => "\x{410}\x{43d}\x{433}\x{43e}\x{43b}\x{430}",
+                                         'BW' => "\x{411}\x{430}\x{442}\x{441}\x{432}\x{430}\x{43d}\x{430}",
+                                         'ZW' => "\x{417}\x{456}\x{43c}\x{431}\x{430}\x{431}\x{432}\x{44d}",
+                                         'VC' => "\x{421}\x{435}\x{43d}\x{442}-\x{412}\x{456}\x{43d}\x{441}\x{435}\x{43d}\x{442} \x{456} \x{413}\x{440}\x{44d}\x{43d}\x{430}\x{434}\x{437}\x{456}\x{43d}\x{44b}",
+                                         'JP' => "\x{42f}\x{43f}\x{43e}\x{43d}\x{456}\x{44f}",
+                                         'NA' => "\x{41d}\x{430}\x{43c}\x{456}\x{431}\x{456}\x{44f}",
+                                         'TJ' => "\x{422}\x{430}\x{434}\x{436}\x{44b}\x{43a}\x{456}\x{441}\x{442}\x{430}\x{43d}",
+                                         'LC' => "\x{421}\x{435}\x{43d}\x{442}-\x{41b}\x{44e}\x{441}\x{456}\x{44f}",
+                                         'VU' => "\x{412}\x{430}\x{43d}\x{443}\x{430}\x{442}\x{443}",
+                                         'MN' => "\x{41c}\x{430}\x{43d}\x{433}\x{43e}\x{43b}\x{456}\x{44f}",
+                                         'IT' => "\x{406}\x{442}\x{430}\x{43b}\x{456}\x{44f}",
+                                         'RE' => "\x{420}\x{44d}\x{44e}\x{43d}\x{44c}\x{451}\x{43d}",
+                                         'WS' => "\x{421}\x{430}\x{43c}\x{43e}\x{430}",
+                                         '151' => "\x{423}\x{441}\x{445}\x{43e}\x{434}\x{43d}\x{44f}\x{44f} \x{415}\x{45e}\x{440}\x{43e}\x{43f}\x{430}",
+                                         '015' => "\x{41f}\x{430}\x{45e}\x{43d}\x{43e}\x{447}\x{43d}\x{430}\x{44f} \x{410}\x{444}\x{440}\x{44b}\x{43a}\x{430}",
+                                         'CW' => "\x{412}\x{43e}\x{441}\x{442}\x{440}\x{430}\x{45e} \x{41a}\x{44e}\x{440}\x{430}\x{441}\x{430}\x{430}",
+                                         'EG' => "\x{415}\x{433}\x{456}\x{43f}\x{435}\x{442}",
+                                         'FR' => "\x{424}\x{440}\x{430}\x{43d}\x{446}\x{44b}\x{44f}",
+                                         'RW' => "\x{420}\x{443}\x{430}\x{43d}\x{434}\x{430}",
+                                         'BE' => "\x{411}\x{435}\x{43b}\x{44c}\x{433}\x{456}\x{44f}",
+                                         'LS' => "\x{41b}\x{435}\x{441}\x{43e}\x{442}\x{430}",
+                                         'SA' => "\x{421}\x{430}\x{443}\x{434}\x{430}\x{45e}\x{441}\x{43a}\x{430}\x{44f} \x{410}\x{440}\x{430}\x{432}\x{456}\x{44f}",
+                                         'ZA' => "\x{41f}\x{430}\x{45e}\x{434}\x{43d}\x{451}\x{432}\x{430}-\x{410}\x{444}\x{440}\x{44b}\x{43a}\x{430}\x{43d}\x{441}\x{43a}\x{430}\x{44f} \x{420}\x{44d}\x{441}\x{43f}\x{443}\x{431}\x{43b}\x{456}\x{43a}\x{430}",
+                                         'PT' => "\x{41f}\x{430}\x{440}\x{442}\x{443}\x{433}\x{430}\x{43b}\x{456}\x{44f}",
+                                         'CA' => "\x{41a}\x{430}\x{43d}\x{430}\x{434}\x{430}",
+                                         'CM' => "\x{41a}\x{430}\x{43c}\x{435}\x{440}\x{443}\x{43d}",
+                                         'NP' => "\x{41d}\x{435}\x{43f}\x{430}\x{43b}",
+                                         'PL' => "\x{41f}\x{43e}\x{43b}\x{44c}\x{448}\x{447}\x{430}",
+                                         'GA' => "\x{413}\x{430}\x{431}\x{43e}\x{43d}",
+                                         'TM' => "\x{422}\x{443}\x{440}\x{43a}\x{43c}\x{435}\x{43d}\x{456}\x{441}\x{442}\x{430}\x{43d}",
+                                         'KY' => "\x{41a}\x{430}\x{439}\x{43c}\x{430}\x{43d}\x{430}\x{432}\x{44b} \x{430}\x{441}\x{442}\x{440}\x{430}\x{432}\x{44b}",
+                                         'LA' => "\x{41b}\x{430}\x{43e}\x{441}",
+                                         'PH' => "\x{424}\x{456}\x{43b}\x{456}\x{43f}\x{456}\x{43d}\x{44b}",
+                                         'NI' => "\x{41d}\x{456}\x{43a}\x{430}\x{440}\x{430}\x{433}\x{443}\x{430}",
+                                         'GU' => "\x{413}\x{443}\x{430}\x{43c}",
+                                         'TF' => "\x{424}\x{440}\x{430}\x{43d}\x{446}\x{443}\x{437}\x{441}\x{43a}\x{456}\x{44f} \x{41f}\x{430}\x{45e}\x{434}\x{43d}\x{451}\x{432}\x{44b}\x{44f} \x{442}\x{44d}\x{440}\x{44b}\x{442}\x{43e}\x{440}\x{44b}\x{456}",
+                                         'KZ' => "\x{41a}\x{430}\x{437}\x{430}\x{445}\x{441}\x{442}\x{430}\x{43d}",
+                                         '029' => "\x{41a}\x{430}\x{440}\x{44b}\x{431}\x{441}\x{43a}\x{456}\x{44f} \x{430}\x{441}\x{442}\x{440}\x{430}\x{432}\x{44b}",
+                                         'SJ' => "\x{421}\x{432}\x{430}\x{43b}\x{44c}\x{431}\x{430}\x{440}\x{434} (\x{41f}\x{430}\x{45e}\x{43d}\x{43e}\x{447}\x{43d}\x{430}-\x{423}\x{441}\x{445}\x{43e}\x{434}\x{43d}\x{44f}\x{44f} \x{417}\x{44f}\x{43c}\x{43b}\x{44f}) \x{456} \x{42f}\x{43d}-\x{41c}\x{430}\x{435}\x{43d}",
+                                         'MM' => "\x{41c}'\x{44f}\x{43d}\x{43c}\x{430}",
+                                         'NR' => "\x{41d}\x{430}\x{443}\x{440}\x{443}",
+                                         'DM' => "\x{414}\x{430}\x{43c}\x{456}\x{43d}\x{456}\x{43a}\x{430}",
+                                         'NE' => "\x{41d}\x{456}\x{433}\x{435}\x{440}",
+                                         'AD' => "\x{410}\x{43d}\x{434}\x{43e}\x{440}\x{430}",
+                                         'MR' => "\x{41c}\x{430}\x{45e}\x{440}\x{44b}\x{442}\x{430}\x{43d}\x{456}\x{44f}",
+                                         '039' => "\x{41f}\x{430}\x{45e}\x{434}\x{43d}\x{451}\x{432}\x{430}\x{44f} \x{415}\x{45e}\x{440}\x{43e}\x{43f}\x{430}",
+                                         'GS' => "\x{41f}\x{430}\x{45e}\x{434}\x{43d}\x{451}\x{432}\x{430}\x{44f} \x{414}\x{436}\x{43e}\x{440}\x{434}\x{436}\x{44b}\x{44f} \x{456} \x{41f}\x{430}\x{45e}\x{434}\x{43d}\x{451}\x{432}\x{44b}\x{44f} \x{421}\x{430}\x{43d}\x{434}\x{432}\x{456}\x{447}\x{430}\x{432}\x{44b} \x{430}\x{441}\x{442}\x{440}\x{430}\x{432}\x{44b}",
+                                         'ME' => "\x{427}\x{430}\x{440}\x{43d}\x{430}\x{433}\x{43e}\x{440}\x{44b}\x{44f}",
+                                         'AX' => "\x{410}\x{43b}\x{430}\x{43d}\x{434}\x{441}\x{43a}\x{456}\x{44f} \x{430}\x{441}\x{442}\x{440}\x{430}\x{432}\x{44b}",
+                                         'VN' => "\x{412}'\x{435}\x{442}\x{43d}\x{430}\x{43c}",
+                                         'VG' => "\x{411}\x{440}\x{44b}\x{442}\x{430}\x{43d}\x{441}\x{43a}\x{456}\x{44f} \x{412}\x{456}\x{440}\x{433}\x{456}\x{43d}\x{441}\x{43a}\x{456}\x{44f} \x{430}\x{441}\x{442}\x{440}\x{430}\x{432}\x{44b}",
+                                         'YE' => "\x{415}\x{43c}\x{435}\x{43d}",
+                                         'CI' => "\x{41a}\x{43e}\x{442}-\x{434}'\x{406}\x{432}\x{443}\x{430}\x{440}",
+                                         'DZ' => "\x{410}\x{43b}\x{436}\x{44b}\x{440}",
+                                         'GE' => "\x{413}\x{440}\x{443}\x{437}\x{456}\x{44f}",
+                                         '005' => "\x{41f}\x{430}\x{45e}\x{434}\x{43d}\x{451}\x{432}\x{430}\x{44f} \x{410}\x{43c}\x{44d}\x{440}\x{44b}\x{43a}\x{430}",
+                                         'CX' => "\x{412}\x{43e}\x{441}\x{442}\x{440}\x{430}\x{45e} \x{420}\x{430}\x{436}\x{441}\x{442}\x{432}\x{430}",
+                                         'LB' => "\x{41b}\x{456}\x{432}\x{430}\x{43d}",
+                                         '018' => "\x{41f}\x{430}\x{45e}\x{434}\x{43d}\x{451}\x{432}\x{430}\x{44f} \x{410}\x{444}\x{440}\x{44b}\x{43a}\x{430}",
+                                         'FK' => "\x{424}\x{43e}\x{43b}\x{43a}\x{43b}\x{44d}\x{43d}\x{434}\x{441}\x{43a}\x{456}\x{44f} \x{430}\x{441}\x{442}\x{440}\x{430}\x{432}\x{44b}",
+                                         'DE' => "\x{413}\x{435}\x{440}\x{43c}\x{430}\x{43d}\x{456}\x{44f}",
+                                         'MV' => "\x{41c}\x{430}\x{43b}\x{44c}\x{434}\x{44b}\x{432}\x{44b}",
+                                         'PN' => "\x{410}\x{441}\x{442}\x{440}\x{430}\x{432}\x{44b} \x{41f}\x{456}\x{442}\x{43a}\x{44d}\x{440}\x{43d}",
+                                         'BH' => "\x{411}\x{430}\x{445}\x{440}\x{44d}\x{439}\x{43d}",
+                                         'GI' => "\x{413}\x{456}\x{431}\x{440}\x{430}\x{43b}\x{442}\x{430}\x{440}",
+                                         'WF' => "\x{423}\x{43e}\x{43b}\x{456}\x{441} \x{456} \x{424}\x{443}\x{442}\x{443}\x{43d}\x{430}",
+                                         'RO' => "\x{420}\x{443}\x{43c}\x{44b}\x{43d}\x{456}\x{44f}",
+                                         'AR' => "\x{410}\x{440}\x{433}\x{435}\x{43d}\x{446}\x{456}\x{43d}\x{430}",
+                                         'GP' => "\x{413}\x{432}\x{430}\x{434}\x{44d}\x{43b}\x{443}\x{43f}\x{430}",
+                                         'IN' => "\x{406}\x{43d}\x{434}\x{44b}\x{44f}",
+                                         'AW' => "\x{410}\x{440}\x{443}\x{431}\x{430}",
+                                         'FO' => "\x{424}\x{430}\x{440}\x{44d}\x{440}\x{441}\x{43a}\x{456}\x{44f} \x{430}\x{441}\x{442}\x{440}\x{430}\x{432}\x{44b}",
+                                         'BR' => "\x{411}\x{440}\x{430}\x{437}\x{456}\x{43b}\x{456}\x{44f}",
+                                         'HN' => "\x{413}\x{430}\x{43d}\x{434}\x{443}\x{440}\x{430}\x{441}",
+                                         'MC' => "\x{41c}\x{430}\x{43d}\x{430}\x{43a}\x{430}",
+                                         'SB' => "\x{421}\x{430}\x{43b}\x{430}\x{43c}\x{43e}\x{43d}\x{430}\x{432}\x{44b} \x{410}\x{441}\x{442}\x{440}\x{430}\x{432}\x{44b}",
+                                         'NZ' => "\x{41d}\x{43e}\x{432}\x{430}\x{44f} \x{417}\x{435}\x{43b}\x{430}\x{43d}\x{434}\x{44b}\x{44f}",
+                                         'PS' => "\x{41f}\x{430}\x{43b}\x{435}\x{441}\x{442}\x{44b}\x{43d}\x{441}\x{43a}\x{456}\x{44f} \x{442}\x{44d}\x{440}\x{44b}\x{442}\x{43e}\x{440}\x{44b}\x{456}",
+                                         'UG' => "\x{423}\x{433}\x{430}\x{43d}\x{434}\x{430}",
+                                         'GB' => "\x{412}\x{44f}\x{43b}\x{456}\x{43a}\x{430}\x{431}\x{440}\x{44b}\x{442}\x{430}\x{43d}\x{456}\x{44f}",
+                                         'HT' => "\x{413}\x{430}\x{456}\x{446}\x{456}",
+                                         '019' => "\x{41f}\x{430}\x{45e}\x{43d}\x{43e}\x{447}\x{43d}\x{430}\x{44f} \x{456} \x{41f}\x{430}\x{45e}\x{434}\x{43d}\x{451}\x{432}\x{430}\x{44f} \x{410}\x{43c}\x{435}\x{440}\x{44b}\x{43a}\x{456}",
+                                         'QO' => "\x{412}\x{43e}\x{43d}\x{43a}\x{430}\x{432}\x{430}\x{44f} \x{410}\x{43a}\x{456}\x{44f}\x{43d}\x{456}\x{44f}",
+                                         'SS' => "\x{41f}\x{430}\x{45e}\x{434}\x{43d}\x{451}\x{432}\x{44b} \x{421}\x{443}\x{434}\x{430}\x{43d}",
+                                         'GF' => "\x{424}\x{440}\x{430}\x{43d}\x{446}\x{443}\x{437}\x{441}\x{43a}\x{430}\x{44f} \x{413}\x{432}\x{456}\x{44f}\x{43d}\x{430}",
+                                         'ZZ' => "\x{41d}\x{435}\x{432}\x{44f}\x{434}\x{43e}\x{43c}\x{44b} \x{440}\x{44d}\x{433}\x{456}\x{451}\x{43d}",
+                                         'KM' => "\x{41a}\x{430}\x{43c}\x{43e}\x{440}\x{441}\x{43a}\x{456}\x{44f} \x{410}\x{441}\x{442}\x{440}\x{430}\x{432}\x{44b}",
+                                         'KW' => "\x{41a}\x{443}\x{432}\x{435}\x{439}\x{442}",
+                                         'MQ' => "\x{41c}\x{430}\x{440}\x{446}\x{456}\x{43d}\x{456}\x{43a}\x{430}",
+                                         'TC' => "\x{426}\x{451}\x{440}\x{43a}\x{441} \x{456} \x{41a}\x{430}\x{439}\x{43a}\x{430}\x{441}",
+                                         'ES' => "\x{406}\x{441}\x{43f}\x{430}\x{43d}\x{456}\x{44f}",
+                                         'MZ' => "\x{41c}\x{430}\x{437}\x{430}\x{43c}\x{431}\x{456}\x{43a}",
+                                         'BO' => "\x{411}\x{430}\x{43b}\x{456}\x{432}\x{456}\x{44f}",
+                                         'AL' => "\x{410}\x{43b}\x{431}\x{430}\x{43d}\x{456}\x{44f}",
+                                         '142' => "\x{410}\x{437}\x{456}\x{44f}",
+                                         'MD' => "\x{41c}\x{430}\x{43b}\x{434}\x{43e}\x{432}\x{430}",
+                                         'TR' => "\x{422}\x{443}\x{440}\x{446}\x{44b}\x{44f}",
+                                         'GN' => "\x{413}\x{432}\x{456}\x{43d}\x{435}\x{44f}",
+                                         'CO' => "\x{41a}\x{430}\x{43b}\x{443}\x{43c}\x{431}\x{456}\x{44f}",
+                                         'SI' => "\x{421}\x{43b}\x{430}\x{432}\x{435}\x{43d}\x{456}\x{44f}",
+                                         'AQ' => "\x{410}\x{43d}\x{442}\x{430}\x{440}\x{43a}\x{442}\x{44b}\x{43a}\x{430}",
+                                         'JO' => "\x{406}\x{430}\x{440}\x{434}\x{430}\x{43d}\x{456}\x{44f}",
+                                         '061' => "\x{41f}\x{430}\x{43b}\x{456}\x{43d}\x{435}\x{437}\x{456}\x{44f}",
+                                         'SM' => "\x{421}\x{430}\x{43d}-\x{41c}\x{430}\x{440}\x{44b}\x{43d}\x{430}",
+                                         'CU' => "\x{41a}\x{443}\x{431}\x{430}",
+                                         'CL' => "\x{427}\x{44b}\x{43b}\x{456}",
+                                         'ML' => "\x{41c}\x{430}\x{43b}\x{456}",
+                                         'ET' => "\x{42d}\x{444}\x{456}\x{43e}\x{43f}\x{456}\x{44f}",
+                                         'IS' => "\x{406}\x{441}\x{43b}\x{430}\x{43d}\x{434}\x{44b}\x{44f}",
+                                         '035' => "\x{41f}\x{430}\x{45e}\x{434}\x{43d}\x{451}\x{432}\x{430}-\x{423}\x{441}\x{445}\x{43e}\x{434}\x{43d}\x{44f}\x{44f} \x{410}\x{437}\x{456}\x{44f}",
+                                         'BG' => "\x{411}\x{430}\x{43b}\x{433}\x{430}\x{440}\x{44b}\x{44f}",
+                                         'MH' => "\x{41c}\x{430}\x{440}\x{448}\x{430}\x{43b}\x{430}\x{432}\x{44b} \x{410}\x{441}\x{442}\x{440}\x{430}\x{432}\x{44b}",
+                                         'BS' => "\x{411}\x{430}\x{433}\x{430}\x{43c}\x{44b}",
+                                         'TL' => "\x{423}\x{441}\x{445}\x{43e}\x{434}\x{43d}\x{456} \x{422}\x{44b}\x{43c}\x{43e}\x{440}",
+                                         'BZ' => "\x{411}\x{435}\x{43b}\x{456}\x{437}",
+                                         '150' => "\x{415}\x{45e}\x{440}\x{43e}\x{43f}\x{430}",
+                                         'CY' => "\x{41a}\x{456}\x{43f}\x{440}",
+                                         '155' => "\x{417}\x{430}\x{445}\x{43e}\x{434}\x{43d}\x{44f}\x{44f} \x{415}\x{45e}\x{440}\x{43e}\x{43f}\x{430}",
+                                         'IM' => "\x{412}\x{43e}\x{441}\x{442}\x{440}\x{430}\x{45e} \x{41c}\x{44d}\x{43d}",
+                                         'IE' => "\x{406}\x{440}\x{43b}\x{430}\x{43d}\x{434}\x{44b}\x{44f}",
+                                         'TW' => "\x{422}\x{430}\x{439}\x{432}\x{430}\x{43d}\x{44c}",
+                                         'KP' => "\x{41f}\x{430}\x{45e}\x{43d}\x{43e}\x{447}\x{43d}\x{430}\x{44f} \x{41a}\x{430}\x{440}\x{44d}\x{44f}",
+                                         'PF' => "\x{424}\x{440}\x{430}\x{43d}\x{446}\x{443}\x{437}\x{441}\x{43a}\x{430}\x{44f} \x{41f}\x{430}\x{43b}\x{456}\x{43d}\x{435}\x{437}\x{456}\x{44f}",
+                                         'MW' => "\x{41c}\x{430}\x{43b}\x{430}\x{432}\x{456}",
+                                         'GY' => "\x{413}\x{430}\x{44f}\x{43d}\x{430}",
+                                         'GQ' => "\x{42d}\x{43a}\x{432}\x{430}\x{442}\x{430}\x{440}\x{44b}\x{44f}\x{43b}\x{44c}\x{43d}\x{430}\x{44f} \x{413}\x{432}\x{456}\x{43d}\x{435}\x{44f}",
+                                         'PK' => "\x{41f}\x{430}\x{43a}\x{456}\x{441}\x{442}\x{430}\x{43d}",
+                                         'NF' => "\x{412}\x{43e}\x{441}\x{442}\x{440}\x{430}\x{45e} \x{41d}\x{43e}\x{440}\x{444}\x{430}\x{43b}\x{43a}",
+                                         'SO' => "\x{421}\x{430}\x{43c}\x{430}\x{43b}\x{456}",
+                                         'TD' => "\x{427}\x{430}\x{434}",
+                                         'HM' => "\x{412}\x{43e}\x{441}\x{442}\x{440}\x{430}\x{45e} \x{425}\x{435}\x{440}\x{434} \x{456} \x{410}\x{441}\x{442}\x{440}\x{430}\x{432}\x{44b} \x{41c}\x{430}\x{43a}\x{434}\x{43e}\x{43d}\x{430}\x{43b}\x{434}",
+                                         'BD' => "\x{411}\x{430}\x{43d}\x{433}\x{43b}\x{430}\x{434}\x{44d}\x{448}"
+                                       },
+                      'languages' => {
+                                       'ne' => "\x{43d}\x{435}\x{43f}\x{430}\x{43b}\x{44c}\x{441}\x{43a}\x{430}\x{44f}",
+                                       'tr' => "\x{442}\x{443}\x{440}\x{44d}\x{446}\x{43a}\x{430}\x{44f}",
+                                       'tlh' => "\x{43a}\x{43b}\x{456}\x{43d}\x{433}\x{43e}\x{43d}",
+                                       'da' => "\x{434}\x{430}\x{446}\x{43a}\x{430}\x{44f}",
+                                       'ug' => "\x{443}\x{439}\x{433}\x{443}\x{440}\x{441}\x{43a}\x{430}\x{44f}",
+                                       'gl' => "\x{433}\x{430}\x{43b}\x{456}\x{441}\x{456}\x{439}\x{441}\x{43a}\x{430}\x{44f}",
+                                       'cel' => "\x{43a}\x{435}\x{43b}\x{44c}\x{446}\x{43a}\x{430}\x{44f} \x{43c}\x{43e}\x{432}\x{430}",
+                                       'ro' => "\x{440}\x{443}\x{43c}\x{44b}\x{43d}\x{441}\x{43a}\x{430}\x{44f}",
+                                       'ta' => "\x{442}\x{430}\x{43c}\x{456}\x{43b}\x{44c}\x{441}\x{43a}\x{430}\x{44f}",
+                                       'ady' => "\x{430}\x{434}\x{44b}\x{433}\x{435}\x{439}\x{441}\x{43a}\x{430}\x{44f}",
+                                       'mos' => "\x{43c}\x{43e}\x{441}\x{456}",
+                                       'br' => "\x{431}\x{440}\x{44d}\x{442}\x{43e}\x{43d}\x{441}\x{43a}\x{430}\x{44f}",
+                                       'de_CH' => "\x{43d}\x{44f}\x{43c}\x{435}\x{446}\x{43a}\x{430}\x{44f} (\x{448}\x{432}\x{435}\x{439}\x{446}.)",
+                                       'cy' => "\x{432}\x{430}\x{43b}\x{456}\x{439}\x{441}\x{43a}\x{430}\x{44f}",
+                                       'ko' => "\x{43a}\x{430}\x{440}\x{44d}\x{439}\x{441}\x{43a}\x{430}\x{44f}",
+                                       'sit' => "\x{43a}\x{456}\x{442}\x{430}\x{439}\x{441}\x{43a}\x{430}-\x{442}\x{44b}\x{431}\x{435}\x{446}\x{43a}\x{430}\x{44f} \x{43c}\x{43e}\x{432}\x{430}",
+                                       'sem' => "\x{441}\x{435}\x{43c}\x{456}\x{446}\x{43a}\x{430}\x{44f} \x{43c}\x{43e}\x{432}\x{430}",
+                                       'cus' => "\x{43a}\x{443}\x{448}\x{44b}\x{446}\x{43a}\x{430}\x{44f} \x{43c}\x{43e}\x{432}\x{430}",
+                                       'mo' => "\x{43c}\x{430}\x{43b}\x{434}\x{430}\x{45e}\x{441}\x{43a}\x{430}\x{44f}",
+                                       'cs' => "\x{447}\x{44d}\x{448}\x{441}\x{43a}\x{430}\x{44f}",
+                                       'cop' => "\x{43a}\x{43e}\x{43f}\x{446}\x{43a}\x{430}\x{44f}",
+                                       'zh_Hant' => "\x{442}\x{440}\x{430}\x{434}\x{44b}\x{446}\x{44b}\x{439}\x{43d}\x{430}\x{44f} \x{43a}\x{456}\x{442}\x{430}\x{439}\x{441}\x{43a}\x{430}\x{44f}",
+                                       'ps' => "\x{43f}\x{443}\x{448}\x{442}\x{443}",
+                                       'sux' => "\x{448}\x{443}\x{43c}\x{435}\x{440}\x{441}\x{43a}\x{430}\x{44f}",
+                                       'av' => "\x{430}\x{432}\x{430}\x{440}\x{441}\x{43a}\x{430}\x{44f}",
+                                       'af' => "\x{430}\x{444}\x{440}\x{44b}\x{43a}\x{430}\x{430}\x{43d}\x{441}",
+                                       'is' => "\x{456}\x{441}\x{43b}\x{430}\x{43d}\x{434}\x{441}\x{43a}\x{430}\x{44f}",
+                                       'qu' => "\x{43a}\x{435}\x{447}\x{443}\x{430}",
+                                       'ti' => "\x{442}\x{44b}\x{433}\x{440}\x{44b}\x{43d}\x{44c}\x{44f}",
+                                       'tai' => "\x{43c}\x{43e}\x{432}\x{430} \x{442}\x{430}\x{456}",
+                                       'mt' => "\x{43c}\x{430}\x{43b}\x{44c}\x{442}\x{44b}\x{439}\x{441}\x{43a}\x{430}\x{44f}",
+                                       'fr_CA' => "\x{444}\x{440}\x{430}\x{43d}\x{446}\x{443}\x{437}\x{441}\x{43a}\x{430}\x{44f} (\x{43a}\x{430}\x{43d}\x{430}\x{434}.)",
+                                       'men' => "\x{43c}\x{435}\x{43d}\x{434}\x{44d}",
+                                       'la' => "\x{43b}\x{430}\x{446}\x{456}\x{43d}\x{441}\x{43a}\x{430}\x{44f}",
+                                       'hy' => "\x{430}\x{440}\x{43c}\x{44f}\x{43d}\x{441}\x{43a}\x{430}\x{44f}",
+                                       'ga' => "\x{456}\x{440}\x{43b}\x{430}\x{43d}\x{434}\x{441}\x{43a}\x{430}\x{44f}",
+                                       'ms' => "\x{43c}\x{430}\x{43b}\x{430}\x{439}\x{441}\x{43a}\x{430}\x{44f}",
+                                       'bh' => "\x{431}\x{456}\x{445}\x{430}\x{440}\x{44b}",
+                                       'fro' => "\x{441}\x{442}\x{430}\x{440}\x{430}\x{444}\x{440}\x{430}\x{43d}\x{446}\x{443}\x{437}\x{441}\x{43a}\x{430}\x{44f}",
+                                       'ka' => "\x{433}\x{440}\x{443}\x{437}\x{456}\x{43d}\x{441}\x{43a}\x{430}\x{44f}",
+                                       'oc' => "\x{43f}\x{440}\x{430}\x{432}\x{430}\x{43d}\x{441}\x{430}\x{43b}\x{44c}\x{441}\x{43a}\x{430}\x{44f}",
+                                       'sv' => "\x{448}\x{432}\x{435}\x{434}\x{441}\x{43a}\x{430}\x{44f}",
+                                       'und' => "\x{43d}\x{435}\x{432}\x{44f}\x{434}\x{43e}\x{43c}\x{430}\x{44f} \x{43c}\x{43e}\x{432}\x{430}",
+                                       'it' => "\x{456}\x{442}\x{430}\x{43b}\x{44c}\x{44f}\x{43d}\x{441}\x{43a}\x{430}\x{44f}",
+                                       'art' => "\x{448}\x{442}\x{443}\x{447}\x{43d}\x{430}\x{44f} \x{43c}\x{43e}\x{432}\x{430}",
+                                       'hu' => "\x{432}\x{435}\x{43d}\x{433}\x{435}\x{440}\x{441}\x{43a}\x{430}\x{44f}",
+                                       'fa' => "\x{444}\x{430}\x{440}\x{441}\x{456}",
+                                       'ale' => "\x{430}\x{43b}\x{435}\x{443}\x{446}\x{43a}\x{430}\x{44f}",
+                                       'man' => "\x{43c}\x{430}\x{43d}\x{434}\x{44b}\x{43d}\x{433}\x{430}",
+                                       'sai' => "\x{43c}\x{43e}\x{432}\x{430} \x{456}\x{43d}\x{434}\x{437}\x{435}\x{439}\x{446}\x{430}\x{45e} \x{41f}\x{430}\x{45e}\x{434}\x{43d}\x{451}\x{432}\x{430}\x{439} \x{410}\x{43c}\x{435}\x{440}\x{44b}\x{43a}\x{456}",
+                                       'jv' => "\x{44f}\x{432}\x{430}\x{43d}\x{441}\x{43a}\x{430}\x{44f}",
+                                       'pt' => "\x{43f}\x{430}\x{440}\x{442}\x{443}\x{433}\x{430}\x{43b}\x{44c}\x{441}\x{43a}\x{430}\x{44f}",
+                                       'hi' => "\x{445}\x{456}\x{43d}\x{434}\x{437}\x{456}",
+                                       'ba' => "\x{431}\x{430}\x{448}\x{43a}\x{456}\x{440}\x{441}\x{43a}\x{430}\x{44f}",
+                                       'no' => "\x{43d}\x{430}\x{440}\x{432}\x{435}\x{436}\x{441}\x{43a}\x{430}\x{44f}",
+                                       'lv' => "\x{43b}\x{430}\x{442}\x{44b}\x{448}\x{441}\x{43a}\x{430}\x{44f}",
+                                       'os' => "\x{430}\x{441}\x{435}\x{446}\x{456}\x{43d}\x{441}\x{43a}\x{430}\x{44f}",
+                                       'ln' => "\x{43b}\x{456}\x{43d}\x{433}\x{430}\x{43b}\x{430}",
+                                       'fr' => "\x{444}\x{440}\x{430}\x{43d}\x{446}\x{443}\x{437}\x{441}\x{43a}\x{430}\x{44f}",
+                                       'afa' => "\x{430}\x{444}\x{440}\x{430}-\x{430}\x{437}\x{456}\x{44f}\x{446}\x{43a}\x{430}\x{44f} \x{43c}\x{43e}\x{432}\x{430}",
+                                       'id' => "\x{456}\x{43d}\x{434}\x{430}\x{43d}\x{435}\x{437}\x{456}\x{439}\x{441}\x{43a}\x{430}\x{44f}",
+                                       'arc' => "\x{430}\x{440}\x{430}\x{43c}\x{435}\x{439}\x{441}\x{43a}\x{430}\x{44f}",
+                                       'sr' => "\x{441}\x{435}\x{440}\x{431}\x{441}\x{43a}\x{430}\x{44f}",
+                                       'si' => "\x{441}\x{456}\x{43d}\x{433}\x{430}\x{43b}\x{44c}\x{441}\x{43a}\x{430}\x{44f}",
+                                       'mas' => "\x{43c}\x{430}\x{441}\x{430}\x{456}",
+                                       'vo' => "\x{432}\x{430}\x{43b}\x{430}\x{43f}\x{44e}\x{43a}",
+                                       'ab' => "\x{430}\x{431}\x{445}\x{430}\x{437}\x{441}\x{43a}\x{430}\x{44f}",
+                                       'fi' => "\x{444}\x{456}\x{43d}\x{441}\x{43a}\x{430}\x{44f}",
+                                       'sd' => "\x{441}\x{456}\x{43d}\x{434}\x{445}\x{456}",
+                                       'yi' => "\x{456}\x{434}\x{44b}\x{448}",
+                                       'fil' => "\x{442}\x{430}\x{433}\x{430}\x{43b}\x{44c}\x{441}\x{43a}\x{430}\x{44f}",
+                                       'pa' => "\x{43f}\x{430}\x{43d}\x{434}\x{436}\x{430}\x{431}\x{456}",
+                                       'sl' => "\x{441}\x{43b}\x{430}\x{432}\x{435}\x{43d}\x{441}\x{43a}\x{430}\x{44f}",
+                                       'am' => "\x{430}\x{43c}\x{445}\x{430}\x{440}\x{441}\x{43a}\x{430}\x{44f}",
+                                       'mr' => "\x{43c}\x{430}\x{440}\x{430}\x{442}\x{445}\x{456}",
+                                       'en_CA' => "\x{430}\x{43d}\x{433}\x{43b}\x{456}\x{439}\x{441}\x{43a}\x{430}\x{44f} (\x{43a}\x{430}\x{43d}\x{430}\x{434}.)",
+                                       'rm' => "\x{440}\x{44d}\x{442}\x{430}-\x{440}\x{430}\x{43c}\x{430}\x{43d}\x{441}\x{43a}\x{430}\x{44f}",
+                                       'kn' => "\x{43a}\x{430}\x{43d}\x{43d}\x{430}\x{434}\x{430}",
+                                       'nog' => "\x{43d}\x{430}\x{433}\x{430}\x{439}\x{441}\x{43a}\x{430}\x{44f}",
+                                       'eo' => "\x{44d}\x{441}\x{43f}\x{435}\x{440}\x{430}\x{43d}\x{442}\x{430}",
+                                       'fy' => "\x{444}\x{440}\x{44b}\x{437}\x{441}\x{43a}\x{430}\x{44f}",
+                                       'mn' => "\x{43c}\x{430}\x{43d}\x{433}\x{43e}\x{43b}\x{44c}\x{441}\x{43a}\x{430}\x{44f}",
+                                       'gd' => "\x{448}\x{430}\x{442}\x{43b}\x{430}\x{43d}\x{434}\x{441}\x{43a}\x{430}\x{44f} \x{433}\x{44d}\x{43b}\x{44c}\x{441}\x{43a}\x{430}\x{44f}",
+                                       'as' => "\x{430}\x{441}\x{430}\x{43c}\x{441}\x{43a}\x{430}\x{44f}",
+                                       'tup' => "\x{43c}\x{43e}\x{432}\x{430} \x{442}\x{443}\x{43f}\x{456}",
+                                       'tk' => "\x{442}\x{443}\x{440}\x{43a}\x{43c}\x{435}\x{43d}\x{441}\x{43a}\x{430}\x{44f}",
+                                       'sga' => "\x{441}\x{442}\x{430}\x{440}\x{430}\x{456}\x{440}\x{43b}\x{430}\x{43d}\x{434}\x{441}\x{43a}\x{430}\x{44f}",
+                                       'mg' => "\x{43c}\x{430}\x{43b}\x{44c}\x{433}\x{430}\x{448}\x{441}\x{43a}\x{430}\x{44f}",
+                                       'su' => "\x{441}\x{443}\x{434}\x{430}\x{43d}\x{441}\x{43a}\x{430}\x{44f}",
+                                       'de_AT' => "\x{43d}\x{44f}\x{43c}\x{435}\x{446}\x{43a}\x{430}\x{44f} (\x{430}\x{45e}\x{441}\x{442}\x{440}.)",
+                                       'en_US' => "\x{430}\x{43d}\x{433}\x{43b}\x{456}\x{439}\x{441}\x{43a}\x{430}\x{44f} (\x{417}\x{428}\x{410})",
+                                       'sgn' => "\x{437}\x{43d}\x{430}\x{43a}\x{430}\x{432}\x{430}\x{44f} \x{43c}\x{43e}\x{432}\x{430}",
+                                       'ru' => "\x{440}\x{443}\x{441}\x{43a}\x{430}\x{44f}",
+                                       'bua' => "\x{431}\x{443}\x{440}\x{430}\x{446}\x{43a}\x{430}\x{44f}",
+                                       'ia' => "\x{456}\x{43d}\x{442}\x{44d}\x{440}\x{43b}\x{456}\x{43d}\x{433}\x{432}\x{430}",
+                                       'zap' => "\x{441}\x{430}\x{43f}\x{430}\x{442}\x{44d}\x{43a}\x{430}\x{45e}",
+                                       'map' => "\x{430}\x{45e}\x{441}\x{442}\x{440}\x{430}\x{43d}\x{435}\x{437}\x{456}\x{439}\x{441}\x{43a}\x{430}\x{44f}",
+                                       'nb' => "\x{43d}\x{430}\x{440}\x{432}\x{44d}\x{441}\x{43a}\x{430}\x{44f} \x{431}\x{443}\x{43a}\x{43c}\x{430}\x{43b}",
+                                       'ku' => "\x{43a}\x{443}\x{440}\x{434}\x{441}\x{43a}\x{430}\x{44f}",
+                                       'vi' => "\x{432}'\x{435}\x{442}\x{43d}\x{430}\x{43c}\x{441}\x{43a}\x{430}\x{44f}",
+                                       'az' => "\x{430}\x{437}\x{435}\x{440}\x{431}\x{430}\x{439}\x{434}\x{436}\x{430}\x{43d}\x{441}\x{43a}\x{430}\x{44f}",
+                                       'lo' => "\x{43b}\x{430}\x{43e}\x{441}\x{43a}\x{430}\x{44f}",
+                                       'sah' => "\x{44f}\x{43a}\x{443}\x{446}\x{43a}\x{430}\x{44f}",
+                                       'nl_BE' => "\x{444}\x{43b}\x{430}\x{43c}\x{430}\x{43d}\x{434}\x{441}\x{43a}\x{430}\x{44f}",
+                                       'ml' => "\x{43c}\x{430}\x{43b}\x{430}\x{44f}\x{43b}\x{430}\x{43c}\x{441}\x{43a}\x{430}\x{44f}",
+                                       'grc' => "\x{441}\x{442}\x{430}\x{440}\x{430}\x{433}\x{440}\x{44d}\x{446}\x{43a}\x{430}\x{44f}",
+                                       'ang' => "\x{441}\x{442}\x{430}\x{440}\x{430}\x{430}\x{43d}\x{433}\x{43b}\x{456}\x{439}\x{441}\x{43a}\x{430}\x{44f}",
+                                       'uz' => "\x{443}\x{437}\x{431}\x{435}\x{43a}\x{441}\x{43a}\x{430}\x{44f}",
+                                       'peo' => "\x{441}\x{442}\x{430}\x{440}\x{430}\x{43f}\x{435}\x{440}\x{441}\x{456}\x{434}\x{441}\x{43a}\x{430}\x{44f}",
+                                       'bs' => "\x{431}\x{430}\x{441}\x{43d}\x{456}\x{439}\x{441}\x{43a}\x{430}\x{44f}",
+                                       'nub' => "\x{43d}\x{443}\x{431}\x{456}\x{439}\x{441}\x{43a}\x{430}\x{44f} \x{43c}\x{43e}\x{432}\x{430}",
+                                       'eu' => "\x{431}\x{430}\x{441}\x{43a}\x{441}\x{43a}\x{430}\x{44f}",
+                                       'bg' => "\x{431}\x{430}\x{43b}\x{433}\x{430}\x{440}\x{441}\x{43a}\x{430}\x{44f}",
+                                       'gu' => "\x{433}\x{443}\x{44f}\x{440}\x{430}\x{446}\x{456}",
+                                       'zh_Hans' => "\x{441}\x{43f}\x{440}\x{43e}\x{448}\x{447}\x{430}\x{43d}\x{430}\x{44f} \x{43a}\x{456}\x{442}\x{430}\x{439}\x{441}\x{43a}\x{430}\x{44f}",
+                                       'raj' => "\x{440}\x{430}\x{434}\x{436}\x{430}\x{441}\x{442}\x{445}\x{430}\x{43d}\x{441}\x{43a}\x{430}\x{44f}",
+                                       'sq' => "\x{430}\x{43b}\x{431}\x{430}\x{43d}\x{441}\x{43a}\x{430}\x{44f}",
+                                       'ca' => "\x{43a}\x{430}\x{442}\x{430}\x{43b}\x{43e}\x{43d}\x{441}\x{43a}\x{430}\x{44f}",
+                                       'pl' => "\x{43f}\x{43e}\x{43b}\x{44c}\x{441}\x{43a}\x{430}\x{44f}",
+                                       'cau' => "\x{43a}\x{430}\x{45e}\x{43a}\x{430}\x{437}\x{441}\x{43a}\x{430}\x{44f} \x{43c}\x{43e}\x{432}\x{430}",
+                                       'ay' => "\x{430}\x{439}\x{43c}\x{430}\x{440}\x{430}",
+                                       'es_419' => "\x{456}\x{441}\x{43f}\x{430}\x{43d}\x{441}\x{43a}\x{430}\x{44f} (\x{43b}\x{430}\x{446}\x{456}\x{43d}\x{430}\x{430}\x{43c}\x{435}\x{440}.)",
+                                       'sk' => "\x{441}\x{43b}\x{430}\x{432}\x{430}\x{446}\x{43a}\x{430}\x{44f}",
+                                       'non' => "\x{441}\x{442}\x{430}\x{440}\x{430}\x{43d}\x{430}\x{440}\x{432}\x{435}\x{436}\x{441}\x{43a}\x{430}\x{44f}",
+                                       'oj' => "\x{430}\x{434}\x{436}\x{44b}\x{431}\x{432}\x{435}",
+                                       'cai' => "\x{43c}\x{43e}\x{432}\x{430} \x{456}\x{43d}\x{434}\x{437}\x{435}\x{439}\x{446}\x{430}\x{45e} \x{426}\x{44d}\x{43d}\x{442}\x{440}\x{430}\x{43b}\x{44c}\x{43d}\x{430}\x{439} \x{410}\x{43c}\x{435}\x{440}\x{44b}\x{43a}\x{456}",
+                                       'luo' => "\x{43b}\x{443}\x{43e}",
+                                       'an' => "\x{430}\x{440}\x{430}\x{433}\x{43e}\x{43d}\x{441}\x{43a}\x{430}\x{44f}",
+                                       'uk' => "\x{443}\x{43a}\x{440}\x{430}\x{456}\x{43d}\x{441}\x{43a}\x{430}\x{44f}",
+                                       'es' => "\x{456}\x{441}\x{43f}\x{430}\x{43d}\x{441}\x{43a}\x{430}\x{44f}",
+                                       'sw' => "\x{441}\x{443}\x{430}\x{445}\x{456}\x{43b}\x{456}",
+                                       'tt' => "\x{442}\x{430}\x{442}\x{430}\x{440}\x{441}\x{43a}\x{430}\x{44f}",
+                                       'ast' => "\x{430}\x{441}\x{442}\x{443}\x{440}\x{44b}\x{439}\x{441}\x{43a}\x{430}\x{44f}",
+                                       'sla' => "\x{441}\x{43b}\x{430}\x{432}\x{44f}\x{43d}\x{441}\x{43a}\x{430}\x{44f} \x{43c}\x{43e}\x{432}\x{430}",
+                                       'fo' => "\x{444}\x{430}\x{440}\x{44d}\x{440}\x{441}\x{43a}\x{430}\x{44f}",
+                                       'or' => "\x{43e}\x{440}\x{44b}\x{44f}",
+                                       'sh' => "\x{441}\x{435}\x{440}\x{431}\x{441}\x{43a}\x{430}-\x{445}\x{430}\x{440}\x{432}\x{430}\x{446}\x{43a}\x{430}\x{44f}",
+                                       'sa' => "\x{441}\x{430}\x{43d}\x{441}\x{43a}\x{440}\x{44b}\x{442}",
+                                       'akk' => "\x{430}\x{43a}\x{430}\x{434}\x{437}\x{43a}\x{430}\x{44f}",
+                                       'xh' => "\x{445}\x{43e}\x{441}\x{430}",
+                                       'th' => "\x{442}\x{430}\x{439}\x{441}\x{43a}\x{430}\x{44f}",
+                                       'so' => "\x{441}\x{430}\x{43c}\x{430}\x{43b}\x{456}\x{439}\x{441}\x{43a}\x{430}\x{44f}",
+                                       'et' => "\x{44d}\x{441}\x{442}\x{43e}\x{43d}\x{441}\x{43a}\x{430}\x{44f}",
+                                       'ie' => "\x{456}\x{43d}\x{442}\x{44d}\x{440}\x{43b}\x{456}\x{43d}\x{433}\x{432}\x{435}",
+                                       'tut' => "\x{430}\x{43b}\x{442}\x{430}\x{439}\x{441}\x{43a}\x{430}\x{44f} \x{43c}\x{43e}\x{432}\x{430}",
+                                       'mk' => "\x{43c}\x{430}\x{43a}\x{435}\x{434}\x{43e}\x{43d}\x{441}\x{43a}\x{430}\x{44f}",
+                                       'phn' => "\x{444}\x{456}\x{43d}\x{456}\x{43a}\x{456}\x{439}\x{441}\x{43a}\x{430}\x{44f}",
+                                       'en' => "\x{430}\x{43d}\x{433}\x{43b}\x{456}\x{439}\x{441}\x{43a}\x{430}\x{44f}",
+                                       'aus' => "\x{430}\x{45e}\x{441}\x{442}\x{440}\x{430}\x{43b}\x{456}\x{439}\x{441}\x{43a}\x{430}\x{44f}",
+                                       'lt' => "\x{43b}\x{456}\x{442}\x{43e}\x{45e}\x{441}\x{43a}\x{430}\x{44f}",
+                                       'de' => "\x{43d}\x{44f}\x{43c}\x{435}\x{446}\x{43a}\x{430}\x{44f}",
+                                       'chb' => "\x{447}\x{44b}\x{431}\x{447}\x{430}",
+                                       'gn' => "\x{433}\x{443}\x{430}\x{440}\x{430}\x{43d}\x{456}",
+                                       'hr' => "\x{445}\x{430}\x{440}\x{432}\x{430}\x{446}\x{43a}\x{430}\x{44f}",
+                                       'be' => "\x{431}\x{435}\x{43b}\x{430}\x{440}\x{443}\x{441}\x{43a}\x{430}\x{44f}",
+                                       'zu' => "\x{437}\x{443}\x{43b}\x{443}",
+                                       'ur' => "\x{443}\x{440}\x{434}\x{443}",
+                                       'cv' => "\x{447}\x{443}\x{432}\x{430}\x{448}\x{441}\x{43a}\x{430}\x{44f}",
+                                       'pro' => "\x{441}\x{442}\x{430}\x{440}\x{430}\x{43f}\x{440}\x{430}\x{432}\x{430}\x{43d}\x{441}\x{430}\x{43b}\x{44c}\x{441}\x{43a}\x{430}\x{44f}",
+                                       'ce' => "\x{447}\x{430}\x{447}\x{44d}\x{43d}\x{441}\x{43a}\x{430}\x{44f}",
+                                       'nai' => "\x{43c}\x{43e}\x{432}\x{430} \x{456}\x{43d}\x{434}\x{437}\x{435}\x{439}\x{446}\x{430}\x{45e} \x{41f}\x{430}\x{45e}\x{43d}\x{43e}\x{447}\x{43d}\x{430}\x{439} \x{410}\x{43c}\x{435}\x{440}\x{44b}\x{43a}\x{456}",
+                                       'nn' => "\x{43d}\x{430}\x{440}\x{432}\x{435}\x{436}\x{441}\x{43a}\x{430}\x{44f} (\x{43d}\x{44e}\x{43d}\x{43e}\x{440}\x{441}\x{43a})",
+                                       'bn' => "\x{431}\x{435}\x{43d}\x{433}\x{430}\x{43b}\x{44c}\x{441}\x{43a}\x{430}\x{44f}",
+                                       'ja' => "\x{44f}\x{43f}\x{43e}\x{43d}\x{441}\x{43a}\x{430}\x{44f}",
+                                       'tg' => "\x{442}\x{430}\x{434}\x{436}\x{44b}\x{43a}\x{441}\x{43a}\x{430}\x{44f}",
+                                       'fr_CH' => "\x{444}\x{440}\x{430}\x{43d}\x{446}\x{443}\x{437}\x{441}\x{43a}\x{430}\x{44f} (\x{448}\x{432}\x{435}\x{439}\x{446}.)",
+                                       'te' => "\x{442}\x{44d}\x{43b}\x{443}\x{433}\x{443}",
+                                       'he' => "\x{456}\x{45e}\x{440}\x{44b}\x{442}",
+                                       'zh' => "\x{43a}\x{456}\x{442}\x{430}\x{439}\x{441}\x{43a}\x{430}\x{44f}",
+                                       'lol' => "\x{43c}\x{43e}\x{43d}\x{433}\x{430}",
+                                       'en_AU' => "\x{430}\x{43d}\x{433}\x{43b}\x{456}\x{439}\x{441}\x{43a}\x{430}\x{44f} (\x{430}\x{45e}\x{441}\x{442}\x{440}\x{430}\x{43b}.)",
+                                       'ar' => "\x{430}\x{440}\x{430}\x{431}\x{441}\x{43a}\x{430}\x{44f}",
+                                       'nl' => "\x{433}\x{430}\x{43b}\x{430}\x{43d}\x{434}\x{441}\x{43a}\x{430}\x{44f}",
+                                       'el' => "\x{433}\x{440}\x{44d}\x{446}\x{43a}\x{430}\x{44f}",
+                                       'tyv' => "\x{442}\x{443}\x{432}\x{456}\x{43d}\x{441}\x{43a}\x{430}\x{44f}",
+                                       'egy' => "\x{441}\x{442}\x{430}\x{440}\x{430}\x{44d}\x{433}\x{456}\x{43f}\x{435}\x{446}\x{43a}\x{430}\x{44f}",
+                                       'kk' => "\x{43a}\x{430}\x{437}\x{430}\x{445}\x{441}\x{43a}\x{430}\x{44f}",
+                                       'pt_BR' => "\x{43f}\x{430}\x{440}\x{442}\x{443}\x{433}\x{430}\x{43b}\x{44c}\x{441}\x{43a}\x{430}\x{44f} (\x{431}\x{440}\x{430}\x{437}\x{456}\x{43b}.)"
+                                     },
+                      'scripts' => {
+                                     'Jpan' => "\x{44f}\x{43f}\x{43e}\x{43d}\x{441}\x{43a}\x{430}\x{435}",
+                                     'Geor' => "\x{433}\x{440}\x{443}\x{437}\x{456}\x{43d}\x{441}\x{43a}\x{430}\x{435}",
+                                     'Arab' => "\x{430}\x{440}\x{430}\x{431}\x{441}\x{43a}\x{430}\x{435}",
+                                     'Hant' => "\x{442}\x{440}\x{430}\x{434}\x{44b}\x{446}\x{44b}\x{439}\x{43d}\x{430}\x{435} \x{43a}\x{456}\x{442}\x{430}\x{439}\x{441}\x{43a}\x{430}\x{435}",
+                                     'Latn' => "\x{43b}\x{430}\x{446}\x{456}\x{43d}\x{441}\x{43a}\x{456}",
+                                     'Zzzz' => "\x{43d}\x{435}\x{432}\x{44f}\x{434}\x{43e}\x{43c}\x{44b} \x{430}\x{431}\x{43e} \x{43d}\x{435}\x{434}\x{430}\x{43f}\x{443}\x{448}\x{447}\x{430}\x{43b}\x{44c}\x{43d}\x{44b} \x{43f}\x{435}\x{440}\x{430}\x{43a}\x{43b}\x{430}\x{434}",
+                                     'Armn' => "\x{430}\x{440}\x{43c}\x{44f}\x{43d}\x{441}\x{43a}\x{430}\x{435}",
+                                     'Hebr' => "\x{433}\x{430}\x{431}\x{440}\x{44d}\x{439}\x{441}\x{43a}\x{430}\x{435}",
+                                     'Hans' => "\x{441}\x{43f}\x{440}\x{43e}\x{448}\x{447}\x{430}\x{43d}\x{430}\x{435} \x{43a}\x{456}\x{442}\x{430}\x{439}\x{441}\x{43a}\x{430}\x{435}",
+                                     'Cyrl' => "\x{43a}\x{456}\x{440}\x{44b}\x{43b}\x{456}\x{447}\x{43d}\x{44b}",
+                                     'Zxxx' => "\x{447}\x{44b}\x{441}\x{442}\x{44b}"
+                                   }
+                    },
+  'delimiters' => {
+                    'alternateQuotationEnd' => "\x{2019}",
+                    'quotationEnd' => "\x{201d}",
+                    'quotationStart' => "\x{201c}",
+                    'alternateQuotationStart' => "\x{2018}"
+                  },
+  'iso4217' => 'BYR'
+};

@@ -1,0 +1,15 @@
+{
+  audioCodec               => 'aac',
+  audioSamplingFrequency   => '22050',
+  audioBitrate             => '64',
+  audioChannels            => '2',
+  videoSize                => '176x144',
+  videoBitrate             => (100*1000),
+  videoCodec               => 'mpeg4',
+  videoFrameRate           => '14',
+  videoMotionEstimate      => 'full',
+  videoEncodePass          => 2,
+  defaultFileExtension     => 'mp4',
+  videoSameQualityAsSource => 1,
+  videoIQFactor            => 1,
+}

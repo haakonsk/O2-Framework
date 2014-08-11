@@ -1,0 +1,1088 @@
+{
+  'territory' => 'GB',
+  'language' => 'gd',
+  'number' => {
+                'percentFormat' => {
+                                     'percentFormatLength' => {
+                                                              'standard' => '#,##0%'
+                                                            }
+                                   },
+                'measurement' => {},
+                'symbols' => {
+                               'infinity' => "\x{221e}",
+                               'nan' => 'NaN',
+                               'plusSign' => '+',
+                               'superscriptingExponent' => "×",
+                               'exponential' => 'E',
+                               'group' => ',',
+                               'percentSign' => '%',
+                               'decimal' => '.',
+                               'perMille' => "\x{2030}",
+                               'alias' => '',
+                               'minusSign' => '-',
+                               'list' => ';'
+                             },
+                'scientificFormat' => {
+                                        'scientificFormatLength' => {
+                                                                    'standard' => '#E0'
+                                                                  }
+                                      },
+                'decimalFormat' => {
+                                     'decimalFormatLength' => {
+                                                              'short' => '0K00K000K0M00M000M0G00G000G0T00T000T',
+                                                              'standard' => '#,##0.###'
+                                                            }
+                                   },
+                'currencyFormat' => {
+                                      'currencyFormatLength' => {
+                                                                'standard' => "¤#,##0.00;(¤#,##0.00)"
+                                                              }
+                                    },
+                'currencies' => {
+                                  'KZT' => {
+                                           'symbol' => "\x{20b8}"
+                                         },
+                                  'NZD' => {
+                                           'symbol' => '$'
+                                         },
+                                  'HKD' => {
+                                           'symbol' => '$'
+                                         },
+                                  'BZD' => {
+                                           'symbol' => '$'
+                                         },
+                                  'BRL' => {
+                                           'symbol' => 'R$'
+                                         },
+                                  'SGD' => {
+                                           'symbol' => '$'
+                                         },
+                                  'TWD' => {
+                                           'symbol' => 'NT$'
+                                         },
+                                  'USD' => {
+                                           'symbol' => '$',
+                                           'displayName' => 'Dolar nan SA'
+                                         },
+                                  'SSP' => {
+                                           'symbol' => "£"
+                                         },
+                                  'KYD' => {
+                                           'symbol' => '$'
+                                         },
+                                  'AUD' => {
+                                           'symbol' => '$'
+                                         },
+                                  'NGN' => {
+                                           'symbol' => "\x{20a6}"
+                                         },
+                                  'CRC' => {
+                                           'symbol' => "\x{20a1}"
+                                         },
+                                  'KRW' => {
+                                           'symbol' => "\x{20a9}"
+                                         },
+                                  'TRY' => {
+                                           'symbol' => 'TL'
+                                         },
+                                  'GIP' => {
+                                           'symbol' => "£"
+                                         },
+                                  'LAK' => {
+                                           'symbol' => "\x{20ad}"
+                                         },
+                                  'FJD' => {
+                                           'symbol' => '$'
+                                         },
+                                  'CLP' => {
+                                           'symbol' => '$'
+                                         },
+                                  'NAD' => {
+                                           'symbol' => '$'
+                                         },
+                                  'JMD' => {
+                                           'symbol' => '$'
+                                         },
+                                  'ILS' => {
+                                           'symbol' => "\x{20aa}"
+                                         },
+                                  'BSD' => {
+                                           'symbol' => '$'
+                                         },
+                                  'ESP' => {
+                                           'symbol' => "\x{20a7}"
+                                         },
+                                  'UYU' => {
+                                           'symbol' => '$'
+                                         },
+                                  'UAH' => {
+                                           'symbol' => "\x{20b4}"
+                                         },
+                                  'MXN' => {
+                                           'symbol' => '$'
+                                         },
+                                  'GYD' => {
+                                           'symbol' => '$'
+                                         },
+                                  'BYR' => {
+                                           'symbol' => "\x{440}."
+                                         },
+                                  'THB' => {
+                                           'symbol' => "\x{e3f}"
+                                         },
+                                  'LRD' => {
+                                           'symbol' => '$'
+                                         },
+                                  'BND' => {
+                                           'symbol' => '$'
+                                         },
+                                  'JPY' => {
+                                           'symbol' => "¥"
+                                         },
+                                  'BMD' => {
+                                           'symbol' => '$'
+                                         },
+                                  'IEP' => {
+                                           'displayName' => "Punnd Èireannach"
+                                         },
+                                  'PYG' => {
+                                           'symbol' => "\x{20b2}"
+                                         },
+                                  'VND' => {
+                                           'symbol' => "\x{20ab}"
+                                         },
+                                  'CAD' => {
+                                           'symbol' => '$',
+                                           'displayName' => 'Dolar Canadach'
+                                         },
+                                  'CUP' => {
+                                           'symbol' => '$'
+                                         },
+                                  'SBD' => {
+                                           'symbol' => '$'
+                                         },
+                                  'GHS' => {
+                                           'symbol' => "\x{20b5}"
+                                         },
+                                  'TTD' => {
+                                           'symbol' => '$'
+                                         },
+                                  'RUR' => {
+                                           'symbol' => "\x{440}."
+                                         },
+                                  'XCD' => {
+                                           'symbol' => 'EC$'
+                                         },
+                                  'BBD' => {
+                                           'symbol' => '$'
+                                         },
+                                  'COP' => {
+                                           'symbol' => '$'
+                                         },
+                                  'XOF' => {
+                                           'symbol' => 'CFA'
+                                         },
+                                  'ARS' => {
+                                           'symbol' => '$'
+                                         },
+                                  'BDT' => {
+                                           'symbol' => "\x{9f3}"
+                                         },
+                                  'KHR' => {
+                                           'symbol' => "\x{17db}"
+                                         },
+                                  'CNY' => {
+                                           'symbol' => "¥"
+                                         },
+                                  'MNT' => {
+                                           'symbol' => "\x{20ae}"
+                                         },
+                                  'EUR' => {
+                                           'symbol' => "\x{20ac}",
+                                           'displayName' => "Eòro"
+                                         },
+                                  'INR' => {
+                                           'symbol' => "\x{20b9}"
+                                         },
+                                  'SRD' => {
+                                           'symbol' => '$'
+                                         },
+                                  'GBP' => {
+                                           'symbol' => "£",
+                                           'displayName' => 'Punnd Sasannach'
+                                         },
+                                  'XAF' => {
+                                           'symbol' => 'FCFA'
+                                         },
+                                  'PHP' => {
+                                           'symbol' => "\x{20b1}"
+                                         },
+                                  'DOP' => {
+                                           'symbol' => '$'
+                                         },
+                                  'XPF' => {
+                                           'symbol' => 'CFPF'
+                                         }
+                                }
+              },
+  'locale' => 'gd_GB',
+  'characters' => {
+                    'word-initial' => "\x{2026} {0}",
+                    'standard' => '?',
+                    'word-medial' => "{0} \x{2026} {1}",
+                    'index' => '[A B C D E F G H I L M N O P R S T U]',
+                    'medial' => "{0}\x{2026}{1}",
+                    'word-final' => "{0} \x{2026}",
+                    'final' => "{0}\x{2026}",
+                    'auxiliary' => "[á \x{10b} \x{1e0b} é \x{1e1f} \x{121} j k \x{1e41} ó \x{1e57} q \x{1e61} \x{1e6b} v w x y z]",
+                    'initial' => "\x{2026}{0}",
+                    'punctuation' => '[\\- , ; \\: ! ? . ( ) \\[ \\] \\{ \\}]'
+                  },
+  'calendar' => {
+                  'calendarType' => 'gregorian',
+                  'timeFormat' => {
+                                    'short' => 'HH:mm',
+                                    'pm' => '',
+                                    'am' => '',
+                                    'medium' => 'HH:mm:ss',
+                                    'long' => 'HH:mm:ss z',
+                                    'full' => 'HH:mm:ss zzzz'
+                                  },
+                  'timeZones' => {
+                                   'regionFormat' => '{0} Time',
+                                   'gmtFormat' => 'GMT{0}',
+                                   'hourFormat' => '+HH:mm;-HH:mm',
+                                   'metazone' => '
+				
+					GMT
+				
+			',
+                                   'zones' => {
+                                                'Antarctica/DumontDUrville' => {
+                                                                               'type' => 'Antarctica/DumontDUrville',
+                                                                               'exemplarCity' => "Dumont d\x{2019}Urville"
+                                                                             },
+                                                'Asia/Calcutta' => {
+                                                                   'type' => 'Asia/Calcutta',
+                                                                   'exemplarCity' => 'Kolkata'
+                                                                 },
+                                                'America/Indiana/Vincennes' => {
+                                                                               'type' => 'America/Indiana/Vincennes',
+                                                                               'exemplarCity' => 'Vincennes, Indiana'
+                                                                             },
+                                                'America/Indiana/Winamac' => {
+                                                                             'type' => 'America/Indiana/Winamac',
+                                                                             'exemplarCity' => 'Winamac, Indiana'
+                                                                           },
+                                                'America/Indiana/Marengo' => {
+                                                                             'type' => 'America/Indiana/Marengo',
+                                                                             'exemplarCity' => 'Marengo, Indiana'
+                                                                           },
+                                                'America/Indiana/Petersburg' => {
+                                                                                'type' => 'America/Indiana/Petersburg',
+                                                                                'exemplarCity' => 'Petersburg, Indiana'
+                                                                              },
+                                                'Atlantic/St_Helena' => {
+                                                                        'type' => 'Atlantic/St_Helena',
+                                                                        'exemplarCity' => 'St. Helena'
+                                                                      },
+                                                'America/Coral_Harbour' => {
+                                                                           'type' => 'America/Coral_Harbour',
+                                                                           'exemplarCity' => 'Atikokan'
+                                                                         },
+                                                'Etc/Unknown' => {
+                                                                 'type' => 'Etc/Unknown',
+                                                                 'exemplarCity' => {
+                                                                                   'draft' => 'unconfirmed',
+                                                                                   'content' => 'Neo-Aithnichte'
+                                                                                 }
+                                                               },
+                                                'Atlantic/Faeroe' => {
+                                                                     'type' => 'Atlantic/Faeroe',
+                                                                     'exemplarCity' => 'Faroe'
+                                                                   },
+                                                'America/Godthab' => {
+                                                                     'type' => 'America/Godthab',
+                                                                     'exemplarCity' => 'Nuuk'
+                                                                   },
+                                                'America/St_Kitts' => {
+                                                                      'type' => 'America/St_Kitts',
+                                                                      'exemplarCity' => 'St. Kitts'
+                                                                    },
+                                                'America/Scoresbysund' => {
+                                                                          'type' => 'America/Scoresbysund',
+                                                                          'exemplarCity' => 'Ittoqqortoormiit'
+                                                                        },
+                                                'Europe/London' => {
+                                                                   'short' => {
+                                                                              'daylight' => {
+                                                                                            'draft' => 'unconfirmed',
+                                                                                            'content' => 'TSB'
+                                                                                          }
+                                                                            },
+                                                                   'long' => {
+                                                                             'daylight' => {
+                                                                                           'draft' => 'unconfirmed',
+                                                                                           'content' => "Tìde Samhraidh Bhreatainn"
+                                                                                         }
+                                                                           },
+                                                                   'type' => 'Europe/London',
+                                                                   'exemplarCity' => {
+                                                                                     'draft' => 'unconfirmed',
+                                                                                     'content' => "Dùn Èideann/Lunnainn"
+                                                                                   }
+                                                                 },
+                                                'America/St_Johns' => {
+                                                                      'type' => 'America/St_Johns',
+                                                                      'exemplarCity' => "St. John\x{2019}s"
+                                                                    },
+                                                'Pacific/Ponape' => {
+                                                                    'type' => 'Pacific/Ponape',
+                                                                    'exemplarCity' => 'Pohnpei'
+                                                                  },
+                                                'Asia/Katmandu' => {
+                                                                   'type' => 'Asia/Katmandu',
+                                                                   'exemplarCity' => 'Kathmandu'
+                                                                 },
+                                                'Pacific/Truk' => {
+                                                                  'type' => 'Pacific/Truk',
+                                                                  'exemplarCity' => 'Chuuk'
+                                                                },
+                                                'America/St_Lucia' => {
+                                                                      'type' => 'America/St_Lucia',
+                                                                      'exemplarCity' => 'St. Lucia'
+                                                                    },
+                                                'America/Indiana/Tell_City' => {
+                                                                               'type' => 'America/Indiana/Tell_City',
+                                                                               'exemplarCity' => 'Tell City, Indiana'
+                                                                             },
+                                                'America/Indiana/Knox' => {
+                                                                          'type' => 'America/Indiana/Knox',
+                                                                          'exemplarCity' => 'Knox, Indiana'
+                                                                        },
+                                                'Africa/Asmera' => {
+                                                                   'type' => 'Africa/Asmera',
+                                                                   'exemplarCity' => 'Asmara'
+                                                                 },
+                                                'America/St_Thomas' => {
+                                                                       'type' => 'America/St_Thomas',
+                                                                       'exemplarCity' => 'St. Thomas'
+                                                                     },
+                                                'America/Lower_Princes' => {
+                                                                           'type' => 'America/Lower_Princes',
+                                                                           'exemplarCity' => 'Lower Prince\'s Quarter'
+                                                                         },
+                                                'America/North_Dakota/Beulah' => {
+                                                                                 'type' => 'America/North_Dakota/Beulah',
+                                                                                 'exemplarCity' => 'Beulah, North Dakota'
+                                                                               },
+                                                'America/Indiana/Vevay' => {
+                                                                           'type' => 'America/Indiana/Vevay',
+                                                                           'exemplarCity' => 'Vevay, Indiana'
+                                                                         },
+                                                'Asia/Saigon' => {
+                                                                 'type' => 'Asia/Saigon',
+                                                                 'exemplarCity' => 'Ho Chi Minh'
+                                                               },
+                                                'Europe/Dublin' => {
+                                                                   'short' => {
+                                                                              'daylight' => {
+                                                                                            'draft' => 'unconfirmed',
+                                                                                            'content' => "TSÈ (Èirinn)"
+                                                                                          }
+                                                                            },
+                                                                   'long' => {
+                                                                             'daylight' => {
+                                                                                           'draft' => 'unconfirmed',
+                                                                                           'content' => "Tìde Samhraidh na h-Èireann"
+                                                                                         }
+                                                                           },
+                                                                   'type' => 'Europe/Dublin',
+                                                                   'exemplarCity' => {
+                                                                                     'draft' => 'unconfirmed',
+                                                                                     'content' => "Baile Àtha Cliath"
+                                                                                   }
+                                                                 },
+                                                'America/St_Barthelemy' => {
+                                                                           'type' => 'America/St_Barthelemy',
+                                                                           'exemplarCity' => 'St. Barthelemy'
+                                                                         },
+                                                'America/North_Dakota/New_Salem' => {
+                                                                                    'type' => 'America/North_Dakota/New_Salem',
+                                                                                    'exemplarCity' => 'New Salem, North Dakota'
+                                                                                  },
+                                                'America/Kentucky/Monticello' => {
+                                                                                 'type' => 'America/Kentucky/Monticello',
+                                                                                 'exemplarCity' => 'Monticello, Kentucky'
+                                                                               },
+                                                'America/St_Vincent' => {
+                                                                        'type' => 'America/St_Vincent',
+                                                                        'exemplarCity' => 'St. Vincent'
+                                                                      },
+                                                'America/North_Dakota/Center' => {
+                                                                                 'type' => 'America/North_Dakota/Center',
+                                                                                 'exemplarCity' => 'Center, North Dakota'
+                                                                               }
+                                              },
+                                   'fallbackFormat' => '{1} ({0})',
+                                   'gmtZeroFormat' => 'GMT'
+                                 },
+                  'eras' => {
+                              'eraNames' => {
+                                            'alias' => {
+                                                       '' => ''
+                                                     },
+                                            'era' => {
+                                                     '1' => 'Anno Domini',
+                                                     '0' => "Ro Chrìost"
+                                                   }
+                                          },
+                              'eraNarrow' => {
+                                             'alias' => {
+                                                        '' => ''
+                                                      }
+                                           },
+                              'eraAbbr' => {
+                                           'era' => {
+                                                    '1' => 'AD',
+                                                    '0' => 'RC'
+                                                  }
+                                         }
+                            },
+                  'days' => {
+                              'format' => {
+                                          'short' => {
+                                                     '' => ''
+                                                   },
+                                          'abbreviated' => {
+                                                           '' => '',
+                                                           'fri' => 'Dih',
+                                                           'wed' => 'DiC',
+                                                           'sun' => 'DiD',
+                                                           'tue' => 'DiM',
+                                                           'mon' => 'DiL',
+                                                           'sat' => 'DiS',
+                                                           'thu' => 'Dia'
+                                                         },
+                                          'narrow' => {
+                                                      '' => ''
+                                                    },
+                                          'wide' => {
+                                                    'fri' => 'DihAoine',
+                                                    'tue' => "DiMàirt",
+                                                    'sun' => "DiDòmhnaich",
+                                                    'sat' => 'DiSathairne',
+                                                    'mon' => 'DiLuain',
+                                                    'wed' => 'DiCiadain',
+                                                    'thu' => 'Diardaoin'
+                                                  }
+                                        },
+                              'stand-alone' => {
+                                               'short' => {
+                                                          '' => ''
+                                                        },
+                                               'abbreviated' => {
+                                                                '' => ''
+                                                              },
+                                               'narrow' => {
+                                                           'fri' => 'H',
+                                                           'tue' => 'M',
+                                                           'sun' => 'D',
+                                                           'sat' => 'S',
+                                                           'mon' => 'L',
+                                                           'wed' => 'C',
+                                                           'thu' => 'A'
+                                                         },
+                                               'wide' => {
+                                                         '' => ''
+                                                       }
+                                             }
+                            },
+                  'months' => {
+                                'format' => {
+                                            'abbreviated' => {
+                                                             '' => '',
+                                                             '6' => "Ògmh",
+                                                             '11' => 'Samh',
+                                                             '3' => "Màrt",
+                                                             '7' => 'Iuch',
+                                                             '9' => 'Sult',
+                                                             '12' => "Dùbh",
+                                                             '2' => 'Gearr',
+                                                             '8' => "Lùna",
+                                                             '1' => 'Faoi',
+                                                             '4' => 'Gibl',
+                                                             '10' => "Dàmh",
+                                                             '5' => "Cèit"
+                                                           },
+                                            'narrow' => {
+                                                        '' => ''
+                                                      },
+                                            'wide' => {
+                                                      '6' => "An t-Ògmhios",
+                                                      '11' => 'An t-Samhain',
+                                                      '3' => "Am Màrt",
+                                                      '7' => 'An t-Iuchar',
+                                                      '9' => 'An t-Sultain',
+                                                      '12' => "An Dùbhlachd",
+                                                      '2' => 'An Gearran',
+                                                      '8' => "An Lùnastal",
+                                                      '1' => 'Am Faoilleach',
+                                                      '4' => 'An Giblean',
+                                                      '10' => "An Dàmhair",
+                                                      '5' => "An Cèitean"
+                                                    }
+                                          },
+                                'stand-alone' => {
+                                                 'abbreviated' => {
+                                                                  '' => ''
+                                                                },
+                                                 'narrow' => {
+                                                             '6' => "ÒG",
+                                                             '11' => 'SA',
+                                                             '3' => "MÀ",
+                                                             '7' => 'IU',
+                                                             '9' => 'SU',
+                                                             '12' => "DÙ",
+                                                             '2' => 'GE',
+                                                             '8' => "LÙ",
+                                                             '1' => 'FA',
+                                                             '4' => 'GI',
+                                                             '10' => "DÀ",
+                                                             '5' => "CÈ"
+                                                           },
+                                                 'wide' => {
+                                                           '' => ''
+                                                         }
+                                               }
+                              },
+                  'dateFormat' => {
+                                    'short' => 'dd/MM/y',
+                                    'medium' => 'd MMM y',
+                                    'long' => 'd MMMM y',
+                                    'full' => 'EEEE, d MMMM y'
+                                  }
+                },
+  'displayNames' => {
+                      'territories' => {
+                                         'DJ' => "Diobùtaidh",
+                                         'JM' => 'Diameuga',
+                                         '030' => "Àisea an Ear",
+                                         'AT' => 'An Ostair',
+                                         'SZ' => "Dùthaich nan Suasaidh",
+                                         'YT' => 'Mayotte',
+                                         'BN' => "Brùnaigh",
+                                         'ZM' => "Sàimbia",
+                                         'PR' => "Porto Rìceo",
+                                         'SH' => 'Eilean Naomh Eilidh',
+                                         'MA' => 'Moroco',
+                                         'SV' => 'An Salbhador',
+                                         'MT' => 'Malta',
+                                         'MP' => 'Na h-Eileanan Mairianach a Tuath',
+                                         'UZ' => 'Usbagastan',
+                                         'PW' => 'Palabh',
+                                         'TK' => 'Tokelau',
+                                         'LR' => "Libèir",
+                                         'TN' => 'Tuinisea',
+                                         'EE' => 'An Eastoin',
+                                         'CK' => 'Eileanan Cook',
+                                         'BY' => 'A\' Bhealaruis',
+                                         'NO' => 'An Nirribhidh',
+                                         'KR' => "Coirèa a Deas",
+                                         'IC' => "Na h-Eileanan Canàrach",
+                                         'BF' => 'Buirciona Faso',
+                                         'AM' => 'Airmeinia',
+                                         'SR' => 'Suranam',
+                                         'MG' => 'Madagasgar',
+                                         'BT' => "Butàn",
+                                         '009' => "Roinn a' Chuain Shèimh",
+                                         'CF' => 'Poblachd Meadhan Afraga',
+                                         '014' => 'Afraga an Ear',
+                                         'BA' => 'Bosna is Hearsagobhana',
+                                         'AE' => 'Na h-Iomaratan Arabach Aonaichte',
+                                         'TH' => "Dùthaich nan Tàidh",
+                                         'EA' => 'Ceuta is Melilla',
+                                         '002' => 'Afraga',
+                                         '057' => 'Roinn nam Meanbh-Eileanan',
+                                         'CC' => 'Na h-Eileanan Cocos (Keeling)',
+                                         'NC' => 'Cailleann Nuadh',
+                                         'EU' => "An t-Aonadh Eòrpach",
+                                         'TO' => 'Tonga',
+                                         'SE' => 'An t-Suain',
+                                         'AZ' => "Asarbaideàn",
+                                         'AF' => "Afghanastàn",
+                                         'NG' => "Nigèiria",
+                                         'KE' => 'Ceinia',
+                                         'BJ' => 'Beinin',
+                                         'OM' => "Omàn",
+                                         '145' => "Àisea an Iar",
+                                         'LK' => 'Sri Lanca',
+                                         'ID' => 'Na h-Innd Innse',
+                                         'FM' => 'Na Meanbh-Eileanan',
+                                         'GM' => 'A\' Ghaimbia',
+                                         'LV' => 'An Laitbhe',
+                                         'RU' => 'An Ruis',
+                                         '154' => "An Roinn-Eòrpa a Tuath",
+                                         '034' => "Àisea a Deas",
+                                         'FI' => 'An Fhionnlann',
+                                         'LU' => 'Lugsamburg',
+                                         'VE' => 'A\' Bheiniseala',
+                                         '054' => 'Na h-Eileanan Dubha',
+                                         'VI' => 'Eileanan Aimeireagach na Maighdinn',
+                                         'TV' => 'Tubhalu',
+                                         'SN' => 'Seanagal',
+                                         'MX' => 'Meagsago',
+                                         'IL' => 'Iosrael',
+                                         'GG' => "Geàrnsaidh",
+                                         'HU' => 'An Ungair',
+                                         'DO' => 'A\' Phoblachd Dhoiminiceach',
+                                         'BQ' => 'Ranntair Breatainn na h-Antartaig',
+                                         'KH' => 'Cambuidea',
+                                         'TG' => 'Togo',
+                                         'BB' => 'Barbados',
+                                         'JE' => "Deàrsaidh",
+                                         'DK' => 'An Danmhairg',
+                                         'PA' => 'Panama',
+                                         'QA' => 'Catar',
+                                         'CV' => 'An Ceap Uaine',
+                                         'TA' => 'Tristan da Cunha',
+                                         'GD' => "Greanàda",
+                                         'MO' => "Macàthu",
+                                         'MF' => "Naomh Màrtainn",
+                                         'HR' => "A' Chròthais",
+                                         'CZ' => 'Poblachd na Seice',
+                                         'BL' => "Saint Barthélemy",
+                                         'ST' => "São Tomé is Príncipe",
+                                         'AU' => "Astràilia",
+                                         'IR' => "Ioràn",
+                                         '003' => 'Aimearaga a Tuath',
+                                         'CG' => 'Congo (Poblachd)',
+                                         'BI' => 'Burundaidh',
+                                         'GW' => 'Gini-Bioso',
+                                         'MK' => 'A\' Mhasadon (FYROM)',
+                                         'GR' => 'A\' Ghreug',
+                                         '021' => 'An Roinn-Aimearaga a Tuath',
+                                         'AG' => "Aintìoga is Barbuda",
+                                         'AI' => 'Anguilla',
+                                         'AN' => "Eileanan Aintilia nan Tìrean Ìsle",
+                                         'UA' => "An Ucràin",
+                                         'EH' => 'Sathara an Iar',
+                                         'KN' => "Naomh Crìstean is Nibheis",
+                                         'SC' => 'Na h-Eileanan Sheiseall',
+                                         'NL' => "Na Tìrean Ìsle",
+                                         'MS' => 'Montsarat',
+                                         'HK' => 'Hong Kong',
+                                         'EC' => 'Eacuador',
+                                         'MY' => 'Malaidhsea',
+                                         '013' => 'Meadhan Aimearaga',
+                                         'CR' => "Costa Rìcea",
+                                         'VA' => 'Cathair na Bhatacain',
+                                         'IO' => 'Ranntair Breatannach Cuan nan Innseachan',
+                                         'SD' => "Sudàn",
+                                         'RS' => "An t-Sèirb",
+                                         'CN' => "An t-Sìn",
+                                         'UY' => 'Uruguaidh',
+                                         'PY' => 'Paraguaidh',
+                                         '053' => "Astràilia is Sealainn Nuadh",
+                                         'MU' => 'Na h-Eileanan Mhoiriseas',
+                                         'LI' => 'Liechtenstein',
+                                         'CH' => 'An Eilbheis',
+                                         'KG' => "Cìorgastan",
+                                         'GH' => "Gàna",
+                                         'NU' => 'Niue',
+                                         'US' => "Na Stàitean Aonaichte",
+                                         'PE' => "Pearù",
+                                         'SL' => "Siarra Leòmhann",
+                                         '001' => 'An Saoghal',
+                                         'FJ' => "Fìdi",
+                                         '143' => "Meadhan Àisea",
+                                         'ER' => 'Eartra',
+                                         'IQ' => "Ioràc",
+                                         'AS' => 'Samotha na h-Airmeireaga',
+                                         'TZ' => 'An Tansan',
+                                         'LY' => 'Libia',
+                                         'GT' => 'Guatamala',
+                                         'BM' => "Bearmùda",
+                                         'BV' => 'Eilean Bouvet',
+                                         'LT' => 'An Liotuain',
+                                         '017' => 'Meadhan Afraga',
+                                         'SG' => "Singeapòr",
+                                         'PM' => 'Saint Pierre is Miquelon',
+                                         'TT' => 'Trianaid is Tobago',
+                                         'SY' => 'Siridhea',
+                                         'SK' => "An t-Slòbhac",
+                                         '011' => 'Afraga an Iar',
+                                         'AC' => 'Eilean na Deasgabhalach',
+                                         'GL' => 'A\' Ghraonlann',
+                                         'PG' => 'Gini Nuadh Phaputhach',
+                                         'KI' => 'Ciribeas',
+                                         'CD' => 'Congo (DRC)',
+                                         'AO' => "Angòla",
+                                         'BW' => 'Botsuana',
+                                         'ZW' => "An t-Sìombab",
+                                         'VC' => 'Naomh Bhionsant agus Eileanan Greanadach',
+                                         'JP' => 'An t-Seapan',
+                                         'NA' => 'An Namaib',
+                                         'TJ' => "Taidigeastàn",
+                                         'LC' => "Naomh Lùisea",
+                                         'VU' => 'Vanuatu',
+                                         'MN' => "Dùthaich nam Mongol",
+                                         'IT' => 'An Eadailt',
+                                         'RE' => "Réunion",
+                                         'WS' => 'Samotha',
+                                         '151' => "An Roinn-Eòrpa an Ear",
+                                         '015' => 'Afraga a Tuath',
+                                         'EG' => "An Èiphit",
+                                         'FR' => 'An Fhraing',
+                                         'RW' => 'Rubhanda',
+                                         'UM' => "Meanbh-Eileanan Iomallach nan Stàitean Aonaichte",
+                                         'BE' => 'A\' Bheilg',
+                                         'LS' => 'Leasoto',
+                                         'SA' => "Aràibia nan Sabhd",
+                                         'ZA' => 'Afraga a Deas',
+                                         'DG' => 'Diego Garcia',
+                                         'PT' => 'A\' Phortagail',
+                                         'CA' => 'Canada',
+                                         'CM' => 'Camarun',
+                                         'NP' => "Neapàl",
+                                         'PL' => "A' Phòlainn",
+                                         'TM' => "Turcmanastàn",
+                                         'GA' => 'Gabon',
+                                         'KY' => 'Na h-Eileanan Caimean',
+                                         'LA' => "Làthos",
+                                         'PH' => 'Na h-Eileanan Filipineach',
+                                         'NI' => 'Niocaragua',
+                                         'GU' => 'Guam',
+                                         'TF' => 'Ranntairean a Deas na Frainge',
+                                         'KZ' => "Casachstàn",
+                                         '029' => 'Am Muir Caraibeach',
+                                         'SJ' => 'Svalbard is Jan Mayen',
+                                         'MM' => "Miànmar (Burma)",
+                                         'NR' => 'Nabhru',
+                                         'DM' => 'Doiminicea',
+                                         'NE' => "Nìgeir",
+                                         'AD' => 'Andorra',
+                                         'MR' => "Moratàinea",
+                                         '039' => "An Roinn-Eòrpa a Deas",
+                                         'GS' => "Seòrsea a Deas is na h-Eileanan Sandwich a Deas",
+                                         'ME' => 'Am Monadh Neagrach',
+                                         'AX' => "Na h-Eileanan Åland",
+                                         'VN' => 'Bhiet-Nam',
+                                         'VG' => 'Eileanan Breatannach na Maighdinn',
+                                         'YE' => 'An Eaman',
+                                         'CI' => "An Costa Ìbhri",
+                                         'DZ' => 'Aildiria',
+                                         'GE' => 'A\' Chairtbheil',
+                                         '005' => 'Aimearaga a Deas',
+                                         'CX' => 'Eilean na Nollaig',
+                                         'LB' => 'Leabanon',
+                                         '018' => 'An Roinn-Afraga a Deas',
+                                         'FK' => "Na h-Eileanan Fàclannach (Islas Malvinas)",
+                                         'DE' => 'A\' Ghearmailt',
+                                         'MV' => 'Na h-Eileanan Maladaibh',
+                                         'PN' => "Eilean Peit a' Chàirn",
+                                         'BH' => 'Bachrain',
+                                         'GI' => 'Diobraltar',
+                                         'WF' => 'Uallas agus Futuna',
+                                         'RO' => "Romàinia",
+                                         'AR' => 'An Argantain',
+                                         'GP' => 'Guadalup',
+                                         'IN' => 'Na h-Innseachan',
+                                         'AW' => "Arùba",
+                                         'FO' => "Na h-Eileanan Fàro",
+                                         'BR' => 'Braisil',
+                                         'HN' => "Hondùras",
+                                         'MC' => 'Monaco',
+                                         'SB' => 'Eileanan Sholaimh',
+                                         'NZ' => 'Sealainn Nuadh',
+                                         'PS' => 'Na Ranntairean Palastaineach',
+                                         'UG' => 'Uganda',
+                                         'GB' => "An Rìoghachd Aonaichte",
+                                         'HT' => 'Haidhti',
+                                         '019' => "An Dà Aimearaga",
+                                         'GF' => "Guidheàna na Frainge",
+                                         'ZZ' => 'Ranntair Neo-Aithnichte',
+                                         'KM' => 'Comoros',
+                                         'KW' => "Cuibhèit",
+                                         'MQ' => 'Mairtinic',
+                                         'TC' => 'Na h-Eileanan Turcach is Caiceo',
+                                         'CP' => 'Eilean Clipperton',
+                                         'ES' => "An Spàinn",
+                                         'MZ' => "Mòsaimbic",
+                                         'BO' => 'Boilibhia',
+                                         'AL' => "Albàinia",
+                                         '142' => "Àisea",
+                                         '419' => 'Aimearaga Laideannach',
+                                         'TR' => 'An Tuirc',
+                                         'MD' => 'A\' Mholdobha',
+                                         'GN' => 'Gini',
+                                         'CO' => 'Coloimbia',
+                                         'SI' => "An t-Slòbhain",
+                                         'AQ' => 'An Antartaig',
+                                         'JO' => "Iòrdan",
+                                         '061' => "Poilinèis",
+                                         'SM' => 'San Marino',
+                                         'CU' => "Cùba",
+                                         'CL' => 'An t-Sile',
+                                         'ML' => "Màili",
+                                         'ET' => 'An Itiop',
+                                         'IS' => "Innis Tìle",
+                                         '035' => "Àisea an Ear-Dheas",
+                                         'BG' => 'A\' Bhulgair',
+                                         'MH' => 'Eileanan Mharshall',
+                                         'BS' => 'Na h-Eileanan Bathama',
+                                         'TL' => "Tìomor an Ear",
+                                         'BZ' => "Beilìs",
+                                         '150' => "An Roinn-Eòrpa",
+                                         'CY' => "Cìopras",
+                                         '155' => "An Roinn-Eòrpa an Iar",
+                                         'IM' => 'Eilean Manainn',
+                                         'IE' => "Èirinn",
+                                         'TW' => "Taidh-Bhàn",
+                                         'KP' => "Coirèa a Tuath",
+                                         'PF' => "Poilinèis na Frainge",
+                                         'MW' => 'Malabhaidh',
+                                         'GY' => "Guidheàna",
+                                         'GQ' => 'Gini Mheadhan-Chriosach',
+                                         'PK' => "Pagastàn",
+                                         'NF' => 'Eilean Norfolk',
+                                         'SO' => "Somàilia",
+                                         'TD' => "An t-Seàd",
+                                         'BD' => 'Bangladais',
+                                         'HM' => "Eilean Heard is MhicDhòmhnaill"
+                                       },
+                      'languages' => {
+                                       'ne' => "Neapàilis",
+                                       'tr' => 'Turcais',
+                                       'da' => 'Danmhairgis',
+                                       'ug' => "Ùigiurais",
+                                       'my' => 'Burmais',
+                                       'gl' => "Gailìsis",
+                                       'cel' => "Cànan Ceilteach",
+                                       'ro' => "Ròmanais",
+                                       'gsw' => 'Gearmailtis Eilbheiseach',
+                                       'tpi' => 'Tok Pisin',
+                                       'ta' => 'Taimilis',
+                                       'co' => 'Corsais',
+                                       'rw' => 'Kinyarwanda',
+                                       'br' => 'Breatnais',
+                                       'de_CH' => "Àrd-Ghearmailtis na h-Eilbheise",
+                                       'cy' => 'Cuimris',
+                                       'bo' => 'Tibeitis',
+                                       'ko' => 'Coireanais',
+                                       'mo' => 'Moldobhais',
+                                       'cs' => 'Seicis',
+                                       'zh_Hant' => "Sìnis Thradaiseanta",
+                                       'ps' => 'Paistiu',
+                                       'wen' => "Sòrbais",
+                                       'km' => "Cmèar",
+                                       'sms' => "Sàmais Skolt",
+                                       'af' => 'Afraganais',
+                                       'rap' => 'Rapanui',
+                                       'is' => "Innis-Tìlis",
+                                       'qu' => 'Ceatsua',
+                                       'ti' => 'Tigrinya',
+                                       'tai' => "Cànan nan Tàidh",
+                                       'mt' => 'Maltais',
+                                       'ky' => "Cìorgais",
+                                       'fr_CA' => 'Fraingis Chanada',
+                                       'la' => 'Laideann',
+                                       'hy' => 'Airmeinis',
+                                       'ga' => 'Gaeilge',
+                                       'ms' => 'Malaidhis',
+                                       'hsb' => "Sòrbais Uachdarach",
+                                       'ka' => 'Cairtbheilis',
+                                       'oc' => 'Ogsatanais',
+                                       'mi' => "M\x{101}ori",
+                                       'sv' => 'Suainis',
+                                       'und' => "Cànan neo-aithnichte",
+                                       'it' => 'Eadailtis',
+                                       'art' => "Cànan fuadain",
+                                       'hu' => 'Ungairis',
+                                       'sma' => "Sàmais Dheasach",
+                                       'fa' => 'Farsaidh',
+                                       'naq' => 'Nama',
+                                       'dv' => 'Divehi',
+                                       'se' => "Sàmais Thuathach",
+                                       'smj' => "Sàmais Lule",
+                                       'na' => 'Nauru',
+                                       'pt' => 'Portagailis',
+                                       'ks' => 'Caismiris',
+                                       'hi' => 'Hindis',
+                                       'mh' => 'Marshallais',
+                                       'sco' => 'Beurla Ghallda',
+                                       'smn' => "Sàmais Inari",
+                                       'lad' => 'Ladino',
+                                       'no' => 'Nirribhis',
+                                       'lv' => 'Laitbheis',
+                                       'os' => "Osàidis",
+                                       'ho' => 'Hiri Motu',
+                                       'ln' => 'Lingala',
+                                       'fr' => 'Fraingis',
+                                       'id' => 'Innd-Innsis',
+                                       'sr' => "Sèirbis",
+                                       'si' => 'Sinhala',
+                                       'vo' => "Volapük",
+                                       'om' => 'Oromo',
+                                       'tet' => 'Tetum',
+                                       'ab' => 'Abchasais',
+                                       'fi' => 'Fionnlannais',
+                                       'fj' => "Fìdis",
+                                       'wo' => 'Wolof',
+                                       'sn' => 'Shona',
+                                       'sd' => 'Sindhi',
+                                       'yi' => "Iùdhais",
+                                       'frs' => "Frìsis Earach",
+                                       'gv' => 'Gaelg',
+                                       'yue' => 'Cantonais',
+                                       'fil' => 'Filipinis',
+                                       'pa' => 'Panjabi',
+                                       'sl' => "Slòbhainis",
+                                       'am' => 'Amharais',
+                                       'gem' => "Cànan Gearmanach",
+                                       'mr' => 'Marathi',
+                                       'en_CA' => 'Beurla Chanada',
+                                       'rm' => 'Rumains',
+                                       'kn' => 'Kannada',
+                                       'eo' => 'Esperanto',
+                                       'fy' => "Frìsis Iarach",
+                                       'jbo' => 'Lojban',
+                                       'mn' => 'Mongolais',
+                                       'ik' => 'Inupiaq',
+                                       'gd' => "Gàidhlig",
+                                       'tk' => 'Turcmanais',
+                                       'sga' => 'Seann-Ghaeilge',
+                                       'mg' => 'Malagasais',
+                                       'de_AT' => 'Gearmailtis na h-Ostaire',
+                                       'sc' => 'Sardainis',
+                                       'en_US' => 'Beurla nan SA',
+                                       'sgn' => 'Cainnt-Shanais',
+                                       'ru' => 'Ruisis',
+                                       'ia' => 'Interlingua',
+                                       'nb' => "Bokmål na Nirribhidh",
+                                       'ku' => "Cùrdais",
+                                       'vi' => 'Bhiet-Namais',
+                                       'az' => 'Azeri',
+                                       'lo' => "Làtho",
+                                       'aa' => 'Afar',
+                                       'lb' => 'Lugsamburgais',
+                                       'nl_BE' => 'Flannrais',
+                                       'fur' => "Friùilis",
+                                       'ts' => 'Tsonga',
+                                       'kw' => "Còrnais",
+                                       'ml' => 'Malayalam',
+                                       'en_GB' => 'Beurla Bhreatainn',
+                                       'nah' => 'Nahuatl',
+                                       'ang' => 'Seann-Bheurla',
+                                       'uz' => 'Usbagais',
+                                       'ht' => "Crìtheol Haidhti",
+                                       'kl' => 'Kalaallisut',
+                                       'bs' => 'Bosnais',
+                                       'iu' => 'Inuktitut',
+                                       'yo' => 'Yoruba',
+                                       'eu' => 'Basgais',
+                                       'bg' => 'Bulgarais',
+                                       'gu' => 'Gujarati',
+                                       'zh_Hans' => "Sìnis Shimplichte",
+                                       'sq' => 'Albanais',
+                                       'ca' => 'Catalanais',
+                                       'pl' => "Pòlainnis",
+                                       'sk' => "Slòbhacais",
+                                       'non' => 'Lochlannais',
+                                       'uk' => "Ucràinis",
+                                       'es' => "Spàinntis",
+                                       'sw' => 'Swahili',
+                                       'tt' => 'Tatarais',
+                                       'smi' => "Sàmais",
+                                       'fo' => "Fàrothais",
+                                       'or' => 'Oriya',
+                                       'sh' => "Sèirb-Chròthaisis",
+                                       'sa' => 'Sanskrit',
+                                       'xh' => 'Xhosa',
+                                       'th' => "Tàidh",
+                                       'so' => "Somàilis",
+                                       'et' => 'Estonais',
+                                       'ie' => 'Interlingue',
+                                       'tl' => 'Tagalog',
+                                       'mk' => 'Masadonais',
+                                       'en' => 'Beurla',
+                                       'lt' => 'Liotuainis',
+                                       'hr' => "Cròthaisis",
+                                       'gn' => "Guaraní",
+                                       'de' => 'Gearmailtis',
+                                       'be' => 'Bealaruisis',
+                                       'zu' => 'Zulu',
+                                       'niu' => "Cànan Niue",
+                                       'snk' => 'Soninke',
+                                       'ur' => 'Urdu',
+                                       'mga' => 'Meadhan-Ghaeilge',
+                                       'nn' => 'Nynorsk na Nirribhidh',
+                                       'bn' => 'Bengali',
+                                       'ja' => 'Seapanais',
+                                       'dsb' => "Sòrbais Ìochdarach",
+                                       'tg' => 'Taidigis',
+                                       'pi' => 'Pali',
+                                       'frr' => "Frìsis Thuathach",
+                                       'tog' => 'Nyasa Tonga',
+                                       'fr_CH' => 'Fraingis na h-Eilbheise',
+                                       'te' => 'Telugu',
+                                       'he' => 'Eabhra',
+                                       'zh' => "Sìnis",
+                                       'ig' => 'Igbo',
+                                       'en_AU' => "Beurla Astràilia",
+                                       'myn' => "Cànan Mayan",
+                                       'sm' => 'Samothanais',
+                                       'ar' => 'Arabais',
+                                       'nl' => 'Duitsis',
+                                       'el' => 'Greugais',
+                                       'egy' => "Èipheitis Àrsaidh",
+                                       'kk' => 'Casachais',
+                                       'pt_BR' => 'Portagailis Bhraisil'
+                                     },
+                      'scripts' => {
+                                     'Knda' => 'Kannada',
+                                     'Jpan' => 'Seapanach',
+                                     'Hira' => 'Hiragana',
+                                     'Zzzz' => "Sgrìobhadh neo-aithnichte",
+                                     'Hrkt' => 'Katakana no Hiragana',
+                                     'Ethi' => 'Geez',
+                                     'Mong' => 'Mongolach',
+                                     'Zmth' => 'Comharran matamataig',
+                                     'Runr' => "Rùn-sgrìobhach",
+                                     'Zsym' => 'Comharran',
+                                     'Hani' => 'Han',
+                                     'Khmr' => "Cmèarach",
+                                     'Zyyy' => 'Coitcheann',
+                                     'Tglg' => 'Tagalog',
+                                     'Ogam' => 'Ogham-chraobh',
+                                     'Tibt' => 'Tibeiteach',
+                                     'Thai' => "Tàidh",
+                                     'Geor' => 'Cairtbheileach',
+                                     'Latg' => "Gàidhealach Laideannach",
+                                     'Grek' => 'Greugach',
+                                     'Mlym' => 'Malayalam',
+                                     'Taml' => 'Taimil',
+                                     'Kore' => 'Coireanach',
+                                     'Zxxx' => "Gun sgrìobhadh",
+                                     'Tfng' => 'Tifinagh',
+                                     'Hang' => 'Hangul',
+                                     'Sinh' => 'Sinhala',
+                                     'Deva' => 'Devanagari',
+                                     'Arab' => 'Arabach',
+                                     'Brai' => 'Braille',
+                                     'Latn' => 'Laideannach',
+                                     'Armn' => 'Airmeineach',
+                                     'Hebr' => 'Eabhrach',
+                                     'Kana' => 'Katakana',
+                                     'Cyrl' => 'Cirileach',
+                                     'Telu' => 'Telugu'
+                                   }
+                    },
+  'delimiters' => {
+                    'alternateQuotationEnd' => "\x{2019}",
+                    'quotationEnd' => "\x{201d}",
+                    'quotationStart' => "\x{201c}",
+                    'alternateQuotationStart' => "\x{2018}"
+                  },
+  'iso4217' => 'GBP'
+};

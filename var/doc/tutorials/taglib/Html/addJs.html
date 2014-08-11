@@ -1,0 +1,29 @@
+<o2 use O2Doc::Tutorial />
+
+<o2 docSection title="addJS">
+  Adds Javascript to a script tag somewhere in a web page (depending on the value of the where attribute).
+  <o2 docSection title="Syntax">
+    <o2 docCode lang="o2ml">
+      <o2 addJs where="post">
+        var i = 14;
+        alert(i);
+      </o2:addJs>
+    </o2:docCode>
+  </o2:docSection>
+  <o2 docSection title="Attributes">
+    <o2 docList class="attributes">
+      <o2 docListItem class="optional">where [pre]. Possible values are  {pre, post, onLoad, here}</o2:docListItem>
+      <o2 docListItem class="optional">priority [5]. High priority javascript is included before javscript code with lower priority. Low number means high priority.</o2:docListItem>
+      <o2 docListItem class="content required">content - the Javascript code</o2:docListItem>
+    </o2:docList>
+    If where=pre, the Javascript is included in the head of the page. If where=post, it is included near the bottom.
+    If where=onLoad, it is executed after the page has loaded. If where=here, it is included at the place where
+    the &lt;o2 addJs&gt; tag is written.
+    <o2 docNote>
+      If "where" is "onLoad" or "pre", &lt;o2 header&gt; or &lt;o2 incJavascript&gt; must be called on the same page in order for addJs to work. Similarly, if "where" is
+      "post", &lt;o2 footer&gt; or &lt;o2 postJavascript&gt; must be called on the same page.
+    </o2:docNote>
+    See also <o2 docLink type="tag" id="addJsFile" />, <o2 docLink type="tag" id="header" />, <o2 docLink type="tag" id="footer" />, <o2 docLink type="tag" id="incJavascript" />
+    and <o2 docLink type="tag" id="postJavascript" />.
+  </o2:docSection>
+</o2:docSection>

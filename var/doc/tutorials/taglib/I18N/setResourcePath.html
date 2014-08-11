@@ -1,0 +1,17 @@
+<o2 use O2Doc::Tutorial />
+
+<o2 docSection title="setResourcePath">
+  Lets you use the name of the language variable instead of the whole path, so instead of writing \$lang->getString("commonFiles.commonText.msgFormError"),
+  you can simply write \$lang->getString("msgFormError").
+  <o2 docSection title="Syntax">
+    <o2 docCode lang="o2ml">
+      <o2 setResourcePath>commonFiles.commonText</o2:setResourcePath>
+    </o2:docCode>
+  </o2:docSection>
+  <o2 docSection title="Attributes">
+    <o2 docList class="attributes">
+      <o2 docListItem class="content required">content - the resource path</o2:docListItem>
+    </o2:docList>
+  </o2:docSection>
+  See also <o2 docLink type="tag" id="getString" />.
+</o2:docSection>

@@ -1,0 +1,31 @@
+<o2 use O2Doc::Tutorial />
+
+<o2 docSection title="cache">
+  Caches the contents of the tag. This tag could be put around other O2-tags that require a lot of computation. If the environment variable
+  O2CACHEROOT is not set, it will be set to O2CUSTOMERROOT/var/cache.
+  <o2 docSection title="Syntax">
+    <o2 docCode lang="o2ml">
+      <o2 cache key="cache-test" timeout="30">
+        <p>This will be cached 30 seconds at a time</p>
+        <p>1 + 1 = <o2 calc>1 + 1</o2:calc></p>
+      </o2:cache>
+    </o2:docCode>
+    <o2 docCodeResult useModule="Cache" />
+  </o2:docSection>
+  <o2 docNote>
+    Javascript/CSS will not be cached, with the exception of Javascript with "where='here'".
+  </o2:docNote>
+  <o2 docSection title="Attributes">
+    <o2 docList class="attributes">
+      <o2 docListItem class="optional">timeout [1800]  - how long (in seconds) the cache should be valid</o2:docListItem>
+      <o2 docListItem class="required">key - a unique key that is used to create the name of the cache file.</o2:docListItem>
+      <o2 docListItem class="content required">content - the content to be cached</o2:docListItem>
+    </o2:docList>
+  </o2:docSection>
+  <o2 docSection>
+    <o2 docNote>
+      Cache files are deleted/invalidated only when the files time out (according to the "timeout" attribute), so the cached content may not be up to date at all times.
+      In other words: Use with caution!
+    </o2:docNote>
+  </o2:docSection>
+</o2:docSection>

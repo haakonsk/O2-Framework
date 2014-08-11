@@ -1,0 +1,25 @@
+<o2 use O2Doc::Tutorial />
+
+<o2 docSection title="openingTag">
+  "What is this?" you may think, "why can't I just open my tags the regular way?" And, of course, that's what you should
+  do in more than 99.9% of all cases. However, in a few special situations you may need to open and close tags in the wrong order.
+  It could be a foreach loop that for some reason first closes a td-tag and then opens a new one. That would mess up your indentation,
+  and O2::Template::Critic would complain. To keep the document clean, use this tag and <o2 docLink type="tag" id="closingTag" />
+  instead of opening and closing the td tags the normal way. Avoid writing tags in the wrong order if you can, but if you can't,
+  here's your backup solution.
+  <o2 docSection title="Syntax">
+    <o2 docCode lang="o2ml">
+      <o2 openingTag table class="myTable" />
+    </o2:docCode>
+    <o2 docCodeResult useModule="Html" seeGeneratedHtmlAsDisplayed="0" />
+  </o2:docSection>
+  <o2 docSection title="Attributes">
+    <o2 docList class="attributes">
+      <o2 docListItem class="param required">param - the tag name.</o2:docListItem>
+      <o2 docListItem class="optional">attributes  - the attributes are just copied to the actual tag.</o2:docListItem>
+    </o2:docList>
+  </o2:docSection>
+  <o2 docSection>
+    See also <o2 docLink type="tag" id="closingTag" />.
+  </o2:docSection>
+</o2:docSection>

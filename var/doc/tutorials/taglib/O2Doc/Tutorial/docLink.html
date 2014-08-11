@@ -1,0 +1,29 @@
+<o2 use O2Doc::Tutorial />
+
+<o2 docSection title="docLink">
+  Creates a link.
+  <o2 docSection title="Syntax">
+    <o2 docCode lang="o2ml">
+      <o2 docLink type="tag" id="docCode" />
+    </o2:docCode>
+    <o2 docCodeResult />
+    or
+    <o2 docCode lang="o2ml">
+      <o2 docLink type="tag" id="Html-Form-formTable" />
+    </o2:docCode>
+    <o2 docCodeResult />
+    or
+    <o2 docCode lang="o2ml">
+      <o2 docLink type="external" href="http://facebook.com" title="Facebook" />
+    </o2:docCode>
+    <o2 docCodeResult />
+  </o2:docSection>
+  <o2 docSection title="Attributes">
+    <o2 docList class="attributes">
+      <o2 docListItem class="required">type  - can be one of {tag, external}</o2:docListItem>
+      <o2 docListItem class="optional">id    - if type is "tag", id must be specified. Use a hyphen in place of the two colons you usually use in the module path.</o2:docListItem>
+      <o2 docListItem class="optional">href  - if type is "external", href must be specified</o2:docListItem>
+      <o2 docListItem class="optional">title - this is the link text - if type is "external", title must be specified</o2:docListItem>
+    </o2:docList>
+  </o2:docSection>
+</o2:docSection>

@@ -1,0 +1,38 @@
+<o2 use O2Doc::Tutorial />
+
+<o2 docSection title="inputCounter">
+  <o2 docSection title="Syntax">
+    An input counter can be used to limit the number of characters the user is allowed to enter into a form field (if the maxLength attribute
+    is set on the field). Each time a character is typed, the counter is updated. If no maximum length is provided, the counter just shows the
+    number of characters entered.
+    <o2 docCode lang="o2ml">
+      <o2 inputCounter id="counter1" />
+      <o2 input type="text" name="message" counterId="counter1" maxLength="160" />
+    </o2:docCode>
+    <o2 docCodeResult useModule="Html::Form" />
+    The inputCounter can be used on &lt;o2 input&gt; and &lt;o2 textarea&gt; tags. The counterId of the input field must match the id of the inputCounter.
+  </o2:docSection>
+  <o2 docSection title="Attributes">
+    <o2 docList class="attributes">
+      <o2 docListItem class="required">id</o2:docListItem>
+      <o2 docListItem class="optional">type [span] - The kind of tag used for the counter</o2:docListItem>
+      <o2 docListItem>Other html attributes - passed on to the counter tag (see the type attribute above)</o2:docListItem>
+    </o2:docList>
+  </o2:docSection>
+  <o2 docSection title="Some examples">
+    <o2 docExample>
+      <o2 docCode lang="o2ml">
+        <o2 inputCounter id="counter2" type="div" />
+        <o2 textarea name="message" counterId="counter2" maxLength="160" />
+      </o2:docCode>
+      <o2 docCodeResult useModule="Html::Form" />
+    </o2:docExample>
+    <o2 docExample>
+      <o2 docCode lang="o2ml">
+        <o2 inputCounter id="counter3" />
+        <o2 textarea name="message" counterId="counter3" />
+      </o2:docCode>
+      <o2 docCodeResult useModule="Html::Form" />
+    </o2:docExample>
+  </o2:docSection>
+</o2:docSection>

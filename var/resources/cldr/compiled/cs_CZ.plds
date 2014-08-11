@@ -1,0 +1,2825 @@
+{
+  'territory' => 'CZ',
+  'language' => 'cs',
+  'number' => {
+                'percentFormat' => {
+                                     'percentFormatLength' => {
+                                                              'standard' => "#,##0 %"
+                                                            }
+                                   },
+                'measurement' => {},
+                'symbols' => {
+                               'infinity' => "\x{221e}",
+                               'nan' => 'NaN',
+                               'plusSign' => '+',
+                               'superscriptingExponent' => "×",
+                               'exponential' => 'E',
+                               'group' => " ",
+                               'percentSign' => '%',
+                               'decimal' => ',',
+                               'perMille' => "\x{2030}",
+                               'alias' => '',
+                               'minusSign' => '-',
+                               'list' => ';'
+                             },
+                'scientificFormat' => {
+                                        'scientificFormatLength' => {
+                                                                    'standard' => '#E0'
+                                                                  }
+                                      },
+                'decimalFormat' => {
+                                     'decimalFormatLength' => {
+                                                              'short' => "0 tis'.'0 tis'.'0 tis'.'0 tis'.'00 tis'.'00 tis'.'00 tis'.'00 tis'.'000 tis'.'000 tis'.'000 tis'.'000 tis'.'0 mil'.'0 mil'.'0 mil'.'0 mil'.'00 mil'.'00 mil'.'00 mil'.'00 mil'.'000 mil'.'000 mil'.'000 mil'.'000 mil'.'0 mld'.'0 mld'.'0 mld'.'0 mld'.'00 mld'.'00 mld'.'00 mld'.'00 mld'.'000 mld'.'000 mld'.'000 mld'.'000 mld'.'0 bil'.'0 bil'.'0 bil'.'0 bil'.'00 bil'.'00 bil'.'00 bil'.'00 bil'.'000 bil'.'000 bil'.'000 bil'.'000 bil'.'",
+                                                              'standard' => '#,##0.###',
+                                                              'long' => "0 tisíc0 tisíce0 tisíce0 tisíc00 tisíc00 tisíc00 tisíce00 tisíc000 tisíc000 tisíc000 tisíce000 tisíc0 milion0 miliony0 milionu0 milion\x{16f}00 milion\x{16f}00 milion\x{16f}00 milionu00 milion\x{16f}000 milion\x{16f}000 milion\x{16f}000 milionu000 milion\x{16f}0 miliarda0 miliardy0 miliardy0 miliard00 miliard00 miliard00 miliard00 miliard000 miliard000 miliard000 miliard000 miliard0 bilion0 biliony0 bilionu0 bilion\x{16f}00 bilion\x{16f}00 bilion\x{16f}00 bilion\x{16f}00 bilion\x{16f}000 bilion\x{16f}000 bilion\x{16f}000 bilion\x{16f}000 bilion\x{16f}"
+                                                            }
+                                   },
+                'currencyFormat' => {
+                                      'currencyFormatLength' => {
+                                                                'standard' => "#,##0.00 ¤"
+                                                              }
+                                    },
+                'currencies' => {
+                                  'BZD' => {
+                                           'symbol' => '$',
+                                           'displayName' => "belizských dolar\x{16f}"
+                                         },
+                                  'YER' => {
+                                           'displayName' => "jemenských rijál\x{16f}"
+                                         },
+                                  'MXP' => {
+                                           'displayName' => "mexických st\x{159}íbrných pes (1861\x{2013}1992)"
+                                         },
+                                  'ERN' => {
+                                           'displayName' => "eritrejských nakf"
+                                         },
+                                  'FRF' => {
+                                           'displayName' => "francouzských frank\x{16f}"
+                                         },
+                                  'CRC' => {
+                                           'symbol' => "\x{20a1}",
+                                           'displayName' => "kostarických colón\x{16f}"
+                                         },
+                                  'TJR' => {
+                                           'displayName' => "tád\x{17e}ických rubl\x{16f}"
+                                         },
+                                  'VEF' => {
+                                           'displayName' => "venezuelských bolívar\x{16f}"
+                                         },
+                                  'AOK' => {
+                                           'displayName' => "angolských kwanz (1977\x{2013}1991)"
+                                         },
+                                  'ZRZ' => {
+                                           'displayName' => "zairských zair\x{16f} (1971\x{2013}1993)"
+                                         },
+                                  'BYR' => {
+                                           'symbol' => "\x{440}.",
+                                           'displayName' => "b\x{11b}loruských rubl\x{16f}"
+                                         },
+                                  'ESB' => {
+                                           'displayName' => "\x{161}pan\x{11b}lských peset (konvertibilní ú\x{10d}et)"
+                                         },
+                                  'MUR' => {
+                                           'displayName' => "mauricijských rupií"
+                                         },
+                                  'WST' => {
+                                           'displayName' => "samojských tal"
+                                         },
+                                  'MMK' => {
+                                           'displayName' => "myanmarských kyat\x{16f}"
+                                         },
+                                  'XBD' => {
+                                           'displayName' => "evropských jednotek ú\x{10d}tu 17 (XBD)"
+                                         },
+                                  'PKR' => {
+                                           'displayName' => "pákistánských rupií"
+                                         },
+                                  'TTD' => {
+                                           'symbol' => '$',
+                                           'displayName' => "trinidadských dolar\x{16f}"
+                                         },
+                                  'XBC' => {
+                                           'displayName' => "evropských jednotek ú\x{10d}tu 9 (XBC)"
+                                         },
+                                  'XCD' => {
+                                           'symbol' => 'EC$',
+                                           'displayName' => "východokaribských dolar\x{16f}"
+                                         },
+                                  'XOF' => {
+                                           'symbol' => 'CFA',
+                                           'displayName' => "CFA/BCEAO frank\x{16f}"
+                                         },
+                                  'ROL' => {
+                                           'displayName' => "rumunských lei (1952\x{2013}2006)"
+                                         },
+                                  'AZN' => {
+                                           'displayName' => "ázerbájd\x{17e}ánských manat\x{16f}"
+                                         },
+                                  'XPD' => {
+                                           'displayName' => "trojských uncí palladia"
+                                         },
+                                  'CSK' => {
+                                           'symbol' => "K\x{10d}s",
+                                           'displayName' => "\x{10d}eskoslovenských korun"
+                                         },
+                                  'MNT' => {
+                                           'symbol' => "\x{20ae}",
+                                           'displayName' => "mongolských tugrik\x{16f}"
+                                         },
+                                  'KES' => {
+                                           'displayName' => "ke\x{148}ských \x{161}ilink\x{16f}"
+                                         },
+                                  'GBP' => {
+                                           'symbol' => "£",
+                                           'displayName' => "britských liber"
+                                         },
+                                  'CDF' => {
+                                           'displayName' => "kon\x{17e}ských frank\x{16f}"
+                                         },
+                                  'AFN' => {
+                                           'displayName' => "afghánských afghán\x{16f}"
+                                         },
+                                  'BAN' => {
+                                           'displayName' => "bosenských nových dinár\x{16f} (1994\x{2013}1997)"
+                                         },
+                                  'KZT' => {
+                                           'symbol' => "\x{20b8}",
+                                           'displayName' => "kaza\x{161}ských tenge"
+                                         },
+                                  'SKK' => {
+                                           'displayName' => "slovenských korun"
+                                         },
+                                  'MLF' => {
+                                           'displayName' => "malijských frank\x{16f}"
+                                         },
+                                  'DKK' => {
+                                           'displayName' => "dánských korun"
+                                         },
+                                  'BYB' => {
+                                           'displayName' => "b\x{11b}loruských rubl\x{16f} (1994\x{2013}1999)"
+                                         },
+                                  'MXV' => {
+                                           'displayName' => "mexických investi\x{10d}ních jednotek"
+                                         },
+                                  'CYP' => {
+                                           'displayName' => "kyperských liber"
+                                         },
+                                  'TMM' => {
+                                           'displayName' => "turkmenských manat\x{16f} (1993\x{2013}2009)"
+                                         },
+                                  'SCR' => {
+                                           'displayName' => "seychelských rupií"
+                                         },
+                                  'BOL' => {
+                                           'displayName' => "bolivijských bolivianos (1863\x{2013}1963)"
+                                         },
+                                  'DDM' => {
+                                           'displayName' => "východon\x{11b}meckých marek"
+                                         },
+                                  'GWP' => {
+                                           'displayName' => "guinejsko-bissauských pes"
+                                         },
+                                  'NIC' => {
+                                           'displayName' => "nikaragujských córdob (1988\x{2013}1991)"
+                                         },
+                                  'ZMW' => {
+                                           'displayName' => "zambijských kwach"
+                                         },
+                                  'OMR' => {
+                                           'displayName' => "ománských rijál\x{16f}"
+                                         },
+                                  'DJF' => {
+                                           'displayName' => "d\x{17e}ibutských frank\x{16f}"
+                                         },
+                                  'CLE' => {
+                                           'displayName' => "chilských escud"
+                                         },
+                                  'BND' => {
+                                           'symbol' => '$',
+                                           'displayName' => "brunejských dolar\x{16f}"
+                                         },
+                                  'PTE' => {
+                                           'displayName' => "portugalských escud"
+                                         },
+                                  'GHS' => {
+                                           'symbol' => "\x{20b5}",
+                                           'displayName' => "ghanských cedi"
+                                         },
+                                  'GNF' => {
+                                           'displayName' => "guinejských frank\x{16f}"
+                                         },
+                                  'BOB' => {
+                                           'displayName' => "bolivijských bolivianos"
+                                         },
+                                  'ZWD' => {
+                                           'displayName' => "zimbabwských dolar\x{16f} (1980\x{2013}2008)"
+                                         },
+                                  'MWK' => {
+                                           'displayName' => "malawijských kwach"
+                                         },
+                                  'GRD' => {
+                                           'displayName' => "\x{159}eckých drachem"
+                                         },
+                                  'KWD' => {
+                                           'displayName' => "kuvajtských dinár\x{16f}"
+                                         },
+                                  'EUR' => {
+                                           'symbol' => "\x{20ac}",
+                                           'displayName' => 'eur'
+                                         },
+                                  'TRL' => {
+                                           'displayName' => "tureckých lir (1922\x{2013}2005)"
+                                         },
+                                  'ADP' => {
+                                           'displayName' => "andorrských peset"
+                                         },
+                                  'DOP' => {
+                                           'symbol' => '$',
+                                           'displayName' => "dominikánských pes"
+                                         },
+                                  'PEN' => {
+                                           'displayName' => "peruánských nových sol\x{16f}"
+                                         },
+                                  'SVC' => {
+                                           'displayName' => "salvadorských colón\x{16f}"
+                                         },
+                                  'BOP' => {
+                                           'displayName' => "bolivijských pes"
+                                         },
+                                  'TWD' => {
+                                           'symbol' => 'NT$',
+                                           'displayName' => "tchajwanských dolar\x{16f}"
+                                         },
+                                  'XXX' => {
+                                           'displayName' => "neznámá m\x{11b}na"
+                                         },
+                                  'SAR' => {
+                                           'displayName' => "saúdských rijál\x{16f}"
+                                         },
+                                  'SSP' => {
+                                           'symbol' => "£",
+                                           'displayName' => "jihosúdánských liber"
+                                         },
+                                  'KRW' => {
+                                           'symbol' => "\x{20a9}",
+                                           'displayName' => "jihokorejských won\x{16f}"
+                                         },
+                                  'AZM' => {
+                                           'displayName' => "ázerbájd\x{17e}ánských manat\x{16f} (1993\x{2013}2006)"
+                                         },
+                                  'NAD' => {
+                                           'symbol' => '$',
+                                           'displayName' => "namibijských dolar\x{16f}"
+                                         },
+                                  'BEC' => {
+                                           'displayName' => "belgických konvertibilních frank\x{16f}"
+                                         },
+                                  'MAF' => {
+                                           'displayName' => "marockých frank\x{16f}"
+                                         },
+                                  'YUN' => {
+                                           'displayName' => "jugoslávských konvertibilních dinár\x{16f} (1990\x{2013}1992)"
+                                         },
+                                  'GYD' => {
+                                           'symbol' => '$',
+                                           'displayName' => "guyanských dolar\x{16f}"
+                                         },
+                                  'XTS' => {
+                                           'displayName' => "kód\x{16f} zvlá\x{161}\x{165} vyhrazených pro testovací ú\x{10d}ely"
+                                         },
+                                  'EGP' => {
+                                           'displayName' => "egyptských liber"
+                                         },
+                                  'AED' => {
+                                           'displayName' => "SAE dirham\x{16f}"
+                                         },
+                                  'JOD' => {
+                                           'displayName' => "jordánských dinár\x{16f}"
+                                         },
+                                  'JPY' => {
+                                           'symbol' => "JP¥",
+                                           'displayName' => "japonských jen\x{16f}"
+                                         },
+                                  'ZAR' => {
+                                           'displayName' => "jihoafrických rand\x{16f}"
+                                         },
+                                  'HRK' => {
+                                           'displayName' => "chorvatských kun"
+                                         },
+                                  'ILR' => {
+                                           'displayName' => "izraelských \x{161}ekel\x{16f} (1980\x{2013}1985)"
+                                         },
+                                  'XFO' => {
+                                           'displayName' => "francouzských zlatých frank\x{16f}"
+                                         },
+                                  'RON' => {
+                                           'displayName' => "rumunských lei"
+                                         },
+                                  'ZWR' => {
+                                           'displayName' => "zimbabwských dolar\x{16f} (2008)"
+                                         },
+                                  'BEF' => {
+                                           'displayName' => "belgických frank\x{16f}"
+                                         },
+                                  'PLN' => {
+                                           'displayName' => "polských zlotých"
+                                         },
+                                  'IQD' => {
+                                           'displayName' => "iráckých dinár\x{16f}"
+                                         },
+                                  'MYR' => {
+                                           'displayName' => "malajsijských ringgit\x{16f}"
+                                         },
+                                  'SDD' => {
+                                           'displayName' => "súdánských dinár\x{16f} (1992\x{2013}2007)"
+                                         },
+                                  'GNS' => {
+                                           'displayName' => "guinejských syli"
+                                         },
+                                  'INR' => {
+                                           'symbol' => 'INR',
+                                           'displayName' => "indických rupií"
+                                         },
+                                  'PHP' => {
+                                           'symbol' => "\x{20b1}",
+                                           'displayName' => "filipínských pes"
+                                         },
+                                  'YDD' => {
+                                           'displayName' => "jemenských dinár\x{16f}"
+                                         },
+                                  'HNL' => {
+                                           'displayName' => "honduraských lempir"
+                                         },
+                                  'RHD' => {
+                                           'displayName' => "rhodéských dolar\x{16f}"
+                                         },
+                                  'NZD' => {
+                                           'symbol' => 'NZ$',
+                                           'displayName' => "novozélandských dolar\x{16f}"
+                                         },
+                                  'HKD' => {
+                                           'symbol' => 'HK$',
+                                           'displayName' => "hongkongských dolar\x{16f}"
+                                         },
+                                  'MTL' => {
+                                           'displayName' => "maltských lir"
+                                         },
+                                  'USS' => {
+                                           'displayName' => "amerických dolar\x{16f} (tý\x{17e} den)"
+                                         },
+                                  'ATS' => {
+                                           'displayName' => "rakouských \x{161}ilink\x{16f}"
+                                         },
+                                  'ESA' => {
+                                           'displayName' => "\x{161}pan\x{11b}lských peset (\x{201e}A\x{201c} ú\x{10d}et)"
+                                         },
+                                  'SOS' => {
+                                           'displayName' => "somálských \x{161}ilink\x{16f}"
+                                         },
+                                  'EEK' => {
+                                           'displayName' => "estonských korun"
+                                         },
+                                  'MZN' => {
+                                           'displayName' => "mozambických metical\x{16f}"
+                                         },
+                                  'XRE' => {
+                                           'displayName' => "kód fond\x{16f} RINET"
+                                         },
+                                  'ARA' => {
+                                           'displayName' => "argentinských austral\x{16f}"
+                                         },
+                                  'LTT' => {
+                                           'displayName' => "litevských talon\x{16f}"
+                                         },
+                                  'ISK' => {
+                                           'displayName' => "islandských korun"
+                                         },
+                                  'LUF' => {
+                                           'displayName' => "lucemburských frank\x{16f}"
+                                         },
+                                  'MZE' => {
+                                           'displayName' => "mosambických escud"
+                                         },
+                                  'VNN' => {
+                                           'displayName' => "vietnamských dong\x{16f} (1978\x{2013}1985)"
+                                         },
+                                  'MGA' => {
+                                           'displayName' => "madagaskarských ariary"
+                                         },
+                                  'IRR' => {
+                                           'displayName' => "íránských rijál\x{16f}"
+                                         },
+                                  'BAD' => {
+                                           'displayName' => "bosenských dinár\x{16f} (1992\x{2013}1994)"
+                                         },
+                                  'QAR' => {
+                                           'displayName' => "katarských rijál\x{16f}"
+                                         },
+                                  'MVR' => {
+                                           'displayName' => "maledivských rupií"
+                                         },
+                                  'UAK' => {
+                                           'displayName' => "ukrajinských karbovanc\x{16f}"
+                                         },
+                                  'UGS' => {
+                                           'displayName' => "ugandských \x{161}ilink\x{16f} (1966\x{2013}1987)"
+                                         },
+                                  'PLZ' => {
+                                           'displayName' => "polských zlotých (1950\x{2013}1995)"
+                                         },
+                                  'BOV' => {
+                                           'displayName' => "bolivijských mvdol\x{16f}"
+                                         },
+                                  'MZM' => {
+                                           'displayName' => "mosambických metical\x{16f} (1980\x{2013}2006)"
+                                         },
+                                  'NPR' => {
+                                           'displayName' => "nepálských rupií"
+                                         },
+                                  'BIF' => {
+                                           'displayName' => "burundských frank\x{16f}"
+                                         },
+                                  'ALK' => {
+                                           'displayName' => "albánských lek\x{16f} (1946\x{2013}1965)"
+                                         },
+                                  'KHR' => {
+                                           'symbol' => "\x{17db}",
+                                           'displayName' => "kambod\x{17e}ských riel\x{16f}"
+                                         },
+                                  'AOR' => {
+                                           'displayName' => "angolských kwanz (1995\x{2013}1999)"
+                                         },
+                                  'BHD' => {
+                                           'displayName' => "bahrajnských dinár\x{16f}"
+                                         },
+                                  'XEU' => {
+                                           'symbol' => 'ECU',
+                                           'displayName' => 'ECU'
+                                         },
+                                  'XDR' => {
+                                           'displayName' => 'SDR'
+                                         },
+                                  'STD' => {
+                                           'displayName' => "svatotomá\x{161}ských dober"
+                                         },
+                                  'PAB' => {
+                                           'displayName' => "panamských balboí"
+                                         },
+                                  'XAF' => {
+                                           'symbol' => 'FCFA',
+                                           'displayName' => "CFA/BEAC frank\x{16f}"
+                                         },
+                                  'BAM' => {
+                                           'displayName' => "bosenských konvertibilních marek"
+                                         },
+                                  'ETB' => {
+                                           'displayName' => "etiopských birr\x{16f}"
+                                         },
+                                  'YUM' => {
+                                           'displayName' => "jugoslávských nových dinár\x{16f} (1994\x{2013}2002)"
+                                         },
+                                  'XBA' => {
+                                           'displayName' => "evropských smí\x{161}ených jednotek"
+                                         },
+                                  'SLL' => {
+                                           'displayName' => "sierro-leonských leone"
+                                         },
+                                  'ILP' => {
+                                           'displayName' => "izraelských liber"
+                                         },
+                                  'NGN' => {
+                                           'symbol' => "\x{20a6}",
+                                           'displayName' => "nigerijských nair"
+                                         },
+                                  'CLP' => {
+                                           'symbol' => '$',
+                                           'displayName' => "chilských pes"
+                                         },
+                                  'LAK' => {
+                                           'symbol' => "\x{20ad}",
+                                           'displayName' => "laoských kip\x{16f}"
+                                         },
+                                  'DZD' => {
+                                           'displayName' => "al\x{17e}írských dinár\x{16f}"
+                                         },
+                                  'PEI' => {
+                                           'displayName' => "peruánských inti"
+                                         },
+                                  'CUC' => {
+                                           'displayName' => "kubánských konvertibilních pes"
+                                         },
+                                  'SZL' => {
+                                           'displayName' => "svazijských emalangeni"
+                                         },
+                                  'TPE' => {
+                                           'displayName' => "timorských escud"
+                                         },
+                                  'MOP' => {
+                                           'displayName' => "macajských patac"
+                                         },
+                                  'LRD' => {
+                                           'symbol' => '$',
+                                           'displayName' => "liberijských dolar\x{16f}"
+                                         },
+                                  'SUR' => {
+                                           'displayName' => "sov\x{11b}tských rubl\x{16f}"
+                                         },
+                                  'KGS' => {
+                                           'displayName' => "kyrgyzských som\x{16f}"
+                                         },
+                                  'PYG' => {
+                                           'symbol' => "\x{20b2}",
+                                           'displayName' => "paraguajských guarani"
+                                         },
+                                  'IDR' => {
+                                           'displayName' => "indonéských rupií"
+                                         },
+                                  'CAD' => {
+                                           'symbol' => 'CA$',
+                                           'displayName' => "kanadských dolar\x{16f}"
+                                         },
+                                  'GTQ' => {
+                                           'displayName' => "guatemalských quetzal\x{16f}"
+                                         },
+                                  'MTP' => {
+                                           'displayName' => "maltských liber"
+                                         },
+                                  'AWG' => {
+                                           'displayName' => "arubských zlatých"
+                                         },
+                                  'RUR' => {
+                                           'symbol' => "\x{440}.",
+                                           'displayName' => "ruských rubl\x{16f} (1991\x{2013}1998)"
+                                         },
+                                  'UZS' => {
+                                           'displayName' => "uzbeckých sum\x{16f}"
+                                         },
+                                  'YUD' => {
+                                           'displayName' => "jugoslávských dinár\x{16f} (1966\x{2013}1990)"
+                                         },
+                                  'VUV' => {
+                                           'displayName' => "vanuatských vatu"
+                                         },
+                                  'KMF' => {
+                                           'displayName' => "komorských frank\x{16f}"
+                                         },
+                                  'SIT' => {
+                                           'displayName' => "slovinských tolar\x{16f}"
+                                         },
+                                  'ANG' => {
+                                           'displayName' => "zlatých Nizozemských Antil"
+                                         },
+                                  'VEB' => {
+                                           'displayName' => "venezuelských bolívar\x{16f} (1871\x{2013}2008)"
+                                         },
+                                  'LBP' => {
+                                           'displayName' => "libanonských liber"
+                                         },
+                                  'BTN' => {
+                                           'displayName' => "bhútánských ngultrum\x{16f}"
+                                         },
+                                  'SEK' => {
+                                           'displayName' => "\x{161}védských korun"
+                                         },
+                                  'ZMK' => {
+                                           'displayName' => "zambijských kwach (1968\x{2013}2012)"
+                                         },
+                                  'AFA' => {
+                                           'displayName' => "afghánských afghán\x{16f} (1927\x{2013}2002)"
+                                         },
+                                  'ZAL' => {
+                                           'displayName' => "jihoafrických finan\x{10d}ních rand\x{16f}"
+                                         },
+                                  'ZRN' => {
+                                           'displayName' => "zairských nových zair\x{16f} (1993\x{2013}1998)"
+                                         },
+                                  'AMD' => {
+                                           'displayName' => "arménských dram\x{16f}"
+                                         },
+                                  'FJD' => {
+                                           'symbol' => '$',
+                                           'displayName' => "fid\x{17e}ijských dolar\x{16f}"
+                                         },
+                                  'PES' => {
+                                           'displayName' => "peruánských sol\x{16f} (1863\x{2013}1965)"
+                                         },
+                                  'ALL' => {
+                                           'displayName' => "albánských lek\x{16f}"
+                                         },
+                                  'SHP' => {
+                                           'displayName' => "svatohelenských liber"
+                                         },
+                                  'SRG' => {
+                                           'displayName' => "surinamských zlatých"
+                                         },
+                                  'TOP' => {
+                                           'displayName' => "ton\x{17e}ských paang"
+                                         },
+                                  'UGX' => {
+                                           'displayName' => "ugandských \x{161}ilink\x{16f}"
+                                         },
+                                  'TND' => {
+                                           'displayName' => "tuniských dinár\x{16f}"
+                                         },
+                                  'IEP' => {
+                                           'displayName' => "irských liber"
+                                         },
+                                  'SBD' => {
+                                           'symbol' => '$',
+                                           'displayName' => "\x{161}alamounských dolar\x{16f}"
+                                         },
+                                  'SDP' => {
+                                           'displayName' => "súdánských liber (1957\x{2013}1998)"
+                                         },
+                                  'CVE' => {
+                                           'displayName' => "kapverdských escud"
+                                         },
+                                  'ARS' => {
+                                           'symbol' => '$',
+                                           'displayName' => "argentinských pes"
+                                         },
+                                  'ARP' => {
+                                           'displayName' => "argentinských pes (1983\x{2013}1985)"
+                                         },
+                                  'GMD' => {
+                                           'displayName' => "gambijských dalasi"
+                                         },
+                                  'USN' => {
+                                           'displayName' => "amerických dolar\x{16f} (p\x{159}í\x{161}tí den)"
+                                         },
+                                  'BDT' => {
+                                           'symbol' => "\x{9f3}",
+                                           'displayName' => "bangladé\x{161}ských tak"
+                                         },
+                                  'CHF' => {
+                                           'displayName' => "\x{161}výcarských frank\x{16f}"
+                                         },
+                                  'XAG' => {
+                                           'displayName' => "trojských uncí st\x{159}íbra"
+                                         },
+                                  'SRD' => {
+                                           'symbol' => '$',
+                                           'displayName' => "surinamských dolar\x{16f}"
+                                         },
+                                  'KPW' => {
+                                           'displayName' => "severokorejských won\x{16f}"
+                                         },
+                                  'SGD' => {
+                                           'symbol' => '$',
+                                           'displayName' => "singapurských dolar\x{16f}"
+                                         },
+                                  'USD' => {
+                                           'symbol' => 'US$',
+                                           'displayName' => "amerických dolar\x{16f}"
+                                         },
+                                  'BGN' => {
+                                           'displayName' => "bulharských lv\x{16f}"
+                                         },
+                                  'MAD' => {
+                                           'displayName' => "marockých dinár\x{16f}"
+                                         },
+                                  'KYD' => {
+                                           'symbol' => '$',
+                                           'displayName' => "kajmanských dolar\x{16f}"
+                                         },
+                                  'AUD' => {
+                                           'symbol' => 'AU$',
+                                           'displayName' => "australských dolar\x{16f}"
+                                         },
+                                  'GHC' => {
+                                           'displayName' => "ghanských cedi (1979\x{2013}2007)"
+                                         },
+                                  'TRY' => {
+                                           'symbol' => 'TL',
+                                           'displayName' => "tureckých lir"
+                                         },
+                                  'GIP' => {
+                                           'symbol' => "£",
+                                           'displayName' => "gibraltarských liber"
+                                         },
+                                  'XAU' => {
+                                           'displayName' => "trojských uncí zlata"
+                                         },
+                                  'CZK' => {
+                                           'symbol' => "K\x{10d}",
+                                           'displayName' => "\x{10d}eských korun"
+                                         },
+                                  'JMD' => {
+                                           'symbol' => '$',
+                                           'displayName' => "jamajských dolar\x{16f}"
+                                         },
+                                  'BSD' => {
+                                           'symbol' => '$',
+                                           'displayName' => "bahamských dolar\x{16f}"
+                                         },
+                                  'BEL' => {
+                                           'displayName' => "belgických finan\x{10d}ních frank\x{16f}"
+                                         },
+                                  'UYU' => {
+                                           'symbol' => '$',
+                                           'displayName' => "uruguayských pes"
+                                         },
+                                  'MXN' => {
+                                           'symbol' => 'MX$',
+                                           'displayName' => "mexických pes"
+                                         },
+                                  'LVR' => {
+                                           'displayName' => "loty\x{161}ských rubl\x{16f}"
+                                         },
+                                  'BWP' => {
+                                           'displayName' => "botswanských pul"
+                                         },
+                                  'LYD' => {
+                                           'displayName' => "libyjských dinár\x{16f}"
+                                         },
+                                  'THB' => {
+                                           'symbol' => 'THB',
+                                           'displayName' => "thajských baht\x{16f}"
+                                         },
+                                  'MKD' => {
+                                           'displayName' => "makedonských denár\x{16f}"
+                                         },
+                                  'SDG' => {
+                                           'displayName' => "súdánských liber"
+                                         },
+                                  'LUL' => {
+                                           'displayName' => "lucemburských finan\x{10d}ních frank\x{16f}"
+                                         },
+                                  'AOA' => {
+                                           'displayName' => "angolských kwanz"
+                                         },
+                                  'RWF' => {
+                                           'displayName' => "rwandských frank\x{16f}"
+                                         },
+                                  'CUP' => {
+                                           'symbol' => '$',
+                                           'displayName' => "kubánských pes"
+                                         },
+                                  'BBD' => {
+                                           'symbol' => '$',
+                                           'displayName' => "barbadoských dolar\x{16f}"
+                                         },
+                                  'PGK' => {
+                                           'displayName' => "papuánských nových kin"
+                                         },
+                                  'LKR' => {
+                                           'displayName' => "srílanských rupií"
+                                         },
+                                  'TJS' => {
+                                           'displayName' => "tád\x{17e}ických somoni"
+                                         },
+                                  'MDL' => {
+                                           'displayName' => "moldavských lei"
+                                         },
+                                  'HRD' => {
+                                           'displayName' => "chorvatských dinár\x{16f}"
+                                         },
+                                  'FIM' => {
+                                           'displayName' => "finských marek"
+                                         },
+                                  'CNY' => {
+                                           'symbol' => "CN¥",
+                                           'displayName' => "\x{10d}ínských jüan\x{16f}"
+                                         },
+                                  'LVL' => {
+                                           'displayName' => "loty\x{161}ských lat\x{16f}"
+                                         },
+                                  'ITL' => {
+                                           'displayName' => "italských lir"
+                                         },
+                                  'LUC' => {
+                                           'displayName' => "lucemburských konvertibilních frank\x{16f}"
+                                         },
+                                  'MKN' => {
+                                           'displayName' => "makedonských denár\x{16f} (1992\x{2013}1993)"
+                                         },
+                                  'FKP' => {
+                                           'displayName' => "falklandských liber"
+                                         },
+                                  'NIO' => {
+                                           'displayName' => "nikaragujských córdob"
+                                         },
+                                  'ISJ' => {
+                                           'displayName' => "islandských korun (1918\x{2013}1981)"
+                                         },
+                                  'BRL' => {
+                                           'symbol' => 'R$',
+                                           'displayName' => "brazilských real\x{16f}"
+                                         },
+                                  'BUK' => {
+                                           'displayName' => "barmských kyat\x{16f}"
+                                         },
+                                  'RSD' => {
+                                           'displayName' => "srbských dinár\x{16f}"
+                                         },
+                                  'XBB' => {
+                                           'symbol' => 'EMU',
+                                           'displayName' => 'EMU'
+                                         },
+                                  'XFU' => {
+                                           'displayName' => "francouzských UIC frank\x{16f}"
+                                         },
+                                  'NOK' => {
+                                           'displayName' => "norských korun"
+                                         },
+                                  'GEL' => {
+                                           'displayName' => "gruzínských lari"
+                                         },
+                                  'ILS' => {
+                                           'symbol' => "\x{20aa}",
+                                           'displayName' => "izraelských nový \x{161}ekel\x{16f}"
+                                         },
+                                  'LSL' => {
+                                           'displayName' => "lesothských maloti"
+                                         },
+                                  'ESP' => {
+                                           'symbol' => "\x{20a7}",
+                                           'displayName' => "\x{161}pan\x{11b}lských peset"
+                                         },
+                                  'HUF' => {
+                                           'displayName' => "ma\x{10f}arských forint\x{16f}"
+                                         },
+                                  'UYP' => {
+                                           'displayName' => "uruguayských pes (1975\x{2013}1993)"
+                                         },
+                                  'UAH' => {
+                                           'symbol' => "\x{20b4}",
+                                           'displayName' => "ukrajinských h\x{159}iven"
+                                         },
+                                  'RUB' => {
+                                           'displayName' => "ruských rubl\x{16f}"
+                                         },
+                                  'BMD' => {
+                                           'symbol' => '$',
+                                           'displayName' => "bermudských dolar\x{16f}"
+                                         },
+                                  'VND' => {
+                                           'symbol' => 'VND',
+                                           'displayName' => "vietnamských dong\x{16f}"
+                                         },
+                                  'MRO' => {
+                                           'displayName' => "mauritánských ouguiyí"
+                                         },
+                                  'ZWL' => {
+                                           'displayName' => "zimbabwských dolar\x{16f} (2009)"
+                                         },
+                                  'COP' => {
+                                           'symbol' => '$',
+                                           'displayName' => "kolumbijských pes"
+                                         },
+                                  'TZS' => {
+                                           'displayName' => "tanzanských \x{161}ilink\x{16f}"
+                                         },
+                                  'MGF' => {
+                                           'displayName' => "madagaskarských frank\x{16f}"
+                                         },
+                                  'AON' => {
+                                           'displayName' => "angolských kwanz (1990\x{2013}2000)"
+                                         },
+                                  'XPT' => {
+                                           'displayName' => "trojských uncí platiny"
+                                         },
+                                  'SYP' => {
+                                           'displayName' => "syrských liber"
+                                         },
+                                  'HTG' => {
+                                           'displayName' => "haitských gourde"
+                                         },
+                                  'DEM' => {
+                                           'displayName' => "n\x{11b}meckých marek"
+                                         },
+                                  'LTL' => {
+                                           'displayName' => "litevských lit\x{16f}"
+                                         },
+                                  'TMT' => {
+                                           'displayName' => "turkmenských manat\x{16f}"
+                                         },
+                                  'XPF' => {
+                                           'symbol' => 'CFPF',
+                                           'displayName' => "CFP frank\x{16f}"
+                                         }
+                                }
+              },
+  'locale' => 'cs_CZ',
+  'characters' => {
+                    'word-initial' => "\x{2026} {0}",
+                    'standard' => '?',
+                    'word-medial' => "{0} \x{2026} {1}",
+                    'index' => "[A B C \x{10c} D E F G H {CH} I J K L M N O P Q R \x{158} S \x{160} T U V W X Y Z \x{17d}]",
+                    'medial' => "{0}\x{2026}{1}",
+                    'word-final' => "{0} \x{2026}",
+                    'final' => "{0}\x{2026}",
+                    'auxiliary' => "[á à \x{103} â å ä ã \x{101} æ ç é è \x{115} ê ë \x{113} í ì \x{12d} î ï \x{12b} \x{13e} \x{142} ñ ó ò \x{14f} ô ö ø \x{14d} \x{153} \x{155} ú ù \x{16d} û ü \x{16b} ÿ]",
+                    'initial' => "\x{2026}{0}",
+                    'punctuation' => '[\\- , ; \\: ! ? . ( ) \\[ \\] \\{ \\}]'
+                  },
+  'calendar' => {
+                  'calendarType' => 'gregorian',
+                  'timeFormat' => {
+                                    'short' => 'H:mm',
+                                    'pm' => '',
+                                    'am' => '',
+                                    'medium' => 'H:mm:ss',
+                                    'long' => 'H:mm:ss z',
+                                    'full' => 'H:mm:ss zzzz'
+                                  },
+                  'timeZones' => {
+                                   'regionFormat' => '{0} (+0)',
+                                   'gmtFormat' => 'GMT{0}',
+                                   'hourFormat' => '+H:mm;-H:mm',
+                                   'metazone' => "
+				
+					Jekat\x{11b}rinburský \x{10d}as
+					Jekat\x{11b}rinburský standardní \x{10d}as
+					Jekat\x{11b}rinburský letní \x{10d}as
+				
+			",
+                                   'zones' => {
+                                                'America/Bogota' => {
+                                                                    'type' => 'America/Bogota',
+                                                                    'exemplarCity' => "Bogotá"
+                                                                  },
+                                                'America/Indiana/Vincennes' => {
+                                                                               'type' => 'America/Indiana/Vincennes',
+                                                                               'exemplarCity' => 'Vincennes, Indiana'
+                                                                             },
+                                                'Europe/Belgrade' => {
+                                                                     'type' => 'Europe/Belgrade',
+                                                                     'exemplarCity' => "B\x{11b}lehrad"
+                                                                   },
+                                                'America/Asuncion' => {
+                                                                      'type' => 'America/Asuncion',
+                                                                      'exemplarCity' => "Asunción"
+                                                                    },
+                                                'Asia/Dhaka' => {
+                                                                'type' => 'Asia/Dhaka',
+                                                                'exemplarCity' => "Dháka"
+                                                              },
+                                                'Asia/Dushanbe' => {
+                                                                   'type' => 'Asia/Dushanbe',
+                                                                   'exemplarCity' => "Du\x{161}anbe"
+                                                                 },
+                                                'Africa/Lome' => {
+                                                                 'type' => 'Africa/Lome',
+                                                                 'exemplarCity' => "Lomé"
+                                                               },
+                                                'America/Indiana/Petersburg' => {
+                                                                                'type' => 'America/Indiana/Petersburg',
+                                                                                'exemplarCity' => 'Petersburg, Indiana'
+                                                                              },
+                                                'Asia/Harbin' => {
+                                                                 'type' => 'Asia/Harbin',
+                                                                 'exemplarCity' => 'Charbin'
+                                                               },
+                                                'Asia/Tashkent' => {
+                                                                   'type' => 'Asia/Tashkent',
+                                                                   'exemplarCity' => "Ta\x{161}kent"
+                                                                 },
+                                                'America/Montreal' => {
+                                                                      'type' => 'America/Montreal',
+                                                                      'exemplarCity' => "Montréal"
+                                                                    },
+                                                'Atlantic/St_Helena' => {
+                                                                        'type' => 'Atlantic/St_Helena',
+                                                                        'exemplarCity' => 'Sv. Helena'
+                                                                      },
+                                                'Asia/Baghdad' => {
+                                                                  'type' => 'Asia/Baghdad',
+                                                                  'exemplarCity' => "Bagdád"
+                                                                },
+                                                'America/Coral_Harbour' => {
+                                                                           'type' => 'America/Coral_Harbour',
+                                                                           'exemplarCity' => 'Atikokan'
+                                                                         },
+                                                'Asia/Beirut' => {
+                                                                 'type' => 'Asia/Beirut',
+                                                                 'exemplarCity' => "Bejrút"
+                                                               },
+                                                'Asia/Yerevan' => {
+                                                                  'type' => 'Asia/Yerevan',
+                                                                  'exemplarCity' => 'Jerevan'
+                                                                },
+                                                'Atlantic/Faeroe' => {
+                                                                     'type' => 'Atlantic/Faeroe',
+                                                                     'exemplarCity' => "Faerské ostrovy"
+                                                                   },
+                                                'America/St_Kitts' => {
+                                                                      'type' => 'America/St_Kitts',
+                                                                      'exemplarCity' => "Svatý Kry\x{161}tof"
+                                                                    },
+                                                'Asia/Pyongyang' => {
+                                                                    'type' => 'Asia/Pyongyang',
+                                                                    'exemplarCity' => 'Pchjongjang'
+                                                                  },
+                                                'Europe/London' => {
+                                                                   'long' => {
+                                                                             'daylight' => "Britský letní \x{10d}as"
+                                                                           },
+                                                                   'type' => 'Europe/London',
+                                                                   'exemplarCity' => "Londýn"
+                                                                 },
+                                                'America/St_Johns' => {
+                                                                      'type' => 'America/St_Johns',
+                                                                      'exemplarCity' => "St. John\x{2019}s"
+                                                                    },
+                                                'Europe/Rome' => {
+                                                                 'type' => 'Europe/Rome',
+                                                                 'exemplarCity' => "\x{158}ím"
+                                                               },
+                                                'Europe/Budapest' => {
+                                                                     'type' => 'Europe/Budapest',
+                                                                     'exemplarCity' => "Budape\x{161}\x{165}"
+                                                                   },
+                                                'Europe/Ljubljana' => {
+                                                                      'type' => 'Europe/Ljubljana',
+                                                                      'exemplarCity' => "Lubla\x{148}"
+                                                                    },
+                                                'Asia/Muscat' => {
+                                                                 'type' => 'Asia/Muscat',
+                                                                 'exemplarCity' => 'Maskat'
+                                                               },
+                                                'America/Indiana/Knox' => {
+                                                                          'type' => 'America/Indiana/Knox',
+                                                                          'exemplarCity' => 'Knox, Indiana'
+                                                                        },
+                                                'Asia/Bahrain' => {
+                                                                  'type' => 'Asia/Bahrain',
+                                                                  'exemplarCity' => 'Bahrajn'
+                                                                },
+                                                'Africa/Addis_Ababa' => {
+                                                                        'type' => 'Africa/Addis_Ababa',
+                                                                        'exemplarCity' => 'Addis Abeba'
+                                                                      },
+                                                'Asia/Brunei' => {
+                                                                 'type' => 'Asia/Brunei',
+                                                                 'exemplarCity' => 'Brunej'
+                                                               },
+                                                'Asia/Rangoon' => {
+                                                                  'type' => 'Asia/Rangoon',
+                                                                  'exemplarCity' => "Rangún"
+                                                                },
+                                                'Asia/Ulaanbaatar' => {
+                                                                      'type' => 'Asia/Ulaanbaatar',
+                                                                      'exemplarCity' => "Ulánbátar"
+                                                                    },
+                                                'Asia/Macau' => {
+                                                                'type' => 'Asia/Macau',
+                                                                'exemplarCity' => 'Macao'
+                                                              },
+                                                'Asia/Jerusalem' => {
+                                                                    'type' => 'Asia/Jerusalem',
+                                                                    'exemplarCity' => "Jeruzalém"
+                                                                  },
+                                                'America/Cayman' => {
+                                                                    'type' => 'America/Cayman',
+                                                                    'exemplarCity' => "Kajmanské ostrovy"
+                                                                  },
+                                                'America/Indiana/Vevay' => {
+                                                                           'type' => 'America/Indiana/Vevay',
+                                                                           'exemplarCity' => 'Vevay, Indiana'
+                                                                         },
+                                                'Europe/Chisinau' => {
+                                                                     'type' => 'Europe/Chisinau',
+                                                                     'exemplarCity' => "Ki\x{161}in\x{11b}v"
+                                                                   },
+                                                'Asia/Kuwait' => {
+                                                                 'type' => 'Asia/Kuwait',
+                                                                 'exemplarCity' => 'Kuvajt'
+                                                               },
+                                                'Atlantic/Reykjavik' => {
+                                                                        'type' => 'Atlantic/Reykjavik',
+                                                                        'exemplarCity' => "Reykjavík"
+                                                                      },
+                                                'Asia/Krasnoyarsk' => {
+                                                                      'type' => 'Asia/Krasnoyarsk',
+                                                                      'exemplarCity' => 'Krasnojarsk'
+                                                                    },
+                                                'Europe/Bucharest' => {
+                                                                      'type' => 'Europe/Bucharest',
+                                                                      'exemplarCity' => "Bukure\x{161}\x{165}"
+                                                                    },
+                                                'Asia/Oral' => {
+                                                               'type' => 'Asia/Oral',
+                                                               'exemplarCity' => 'Uralsk'
+                                                             },
+                                                'America/North_Dakota/New_Salem' => {
+                                                                                    'type' => 'America/North_Dakota/New_Salem',
+                                                                                    'exemplarCity' => "New Salem, Severní Dakota"
+                                                                                  },
+                                                'America/Cancun' => {
+                                                                    'type' => 'America/Cancun',
+                                                                    'exemplarCity' => "Cancún"
+                                                                  },
+                                                'Pacific/Fiji' => {
+                                                                  'type' => 'Pacific/Fiji',
+                                                                  'exemplarCity' => "Fid\x{17e}i"
+                                                                },
+                                                'Pacific/Marquesas' => {
+                                                                       'type' => 'Pacific/Marquesas',
+                                                                       'exemplarCity' => "Markézy"
+                                                                     },
+                                                'America/Bahia' => {
+                                                                   'type' => 'America/Bahia',
+                                                                   'exemplarCity' => "Bahía"
+                                                                 },
+                                                'Asia/Singapore' => {
+                                                                    'type' => 'Asia/Singapore',
+                                                                    'exemplarCity' => 'Singapur'
+                                                                  },
+                                                'Asia/Chongqing' => {
+                                                                    'type' => 'Asia/Chongqing',
+                                                                    'exemplarCity' => "\x{10c}chung-\x{10d}ching"
+                                                                  },
+                                                'America/El_Salvador' => {
+                                                                         'type' => 'America/El_Salvador',
+                                                                         'exemplarCity' => 'Salvador'
+                                                                       },
+                                                'America/St_Vincent' => {
+                                                                        'type' => 'America/St_Vincent',
+                                                                        'exemplarCity' => "Svatý Vincenc"
+                                                                      },
+                                                'America/North_Dakota/Center' => {
+                                                                                 'type' => 'America/North_Dakota/Center',
+                                                                                 'exemplarCity' => "Center, Severní Dakota"
+                                                                               },
+                                                'Pacific/Easter' => {
+                                                                    'type' => 'Pacific/Easter',
+                                                                    'exemplarCity' => "Velikono\x{10d}ní ostrov"
+                                                                  },
+                                                'Europe/Prague' => {
+                                                                   'type' => 'Europe/Prague',
+                                                                   'exemplarCity' => 'Praha'
+                                                                 },
+                                                'Asia/Shanghai' => {
+                                                                   'type' => 'Asia/Shanghai',
+                                                                   'exemplarCity' => "\x{160}anghaj"
+                                                                 },
+                                                'Asia/Calcutta' => {
+                                                                   'type' => 'Asia/Calcutta',
+                                                                   'exemplarCity' => 'Kalkata'
+                                                                 },
+                                                'Indian/Comoro' => {
+                                                                   'type' => 'Indian/Comoro',
+                                                                   'exemplarCity' => 'Komory'
+                                                                 },
+                                                'America/Indiana/Winamac' => {
+                                                                             'type' => 'America/Indiana/Winamac',
+                                                                             'exemplarCity' => 'Winamac, Indiana'
+                                                                           },
+                                                'Europe/Warsaw' => {
+                                                                   'type' => 'Europe/Warsaw',
+                                                                   'exemplarCity' => "Var\x{161}ava"
+                                                                 },
+                                                'Pacific/Noumea' => {
+                                                                    'type' => 'Pacific/Noumea',
+                                                                    'exemplarCity' => "Nouméa"
+                                                                  },
+                                                'Asia/Bishkek' => {
+                                                                  'type' => 'Asia/Bishkek',
+                                                                  'exemplarCity' => "Bi\x{161}kek"
+                                                                },
+                                                'Pacific/Chatham' => {
+                                                                     'type' => 'Pacific/Chatham',
+                                                                     'exemplarCity' => "Chathamské ostrovy"
+                                                                   },
+                                                'Europe/Brussels' => {
+                                                                     'type' => 'Europe/Brussels',
+                                                                     'exemplarCity' => 'Brusel'
+                                                                   },
+                                                'America/Dominica' => {
+                                                                      'type' => 'America/Dominica',
+                                                                      'exemplarCity' => 'Dominika'
+                                                                    },
+                                                'Atlantic/South_Georgia' => {
+                                                                            'type' => 'Atlantic/South_Georgia',
+                                                                            'exemplarCity' => "Ji\x{17e}ní Georgia"
+                                                                          },
+                                                'Pacific/Efate' => {
+                                                                   'type' => 'Pacific/Efate',
+                                                                   'exemplarCity' => "Éfaté"
+                                                                 },
+                                                'Asia/Yakutsk' => {
+                                                                  'type' => 'Asia/Yakutsk',
+                                                                  'exemplarCity' => 'Jakutsk'
+                                                                },
+                                                'Pacific/Pitcairn' => {
+                                                                      'type' => 'Pacific/Pitcairn',
+                                                                      'exemplarCity' => 'Pitcairnovy ostrovy'
+                                                                    },
+                                                'Africa/Abidjan' => {
+                                                                    'type' => 'Africa/Abidjan',
+                                                                    'exemplarCity' => "Abid\x{17e}an"
+                                                                  },
+                                                'Atlantic/Cape_Verde' => {
+                                                                         'type' => 'Atlantic/Cape_Verde',
+                                                                         'exemplarCity' => 'Kapverdy'
+                                                                       },
+                                                'Africa/Cairo' => {
+                                                                  'type' => 'Africa/Cairo',
+                                                                  'exemplarCity' => "Káhira"
+                                                                },
+                                                'Pacific/Truk' => {
+                                                                  'type' => 'Pacific/Truk',
+                                                                  'exemplarCity' => "Chuukské ostrovy"
+                                                                },
+                                                'Europe/Isle_of_Man' => {
+                                                                        'type' => 'Europe/Isle_of_Man',
+                                                                        'exemplarCity' => 'Ostrov Man'
+                                                                      },
+                                                'America/St_Lucia' => {
+                                                                      'type' => 'America/St_Lucia',
+                                                                      'exemplarCity' => "Svatá Lucie"
+                                                                    },
+                                                'Africa/Mogadishu' => {
+                                                                      'type' => 'Africa/Mogadishu',
+                                                                      'exemplarCity' => "Mogadi\x{161}u"
+                                                                    },
+                                                'America/St_Thomas' => {
+                                                                       'type' => 'America/St_Thomas',
+                                                                       'exemplarCity' => "Svatý Tomá\x{161} (Karibik)"
+                                                                     },
+                                                'America/Jamaica' => {
+                                                                     'type' => 'America/Jamaica',
+                                                                     'exemplarCity' => 'Jamajka'
+                                                                   },
+                                                'Asia/Kashgar' => {
+                                                                  'type' => 'Asia/Kashgar',
+                                                                  'exemplarCity' => "Ka\x{161}ghar"
+                                                                },
+                                                'Asia/Ashgabat' => {
+                                                                   'type' => 'Asia/Ashgabat',
+                                                                   'exemplarCity' => "A\x{161}chabad"
+                                                                 },
+                                                'Africa/Nouakchott' => {
+                                                                       'type' => 'Africa/Nouakchott',
+                                                                       'exemplarCity' => "Nuak\x{161}ott"
+                                                                     },
+                                                'Indian/Mauritius' => {
+                                                                      'type' => 'Indian/Mauritius',
+                                                                      'exemplarCity' => 'Mauricius'
+                                                                    },
+                                                'Asia/Sakhalin' => {
+                                                                   'type' => 'Asia/Sakhalin',
+                                                                   'exemplarCity' => 'Sachalin'
+                                                                 },
+                                                'Africa/Sao_Tome' => {
+                                                                     'type' => 'Africa/Sao_Tome',
+                                                                     'exemplarCity' => "Svatý Tomá\x{161}"
+                                                                   },
+                                                'America/Sao_Paulo' => {
+                                                                       'type' => 'America/Sao_Paulo',
+                                                                       'exemplarCity' => "São Paulo"
+                                                                     },
+                                                'Africa/Algiers' => {
+                                                                    'type' => 'Africa/Algiers',
+                                                                    'exemplarCity' => "Al\x{17e}ír"
+                                                                  },
+                                                'Asia/Nicosia' => {
+                                                                  'type' => 'Asia/Nicosia',
+                                                                  'exemplarCity' => "Nikósie"
+                                                                },
+                                                'Asia/Riyadh' => {
+                                                                 'type' => 'Asia/Riyadh',
+                                                                 'exemplarCity' => "Rijád"
+                                                               },
+                                                'Antarctica/DumontDUrville' => {
+                                                                               'type' => 'Antarctica/DumontDUrville',
+                                                                               'exemplarCity' => "Dumont d\x{2019}Urville"
+                                                                             },
+                                                'Europe/Athens' => {
+                                                                   'type' => 'Europe/Athens',
+                                                                   'exemplarCity' => "Athény"
+                                                                 },
+                                                'Asia/Qyzylorda' => {
+                                                                    'type' => 'Asia/Qyzylorda',
+                                                                    'exemplarCity' => 'Kyzylorda'
+                                                                  },
+                                                'Asia/Khandyga' => {
+                                                                   'type' => 'Asia/Khandyga',
+                                                                   'exemplarCity' => 'Chandyga'
+                                                                 },
+                                                'Asia/Dubai' => {
+                                                                'type' => 'Asia/Dubai',
+                                                                'exemplarCity' => 'Dubaj'
+                                                              },
+                                                'Indian/Christmas' => {
+                                                                      'type' => 'Indian/Christmas',
+                                                                      'exemplarCity' => "Váno\x{10d}ní ostrov"
+                                                                    },
+                                                'Asia/Tokyo' => {
+                                                                'type' => 'Asia/Tokyo',
+                                                                'exemplarCity' => 'Tokio'
+                                                              },
+                                                'Asia/Thimphu' => {
+                                                                  'type' => 'Asia/Thimphu',
+                                                                  'exemplarCity' => "Thimbú"
+                                                                },
+                                                'Asia/Damascus' => {
+                                                                   'type' => 'Asia/Damascus',
+                                                                   'exemplarCity' => "Dama\x{161}ek"
+                                                                 },
+                                                'America/Indiana/Marengo' => {
+                                                                             'type' => 'America/Indiana/Marengo',
+                                                                             'exemplarCity' => 'Marengo, Indiana'
+                                                                           },
+                                                'Asia/Qatar' => {
+                                                                'type' => 'Asia/Qatar',
+                                                                'exemplarCity' => 'Katar'
+                                                              },
+                                                'Europe/Sofia' => {
+                                                                  'type' => 'Europe/Sofia',
+                                                                  'exemplarCity' => 'Sofie'
+                                                                },
+                                                'America/Mexico_City' => {
+                                                                         'type' => 'America/Mexico_City',
+                                                                         'exemplarCity' => "México"
+                                                                       },
+                                                'America/Belem' => {
+                                                                   'type' => 'America/Belem',
+                                                                   'exemplarCity' => "Belém"
+                                                                 },
+                                                'Atlantic/Azores' => {
+                                                                     'type' => 'Atlantic/Azores',
+                                                                     'exemplarCity' => "Azorské ostrovy"
+                                                                   },
+                                                'Asia/Kabul' => {
+                                                                'type' => 'Asia/Kabul',
+                                                                'exemplarCity' => "Kábul"
+                                                              },
+                                                'Asia/Hong_Kong' => {
+                                                                    'type' => 'Asia/Hong_Kong',
+                                                                    'exemplarCity' => 'Hongkong'
+                                                                  },
+                                                'Europe/Uzhgorod' => {
+                                                                     'type' => 'Europe/Uzhgorod',
+                                                                     'exemplarCity' => "U\x{17e}horod"
+                                                                   },
+                                                'America/Godthab' => {
+                                                                     'type' => 'America/Godthab',
+                                                                     'exemplarCity' => 'Nuuk'
+                                                                   },
+                                                'America/Scoresbysund' => {
+                                                                          'type' => 'America/Scoresbysund',
+                                                                          'exemplarCity' => 'Ittoqqortoormiit'
+                                                                        },
+                                                'Asia/Yekaterinburg' => {
+                                                                        'type' => 'Asia/Yekaterinburg',
+                                                                        'exemplarCity' => "Jekat\x{11b}rinburg"
+                                                                      },
+                                                'Asia/Amman' => {
+                                                                'type' => 'Asia/Amman',
+                                                                'exemplarCity' => "Ammán"
+                                                              },
+                                                'America/Costa_Rica' => {
+                                                                        'type' => 'America/Costa_Rica',
+                                                                        'exemplarCity' => 'Kostarika'
+                                                                      },
+                                                'Europe/Copenhagen' => {
+                                                                       'type' => 'Europe/Copenhagen',
+                                                                       'exemplarCity' => "Koda\x{148}"
+                                                                     },
+                                                'Africa/Asmera' => {
+                                                                   'type' => 'Africa/Asmera',
+                                                                   'exemplarCity' => 'Asmara'
+                                                                 },
+                                                'America/Cordoba' => {
+                                                                     'type' => 'America/Cordoba',
+                                                                     'exemplarCity' => "Córdoba"
+                                                                   },
+                                                'America/Lower_Princes' => {
+                                                                           'type' => 'America/Lower_Princes',
+                                                                           'exemplarCity' => 'Lower Prince\'s Quarter'
+                                                                         },
+                                                'America/Curacao' => {
+                                                                     'type' => 'America/Curacao',
+                                                                     'exemplarCity' => "Curaçao"
+                                                                   },
+                                                'Indian/Cocos' => {
+                                                                  'type' => 'Indian/Cocos',
+                                                                  'exemplarCity' => "Kokosové ostrovy"
+                                                                },
+                                                'Asia/Saigon' => {
+                                                                 'type' => 'Asia/Saigon',
+                                                                 'exemplarCity' => "Ho \x{10c}i Minovo m\x{11b}sto"
+                                                               },
+                                                'Europe/Tirane' => {
+                                                                   'type' => 'Europe/Tirane',
+                                                                   'exemplarCity' => 'Tirana'
+                                                                 },
+                                                'America/St_Barthelemy' => {
+                                                                           'type' => 'America/St_Barthelemy',
+                                                                           'exemplarCity' => "Saint-Barthélemy"
+                                                                         },
+                                                'Asia/Phnom_Penh' => {
+                                                                     'type' => 'Asia/Phnom_Penh',
+                                                                     'exemplarCity' => 'Phnompenh'
+                                                                   },
+                                                'Atlantic/Canary' => {
+                                                                     'type' => 'Atlantic/Canary',
+                                                                     'exemplarCity' => "Kanárské ostrovy"
+                                                                   },
+                                                'America/Kentucky/Monticello' => {
+                                                                                 'type' => 'America/Kentucky/Monticello',
+                                                                                 'exemplarCity' => 'Monticello, Kentucky'
+                                                                               },
+                                                'Europe/Helsinki' => {
+                                                                     'type' => 'Europe/Helsinki',
+                                                                     'exemplarCity' => 'Helsinky'
+                                                                   },
+                                                'Europe/Vatican' => {
+                                                                    'type' => 'Europe/Vatican',
+                                                                    'exemplarCity' => "Vatikán"
+                                                                  },
+                                                'Asia/Kamchatka' => {
+                                                                    'type' => 'Asia/Kamchatka',
+                                                                    'exemplarCity' => "Kam\x{10d}atka"
+                                                                  },
+                                                'Europe/Lisbon' => {
+                                                                   'type' => 'Europe/Lisbon',
+                                                                   'exemplarCity' => 'Lisabon'
+                                                                 },
+                                                'Asia/Seoul' => {
+                                                                'type' => 'Asia/Seoul',
+                                                                'exemplarCity' => 'Soul'
+                                                              },
+                                                'Europe/Luxembourg' => {
+                                                                       'type' => 'Europe/Luxembourg',
+                                                                       'exemplarCity' => 'Lucemburk'
+                                                                     },
+                                                'Antarctica/South_Pole' => {
+                                                                           'type' => 'Antarctica/South_Pole',
+                                                                           'exemplarCity' => "Ji\x{17e}ní pól"
+                                                                         },
+                                                'Europe/Monaco' => {
+                                                                   'type' => 'Europe/Monaco',
+                                                                   'exemplarCity' => 'Monako'
+                                                                 },
+                                                'Etc/Unknown' => {
+                                                                 'type' => 'Etc/Unknown',
+                                                                 'exemplarCity' => "Neznámé m\x{11b}sto"
+                                                               },
+                                                'Europe/Kiev' => {
+                                                                 'type' => 'Europe/Kiev',
+                                                                 'exemplarCity' => 'Kyjev'
+                                                               },
+                                                'Europe/Moscow' => {
+                                                                   'type' => 'Europe/Moscow',
+                                                                   'exemplarCity' => 'Moskva'
+                                                                 },
+                                                'Africa/Ndjamena' => {
+                                                                     'type' => 'Africa/Ndjamena',
+                                                                     'exemplarCity' => "Nd\x{17e}amena"
+                                                                   },
+                                                'Pacific/Ponape' => {
+                                                                    'type' => 'Pacific/Ponape',
+                                                                    'exemplarCity' => 'Pohnpei'
+                                                                  },
+                                                'Asia/Katmandu' => {
+                                                                   'type' => 'Asia/Katmandu',
+                                                                   'exemplarCity' => "Káthmándú"
+                                                                 },
+                                                'Indian/Kerguelen' => {
+                                                                      'type' => 'Indian/Kerguelen',
+                                                                      'exemplarCity' => 'Kerguelenovy ostrovy'
+                                                                    },
+                                                'Africa/Tripoli' => {
+                                                                    'type' => 'Africa/Tripoli',
+                                                                    'exemplarCity' => 'Tripolis'
+                                                                  },
+                                                'Asia/Urumqi' => {
+                                                                 'type' => 'Asia/Urumqi',
+                                                                 'exemplarCity' => "Urum\x{10d}i"
+                                                               },
+                                                'Africa/Khartoum' => {
+                                                                     'type' => 'Africa/Khartoum',
+                                                                     'exemplarCity' => "Chartúm"
+                                                                   },
+                                                'America/Indiana/Tell_City' => {
+                                                                               'type' => 'America/Indiana/Tell_City',
+                                                                               'exemplarCity' => 'Tell City, Indiana'
+                                                                             },
+                                                'Europe/Zaporozhye' => {
+                                                                       'type' => 'Europe/Zaporozhye',
+                                                                       'exemplarCity' => "Záporo\x{17e}í"
+                                                                     },
+                                                'Europe/Vienna' => {
+                                                                   'type' => 'Europe/Vienna',
+                                                                   'exemplarCity' => "Víde\x{148}"
+                                                                 },
+                                                'Europe/Paris' => {
+                                                                  'type' => 'Europe/Paris',
+                                                                  'exemplarCity' => "Pa\x{159}í\x{17e}"
+                                                                },
+                                                'Asia/Karachi' => {
+                                                                  'type' => 'Asia/Karachi',
+                                                                  'exemplarCity' => "Kará\x{10d}í"
+                                                                },
+                                                'Europe/Berlin' => {
+                                                                   'type' => 'Europe/Berlin',
+                                                                   'exemplarCity' => "Berlín"
+                                                                 },
+                                                'America/North_Dakota/Beulah' => {
+                                                                                 'type' => 'America/North_Dakota/Beulah',
+                                                                                 'exemplarCity' => "Beulah, Severní Dakota"
+                                                                               },
+                                                'Asia/Choibalsan' => {
+                                                                     'type' => 'Asia/Choibalsan',
+                                                                     'exemplarCity' => "\x{10c}ojbalsan"
+                                                                   },
+                                                'Asia/Taipei' => {
+                                                                 'type' => 'Asia/Taipei',
+                                                                 'exemplarCity' => 'Tchaj-pej'
+                                                               },
+                                                'Africa/Djibouti' => {
+                                                                     'type' => 'Africa/Djibouti',
+                                                                     'exemplarCity' => "D\x{17e}ibuti"
+                                                                   },
+                                                'Europe/Dublin' => {
+                                                                   'long' => {
+                                                                             'daylight' => "Irský letní \x{10d}as"
+                                                                           },
+                                                                   'type' => 'Europe/Dublin'
+                                                                 },
+                                                'Atlantic/Bermuda' => {
+                                                                      'type' => 'Atlantic/Bermuda',
+                                                                      'exemplarCity' => 'Bermudy'
+                                                                    },
+                                                'Asia/Novokuznetsk' => {
+                                                                       'type' => 'Asia/Novokuznetsk',
+                                                                       'exemplarCity' => "Novokuzn\x{11b}ck"
+                                                                     },
+                                                'Indian/Maldives' => {
+                                                                     'type' => 'Indian/Maldives',
+                                                                     'exemplarCity' => 'Maledivy'
+                                                                   },
+                                                'Europe/Zagreb' => {
+                                                                   'type' => 'Europe/Zagreb',
+                                                                   'exemplarCity' => "Záh\x{159}eb"
+                                                                 },
+                                                'Pacific/Gambier' => {
+                                                                     'type' => 'Pacific/Gambier',
+                                                                     'exemplarCity' => 'Gambierovy ostrovy'
+                                                                   },
+                                                'Pacific/Galapagos' => {
+                                                                       'type' => 'Pacific/Galapagos',
+                                                                       'exemplarCity' => "Galapágy"
+                                                                     },
+                                                'Indian/Reunion' => {
+                                                                    'type' => 'Indian/Reunion',
+                                                                    'exemplarCity' => "Réunion"
+                                                                  },
+                                                'Asia/Tehran' => {
+                                                                 'type' => 'Asia/Tehran',
+                                                                 'exemplarCity' => "Teherán"
+                                                               },
+                                                'America/Martinique' => {
+                                                                        'type' => 'America/Martinique',
+                                                                        'exemplarCity' => 'Martinik'
+                                                                      },
+                                                'Europe/Zurich' => {
+                                                                   'type' => 'Europe/Zurich',
+                                                                   'exemplarCity' => 'Curych'
+                                                                 },
+                                                'America/Puerto_Rico' => {
+                                                                         'type' => 'America/Puerto_Rico',
+                                                                         'exemplarCity' => 'Portoriko'
+                                                                       },
+                                                'Indian/Mahe' => {
+                                                                 'type' => 'Indian/Mahe',
+                                                                 'exemplarCity' => "Mahé"
+                                                               }
+                                              },
+                                   'fallbackFormat' => '{1} ({0})',
+                                   'gmtZeroFormat' => 'GMT'
+                                 },
+                  'eras' => {
+                              'eraNames' => {
+                                            'alias' => {
+                                                       '' => ''
+                                                     },
+                                            'era' => {
+                                                     '1' => 'n. l.',
+                                                     '0' => "p\x{159}. n. l."
+                                                   }
+                                          },
+                              'eraNarrow' => {
+                                             'alias' => {
+                                                        '' => ''
+                                                      },
+                                             'era' => {
+                                                      '1' => 'n.l.',
+                                                      '0' => "p\x{159}.n.l."
+                                                    }
+                                           },
+                              'eraAbbr' => {
+                                           'era' => {
+                                                    '1' => 'n. l.',
+                                                    '0' => "p\x{159}. n. l."
+                                                  }
+                                         }
+                            },
+                  'days' => {
+                              'format' => {
+                                          'short' => {
+                                                     '' => '',
+                                                     'fri' => "pá",
+                                                     'wed' => 'st',
+                                                     'sun' => 'ne',
+                                                     'tue' => "út",
+                                                     'mon' => 'po',
+                                                     'sat' => 'so',
+                                                     'thu' => "\x{10d}t"
+                                                   },
+                                          'abbreviated' => {
+                                                           '' => '',
+                                                           'fri' => "pá",
+                                                           'wed' => 'st',
+                                                           'sun' => 'ne',
+                                                           'tue' => "út",
+                                                           'mon' => 'po',
+                                                           'sat' => 'so',
+                                                           'thu' => "\x{10d}t"
+                                                         },
+                                          'narrow' => {
+                                                      '' => '',
+                                                      'fri' => 'P',
+                                                      'wed' => 'S',
+                                                      'sun' => 'N',
+                                                      'tue' => "Ú",
+                                                      'mon' => 'P',
+                                                      'sat' => 'S',
+                                                      'thu' => "\x{10c}"
+                                                    },
+                                          'wide' => {
+                                                    'fri' => "pátek",
+                                                    'tue' => "úterý",
+                                                    'sun' => "ned\x{11b}le",
+                                                    'sat' => 'sobota',
+                                                    'mon' => "pond\x{11b}lí",
+                                                    'wed' => "st\x{159}eda",
+                                                    'thu' => "\x{10d}tvrtek"
+                                                  }
+                                        },
+                              'stand-alone' => {
+                                               'short' => {
+                                                          '' => '',
+                                                          'fri' => "pá",
+                                                          'wed' => 'st',
+                                                          'sun' => 'ne',
+                                                          'tue' => "út",
+                                                          'mon' => 'po',
+                                                          'sat' => 'so',
+                                                          'thu' => "\x{10d}t"
+                                                        },
+                                               'abbreviated' => {
+                                                                '' => '',
+                                                                'fri' => "pá",
+                                                                'wed' => 'st',
+                                                                'sun' => 'ne',
+                                                                'tue' => "út",
+                                                                'mon' => 'po',
+                                                                'sat' => 'so',
+                                                                'thu' => "\x{10d}t"
+                                                              },
+                                               'narrow' => {
+                                                           'fri' => 'P',
+                                                           'tue' => "Ú",
+                                                           'sun' => 'N',
+                                                           'sat' => 'S',
+                                                           'mon' => 'P',
+                                                           'wed' => 'S',
+                                                           'thu' => "\x{10c}"
+                                                         },
+                                               'wide' => {
+                                                         '' => '',
+                                                         'fri' => "pátek",
+                                                         'wed' => "st\x{159}eda",
+                                                         'sun' => "ned\x{11b}le",
+                                                         'tue' => "úterý",
+                                                         'mon' => "pond\x{11b}lí",
+                                                         'sat' => 'sobota',
+                                                         'thu' => "\x{10d}tvrtek"
+                                                       }
+                                             }
+                            },
+                  'months' => {
+                                'format' => {
+                                            'abbreviated' => {
+                                                             '' => '',
+                                                             '6' => "\x{10d}vn",
+                                                             '11' => 'lis',
+                                                             '3' => "b\x{159}e",
+                                                             '7' => "\x{10d}vc",
+                                                             '9' => "zá\x{159}",
+                                                             '12' => 'pro',
+                                                             '2' => "úno",
+                                                             '8' => 'srp',
+                                                             '1' => 'led',
+                                                             '4' => 'dub',
+                                                             '10' => "\x{159}íj",
+                                                             '5' => "kv\x{11b}"
+                                                           },
+                                            'narrow' => {
+                                                        '' => '',
+                                                        '6' => '6',
+                                                        '11' => '11',
+                                                        '3' => '3',
+                                                        '7' => '7',
+                                                        '9' => '9',
+                                                        '12' => '12',
+                                                        '2' => '2',
+                                                        '8' => '8',
+                                                        '1' => '1',
+                                                        '4' => '4',
+                                                        '10' => '10',
+                                                        '5' => '5'
+                                                      },
+                                            'wide' => {
+                                                      '6' => "\x{10d}ervna",
+                                                      '11' => 'listopadu',
+                                                      '3' => "b\x{159}ezna",
+                                                      '7' => "\x{10d}ervence",
+                                                      '9' => "zá\x{159}í",
+                                                      '12' => 'prosince',
+                                                      '2' => "února",
+                                                      '8' => 'srpna',
+                                                      '1' => 'ledna',
+                                                      '4' => 'dubna',
+                                                      '10' => "\x{159}íjna",
+                                                      '5' => "kv\x{11b}tna"
+                                                    }
+                                          },
+                                'stand-alone' => {
+                                                 'abbreviated' => {
+                                                                  '' => '',
+                                                                  '6' => "\x{10d}vn",
+                                                                  '11' => 'lis',
+                                                                  '3' => "b\x{159}e",
+                                                                  '7' => "\x{10d}vc",
+                                                                  '9' => "zá\x{159}",
+                                                                  '12' => 'pro',
+                                                                  '2' => "úno",
+                                                                  '8' => 'srp',
+                                                                  '1' => 'led',
+                                                                  '4' => 'dub',
+                                                                  '10' => "\x{159}íj",
+                                                                  '5' => "kv\x{11b}"
+                                                                },
+                                                 'narrow' => {
+                                                             '6' => "\x{10d}",
+                                                             '11' => 'l',
+                                                             '3' => 'b',
+                                                             '7' => "\x{10d}",
+                                                             '9' => 'z',
+                                                             '12' => 'p',
+                                                             '2' => "ú",
+                                                             '8' => 's',
+                                                             '1' => 'l',
+                                                             '4' => 'd',
+                                                             '10' => "\x{159}",
+                                                             '5' => 'k'
+                                                           },
+                                                 'wide' => {
+                                                           '' => '',
+                                                           '6' => "\x{10d}erven",
+                                                           '11' => 'listopad',
+                                                           '3' => "b\x{159}ezen",
+                                                           '7' => "\x{10d}ervenec",
+                                                           '9' => "zá\x{159}í",
+                                                           '12' => 'prosinec',
+                                                           '2' => "únor",
+                                                           '8' => 'srpen',
+                                                           '1' => 'leden',
+                                                           '4' => 'duben',
+                                                           '10' => "\x{159}íjen",
+                                                           '5' => "kv\x{11b}ten"
+                                                         }
+                                               }
+                              },
+                  'dateFormat' => {
+                                    'short' => 'dd.MM.yy',
+                                    'medium' => 'd. M. y',
+                                    'long' => 'd. MMMM y',
+                                    'full' => 'EEEE d. MMMM y'
+                                  }
+                },
+  'displayNames' => {
+                      'territories' => {
+                                         'DJ' => "D\x{17e}ibutsko",
+                                         'JM' => 'Jamajka',
+                                         '030' => "Východní Asie",
+                                         'AT' => 'Rakousko',
+                                         'SZ' => 'Svazijsko',
+                                         'YT' => 'Mayotte',
+                                         'BN' => 'Brunej',
+                                         'ZM' => 'Zambie',
+                                         'PR' => 'Portoriko',
+                                         'SH' => "Svatá Helena",
+                                         'MA' => 'Maroko',
+                                         'SV' => 'Salvador',
+                                         'MT' => 'Malta',
+                                         'MP' => "Severní Mariany",
+                                         'UZ' => "Uzbekistán",
+                                         'PW' => 'Palau',
+                                         'TK' => 'Tokelau',
+                                         'LR' => "Libérie",
+                                         'TN' => 'Tunisko',
+                                         'EE' => 'Estonsko',
+                                         'CK' => 'Cookovy ostrovy',
+                                         'BY' => "B\x{11b}lorusko",
+                                         'NO' => 'Norsko',
+                                         'KR' => "Ji\x{17e}ní Korea",
+                                         'IC' => "Kanárské ostrovy",
+                                         'BF' => 'Burkina Faso',
+                                         'AM' => "Arménie",
+                                         'SR' => 'Surinam',
+                                         'MG' => 'Madagaskar',
+                                         'BT' => "Bhútán",
+                                         '009' => "Oceánie",
+                                         'CF' => "St\x{159}edoafrická republika",
+                                         '014' => "Východní Afrika",
+                                         'BA' => 'Bosna a Hercegovina',
+                                         'AE' => "Spojené arabské emiráty",
+                                         'TH' => 'Thajsko',
+                                         'EA' => 'Ceuta a Melilla',
+                                         '002' => 'Afrika',
+                                         '057' => "Mikronésie (region)",
+                                         'CC' => "Kokosové ostrovy",
+                                         'NC' => "Nová Kaledonie",
+                                         'EU' => "Evropská unie",
+                                         'TO' => 'Tonga',
+                                         'SE' => "\x{160}védsko",
+                                         'AZ' => "Ázerbájd\x{17e}án",
+                                         'AF' => "Afghánistán",
+                                         'NG' => "Nigérie",
+                                         'KE' => "Ke\x{148}a",
+                                         'BJ' => 'Benin',
+                                         'XK' => 'Kosovo',
+                                         'OM' => "Omán",
+                                         '145' => "Západní Asie",
+                                         'LK' => "Srí Lanka",
+                                         'ID' => "Indonésie",
+                                         'FM' => "Mikronésie",
+                                         'GM' => 'Gambie',
+                                         'LV' => "Loty\x{161}sko",
+                                         'RU' => 'Rusko',
+                                         '154' => "Severní Evropa",
+                                         '034' => "Ji\x{17e}ní Asie",
+                                         'FI' => 'Finsko',
+                                         'LU' => 'Lucembursko',
+                                         'VE' => 'Venezuela',
+                                         '054' => "Melanésie",
+                                         'VI' => "Americké Panenské ostrovy",
+                                         'TV' => 'Tuvalu',
+                                         'SN' => 'Senegal',
+                                         'MX' => 'Mexiko',
+                                         'IL' => 'Izrael',
+                                         'GG' => 'Guernsey',
+                                         'HU' => "Ma\x{10f}arsko",
+                                         'DO' => "Dominikánská republika",
+                                         'BQ' => "Karibské Nizozemsko",
+                                         'KH' => "Kambod\x{17e}a",
+                                         'TG' => 'Togo',
+                                         'BB' => 'Barbados',
+                                         'JE' => 'Jersey',
+                                         'DK' => "Dánsko",
+                                         'PA' => 'Panama',
+                                         'QA' => 'Katar',
+                                         'CV' => 'Kapverdy',
+                                         'TA' => 'Tristan da Cunha',
+                                         'GD' => 'Grenada',
+                                         'MO' => 'Macao',
+                                         'MF' => "Svatý Martin",
+                                         'HR' => 'Chorvatsko',
+                                         'CZ' => "\x{10c}eská republika",
+                                         'BL' => "Svatý Bartolom\x{11b}j",
+                                         'ST' => "Svatý Tomá\x{161} a Princ\x{16f}v ostrov",
+                                         'AU' => "Austrálie",
+                                         'IR' => "Írán",
+                                         '003' => "Severní Amerika",
+                                         'CG' => 'Kongo (republika)',
+                                         'GW' => 'Guinea-Bissau',
+                                         'BI' => 'Burundi',
+                                         'MK' => 'Makedonie (FYROM)',
+                                         'GR' => "\x{158}ecko",
+                                         '021' => "Severní Amerika oblast",
+                                         'AG' => 'Antigua a Barbuda',
+                                         'AI' => 'Anguilla',
+                                         'AN' => "Nizozemské Antily",
+                                         'UA' => 'Ukrajina',
+                                         'EH' => "Západní Sahara",
+                                         'KN' => "Svatý Kry\x{161}tof a Nevis",
+                                         'SC' => 'Seychely',
+                                         'NL' => 'Nizozemsko',
+                                         'MS' => 'Montserrat',
+                                         'HK' => 'Hongkong',
+                                         'EC' => "Ekvádor",
+                                         'MY' => 'Malajsie',
+                                         '013' => "St\x{159}ední Amerika",
+                                         'CR' => 'Kostarika',
+                                         'VA' => "Vatikán",
+                                         'IO' => "Britské indickooceánské území",
+                                         'SD' => "Súdán",
+                                         'RS' => 'Srbsko',
+                                         'CN' => "\x{10c}ína",
+                                         'UY' => 'Uruguay',
+                                         'PY' => 'Paraguay',
+                                         '053' => 'Australasie',
+                                         'MU' => 'Mauricius',
+                                         'LI' => "Lichten\x{161}tejnsko",
+                                         'CH' => "\x{160}výcarsko",
+                                         'KG' => "Kyrgyzstán",
+                                         'GH' => 'Ghana',
+                                         'NU' => 'Niue',
+                                         'US' => 'USA',
+                                         'PE' => 'Peru',
+                                         'SL' => 'Sierra Leone',
+                                         '001' => "Sv\x{11b}t",
+                                         'FJ' => "Fid\x{17e}i",
+                                         '143' => "St\x{159}ední Asie",
+                                         'ER' => 'Eritrea',
+                                         'IQ' => "Irák",
+                                         'AS' => "Americká Samoa",
+                                         'TZ' => 'Tanzanie',
+                                         'LY' => 'Libye',
+                                         'GT' => 'Guatemala',
+                                         'BM' => 'Bermudy',
+                                         'BV' => "Bouvet\x{16f}v ostrov",
+                                         'LT' => 'Litva',
+                                         '017' => "St\x{159}ední Afrika",
+                                         'SG' => 'Singapur',
+                                         'PM' => 'Saint-Pierre a Miquelon',
+                                         'TT' => 'Trinidad a Tobago',
+                                         'SY' => "Sýrie",
+                                         'SK' => 'Slovensko',
+                                         '011' => "Západní Afrika",
+                                         'AC' => 'Ascension',
+                                         'GL' => "Grónsko",
+                                         'PG' => "Papua-Nová Guinea",
+                                         'KI' => 'Kiribati',
+                                         'CD' => 'Kongo (DRK)',
+                                         'AO' => 'Angola',
+                                         'BW' => 'Botswana',
+                                         'ZW' => 'Zimbabwe',
+                                         'VC' => "Svatý Vincenc a Grenadiny",
+                                         'JP' => 'Japonsko',
+                                         'NA' => 'Namibie',
+                                         'TJ' => "Tád\x{17e}ikistán",
+                                         'LC' => "Svatá Lucie",
+                                         'VU' => 'Vanuatu',
+                                         'MN' => 'Mongolsko',
+                                         'IT' => "Itálie",
+                                         'RE' => "Réunion",
+                                         'WS' => 'Samoa',
+                                         '151' => "Východní Evropa",
+                                         '015' => "Severní Afrika",
+                                         'CW' => "Curaçao",
+                                         'EG' => 'Egypt',
+                                         'FR' => 'Francie',
+                                         'RW' => 'Rwanda',
+                                         'UM' => "Men\x{161}í odlehlé ostrovy USA",
+                                         'BE' => 'Belgie',
+                                         'LS' => 'Lesotho',
+                                         'SA' => "Saúdská Arábie",
+                                         'ZA' => "Jihoafrická republika",
+                                         'DG' => "Diego García",
+                                         'PT' => 'Portugalsko',
+                                         'CA' => 'Kanada',
+                                         'CM' => 'Kamerun',
+                                         'NP' => "Nepál",
+                                         'PL' => 'Polsko',
+                                         'TM' => "Turkmenistán",
+                                         'GA' => 'Gabon',
+                                         'KY' => "Kajmanské ostrovy",
+                                         'LA' => 'Laos',
+                                         'PH' => "Filipíny",
+                                         'NI' => 'Nikaragua',
+                                         'GU' => 'Guam',
+                                         'TF' => "Francouzská ji\x{17e}ní území",
+                                         'KZ' => "Kazachstán",
+                                         '029' => 'Karibik',
+                                         'SJ' => "\x{160}picberky a Jan Mayen",
+                                         'MM' => 'Myanmar (Barma)',
+                                         'NR' => 'Nauru',
+                                         'DM' => 'Dominika',
+                                         'NE' => 'Niger',
+                                         'AD' => 'Andorra',
+                                         'MR' => "Mauritánie",
+                                         '039' => "Ji\x{17e}ní Evropa",
+                                         'GS' => "Ji\x{17e}ní Georgie a Ji\x{17e}ní Sandwichovy ostrovy",
+                                         'ME' => "\x{10c}erná Hora",
+                                         'AX' => "Ålandy",
+                                         'VN' => 'Vietnam',
+                                         'VG' => "Britské Panenské ostrovy",
+                                         'YE' => 'Jemen',
+                                         'CI' => "Pob\x{159}e\x{17e}í slonoviny",
+                                         'DZ' => "Al\x{17e}írsko",
+                                         'GE' => 'Gruzie',
+                                         '005' => "Ji\x{17e}ní Amerika",
+                                         'CX' => "Váno\x{10d}ní ostrov",
+                                         'LB' => 'Libanon',
+                                         '018' => "Ji\x{17e}ní Afrika",
+                                         'FK' => "Falklandské ostrovy (Malvíny)",
+                                         'DE' => "N\x{11b}mecko",
+                                         'MV' => 'Maledivy',
+                                         'PN' => 'Pitcairnovy ostrovy',
+                                         'BH' => 'Bahrajn',
+                                         'GI' => 'Gibraltar',
+                                         'WF' => 'Wallis a Futuna',
+                                         'RO' => 'Rumunsko',
+                                         'AR' => 'Argentina',
+                                         'GP' => 'Guadeloupe',
+                                         'IN' => 'Indie',
+                                         'AW' => 'Aruba',
+                                         'FO' => "Faerské ostrovy",
+                                         'BR' => "Brazílie",
+                                         'HN' => 'Honduras',
+                                         'MC' => 'Monako',
+                                         'SB' => "\x{160}alamounovy ostrovy",
+                                         'NZ' => "Nový Zéland",
+                                         'PS' => 'Palestina',
+                                         'UG' => 'Uganda',
+                                         'SX' => 'Sint Maarten',
+                                         'GB' => 'VB',
+                                         'HT' => 'Haiti',
+                                         '019' => 'Amerika',
+                                         'QO' => "Vn\x{11b}j\x{161}í Oceánie",
+                                         'SS' => "Ji\x{17e}ní Súdán",
+                                         'GF' => "Francouzská Guyana",
+                                         'ZZ' => "Neznámá oblast",
+                                         'KM' => 'Komory',
+                                         'KW' => 'Kuvajt',
+                                         'MQ' => 'Martinik',
+                                         'TC' => 'Turks a Caicos',
+                                         'CP' => "Clipperton\x{16f}v ostrov",
+                                         'ES' => "\x{160}pan\x{11b}lsko",
+                                         'MZ' => 'Mosambik',
+                                         'BO' => "Bolívie",
+                                         'AL' => "Albánie",
+                                         '142' => 'Asie',
+                                         '419' => "Latinská Amerika",
+                                         'TR' => 'Turecko',
+                                         'MD' => 'Moldavsko',
+                                         'GN' => 'Guinea',
+                                         'CO' => 'Kolumbie',
+                                         'SI' => 'Slovinsko',
+                                         'AQ' => 'Antarktida',
+                                         'JO' => "Jordánsko",
+                                         '061' => "Polynésie",
+                                         'SM' => 'San Marino',
+                                         'CU' => 'Kuba',
+                                         'CL' => 'Chile',
+                                         'ML' => 'Mali',
+                                         'ET' => 'Etiopie',
+                                         'IS' => 'Island',
+                                         '035' => "Jihovýchodní Asie",
+                                         'BG' => 'Bulharsko',
+                                         'MH' => 'Marshallovy ostrovy',
+                                         'BS' => 'Bahamy',
+                                         'TL' => "Východní Timor",
+                                         'BZ' => 'Belize',
+                                         '150' => 'Evropa',
+                                         'CY' => 'Kypr',
+                                         '155' => "Západní Evropa",
+                                         'IM' => 'Ostrov Man',
+                                         'IE' => 'Irsko',
+                                         'TW' => 'Tchaj-wan',
+                                         'KP' => "Severní Korea",
+                                         'PF' => "Francouzská Polynésie",
+                                         'MW' => 'Malawi',
+                                         'GY' => 'Guyana',
+                                         'GQ' => "Rovníková Guinea",
+                                         'PK' => "Pákistán",
+                                         'NF' => 'Norfolk',
+                                         'SO' => "Somálsko",
+                                         'TD' => "\x{10c}ad",
+                                         'BD' => "Bangladé\x{161}",
+                                         'HM' => "Heard\x{16f}v ostrov a McDonaldovy ostrovy"
+                                       },
+                      'languages' => {
+                                       'sid' => 'sidamo',
+                                       'ne' => "nepál\x{161}tina",
+                                       'tr' => "ture\x{10d}tina",
+                                       'ki' => "kikuj\x{161}tina",
+                                       'gl' => "galicij\x{161}tina",
+                                       'lun' => "lund\x{161}tina",
+                                       'kum' => "kumy\x{10d}tina",
+                                       'fat' => "fant\x{161}tina",
+                                       'ckb' => "kurd\x{161}tina (sorání)",
+                                       'ro' => "rumun\x{161}tina",
+                                       'br' => "breton\x{161}tina",
+                                       'pt_PT' => "portugal\x{161}tina (Evropa)",
+                                       'syc' => "syr\x{161}tina (klasická)",
+                                       'gil' => "kiribat\x{161}tina",
+                                       'cs' => "\x{10d}e\x{161}tina",
+                                       'sux' => "sumer\x{161}tina",
+                                       'km' => "khmér\x{161}tina",
+                                       'af' => "afrikán\x{161}tina",
+                                       'tai' => "thajské jazyky",
+                                       'mun' => "mundské jazyky",
+                                       'ga' => "ir\x{161}tina",
+                                       'hsb' => "hornolu\x{17e}ická srb\x{161}tina",
+                                       'ada' => 'adangme',
+                                       'dak' => "dakot\x{161}tina",
+                                       'arn' => "araukán\x{161}tina",
+                                       'mi' => "maor\x{161}tina",
+                                       'sv' => "\x{161}véd\x{161}tina",
+                                       'za' => "\x{10d}uang\x{161}tina",
+                                       'mkh' => "mon-khmerské jazyky",
+                                       'fa' => "per\x{161}tina",
+                                       'pau' => "palau\x{161}tina",
+                                       'wal' => "wolajt\x{161}tina",
+                                       'afh' => 'afrihili',
+                                       'man' => "manding\x{161}tina",
+                                       'cmc' => "\x{10d}am\x{161}tina",
+                                       've' => 'venda',
+                                       'na' => "naur\x{161}tina",
+                                       'ba' => "ba\x{161}kir\x{161}tina",
+                                       'pra' => "prákrtské jazyky",
+                                       'id' => "indoné\x{161}tina",
+                                       'arc' => "aramej\x{161}tina",
+                                       'trv' => 'taroko',
+                                       'si' => "sinhál\x{161}tina",
+                                       'kac' => "ka\x{10d}ij\x{161}tina",
+                                       'om' => "orom\x{161}tina",
+                                       'rwk' => 'rwa',
+                                       'fi' => "fin\x{161}tina",
+                                       'mai' => "maithili\x{161}tina",
+                                       'wo' => "wolof\x{161}tina",
+                                       'ii' => "s'-\x{10d}chuan i",
+                                       'yue' => "kanton\x{161}tina",
+                                       'jgo' => 'ngomba',
+                                       'maf' => 'mafa',
+                                       'bi' => "bislam\x{161}tina",
+                                       'ace' => "aceh\x{161}tina",
+                                       'kj' => "kua\x{148}am\x{161}tina",
+                                       'ota' => "osmanská ture\x{10d}tina",
+                                       'xal' => "kalmy\x{10d}tina",
+                                       'mn' => "mongol\x{161}tina",
+                                       'nv' => "nava\x{17e}\x{161}tina",
+                                       'gd' => "skotská gael\x{161}tina",
+                                       'map' => "austronéské jazyky",
+                                       'bai' => 'bamilek',
+                                       'ber' => "berberské jazyky",
+                                       'cr' => "kríj\x{161}tina",
+                                       'sg' => "sang\x{161}tina",
+                                       'kam' => "kamb\x{161}tina",
+                                       'yao' => "jao\x{161}tina",
+                                       'ira' => "íránské jazyky",
+                                       'pon' => "pohnpei\x{161}tina",
+                                       'tum' => "tumbuk\x{161}tina",
+                                       'suk' => 'sukuma',
+                                       'enm' => "angli\x{10d}tina (st\x{159}edov\x{11b}ká)",
+                                       'bej' => "bed\x{17e}a",
+                                       'nub' => "núbijské jazyky",
+                                       'dgr' => 'dogrib',
+                                       'bg' => "bulhar\x{161}tina",
+                                       'guz' => 'gusii',
+                                       'del' => "delawar\x{161}tina",
+                                       'chr' => "\x{10d}erokéz\x{161}tina",
+                                       'sq' => "albán\x{161}tina",
+                                       'ca' => "katalán\x{161}tina",
+                                       'paa' => "papuánské jazyky",
+                                       'nds' => "dolnon\x{11b}m\x{10d}ina",
+                                       'luo' => "luo\x{161}tina",
+                                       'es' => "\x{161}pan\x{11b}l\x{161}tina",
+                                       'sw' => "svahil\x{161}tina",
+                                       'bez' => 'bena',
+                                       'yap' => "jap\x{161}tina",
+                                       'sla' => "slovanský jazyk",
+                                       'sa' => 'sanskrt',
+                                       'mua' => 'mundang',
+                                       'anp' => 'angika',
+                                       'krl' => "karel\x{161}tina",
+                                       'loz' => "loz\x{161}tina",
+                                       'ie' => 'interlingue',
+                                       'tl' => 'tagalog',
+                                       'dyo' => 'jola-fonyi',
+                                       'nd' => 'ndebele (Zimbabwe)',
+                                       'hil' => "hiligajnon\x{161}tina",
+                                       'udm' => "udmurt\x{161}tina",
+                                       'de' => "n\x{11b}m\x{10d}ina",
+                                       'kbd' => "kabardin\x{161}tina",
+                                       'tzm' => "tamazight (st\x{159}ední Maroko)",
+                                       'mag' => "magahij\x{161}tina",
+                                       'hz' => "herer\x{161}tina",
+                                       'sba' => 'ngambay',
+                                       'nai' => "severoamerické indiánské jazyky",
+                                       'haw' => "havaj\x{161}tina",
+                                       'sel' => "selkup\x{161}tina",
+                                       'frr' => "frí\x{161}tina (severní)",
+                                       'he' => "hebrej\x{161}tina",
+                                       'zh' => "\x{10d}ín\x{161}tina",
+                                       'lol' => "mong\x{161}tina",
+                                       'dum' => "holand\x{161}tina (st\x{159}edov\x{11b}ká)",
+                                       'sat' => "santál\x{161}tina",
+                                       'tyv' => "tuvin\x{161}tina",
+                                       'mwr' => "márvár\x{161}tina",
+                                       'egy' => "egypt\x{161}tina stará",
+                                       'twq' => 'tasawaq',
+                                       'da' => "dán\x{161}tina",
+                                       'ug' => "ujgur\x{161}tina",
+                                       'sbp' => "sango\x{161}tina",
+                                       'moh' => 'mohawk',
+                                       'ta' => "tamil\x{161}tina",
+                                       'ady' => "adygej\x{161}tina",
+                                       'efi' => "efik\x{161}tina",
+                                       'rw' => "ki\x{148}arwand\x{161}tina",
+                                       'mos' => 'mosi',
+                                       'doi' => "dogar\x{161}tina",
+                                       'saq' => 'samburu',
+                                       'sem' => "semitské jazyky",
+                                       'zun' => "zunij\x{161}tina",
+                                       'cus' => "kú\x{161}itské jazyky",
+                                       'mo' => "moldav\x{161}tina",
+                                       'cop' => "kopt\x{161}tina",
+                                       'mis' => "r\x{16f}zné jazyky",
+                                       'ps' => "pa\x{161}t\x{161}tina",
+                                       'ksf' => 'bafia',
+                                       'av' => "avar\x{161}tina",
+                                       'fon' => "fon\x{161}tina",
+                                       'kab' => "kabyl\x{161}tina",
+                                       'nic' => "nigero-kordofánské jazyky",
+                                       'is' => "island\x{161}tina",
+                                       'qu' => "ke\x{10d}uán\x{161}tina",
+                                       'shn' => "\x{161}an\x{161}tina",
+                                       'mt' => "malt\x{161}tina",
+                                       'men' => 'mende',
+                                       'la' => 'latina',
+                                       'ybb' => 'yemba',
+                                       'bh' => "bihár\x{161}tina",
+                                       'oc' => "okcitán\x{161}tina",
+                                       'pap' => 'papiamento',
+                                       'zxx' => "\x{17e}ádný jazykový obsah",
+                                       'art' => "um\x{11b}lé jazyky",
+                                       'nyo' => "\x{148}or\x{161}tina",
+                                       'kha' => "khásí",
+                                       'hai' => "haid\x{161}tina",
+                                       'naq' => 'nama',
+                                       'ach' => "akol\x{161}tina",
+                                       'kbl' => 'kanembu',
+                                       'ng' => "ndond\x{161}tina",
+                                       'dv' => "malediv\x{161}tina",
+                                       'jv' => "javán\x{161}tina",
+                                       'smj' => "sám\x{161}tina (lulejská)",
+                                       'hi' => "hind\x{161}tina",
+                                       'lad' => "ladin\x{161}tina",
+                                       'csb' => "ka\x{161}ub\x{161}tina",
+                                       'os' => "oset\x{161}tina",
+                                       'fr' => "francouz\x{161}tina",
+                                       'got' => "gót\x{161}tina",
+                                       'jmc' => "ma\x{161}ame",
+                                       'kaa' => "karakalpa\x{10d}tina",
+                                       'dzg' => 'dazaga',
+                                       'sr' => "srb\x{161}tina",
+                                       'kok' => "konkán\x{161}tina",
+                                       'vo' => 'volapuk',
+                                       'xog' => "sog\x{161}tina",
+                                       'tet' => "tetum\x{161}tina",
+                                       'fj' => "fid\x{17e}ij\x{161}tina",
+                                       'srr' => "serer\x{161}tina",
+                                       'pam' => 'papangau',
+                                       'cpe' => "anglická kreol\x{161}tina \x{10d}i pidgin",
+                                       'kaw' => 'kawi',
+                                       'sd' => "sindh\x{161}tina",
+                                       'bho' => "bhojpur\x{161}tina",
+                                       'gon' => "gónd\x{161}tina",
+                                       'ha' => "hau\x{161}tina",
+                                       'gba' => 'gbaja',
+                                       'hit' => "chetit\x{161}tina",
+                                       'lg' => "gand\x{161}tina",
+                                       'shu' => "arab\x{161}tina (\x{10d}adská)",
+                                       'bug' => "bugi\x{161}tina",
+                                       'mul' => "slo\x{17e}ené (více\x{159}ádkové) jazyky",
+                                       'dua' => "dual\x{161}tina",
+                                       'tig' => "tigrej\x{161}tina",
+                                       'mye' => 'myene',
+                                       'mr' => "maráth\x{161}tina",
+                                       'cad' => 'caddo',
+                                       'rm' => "rétoromán\x{161}tina",
+                                       'kaj' => 'jju',
+                                       'ilo' => "ilokán\x{161}tina",
+                                       'kn' => "kannad\x{161}tina",
+                                       'rn' => "kirund\x{161}tina",
+                                       'uga' => "ugarit\x{161}tina",
+                                       'nog' => "nogaj\x{161}tina",
+                                       'cho' => "\x{10d}okt\x{161}tina",
+                                       'nmg' => 'kwasio',
+                                       'ik' => "inupiak\x{161}tina",
+                                       'hmn' => "hmong\x{161}tina",
+                                       'mg' => "malga\x{161}tina",
+                                       'ru' => "ru\x{161}tina",
+                                       'nnh' => 'ngiemboon',
+                                       'kar' => "karen\x{161}tina",
+                                       'ku' => "kurd\x{161}tina",
+                                       'znd' => "zand\x{161}tina",
+                                       'lo' => "lao\x{161}tina",
+                                       'lb' => "lucembur\x{161}tina",
+                                       'mus' => "krík\x{161}tina",
+                                       'ml' => "malajálam\x{161}tina",
+                                       'grc' => "staro\x{159}e\x{10d}tina",
+                                       'sas' => "sasak\x{161}tina",
+                                       'nah' => 'nahuatl',
+                                       'peo' => "staroper\x{161}tina",
+                                       'bal' => "balú\x{10d}\x{161}tina",
+                                       'nyn' => "\x{148}ankol\x{161}tina",
+                                       'kho' => "chotán\x{161}tina",
+                                       'kl' => "grón\x{161}tina",
+                                       'bs' => "bosen\x{161}tina",
+                                       'to' => "tongán\x{161}tina",
+                                       'cu' => "staroslov\x{11b}n\x{161}tina",
+                                       'es_ES' => "\x{161}pan\x{11b}l\x{161}tina (Evropa)",
+                                       'ch' => "\x{10d}amoro",
+                                       'eu' => "baski\x{10d}tina",
+                                       'wa' => "valon\x{161}tina",
+                                       'ine' => "indoevropské jazyky",
+                                       'pl' => "pol\x{161}tina",
+                                       'ay' => "ajmar\x{161}tina",
+                                       'lez' => "lezgin\x{161}tina",
+                                       'den' => "slejv\x{161}tina (athabaský jazyk)",
+                                       'non' => "nor\x{161}tina historická",
+                                       'apa' => "apa\x{10d}ské jazyky",
+                                       'lua' => "luba-lulua\x{161}tina",
+                                       'an' => "aragon\x{161}tina",
+                                       'kfo' => 'koro',
+                                       'khi' => "kojsanské jazyky",
+                                       'ceb' => "cebuán\x{161}tina",
+                                       'tt' => "tatar\x{161}tina",
+                                       'ast' => "astur\x{161}tina",
+                                       'ss' => "siswat\x{161}tina",
+                                       'or' => "urij\x{161}tina",
+                                       'dra' => "drávidské jazyky",
+                                       'xh' => "xho\x{161}tina",
+                                       'th' => "thaj\x{161}tina",
+                                       'tut' => "altajské jazyky",
+                                       'iba' => "iban\x{161}tina",
+                                       'sam' => "samar\x{161}tina",
+                                       'chg' => "\x{10d}agataj\x{161}tina",
+                                       'gn' => "guaran\x{161}tina",
+                                       'hr' => "chorvat\x{161}tina",
+                                       'ypk' => 'yupik',
+                                       'niu' => "niue\x{161}tina",
+                                       'cv' => "\x{10d}uva\x{161}tina",
+                                       'tmh' => "tama\x{161}ek",
+                                       'chn' => "\x{10d}inuk pid\x{17e}in",
+                                       'awa' => "awadh\x{161}tina",
+                                       'ja' => "japon\x{161}tina",
+                                       'dsb' => "dolnolu\x{17e}ická srb\x{161}tina",
+                                       'ijo' => "id\x{17e}o",
+                                       'bla' => 'siksika',
+                                       'cay' => "kajug\x{161}tina",
+                                       'nl' => "nizozem\x{161}tina",
+                                       'wae' => "n\x{11b}m\x{10d}ina (walser)",
+                                       'ebu' => 'embu',
+                                       'nap' => "neapol\x{161}tina",
+                                       'el' => "\x{159}e\x{10d}tina",
+                                       'kk' => "kaza\x{161}tina",
+                                       'elx' => "elamit\x{161}tina",
+                                       'gor' => 'gorontalo',
+                                       'mde' => 'maba',
+                                       'tlh' => "klingon\x{161}tina",
+                                       'my' => "barm\x{161}tina",
+                                       'sog' => "sogd\x{161}tina",
+                                       'see' => 'seneca',
+                                       'krc' => "kara\x{10d}ajevo-balkar\x{161}tina",
+                                       'mno' => 'manobo jazyky',
+                                       'tn' => "setswan\x{161}tina",
+                                       'co' => "korsi\x{10d}tina",
+                                       'bas' => 'basa',
+                                       'bnt' => "bantuské jazyky",
+                                       'lam' => "lamb\x{161}tina",
+                                       'bkm' => 'kom',
+                                       'bo' => "tibet\x{161}tina",
+                                       'cy' => "vel\x{161}tina",
+                                       'de_CH' => "n\x{11b}m\x{10d}ina standardní (\x{160}výcarsko)",
+                                       'mwl' => "mirand\x{161}tina",
+                                       'frm' => "francouz\x{161}tina (st\x{159}edov\x{11b}ká)",
+                                       'kut' => "kutenaj\x{161}tina",
+                                       'ky' => "kyrgyz\x{161}tina",
+                                       'ti' => "tigrinij\x{161}tina",
+                                       'rar' => "rarotongán\x{161}tina",
+                                       'bax' => 'bamun',
+                                       'ka' => "gruzín\x{161}tina",
+                                       'iro' => "irokézské jazyky",
+                                       'kea' => "kapverd\x{161}tina",
+                                       'sal' => "sali\x{161}ské jazyky",
+                                       'und' => "neznámý jazyk",
+                                       'hu' => "ma\x{10f}ar\x{161}tina",
+                                       'rof' => 'rombo',
+                                       'byn' => "blin\x{161}tina",
+                                       'ssa' => "nilosaharské jazyky",
+                                       'mgh' => 'makhuwa-meetto',
+                                       'se' => "sám\x{161}tina (severní)",
+                                       'dyu' => 'djula',
+                                       'mic' => 'micmac',
+                                       'kv' => "komij\x{161}tina",
+                                       'dje' => "zarm\x{161}tina",
+                                       'son' => "songaj\x{161}tina",
+                                       'bin' => 'bini',
+                                       'kcg' => 'tyap',
+                                       'sco' => "skot\x{161}tina",
+                                       'teo' => 'teso',
+                                       'no' => "nor\x{161}tina",
+                                       'lv' => "loty\x{161}tina",
+                                       'shi' => 'tachelhit',
+                                       'zgh' => "tamazight (standardní marocký)",
+                                       'ln' => "lingal\x{161}tina",
+                                       'rom' => "rom\x{161}tina",
+                                       'kde' => 'makonde',
+                                       'mas' => "masaj\x{161}tina",
+                                       'ab' => "abcház\x{161}tina",
+                                       'roa' => "románské jazyky",
+                                       'chm' => "marij\x{161}tina",
+                                       'kkj' => 'kako',
+                                       'li' => "limbur\x{161}tina",
+                                       'kpe' => 'kpelle',
+                                       'jpr' => "judeoper\x{161}tina",
+                                       'seh' => 'sena',
+                                       'fan' => 'fang',
+                                       'zen' => 'zenaga',
+                                       'gmh' => "hornon\x{11b}m\x{10d}ina (st\x{159}edov\x{11b}ká)",
+                                       'gv' => "man\x{161}tina",
+                                       'bra' => "brad\x{17e}\x{161}tina",
+                                       'nia' => 'nias',
+                                       'fil' => "filipín\x{161}tina",
+                                       'pa' => "pa\x{148}d\x{17e}áb\x{161}tina",
+                                       'am' => "amhar\x{161}tina",
+                                       'gay' => 'gayo',
+                                       'gem' => "germánské jazyky",
+                                       'ee' => "ewe\x{161}tina",
+                                       'bat' => "baltské jazyky",
+                                       'umb' => 'umbundu',
+                                       'alt' => "altaj\x{161}tina (ji\x{17e}ní)",
+                                       'bem' => "bemb\x{161}tina",
+                                       'car' => "karib\x{161}tina",
+                                       'lag' => 'langi',
+                                       'eo' => 'esperanto',
+                                       'fy' => "frí\x{161}tina",
+                                       'as' => "asám\x{161}tina",
+                                       'ae' => "avestán\x{161}tina",
+                                       'nqo' => "n\x{2019}ko",
+                                       'bua' => "burjat\x{161}tina",
+                                       'ia' => 'interlingua',
+                                       'vi' => "vietnam\x{161}tina",
+                                       'day' => "dajá\x{10d}tina",
+                                       'bm' => "bambar\x{161}tina",
+                                       'mdf' => "mok\x{161}an\x{161}tina",
+                                       'nl_BE' => "vlám\x{161}tina",
+                                       'nr' => "ndebele (Ji\x{17e}ní Afrika)",
+                                       'luy' => 'luhja',
+                                       'kw' => "korn\x{161}tina",
+                                       'nym' => "\x{148}amwe\x{17e}\x{161}tina",
+                                       'pag' => "pangasinan\x{161}tina",
+                                       'ang' => "staroangli\x{10d}tina",
+                                       'uz' => "uzbe\x{10d}tina",
+                                       'fiu' => "ugrofinské jazyky",
+                                       'ht' => "hait\x{161}tina",
+                                       'brx' => "bodo\x{161}tina",
+                                       'yo' => "jorub\x{161}tina",
+                                       'bad' => 'banda',
+                                       'ter' => 'tereno',
+                                       'gu' => "gud\x{17e}arát\x{161}tina",
+                                       'mni' => "manipur\x{161}tina",
+                                       'kos' => "kosraj\x{161}tina",
+                                       'raj' => "rád\x{17e}astán\x{161}tina",
+                                       'asa' => 'asu',
+                                       'srn' => 'sranan tongo',
+                                       'oj' => "od\x{17e}ibvej\x{161}tina",
+                                       'sk' => "sloven\x{161}tina",
+                                       'cai' => "st\x{159}edoamerické indiánské jazyky",
+                                       'eka' => 'ekajuk',
+                                       'ty' => "tahit\x{161}tina",
+                                       'gaa' => "ga\x{161}tina",
+                                       'jrb' => "judeoarab\x{161}tina",
+                                       'hup' => 'hupa',
+                                       'phi' => "filipínské jazyky",
+                                       'akk' => "akkad\x{161}tina",
+                                       'new' => "névár\x{161}tina",
+                                       'osa' => 'osage',
+                                       'et' => "eston\x{161}tina",
+                                       'sad' => "sandaw\x{161}tina",
+                                       'mk' => "makedon\x{161}tina",
+                                       'cpf' => "francouzská kreol\x{161}tina \x{10d}i pidgin",
+                                       'en' => "angli\x{10d}tina",
+                                       'aus' => "australské jazyky",
+                                       'zza' => 'zaza',
+                                       'chb' => "\x{10d}ib\x{10d}a",
+                                       'zu' => "zulu\x{161}tina",
+                                       'alg' => "algonkinské jazyky",
+                                       'snk' => "sonik\x{161}tina",
+                                       'pro' => "provensál\x{161}tina",
+                                       'mga' => "ir\x{161}tina (st\x{159}edov\x{11b}ká)",
+                                       'wak' => "waka\x{161}ské jazyky",
+                                       'swc' => "swahil\x{161}tina (Kongo)",
+                                       'nn' => "nor\x{161}tina (nynorsk)",
+                                       'bn' => "bengál\x{161}tina",
+                                       'pal' => "pahlav\x{161}tina",
+                                       'ban' => "balij\x{161}tina",
+                                       'min' => 'minangkabau',
+                                       'ar' => "arab\x{161}tina",
+                                       'sm' => "samoj\x{161}tina",
+                                       'grb' => 'grebo',
+                                       'ny' => "\x{148}and\x{17e}\x{161}tina",
+                                       'was' => "wa\x{161}tina",
+                                       'bum' => 'bulu',
+                                       'sus' => 'susu',
+                                       'khq' => 'koyra chiini',
+                                       'ksh' => "kolín\x{161}tina",
+                                       'byv' => 'medumba',
+                                       'cel' => "keltské jazyky",
+                                       'gsw' => "n\x{11b}m\x{10d}ina (\x{160}výcarsko)",
+                                       'him' => "himá\x{10d}al\x{161}tina",
+                                       'tpi' => 'tok pisin',
+                                       'yav' => "jangben\x{161}tina",
+                                       'ibb' => 'ibibio',
+                                       'nzi' => 'nzima',
+                                       'ain' => "ain\x{161}tina",
+                                       'st' => "sot\x{161}tina (ji\x{17e}ní)",
+                                       'ko' => "korej\x{161}tina",
+                                       'sit' => "tibeto\x{10d}ínské jazyky",
+                                       'ak' => "akan\x{161}tina",
+                                       'chp' => "\x{10d}ipevaj\x{161}tina",
+                                       'bss' => 'akoose',
+                                       'mfe' => "mauricijská kreol\x{161}tina",
+                                       'ssy' => 'saho',
+                                       'wen' => "lu\x{17e}ickosrbské jazyky",
+                                       'nwc' => "newar\x{161}tina (klasická)",
+                                       'sms' => "sám\x{161}tina (skoltská)",
+                                       'rap' => "rapanuj\x{161}tina",
+                                       'oto' => "otomijské jazyky",
+                                       'hy' => "armén\x{161}tina",
+                                       'ms' => "malaj\x{161}tina",
+                                       'fro' => "francouz\x{161}tina (stará)",
+                                       'myv' => "erzjan\x{161}tina",
+                                       'tsi' => "tsim\x{161}ijské jazyky",
+                                       'it' => "ital\x{161}tina",
+                                       'tiv' => "tiv\x{161}tina",
+                                       'scn' => "sicil\x{161}tina",
+                                       'mdr' => 'mandar',
+                                       'sma' => "sám\x{161}tina (ji\x{17e}ní)",
+                                       'vot' => "vot\x{161}tina",
+                                       'ale' => "aleut\x{161}tina",
+                                       'vai' => 'vai',
+                                       'kru' => "kuruch\x{161}tina",
+                                       'sai' => "jihoamerické indiánské jazyky",
+                                       'lu' => "lubu-katan\x{17e}\x{161}tina",
+                                       'ks' => "ka\x{161}mír\x{161}tina",
+                                       'pt' => "portugal\x{161}tina",
+                                       'swb' => "komor\x{161}tina",
+                                       'tli' => 'tlingit',
+                                       'mh' => "mar\x{161}ál\x{161}tina",
+                                       'gwi' => "gwich\x{2bc}in",
+                                       'kg' => "kon\x{17e}\x{161}tina",
+                                       'smn' => "sám\x{161}tina (inarijská)",
+                                       'vun' => 'vunjo',
+                                       'ho' => 'hiri motu',
+                                       'ewo' => 'ewondo',
+                                       'afa' => "afroasijské jazyky",
+                                       'bfd' => 'bafut',
+                                       'ff' => "fulb\x{161}tina",
+                                       'tem' => 'temne',
+                                       'lus' => "mizo\x{161}tina",
+                                       'tkl' => "tokelau\x{161}tina",
+                                       'inh' => "ingu\x{161}tina",
+                                       'sn' => "\x{161}on\x{161}tina",
+                                       'ath' => "athapaskánské jazyky",
+                                       'yi' => "jidi\x{161}",
+                                       'cch' => 'atsam',
+                                       'frs' => "frí\x{161}tina (východní)",
+                                       'arp' => "arapa\x{17e}\x{161}tina",
+                                       'war' => "waraj\x{161}tina",
+                                       'mad' => "madur\x{161}tina",
+                                       'sl' => "slovin\x{161}tina",
+                                       'rup' => "arumun\x{161}tina",
+                                       'dz' => "dzongkä",
+                                       'jbo' => 'lojban',
+                                       'crh' => "krymská ture\x{10d}tina",
+                                       'cpp' => "portugalská kreol\x{161}tina \x{10d}i pidgin",
+                                       'tup' => "tupijské jazyky",
+                                       'sga' => "ir\x{161}tina (stará)",
+                                       'tk' => "turkmen\x{161}tina",
+                                       'bbj' => 'ghomala',
+                                       'su' => "sundan\x{161}tina",
+                                       'en_US' => "angli\x{10d}tina (USA)",
+                                       'kln' => "kalend\x{17e}in",
+                                       'sc' => "sard\x{161}tina",
+                                       'chy' => "\x{10d}ejen\x{161}tina",
+                                       'sgn' => "znakové jazyky",
+                                       'sio' => "siouxské jazyky",
+                                       'goh' => "hornon\x{11b}m\x{10d}ina (stará)",
+                                       'zap' => "zapoté\x{10d}tina",
+                                       'nb' => "nor\x{161}tina (bokmål)",
+                                       'nso' => "sot\x{161}tina (severní)",
+                                       'az' => "ázerbájd\x{17e}án\x{161}tina",
+                                       'ksb' => 'shambala',
+                                       'sah' => "jakut\x{161}tina",
+                                       'aa' => "afar\x{161}tina",
+                                       'fur' => "furlan\x{161}tina",
+                                       'ts' => 'tsonga',
+                                       'en_GB' => "angli\x{10d}tina (VB)",
+                                       'btk' => "bata\x{10d}tina",
+                                       'agq' => 'aghem',
+                                       'dav' => 'taita',
+                                       'zbl' => "bliss systém",
+                                       'inc' => "indické jazyky",
+                                       'crp' => "kreol\x{161}tina \x{10d}i pidgin",
+                                       'mer' => 'meru',
+                                       'iu' => "inuktitut\x{161}tina",
+                                       'lah' => "lahnd\x{161}tina",
+                                       'zh_Hans' => "\x{10d}ín\x{161}tina (zjednodu\x{161}ená)",
+                                       'cau' => "kavkazské jazyky",
+                                       'lui' => "luise\x{148}o",
+                                       'mak' => "makasar\x{161}tina",
+                                       'gez' => 'geez',
+                                       'uk' => "ukrajin\x{161}tina",
+                                       'nus' => "nuer\x{161}tina",
+                                       'kr' => 'kanuri',
+                                       'smi' => "sámské jazyky",
+                                       'fo' => "faer\x{161}tina",
+                                       'syr' => "syr\x{161}tina",
+                                       'sh' => "srbochorvat\x{161}tina",
+                                       'io' => 'ido',
+                                       'so' => "somál\x{161}tina",
+                                       'kmb' => "kimbund\x{161}tina",
+                                       'dar' => "darg\x{161}tina",
+                                       'phn' => "féni\x{10d}tina",
+                                       'bik' => "bikol\x{161}tina",
+                                       'lt' => "litev\x{161}tina",
+                                       'be' => "b\x{11b}loru\x{161}tina",
+                                       'din' => "dink\x{161}tina",
+                                       'ur' => "urd\x{161}tina",
+                                       'arw' => "arawacké jazyky",
+                                       'chk' => "\x{10d}uk\x{161}tina",
+                                       'tw' => 'twi',
+                                       'ce' => "\x{10d}e\x{10d}en\x{161}tina",
+                                       'kro' => 'kru',
+                                       'tvl' => "tuval\x{161}tina",
+                                       'pi' => "pálí",
+                                       'tg' => "tád\x{17e}i\x{10d}tina",
+                                       'tog' => "ton\x{17e}\x{161}tina (nyasa)",
+                                       'ar_001' => "arab\x{161}tina (moderní standardní)",
+                                       'ses' => 'koyraboro senni',
+                                       'te' => "telug\x{161}tina",
+                                       'ig' => "igbo\x{161}tina",
+                                       'myn' => "mayské jazyky",
+                                       'cgg' => 'kiga',
+                                       'mnc' => "mand\x{17e}u\x{161}tina"
+                                     },
+                      'scripts' => {
+                                     'Goth' => "gotické",
+                                     'Knda' => "kannadské",
+                                     'Ital' => "etruské",
+                                     'Hant' => "han - tradi\x{10d}ní",
+                                     'Tang' => 'tangut',
+                                     'Brah' => "bráhmí",
+                                     'Lepc' => "lep\x{10d}ské",
+                                     'Hrkt' => "japonské slabi\x{10d}né",
+                                     'Ethi' => "etiopské",
+                                     'Samr' => "sama\x{159}ské",
+                                     'Runr' => "runové",
+                                     'Loma' => 'loma',
+                                     'Hmng' => "hmongské",
+                                     'Zsym' => 'symboly',
+                                     'Mero' => "meroitické",
+                                     'Olck' => "santálské (ol chiki)",
+                                     'Syrn' => "syrské - východní",
+                                     'Phag' => 'phags-pa',
+                                     'Yiii' => 'yi',
+                                     'Tale' => 'tai le',
+                                     'Glag' => 'hlaholice',
+                                     'Bali' => "balijské",
+                                     'Tagb' => 'tagbanwa',
+                                     'Maya' => "mayské hieroglyfy",
+                                     'Copt' => "koptské",
+                                     'Shrd' => "\x{161}áradá",
+                                     'Syre' => "syrské - estrangelo",
+                                     'Mtei' => "mejtej majek (manipurské)",
+                                     'Lina' => "lineární A",
+                                     'Kore' => "korejské",
+                                     'Zxxx' => "bez zápisu",
+                                     'Tfng' => "berberské",
+                                     'Palm' => "palmýrské",
+                                     'Cher' => "\x{10d}erokí",
+                                     'Latn' => 'latinka',
+                                     'Cyrs' => "cyrilce - staroslov\x{11b}nská",
+                                     'Kana' => 'katakana',
+                                     'Hluw' => "anatolské hieroglyfy",
+                                     'Jpan' => "japonské",
+                                     'Beng' => "bengálské",
+                                     'Osma' => "osmanské",
+                                     'Hano' => "hanunóo",
+                                     'Cprt' => "kyperské",
+                                     'Zzzz' => "neznámé písmo",
+                                     'Xsux' => "sumero-akkadské klínové písmo",
+                                     'Zmth' => "matematický zápis",
+                                     'Bamu' => "bamumské",
+                                     'Dsrt' => 'deseret',
+                                     'Roro' => 'rongorongo',
+                                     'Kthi' => 'kaithi',
+                                     'Java' => "javánské",
+                                     'Khmr' => "khmerské",
+                                     'Zyyy' => "obecné",
+                                     'Vaii' => 'vai',
+                                     'Shaw' => 'Shawova abeceda',
+                                     'Cans' => "slabi\x{10d}né písmo kanadských domorodc\x{16f}",
+                                     'Sund' => "sundánské",
+                                     'Limb' => 'limbu',
+                                     'Nbat' => "nabatejské",
+                                     'Tibt' => "tibetské",
+                                     'Mend' => "mendské",
+                                     'Avst' => "avestánské",
+                                     'Saur' => "saurá\x{161}terské",
+                                     'Guru' => 'gurmukhi',
+                                     'Rjng' => "red\x{17e}anské",
+                                     'Grek' => "\x{159}ecké",
+                                     'Blis' => "blissovo písmo",
+                                     'Taml' => "tamilské",
+                                     'Gran' => 'grantha',
+                                     'Khar' => "kháró\x{161}thí",
+                                     'Moon' => 'Moonovo',
+                                     'Brai' => "braillovo písmo",
+                                     'Lydi' => "lýdské",
+                                     'Bopo' => 'bopomofo',
+                                     'Merc' => "meroitické psací",
+                                     'Latf' => "latinka - lomená",
+                                     'Cirt' => 'kirt',
+                                     'Cakm' => "\x{10d}akma",
+                                     'Prti' => "parthské klínové",
+                                     'Hans' => "han - zjednodu\x{161}ené",
+                                     'Visp' => "viditelná \x{159}e\x{10d}",
+                                     'Mand' => "mandejské",
+                                     'Sora' => 'sora sompeng',
+                                     'Armi' => "aramejské (imperiální)",
+                                     'Kali' => 'kayah li',
+                                     'Buhd' => "buhidské",
+                                     'Syrj' => "syrské - západní",
+                                     'Ogam' => "ogamské",
+                                     'Ugar' => "ugaritské klínové",
+                                     'Thaa' => 'thaana',
+                                     'Teng' => 'tengwar',
+                                     'Egyd' => "egyptské démotické",
+                                     'Thai' => "thajské",
+                                     'Xpeo' => "staroperské klínové písmo",
+                                     'Tavt' => 'tai viet',
+                                     'Hung' => "staroma\x{10f}arské",
+                                     'Mlym' => "malajlámské",
+                                     'Phlp' => "pahlavské \x{17e}almové",
+                                     'Nkoo' => "n\x{2019}ko",
+                                     'Hang' => 'hangul',
+                                     'Linb' => "lineární B",
+                                     'Sinh' => "sinhálské",
+                                     'Deva' => "dévanágárí",
+                                     'Laoo' => "laoské",
+                                     'Mymr' => "myanmarské",
+                                     'Bugi' => "buginské",
+                                     'Orkh' => "orchonské",
+                                     'Inds' => "harappské",
+                                     'Mroo' => 'mro',
+                                     'Lyci' => "lýkijské",
+                                     'Gujr' => "gud\x{17e}arátí",
+                                     'Afak' => 'afaka',
+                                     'Orya' => "uríské",
+                                     'Phli' => "pahlavské klínové",
+                                     'Hira' => 'hiragana',
+                                     'Cari' => "karijské",
+                                     'Talu' => "tai lü nové",
+                                     'Mong' => "mongolské",
+                                     'Egyp' => "egyptské hieroglyfy",
+                                     'Hani' => 'han',
+                                     'Mani' => "manichejské",
+                                     'Lisu' => 'Fraserovo',
+                                     'Lana' => 'lanna',
+                                     'Tglg' => "tagalské",
+                                     'Egyh' => "egyptské hieratické",
+                                     'Bass' => 'bassa vah',
+                                     'Takr' => "takrí",
+                                     'Plrd' => "pollardova fonetická abeceda",
+                                     'Geor' => "gruzínské",
+                                     'Batk' => "batacké",
+                                     'Latg' => "latinka - galská",
+                                     'Narb' => "staroseveroarabské",
+                                     'Perm' => "staropermské",
+                                     'Syrc' => "syrské",
+                                     'Phlv' => "pahlavské kni\x{17e}ní",
+                                     'Dupl' => "Duployého t\x{11b}snopis",
+                                     'Cham' => "\x{10d}am",
+                                     'Arab' => "persko-arabské",
+                                     'Sarb' => "starojihoarabské",
+                                     'Sylo' => "sylhetské",
+                                     'Armn' => "arménské",
+                                     'Hebr' => "hebrejské",
+                                     'Geok' => "gruzínské chutsuri",
+                                     'Phnx' => "fénické",
+                                     'Telu' => "telugské",
+                                     'Cyrl' => 'cyrilice',
+                                     'Jurc' => "d\x{17e}ür\x{10d}enské"
+                                   }
+                    },
+  'delimiters' => {
+                    'alternateQuotationEnd' => "\x{2019}",
+                    'quotationEnd' => "\x{201d}",
+                    'quotationStart' => "\x{201c}",
+                    'alternateQuotationStart' => "\x{2018}"
+                  },
+  'iso4217' => 'CZK'
+};

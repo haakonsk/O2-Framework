@@ -1,0 +1,30 @@
+#!/usr/bin/perl
+use JavaScript::Minifier qw(minify);
+
+foreach (@ARGV) {
+  if( $_=~m/.+\.js$/i && -e $_) {
+   print "Minifying: $_\n";
+   &mini($_);
+  }
+  else {
+    print "I don't think this is a javascript file: $_\n";
+  }
+}
+
+sub mini {
+  my $file=shift;
+
+  my $outFile=$file;
+  $outFile=~s/\.js$/-min\.js/i;
+  if(-e $outFile) {
+    print "$outFile already exists\n";
+    return;
+  }
+
+  open(INFILE, $file) or die "Could not open $file for reading: $@";
+  open(OUTFILE, '>'.$outFile) or die "Could not open $outFile for writing: $@";
+  minify(input => *INFILE, outfile => *OUTFILE);
+  close(INFILE);
+  close(OUTFILE);  
+  print "Minified:  $outFile\n";
+}

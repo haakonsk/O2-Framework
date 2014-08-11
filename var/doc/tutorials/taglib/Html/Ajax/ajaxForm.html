@@ -1,0 +1,20 @@
+<o2 use O2Doc::Tutorial />
+
+<o2 docSection title="AjaxForm">
+  Use this instead of a regular <o2 docLink type="tag" id="Html-Form-form" /> tag if you want to submit the form without reloading the
+  page.
+  <o2 docSection title="Syntax">
+    <o2 docCode lang="o2ml">
+      <o2 ajaxForm method="post" setClass="My-Gui-Module" setMethod="save" handler="handleServerResponse" ruleTitle="An error occurred">
+        <o2 input type="text" name="name" label="Name" value="$object->getName()" rule="required" ruleMsg="Name is required"  />
+        <o2 input type="submit" value="Send" />
+      </o2:ajaxForm>
+    </o2:docCode>
+    <o2 docCodeResult useModule="Html::Ajax" />
+  </o2:docSection>
+  <o2 docSection title="Attributes">
+    <o2 docList class="attributes">
+      <o2 include "$ENV->{O2ROOT}/var/doc/tutorials/taglib/Html/Ajax/ajaxAttributes.html.inc" />
+    </o2:docList>
+  </o2:docSection>
+</o2:docSection>

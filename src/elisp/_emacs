@@ -1,0 +1,432 @@
+;#############################################################################
+; Example .emacs file
+;#############################################################################
+;# Setter opp Norsk tegnsett
+;#############################################################################
+(if (equal (substring (emacs-version) 10 12) "21")
+    (progn
+      (standard-display-european 1)
+      (require 'latin-1) 
+      (set-language-environment "Latin-1")
+    )
+)
+(prefer-coding-system 'latin-1-unix)
+;#############################################################################
+;# Setter opp font, størrelse og farver for frame'et
+;#############################################################################
+(setq default-frame-alist
+      '((top . 0) (left . 0)
+        (cursor-color . "Wheat")
+        (width . 204) (height . 58)
+        (foreground-color . "Wheat")
+        (background-color . "Black")
+))
+
+(set-face-background 'modeline "slate gray") ; Line at bottom of buffer
+(set-face-foreground 'modeline "white")
+; Setter Scrollbar right
+(set-scroll-bar-mode 'right)
+
+; No sound
+(setq visible-bell t)
+
+(cd (getenv "HOME"))
+(setq load-path (cons "c:/_insertSomethingUsefulHere_" load-path))
+
+;#############################################################################
+;ikke lag backup filer
+;(setq make-backup-files nil)            
+; hvis det skjer, saa ikke oedelegg linker
+(setq backup-by-copying t)            
+; slett autosave filer naar orginalen lagres
+(setq delete-auto-save-files t)        
+; Windows selection mode
+(pc-selection-mode)
+; titel paa emacs 
+(setq frame-title-format "%f")
+; Don't automatically add new lines at end
+(setq next-line-add-newlines nil)
+; Dont show the GNU splash screen
+(setq inhibit-startup-message t)
+;#############################################################################
+;# Setter forskjellige småting
+;#############################################################################
+(setq transient-mark-mode '1)
+(global-set-key [home] 'beginning-of-line)
+(global-set-key [end] 'end-of-line)
+(setq transient-mark-mode 1)
+(setq calendar-latitude 60.0)
+(setq calendar-longitude 10.7)
+(setq calendar-location-name "Oslo")
+(global-set-key [f5] 'comment-region) ;
+(global-set-key [f6] 'uncomment-region);
+
+(global-set-key [f2]    'kill-buffer)
+(setq scroll-step 1)
+(fset 'yes-or-no-p 'y-or-n-p)
+(setq font-lock-maximum-decoration t)
+(setq search-highlight t)    
+(column-number-mode t)
+;#############################################################################
+; Add a clock to the status-line
+(setq display-time-24hr-format t)
+(display-time)
+;; Use 2 space indents via cperl mode
+(custom-set-variables
+  ;; custom-set-variables was added by Custom.
+  ;; If you edit it by hand, you could mess it up, so be careful.
+  ;; Your init file should contain only one such instance.
+  ;; If there is more than one, they won't work right.
+ '(cperl-close-paren-offset -2)
+ '(cperl-continued-statement-offset 2)
+ '(cperl-indent-level 2)
+ '(cperl-indent-parens-as-block t)
+ '(cperl-tab-always-indent t)
+ '(indent-region-mode t)
+ '(javascript-indent-level 2)
+ '(css-indent-level 2)
+ '(mumamo-global-mode t)
+ '(nxhtml-global-minor-mode t)
+ '(nxhtml-global-validation-header-mode t)
+ '(perl-close-paren-offset -2)
+ '(perl-continued-statement-offset 2)
+ '(perl-indent-level 2)
+ ;; '(perl-indent-parens-as-block t)
+ '(perl-tab-always-indent t))
+
+
+;; Insert spaces instead of tabs
+(setq-default indent-tabs-mode nil)
+
+;#############################################################################
+; MOUSE SIMPLE SET UP
+;#############################################################################
+;; Paste at point NOT at cursor
+(setq mouse-yank-at-point 't)
+
+;; Scroll Bar gets dragged by mouse butn 1
+(global-set-key [vertical-scroll-bar down-mouse-1] 'scroll-bar-drag)
+;;
+;; Rebind mouse-2 events to mouse-1 in various places:
+;; Completion list
+(add-hook 'completion-list-mode-hook
+  '(lambda() (define-key completion-list-mode-map [down-mouse-1] 
+               'mouse-choose-completion)))
+;; TexInfo
+(add-hook 'Info-mode-hook
+  '(lambda() (define-key Info-mode-map [down-mouse-1] 
+               'Info-mouse-follow-nearest-node)))
+;; Buffer Menu
+(add-hook 'buffer-menu-mode-hook
+  '(lambda() (define-key Buffer-menu-mode-map [down-mouse-1] 
+               'Buffer-menu-mouse-select)))
+;#############################################################################
+
+;;
+;; Cut and paste functions
+;;
+
+(defun s-shift-delete ()
+  (interactive)
+  (if mark-active (kill-region (point) (mark)) (kill-line))
+  (setq s-prev-selection nil))
+(defun s-ctrl-delete ()
+  (interactive)
+  (if mark-active (copy-region-as-kill (point) (mark)) ())
+  (setq s-prev-selection nil))
+(defun s-delete ()
+  (interactive)
+  (if mark-active (progn
+                    (delete-region (point) (mark))
+                     (if s-prev-selection 
+                         (x-set-selection 'PRIMARY s-prev-selection) ())
+                     (setq s-prev-selection nil))
+    (delete-char 1)))
+
+(defun s-mouse-drag-region (event)
+  (interactive "e")
+  (condition-case nil 
+          (setq s-prev-selection (x-get-selection))
+        (error 't))
+  (mouse-drag-region event))
+
+(defun s-mouse-yank-at-click ()
+  (interactive)
+  (if mark-active (progn (delete-region (point) (mark))
+                         (if s-prev-selection 
+                             (x-set-selection 'PRIMARY s-prev-selection) ()))
+    ())
+  (mouse-yank-at-click nil nil))
+
+; This is where we store the old X cutbuffer contents in case the user doesn't
+; want the highlighted region on the cutbuffer.
+(setq s-prev-selection nil)
+
+;;
+;; MS Style Keybindings
+;;
+
+
+
+(global-unset-key "\C-n")
+(global-set-key "\C-n" 'uncomment-region)
+(global-unset-key "\C-b")
+(global-set-key "\C-b" 'comment-region)
+
+(global-unset-key "\C-j")
+(global-set-key "\C-j" 'goto-line)
+(global-set-key [(f4)] 'speedbar-get-focus)
+
+(global-set-key "\C-l" 'goto-line) ; [Ctrl]-[L] 
+(global-unset-key "\C-p")
+(global-set-key "\C-p" 'show-paren-mode) ; [Ctrl]-[p] Parentes matching
+
+
+;; Red Hat Linux default .emacs initialization file
+
+;; Are we running XEmacs or Emacs?
+(defvar running-xemacs (string-match "XEmacs\\|Lucid" emacs-version))
+
+;; Set up the keyboard so the delete key on both the regular keyboard
+;; and the keypad delete the character under the cursor and to the right
+;; under X, instead of the default, backspace behavior.
+(global-set-key [delete] 'delete-char)
+(global-set-key [kp-delete] 'delete-char)
+
+;; Turn on font-lock mode for Emacs
+(cond ((not running-xemacs)
+       (global-font-lock-mode t)
+))
+
+;; Visual feedback on selections
+(setq-default transient-mark-mode t)
+
+;; Always end a file with a newline
+(setq require-final-newline t)
+
+;; Stop at the end of the file, not just add lines
+(setq next-line-add-newlines nil)
+
+(load "javascript.el")
+(load "o2ml-mode.el")
+(load "o2-css-mode.el")
+
+;(setq-default auto-insert-automatically t)
+;# Setter opp diverse moder, alt etter vilken fil vi åpner
+;#############################################################################
+(setq auto-mode-alist (cons '("\\.o2ml$"   . o2ml-mode) auto-mode-alist))
+(setq auto-mode-alist (cons '("\\.html$"   . o2ml-mode) auto-mode-alist))
+(setq auto-mode-alist (cons '("\\.html\\." . o2ml-mode) auto-mode-alist))
+(setq auto-mode-alist (cons '("\\.xml$"    . o2ml-mode) auto-mode-alist))
+(setq auto-mode-alist (cons '("\\.htm$"    . o2ml-mode) auto-mode-alist))
+(setq auto-mode-alist (cons '("\\.c$"      . c-mode) auto-mode-alist))
+(setq auto-mode-alist (cons '("\\.pl$"     . cperl-mode) auto-mode-alist))
+(setq auto-mode-alist (cons '("\\.pm$"     . cperl-mode) auto-mode-alist))
+(setq auto-mode-alist (cons '("\\.t$"      . cperl-mode) auto-mode-alist))
+(setq auto-mode-alist (cons '("\\.cgi$"    . cperl-mode) auto-mode-alist))
+(setq auto-mode-alist (cons '("\\.conf$"   . cperl-mode) auto-mode-alist))
+(setq auto-mode-alist (cons '("\\.plds$"   . cperl-mode) auto-mode-alist))
+(setq auto-mode-alist (cons '("\\.text$"   . text-mode) auto-mode-alist))
+(setq auto-mode-alist (cons '("\\.txt$"    . text-mode) auto-mode-alist))
+(setq auto-mode-alist (cons '("\\.css$"    . o2-css-mode) auto-mode-alist))
+(setq auto-mode-alist (cons '("\\.tcl$"    . tcl-mode) auto-mode-alist))
+(setq auto-mode-alist (cons '("\\.sh$"     . shell-script-mode) auto-mode-alist))
+(setq auto-mode-alist (cons '("\\.zsh$"    . shell-script-mode) auto-mode-alist))
+(setq auto-mode-alist (cons '("\\.java$"   . java-mode) auto-mode-alist))
+(setq auto-mode-alist (cons '("\\.js$"     . javascript-mode) auto-mode-alist))
+(setq completion-ignored-extensions;; Filename completion ignores these.
+             (append completion-ignored-extensions 
+                     '(".CKP" ".u" ".press" ".imp" ".BAK")))
+
+
+;---------------------------------------------------------------------------------#
+; bash
+;; Setup Emacs to run bash as its primary shell.
+(setq shell-file-name "bash")
+(setq shell-command-switch "-c")
+(setq explicit-shell-file-name shell-file-name)
+(setenv "SHELL" shell-file-name)
+(setq explicit-sh-args '("-login" "-i"))
+(if (boundp 'w32-quote-process-args)
+  (setq w32-quote-process-args ?\")) ;; Include only for MS Windows.
+
+; ange-ftp and tramp
+(setq ange-ftp-ftp-program-name "C:/Program Files/emacs-21.3/bin/ftp.exe")
+;---------------------------------------------------------------------------------#
+; show ascii table
+;---------------------------------------------------------------------------------#
+(defun ascii-table ()
+  "Print the ascii table. Based on a defun by Alex Schroeder <asc@bsiag.com>"
+  (interactive)
+  (switch-to-buffer "*ASCII*")
+  (erase-buffer)
+  (insert (format "ASCII characters up to number %d.\n" 254))
+  (let ((i 0))
+    (while (< i 254)
+      (setq i (+ i 1))
+      (insert (format "%4d %c\n" i i))))
+  (beginning-of-buffer))
+
+;; to two spaces.
+(defun my-jde-mode-hook ()
+  (setq c-basic-offset 2))
+
+(add-hook 'jde-mode-hook 'my-jde-mode-hook)
+;---------------------------------------------------------------------------------#
+;Zone out after x seconds of idle time
+;---------------------------------------------------------------------------------#
+(setq zone-mode t)
+(setq zone-when-idle 5)
+;---------------------------------------------------------------------------------#
+;Line number shows
+;---------------------------------------------------------------------------------#
+;(require 'setnu)
+;(global-unset-key "\C-q")
+;(global-set-key "\C-q" 'setnu-mode)
+;---------------------------------------------------------------------------------#
+(put 'upcase-region 'disabled nil)
+(put 'downcase-region 'disabled nil)
+
+;----------------------------------------------------------------------------------
+(defun set-buffer-file-eol-type (eol-type)
+   "Set the file end-of-line conversion type of the current buffer to
+ EOL-TYPE.
+ This means that when you save the buffer, line endings will be converted
+ according to EOL-TYPE.
+
+ EOL-TYPE is one of three symbols:
+
+   unix (LF)
+   dos (CRLF)
+   mac (CR)
+
+ This function marks the buffer modified so that the succeeding
+ \\[save-buffer]
+ surely saves the buffer with EOL-TYPE.  From a program, if you don't want
+ to mark the buffer modified, use coding-system-change-eol-conversion
+ directly [weikart]."
+   (interactive "SEOL type for visited file (unix, dos, or mac): ")
+   (setq buffer-file-coding-system (coding-system-change-eol-conversion
+                      buffer-file-coding-system eol-type))
+   (set-buffer-modified-p t)
+   (force-mode-line-update))
+
+ (global-set-key "\^Cu" (lambda () (interactive) (set-buffer-file-eol-type 'unix)))
+ (global-set-key "\^Cd" (lambda () (interactive) (set-buffer-file-eol-type 'dos)))
+ (global-set-key "\^Cm" (lambda () (interactive) (set-buffer-file-eol-type 'mac)))
+
+;; Unix style new lines.
+(set-buffer-file-eol-type 'unix)
+
+ ;; Make the mode-line display the standard EOL-TYPE symbols (used above)...
+(setq eol-mnemonic-undecided "(?)"  ;; unknown EOL type
+       eol-mnemonic-unix  "(unix)" ;; LF
+       eol-mnemonic-dos  "(dos)"  ;; CRLF
+       eol-mnemonic-mac  "(mac)") ;; CR
+
+;; avoid 'trailing whitespace as underscore'
+(setq cperl-invalid-face nil) ;(uherbst)
+
+(require 'time-stamp)
+(defun create-pm-template ()
+  (interactive)
+  (let ((filename (buffer-file-name))
+        (module "")
+        (module-as-list-of-characters nil)
+        (char))
+
+    (if (string-match "^.*/lib/\\(.*\\)[.]pm" filename)
+        (progn
+          (setq module (match-string 1 filename))
+          (insert "package ")
+          (setq module-as-list-of-characters (string-to-list module))
+          (while module-as-list-of-characters
+            (setq char (car module-as-list-of-characters))
+            (setq module-as-list-of-characters (cdr module-as-list-of-characters))
+            (if (equal char ?/)
+                (insert "::")
+              (insert (char-to-string char))
+            )
+          )
+          (insert ";\n\n")
+        )
+    )
+
+    (insert "use strict;\n\n")
+
+    (insert "#-----------------------------------------------------------------------------\n\n")
+    (insert "#-----------------------------------------------------------------------------\n")
+    (insert "1;\n")
+  )
+  (forward-line -4)
+)
+
+(defun insert-perl-function-argument-line ()
+  (interactive)
+  (insert "  my ($obj) = @_;\n")
+)
+
+(defun insert-perl-function-template ()
+  (interactive)
+  (insert "sub  {\n")
+  (insert-perl-function-argument-line)
+  (insert "\n")
+  (insert "}")
+  (forward-line -3)
+  (goto-char (+ (point) 4))
+)
+
+(defun o2-magic-insert ()
+  (interactive)
+  (if (= (point-max) (point-min))
+      (create-pm-template)
+    (let ((prev-line (o2-read-line -1))
+          (this-line (o2-read-line))
+          (next-line (o2-read-line 1)))
+      (if (string-match " *sub [a-zA-Z0-9_]+ *{ *" prev-line)
+          (insert-perl-function-argument-line)
+        (if (string-match " *sub [a-zA-Z0-9_]+ *{ *" this-line)
+            (progn
+              (insert "\n")
+              (insert-perl-function-argument-line)
+            )
+          (if (or (string-match "^}" prev-line))
+              (progn
+                (insert "#-----------------------------------------------------------------------------\n")
+                (insert-perl-function-template)
+              )
+            (if (and (string-match "^#---" prev-line)
+                     (string-match "^#---" next-line))
+                (insert-perl-function-template)
+            )
+
+          )
+        )
+      )
+    )
+  )
+)
+(global-set-key "\C-c\C-v" 'o2-magic-insert)
+
+;# Buffer cycling functions
+;#############################################################################
+(defun my-unbury-buffer (&optional buf)
+  (interactive)
+  (or buf (setq buf (car (reverse (buffer-list)))))
+  (switch-to-buffer buf))
+
+; "Select buffer BUF, or the last one in the buffer list.
+; This function is the opposite of `bury-buffer'."
+
+(global-set-key '[C-tab] 'bury-buffer)
+(global-set-key '[C-backtab] 'my-unbury-buffer)
+
+;# Auto-complete identifiers:
+(defadvice cperl-indent-command
+  (around cperl-indent-or-complete)
+  "Changes \\[cperl-indent-command] so it autocompletes when at the end of a word."
+  (if (looking-at "\\>")
+      (dabbrev-expand nil)
+    ad-do-it))
+(eval-after-load "cperl-mode"
+  '(progn (require 'dabbrev) (ad-activate 'cperl-indent-command)))

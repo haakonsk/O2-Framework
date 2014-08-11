@@ -1,0 +1,63 @@
+<o2 use O2Doc::Tutorial />
+
+<o2 docSection title="dateSelect">
+  A javascript calendar that allows the user to choose a date. The dateSelect tag should be defined within a form tag. When the form is submitted a variable whose name is the
+  value of the name attribute is sent to the receiving script. The variable's value is the chosen date, in some format. &lt;o2 header&gt; must be defined early in the
+  template, so the correct Javascript-files can be included, and &lt;o2 footer /&gt; or &lt;o2 postJavascript /&gt; must be included later in the template in order for the
+  dateSelect tag to work.
+  <o2 docSection title="Syntax">
+    First:
+    <o2 docCode lang="o2ml">
+      <o2 header />
+    </o2:docCode>
+    Then:
+    <o2 docCode lang="o2ml">
+      <o2 dateSelect name="date" />
+    </o2:docCode>
+    or
+    <o2 docCode lang="o2ml">
+      <o2 dateSelect name="date" type="button">Choose date</o2:dateSelect>
+    </o2:docCode>
+    or
+    <o2 docCode lang="o2ml">
+      <o2 dateSelect name="date" label="Date" accesskey="d" />
+    </o2:docCode>
+    and then later:
+    <o2 docCode lang="o2ml">
+      <o2 footer />
+    </o2:docCode>
+    or
+    <o2 docCode lang="o2ml">
+      <o2 postJavascript />
+    </o2:docCode>
+    <o2 docNote>
+      A main template should be responsible for including &lt;o2 header&gt; and &lt;o2 footer&gt;.
+    </o2:docNote>
+  </o2:docSection>
+  <o2 docSection title="Attributes">
+    <o2 docList class="attributes">
+      <o2 docListItem class="required">name</o2:docListItem>
+      <o2 docListItem class="optional">label              - a text associated with the dateSelect input field. See also the <o2 docLink type="tag" id="formTable" /> tag.</o2:docListItem>
+      <o2 docListItem class="optional">labelClass         - extra class for the label</o2:docListItem>
+      <o2 docListItem class="optional">epoch              - epoch of date to be displayed in the input field. It will be displayed according to the format attribute.</o2:docListItem>
+      <o2 docListItem class="optional">value              - unless there's an epoch attribute, this value will be displayed in the input field</o2:docListItem>
+      <o2 docListItem class="optional">accesskey          - if label is specified, you can also specify an accesskey</o2:docListItem>
+      <o2 docListItem class="optional">format             - default is the dateFormat of the current country</o2:docListItem>
+      <o2 docListItem class="optional">onUpdate           - a Javascript function to be called when a date is picked. It gets one argument: the calendar object.</o2:docListItem>
+      <o2 docListItem class="optional">canType [0]        - if the date can be typed in manually or not</o2:docListItem>
+      <o2 docListItem class="optional">size [10]          - size of input field</o2:docListItem>
+      <o2 docListItem class="optional">language           - default is the current language</o2:docListItem>
+      <o2 docListItem class="optional">type [icon]        - could be icon or button</o2:docListItem>
+      <o2 docListItem class="optional">iconUrl [/images/system/sortbydate_16.gif]</o2:docListItem>
+      <o2 docListItem class="optional">style [width:80px] - style of both the input field and the button (if type is button); overridden by inputStyle and buttonStyle</o2:docListItem>
+      <o2 docListItem class="optional">theme [default]    - Which CSS style to use</o2:docListItem>
+      <o2 docListItem class="optional">id                 - default is the same as the name attribute</o2:docListItem>
+      <o2 docListItem class="optional">hideDate [0]       - hide the input field?</o2:docListItem>
+      <o2 docListItem class="optional">inputStyle         - the input field style attribute; not used if hideDate is true (1)</o2:docListItem>
+      <o2 docListItem class="optional">buttonStyle        - used only if type is button</o2:docListItem>
+      <o2 docListItem class="optional">buttonClass        - used only if type is button</o2:docListItem>
+      <o2 docListItem class="optional content">content    - the button text - used if type is button</o2:docListItem>
+    </o2:docList>
+  </o2:docSection>
+  See also <o2 docLink type="tag" id="form" /> and <o2 docLink type="tag" id="formTable" />.
+</o2:docSection>

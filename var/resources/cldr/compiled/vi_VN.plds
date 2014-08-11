@@ -1,0 +1,2465 @@
+{
+  'territory' => 'VN',
+  'language' => 'vi',
+  'number' => {
+                'percentFormat' => {
+                                     'percentFormatLength' => {
+                                                              'standard' => '#,##0%'
+                                                            }
+                                   },
+                'measurement' => {},
+                'symbols' => {
+                               'infinity' => "\x{221e}",
+                               'nan' => 'NaN',
+                               'plusSign' => '+',
+                               'superscriptingExponent' => "×",
+                               'exponential' => 'E',
+                               'group' => '.',
+                               'percentSign' => '%',
+                               'decimal' => ',',
+                               'perMille' => "\x{2030}",
+                               'alias' => '',
+                               'minusSign' => '-',
+                               'list' => ';'
+                             },
+                'scientificFormat' => {
+                                        'scientificFormatLength' => {
+                                                                    'standard' => '#E0'
+                                                                  }
+                                      },
+                'decimalFormat' => {
+                                     'decimalFormatLength' => {
+                                                              'short' => "0 N00 N000 N0 Tr00 Tr000 Tr0 T00 T000 T0 NT00 NT000 NT",
+                                                              'standard' => '#,##0.###',
+                                                              'long' => "0 nghìn00 nghìn000 nghìn0 tri\x{1ec7}u00 tri\x{1ec7}u000 tri\x{1ec7}u0 t\x{1ef7}00 t\x{1ef7}000 t\x{1ef7}0 nghìn t\x{1ef7}00 nghìn t\x{1ef7}000 nghìn t\x{1ef7}"
+                                                            }
+                                   },
+                'currencyFormat' => {
+                                      'currencyFormatLength' => {
+                                                                'standard' => "#,##0.00 ¤"
+                                                              }
+                                    },
+                'currencies' => {
+                                  'BZD' => {
+                                           'symbol' => '$',
+                                           'displayName' => "\x{111}ô la Belize"
+                                         },
+                                  'BRZ' => {
+                                           'displayName' => "\x{110}\x{1ed3}ng Cruzeiro c\x{1ee7}a Braxin (1942\x{2013}1967)"
+                                         },
+                                  'ARL' => {
+                                           'displayName' => "\x{110}\x{1ed3}ng Peso Ley c\x{1ee7}a Argentina (1970\x{2013}1983)"
+                                         },
+                                  'YER' => {
+                                           'displayName' => 'rial Yemen'
+                                         },
+                                  'MXP' => {
+                                           'displayName' => "\x{110}\x{1ed3}ng Peso B\x{1ea1}c Mê-hi-cô (1861\x{2013}1992)"
+                                         },
+                                  'NLG' => {
+                                           'displayName' => "\x{110}\x{1ed3}ng Guilder Hà Lan"
+                                         },
+                                  'ERN' => {
+                                           'displayName' => 'nakfa Eritrea'
+                                         },
+                                  'KRH' => {
+                                           'displayName' => "\x{110}\x{1ed3}ng Hwan Hàn Qu\x{1ed1}c (1953\x{2013}1962)"
+                                         },
+                                  'FRF' => {
+                                           'displayName' => "Franc Pháp"
+                                         },
+                                  'CRC' => {
+                                           'symbol' => "\x{20a1}",
+                                           'displayName' => "colón Costa Rica"
+                                         },
+                                  'TJR' => {
+                                           'displayName' => "\x{110}\x{1ed3}ng Rúp Tajikistan"
+                                         },
+                                  'VEF' => {
+                                           'displayName' => "bolívar Venezuela"
+                                         },
+                                  'AOK' => {
+                                           'displayName' => "\x{110}\x{1ed3}ng Kwanza c\x{1ee7}a Angola (1977\x{2013}1991)"
+                                         },
+                                  'ZRZ' => {
+                                           'displayName' => "\x{110}\x{1ed3}ng Zaire (1971\x{2013}1993)"
+                                         },
+                                  'CHE' => {
+                                           'displayName' => "\x{110}\x{1ed3}ng Euro WIR"
+                                         },
+                                  'BYR' => {
+                                           'symbol' => "\x{440}.",
+                                           'displayName' => "rúp Belarus"
+                                         },
+                                  'ESB' => {
+                                           'displayName' => "\x{110}\x{1ed3}ng Peseta Tây Ban Nha (tài kho\x{1ea3}n có th\x{1ec3} chuy\x{1ec3}n \x{111}\x{1ed5}i)"
+                                         },
+                                  'MUR' => {
+                                           'displayName' => 'rupee Mauritius'
+                                         },
+                                  'WST' => {
+                                           'displayName' => 'tala Samoa'
+                                         },
+                                  'MMK' => {
+                                           'displayName' => 'kyat Myanma'
+                                         },
+                                  'XBD' => {
+                                           'displayName' => "\x{110}\x{1a1}n v\x{1ecb} K\x{1ebf} toán Châu Âu (XBD)"
+                                         },
+                                  'PKR' => {
+                                           'displayName' => 'rupee Pakistan'
+                                         },
+                                  'TTD' => {
+                                           'symbol' => '$',
+                                           'displayName' => "\x{111}ô la Trinidad và Tobago"
+                                         },
+                                  'XBC' => {
+                                           'displayName' => "\x{110}\x{1a1}n v\x{1ecb} K\x{1ebf} toán Châu Âu (XBC)"
+                                         },
+                                  'XCD' => {
+                                           'symbol' => 'EC$',
+                                           'displayName' => "\x{111}ô la \x{110}ông Caribê"
+                                         },
+                                  'XOF' => {
+                                           'symbol' => 'CFA',
+                                           'displayName' => 'franc CFA BCEAO'
+                                         },
+                                  'ROL' => {
+                                           'displayName' => "\x{110}\x{1ed3}ng Leu Rumani (1952\x{2013}2006)"
+                                         },
+                                  'AZN' => {
+                                           'displayName' => 'manat Azerbaijan'
+                                         },
+                                  'XPD' => {
+                                           'displayName' => 'Paladi'
+                                         },
+                                  'CSK' => {
+                                           'displayName' => "\x{110}\x{1ed3}ng Koruna Xu c\x{1ee7}a Czechoslovakia"
+                                         },
+                                  'MNT' => {
+                                           'symbol' => "\x{20ae}",
+                                           'displayName' => "tugrik Mông C\x{1ed5}"
+                                         },
+                                  'KES' => {
+                                           'displayName' => 'shilling Kenya'
+                                         },
+                                  'GBP' => {
+                                           'symbol' => "£",
+                                           'displayName' => "b\x{1ea3}ng Anh"
+                                         },
+                                  'CDF' => {
+                                           'displayName' => 'franc Congo'
+                                         },
+                                  'BRB' => {
+                                           'displayName' => "\x{110}\x{1ed3}ng Cruzerio M\x{1edb}i c\x{1ee7}a Braxin (1967\x{2013}1986)"
+                                         },
+                                  'AFN' => {
+                                           'displayName' => 'afghani Afghanistan'
+                                         },
+                                  'BAN' => {
+                                           'displayName' => "\x{110}\x{1ed3}ng Dinar M\x{1edb}i c\x{1ee7}a Bosnia-Herzegovina (1994\x{2013}1997)"
+                                         },
+                                  'KZT' => {
+                                           'symbol' => "\x{20b8}",
+                                           'displayName' => 'tenge Kazakhstan'
+                                         },
+                                  'SKK' => {
+                                           'displayName' => "Cuaron Xlôvác"
+                                         },
+                                  'MLF' => {
+                                           'displayName' => "\x{110}\x{1ed3}ng Franc Mali"
+                                         },
+                                  'DKK' => {
+                                           'displayName' => "krone \x{110}an M\x{1ea1}ch"
+                                         },
+                                  'BYB' => {
+                                           'displayName' => "\x{110}\x{1ed3}ng Rúp M\x{1edb}i c\x{1ee7}a Belarus (1994\x{2013}1999)"
+                                         },
+                                  'MXV' => {
+                                           'displayName' => "\x{110}\x{1a1}n v\x{1ecb} \x{110}\x{1ea7}u t\x{1b0} Mê-hi-cô"
+                                         },
+                                  'CYP' => {
+                                           'displayName' => "\x{110}\x{1ed3}ng B\x{1ea3}ng Síp"
+                                         },
+                                  'TMM' => {
+                                           'displayName' => "\x{110}\x{1ed3}ng Manat Turkmenistan (1993\x{2013}2009)"
+                                         },
+                                  'SCR' => {
+                                           'displayName' => 'rupee Seychelles'
+                                         },
+                                  'UYI' => {
+                                           'displayName' => "\x{110}\x{1ed3}ng Peso Uruguay (\x{110}\x{1a1}n v\x{1ecb} Theo ch\x{1ec9} s\x{1ed1})"
+                                         },
+                                  'BOL' => {
+                                           'displayName' => "\x{110}\x{1ed3}ng Boliviano c\x{1ee7}a Bolivia (1863\x{2013}1963)"
+                                         },
+                                  'DDM' => {
+                                           'displayName' => "\x{110}\x{1ed3}ng Mark \x{110}ông \x{110}\x{1ee9}c"
+                                         },
+                                  'GWP' => {
+                                           'displayName' => 'Peso Guinea-Bissau'
+                                         },
+                                  'NIC' => {
+                                           'displayName' => "\x{110}\x{1ed3}ng Córdoba Nicaragua (1988\x{2013}1991)"
+                                         },
+                                  'ZMW' => {
+                                           'displayName' => 'kwacha Zambia'
+                                         },
+                                  'OMR' => {
+                                           'displayName' => 'rial Oman'
+                                         },
+                                  'DJF' => {
+                                           'displayName' => 'franc Djibouti'
+                                         },
+                                  'CLE' => {
+                                           'displayName' => "\x{110}\x{1ed3}ng Escudo c\x{1ee7}a Chile"
+                                         },
+                                  'BND' => {
+                                           'symbol' => '$',
+                                           'displayName' => "\x{111}ô la Brunei"
+                                         },
+                                  'PTE' => {
+                                           'displayName' => "\x{110}\x{1ed3}ng Escudo B\x{1ed3} \x{110}ào Nha"
+                                         },
+                                  'GHS' => {
+                                           'symbol' => "\x{20b5}",
+                                           'displayName' => 'cedi Ghana'
+                                         },
+                                  'GNF' => {
+                                           'displayName' => 'franc Guinea'
+                                         },
+                                  'BOB' => {
+                                           'displayName' => 'boliviano Bolivia'
+                                         },
+                                  'MCF' => {
+                                           'displayName' => "\x{110}\x{1ed3}ng Franc Monegasque"
+                                         },
+                                  'ZWD' => {
+                                           'displayName' => "\x{110}\x{1ed3}ng \x{110}ô la Zimbabwe (1980\x{2013}2008)"
+                                         },
+                                  'MWK' => {
+                                           'displayName' => 'kwacha Malawi'
+                                         },
+                                  'GRD' => {
+                                           'displayName' => "Drachma Hy L\x{1ea1}p"
+                                         },
+                                  'KWD' => {
+                                           'displayName' => 'dinar Kuwait'
+                                         },
+                                  'EUR' => {
+                                           'symbol' => "\x{20ac}",
+                                           'displayName' => 'euro'
+                                         },
+                                  'TRL' => {
+                                           'displayName' => "lia Th\x{1ed5} Nh\x{129} K\x{1ef3} (1922\x{2013}2005)"
+                                         },
+                                  'ADP' => {
+                                           'displayName' => "\x{110}\x{1ed3}ng Peseta c\x{1ee7}a Andora"
+                                         },
+                                  'DOP' => {
+                                           'symbol' => '$',
+                                           'displayName' => 'peso Dominica'
+                                         },
+                                  'PEN' => {
+                                           'displayName' => 'nuevo sol Peru'
+                                         },
+                                  'CSD' => {
+                                           'displayName' => "\x{110}\x{1ed3}ng Dinar c\x{1ee7}a Serbia (2002\x{2013}2006)"
+                                         },
+                                  'SVC' => {
+                                           'displayName' => "\x{110}\x{1ed3}ng Colón Salvador"
+                                         },
+                                  'BOP' => {
+                                           'displayName' => "\x{110}\x{1ed3}ng Peso Bolivia"
+                                         },
+                                  'TWD' => {
+                                           'symbol' => 'NT$',
+                                           'displayName' => "\x{111}ô la \x{110}ài Loan m\x{1edb}i"
+                                         },
+                                  'XXX' => {
+                                           'displayName' => "(ti\x{1ec1}n t\x{1ec7} ch\x{1b0}a bi\x{1ebf}t)"
+                                         },
+                                  'SAR' => {
+                                           'displayName' => "riyal \x{1ea2} R\x{1ead}p Xê-út"
+                                         },
+                                  'SSP' => {
+                                           'symbol' => "£",
+                                           'displayName' => "b\x{1ea3}ng Nam Sudan"
+                                         },
+                                  'KRW' => {
+                                           'symbol' => "\x{20a9}",
+                                           'displayName' => "won Hàn Qu\x{1ed1}c"
+                                         },
+                                  'AZM' => {
+                                           'displayName' => "\x{110}\x{1ed3}ng Manat c\x{1ee7}a Azerbaijan (1993\x{2013}2006)"
+                                         },
+                                  'NAD' => {
+                                           'symbol' => '$',
+                                           'displayName' => "\x{111}ô la Namibia"
+                                         },
+                                  'BEC' => {
+                                           'displayName' => "\x{110}\x{1ed3}ng Franc B\x{1ec9} (có th\x{1ec3} chuy\x{1ec3}n \x{111}\x{1ed5}i)"
+                                         },
+                                  'MAF' => {
+                                           'displayName' => "\x{110}\x{1ed3}ng Franc Ma-r\x{1ed1}c"
+                                         },
+                                  'YUN' => {
+                                           'displayName' => "\x{110}\x{1ed3}ng Dinar Nam T\x{1b0} Có th\x{1ec3} chuy\x{1ec3}n \x{111}\x{1ed5}i (1990\x{2013}1992)"
+                                         },
+                                  'GYD' => {
+                                           'symbol' => '$',
+                                           'displayName' => "\x{111}ô la Guyana"
+                                         },
+                                  'XTS' => {
+                                           'displayName' => "Mã Ti\x{1ec1}n t\x{1ec7} Ki\x{1ec3}m tra"
+                                         },
+                                  'EGP' => {
+                                           'displayName' => "b\x{1ea3}ng Ai C\x{1ead}p"
+                                         },
+                                  'AED' => {
+                                           'displayName' => 'dirham UAE'
+                                         },
+                                  'JOD' => {
+                                           'displayName' => 'dinar Jordan'
+                                         },
+                                  'JPY' => {
+                                           'symbol' => "JP¥",
+                                           'displayName' => "yên Nh\x{1ead}t"
+                                         },
+                                  'ZAR' => {
+                                           'displayName' => 'rand Nam Phi'
+                                         },
+                                  'HRK' => {
+                                           'displayName' => 'kuna Croatia'
+                                         },
+                                  'XFO' => {
+                                           'displayName' => "\x{110}\x{1ed3}ng France Pháp Vàng"
+                                         },
+                                  'RON' => {
+                                           'displayName' => 'leu Romania'
+                                         },
+                                  'ZWR' => {
+                                           'displayName' => "\x{110}\x{1ed3}ng \x{110}ô la Zimbabwe (2008)"
+                                         },
+                                  'BEF' => {
+                                           'displayName' => "\x{110}\x{1ed3}ng Franc B\x{1ec9}"
+                                         },
+                                  'PLN' => {
+                                           'displayName' => 'Zloty Ba Lan'
+                                         },
+                                  'IQD' => {
+                                           'displayName' => "dinar I-r\x{1eaf}c"
+                                         },
+                                  'MYR' => {
+                                           'displayName' => 'ringgit Malaysia'
+                                         },
+                                  'SDD' => {
+                                           'displayName' => "\x{110}\x{1ed3}ng Dinar Sudan (1992\x{2013}2007)"
+                                         },
+                                  'GNS' => {
+                                           'displayName' => 'Syli Guinea'
+                                         },
+                                  'INR' => {
+                                           'symbol' => "\x{20b9}",
+                                           'displayName' => "rupee \x{1ea4}n \x{110}\x{1ed9}"
+                                         },
+                                  'BRC' => {
+                                           'displayName' => "\x{110}\x{1ed3}ng Cruzado c\x{1ee7}a Braxin (1986\x{2013}1989)"
+                                         },
+                                  'PHP' => {
+                                           'symbol' => "\x{20b1}",
+                                           'displayName' => 'peso Philipin'
+                                         },
+                                  'YDD' => {
+                                           'displayName' => "\x{110}\x{1ed3}ng Dinar Yemen"
+                                         },
+                                  'HNL' => {
+                                           'displayName' => 'lempira Honduras'
+                                         },
+                                  'RHD' => {
+                                           'displayName' => "\x{110}\x{1ed3}ng \x{110}ô la Rhode"
+                                         },
+                                  'NZD' => {
+                                           'symbol' => 'NZ$',
+                                           'displayName' => "\x{111}ô la New Zealand"
+                                         },
+                                  'HKD' => {
+                                           'symbol' => 'HK$',
+                                           'displayName' => "\x{111}ô la H\x{1ed3}ng Kông"
+                                         },
+                                  'MTL' => {
+                                           'displayName' => "Lia x\x{1ee9} Man-t\x{1a1}"
+                                         },
+                                  'USS' => {
+                                           'displayName' => "\x{110}ô la M\x{1ef9} (Cùng ngày)"
+                                         },
+                                  'ATS' => {
+                                           'displayName' => "\x{110}\x{1ed3}ng Schiling Áo"
+                                         },
+                                  'ESA' => {
+                                           'displayName' => "\x{110}\x{1ed3}ng Peseta Tây Ban Nha (Tài kho\x{1ea3}n)"
+                                         },
+                                  'SOS' => {
+                                           'displayName' => 'schilling Somali'
+                                         },
+                                  'EEK' => {
+                                           'displayName' => "Crun Extônia"
+                                         },
+                                  'MZN' => {
+                                           'displayName' => 'metical Mozambique'
+                                         },
+                                  'XRE' => {
+                                           'displayName' => "Qu\x{1ef9} RINET"
+                                         },
+                                  'ARA' => {
+                                           'displayName' => "\x{110}\x{1ed3}ng Austral c\x{1ee7}a Argentina"
+                                         },
+                                  'LTT' => {
+                                           'displayName' => "\x{110}\x{1ed3}ng Talonas Litva"
+                                         },
+                                  'ISK' => {
+                                           'displayName' => "króna Iceland"
+                                         },
+                                  'LUF' => {
+                                           'displayName' => "\x{110}\x{1ed3}ng Franc Luxembourg"
+                                         },
+                                  'MZE' => {
+                                           'displayName' => "\x{110}\x{1ed3}ng Escudo Mozambique"
+                                         },
+                                  'VNN' => {
+                                           'displayName' => "\x{110}\x{1ed3}ng Vi\x{1ec7}t Nam (1978\x{2013}1985)"
+                                         },
+                                  'MGA' => {
+                                           'displayName' => 'ariary Malagasy'
+                                         },
+                                  'IRR' => {
+                                           'displayName' => 'rial Iran'
+                                         },
+                                  'BAD' => {
+                                           'displayName' => "\x{110}\x{1ed3}ng Dinar c\x{1ee7}a Bosnia-Herzegovina (1992\x{2013}1994)"
+                                         },
+                                  'QAR' => {
+                                           'displayName' => 'rial Qatar'
+                                         },
+                                  'MVR' => {
+                                           'displayName' => 'rufiyaa Maldives'
+                                         },
+                                  'UAK' => {
+                                           'displayName' => "\x{110}\x{1ed3}ng Karbovanets Ucraina"
+                                         },
+                                  'UGS' => {
+                                           'displayName' => "\x{110}\x{1ed3}ng Shilling Uganda (1966\x{2013}1987)"
+                                         },
+                                  'ECS' => {
+                                           'displayName' => "\x{110}\x{1ed3}ng Scure Ecuador"
+                                         },
+                                  'PLZ' => {
+                                           'displayName' => "\x{110}\x{1ed3}ng Zloty Ba Lan (1950\x{2013}1995)"
+                                         },
+                                  'BOV' => {
+                                           'displayName' => "\x{110}\x{1ed3}ng Mvdol Bolivia"
+                                         },
+                                  'MZM' => {
+                                           'displayName' => "\x{110}\x{1ed3}ng Metical Mozambique (1980\x{2013}2006)"
+                                         },
+                                  'NPR' => {
+                                           'displayName' => 'rupee Nepal'
+                                         },
+                                  'BIF' => {
+                                           'displayName' => 'franc Burundi'
+                                         },
+                                  'KHR' => {
+                                           'symbol' => "\x{17db}",
+                                           'displayName' => 'riel Campuchia'
+                                         },
+                                  'AOR' => {
+                                           'displayName' => "\x{110}\x{1ed3}ng Kwanza \x{110}i\x{1ec1}u ch\x{1ec9}nh l\x{1ea1}i c\x{1ee7}a Angola (1995\x{2013}1999)"
+                                         },
+                                  'BHD' => {
+                                           'displayName' => 'dinar Bahrain'
+                                         },
+                                  'XEU' => {
+                                           'displayName' => "\x{110}\x{1a1}n v\x{1ecb} Ti\x{1ec1}n Châu Âu"
+                                         },
+                                  'XDR' => {
+                                           'displayName' => "Quy\x{1ec1}n Rút v\x{1ed1}n \x{110}\x{1eb7}c bi\x{1ec7}t"
+                                         },
+                                  'STD' => {
+                                           'displayName' => "dobra São Tomé và Príncipe"
+                                         },
+                                  'PAB' => {
+                                           'displayName' => 'balboa Panama'
+                                         },
+                                  'XAF' => {
+                                           'symbol' => 'FCFA',
+                                           'displayName' => 'CFA Franc BEAC'
+                                         },
+                                  'BAM' => {
+                                           'displayName' => "mark Bosnia-Herzegovina có th\x{1ec3} chuy\x{1ec3}n \x{111}\x{1ed5}i"
+                                         },
+                                  'ETB' => {
+                                           'displayName' => 'birr Ethiopia'
+                                         },
+                                  'BGO' => {
+                                           'displayName' => "\x{110}\x{1ed3}ng Lev c\x{1ee7}a Bun-ga-ri (1879\x{2013}1952)"
+                                         },
+                                  'YUM' => {
+                                           'displayName' => "\x{110}\x{1ed3}ng Dinar Nam T\x{1b0} M\x{1edb}i (1994\x{2013}2002)"
+                                         },
+                                  'XBA' => {
+                                           'displayName' => "\x{110}\x{1a1}n v\x{1ecb} T\x{1ed5}ng h\x{1ee3}p Châu Âu"
+                                         },
+                                  'SLL' => {
+                                           'displayName' => 'leone Sierra Leone'
+                                         },
+                                  'ILP' => {
+                                           'displayName' => 'Pao Ixraen'
+                                         },
+                                  'NGN' => {
+                                           'symbol' => "\x{20a6}",
+                                           'displayName' => 'naira Nigeria'
+                                         },
+                                  'CLP' => {
+                                           'symbol' => '$',
+                                           'displayName' => 'peso Chile'
+                                         },
+                                  'LAK' => {
+                                           'symbol' => "\x{20ad}",
+                                           'displayName' => "kip Lào"
+                                         },
+                                  'DZD' => {
+                                           'displayName' => 'dinar Algeria'
+                                         },
+                                  'PEI' => {
+                                           'displayName' => "\x{110}\x{1ed3}ng Inti Peru"
+                                         },
+                                  'CUC' => {
+                                           'displayName' => "peso Cuba có th\x{1ec3} chuy\x{1ec3}n \x{111}\x{1ed5}i"
+                                         },
+                                  'GEK' => {
+                                           'displayName' => "\x{110}\x{1ed3}ng Kupon Larit c\x{1ee7}a Georgia"
+                                         },
+                                  'SZL' => {
+                                           'displayName' => 'emalangeni Swaziland'
+                                         },
+                                  'TPE' => {
+                                           'displayName' => "\x{110}\x{1ed3}ng Escudo Timor"
+                                         },
+                                  'MOP' => {
+                                           'displayName' => 'pataca Ma Cao'
+                                         },
+                                  'LRD' => {
+                                           'symbol' => '$',
+                                           'displayName' => "\x{111}ô la Liberia"
+                                         },
+                                  'SUR' => {
+                                           'displayName' => "\x{110}\x{1ed3}ng Rúp Sô vi\x{1ebf}t"
+                                         },
+                                  'KGS' => {
+                                           'displayName' => 'som Kyrgyzstan'
+                                         },
+                                  'PYG' => {
+                                           'symbol' => "\x{20b2}",
+                                           'displayName' => 'guarani Paraguay'
+                                         },
+                                  'IDR' => {
+                                           'displayName' => 'rupiah Indonesia'
+                                         },
+                                  'CAD' => {
+                                           'symbol' => 'CA$',
+                                           'displayName' => "\x{111}ô la Canada"
+                                         },
+                                  'GTQ' => {
+                                           'displayName' => 'quetzal Guatemala'
+                                         },
+                                  'MTP' => {
+                                           'displayName' => "\x{110}\x{1ed3}ng B\x{1ea3}ng Malta"
+                                         },
+                                  'AWG' => {
+                                           'displayName' => 'florin Aruba'
+                                         },
+                                  'RUR' => {
+                                           'symbol' => "\x{440}.",
+                                           'displayName' => "\x{110}\x{1ed3}ng Rúp Nga (1991\x{2013}1998)"
+                                         },
+                                  'YUD' => {
+                                           'displayName' => "\x{110}\x{1ed3}ng Dinar Nam T\x{1b0} Xu (1966\x{2013}1990)"
+                                         },
+                                  'UZS' => {
+                                           'displayName' => 'som Uzbekistan'
+                                         },
+                                  'VUV' => {
+                                           'displayName' => 'vatu Vanuatu'
+                                         },
+                                  'KMF' => {
+                                           'displayName' => 'franc Comoros'
+                                         },
+                                  'COU' => {
+                                           'displayName' => "\x{110}\x{1a1}n v\x{1ecb} Giá tr\x{1ecb} Th\x{1ef1}c c\x{1ee7}a Colombia"
+                                         },
+                                  'SIT' => {
+                                           'displayName' => "Tôla Xlôvênia"
+                                         },
+                                  'ANG' => {
+                                           'displayName' => "guilder Tây \x{1ea4}n Hà Lan"
+                                         },
+                                  'VEB' => {
+                                           'displayName' => "\x{110}\x{1ed3}ng bolívar c\x{1ee7}a Venezuela (1871\x{2013}2008)"
+                                         },
+                                  'LBP' => {
+                                           'displayName' => "b\x{1ea3}ng Li-b\x{103}ng"
+                                         },
+                                  'BTN' => {
+                                           'displayName' => 'ngultrum Bhutan'
+                                         },
+                                  'CLF' => {
+                                           'displayName' => "\x{110}\x{1a1}n v\x{1ecb} K\x{1ebf} toán c\x{1ee7}a Chile (UF)"
+                                         },
+                                  'SEK' => {
+                                           'displayName' => "krona Th\x{1ee5}y \x{110}i\x{1ec3}n"
+                                         },
+                                  'ZMK' => {
+                                           'displayName' => "\x{110}\x{1ed3}ng kwacha c\x{1ee7}a Zambia (1968\x{2013}2012)"
+                                         },
+                                  'AFA' => {
+                                           'displayName' => "\x{110}\x{1ed3}ng Afghani c\x{1ee7}a Afghanistan (1927\x{2013}2002)"
+                                         },
+                                  'ZAL' => {
+                                           'displayName' => "\x{110}\x{1ed3}ng Rand Nam Phi (tài chính)"
+                                         },
+                                  'ZRN' => {
+                                           'displayName' => "\x{110}\x{1ed3}ng Zaire M\x{1edb}i (1993\x{2013}1998)"
+                                         },
+                                  'AMD' => {
+                                           'displayName' => 'dram Armenia'
+                                         },
+                                  'KRO' => {
+                                           'displayName' => "\x{110}\x{1ed3}ng Won Hàn Qu\x{1ed1}c (1945\x{2013}1953)"
+                                         },
+                                  'FJD' => {
+                                           'symbol' => '$',
+                                           'displayName' => "\x{111}ô la Fiji"
+                                         },
+                                  'MDC' => {
+                                           'displayName' => "\x{110}\x{1ed3}ng Cupon Moldova"
+                                         },
+                                  'PES' => {
+                                           'displayName' => "\x{110}\x{1ed3}ng Sol Peru (1863\x{2013}1965)"
+                                         },
+                                  'ALL' => {
+                                           'displayName' => 'lek Albania'
+                                         },
+                                  'SHP' => {
+                                           'displayName' => "b\x{1ea3}ng Saint Helena"
+                                         },
+                                  'SRG' => {
+                                           'displayName' => "\x{110}\x{1ed3}ng Guilder Surinam"
+                                         },
+                                  'TOP' => {
+                                           'displayName' => "pa\x{2bb}anga Tonga"
+                                         },
+                                  'GQE' => {
+                                           'displayName' => "\x{110}\x{1ed3}ng Ekwele c\x{1ee7}a Guinea Xích \x{110}\x{1ea1}o"
+                                         },
+                                  'UGX' => {
+                                           'displayName' => 'shilling Uganda'
+                                         },
+                                  'TND' => {
+                                           'displayName' => 'dinar Tunisia'
+                                         },
+                                  'IEP' => {
+                                           'displayName' => 'Pao Ai-len'
+                                         },
+                                  'SBD' => {
+                                           'symbol' => '$',
+                                           'displayName' => "\x{111}ô la qu\x{1ea7}n \x{111}\x{1ea3}o Solomon"
+                                         },
+                                  'BGM' => {
+                                           'displayName' => "\x{110}\x{1ed3}ng Lev Xã h\x{1ed9}i ch\x{1ee7} ngh\x{129}a c\x{1ee7}a Bun-ga-ri"
+                                         },
+                                  'SDP' => {
+                                           'displayName' => "\x{110}\x{1ed3}ng B\x{1ea3}ng Sudan (1957\x{2013}1998)"
+                                         },
+                                  'CVE' => {
+                                           'displayName' => 'escudo Cape Verde'
+                                         },
+                                  'ARS' => {
+                                           'symbol' => '$',
+                                           'displayName' => 'peso Argentina'
+                                         },
+                                  'ARP' => {
+                                           'displayName' => "\x{110}\x{1ed3}ng Peso Argentina (1983\x{2013}1985)"
+                                         },
+                                  'GMD' => {
+                                           'displayName' => 'dalasi Gambia'
+                                         },
+                                  'USN' => {
+                                           'displayName' => "\x{110}ô la M\x{1ef9} (Ngày ti\x{1ebf}p theo)"
+                                         },
+                                  'BDT' => {
+                                           'symbol' => "\x{9f3}",
+                                           'displayName' => 'taka Bangladesh'
+                                         },
+                                  'CHF' => {
+                                           'displayName' => "franc Th\x{1ee5}y s\x{129}"
+                                         },
+                                  'XAG' => {
+                                           'displayName' => "B\x{1ea1}c"
+                                         },
+                                  'SRD' => {
+                                           'symbol' => '$',
+                                           'displayName' => "\x{111}ô la Suriname"
+                                         },
+                                  'KPW' => {
+                                           'displayName' => "won Tri\x{1ec1}u Tiên"
+                                         },
+                                  'SGD' => {
+                                           'symbol' => '$',
+                                           'displayName' => "\x{111}ô la Singapore"
+                                         },
+                                  'USD' => {
+                                           'symbol' => 'US$',
+                                           'displayName' => "\x{111}ô la M\x{1ef9}"
+                                         },
+                                  'BGN' => {
+                                           'displayName' => 'lev Bulgaria'
+                                         },
+                                  'MAD' => {
+                                           'displayName' => "dirham Ma-r\x{1ed1}c"
+                                         },
+                                  'KYD' => {
+                                           'symbol' => '$',
+                                           'displayName' => "\x{111}ô la Qu\x{1ea7}n \x{111}\x{1ea3}o Cayman"
+                                         },
+                                  'AUD' => {
+                                           'symbol' => 'AU$',
+                                           'displayName' => "\x{111}ô la Australia"
+                                         },
+                                  'GHC' => {
+                                           'displayName' => "Cedi Ghana (1979\x{2013}2007)"
+                                         },
+                                  'GWE' => {
+                                           'displayName' => "\x{110}\x{1ed3}ng Guinea Escudo B\x{1ed3} \x{110}ào Nha"
+                                         },
+                                  'TRY' => {
+                                           'symbol' => 'TL',
+                                           'displayName' => "lia Th\x{1ed5} Nh\x{129} K\x{1ef3}"
+                                         },
+                                  'GIP' => {
+                                           'symbol' => "£",
+                                           'displayName' => "b\x{1ea3}ng Gibraltar"
+                                         },
+                                  'XAU' => {
+                                           'displayName' => "Vàng"
+                                         },
+                                  'CZK' => {
+                                           'displayName' => "koruna C\x{1ed9}ng hòa Séc"
+                                         },
+                                  'JMD' => {
+                                           'symbol' => '$',
+                                           'displayName' => "\x{111}ô la Jamaica"
+                                         },
+                                  'BSD' => {
+                                           'symbol' => '$',
+                                           'displayName' => "\x{111}ô la Bahamas"
+                                         },
+                                  'BEL' => {
+                                           'displayName' => "\x{110}\x{1ed3}ng Franc B\x{1ec9} (tài chính)"
+                                         },
+                                  'ARM' => {
+                                           'displayName' => "\x{110}\x{1ed3}ng Peso Argentina (1881\x{2013}1970)"
+                                         },
+                                  'UYU' => {
+                                           'symbol' => '$',
+                                           'displayName' => 'peso Uruguay'
+                                         },
+                                  'MXN' => {
+                                           'symbol' => 'MX$',
+                                           'displayName' => 'peso Mexico'
+                                         },
+                                  'LVR' => {
+                                           'displayName' => "\x{110}\x{1ed3}ng Rúp Latvia"
+                                         },
+                                  'BWP' => {
+                                           'displayName' => 'pula Botswana'
+                                         },
+                                  'LYD' => {
+                                           'displayName' => 'dinar Libi'
+                                         },
+                                  'THB' => {
+                                           'symbol' => "\x{e3f}",
+                                           'displayName' => "b\x{1ea1}t Thái Lan"
+                                         },
+                                  'MKD' => {
+                                           'displayName' => 'denar Macedonia'
+                                         },
+                                  'SDG' => {
+                                           'displayName' => "b\x{1ea3}ng Sudan"
+                                         },
+                                  'CHW' => {
+                                           'displayName' => "\x{110}\x{1ed3}ng France WIR"
+                                         },
+                                  'LUL' => {
+                                           'displayName' => "\x{110}\x{1ed3}ng Franc Luxembourg tài chính"
+                                         },
+                                  'AOA' => {
+                                           'displayName' => 'kwanza Angola'
+                                         },
+                                  'RWF' => {
+                                           'displayName' => 'franc Rwanda'
+                                         },
+                                  'CUP' => {
+                                           'symbol' => '$',
+                                           'displayName' => 'peso Cuba'
+                                         },
+                                  'BBD' => {
+                                           'symbol' => '$',
+                                           'displayName' => "\x{111}ô la Barbados"
+                                         },
+                                  'PGK' => {
+                                           'displayName' => 'kina Papua New Guinean'
+                                         },
+                                  'LKR' => {
+                                           'displayName' => 'rupee Sri Lanka'
+                                         },
+                                  'TJS' => {
+                                           'displayName' => 'somoni Tajikistan'
+                                         },
+                                  'MDL' => {
+                                           'displayName' => 'leu Moldova'
+                                         },
+                                  'HRD' => {
+                                           'displayName' => "\x{110}\x{1ed3}ng Dinar Croatia"
+                                         },
+                                  'FIM' => {
+                                           'displayName' => "\x{110}\x{1ed3}ng Markka Ph\x{1ea7}n Lan"
+                                         },
+                                  'CNY' => {
+                                           'symbol' => "CN¥",
+                                           'displayName' => "nhân dân t\x{1ec7}"
+                                         },
+                                  'LVL' => {
+                                           'displayName' => "lats Lít-va"
+                                         },
+                                  'ITL' => {
+                                           'displayName' => "Lia Ý"
+                                         },
+                                  'LUC' => {
+                                           'displayName' => "\x{110}\x{1ed3}ng Franc Luxembourg có th\x{1ec3} chuy\x{1ec3}n \x{111}\x{1ed5}i"
+                                         },
+                                  'MKN' => {
+                                           'displayName' => "\x{110}\x{1ed3}ng Denar Macedonia (1992\x{2013}1993)"
+                                         },
+                                  'FKP' => {
+                                           'displayName' => "b\x{1ea3}ng Qu\x{1ea7}n \x{111}\x{1ea3}o Falkland"
+                                         },
+                                  'NIO' => {
+                                           'displayName' => "córdoba Nicaragua"
+                                         },
+                                  'BRL' => {
+                                           'symbol' => 'R$',
+                                           'displayName' => 'real Braxin'
+                                         },
+                                  'BUK' => {
+                                           'displayName' => "\x{110}\x{1ed3}ng Kyat Mi\x{1ebf}n \x{110}i\x{1ec7}n"
+                                         },
+                                  'RSD' => {
+                                           'displayName' => 'dinar Serbia'
+                                         },
+                                  'XBB' => {
+                                           'displayName' => "\x{110}\x{1a1}n v\x{1ecb} Ti\x{1ec1}n t\x{1ec7} Châu Âu"
+                                         },
+                                  'XFU' => {
+                                           'displayName' => "\x{110}\x{1ed3}ng UIC-Franc Pháp"
+                                         },
+                                  'BRR' => {
+                                           'displayName' => "\x{110}\x{1ed3}ng Cruzeiro c\x{1ee7}a Braxin (1993\x{2013}1994)"
+                                         },
+                                  'NOK' => {
+                                           'displayName' => 'krone Na Uy'
+                                         },
+                                  'GEL' => {
+                                           'displayName' => 'lari Gruzia'
+                                         },
+                                  'ILS' => {
+                                           'symbol' => "\x{20aa}",
+                                           'displayName' => "sheqel Israel m\x{1edb}i"
+                                         },
+                                  'LSL' => {
+                                           'displayName' => "\x{110}\x{1ed3}ng loti c\x{1ee7}a Lesotho"
+                                         },
+                                  'ESP' => {
+                                           'symbol' => "\x{20a7}",
+                                           'displayName' => "\x{110}\x{1ed3}ng Peseta Tây Ban Nha"
+                                         },
+                                  'HUF' => {
+                                           'displayName' => 'forint Hungaria'
+                                         },
+                                  'UYP' => {
+                                           'displayName' => "\x{110}\x{1ed3}ng Peso Uruguay (1975\x{2013}1993)"
+                                         },
+                                  'UAH' => {
+                                           'symbol' => "\x{20b4}",
+                                           'displayName' => 'hryvnia Ucraina'
+                                         },
+                                  'RUB' => {
+                                           'displayName' => "Rúp Nga"
+                                         },
+                                  'BMD' => {
+                                           'symbol' => '$',
+                                           'displayName' => "\x{111}ô la Bermuda"
+                                         },
+                                  'ECV' => {
+                                           'displayName' => "\x{110}\x{1a1}n v\x{1ecb} Giá tr\x{1ecb} Không \x{111}\x{1ed5}i c\x{1ee7}a Ecuador"
+                                         },
+                                  'BGL' => {
+                                           'displayName' => "\x{110}\x{1ed3}ng Lev Xu c\x{1ee7}a Bun-ga-ri"
+                                         },
+                                  'VND' => {
+                                           'symbol' => "\x{20ab}",
+                                           'displayName' => "\x{111}\x{1ed3}ng Vi\x{1ec7}t Nam"
+                                         },
+                                  'MRO' => {
+                                           'displayName' => 'ouguiya Mauritania'
+                                         },
+                                  'YUR' => {
+                                           'displayName' => "\x{110}\x{1ed3}ng Dinar Nam T\x{1b0} Tái c\x{1a1} c\x{1ea5}u (1992\x{2013}1993)"
+                                         },
+                                  'BRE' => {
+                                           'displayName' => "\x{110}\x{1ed3}ng Cruzerio c\x{1ee7}a Braxin (1990\x{2013}1993)"
+                                         },
+                                  'ZWL' => {
+                                           'displayName' => "\x{110}\x{1ed3}ng \x{110}ô la Zimbabwe (2009)"
+                                         },
+                                  'COP' => {
+                                           'symbol' => '$',
+                                           'displayName' => 'peso Colombia'
+                                         },
+                                  'TZS' => {
+                                           'displayName' => 'shilling Tanzania'
+                                         },
+                                  'MGF' => {
+                                           'displayName' => "\x{110}\x{1ed3}ng Franc Magalasy"
+                                         },
+                                  'AON' => {
+                                           'displayName' => "\x{110}\x{1ed3}ng Kwanza M\x{1edb}i c\x{1ee7}a Angola (1990\x{2013}2000)"
+                                         },
+                                  'XPT' => {
+                                           'displayName' => "B\x{1ea1}ch kim"
+                                         },
+                                  'SYP' => {
+                                           'displayName' => "b\x{1ea3}ng Syria"
+                                         },
+                                  'DEM' => {
+                                           'displayName' => "\x{110}\x{1ed3}ng Mark \x{110}\x{1ee9}c"
+                                         },
+                                  'HTG' => {
+                                           'displayName' => 'gourde Haiti'
+                                         },
+                                  'BRN' => {
+                                           'displayName' => "\x{110}\x{1ed3}ng Cruzado M\x{1edb}i c\x{1ee7}a Braxin (1989\x{2013}1990)"
+                                         },
+                                  'LTL' => {
+                                           'displayName' => "litas Lít-va"
+                                         },
+                                  'TMT' => {
+                                           'displayName' => 'manat Turkmenistan'
+                                         },
+                                  'XPF' => {
+                                           'symbol' => 'CFPF',
+                                           'displayName' => 'franc CFP'
+                                         }
+                                }
+              },
+  'locale' => 'vi_VN',
+  'characters' => {
+                    'word-initial' => "\x{2026} {0}",
+                    'standard' => '?',
+                    'word-medial' => "{0} \x{2026} {1}",
+                    'index' => "[A \x{102} Â B C D \x{110} E Ê F G H I J K L M N O Ô \x{1a0} P Q R S T U \x{1af} V W X Y Z]",
+                    'medial' => "{0}\x{2026}{1}",
+                    'word-final' => "{0} \x{2026}",
+                    'final' => "{0}\x{2026}",
+                    'initial' => "\x{2026}{0}",
+                    'punctuation' => '[\\- , ; \\: ! ? . ( ) \\[ \\] \\{ \\}]'
+                  },
+  'calendar' => {
+                  'calendarType' => 'gregorian',
+                  'timeFormat' => {
+                                    'short' => 'HH:mm',
+                                    'pm' => '',
+                                    'am' => '',
+                                    'medium' => 'HH:mm:ss',
+                                    'long' => 'HH:mm:ss z',
+                                    'full' => 'HH:mm:ss zzzz'
+                                  },
+                  'timeZones' => {
+                                   'regionFormat' => "Gi\x{1edd} chu\x{1ea9}n {0}",
+                                   'gmtFormat' => 'GMT{0}',
+                                   'hourFormat' => '+HH:mm;-HH:mm',
+                                   'metazone' => "
+				
+					Gi\x{1edd} Yekaterinburg
+					Gi\x{1edd} Chu\x{1ea9}n Yekaterinburg
+					Gi\x{1edd} mùa hè Yekaterinburg
+				
+			",
+                                   'zones' => {
+                                                'Antarctica/DumontDUrville' => {
+                                                                               'type' => 'Antarctica/DumontDUrville',
+                                                                               'exemplarCity' => "Dumont d\x{2019}Urville"
+                                                                             },
+                                                'Europe/Prague' => {
+                                                                   'type' => 'Europe/Prague',
+                                                                   'exemplarCity' => 'Praha'
+                                                                 },
+                                                'Asia/Shanghai' => {
+                                                                   'type' => 'Asia/Shanghai',
+                                                                   'exemplarCity' => "Th\x{1b0}\x{1ee3}ng H\x{1ea3}i"
+                                                                 },
+                                                'Asia/Calcutta' => {
+                                                                   'type' => 'Asia/Calcutta',
+                                                                   'exemplarCity' => 'Kolkata'
+                                                                 },
+                                                'America/Indiana/Vincennes' => {
+                                                                               'type' => 'America/Indiana/Vincennes',
+                                                                               'exemplarCity' => 'Vincennes, Indiana'
+                                                                             },
+                                                'America/Indiana/Winamac' => {
+                                                                             'type' => 'America/Indiana/Winamac',
+                                                                             'exemplarCity' => 'Winamac, Indiana'
+                                                                           },
+                                                'America/Indiana/Marengo' => {
+                                                                             'type' => 'America/Indiana/Marengo',
+                                                                             'exemplarCity' => 'Marengo, Indiana'
+                                                                           },
+                                                'America/Indiana/Petersburg' => {
+                                                                                'type' => 'America/Indiana/Petersburg',
+                                                                                'exemplarCity' => 'Petersburg, Indiana'
+                                                                              },
+                                                'Asia/Harbin' => {
+                                                                 'type' => 'Asia/Harbin',
+                                                                 'exemplarCity' => "Cáp Nh\x{129} Tân"
+                                                               },
+                                                'Atlantic/St_Helena' => {
+                                                                        'type' => 'Atlantic/St_Helena',
+                                                                        'exemplarCity' => 'St. Helena'
+                                                                      },
+                                                'Asia/Hong_Kong' => {
+                                                                    'type' => 'Asia/Hong_Kong',
+                                                                    'exemplarCity' => "H\x{1ed3}ng Kông"
+                                                                  },
+                                                'America/Coral_Harbour' => {
+                                                                           'type' => 'America/Coral_Harbour',
+                                                                           'exemplarCity' => 'Atikokan'
+                                                                         },
+                                                'Atlantic/South_Georgia' => {
+                                                                            'type' => 'Atlantic/South_Georgia',
+                                                                            'exemplarCity' => 'Nam Georgia'
+                                                                          },
+                                                'Etc/Unknown' => {
+                                                                 'type' => 'Etc/Unknown',
+                                                                 'exemplarCity' => "Thành ph\x{1ed1} Không xác \x{111}\x{1ecb}nh"
+                                                               },
+                                                'Atlantic/Faeroe' => {
+                                                                     'type' => 'Atlantic/Faeroe',
+                                                                     'exemplarCity' => 'Faroe'
+                                                                   },
+                                                'America/Godthab' => {
+                                                                     'type' => 'America/Godthab',
+                                                                     'exemplarCity' => {
+                                                                                       'draft' => 'contributed',
+                                                                                       'content' => 'Nuuk'
+                                                                                     }
+                                                                   },
+                                                'America/St_Kitts' => {
+                                                                      'type' => 'America/St_Kitts',
+                                                                      'exemplarCity' => 'St. Kitts'
+                                                                    },
+                                                'Asia/Pyongyang' => {
+                                                                    'type' => 'Asia/Pyongyang',
+                                                                    'exemplarCity' => "Bình Nh\x{1b0}\x{1ee1}ng"
+                                                                  },
+                                                'America/Scoresbysund' => {
+                                                                          'type' => 'America/Scoresbysund',
+                                                                          'exemplarCity' => {
+                                                                                            'draft' => 'contributed',
+                                                                                            'content' => 'Ittoqqortoormiit'
+                                                                                          }
+                                                                        },
+                                                'Europe/London' => {
+                                                                   'long' => {
+                                                                             'daylight' => "Gi\x{1edd} Mùa Hè Anh"
+                                                                           },
+                                                                   'type' => 'Europe/London'
+                                                                 },
+                                                'Europe/Moscow' => {
+                                                                   'type' => 'Europe/Moscow',
+                                                                   'exemplarCity' => "Mát-xc\x{1a1}-va"
+                                                                 },
+                                                'America/St_Johns' => {
+                                                                      'type' => 'America/St_Johns',
+                                                                      'exemplarCity' => "St. John\x{2019}s"
+                                                                    },
+                                                'Pacific/Ponape' => {
+                                                                    'type' => 'Pacific/Ponape',
+                                                                    'exemplarCity' => 'Pohnpei'
+                                                                  },
+                                                'Asia/Katmandu' => {
+                                                                   'type' => 'Asia/Katmandu',
+                                                                   'exemplarCity' => 'Kathmandu'
+                                                                 },
+                                                'Asia/Urumqi' => {
+                                                                 'type' => 'Asia/Urumqi',
+                                                                 'exemplarCity' => "Ô L\x{1ed7} M\x{1ed9}c T\x{1ec1}"
+                                                               },
+                                                'Pacific/Truk' => {
+                                                                  'type' => 'Pacific/Truk',
+                                                                  'exemplarCity' => 'Chuuk'
+                                                                },
+                                                'Europe/Isle_of_Man' => {
+                                                                        'type' => 'Europe/Isle_of_Man',
+                                                                        'exemplarCity' => "\x{110}\x{1ea3}o Man"
+                                                                      },
+                                                'America/St_Lucia' => {
+                                                                      'type' => 'America/St_Lucia',
+                                                                      'exemplarCity' => 'St. Lucia'
+                                                                    },
+                                                'America/Indiana/Tell_City' => {
+                                                                               'type' => 'America/Indiana/Tell_City',
+                                                                               'exemplarCity' => 'Tell City, Indiana'
+                                                                             },
+                                                'America/Indiana/Knox' => {
+                                                                          'type' => 'America/Indiana/Knox',
+                                                                          'exemplarCity' => 'Knox, Indiana'
+                                                                        },
+                                                'Africa/Asmera' => {
+                                                                   'type' => 'Africa/Asmera',
+                                                                   'exemplarCity' => 'Asmara'
+                                                                 },
+                                                'Asia/Vientiane' => {
+                                                                    'type' => 'Asia/Vientiane',
+                                                                    'exemplarCity' => "Viêng Ch\x{103}n"
+                                                                  },
+                                                'America/St_Thomas' => {
+                                                                       'type' => 'America/St_Thomas',
+                                                                       'exemplarCity' => 'St. Thomas'
+                                                                     },
+                                                'America/Curacao' => {
+                                                                     'type' => 'America/Curacao',
+                                                                     'exemplarCity' => "Curaçao"
+                                                                   },
+                                                'America/Lower_Princes' => {
+                                                                           'type' => 'America/Lower_Princes',
+                                                                           'exemplarCity' => 'Lower Prince\'s Quarter'
+                                                                         },
+                                                'America/North_Dakota/Beulah' => {
+                                                                                 'type' => 'America/North_Dakota/Beulah',
+                                                                                 'exemplarCity' => "Beulah, B\x{1eaf}c Dakota"
+                                                                               },
+                                                'Asia/Kashgar' => {
+                                                                  'type' => 'Asia/Kashgar',
+                                                                  'exemplarCity' => "Khách Th\x{1ead}p"
+                                                                },
+                                                'Asia/Taipei' => {
+                                                                 'type' => 'Asia/Taipei',
+                                                                 'exemplarCity' => "\x{110}ài B\x{1eaf}c"
+                                                               },
+                                                'Asia/Macau' => {
+                                                                'type' => 'Asia/Macau',
+                                                                'exemplarCity' => 'Ma Cao'
+                                                              },
+                                                'America/Indiana/Vevay' => {
+                                                                           'type' => 'America/Indiana/Vevay',
+                                                                           'exemplarCity' => 'Vevay, Indiana'
+                                                                         },
+                                                'Asia/Saigon' => {
+                                                                 'type' => 'Asia/Saigon',
+                                                                 'exemplarCity' => "TP H\x{1ed3} Chí Minh"
+                                                               },
+                                                'Europe/Dublin' => {
+                                                                   'long' => {
+                                                                             'daylight' => "Gi\x{1edd} Mùa Hè Ai-len"
+                                                                           },
+                                                                   'type' => 'Europe/Dublin'
+                                                                 },
+                                                'America/St_Barthelemy' => {
+                                                                           'type' => 'America/St_Barthelemy',
+                                                                           'exemplarCity' => {
+                                                                                             'draft' => 'contributed',
+                                                                                             'content' => "Saint Barthélemy"
+                                                                                           }
+                                                                         },
+                                                'America/North_Dakota/New_Salem' => {
+                                                                                    'type' => 'America/North_Dakota/New_Salem',
+                                                                                    'exemplarCity' => "New Salem, B\x{1eaf}c Dakota"
+                                                                                  },
+                                                'Africa/Sao_Tome' => {
+                                                                     'type' => 'Africa/Sao_Tome',
+                                                                     'exemplarCity' => "São Tomé"
+                                                                   },
+                                                'Asia/Chongqing' => {
+                                                                    'type' => 'Asia/Chongqing',
+                                                                    'exemplarCity' => "Trùng Khánh"
+                                                                  },
+                                                'America/Kentucky/Monticello' => {
+                                                                                 'type' => 'America/Kentucky/Monticello',
+                                                                                 'exemplarCity' => 'Monticello, Kentucky'
+                                                                               },
+                                                'America/St_Vincent' => {
+                                                                        'type' => 'America/St_Vincent',
+                                                                        'exemplarCity' => 'St. Vincent'
+                                                                      },
+                                                'America/North_Dakota/Center' => {
+                                                                                 'type' => 'America/North_Dakota/Center',
+                                                                                 'exemplarCity' => "Center, B\x{1eaf}c Dakota"
+                                                                               }
+                                              },
+                                   'fallbackFormat' => '{1} ({0})',
+                                   'gmtZeroFormat' => 'GMT'
+                                 },
+                  'eras' => {
+                              'eraNames' => {
+                                            'alias' => {
+                                                       '' => ''
+                                                     },
+                                            'era' => {
+                                                     '1' => 'sau CN',
+                                                     '0' => 'tr. CN'
+                                                   }
+                                          },
+                              'eraNarrow' => {
+                                             'alias' => {
+                                                        '' => ''
+                                                      },
+                                             'era' => {
+                                                      '1' => 'sau CN',
+                                                      '0' => 'tr. CN'
+                                                    }
+                                           },
+                              'eraAbbr' => {
+                                           'era' => {
+                                                    '1' => 'sau CN',
+                                                    '0' => 'tr. CN'
+                                                  }
+                                         }
+                            },
+                  'days' => {
+                              'format' => {
+                                          'short' => {
+                                                     '' => '',
+                                                     'fri' => 'T6',
+                                                     'wed' => 'T4',
+                                                     'sun' => 'CN',
+                                                     'tue' => 'T3',
+                                                     'mon' => 'T2',
+                                                     'sat' => 'T7',
+                                                     'thu' => 'T5'
+                                                   },
+                                          'abbreviated' => {
+                                                           '' => '',
+                                                           'fri' => 'Th 6',
+                                                           'wed' => 'Th 4',
+                                                           'sun' => 'CN',
+                                                           'tue' => 'Th 3',
+                                                           'mon' => 'Th 2',
+                                                           'sat' => 'Th 7',
+                                                           'thu' => 'Th 5'
+                                                         },
+                                          'narrow' => {
+                                                      '' => '',
+                                                      'fri' => 'T6',
+                                                      'wed' => 'T4',
+                                                      'sun' => 'CN',
+                                                      'tue' => 'T3',
+                                                      'mon' => 'T2',
+                                                      'sat' => 'T7',
+                                                      'thu' => 'T5'
+                                                    },
+                                          'wide' => {
+                                                    'fri' => "Th\x{1ee9} Sáu",
+                                                    'tue' => "Th\x{1ee9} Ba",
+                                                    'sun' => "Ch\x{1ee7} Nh\x{1ead}t",
+                                                    'sat' => "Th\x{1ee9} B\x{1ea3}y",
+                                                    'mon' => "Th\x{1ee9} Hai",
+                                                    'wed' => "Th\x{1ee9} T\x{1b0}",
+                                                    'thu' => "Th\x{1ee9} N\x{103}m"
+                                                  }
+                                        },
+                              'stand-alone' => {
+                                               'short' => {
+                                                          '' => '',
+                                                          'fri' => 'T6',
+                                                          'wed' => 'T4',
+                                                          'sun' => 'CN',
+                                                          'tue' => 'T3',
+                                                          'mon' => 'T2',
+                                                          'sat' => 'T7',
+                                                          'thu' => 'T5'
+                                                        },
+                                               'abbreviated' => {
+                                                                '' => '',
+                                                                'fri' => 'Th 6',
+                                                                'wed' => 'Th 4',
+                                                                'sun' => 'CN',
+                                                                'tue' => 'Th 3',
+                                                                'mon' => 'Th 2',
+                                                                'sat' => 'Th 7',
+                                                                'thu' => 'Th 5'
+                                                              },
+                                               'narrow' => {
+                                                           'fri' => 'T6',
+                                                           'tue' => 'T3',
+                                                           'sun' => 'CN',
+                                                           'sat' => 'T7',
+                                                           'mon' => 'T2',
+                                                           'wed' => 'T4',
+                                                           'thu' => 'T5'
+                                                         },
+                                               'wide' => {
+                                                         '' => '',
+                                                         'fri' => "Th\x{1ee9} Sáu",
+                                                         'wed' => "Th\x{1ee9} T\x{1b0}",
+                                                         'sun' => "Ch\x{1ee7} Nh\x{1ead}t",
+                                                         'tue' => "Th\x{1ee9} Ba",
+                                                         'mon' => "Th\x{1ee9} Hai",
+                                                         'sat' => "Th\x{1ee9} B\x{1ea3}y",
+                                                         'thu' => "Th\x{1ee9} N\x{103}m"
+                                                       }
+                                             }
+                            },
+                  'months' => {
+                                'format' => {
+                                            'abbreviated' => {
+                                                             '' => '',
+                                                             '6' => 'thg 6',
+                                                             '11' => 'thg 11',
+                                                             '3' => 'thg 3',
+                                                             '7' => 'thg 7',
+                                                             '9' => 'thg 9',
+                                                             '12' => 'thg 12',
+                                                             '2' => 'thg 2',
+                                                             '8' => 'thg 8',
+                                                             '1' => 'thg 1',
+                                                             '4' => 'thg 4',
+                                                             '10' => 'thg 10',
+                                                             '5' => 'thg 5'
+                                                           },
+                                            'narrow' => {
+                                                        '' => '',
+                                                        '6' => '6',
+                                                        '11' => '11',
+                                                        '3' => '3',
+                                                        '7' => '7',
+                                                        '9' => '9',
+                                                        '12' => '12',
+                                                        '2' => '2',
+                                                        '8' => '8',
+                                                        '1' => '1',
+                                                        '4' => '4',
+                                                        '10' => '10',
+                                                        '5' => '5'
+                                                      },
+                                            'wide' => {
+                                                      '6' => "tháng 6",
+                                                      '11' => "tháng 11",
+                                                      '3' => "tháng 3",
+                                                      '7' => "tháng 7",
+                                                      '9' => "tháng 9",
+                                                      '12' => "tháng 12",
+                                                      '2' => "tháng 2",
+                                                      '8' => "tháng 8",
+                                                      '1' => "tháng 1",
+                                                      '4' => "tháng 4",
+                                                      '10' => "tháng 10",
+                                                      '5' => "tháng 5"
+                                                    }
+                                          },
+                                'stand-alone' => {
+                                                 'abbreviated' => {
+                                                                  '' => '',
+                                                                  '6' => 'Thg 6',
+                                                                  '11' => 'Thg 11',
+                                                                  '3' => 'Thg 3',
+                                                                  '7' => 'Thg 7',
+                                                                  '9' => 'Thg 9',
+                                                                  '12' => 'Thg 12',
+                                                                  '2' => 'Thg 2',
+                                                                  '8' => 'Thg 8',
+                                                                  '1' => 'Thg 1',
+                                                                  '4' => 'Thg 4',
+                                                                  '10' => 'Thg 10',
+                                                                  '5' => 'Thg 5'
+                                                                },
+                                                 'narrow' => {
+                                                             '6' => '6',
+                                                             '11' => '11',
+                                                             '3' => '3',
+                                                             '7' => '7',
+                                                             '9' => '9',
+                                                             '12' => '12',
+                                                             '2' => '2',
+                                                             '8' => '8',
+                                                             '1' => '1',
+                                                             '4' => '4',
+                                                             '10' => '10',
+                                                             '5' => '5'
+                                                           },
+                                                 'wide' => {
+                                                           '' => '',
+                                                           '6' => "Tháng 6",
+                                                           '11' => "Tháng 11",
+                                                           '3' => "Tháng 3",
+                                                           '7' => "Tháng 7",
+                                                           '9' => "Tháng 9",
+                                                           '12' => "Tháng 12",
+                                                           '2' => "Tháng 2",
+                                                           '8' => "Tháng 8",
+                                                           '1' => "Tháng 1",
+                                                           '4' => "Tháng 4",
+                                                           '10' => "Tháng 10",
+                                                           '5' => "Tháng 5"
+                                                         }
+                                               }
+                              },
+                  'dateFormat' => {
+                                    'short' => 'dd/MM/y',
+                                    'medium' => 'dd-MM-y',
+                                    'long' => "'Ngày' dd 'tháng' MM 'n\x{103}m' y",
+                                    'full' => "EEEE, 'ngày' dd MMMM 'n\x{103}m' y"
+                                  }
+                },
+  'displayNames' => {
+                      'territories' => {
+                                         'DJ' => 'Djibouti',
+                                         'JM' => 'Jamaica',
+                                         '030' => "\x{110}ông Á",
+                                         'AT' => "Áo",
+                                         'SZ' => 'Swaziland',
+                                         'YT' => 'Mayotte',
+                                         'BN' => 'Brunei',
+                                         'ZM' => 'Zambia',
+                                         'PR' => 'Puerto Rico',
+                                         'SH' => 'Saint Helena',
+                                         'MA' => "Ma-r\x{1ed1}c",
+                                         'SV' => 'El Salvador',
+                                         'MT' => 'Malta',
+                                         'MP' => "Qu\x{1ea7}n \x{111}\x{1ea3}o B\x{1eaf}c Mariana",
+                                         'UZ' => 'Uzbekistan',
+                                         'PW' => 'Palau',
+                                         'TK' => 'Tokelau',
+                                         'LR' => 'LIberia',
+                                         'TN' => 'Tunisia',
+                                         'EE' => 'Estonia',
+                                         'CK' => "Qu\x{1ea7}n \x{111}\x{1ea3}o Cook",
+                                         'BY' => 'Belarus',
+                                         'NO' => 'Na Uy',
+                                         'KR' => "Hàn Qu\x{1ed1}c",
+                                         'IC' => "Qu\x{1ea7}n \x{111}\x{1ea3}o Canary",
+                                         'BF' => 'Burkina Faso',
+                                         'AM' => 'Armenia',
+                                         'SR' => 'Suriname',
+                                         'MG' => 'Madagascar',
+                                         'BT' => 'Bhutan',
+                                         '009' => "Châu \x{110}\x{1ea1}i D\x{1b0}\x{1a1}ng",
+                                         'CF' => "C\x{1ed9}ng hòa Trung Phi",
+                                         '014' => "\x{110}ông Phi",
+                                         'BA' => "Bosnia và Herzegovina",
+                                         'AE' => "Các Ti\x{1ec3}u V\x{1b0}\x{1a1}ng qu\x{1ed1}c \x{1ea2} R\x{1ead}p Th\x{1ed1}ng nh\x{1ea5}t",
+                                         'TH' => "Thái Lan",
+                                         'EA' => "Ceuta và Melilla",
+                                         '002' => "Châu Phi",
+                                         '057' => "Vùng Micronesian",
+                                         'CC' => "Qu\x{1ea7}n \x{111}\x{1ea3}o Cocos",
+                                         'NC' => 'New Caledonia',
+                                         'EU' => "Liên Minh Châu Âu",
+                                         'TO' => 'Tonga',
+                                         'SE' => "Th\x{1ee5}y \x{110}i\x{1ec3}n",
+                                         'AZ' => 'Azerbaijan',
+                                         'AF' => 'Afghanistan',
+                                         'NG' => 'Nigeria',
+                                         'KE' => 'Kenya',
+                                         'BJ' => 'Benin',
+                                         'XK' => 'Kosovo',
+                                         'OM' => 'Oman',
+                                         '145' => "Tây Á",
+                                         'LK' => 'Sri Lanka',
+                                         'ID' => 'Indonesia',
+                                         'FM' => 'Micronesia',
+                                         'GM' => 'Gambia',
+                                         'LV' => 'Latvia',
+                                         'RU' => 'Nga',
+                                         '154' => "Mi\x{1ec1}n B\x{1eaf}c Châu Âu",
+                                         '034' => "Nam Á",
+                                         'FI' => "Ph\x{1ea7}n Lan",
+                                         'LU' => 'Luxembourg',
+                                         'VE' => 'Venezuela',
+                                         '054' => 'Melanesia',
+                                         'VI' => "Qu\x{1ea7}n \x{111}\x{1ea3}o Virgin thu\x{1ed9}c M\x{1ef9}",
+                                         'TV' => 'Tuvalu',
+                                         'SN' => 'Senegal',
+                                         'MX' => 'Mexico',
+                                         'IL' => 'Israel',
+                                         'GG' => 'Guernsey',
+                                         'HU' => 'Hungari',
+                                         'DO' => "C\x{1ed9}ng hòa Dominica",
+                                         'BQ' => "Caribe Hà Lan",
+                                         'KH' => 'Campuchia',
+                                         'TG' => 'Togo',
+                                         'BB' => 'Barbados',
+                                         'JE' => 'Jersey',
+                                         'DK' => "\x{110}an M\x{1ea1}ch",
+                                         'PA' => 'Panama',
+                                         'QA' => 'Qatar',
+                                         'CV' => 'Cape Verde',
+                                         'TA' => 'Tristan da Cunha',
+                                         'GD' => 'Grenada',
+                                         'MO' => 'Macao',
+                                         'MF' => 'Saint Martin',
+                                         'HR' => 'Croatia',
+                                         'CZ' => "C\x{1ed9}ng hòa Séc",
+                                         'BL' => "Saint Barthélemy",
+                                         'ST' => "São Tomé và Príncipe",
+                                         'AU' => "Úc",
+                                         'IR' => 'Iran',
+                                         '003' => "B\x{1eaf}c M\x{1ef9}",
+                                         'CG' => "C\x{1ed9}ng hòa Congo",
+                                         'GW' => 'Guinea-Bissau',
+                                         'BI' => 'Burundi',
+                                         'MK' => 'Macedonia (FYROM)',
+                                         'GR' => "Hy L\x{1ea1}p",
+                                         '021' => "Mi\x{1ec1}n B\x{1eaf}c Châu M\x{1ef9}",
+                                         'AG' => "Antigua và Barbuda",
+                                         'AI' => 'Anguilla',
+                                         'AN' => "Tây \x{1ea4}n Hà Lan",
+                                         'UA' => 'Ukraina',
+                                         'EH' => "Tây Sahara",
+                                         'KN' => "Saint Kitts và Nevis",
+                                         'SC' => 'Seychelles',
+                                         'NL' => "Hà Lan",
+                                         'MS' => 'Montserrat',
+                                         'HK' => "H\x{1ed3}ng Kông",
+                                         'EC' => 'Ecuador',
+                                         'MY' => 'Malaysia',
+                                         '013' => "Trung M\x{1ef9}",
+                                         'CR' => 'Costa Rica',
+                                         'VA' => "Thành Vatican",
+                                         'IO' => "Thu\x{1ed9}c \x{111}\x{1ecb}a Anh t\x{1ea1}i \x{1ea4}n \x{110}\x{1ed9} D\x{1b0}\x{1a1}ng",
+                                         'SD' => 'Sudan',
+                                         'RS' => 'Serbia',
+                                         'CN' => "Trung Qu\x{1ed1}c",
+                                         'UY' => 'Uruguay',
+                                         'PY' => 'Paraguay',
+                                         '053' => "Úc và New Zealand",
+                                         'MU' => 'Mauritius',
+                                         'LI' => 'Liechtenstein',
+                                         'CH' => "Th\x{1ee5}y S\x{129}",
+                                         'KG' => 'Kyrgyzstan',
+                                         'GH' => 'Ghana',
+                                         'NU' => 'Niue',
+                                         'US' => "Hoa K\x{1ef3}",
+                                         'PE' => 'Peru',
+                                         'SL' => 'Sierra Leone',
+                                         '001' => "Th\x{1ebf} gi\x{1edb}i",
+                                         'FJ' => 'Fiji',
+                                         '143' => "Trung Á",
+                                         'ER' => 'Eritrea',
+                                         'IQ' => "I-r\x{1eaf}c",
+                                         'AS' => "\x{110}\x{1ea3}o Somoa thu\x{1ed9}c M\x{1ef9}",
+                                         'TZ' => 'Tanzania',
+                                         'LY' => 'Li-bi',
+                                         'GT' => 'Guatemala',
+                                         'BM' => 'Bermuda',
+                                         'BV' => "\x{110}\x{1ea3}o Bouvet",
+                                         'LT' => "Lít-va",
+                                         '017' => 'Trung Phi',
+                                         'SG' => 'Singapore',
+                                         'PM' => "Saint Pierre và Miquelon",
+                                         'TT' => "Trinidad và Tobago",
+                                         'SY' => 'Syria',
+                                         'SK' => 'Slovakia',
+                                         '011' => "Tây Phi",
+                                         'AC' => "\x{110}\x{1ea3}o Ascension",
+                                         'GL' => 'Greenland',
+                                         'PG' => 'Papua New Guinea',
+                                         'KI' => 'Kiribati',
+                                         'CD' => "C\x{1ed9}ng hòa Dân ch\x{1ee7} Congo",
+                                         'AO' => 'Angola',
+                                         'BW' => 'Botswana',
+                                         'ZW' => 'Zimbabwe',
+                                         'VC' => "Saint Vincent và Grenadines",
+                                         'JP' => "Nh\x{1ead}t B\x{1ea3}n",
+                                         'NA' => 'Namibia',
+                                         'TJ' => 'Tajikistan',
+                                         'LC' => 'Saint Lucia',
+                                         'VU' => 'Vanuatu',
+                                         'MN' => "Mông C\x{1ed5}",
+                                         'IT' => "Ý",
+                                         'RE' => "Réunion",
+                                         'WS' => 'Samoa',
+                                         '151' => "\x{110}ông Âu",
+                                         '015' => "B\x{1eaf}c Phi",
+                                         'CW' => "Curaçao",
+                                         'EG' => "Ai C\x{1ead}p",
+                                         'FR' => "Pháp",
+                                         'RW' => 'Rwanda',
+                                         'UM' => "Các \x{111}\x{1ea3}o nh\x{1ecf} xa trung tâm thu\x{1ed9}c M\x{1ef9}",
+                                         'BE' => "B\x{1ec9}",
+                                         'LS' => 'Lesotho',
+                                         'SA' => "\x{1ea2} R\x{1ead}p Xê-út",
+                                         'ZA' => 'Nam Phi',
+                                         'DG' => 'Diego Garcia',
+                                         'PT' => "B\x{1ed3} \x{110}ào Nha",
+                                         'CA' => 'Canada',
+                                         'CM' => 'Cameroon',
+                                         'NP' => 'Nepal',
+                                         'PL' => 'Ba Lan',
+                                         'TM' => 'Turkmenistan',
+                                         'GA' => 'Gabon',
+                                         'KY' => "Qu\x{1ea7}n \x{111}\x{1ea3}o Cayman",
+                                         'LA' => "Lào",
+                                         'PH' => 'Philippin',
+                                         'NI' => 'Nicaragua',
+                                         'GU' => 'Guam',
+                                         'TF' => "Thu\x{1ed9}c \x{111}\x{1ecb}a Mi\x{1ec1}n Nam c\x{1ee7}a Pháp",
+                                         'KZ' => 'Kazakhstan',
+                                         '029' => "Ca-ri-bê",
+                                         'SJ' => "Svalbard và Jan Mayen",
+                                         'MM' => "Myanmar (Mi\x{1ebf}n \x{110}i\x{1ec7}n)",
+                                         'NR' => 'Nauru',
+                                         'DM' => 'Dominica',
+                                         'NE' => 'Niger',
+                                         'AD' => 'Andorra',
+                                         'MR' => 'Mauritania',
+                                         '039' => "Nam Âu",
+                                         'GS' => "Qu\x{1ea7}n \x{111}\x{1ea3}o Nam Georgia và Nam Sandwich",
+                                         'ME' => 'Montenegro',
+                                         'AX' => "Qu\x{1ea7}n \x{111}\x{1ea3}o Åland",
+                                         'VN' => "Vi\x{1ec7}t Nam",
+                                         'VG' => "Qu\x{1ea7}n \x{111}\x{1ea3}o Virgin thu\x{1ed9}c Anh",
+                                         'YE' => 'Yemen',
+                                         'CI' => "B\x{1edd} Bi\x{1ec3}n Ngà",
+                                         'DZ' => 'Algeria',
+                                         'GE' => 'Georgia',
+                                         '005' => "Nam M\x{1ef9}",
+                                         'CX' => "\x{110}\x{1ea3}o Giáng Sinh",
+                                         'LB' => "Li-b\x{103}ng",
+                                         '018' => "Mi\x{1ec1}n Nam Châu Phi",
+                                         'FK' => "Qu\x{1ea7}n \x{111}\x{1ea3}o Falkland (Islas Malvinas)",
+                                         'DE' => "\x{110}\x{1ee9}c",
+                                         'MV' => 'Maldives',
+                                         'PN' => "Qu\x{1ea7}n \x{111}\x{1ea3}o Pitcairn",
+                                         'BH' => 'Bahrain',
+                                         'GI' => 'Gibraltar',
+                                         'WF' => "Wallis và Futuna",
+                                         'RO' => 'Romania',
+                                         'AR' => 'Argentina',
+                                         'GP' => 'Guadeloupe',
+                                         'IN' => "\x{1ea4}n \x{110}\x{1ed9}",
+                                         'AW' => 'Aruba',
+                                         'FO' => "Qu\x{1ea7}n \x{111}\x{1ea3}o Faroe",
+                                         'BR' => 'Brazil',
+                                         'HN' => 'Honduras',
+                                         'MC' => 'Monaco',
+                                         'SB' => "Qu\x{1ea7}n \x{111}\x{1ea3}o Solomon",
+                                         'NZ' => 'New Zealand',
+                                         'PS' => 'Palestine',
+                                         'UG' => 'Uganda',
+                                         'SX' => 'Sint Maarten',
+                                         'GB' => "V\x{1b0}\x{1a1}ng qu\x{1ed1}c Anh",
+                                         'HT' => 'Haiti',
+                                         '019' => "Châu M\x{1ef9}",
+                                         'QO' => "Vùng xa xôi thu\x{1ed9}c Châu \x{110}\x{1ea1}i D\x{1b0}\x{1a1}ng",
+                                         'SS' => 'Nam Sudan',
+                                         'GF' => "Quiana thu\x{1ed9}c Pháp",
+                                         'ZZ' => "Vùng Ch\x{1b0}a bi\x{1ebf}t ho\x{1eb7}c không H\x{1ee3}p l\x{1ec7}",
+                                         'KM' => 'Comoros',
+                                         'KW' => "Cô-oét",
+                                         'MQ' => 'Martinique',
+                                         'TC' => "Qu\x{1ea7}n \x{111}\x{1ea3}o Turk và Caicos",
+                                         'CP' => "\x{110}\x{1ea3}o Clipperton",
+                                         'ES' => "Tây Ban Nha",
+                                         'MZ' => 'Mozambique',
+                                         'BO' => 'Bolivia',
+                                         'AL' => 'Albani',
+                                         '142' => "Châu Á",
+                                         '419' => "Châu M\x{1ef9} La-tinh",
+                                         'TR' => "Th\x{1ed5} Nh\x{129} K\x{1ef3}",
+                                         'MD' => 'Moldova',
+                                         'GN' => 'Guinea',
+                                         'CO' => 'Colombia',
+                                         'SI' => 'Slovenia',
+                                         'AQ' => "Nam C\x{1ef1}c",
+                                         'JO' => 'Jordan',
+                                         '061' => 'Polynesia',
+                                         'SM' => 'San Marino',
+                                         'CU' => 'Cuba',
+                                         'CL' => 'Chile',
+                                         'ML' => 'Mali',
+                                         'ET' => 'Ethiopia',
+                                         'IS' => 'Iceland',
+                                         '035' => "\x{110}ông Nam Á",
+                                         'BG' => 'Bungari',
+                                         'MH' => "Qu\x{1ea7}n \x{111}\x{1ea3}o Marshall",
+                                         'BS' => 'Bahamas',
+                                         'TL' => "\x{110}ông Timor",
+                                         'BZ' => 'Belize',
+                                         '150' => "Âu Châu",
+                                         'CY' => "Síp",
+                                         '155' => "Tây Âu",
+                                         'IM' => "\x{110}\x{1ea3}o Man",
+                                         'IE' => 'Ai-len',
+                                         'TW' => "\x{110}ài Loan",
+                                         'KP' => "Tri\x{1ec1}u Tiên",
+                                         'PF' => "Polynesia thu\x{1ed9}c Pháp",
+                                         'MW' => 'Malawi',
+                                         'GY' => 'Guyana',
+                                         'GQ' => "Guinea Xích \x{110}\x{1ea1}o",
+                                         'PK' => 'Pakistan',
+                                         'NF' => "\x{110}\x{1ea3}o Norfolk",
+                                         'SO' => 'Somali',
+                                         'TD' => 'Chad',
+                                         'BD' => 'Bangladesh',
+                                         'HM' => "\x{110}\x{1ea3}o Heard và Qu\x{1ea7}n \x{111}\x{1ea3}o McDonald"
+                                       },
+                      'languages' => {
+                                       'sid' => "Ti\x{1ebf}ng Sidamo",
+                                       'ne' => "Ti\x{1ebf}ng Nepal",
+                                       'tr' => "Ti\x{1ebf}ng Th\x{1ed5} Nh\x{129} K\x{1ef3}",
+                                       'ki' => "Ti\x{1ebf}ng Kikuyu",
+                                       'gl' => "Ti\x{1ebf}ng Galician",
+                                       'lun' => "Ti\x{1ebf}ng Lunda",
+                                       'kum' => "Ti\x{1ebf}ng Kumyk",
+                                       'fat' => "Ti\x{1ebf}ng Fanti",
+                                       'ckb' => "Ti\x{1ebf}ng Kurd Sorani",
+                                       'ro' => "Ti\x{1ebf}ng Romania",
+                                       'br' => "Ti\x{1ebf}ng Breton",
+                                       'pt_PT' => "Ti\x{1ebf}ng B\x{1ed3} \x{110}ào Nha (I-bê-ri)",
+                                       'syc' => "Ti\x{1ebf}ng Syria C\x{1ed5} \x{111}i\x{1ec3}n",
+                                       'gil' => "Ti\x{1ebf}ng Gilbert",
+                                       'cs' => "Ti\x{1ebf}ng Séc",
+                                       'sux' => "Ti\x{1ebf}ng Sumeria",
+                                       'km' => "Ti\x{1ebf}ng Campuchia",
+                                       'af' => "Ti\x{1ebf}ng Nam Phi",
+                                       'tai' => "Ngôn ng\x{1eef} Thái",
+                                       'mun' => "Ngôn ng\x{1eef} Munda",
+                                       'ga' => "Ti\x{1ebf}ng Ai-len",
+                                       'hsb' => "Ti\x{1ebf}ng Th\x{1b0}\x{1ee3}ng Sorbia",
+                                       'ada' => "Ti\x{1ebf}ng Adangme",
+                                       'dak' => "Ti\x{1ebf}ng Dakota",
+                                       'arn' => "Ti\x{1ebf}ng Araucanian",
+                                       'mi' => "Ti\x{1ebf}ng Maori",
+                                       'sv' => "Ti\x{1ebf}ng Th\x{1ee5}y \x{110}i\x{1ec3}n",
+                                       'za' => "Ti\x{1ebf}ng Zhuang",
+                                       'mkh' => "Ngôn ng\x{1eef} Mon-Khmer",
+                                       'fa' => "Ti\x{1ebf}ng Ba T\x{1b0}",
+                                       'pau' => "Ti\x{1ebf}ng Palauan",
+                                       'wal' => "Ti\x{1ebf}ng Walamo",
+                                       'afh' => "Ti\x{1ebf}ng Afrihili",
+                                       'man' => "Ti\x{1ebf}ng Mandingo",
+                                       'cmc' => "Ngôn ng\x{1eef} Chamic",
+                                       've' => "Ti\x{1ebf}ng Venda",
+                                       'na' => "Ti\x{1ebf}ng Nauru",
+                                       'ba' => "Ti\x{1ebf}ng Bashkir",
+                                       'pra' => "Ngôn ng\x{1eef} Prakrit",
+                                       'id' => "Ti\x{1ebf}ng Indonesia",
+                                       'arc' => "Ti\x{1ebf}ng Aramaic",
+                                       'trv' => "Ti\x{1ebf}ng Taroko",
+                                       'si' => "Ti\x{1ebf}ng Sinhala",
+                                       'kac' => "Ti\x{1ebf}ng Kachin",
+                                       'om' => "Ti\x{1ebf}ng Oromo",
+                                       'rwk' => "Ti\x{1ebf}ng Rwa",
+                                       'fi' => "Ti\x{1ebf}ng Ph\x{1ea7}n Lan",
+                                       'mai' => "Ti\x{1ebf}ng Maithili",
+                                       'wo' => "Ti\x{1ebf}ng Wolof",
+                                       'ii' => "Ti\x{1ebf}ng Di T\x{1ee9} Xuyên",
+                                       'yue' => "Ti\x{1ebf}ng Qu\x{1ea3}ng \x{110}ông",
+                                       'maf' => "Ti\x{1ebf}ng Mafa",
+                                       'bi' => "Ti\x{1ebf}ng Bislama",
+                                       'ace' => "Ti\x{1ebf}ng Achinese",
+                                       'kj' => "Ti\x{1ebf}ng Kuanyama",
+                                       'ota' => "Ti\x{1ebf}ng Th\x{1ed5} Nh\x{129} K\x{1ef3} Ottoman",
+                                       'xal' => "Ti\x{1ebf}ng Kalmyk",
+                                       'mn' => "Ti\x{1ebf}ng Mông C\x{1ed5}",
+                                       'nv' => "Ti\x{1ebf}ng Navajo",
+                                       'gd' => "Ti\x{1ebf}ng Xent\x{1a1} (Xc\x{1ed1}t len)",
+                                       'map' => "Ngôn ng\x{1eef} Úc-Á",
+                                       'bai' => "Ngôn ng\x{1eef} Bamileke",
+                                       'ber' => "Ti\x{1ebf}ng Berber",
+                                       'cr' => "Ti\x{1ebf}ng Cree",
+                                       'sg' => "Ti\x{1ebf}ng Sango",
+                                       'kam' => "Ti\x{1ebf}ng Kamba",
+                                       'yao' => "Ti\x{1ebf}ng Yao",
+                                       'ira' => "Ngôn ng\x{1eef} Iran",
+                                       'pon' => "Ti\x{1ebf}ng Pohnpeian",
+                                       'tum' => "Ti\x{1ebf}ng Tumbuka",
+                                       'suk' => "Ti\x{1ebf}ng Sukuma",
+                                       'enm' => "Ti\x{1ebf}ng Anh Trung c\x{1ed5}",
+                                       'bej' => "Ti\x{1ebf}ng Beja",
+                                       'nub' => "Ngôn ng\x{1eef} Nubia",
+                                       'dgr' => "Ti\x{1ebf}ng Dogrib",
+                                       'bg' => "Ti\x{1ebf}ng Bulgaria",
+                                       'guz' => "Ti\x{1ebf}ng Gusii",
+                                       'del' => "Ti\x{1ebf}ng Delaware",
+                                       'chr' => "Ti\x{1ebf}ng Cherokee",
+                                       'sq' => "Ti\x{1ebf}ng An-ba-ni",
+                                       'ca' => "Ti\x{1ebf}ng Catalan",
+                                       'es_419' => "Ti\x{1ebf}ng Tây Ban Nha (M\x{1ef9} La tinh)",
+                                       'paa' => "Ngôn ng\x{1eef} Papua",
+                                       'nds' => "Ti\x{1ebf}ng H\x{1ea1} Giéc-man",
+                                       'luo' => "Ti\x{1ebf}ng Luo",
+                                       'es' => "Ti\x{1ebf}ng Tây Ban Nha",
+                                       'sw' => "Ti\x{1ebf}ng Swahili",
+                                       'bez' => "Ti\x{1ebf}ng Bena",
+                                       'yap' => "Ti\x{1ebf}ng Yap",
+                                       'sla' => "Ngôn ng\x{1eef} Slav\x{1a1}",
+                                       'sa' => "Ti\x{1ebf}ng Ph\x{1ea1}n",
+                                       'mua' => "Ti\x{1ebf}ng Mundang",
+                                       'anp' => "Ti\x{1ebf}ng Angika",
+                                       'krl' => "Ti\x{1ebf}ng Karelian",
+                                       'loz' => "Ti\x{1ebf}ng Lozi",
+                                       'ie' => "Ti\x{1ebf}ng Interlingue",
+                                       'tl' => "Ti\x{1ebf}ng Tagalog",
+                                       'dyo' => "Ti\x{1ebf}ng Jola-Fonyi",
+                                       'nd' => "B\x{1eaf}c Ndebele",
+                                       'hil' => "Ti\x{1ebf}ng Hiligaynon",
+                                       'udm' => "Ti\x{1ebf}ng Udmurt",
+                                       'de' => "Ti\x{1ebf}ng \x{110}\x{1ee9}c",
+                                       'kbd' => "Ti\x{1ebf}ng Kabardian",
+                                       'tzm' => "Ti\x{1ebf}ng Tamazight Mi\x{1ec1}n Trung Ma-r\x{1ed1}c",
+                                       'mag' => "Ti\x{1ebf}ng Magahi",
+                                       'hz' => "Ti\x{1ebf}ng Herero",
+                                       'sba' => "Ti\x{1ebf}ng Ngambay",
+                                       'nai' => "Ngôn ng\x{1eef} Th\x{1ed5} dân B\x{1eaf}c M\x{1ef9}",
+                                       'haw' => "Ti\x{1ebf}ng Hawaii",
+                                       'sel' => "Ti\x{1ebf}ng Selkup",
+                                       'frr' => "Ti\x{1ebf}ng Frisian Mi\x{1ec1}n B\x{1eaf}c",
+                                       'he' => "Ti\x{1ebf}ng Do Thái",
+                                       'zh' => "Ti\x{1ebf}ng Trung",
+                                       'lol' => "Ti\x{1ebf}ng Mongo",
+                                       'dum' => "Ti\x{1ebf}ng Hà Lan Trung c\x{1ed5}",
+                                       'sat' => "Ti\x{1ebf}ng Santali",
+                                       'tyv' => "Ti\x{1ebf}ng Tuvinian",
+                                       'mwr' => "Ti\x{1ebf}ng Marwari",
+                                       'egy' => "Ti\x{1ebf}ng Ai C\x{1ead}p c\x{1ed5}",
+                                       'twq' => "Ti\x{1ebf}ng Tasawaq",
+                                       'pt_BR' => "Ti\x{1ebf}ng B\x{1ed3} \x{110}ào Nha (Braxin)",
+                                       'da' => "Ti\x{1ebf}ng \x{110}an M\x{1ea1}ch",
+                                       'ug' => "Ti\x{1ebf}ng Duy Ngô Nh\x{129}",
+                                       'sbp' => "Ti\x{1ebf}ng Sangu",
+                                       'moh' => "Ti\x{1ebf}ng Mohawk",
+                                       'ta' => "Ti\x{1ebf}ng Tamil",
+                                       'ady' => "Ti\x{1ebf}ng Adyghe",
+                                       'efi' => "Ti\x{1ebf}ng Efik",
+                                       'rw' => "Ti\x{1ebf}ng Kinyarwanda",
+                                       'mos' => "Ti\x{1ebf}ng Mossi",
+                                       'doi' => "Ti\x{1ebf}ng Dogri",
+                                       'saq' => "Ti\x{1ebf}ng Samburu",
+                                       'sem' => "Ngôn ng\x{1eef} Semitic",
+                                       'zun' => "Ti\x{1ebf}ng Zuni",
+                                       'cus' => "Ti\x{1ebf}ng Cushit",
+                                       'mo' => "Ti\x{1ebf}ng Moldova",
+                                       'cop' => "Ti\x{1ebf}ng Coptic",
+                                       'mis' => "Ngôn ng\x{1eef} Khác",
+                                       'ps' => "Ti\x{1ebf}ng Pushto",
+                                       'ksf' => "Ti\x{1ebf}ng Bafia",
+                                       'av' => "Ti\x{1ebf}ng Avaric",
+                                       'fon' => "Ti\x{1ebf}ng Fon",
+                                       'kab' => "Ti\x{1ebf}ng Kabyle",
+                                       'nic' => "Ngôn ng\x{1eef} Niger-Kordofan",
+                                       'is' => "Ti\x{1ebf}ng Iceland",
+                                       'qu' => "Ti\x{1ebf}ng Quechua",
+                                       'shn' => "Ti\x{1ebf}ng Shan",
+                                       'mt' => "Ti\x{1ebf}ng Malt",
+                                       'men' => "Ti\x{1ebf}ng Mende",
+                                       'la' => "Ti\x{1ebf}ng La-tinh",
+                                       'ybb' => "Ti\x{1ebf}ng Yemba",
+                                       'bh' => "Ti\x{1ebf}ng Bihari",
+                                       'oc' => "Ti\x{1ebf}ng Occitan",
+                                       'pap' => "Ti\x{1ebf}ng Papiamento",
+                                       'zxx' => "Không có n\x{1ed9}i dung ngôn ng\x{1eef}",
+                                       'art' => "Ngôn ng\x{1eef} Nhân t\x{1ea1}o",
+                                       'nyo' => "Ti\x{1ebf}ng Nyoro",
+                                       'kha' => "Ti\x{1ebf}ng Khasi",
+                                       'hai' => "Ti\x{1ebf}ng Haida",
+                                       'naq' => "Ti\x{1ebf}ng Nama",
+                                       'ach' => "Ti\x{1ebf}ng Acoli",
+                                       'kbl' => "Ti\x{1ebf}ng Kanembu",
+                                       'ng' => "Ti\x{1ebf}ng Ndonga",
+                                       'dv' => "Ti\x{1ebf}ng Divehi",
+                                       'jv' => "Ti\x{1ebf}ng Java",
+                                       'smj' => "Ti\x{1ebf}ng Lule Sami",
+                                       'hi' => "Ti\x{1ebf}ng Hindi",
+                                       'lad' => "Ti\x{1ebf}ng Ladino",
+                                       'csb' => "Ti\x{1ebf}ng Kashubia",
+                                       'os' => "Ti\x{1ebf}ng Ossetic",
+                                       'fr' => "Ti\x{1ebf}ng Pháp",
+                                       'got' => "Ti\x{1ebf}ng Gô-tích",
+                                       'jmc' => "Ti\x{1ebf}ng Machame",
+                                       'kaa' => "Ti\x{1ebf}ng Kara-Kalpak",
+                                       'dzg' => "Ti\x{1ebf}ng Dazaga",
+                                       'sr' => "Ti\x{1ebf}ng Serbia",
+                                       'kok' => "Ti\x{1ebf}ng Konkani",
+                                       'vo' => "Ti\x{1ebf}ng Volapük",
+                                       'xog' => "Ti\x{1ebf}ng Soga",
+                                       'tet' => 'Tetum',
+                                       'fj' => "Ti\x{1ebf}ng Fiji",
+                                       'srr' => "Ti\x{1ebf}ng Serer",
+                                       'pam' => "Ti\x{1ebf}ng Pampanga",
+                                       'cpe' => "Ti\x{1ebf}ng Creole ho\x{1eb7}c Pidgin g\x{1ed1}c Anh",
+                                       'kaw' => "Ti\x{1ebf}ng Kawi",
+                                       'sd' => "Ti\x{1ebf}ng Sindhi",
+                                       'bho' => "Ti\x{1ebf}ng Bhojpuri",
+                                       'gon' => "Ti\x{1ebf}ng Gondi",
+                                       'ha' => "Ti\x{1ebf}ng Hausa",
+                                       'gba' => "Ti\x{1ebf}ng Gbaya",
+                                       'hit' => "Ti\x{1ebf}ng Hittite",
+                                       'lg' => "Ti\x{1ebf}ng Ganda",
+                                       'shu' => "Ti\x{1ebf}ng \x{1ea2}-R\x{1ead}p Chad",
+                                       'bug' => "Ti\x{1ebf}ng Bugin",
+                                       'mul' => "Nhi\x{1ec1}u Ngôn ng\x{1eef}",
+                                       'dua' => "Ti\x{1ebf}ng Duala",
+                                       'tig' => "Ti\x{1ebf}ng Tigre",
+                                       'mye' => "Ti\x{1ebf}ng Myene",
+                                       'mr' => "Ti\x{1ebf}ng Marathi",
+                                       'cad' => "Ti\x{1ebf}ng Caddo",
+                                       'rm' => "Ti\x{1ebf}ng Romansh",
+                                       'kaj' => "Ti\x{1ebf}ng Jju",
+                                       'ilo' => "Ti\x{1ebf}ng Iloko",
+                                       'kn' => "Ti\x{1ebf}ng Kannada",
+                                       'rn' => "Ti\x{1ebf}ng Rundi",
+                                       'uga' => "Ti\x{1ebf}ng Ugaritic",
+                                       'nog' => "Ti\x{1ebf}ng Nogai",
+                                       'cho' => "Ti\x{1ebf}ng Choctaw",
+                                       'nmg' => "Ti\x{1ebf}ng Kwasio",
+                                       'ik' => "Ti\x{1ebf}ng Inupiaq",
+                                       'hmn' => "Ti\x{1ebf}ng Hmông",
+                                       'mg' => "Ti\x{1ebf}ng Malagasy",
+                                       'ru' => "Ti\x{1ebf}ng Nga",
+                                       'nnh' => "Ti\x{1ebf}ng Ngiemboon",
+                                       'kar' => "Ti\x{1ebf}ng Karen",
+                                       'ku' => "Ti\x{1ebf}ng Kurd",
+                                       'znd' => "Ti\x{1ebf}ng Zande",
+                                       'lo' => "Ti\x{1ebf}ng Lào",
+                                       'lb' => "Ti\x{1ebf}ng Luxembourg",
+                                       'mus' => "Ti\x{1ebf}ng Creek",
+                                       'ml' => "Ti\x{1ebf}ng Malayalam",
+                                       'grc' => "Ti\x{1ebf}ng Hy L\x{1ea1}p c\x{1ed5}",
+                                       'sas' => "Ti\x{1ebf}ng Sasak",
+                                       'nah' => "Ti\x{1ebf}ng Nahuatl",
+                                       'peo' => "Ti\x{1ebf}ng Ba T\x{1b0} c\x{1ed5}",
+                                       'bal' => "Ti\x{1ebf}ng Baluchi",
+                                       'nyn' => "Ti\x{1ebf}ng Nyankole",
+                                       'kho' => "Ti\x{1ebf}ng Khotan",
+                                       'kl' => "Ti\x{1ebf}ng Kalaallisut",
+                                       'bs' => "Ti\x{1ebf}ng Nam T\x{1b0}",
+                                       'to' => "Ti\x{1ebf}ng Tonga",
+                                       'cu' => "Ti\x{1ebf}ng Slav\x{1a1} Nhà th\x{1edd}",
+                                       'es_ES' => "Ti\x{1ebf}ng Tây Ban Nha (I-bê-ri)",
+                                       'ch' => "Ti\x{1ebf}ng Chamorro",
+                                       'eu' => "Ti\x{1ebf}ng Basque",
+                                       'wa' => "Ti\x{1ebf}ng Walloon",
+                                       'ine' => "Ngôn ng\x{1eef} \x{1ea4}n-Âu",
+                                       'pl' => "Ti\x{1ebf}ng Ba Lan",
+                                       'ay' => "Ti\x{1ebf}ng Aymara",
+                                       'lez' => "Ti\x{1ebf}ng Lezghian",
+                                       'den' => "Ti\x{1ebf}ng Slave",
+                                       'non' => "Ti\x{1ebf}ng Na Uy c\x{1ed5}",
+                                       'apa' => "Ngôn ng\x{1eef} Apache",
+                                       'lua' => "Ti\x{1ebf}ng Luba-Lulua",
+                                       'an' => "Ti\x{1ebf}ng Aragon",
+                                       'kfo' => "Ti\x{1ebf}ng Koro",
+                                       'khi' => "Ngôn ng\x{1eef} Khoisan",
+                                       'ceb' => "Ti\x{1ebf}ng Cebuano",
+                                       'tt' => "Ti\x{1ebf}ng Tatar",
+                                       'ast' => "Ti\x{1ebf}ng Asturias",
+                                       'ss' => "Ti\x{1ebf}ng Swati",
+                                       'or' => "Ti\x{1ebf}ng Ô-ri-a",
+                                       'dra' => "Ngôn ng\x{1eef} Dravidia",
+                                       'xh' => "Ti\x{1ebf}ng Xhosa",
+                                       'th' => "Ti\x{1ebf}ng Thái",
+                                       'tut' => "Ngôn ng\x{1eef} Altai",
+                                       'iba' => "Ti\x{1ebf}ng Iban",
+                                       'sam' => "Ti\x{1ebf}ng Samaritan Aramaic",
+                                       'chg' => "Ti\x{1ebf}ng Chagatai",
+                                       'gn' => "Ti\x{1ebf}ng Guarani",
+                                       'hr' => "Ti\x{1ebf}ng Croatia",
+                                       'ypk' => "Ti\x{1ebf}ng Yupik",
+                                       'niu' => "Ti\x{1ebf}ng Niuean",
+                                       'cv' => "Ti\x{1ebf}ng Chuvash",
+                                       'tmh' => "Ti\x{1ebf}ng Tamashek",
+                                       'chn' => "Bi\x{1ec7}t ng\x{1eef} Chinook",
+                                       'awa' => "Ti\x{1ebf}ng Awadhi",
+                                       'ja' => "Ti\x{1ebf}ng Nh\x{1ead}t",
+                                       'dsb' => "Ti\x{1ebf}ng H\x{1ea1} Sorbia",
+                                       'ijo' => "Ti\x{1ebf}ng Ijo",
+                                       'bla' => "Ti\x{1ebf}ng Siksika",
+                                       'cay' => "Ti\x{1ebf}ng Cayuga",
+                                       'nl' => "Ti\x{1ebf}ng Hà Lan",
+                                       'wae' => "Ti\x{1ebf}ng Walser",
+                                       'ebu' => "Ti\x{1ebf}ng Embu",
+                                       'nap' => "Ti\x{1ebf}ng Napoli",
+                                       'el' => "Ti\x{1ebf}ng Hy L\x{1ea1}p",
+                                       'kk' => "Ti\x{1ebf}ng Kazakh",
+                                       'elx' => "Ti\x{1ebf}ng Elamite",
+                                       'gor' => "Ti\x{1ebf}ng Gorontalo",
+                                       'mde' => "Ti\x{1ebf}ng Maba",
+                                       'tlh' => "Ti\x{1ebf}ng Klingon",
+                                       'my' => "Ti\x{1ebf}ng Mi\x{1ebf}n \x{110}i\x{1ec7}n",
+                                       'sog' => "Ti\x{1ebf}ng Sogdien",
+                                       'see' => "Ti\x{1ebf}ng Seneca",
+                                       'krc' => "Ti\x{1ebf}ng Karachay-Balkar",
+                                       'mno' => "Ngôn ng\x{1eef} Manobo",
+                                       'tn' => "Ti\x{1ebf}ng Tswana",
+                                       'co' => "Ti\x{1ebf}ng Corse",
+                                       'bas' => "Ti\x{1ebf}ng Basaa",
+                                       'bnt' => "Ti\x{1ebf}ng Ban-tu",
+                                       'lam' => "Ti\x{1ebf}ng Lamba",
+                                       'bkm' => "Ti\x{1ebf}ng Kom",
+                                       'bo' => "Ti\x{1ebf}ng Tây T\x{1ea1}ng",
+                                       'cy' => "Ti\x{1ebf}ng Wales",
+                                       'de_CH' => "Ti\x{1ebf}ng Th\x{1b0}\x{1ee3}ng Giéc-man (Th\x{1ee5}y S\x{129})",
+                                       'mwl' => "Ti\x{1ebf}ng Miranda",
+                                       'frm' => "Ti\x{1ebf}ng Pháp Trung c\x{1ed5}",
+                                       'kut' => "Ti\x{1ebf}ng Kutenai",
+                                       'ky' => "Ti\x{1ebf}ng Kyrgyz",
+                                       'ti' => "Ti\x{1ebf}ng Tigrigya",
+                                       'rar' => "Ti\x{1ebf}ng Rarotongan",
+                                       'bax' => "Ti\x{1ebf}ng Bamun",
+                                       'ka' => "Ti\x{1ebf}ng Gruzia",
+                                       'iro' => "Ngôn ng\x{1eef} Iroquoia",
+                                       'kea' => "Ti\x{1ebf}ng Kabuverdianu",
+                                       'sal' => "Ngôn ng\x{1eef} Salishan",
+                                       'und' => "Ngôn ng\x{1eef} không xác \x{111}\x{1ecb}nh",
+                                       'hu' => "Ti\x{1ebf}ng Hungary",
+                                       'rof' => "Ti\x{1ebf}ng Rombo",
+                                       'byn' => "Ti\x{1ebf}ng Blin",
+                                       'ssa' => "Ngôn ng\x{1eef} Nilo-Sahara",
+                                       'mgh' => "Ti\x{1ebf}ng Makhuwa-Meetto",
+                                       'se' => "B\x{1eaf}c Sami",
+                                       'dyu' => "Ti\x{1ebf}ng Dyula",
+                                       'mic' => "Ti\x{1ebf}ng Micmac",
+                                       'kv' => "Ti\x{1ebf}ng Komi",
+                                       'dje' => "Ti\x{1ebf}ng Zarma",
+                                       'son' => "Ti\x{1ebf}ng Songhai",
+                                       'bin' => "Ti\x{1ebf}ng Bini",
+                                       'kcg' => "Ti\x{1ebf}ng Tyap",
+                                       'sco' => "Ti\x{1ebf}ng Scots",
+                                       'teo' => "Ti\x{1ebf}ng Teso",
+                                       'no' => "Ti\x{1ebf}ng Na Uy",
+                                       'lv' => "Ti\x{1ebf}ng Latvia",
+                                       'shi' => "Ti\x{1ebf}ng Tachelhit",
+                                       'zgh' => "Ti\x{1ebf}ng Tamazight Chu\x{1ea9}n c\x{1ee7}a Ma-r\x{1ed1}c",
+                                       'ln' => "Ti\x{1ebf}ng Lingala",
+                                       'rom' => "Ti\x{1ebf}ng Rumani",
+                                       'kde' => "Ti\x{1ebf}ng Makonde",
+                                       'mas' => "Ti\x{1ebf}ng Masai",
+                                       'ab' => "Ti\x{1ebf}ng Abkhazia",
+                                       'roa' => "Ngôn ng\x{1eef} Roman",
+                                       'chm' => "Ti\x{1ebf}ng Mari",
+                                       'kkj' => "Ti\x{1ebf}ng Kako",
+                                       'li' => "Ti\x{1ebf}ng Limburg",
+                                       'kpe' => "Ti\x{1ebf}ng Kpelle",
+                                       'jpr' => "Ti\x{1ebf}ng Judeo-Ba T\x{1b0}",
+                                       'seh' => "Ti\x{1ebf}ng Sena",
+                                       'fan' => "Ti\x{1ebf}ng Fang",
+                                       'zen' => "Ti\x{1ebf}ng Zenaga",
+                                       'gmh' => "Ti\x{1ebf}ng Th\x{1b0}\x{1ee3}ng Giéc-man Trung c\x{1ed5}",
+                                       'gv' => "Ti\x{1ebf}ng Manx",
+                                       'bra' => "Ti\x{1ebf}ng Braj",
+                                       'nia' => "Ti\x{1ebf}ng Nias",
+                                       'fil' => "Ti\x{1ebf}ng Philipin",
+                                       'pa' => "Ti\x{1ebf}ng Punjab",
+                                       'am' => "Ti\x{1ebf}ng Amharic",
+                                       'gay' => "Ti\x{1ebf}ng Gayo",
+                                       'gem' => "Ngôn ng\x{1eef} Giéc-man",
+                                       'ee' => "Ti\x{1ebf}ng Ewe",
+                                       'bat' => "Ngôn ng\x{1eef} Baltic",
+                                       'umb' => "Ti\x{1ebf}ng Umbundu",
+                                       'alt' => "Ti\x{1ebf}ng Altai Mi\x{1ec1}n Nam",
+                                       'bem' => "Ti\x{1ebf}ng Bemba",
+                                       'car' => "Ti\x{1ebf}ng Carib",
+                                       'lag' => "Ti\x{1ebf}ng Langi",
+                                       'eo' => "Ti\x{1ebf}ng Qu\x{1ed1}c T\x{1ebf} Ng\x{1eef}",
+                                       'fy' => "Ti\x{1ebf}ng Frisia",
+                                       'as' => "Ti\x{1ebf}ng Assam",
+                                       'ae' => "Ti\x{1ebf}ng Avestan",
+                                       'nqo' => "Ti\x{1ebf}ng N'Ko",
+                                       'bua' => "Ti\x{1ebf}ng Buriat",
+                                       'ia' => "Ti\x{1ebf}ng Khoa H\x{1ecd}c Qu\x{1ed1}c T\x{1ebf}",
+                                       'vi' => "Ti\x{1ebf}ng Vi\x{1ec7}t",
+                                       'day' => "Ti\x{1ebf}ng Dayak",
+                                       'bm' => "Ti\x{1ebf}ng Bambara",
+                                       'mdf' => "Ti\x{1ebf}ng Moksha",
+                                       'nl_BE' => "Ti\x{1ebf}ng Flemish",
+                                       'nr' => "Ti\x{1ebf}ng Ndebele Mi\x{1ec1}n Nam",
+                                       'luy' => "Ti\x{1ebf}ng Luyia",
+                                       'kw' => "Ti\x{1ebf}ng Cornish",
+                                       'nym' => "Ti\x{1ebf}ng Nyamwezi",
+                                       'pag' => "Ti\x{1ebf}ng Pangasinan",
+                                       'ang' => "Ti\x{1ebf}ng Anh c\x{1ed5}",
+                                       'uz' => "Ti\x{1ebf}ng Uzbek",
+                                       'fiu' => "Ngôn ng\x{1eef} Finno-Ugrian",
+                                       'ht' => "Ti\x{1ebf}ng Haiti",
+                                       'brx' => "Ti\x{1ebf}ng Bodo",
+                                       'yo' => "Ti\x{1ebf}ng Yoruba",
+                                       'bad' => "Ti\x{1ebf}ng Banda",
+                                       'ter' => "Ti\x{1ebf}ng Tereno",
+                                       'gu' => "Ti\x{1ebf}ng Gujarati",
+                                       'mni' => "Ti\x{1ebf}ng Manipuri",
+                                       'kos' => "Ti\x{1ebf}ng Kosrae",
+                                       'raj' => "Ti\x{1ebf}ng Rajasthani",
+                                       'asa' => "Ti\x{1ebf}ng Asu",
+                                       'srn' => "Ti\x{1ebf}ng Sranan Tongo",
+                                       'oj' => "Ti\x{1ebf}ng Ojibwa",
+                                       'sk' => "Ti\x{1ebf}ng Slovak",
+                                       'cai' => "Ngôn ng\x{1eef} Th\x{1ed5} dân Trung M\x{1ef9}",
+                                       'eka' => "Ti\x{1ebf}ng Ekajuk",
+                                       'ty' => "Ti\x{1ebf}ng Tahiti",
+                                       'gaa' => "Ti\x{1ebf}ng Ga",
+                                       'jrb' => "Ti\x{1ebf}ng Judeo-\x{1ea2} R\x{1ead}p",
+                                       'hup' => "Ti\x{1ebf}ng Hupa",
+                                       'phi' => "Ngôn ng\x{1eef} Philippine",
+                                       'akk' => "Ti\x{1ebf}ng Akkadia",
+                                       'new' => "Ti\x{1ebf}ng Newari",
+                                       'osa' => "Ti\x{1ebf}ng Osage",
+                                       'et' => "Ti\x{1ebf}ng Estonia",
+                                       'sad' => "Ti\x{1ebf}ng Sandawe",
+                                       'mk' => "Ti\x{1ebf}ng Macedonia",
+                                       'cpf' => "Ti\x{1ebf}ng Creole ho\x{1eb7}c Pidgin g\x{1ed1}c Pháp",
+                                       'en' => "Ti\x{1ebf}ng Anh",
+                                       'aus' => "Ngôn ng\x{1eef} Châu Úc",
+                                       'zza' => "Ti\x{1ebf}ng Zaza",
+                                       'chb' => "Ti\x{1ebf}ng Chibcha",
+                                       'zu' => "Ti\x{1ebf}ng Zulu",
+                                       'alg' => "Ngôn ng\x{1eef} Algonquin",
+                                       'snk' => "Ti\x{1ebf}ng Soninke",
+                                       'pro' => "Ti\x{1ebf}ng Provençal c\x{1ed5}",
+                                       'mga' => "Ti\x{1ebf}ng Ai-len Trung c\x{1ed5}",
+                                       'wak' => "Ngôn ng\x{1eef} Wakashan",
+                                       'swc' => "Ti\x{1ebf}ng Swahili Công-gô",
+                                       'nn' => "Ti\x{1ebf}ng Na Uy (Nynorsk)",
+                                       'bn' => "Ti\x{1ebf}ng Bengali",
+                                       'pal' => "Ti\x{1ebf}ng Pahlavi",
+                                       'ban' => "Ti\x{1ebf}ng Bali",
+                                       'min' => "Ti\x{1ebf}ng Minangkabau",
+                                       'ar' => "Ti\x{1ebf}ng \x{1ea2} R\x{1ead}p",
+                                       'sm' => "Ti\x{1ebf}ng Samoa",
+                                       'grb' => "Ti\x{1ebf}ng Grebo",
+                                       'ny' => "Ti\x{1ebf}ng Nyanja",
+                                       'was' => "Ti\x{1ebf}ng Washo",
+                                       'bum' => "Ti\x{1ebf}ng Bulu",
+                                       'sus' => "Ti\x{1ebf}ng Susu",
+                                       'khq' => "Ti\x{1ebf}ng Koyra Chiini",
+                                       'ksh' => "Ti\x{1ebf}ng Cologne",
+                                       'byv' => "Ti\x{1ebf}ng Medumba",
+                                       'cel' => "Ngôn ng\x{1eef} Xen-t\x{1a1}",
+                                       'gsw' => "Ti\x{1ebf}ng \x{110}\x{1ee9}c (Th\x{1ee5}y S\x{129})",
+                                       'him' => "Ti\x{1ebf}ng Himachali",
+                                       'tpi' => "Ti\x{1ebf}ng Tok Pisin",
+                                       'yav' => "Ti\x{1ebf}ng Yangben",
+                                       'ibb' => "Ti\x{1ebf}ng Ibibio",
+                                       'nzi' => "Ti\x{1ebf}ng Nzima",
+                                       'ain' => "Ti\x{1ebf}ng Ainu",
+                                       'st' => "Ti\x{1ebf}ng Sesotho",
+                                       'ko' => "Ti\x{1ebf}ng Hàn Qu\x{1ed1}c",
+                                       'sit' => "Ngôn ng\x{1eef} Sino-Tây T\x{1ea1}ng",
+                                       'ak' => "Ti\x{1ebf}ng Akan",
+                                       'chp' => "Ti\x{1ebf}ng Chipewyan",
+                                       'bss' => "Ti\x{1ebf}ng Akoose",
+                                       'mfe' => "Ti\x{1ebf}ng Morisyen",
+                                       'zh_Hant' => "Ti\x{1ebf}ng Trung (Ph\x{1ed3}n th\x{1ec3})",
+                                       'ssy' => "Ti\x{1ebf}ng Saho",
+                                       'wen' => "Ngôn ng\x{1eef} Sorbia",
+                                       'nwc' => "Ti\x{1ebf}ng Newari C\x{1ed5} \x{111}i\x{1ec3}n",
+                                       'sms' => "Ti\x{1ebf}ng Skolt Sami",
+                                       'rap' => "Ti\x{1ebf}ng Rapanui",
+                                       'oto' => "Ngôn ng\x{1eef} Otomia",
+                                       'hy' => "Ti\x{1ebf}ng Armenia",
+                                       'ms' => "Ti\x{1ebf}ng Malaysia",
+                                       'fro' => "Ti\x{1ebf}ng Pháp c\x{1ed5}",
+                                       'myv' => "Ti\x{1ebf}ng Erzya",
+                                       'tsi' => "Ti\x{1ebf}ng Tsimshian",
+                                       'it' => "Ti\x{1ebf}ng Ý",
+                                       'tiv' => "Ti\x{1ebf}ng Tiv",
+                                       'scn' => "Ti\x{1ebf}ng Sicilia",
+                                       'mdr' => "Ti\x{1ebf}ng Mandar",
+                                       'sma' => "TI\x{1ebf}ng Sami Mi\x{1ec1}n Nam",
+                                       'vot' => "Ti\x{1ebf}ng Votic",
+                                       'ale' => "Ti\x{1ebf}ng Aleut",
+                                       'vai' => "Ti\x{1ebf}ng Vai",
+                                       'kru' => "Ti\x{1ebf}ng Kurukh",
+                                       'sai' => "Ngôn ng\x{1eef} Th\x{1ed5} dân Nam M\x{1ef9}",
+                                       'lu' => "Ti\x{1ebf}ng Luba-Katanga",
+                                       'ks' => "Ti\x{1ebf}ng Kashmiri",
+                                       'pt' => "Ti\x{1ebf}ng B\x{1ed3} \x{110}ào Nha",
+                                       'swb' => "Ti\x{1ebf}ng Cômo",
+                                       'tli' => "Ti\x{1ebf}ng Tlingit",
+                                       'mh' => "Ti\x{1ebf}ng Marshall",
+                                       'gwi' => "Ti\x{1ebf}ng Gwich\x{2bc}in",
+                                       'kg' => "Ti\x{1ebf}ng Congo",
+                                       'smn' => "Ti\x{1ebf}ng Inari Sami",
+                                       'vun' => "Ti\x{1ebf}ng Vunjo",
+                                       'ho' => "Ti\x{1ebf}ng Hiri Motu",
+                                       'ewo' => "Ti\x{1ebf}ng Ewondo",
+                                       'afa' => "Ngôn ng\x{1eef} Phi-Á",
+                                       'bfd' => "Ti\x{1ebf}ng Bafut",
+                                       'ff' => "Ti\x{1ebf}ng Fulah",
+                                       'tem' => "Ti\x{1ebf}ng Timne",
+                                       'lus' => "Ti\x{1ebf}ng Lushai",
+                                       'tkl' => "Ti\x{1ebf}ng Tokelau",
+                                       'inh' => "Ti\x{1ebf}ng Ingush",
+                                       'sn' => "Ti\x{1ebf}ng Shona",
+                                       'ath' => "Ngôn ng\x{1eef} Athapascan",
+                                       'yi' => "Ti\x{1ebf}ng Y-\x{111}it",
+                                       'cch' => "Ti\x{1ebf}ng Atsam",
+                                       'frs' => "Ti\x{1ebf}ng Frisian Mi\x{1ec1}n \x{110}ông",
+                                       'arp' => "Ti\x{1ebf}ng Arapaho",
+                                       'war' => "Ti\x{1ebf}ng Waray",
+                                       'mad' => "Ti\x{1ebf}ng Madura",
+                                       'sl' => "Ti\x{1ebf}ng Slovenia",
+                                       'rup' => "Ti\x{1ebf}ng Aromania",
+                                       'dz' => "Ti\x{1ebf}ng Dzongkha",
+                                       'jbo' => "Ti\x{1ebf}ng Lojban",
+                                       'crh' => "Ti\x{1ebf}ng Th\x{1ed5} Nh\x{129} K\x{1ef3} Crimean",
+                                       'cpp' => "Ti\x{1ebf}ng Creole ho\x{1eb7}c Pidgin g\x{1ed1}c B\x{1ed3} \x{110}ào Nha",
+                                       'tup' => "Ngôn ng\x{1eef} Tupi",
+                                       'sga' => "Ti\x{1ebf}ng Ai-len c\x{1ed5}",
+                                       'tk' => "Ti\x{1ebf}ng Turk",
+                                       'bbj' => "Ti\x{1ebf}ng Ghomala",
+                                       'su' => "Ti\x{1ebf}ng Sudan",
+                                       'en_US' => "Ti\x{1ebf}ng Anh (M\x{1ef9})",
+                                       'kln' => "Ti\x{1ebf}ng Kalenjin",
+                                       'sc' => "Ti\x{1ebf}ng Sardinia",
+                                       'chy' => "Ti\x{1ebf}ng Cheyenne",
+                                       'sgn' => "Ngôn ng\x{1eef} Ký hi\x{1ec7}u",
+                                       'sio' => "Ngôn ng\x{1eef} Sioua",
+                                       'goh' => "Ti\x{1ebf}ng Th\x{1b0}\x{1ee3}ng Giéc-man c\x{1ed5}",
+                                       'zap' => "Ti\x{1ebf}ng Zapotec",
+                                       'nb' => "Ti\x{1ebf}ng Na Uy (Bokmål)",
+                                       'nso' => "B\x{1eaf}c Sotho",
+                                       'az' => "Ti\x{1ebf}ng Azeri",
+                                       'ksb' => "Ti\x{1ebf}ng Shambala",
+                                       'sah' => "Ti\x{1ebf}ng Sakha",
+                                       'aa' => "Ti\x{1ebf}ng Afar",
+                                       'fur' => "Ti\x{1ebf}ng Friulian",
+                                       'ts' => "Ti\x{1ebf}ng Tsonga",
+                                       'en_GB' => "Ti\x{1ebf}ng Anh (Anh)",
+                                       'btk' => "Ti\x{1ebf}ng Batak",
+                                       'agq' => "Ti\x{1ebf}ng Aghem",
+                                       'dav' => "Ti\x{1ebf}ng Taita",
+                                       'zbl' => "Ký hi\x{1ec7}u Blissymbols",
+                                       'inc' => "Ngôn ng\x{1eef} Indic",
+                                       'crp' => "Ti\x{1ebf}ng Creole ho\x{1eb7}c Pidgin",
+                                       'mer' => "Ti\x{1ebf}ng Meru",
+                                       'iu' => "Ti\x{1ebf}ng Inuktitut",
+                                       'lah' => "Ti\x{1ebf}ng Lahnda",
+                                       'root' => "Ti\x{1ebf}ng Root",
+                                       'zh_Hans' => "Ti\x{1ebf}ng Trung (Gi\x{1ea3}n th\x{1ec3})",
+                                       'cau' => "Ngôn ng\x{1eef} Cáp-ca",
+                                       'lui' => "Ti\x{1ebf}ng Luiseno",
+                                       'mak' => "Ti\x{1ebf}ng Makasar",
+                                       'gez' => "Ti\x{1ebf}ng Geez",
+                                       'uk' => "Ti\x{1ebf}ng Ucraina",
+                                       'nus' => "Ti\x{1ebf}ng Nuer",
+                                       'kr' => "Ti\x{1ebf}ng Kanuri",
+                                       'smi' => "Ngôn ng\x{1eef} Sami",
+                                       'fo' => "Ti\x{1ebf}ng Faore",
+                                       'syr' => "Ti\x{1ebf}ng Syriac",
+                                       'sh' => "Ti\x{1ebf}ng Xéc bi - Croatia",
+                                       'io' => "Ti\x{1ebf}ng Ido",
+                                       'so' => "Ti\x{1ebf}ng Somali",
+                                       'kmb' => "Ti\x{1ebf}ng Kimbundu",
+                                       'dar' => "Ti\x{1ebf}ng Dargwa",
+                                       'phn' => "Ti\x{1ebf}ng Phoenicia",
+                                       'bik' => "Ti\x{1ebf}ng Bikol",
+                                       'lt' => "Ti\x{1ebf}ng Lít-va",
+                                       'be' => "Ti\x{1ebf}ng Belarus",
+                                       'din' => "Ti\x{1ebf}ng Dinka",
+                                       'ur' => "Ti\x{1ebf}ng U\x{111}u",
+                                       'arw' => "Ti\x{1ebf}ng Arawak",
+                                       'chk' => "Ti\x{1ebf}ng Chuuk",
+                                       'tw' => "Ti\x{1ebf}ng Twi",
+                                       'ce' => "Ti\x{1ebf}ng Chechen",
+                                       'kro' => "Ti\x{1ebf}ng Kru",
+                                       'tvl' => "Ti\x{1ebf}ng Tuvalu",
+                                       'pi' => "Ti\x{1ebf}ng Pali",
+                                       'tg' => "Ti\x{1ebf}ng Tajik",
+                                       'tog' => "Ti\x{1ebf}ng Nyasa Tonga",
+                                       'ar_001' => "Ti\x{1ebf}ng \x{1ea2} R\x{1ead}p Hi\x{1ec7}n \x{111}\x{1ea1}i",
+                                       'ses' => "Ti\x{1ebf}ng Koyraboro Senni",
+                                       'te' => "Ti\x{1ebf}ng Telugu",
+                                       'ig' => "Ti\x{1ebf}ng Igbo",
+                                       'myn' => "Ngôn ng\x{1eef} Maya",
+                                       'cgg' => "Ti\x{1ebf}ng Chiga",
+                                       'mnc' => "Ti\x{1ebf}ng Manchu"
+                                     },
+                      'scripts' => {
+                                     'Goth' => "Ch\x{1eef} Gô-tích",
+                                     'Knda' => "Ch\x{1eef} Kannada",
+                                     'Ital' => "Ch\x{1eef} Italic c\x{1ed5}",
+                                     'Hant' => "Ch\x{1eef} Hán ph\x{1ed3}n th\x{1ec3}",
+                                     'Wole' => "Ch\x{1eef} Woleai",
+                                     'Tang' => "Ch\x{1eef} Tangut",
+                                     'Brah' => "Ch\x{1eef} Brahmi",
+                                     'Lepc' => "Ch\x{1eef} Lepcha",
+                                     'Hrkt' => "B\x{1ea3}ng ký hi\x{1ec7}u âm ti\x{1ebf}t Ti\x{1ebf}ng Nh\x{1ead}t",
+                                     'Ethi' => "Ch\x{1eef} Ethiopia",
+                                     'Samr' => "Ch\x{1eef} Samaritan",
+                                     'Runr' => "Ch\x{1eef} Runic",
+                                     'Loma' => "Ch\x{1eef} Loma",
+                                     'Hmng' => "Ch\x{1eef} Pahawh Hmong",
+                                     'Zsym' => "Ký hi\x{1ec7}u",
+                                     'Mero' => "Ch\x{1eef} Meroitic",
+                                     'Olck' => "Ch\x{1eef} Ol Chiki",
+                                     'Syrn' => "Ch\x{1eef} \x{110}ông Syria",
+                                     'Phag' => "Ch\x{1eef} Phags-pa",
+                                     'Yiii' => "Ch\x{1eef} Di",
+                                     'Tale' => "Ch\x{1eef} Thái Na",
+                                     'Glag' => "Ch\x{1eef} Glagolitic",
+                                     'Bali' => "Ch\x{1eef} Bali",
+                                     'Tagb' => "Ch\x{1eef} Tagbanwa",
+                                     'Maya' => "Ch\x{1eef} t\x{1b0}\x{1ee3}ng hình Maya",
+                                     'Copt' => "Ch\x{1eef} Coptic",
+                                     'Shrd' => "Ch\x{1eef} Sharada",
+                                     'Syre' => "Ch\x{1eef} Estrangelo Syriac",
+                                     'Mtei' => "Ch\x{1eef} Meitei Mayek",
+                                     'Lina' => "Ch\x{1eef} Linear A",
+                                     'Kore' => "Ch\x{1eef} Hàn Qu\x{1ed1}c",
+                                     'Zxxx' => "Ch\x{1b0}a có ch\x{1eef} vi\x{1ebf}t",
+                                     'Tfng' => "Ch\x{1eef} Tifinagh",
+                                     'Palm' => "Ch\x{1eef} Palmyrene",
+                                     'Cher' => "Ch\x{1eef} Cherokee",
+                                     'Latn' => "Ch\x{1eef} La tinh",
+                                     'Cyrs' => "Ch\x{1eef} Kirin Slav\x{1a1} Nhà th\x{1edd} c\x{1ed5}",
+                                     'Kana' => "Ch\x{1eef} Katakana",
+                                     'Hluw' => "Ch\x{1eef} t\x{1b0}\x{1ee3}ng hình Anatolia",
+                                     'Jpan' => "Ch\x{1eef} Nh\x{1ead}t B\x{1ea3}n",
+                                     'Beng' => "Ch\x{1eef} Bengali",
+                                     'Osma' => "Ch\x{1eef} Osmanya",
+                                     'Hano' => "Ch\x{1eef} Hanunoo",
+                                     'Cprt' => "Ch\x{1ee9} Síp",
+                                     'Zzzz' => "Ch\x{1b0}\x{303} viê\x{301}t Không xa\x{301}c \x{111}i\x{323}nh",
+                                     'Xsux' => "Ch\x{1eef} hình nêm Sumero-Akkadian",
+                                     'Zmth' => "Ký hi\x{1ec7}u Toán h\x{1ecd}c",
+                                     'Bamu' => "Ch\x{1eef} Bamum",
+                                     'Dsrt' => "Ch\x{1eef} Deseret",
+                                     'Roro' => "Ch\x{1eef} Rongorongo",
+                                     'Kthi' => "Ch\x{1eef} Kaithi",
+                                     'Java' => "Ch\x{1eef} Java",
+                                     'Khmr' => "Ch\x{1eef} Kh\x{1a1}-me",
+                                     'Zyyy' => 'Chung',
+                                     'Vaii' => "Ch\x{1eef} Vai",
+                                     'Shaw' => "Ch\x{1eef} Shavian",
+                                     'Cans' => "Âm ti\x{1ebf}t Th\x{1ed5} dân Canada H\x{1ee3}p nh\x{1ea5}t",
+                                     'Sund' => "Ch\x{1eef} Xu-\x{111}\x{103}ng",
+                                     'Limb' => "Ch\x{1eef} Limbu",
+                                     'Nbat' => "Ch\x{1eef} Nabataean",
+                                     'Tibt' => "Ch\x{1eef} Tây T\x{1ea1}ng",
+                                     'Mend' => "Ch\x{1eef} Mende",
+                                     'Avst' => "Ch\x{1eef} Avestan",
+                                     'Saur' => "Ch\x{1eef} Saurashtra",
+                                     'Guru' => "Ch\x{1eef} Gurmukhi",
+                                     'Rjng' => "Ch\x{1eef} Rejang",
+                                     'Kpel' => "Ch\x{1eef} Kpelle",
+                                     'Grek' => "Ch\x{1eef} Hy L\x{1ea1}p",
+                                     'Blis' => "Ch\x{1eef} Blissymbols",
+                                     'Taml' => "Ch\x{1eef} Tamil",
+                                     'Khoj' => "Ch\x{1eef} Khojki",
+                                     'Gran' => "Ch\x{1eef} Grantha",
+                                     'Khar' => "Ch\x{1eef} Kharoshthi",
+                                     'Moon' => "Ch\x{1eef} n\x{1ed5}i Moon",
+                                     'Brai' => "Ch\x{1eef} n\x{1ed5}i Braille",
+                                     'Lydi' => "Ch\x{1eef} Lydia",
+                                     'Bopo' => "Ch\x{1eef} Bopomofo",
+                                     'Merc' => "Ch\x{1eef} Meroitic Nét th\x{1ea3}o",
+                                     'Latf' => "Ch\x{1eef} La-tinh Fraktur",
+                                     'Nkgb' => "Ch\x{1eef} Naxi Geba",
+                                     'Tirh' => "Ch\x{1eef} Tirhuta",
+                                     'Cirt' => "Ch\x{1eef} Cirth",
+                                     'Cakm' => "Ch\x{1eef} Chakma",
+                                     'Prti' => "Ch\x{1eef} Parthia V\x{103}n bia",
+                                     'Hans' => "Ch\x{1eef} Hán gi\x{1ea3}n th\x{1ec3}",
+                                     'Visp' => "Ti\x{1ebf}ng nói Nhìn th\x{1ea5}y \x{111}\x{1b0}\x{1ee3}c",
+                                     'Mand' => "Ch\x{1eef} Mandaean",
+                                     'Sora' => "Ch\x{1eef} Sora Sompeng",
+                                     'Armi' => "Ch\x{1eef} Imperial Aramaic",
+                                     'Kali' => "Ch\x{1eef} Kayah Li",
+                                     'Buhd' => "Ch\x{1eef} Buhid",
+                                     'Syrj' => "Ch\x{1eef} Tây Syria",
+                                     'Sara' => "Ch\x{1eef} Sarati",
+                                     'Ogam' => "Ch\x{1eef} Ogham",
+                                     'Ugar' => "Ch\x{1eef} Ugarit",
+                                     'Thaa' => "Ch\x{1eef} Thaana",
+                                     'Teng' => "Ch\x{1eef} Tengwar",
+                                     'Egyd' => "Ch\x{1eef} Ai C\x{1ead}p bình dân",
+                                     'Thai' => "Ch\x{1eef} Thái",
+                                     'Xpeo' => "Ch\x{1eef} Ba T\x{1b0} c\x{1ed5}",
+                                     'Tavt' => "Ch\x{1eef} Thái Vi\x{1ec7}t",
+                                     'Hung' => "Ch\x{1eef} Hungary c\x{1ed5}",
+                                     'Mlym' => "Ch\x{1eef} Malayalam",
+                                     'Phlp' => "Ch\x{1eef} Pahlavi Thánh ca",
+                                     'Nkoo' => "Ch\x{1eef} N\x{2019}Ko",
+                                     'Hang' => "Ch\x{1eef} Hangul",
+                                     'Linb' => "Ch\x{1eef} Linear B",
+                                     'Sinh' => "Ch\x{1eef} Sinhala",
+                                     'Deva' => "Ch\x{1eef} Devanagari",
+                                     'Laoo' => "Ch\x{1eef} Lào",
+                                     'Mymr' => 'Myanma',
+                                     'Bugi' => "Ch\x{1eef} Bugin",
+                                     'Orkh' => "Ch\x{1eef} Orkhon",
+                                     'Inds' => "Ch\x{1eef} Indus",
+                                     'Sgnw' => "Ch\x{1eef} vi\x{1ebf}t Ký hi\x{1ec7}u",
+                                     'Mroo' => "Ch\x{1eef} Mro",
+                                     'Lyci' => "Ch\x{1eef} Lycia",
+                                     'Gujr' => "Ch\x{1eef} Gujarati",
+                                     'Afak' => "Ch\x{1eef} Afaka",
+                                     'Zinh' => "Ch\x{1eef} K\x{1ebf} th\x{1eeb}a",
+                                     'Orya' => "Ch\x{1eef} Oriya",
+                                     'Phli' => "Ch\x{1eef} Pahlavi V\x{103}n bia",
+                                     'Hira' => "Ch\x{1eef} Hiragana",
+                                     'Cari' => "Ch\x{1eef} Caria",
+                                     'Talu' => "Ch\x{1eef} Thái L\x{1eb7}c m\x{1edb}i",
+                                     'Mong' => "Ch\x{1eef} Mông C\x{1ed5}",
+                                     'Egyp' => "Ch\x{1eef} t\x{1b0}\x{1ee3}ng hình Ai C\x{1ead}p",
+                                     'Hani' => "Ch\x{1eef} Hán",
+                                     'Mani' => "Ch\x{1eef} Manichaean",
+                                     'Lisu' => "Ch\x{1eef} Fraser",
+                                     'Lana' => "Ch\x{1eef} Lanna",
+                                     'Wara' => "Ch\x{1eef} Varang Kshiti",
+                                     'Tglg' => "Ch\x{1eef} Tagalog",
+                                     'Egyh' => "Ch\x{1eef} Ai C\x{1ead}p thày tu",
+                                     'Bass' => "Ch\x{1eef} Bassa Vah",
+                                     'Takr' => "Ch\x{1eef} Takri",
+                                     'Plrd' => "Ng\x{1eef} âm Pollard",
+                                     'Sind' => "Ch\x{1eef} Khudawadi",
+                                     'Geor' => "Ch\x{1eef} Gruzia",
+                                     'Batk' => "Ch\x{1eef} Batak",
+                                     'Latg' => "Ch\x{1eef} La-tinh Xc\x{1ed1}t-len",
+                                     'Narb' => "Ch\x{1eef} B\x{1eaf}c \x{1ea2} R\x{1ead}p c\x{1ed5}",
+                                     'Perm' => "Ch\x{1eef} Permic c\x{1ed5}",
+                                     'Syrc' => "Ch\x{1eef} Syria",
+                                     'Phlv' => "Ch\x{1eef} Pahlavi Sách",
+                                     'Dupl' => "Ch\x{1eef} t\x{1ed1}c ký Duployan",
+                                     'Cham' => "Ch\x{1eef} Ch\x{103}m",
+                                     'Arab' => "Ch\x{1eef} Ba T\x{1b0}-\x{1ea2} R\x{1ead}p",
+                                     'Sarb' => "Ch\x{1eef} Nam \x{1ea2} R\x{1ead}p c\x{1ed5}",
+                                     'Sylo' => "Ch\x{1eef} Syloti Nagri",
+                                     'Armn' => "Ch\x{1eef} Armenia",
+                                     'Hebr' => "Ch\x{1eef} Do Thái",
+                                     'Geok' => "Ch\x{1eef} Khutsuri Georgia",
+                                     'Phnx' => "Ch\x{1eef} Phoenicia",
+                                     'Telu' => "Ch\x{1eef} Telugu",
+                                     'Cyrl' => "Ch\x{1eef} Kirin",
+                                     'Jurc' => "Ch\x{1eef} Jurchen",
+                                     'Nshu' => "Ch\x{1eef} Nüshu"
+                                   }
+                    },
+  'delimiters' => {
+                    'alternateQuotationEnd' => "\x{2019}",
+                    'quotationEnd' => "\x{201d}",
+                    'quotationStart' => "\x{201c}",
+                    'alternateQuotationStart' => "\x{2018}"
+                  },
+  'iso4217' => 'VND'
+};

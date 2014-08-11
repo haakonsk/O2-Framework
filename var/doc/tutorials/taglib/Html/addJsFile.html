@@ -1,0 +1,33 @@
+<o2 use O2Doc::Tutorial />
+
+<o2 docSection title="addJsFile">
+  Includes a Javascript file somewhere in a web page (depending on the value of the where attribute).
+  <o2 docSection title="Syntax">
+    <o2 docCode lang="o2ml">
+      <o2 addJsFile where="post" file="rules" />
+    </o2:docCode>
+    or
+    <o2 docCode lang="o2ml">
+      <o2 addJsFile file="/js/rules.js" />
+    </o2:docCode>
+  </o2:docSection>
+  <o2 include "o2:var/doc/tutorials/taglib/Html/includes/versionConf.html" />
+  <o2 docSection title="Attributes">
+    <o2 docList class="attributes">
+      <o2 docListItem class="optional">where [pre]. Possible values are  {pre, post, here}</o2:docListItem>
+      <o2 docListItem class="required">file - the Javascript file.</o2:docListItem>
+    </o2:docList>
+    If the file name starts with a slash, this filename will be used unmodified, otherwise the file must be in the directory /js, and
+    the extension ".js" will be appended to the given filename.
+  </o2:docSection>
+  <o2 docSection>
+    If where=pre, the Javascript file is included in the head of the page. If where=post, it is included near the bottom.
+    If where=here, it is included at the place where the &lt;o2 addJsFile&gt; tag is written.
+    <o2 docNote>
+      If "where" is "pre", &lt;o2 header&gt; or &lt;o2 incJavascript&gt; must be called on the same page in order for addJsFile to work. Similarly, if "where" is
+      "post", &lt;o2 footer&gt; or &lt;o2 postJavascript&gt; must be called on the same page.
+    </o2:docNote>
+    See also <o2 docLink type="tag" id="addJs" />, <o2 docLink type="tag" id="header" />, <o2 docLink type="tag" id="footer" />, <o2 docLink type="tag" id="incJavascript" />
+    and <o2 docLink type="tag" id="postJavascript" />.
+  </o2:docSection>
+</o2:docSection>

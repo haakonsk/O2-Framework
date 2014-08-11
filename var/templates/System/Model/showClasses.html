@@ -1,0 +1,19 @@
+<o2 header />
+
+<o2 addCssFile file="gui/system/model/showClasses" />
+
+<o2 addJs>
+  if (top.o2) {
+    top.o2.addFrameScrollbarEvents( window, parent.right           );
+    top.o2.addFrameScrollbarEvents( window, top.frames.topFrame    );
+    top.o2.addFrameScrollbarEvents( window, top.frames.bottomFrame );
+  }
+</o2:addJs>
+
+<ul class="classes">
+  <o2 foreach "$package => $path in $objectClasses" sortBy="$package">
+    <li><o2 link setMethod="showClass" setParams="package=$package" target="iframe_right">$package</o2:link></li>
+  </o2:foreach>
+</ul>
+
+<o2 footer />

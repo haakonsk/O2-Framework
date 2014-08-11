@@ -1,0 +1,202 @@
+html {
+  height : 100%;
+}
+body {
+  height     : auto;
+  min-height : 100%;
+}
+BODY,TD {
+  color: #333;
+  font-family: Verdana, Arial, Geneva, Helvetica, sans-serif;
+  font-size: 11px;
+  text-decoration: none;
+  margin: 0;
+}
+
+.genericBar {
+  height: 21px;
+  background: url("/images/system/genericbar_bg.png") repeat-x;
+  cursor:default;
+}
+
+.genericBarActive {
+  height: 21px;
+  background: url("/images/system/genericbar_active_bg.png") repeat-x;
+  cursor:default;
+}
+
+.genericBar td.separator {
+  height: 21px;
+  background: url("/images/system/verticalDivider.gif") repeat-y;
+  cursor:default;
+}
+
+.framedBar {
+  height: 21px;
+  background: url("/images/system/genericbar_bg.png") repeat-x;
+  cursor:default;
+  border-style: solid none solid none;
+  border-color: #FFFFFF #00FF00 #808080 #00FF00;
+  border-width: 1px 0px 1px 0px;
+}
+
+.framedBarActive {
+  background: url("/images/system/genericbar_active_bg.png") repeat-x;
+  height: 21px;
+  cursor:default;
+  border-style: solid none solid none;
+  border-color: #FFFFFF #00FF00 #808080 #00FF00;
+  border-width: 1px 0px 1px 0px;
+}
+
+.errorText {
+  color:red;
+}        
+
+.textInput {
+  border: 1px solid #aaa;
+  padding: 4px 2px;
+}
+
+.button {
+  background: #478acc;
+  border: 1px solid #369;
+  border-radius: 3px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  color: white;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Verdana, sans-serif;
+  font-size: 10px;
+  line-height: 24px;
+  padding: 0 4px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.button:hover {
+  background-color: #4d9be7;
+  color: #fff;
+}
+
+.listTable {
+  border: 0px; 
+  border-collapse: collapse;
+  margin: 0px; 
+  background-color:#c0c0c0; 
+  width: 100%;
+}
+
+.tblHeader, .listTable th {
+  background:url("/images/system/header_background_1px_not_active.gif") repeat-x;
+  height:25px;
+  padding:6px;
+  font-size:11px;
+  color:#6f6f6f;
+  font-weight:bold;
+}
+
+.listTable td {
+  background-color:#fff;
+  padding:2px;
+  font-size:10px;
+  color:#6f6f6f;
+  font-weight:normal;
+  border: 1px solid #c0c0c0;
+}
+
+.cell {
+  background-color:#fff;
+  padding:2px;
+  font-size:10px;
+  color:#6f6f6f;
+  font-weight:normal;
+}
+
+.cell2 {
+  background-color:#f3f3f3;
+  padding:2px;
+  font-size:10px;
+  color:#6f6f6f;
+  font-weight:normal;
+}
+
+.submCal {
+  border:1px solid;
+  border-color:#999999;
+  color:#6f6f6f;
+  background:url("/images/system/button_background_1px_not_active.gif") repeat-x;
+  font-size:10px;
+  padding:1px;
+}
+
+a {
+  color:#6378A7;
+  text-decoration:underline;
+}
+
+a:hover {
+  color:#3e3e3e;
+  text-decoration:none;
+}
+
+a img {
+  border: 0;
+}
+
+.clearFix {
+  clear : both;
+}
+
+.o2Input, .o2CheckboxGroup, .o2RadioGroup, .o2Select, .o2ComboBox, .o2Textarea, .o2DateSelect {
+  clear : left;
+}
+
+.o2FormTable {
+  margin-left: 20px;
+}
+
+.o2FormTable tr {
+  height: 30px;
+}
+
+tr.o2Textarea td.o2Label {
+  vertical-align: top;
+}
+
+.o2FormTable textarea.textInput {
+  height: 100px;
+  width: 300px;
+}
+
+table.datagrid {
+  border-collapse : collapse;
+}
+
+table.datagrid td,
+table.datagrid th {
+  padding : 1px 3px;
+}
+
+table.datagrid th {
+  font-size     : small;
+  background    : url("/images/system/genericbar_bg.png") repeat-x;
+  border-right  : 1px solid black;
+  border-bottom : 1px solid black;
+}
+
+/* =Clearfix (all browsers)
+--------------------------------*/
+.clearfix:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+/* IE6 */ 
+* html .clearfix {height: 1%;}
+/* IE7 */
+*:first-child+html .clearfix {min-height: 1px;}

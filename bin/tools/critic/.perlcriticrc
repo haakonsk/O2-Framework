@@ -1,0 +1,55 @@
+severity = 2
+verbose = 8
+
+## Disabling the following:
+[-Miscellanea::RequireRcsKeywords]
+[-Modules::RequireVersionVar]
+[-ValuesAndExpressions::ProhibitEmptyQuotes]
+[-CodeLayout::ProhibitParensWithBuiltins]
+[-ValuesAndExpressions::ProhibitConstantPragma]
+[-ValuesAndExpressions::ProhibitNoisyQuotes]
+[-ValuesAndExpressions::ProhibitQuotesAsQuotelikeOperatorDelimiters]
+[-ValuesAndExpressions::RequireQuotedHeredocTerminator]
+[-ValuesAndExpressions::ProhibitImplicitNewlines]
+[-Variables::ProhibitPunctuationVars]
+[-Variables::RequireLocalizedPunctuationVars]
+[-ControlStructures::ProhibitPostfixControls]
+[-ErrorHandling::RequireCarping]
+[-InputOutput::RequireCheckedClose]
+[-CodeLayout::RequireTidyCode]
+
+# Just temporary:
+[-Modules::RequireFilenameMatchesPackage]
+
+## Adjustments:
+[InputOutput::RequireCheckedSyscalls]
+functions = open
+
+## Changing severity:
+[Subroutines::RequireArgUnpacking]
+severity = 5
+[ValuesAndExpressions::ProhibitInterpolationOfLiterals]
+severity = 2
+[O2::CodeLayout::RequireKRStyleBrackets]
+severity = 2
+[O2::CodeLayout::RequireSpaceAroundControlKeywords]
+severity = 2
+
+## Rules you are "allowed" to break (severity=1):
+[ValuesAndExpressions::ProhibitLongChainsOfMethodCalls]
+severity = 1
+[RegularExpressions::RequireExtendedFormatting]
+severity = 1
+[RegularExpressions::RequireLineBoundaryMatching]
+severity = 1
+[ValuesAndExpressions::ProhibitInterpolationOfLiterals]
+severity = 1
+[Subroutines::RequireFinalReturn]
+severity = 1
+[TestingAndDebugging::RequireUseWarnings]
+severity = 1
+[ValuesAndExpressions::RequireNumberSeparators]
+severity = 1
+min_value = 1000000
+#[ValuesAndExpressions::ProhibitNoisyQuotes]
+#severity = 1

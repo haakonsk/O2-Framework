@@ -1,0 +1,803 @@
+{
+  'territory' => 'IN',
+  'language' => 'bo',
+  'number' => {
+                'percentFormat' => {
+                                     'percentFormatLength' => {
+                                                              'standard' => '#,##0%'
+                                                            }
+                                   },
+                'measurement' => {},
+                'symbols' => {
+                               'infinity' => "\x{221e}",
+                               'nan' => "\x{f68}\x{f44}\x{f0b}\x{f58}\x{f7a}\x{f53}\x{f0b}",
+                               'plusSign' => '+',
+                               'superscriptingExponent' => "×",
+                               'exponential' => 'E',
+                               'group' => ',',
+                               'percentSign' => '%',
+                               'decimal' => '.',
+                               'perMille' => "\x{2030}",
+                               'alias' => '',
+                               'minusSign' => '-',
+                               'list' => ';'
+                             },
+                'scientificFormat' => {
+                                        'scientificFormatLength' => {
+                                                                    'standard' => '#E0'
+                                                                  }
+                                      },
+                'decimalFormat' => {
+                                     'decimalFormatLength' => {
+                                                              'short' => '0K00K000K0M00M000M0G00G000G0T00T000T',
+                                                              'standard' => '#,##0.###'
+                                                            }
+                                   },
+                'currencyFormat' => {
+                                      'currencyFormatLength' => {
+                                                                'standard' => "¤ #,##0.00"
+                                                              }
+                                    },
+                'currencies' => {
+                                  'KZT' => {
+                                           'symbol' => "\x{20b8}"
+                                         },
+                                  'NZD' => {
+                                           'symbol' => '$'
+                                         },
+                                  'HKD' => {
+                                           'symbol' => '$'
+                                         },
+                                  'BZD' => {
+                                           'symbol' => '$'
+                                         },
+                                  'BRL' => {
+                                           'symbol' => 'R$'
+                                         },
+                                  'SGD' => {
+                                           'symbol' => '$'
+                                         },
+                                  'TWD' => {
+                                           'symbol' => 'NT$'
+                                         },
+                                  'USD' => {
+                                           'symbol' => '$',
+                                           'displayName' => "\x{f68}\x{f0b}\x{f62}\x{f72}\x{f60}\x{f72}\x{f0b}\x{f66}\x{f92}\x{f7c}\x{f62}\x{f0b}\x{f58}\x{f7c}\x{f0d}"
+                                         },
+                                  'XXX' => {
+                                           'displayName' => "\x{f58}\x{f0b}\x{f62}\x{f9f}\x{f7c}\x{f42}\x{f66}\x{f0b}\x{f54}\x{f60}\x{f72}\x{f0b}\x{f53}\x{f74}\x{f66}\x{f0b}\x{f58}\x{f7a}\x{f51}\x{f0b}\x{f51}\x{f44}\x{f74}\x{f63}\x{f0b}\x{f63}\x{f7c}\x{f62}"
+                                         },
+                                  'SSP' => {
+                                           'symbol' => "£"
+                                         },
+                                  'KYD' => {
+                                           'symbol' => '$'
+                                         },
+                                  'AUD' => {
+                                           'symbol' => '$'
+                                         },
+                                  'NGN' => {
+                                           'symbol' => "\x{20a6}"
+                                         },
+                                  'CRC' => {
+                                           'symbol' => "\x{20a1}"
+                                         },
+                                  'KRW' => {
+                                           'symbol' => "\x{20a9}"
+                                         },
+                                  'TRY' => {
+                                           'symbol' => 'TL'
+                                         },
+                                  'GIP' => {
+                                           'symbol' => "£"
+                                         },
+                                  'LAK' => {
+                                           'symbol' => "\x{20ad}"
+                                         },
+                                  'FJD' => {
+                                           'symbol' => '$'
+                                         },
+                                  'CLP' => {
+                                           'symbol' => '$'
+                                         },
+                                  'NAD' => {
+                                           'symbol' => '$'
+                                         },
+                                  'JMD' => {
+                                           'symbol' => '$'
+                                         },
+                                  'ILS' => {
+                                           'symbol' => "\x{20aa}"
+                                         },
+                                  'BSD' => {
+                                           'symbol' => '$'
+                                         },
+                                  'ESP' => {
+                                           'symbol' => "\x{20a7}"
+                                         },
+                                  'UYU' => {
+                                           'symbol' => '$'
+                                         },
+                                  'UAH' => {
+                                           'symbol' => "\x{20b4}"
+                                         },
+                                  'MXN' => {
+                                           'symbol' => '$'
+                                         },
+                                  'GYD' => {
+                                           'symbol' => '$'
+                                         },
+                                  'BYR' => {
+                                           'symbol' => "\x{440}."
+                                         },
+                                  'THB' => {
+                                           'symbol' => "\x{e3f}"
+                                         },
+                                  'LRD' => {
+                                           'symbol' => '$'
+                                         },
+                                  'BND' => {
+                                           'symbol' => '$'
+                                         },
+                                  'JPY' => {
+                                           'symbol' => "¥"
+                                         },
+                                  'BMD' => {
+                                           'symbol' => '$'
+                                         },
+                                  'PYG' => {
+                                           'symbol' => "\x{20b2}"
+                                         },
+                                  'VND' => {
+                                           'symbol' => "\x{20ab}"
+                                         },
+                                  'CAD' => {
+                                           'symbol' => '$'
+                                         },
+                                  'CUP' => {
+                                           'symbol' => '$'
+                                         },
+                                  'SBD' => {
+                                           'symbol' => '$'
+                                         },
+                                  'GHS' => {
+                                           'symbol' => "\x{20b5}"
+                                         },
+                                  'TTD' => {
+                                           'symbol' => '$'
+                                         },
+                                  'RUR' => {
+                                           'symbol' => "\x{440}."
+                                         },
+                                  'XCD' => {
+                                           'symbol' => 'EC$'
+                                         },
+                                  'BBD' => {
+                                           'symbol' => '$'
+                                         },
+                                  'COP' => {
+                                           'symbol' => '$'
+                                         },
+                                  'XOF' => {
+                                           'symbol' => 'CFA'
+                                         },
+                                  'ARS' => {
+                                           'symbol' => '$'
+                                         },
+                                  'BDT' => {
+                                           'symbol' => "\x{9f3}"
+                                         },
+                                  'KHR' => {
+                                           'symbol' => "\x{17db}"
+                                         },
+                                  'CNY' => {
+                                           'symbol' => "CN¥",
+                                           'displayName' => "\x{f61}\x{f74}\x{f0b}\x{f68}\x{f53}\x{f0b}"
+                                         },
+                                  'MNT' => {
+                                           'symbol' => "\x{20ae}"
+                                         },
+                                  'EUR' => {
+                                           'symbol' => "\x{20ac}"
+                                         },
+                                  'INR' => {
+                                           'symbol' => "\x{20b9}",
+                                           'displayName' => "\x{f62}\x{f92}\x{fb1}\x{f0b}\x{f42}\x{f62}\x{f0b}\x{f66}\x{f92}\x{f7c}\x{f62}\x{f0b}\x{f58}\x{f7c}\x{f0b}"
+                                         },
+                                  'SRD' => {
+                                           'symbol' => '$'
+                                         },
+                                  'GBP' => {
+                                           'symbol' => "£"
+                                         },
+                                  'XAF' => {
+                                           'symbol' => 'FCFA'
+                                         },
+                                  'PHP' => {
+                                           'symbol' => "\x{20b1}"
+                                         },
+                                  'DOP' => {
+                                           'symbol' => '$'
+                                         },
+                                  'XPF' => {
+                                           'symbol' => 'CFPF'
+                                         }
+                                }
+              },
+  'locale' => 'bo_IN',
+  'characters' => {
+                    'word-initial' => "\x{2026} {0}",
+                    'standard' => '?',
+                    'word-medial' => "{0} \x{2026} {1}",
+                    'index' => "[\x{f40} \x{f41} \x{f42} \x{f44} \x{f45} \x{f46} \x{f47} \x{f49} \x{f4f} \x{f50} \x{f51} \x{f53} \x{f54} \x{f55} \x{f56} \x{f58} \x{f59} \x{f5a} \x{f5b} \x{f5d} \x{f5e} \x{f5f} \x{f60} \x{f61} \x{f62} \x{f63} \x{f64} \x{f66} \x{f67} \x{f68}]",
+                    'medial' => "{0}\x{2026}{1}",
+                    'word-final' => "{0} \x{2026}",
+                    'final' => "{0}\x{2026}",
+                    'auxiliary' => "[\x{f00}]",
+                    'initial' => "\x{2026}{0}",
+                    'punctuation' => '[\\- , ; \\: ! ? . ( ) \\[ \\] \\{ \\}]'
+                  },
+  'calendar' => {
+                  'calendarType' => 'gregorian',
+                  'timeFormat' => {
+                                    'short' => 'HH:mm',
+                                    'pm' => '',
+                                    'am' => '',
+                                    'medium' => 'HH:mm:ss',
+                                    'long' => 'HH:mm:ss z',
+                                    'full' => 'HH:mm:ss zzzz'
+                                  },
+                  'timeZones' => {
+                                   'regionFormat' => '{0} (+0)',
+                                   'gmtFormat' => 'GMT{0}',
+                                   'hourFormat' => '+HH:mm;-HH:mm',
+                                   'zones' => {
+                                                'Antarctica/DumontDUrville' => {
+                                                                               'type' => 'Antarctica/DumontDUrville',
+                                                                               'exemplarCity' => "Dumont d\x{2019}Urville"
+                                                                             },
+                                                'America/Indiana/Tell_City' => {
+                                                                               'type' => 'America/Indiana/Tell_City',
+                                                                               'exemplarCity' => 'Tell City, Indiana'
+                                                                             },
+                                                'America/St_Lucia' => {
+                                                                      'type' => 'America/St_Lucia',
+                                                                      'exemplarCity' => 'St. Lucia'
+                                                                    },
+                                                'Asia/Calcutta' => {
+                                                                   'type' => 'Asia/Calcutta',
+                                                                   'exemplarCity' => 'Kolkata'
+                                                                 },
+                                                'America/Indiana/Knox' => {
+                                                                          'type' => 'America/Indiana/Knox',
+                                                                          'exemplarCity' => 'Knox, Indiana'
+                                                                        },
+                                                'America/Indiana/Vincennes' => {
+                                                                               'type' => 'America/Indiana/Vincennes',
+                                                                               'exemplarCity' => 'Vincennes, Indiana'
+                                                                             },
+                                                'Africa/Asmera' => {
+                                                                   'type' => 'Africa/Asmera',
+                                                                   'exemplarCity' => 'Asmara'
+                                                                 },
+                                                'America/Indiana/Winamac' => {
+                                                                             'type' => 'America/Indiana/Winamac',
+                                                                             'exemplarCity' => 'Winamac, Indiana'
+                                                                           },
+                                                'America/St_Thomas' => {
+                                                                       'type' => 'America/St_Thomas',
+                                                                       'exemplarCity' => 'St. Thomas'
+                                                                     },
+                                                'America/Indiana/Marengo' => {
+                                                                             'type' => 'America/Indiana/Marengo',
+                                                                             'exemplarCity' => 'Marengo, Indiana'
+                                                                           },
+                                                'America/Indiana/Petersburg' => {
+                                                                                'type' => 'America/Indiana/Petersburg',
+                                                                                'exemplarCity' => 'Petersburg, Indiana'
+                                                                              },
+                                                'America/Lower_Princes' => {
+                                                                           'type' => 'America/Lower_Princes',
+                                                                           'exemplarCity' => 'Lower Prince\'s Quarter'
+                                                                         },
+                                                'America/North_Dakota/Beulah' => {
+                                                                                 'type' => 'America/North_Dakota/Beulah',
+                                                                                 'exemplarCity' => 'Beulah, North Dakota'
+                                                                               },
+                                                'Atlantic/St_Helena' => {
+                                                                        'type' => 'Atlantic/St_Helena',
+                                                                        'exemplarCity' => 'St. Helena'
+                                                                      },
+                                                'Asia/Saigon' => {
+                                                                 'type' => 'Asia/Saigon',
+                                                                 'exemplarCity' => 'Ho Chi Minh'
+                                                               },
+                                                'America/Indiana/Vevay' => {
+                                                                           'type' => 'America/Indiana/Vevay',
+                                                                           'exemplarCity' => 'Vevay, Indiana'
+                                                                         },
+                                                'America/Coral_Harbour' => {
+                                                                           'type' => 'America/Coral_Harbour',
+                                                                           'exemplarCity' => 'Atikokan'
+                                                                         },
+                                                'America/St_Barthelemy' => {
+                                                                           'type' => 'America/St_Barthelemy',
+                                                                           'exemplarCity' => 'St. Barthelemy'
+                                                                         },
+                                                'America/North_Dakota/New_Salem' => {
+                                                                                    'type' => 'America/North_Dakota/New_Salem',
+                                                                                    'exemplarCity' => 'New Salem, North Dakota'
+                                                                                  },
+                                                'Etc/Unknown' => {
+                                                                 'type' => 'Etc/Unknown',
+                                                                 'exemplarCity' => "\x{f58}\x{f0b}\x{f62}\x{f9f}\x{f7c}\x{f42}\x{f66}\x{f0b}\x{f54}"
+                                                               },
+                                                'Atlantic/Faeroe' => {
+                                                                     'type' => 'Atlantic/Faeroe',
+                                                                     'exemplarCity' => 'Faroe'
+                                                                   },
+                                                'America/Godthab' => {
+                                                                     'type' => 'America/Godthab',
+                                                                     'exemplarCity' => 'Nuuk'
+                                                                   },
+                                                'America/St_Kitts' => {
+                                                                      'type' => 'America/St_Kitts',
+                                                                      'exemplarCity' => 'St. Kitts'
+                                                                    },
+                                                'America/Scoresbysund' => {
+                                                                          'type' => 'America/Scoresbysund',
+                                                                          'exemplarCity' => 'Ittoqqortoormiit'
+                                                                        },
+                                                'America/St_Johns' => {
+                                                                      'type' => 'America/St_Johns',
+                                                                      'exemplarCity' => "St. John\x{2019}s"
+                                                                    },
+                                                'Pacific/Ponape' => {
+                                                                    'type' => 'Pacific/Ponape',
+                                                                    'exemplarCity' => 'Pohnpei'
+                                                                  },
+                                                'Asia/Katmandu' => {
+                                                                   'type' => 'Asia/Katmandu',
+                                                                   'exemplarCity' => 'Kathmandu'
+                                                                 },
+                                                'America/Kentucky/Monticello' => {
+                                                                                 'type' => 'America/Kentucky/Monticello',
+                                                                                 'exemplarCity' => 'Monticello, Kentucky'
+                                                                               },
+                                                'America/St_Vincent' => {
+                                                                        'type' => 'America/St_Vincent',
+                                                                        'exemplarCity' => 'St. Vincent'
+                                                                      },
+                                                'America/North_Dakota/Center' => {
+                                                                                 'type' => 'America/North_Dakota/Center',
+                                                                                 'exemplarCity' => 'Center, North Dakota'
+                                                                               },
+                                                'Pacific/Truk' => {
+                                                                  'type' => 'Pacific/Truk',
+                                                                  'exemplarCity' => 'Chuuk'
+                                                                }
+                                              },
+                                   'fallbackFormat' => '{1} ({0})',
+                                   'gmtZeroFormat' => 'GMT'
+                                 },
+                  'eras' => {
+                              'eraNames' => {
+                                            'alias' => {
+                                                       '' => ''
+                                                     }
+                                          },
+                              'eraNarrow' => {
+                                             'alias' => {
+                                                        '' => ''
+                                                      }
+                                           },
+                              'eraAbbr' => {
+                                           'era' => {
+                                                    '1' => "\x{f66}\x{fa4}\x{fb1}\x{f72}\x{f0b}\x{f63}\x{f7c}\x{f0d}",
+                                                    '0' => "\x{f66}\x{fa4}\x{fb1}\x{f72}\x{f0b}\x{f63}\x{f7c}\x{f0b}\x{f66}\x{f94}\x{f7c}\x{f53}\x{f0d}"
+                                                  }
+                                         }
+                            },
+                  'days' => {
+                              'format' => {
+                                          'short' => {
+                                                     '' => ''
+                                                   },
+                                          'abbreviated' => {
+                                                           '' => '',
+                                                           'fri' => "\x{f66}\x{f44}\x{f66}\x{f0b}",
+                                                           'wed' => "\x{f67}\x{fb3}\x{f42}\x{f0b}\x{f54}\x{f0b}",
+                                                           'sun' => "\x{f49}\x{f72}\x{f0b}\x{f58}\x{f0b}",
+                                                           'tue' => "\x{f58}\x{f72}\x{f42}\x{f0b}\x{f51}\x{f58}\x{f62}\x{f0b}",
+                                                           'mon' => "\x{f5f}\x{fb3}\x{f0b}\x{f56}\x{f0b}",
+                                                           'sat' => "\x{f66}\x{fa4}\x{f7a}\x{f53}\x{f0b}\x{f54}\x{f0b}",
+                                                           'thu' => "\x{f55}\x{f74}\x{f62}\x{f0b}\x{f56}\x{f74}\x{f0b}"
+                                                         },
+                                          'narrow' => {
+                                                      '' => '',
+                                                      'fri' => "\x{f66}",
+                                                      'wed' => "\x{f67}\x{fb3}\x{f42}",
+                                                      'sun' => "\x{f49}\x{f72}",
+                                                      'tue' => "\x{f58}\x{f72}",
+                                                      'mon' => "\x{f5f}\x{fb3}",
+                                                      'sat' => "\x{f66}\x{fa4}\x{f7a}",
+                                                      'thu' => "\x{f55}\x{f74}"
+                                                    },
+                                          'wide' => {
+                                                    'fri' => "\x{f42}\x{f5f}\x{f60}\x{f0b}\x{f66}\x{f44}\x{f66}\x{f0b}",
+                                                    'tue' => "\x{f42}\x{f5f}\x{f60}\x{f0b}\x{f58}\x{f72}\x{f42}\x{f0b}\x{f51}\x{f58}\x{f62}\x{f0b}",
+                                                    'sun' => "\x{f42}\x{f5f}\x{f60}\x{f0b}\x{f49}\x{f72}\x{f0b}\x{f58}\x{f0b}",
+                                                    'sat' => "\x{f42}\x{f5f}\x{f60}\x{f0b}\x{f66}\x{fa4}\x{f7a}\x{f53}\x{f0b}\x{f54}\x{f0b}",
+                                                    'mon' => "\x{f42}\x{f5f}\x{f60}\x{f0b}\x{f5f}\x{fb3}\x{f0b}\x{f56}\x{f0b}",
+                                                    'wed' => "\x{f42}\x{f5f}\x{f60}\x{f0b}\x{f67}\x{fb3}\x{f42}\x{f0b}\x{f54}\x{f0b}",
+                                                    'thu' => "\x{f42}\x{f5f}\x{f60}\x{f0b}\x{f55}\x{f74}\x{f62}\x{f0b}\x{f56}\x{f74}\x{f0b}"
+                                                  }
+                                        },
+                              'stand-alone' => {
+                                               'short' => {
+                                                          '' => ''
+                                                        },
+                                               'abbreviated' => {
+                                                                '' => '',
+                                                                'fri' => "\x{f66}\x{f44}\x{f66}\x{f0b}",
+                                                                'wed' => "\x{f67}\x{fb3}\x{f42}\x{f0b}\x{f54}\x{f0b}",
+                                                                'sun' => "\x{f49}\x{f72}\x{f0b}\x{f58}\x{f0b}",
+                                                                'tue' => "\x{f58}\x{f72}\x{f42}\x{f0b}\x{f51}\x{f58}\x{f62}\x{f0b}",
+                                                                'mon' => "\x{f5f}\x{fb3}\x{f0b}\x{f56}\x{f0b}",
+                                                                'sat' => "\x{f66}\x{fa4}\x{f7a}\x{f53}\x{f0b}\x{f54}\x{f0b}",
+                                                                'thu' => "\x{f55}\x{f74}\x{f62}\x{f0b}\x{f56}\x{f74}\x{f0b}"
+                                                              },
+                                               'narrow' => {
+                                                           'fri' => "\x{f66}",
+                                                           'tue' => "\x{f58}\x{f72}",
+                                                           'sun' => "\x{f49}\x{f72}",
+                                                           'sat' => "\x{f66}\x{fa4}\x{f7a}",
+                                                           'mon' => "\x{f5f}\x{fb3}",
+                                                           'wed' => "\x{f67}\x{fb3}",
+                                                           'thu' => "\x{f55}\x{f74}"
+                                                         },
+                                               'wide' => {
+                                                         '' => '',
+                                                         'fri' => "\x{f42}\x{f5f}\x{f60}\x{f0b}\x{f66}\x{f44}\x{f66}\x{f0b}",
+                                                         'wed' => "\x{f42}\x{f5f}\x{f60}\x{f0b}\x{f67}\x{fb3}\x{f42}\x{f0b}\x{f54}\x{f0b}",
+                                                         'sun' => "\x{f42}\x{f5f}\x{f60}\x{f0b}\x{f49}\x{f72}\x{f0b}\x{f58}\x{f0b}",
+                                                         'tue' => "\x{f42}\x{f5f}\x{f60}\x{f0b}\x{f58}\x{f72}\x{f42}\x{f0b}\x{f51}\x{f58}\x{f62}\x{f0b}",
+                                                         'mon' => "\x{f42}\x{f5f}\x{f60}\x{f0b}\x{f5f}\x{fb3}\x{f0b}\x{f56}\x{f0b}",
+                                                         'sat' => "\x{f42}\x{f5f}\x{f60}\x{f0b}\x{f66}\x{fa4}\x{f7a}\x{f53}\x{f0b}\x{f54}\x{f0b}",
+                                                         'thu' => "\x{f42}\x{f5f}\x{f60}\x{f0b}\x{f55}\x{f74}\x{f62}\x{f0b}\x{f56}\x{f74}\x{f0b}"
+                                                       }
+                                             }
+                            },
+                  'months' => {
+                                'format' => {
+                                            'abbreviated' => {
+                                                             '' => '',
+                                                             '6' => "\x{f5f}\x{fb3}\x{f0b}\x{f26}",
+                                                             '11' => "\x{f5f}\x{fb3}\x{f0b}\x{f21}\x{f21}",
+                                                             '3' => "\x{f5f}\x{fb3}\x{f0b}\x{f23}",
+                                                             '7' => "\x{f5f}\x{fb3}\x{f0b}\x{f27}",
+                                                             '9' => "\x{f5f}\x{fb3}\x{f0b}\x{f29}",
+                                                             '12' => "\x{f5f}\x{fb3}\x{f0b}\x{f21}\x{f22}",
+                                                             '2' => "\x{f5f}\x{fb3}\x{f0b}\x{f22}",
+                                                             '8' => "\x{f5f}\x{fb3}\x{f0b}\x{f28}",
+                                                             '1' => "\x{f5f}\x{fb3}\x{f0b}\x{f21}",
+                                                             '4' => "\x{f5f}\x{fb3}\x{f0b}\x{f24}",
+                                                             '10' => "\x{f5f}\x{fb3}\x{f0b}\x{f21}\x{f20}",
+                                                             '5' => "\x{f5f}\x{fb3}\x{f0b}\x{f25}"
+                                                           },
+                                            'narrow' => {
+                                                        '' => ''
+                                                      },
+                                            'wide' => {
+                                                      '6' => "\x{f5f}\x{fb3}\x{f0b}\x{f56}\x{f0b}\x{f51}\x{fb2}\x{f74}\x{f42}\x{f0b}\x{f54}\x{f0b}",
+                                                      '11' => "\x{f5f}\x{fb3}\x{f0b}\x{f56}\x{f0b}\x{f56}\x{f45}\x{f74}\x{f0b}\x{f42}\x{f45}\x{f72}\x{f42}\x{f0b}\x{f54}\x{f0b}",
+                                                      '3' => "\x{f5f}\x{fb3}\x{f0b}\x{f56}\x{f0b}\x{f66}\x{f74}\x{f58}\x{f0b}\x{f54}\x{f0b}",
+                                                      '7' => "\x{f5f}\x{fb3}\x{f0b}\x{f56}\x{f0b}\x{f56}\x{f51}\x{f74}\x{f53}\x{f0b}\x{f54}\x{f0b}",
+                                                      '9' => "\x{f5f}\x{fb3}\x{f0b}\x{f56}\x{f0b}\x{f51}\x{f42}\x{f74}\x{f0b}\x{f54}\x{f0b}",
+                                                      '12' => "\x{f5f}\x{fb3}\x{f0b}\x{f56}\x{f0b}\x{f56}\x{f45}\x{f74}\x{f0b}\x{f42}\x{f49}\x{f72}\x{f66}\x{f0b}\x{f54}\x{f0b}",
+                                                      '2' => "\x{f5f}\x{fb3}\x{f0b}\x{f56}\x{f0b}\x{f42}\x{f49}\x{f72}\x{f66}\x{f0b}\x{f54}\x{f0b}",
+                                                      '8' => "\x{f5f}\x{fb3}\x{f0b}\x{f56}\x{f0b}\x{f56}\x{f62}\x{f92}\x{fb1}\x{f51}\x{f0b}\x{f54}\x{f0b}",
+                                                      '1' => "\x{f5f}\x{fb3}\x{f0b}\x{f56}\x{f0b}\x{f51}\x{f44}\x{f0b}\x{f54}\x{f7c}\x{f0b}",
+                                                      '4' => "\x{f5f}\x{fb3}\x{f0b}\x{f56}\x{f0b}\x{f56}\x{f5e}\x{f72}\x{f0b}\x{f54}\x{f0b}",
+                                                      '10' => "\x{f5f}\x{fb3}\x{f0b}\x{f56}\x{f0b}\x{f56}\x{f45}\x{f74}\x{f0b}\x{f54}\x{f0b}",
+                                                      '5' => "\x{f5f}\x{fb3}\x{f0b}\x{f56}\x{f0b}\x{f63}\x{f94}\x{f0b}\x{f54}\x{f0b}"
+                                                    }
+                                          },
+                                'stand-alone' => {
+                                                 'abbreviated' => {
+                                                                  '' => ''
+                                                                },
+                                                 'narrow' => {
+                                                             '6' => '6',
+                                                             '11' => '11',
+                                                             '3' => '3',
+                                                             '7' => '7',
+                                                             '9' => '9',
+                                                             '12' => '12',
+                                                             '2' => '2',
+                                                             '8' => '8',
+                                                             '1' => '1',
+                                                             '4' => '4',
+                                                             '10' => '10',
+                                                             '5' => '5'
+                                                           },
+                                                 'wide' => {
+                                                           '' => ''
+                                                         }
+                                               }
+                              },
+                  'dateFormat' => {
+                                    'short' => 'y-MM-dd',
+                                    'medium' => "y \x{f63}\x{f7c}\x{f0b}\x{f60}\x{f72}\x{f0b}MMM\x{f59}\x{f7a}\x{f66}\x{f0b}d",
+                                    'long' => "\x{f66}\x{fa6}\x{fb1}\x{f72}\x{f0b}\x{f63}\x{f7c}\x{f0b}y MMMM\x{f60}\x{f72}\x{f0b}\x{f59}\x{f7a}\x{f66}\x{f0b}d\x{f51}",
+                                    'full' => 'y MMMM d, EEEE'
+                                  }
+                },
+  'displayNames' => {
+                      'territories' => {
+                                         'DJ' => "\x{f5b}\x{f72}\x{f0b}\x{f56}\x{f74}\x{f0b}\x{f4f}\x{f72}\x{f0d}",
+                                         'JM' => "\x{f5b}\x{f0b}\x{f58}\x{f7a}\x{f0b}\x{f40}\x{f0d}",
+                                         'PG' => "\x{f54}\x{f0b}\x{f54}\x{f74}\x{f0b}\x{f68}\x{f0d} \x{f53}\x{f72}\x{f60}\x{f74}\x{f0d} \x{f42}\x{fb7}\x{f72}\x{f0b}\x{f53}\x{f72}\x{f0d}",
+                                         'AT' => "\x{f68}\x{f66}\x{f9f}\x{fb2}\x{f72}\x{f0b}\x{f61}\x{f0d}",
+                                         'KI' => "\x{f40}\x{f72}\x{f0b}\x{f62}\x{f72}\x{f0b}\x{f56}\x{f71}\x{f0b}\x{f4f}\x{f72}\x{f0d}",
+                                         'BN' => "\x{f56}\x{f74}\x{f0b}\x{f62}\x{f74}\x{f0b}\x{f53}\x{f7a}\x{f0d}",
+                                         'ZM' => "\x{f5b}\x{f58}\x{f0b}\x{f56}\x{f72}\x{f0b}\x{f61}\x{f0d}",
+                                         'BW' => "\x{f56}\x{f7c}\x{f59}\x{f0b}\x{f5d}\x{f0b}\x{f53}\x{f0d}",
+                                         'AO' => "\x{f68}\x{f44}\x{f0b}\x{f42}\x{f7d}\x{f0b}\x{f63}\x{f0d}",
+                                         'ZW' => "\x{f5b}\x{f72}\x{f58}\x{f0b}\x{f56}\x{fb7}\x{f71}\x{f0b}\x{f56}\x{f7a}\x{f0d}",
+                                         'VC' => "\x{f66}\x{f7a}\x{f53}\x{f9a}\x{f0d} \x{f5d}\x{f72}\x{f53}\x{f0b}\x{f66}\x{f53}\x{f0d} \x{f51}\x{f44}\x{f0c}\x{f0d} \x{f42}\x{fb7}\x{f72}\x{f62}\x{f72}\x{f53}\x{f0b}\x{f4c}\x{f72}\x{f53}\x{f0d}",
+                                         'JP' => "\x{f62}\x{f72}\x{f0b}\x{f54}\x{f72}\x{f53}\x{f0b}",
+                                         'NA' => "\x{f53}\x{f0b}\x{f58}\x{f72}\x{f0b}\x{f56}\x{f72}\x{f0b}\x{f61}\x{f0d}",
+                                         'SH' => "\x{f66}\x{f7a}\x{f53}\x{f9a}\x{f0d} \x{f67}\x{f7a}\x{f0b}\x{f63}\x{f72}\x{f0b}\x{f53}\x{f0d}",
+                                         'LC' => "\x{f66}\x{f7a}\x{f53}\x{f9a}\x{f0d} \x{f63}\x{f74}\x{f0b}\x{f64}\x{f72}\x{f0b}\x{f61}\x{f0d}",
+                                         'MA' => "\x{f58}\x{f7c}\x{f0b}\x{f62}\x{f7c}\x{f0b}\x{f40}\x{f90}\x{f7c}\x{f0d}",
+                                         'VU' => "\x{f5d}\x{f0b}\x{f53}\x{f74}\x{f0b}\x{f68}\x{f0b}\x{f50}\x{f74}\x{f0d}",
+                                         'SV' => "\x{f68}\x{f7a}\x{f63}\x{f0d} \x{f66}\x{f71}\x{f63}\x{f0b}\x{f5d}\x{f0b}\x{f4c}\x{f7c}\x{f62}\x{f0d}",
+                                         'MT' => "\x{f58}\x{f63}\x{f0b}\x{f4a}\x{f0d}",
+                                         'MN' => "\x{f66}\x{f7c}\x{f42}\x{f0b}\x{f61}\x{f74}\x{f63}\x{f0d}",
+                                         'IT' => "\x{f68}\x{f72}\x{f0b}\x{f40}\x{fb2}\x{f62}\x{f0b}\x{f63}\x{f72}\x{f0b}",
+                                         'WS' => "\x{f53}\x{f74}\x{f0b}\x{f56}\x{f0b}\x{f66}\x{f0b}\x{f58}\x{f7c}\x{f0b}\x{f60}\x{f0d}",
+                                         'FR' => "\x{f55}\x{f0b}\x{f62}\x{f71}\x{f53}\x{f0b}\x{f66}\x{f72}\x{f0d}",
+                                         'EG' => "\x{f68}\x{f72}\x{f0b}\x{f47}\x{f72}\x{f56}\x{f9a}\x{f0d}",
+                                         'UZ' => "\x{f68}\x{f74}\x{f5b}\x{f0b}\x{f56}\x{f7a}\x{f0b}\x{f40}\x{f72}\x{f66}\x{f9f}\x{f71}\x{f53}\x{f0d}",
+                                         'PW' => "\x{f54}\x{f0b}\x{f63}\x{f7d}\x{f0d}",
+                                         'LR' => "\x{f63}\x{f72}\x{f0b}\x{f56}\x{f7a}\x{f0b}\x{f62}\x{f72}\x{f0b}\x{f61}\x{f0d}",
+                                         'RW' => "\x{f62}\x{f74}\x{f0b}\x{f5d}\x{f53}\x{f0b}\x{f4c}\x{f0d}",
+                                         'BE' => "\x{f56}\x{f7a}\x{f63}\x{f0b}\x{f47}\x{f72}\x{f0b}\x{f61}\x{f58}\x{f0d}",
+                                         'EE' => "\x{f68}\x{f72}\x{f66}\x{f9f}\x{f7c}\x{f0b}\x{f53}\x{f72}\x{f0b}\x{f61}\x{f0d}",
+                                         'CK' => "\x{f40}\x{f71}\x{f74}\x{f42} \x{f42}\x{fb3}\x{f72}\x{f44}\x{f0b}\x{f55}\x{fb2}\x{f7a}\x{f53}\x{f0b}\x{f62}\x{f92}\x{fb1}\x{f63}\x{f0b}\x{f41}\x{f56}\x{f0d}",
+                                         'BY' => "\x{f56}\x{f7a}\x{f0b}\x{f63}\x{f74}\x{f0b}\x{f62}\x{f74}\x{f0b}\x{f66}\x{f74}\x{f0d}",
+                                         'SA' => "\x{f66}\x{f7d}\x{f0b}\x{f51}\x{fb7}\x{f72}\x{f0b}\x{f68}\x{f0b}\x{f62}\x{f71}\x{f0b}\x{f56}\x{f72}\x{f0b}\x{f61}\x{f0d}",
+                                         'NO' => "\x{f53}\x{f7c}\x{f62}\x{f0b}\x{f5d}\x{f7a}\x{f0d}",
+                                         'LS' => "\x{f63}\x{f7a}\x{f0b}\x{f66}\x{f7c}\x{f0b}\x{f50}\x{f7c}\x{f0d}",
+                                         'KR' => "\x{f40}\x{f7c}\x{f0b}\x{f62}\x{f72}\x{f0b}\x{f61}\x{f0d} \x{f63}\x{fb7}\x{f7c}\x{f0b}\x{f58}\x{f0d}",
+                                         'ZA' => "\x{f63}\x{fb7}\x{f7c}\x{f0b} \x{f68}\x{f55}\x{fb2}\x{f72}\x{f0b}\x{f40}\x{f0d}",
+                                         'PT' => "\x{f54}\x{f7c}\x{f62}\x{f0b}\x{f4f}\x{f74}\x{f0b}\x{f42}\x{fb7}\x{f63}\x{f0d}",
+                                         'BF' => "\x{f56}\x{f62}\x{f40}\x{f72}\x{f0b}\x{f53}\x{f0d} \x{f55}\x{f66}\x{f7c}\x{f0d}",
+                                         'CA' => "\x{f41}\x{f7a}\x{f0b}\x{f53}\x{f0b}\x{f4c}\x{f0d}",
+                                         'AM' => "\x{f68}\x{f62}\x{f0b}\x{f58}\x{f7a}\x{f0b}\x{f53}\x{f72}\x{f0b}\x{f61}\x{f0d}",
+                                         'CM' => "\x{f40}\x{f0b}\x{f58}\x{f7a}\x{f0b}\x{f62}\x{f74}\x{f53}\x{f0d}",
+                                         'SR' => "\x{f66}\x{f74}\x{f0b}\x{f62}\x{f72}\x{f0b}\x{f53}\x{f71}\x{f58}\x{f0d}",
+                                         'MG' => "\x{f58}\x{f0b}\x{f51}\x{f71}\x{f0b}\x{f42}\x{fb7}\x{f66}\x{f90}\x{f71}\x{f62}\x{f0d}",
+                                         'NP' => "\x{f56}\x{f62}\x{f0b}\x{f61}\x{f74}\x{f63}\x{f0b}",
+                                         'BT' => "\x{f60}\x{f56}\x{fb2}\x{f74}\x{f42}\x{f0b}\x{f61}\x{f74}\x{f63}\x{f0d}",
+                                         '009' => "\x{f68}\x{f7c}\x{f64}\x{f72}\x{f0b}\x{f61}\x{f71}\x{f53}\x{f0b}\x{f53}\x{f0d}",
+                                         'PL' => "\x{f54}\x{f7c}\x{f0b}\x{f63}\x{f53}\x{f9c}\x{f0d}",
+                                         'GA' => "\x{f42}\x{f7a}\x{f0b}\x{f56}\x{f7d}\x{f53}\x{f0d}",
+                                         'AE' => "\x{f68}\x{f0b}\x{f62}\x{f56}\x{f0d} \x{f68}\x{f72}\x{f0b}\x{f58}\x{f72}\x{f0b}\x{f62}\x{f4a}\x{f84}\x{f0d} \x{f46}\x{f72}\x{f42}\x{f0b}\x{f66}\x{f92}\x{fb2}\x{f72}\x{f63}\x{f0b}\x{f62}\x{f92}\x{fb1}\x{f63}\x{f0b}\x{f41}\x{f56}\x{f0d}",
+                                         'BA' => "\x{f56}\x{f7c}\x{f66}\x{fa3}\x{f72}\x{f0b}\x{f61}\x{f0b}\x{f51}\x{f44}\x{f0b}\x{f67}\x{f62}\x{fab}\x{f7c}\x{f0b}\x{f42}\x{f7c}\x{f0b}\x{f5d}\x{f72}\x{f0b}\x{f53}\x{f0d}",
+                                         'KY' => "\x{f41}\x{f7a}\x{f0b}\x{f58}\x{f7a}\x{f53}\x{f0b}\x{f42}\x{fb3}\x{f72}\x{f44}\x{f0b}\x{f55}\x{fb2}\x{f53}\x{f0d}",
+                                         'LA' => "\x{f63}\x{f71}\x{f0b}\x{f60}\x{f7c}\x{f66}\x{f0d}",
+                                         '002' => "\x{f68}\x{f55}\x{fb2}\x{f72}\x{f0b}\x{f40}\x{f0d}",
+                                         'PH' => "\x{f55}\x{f72}\x{f0b}\x{f63}\x{f72}\x{f0b}\x{f54}\x{f72}\x{f53}\x{f66}\x{f84}\x{f0d}",
+                                         'NI' => "\x{f53}\x{f72}\x{f0b}\x{f40}\x{f0b}\x{f62}\x{f0b}\x{f42}\x{f74}\x{f0b}\x{f68}\x{f0d}",
+                                         'KZ' => "\x{f41}\x{f0b}\x{f5b}\x{f71}\x{f42}\x{f0b}\x{f66}\x{f9f}\x{f71}\x{f53}\x{f0d}",
+                                         'MM' => "\x{f60}\x{f56}\x{f62}\x{f0b}\x{f58}\x{f0d}",
+                                         'NR' => "\x{f53}\x{f7d}\x{f0b}\x{f62}\x{f74}\x{f0d}",
+                                         'NE' => "\x{f53}\x{f60}\x{f72}\x{f0b}\x{f47}\x{f62}\x{f0d}",
+                                         'DM' => "\x{f4c}\x{f7c}\x{f0b}\x{f58}\x{f72}\x{f53}\x{f0b}\x{f53}\x{f72}\x{f0b}\x{f40}\x{f0d}",
+                                         'MR' => "\x{f58}\x{f7d}\x{f0b}\x{f62}\x{f72}\x{f0b}\x{f4f}\x{f0b}\x{f53}\x{f72}\x{f0b}\x{f61}\x{f0d}",
+                                         'AD' => "\x{f68}\x{f7a}\x{f53}\x{f0b}\x{f4c}\x{f7c}\x{f0b}\x{f62}\x{f0d}",
+                                         'SE' => "\x{f67}\x{fb2}\x{f74}\x{f60}\x{f72}\x{f0b}\x{f4f}\x{f53}\x{f0d}",
+                                         'AZ' => "\x{f68}\x{f5b}\x{f62}\x{f0b}\x{f56}\x{f61}\x{f7a}\x{f0b}\x{f47}\x{f53}\x{f0d}",
+                                         'AF' => "\x{f68}\x{f55}\x{f0b}\x{f42}\x{f0b}\x{f53}\x{f72}\x{f0b}\x{f66}\x{f9f}\x{f71}\x{f53}\x{f0d}",
+                                         'NG' => "\x{f53}\x{f71}\x{f60}\x{f72}\x{f0b}\x{f47}\x{f72}\x{f0b}\x{f62}\x{f72}\x{f0b}\x{f61}\x{f0d}",
+                                         'KE' => "\x{f41}\x{f7a}\x{f53}\x{f0b}\x{f49}\x{f72}\x{f0b}\x{f61}\x{f0d}",
+                                         'BJ' => "\x{f56}\x{f71}\x{f7a}\x{f0b}\x{f53}\x{f72}\x{f53}\x{f0d}",
+                                         'OM' => "\x{f68}\x{f7c}\x{f0b}\x{f58}\x{f53}\x{f0d}",
+                                         'VN' => "\x{f56}\x{f72}\x{f0b}\x{f51}\x{f72}\x{f0b}\x{f53}\x{f58}\x{f0d}",
+                                         'YE' => "\x{f61}\x{f7a}\x{f0b}\x{f58}\x{f7a}\x{f53}\x{f0d}",
+                                         'CI' => "\x{f40}\x{f7c}\x{f0b}\x{f4a}\x{f7a}\x{f0b}\x{f4c}\x{f72}\x{f0d} \x{f68}\x{f72}\x{f0b}\x{f5d}\x{f7c}\x{f0b}\x{f62}\x{f7a}\x{f0d}",
+                                         'DZ' => "\x{f68}\x{f63}\x{f0b}\x{f47}\x{f72}\x{f0b}\x{f62}\x{f72}\x{f0b}\x{f61}\x{f0d}",
+                                         'LK' => "\x{f64}\x{fb2}\x{f71}\x{f72}\x{f0b}\x{f63}\x{f44}\x{f90}\x{f0b}\x{f0d}",
+                                         'ID' => "\x{f68}\x{f72}\x{f53}\x{f0b}\x{f4c}\x{f7c}\x{f0b}\x{f53}\x{f7a}\x{f0b}\x{f64}\x{f72}\x{f0b}\x{f61}\x{f0d}",
+                                         'GE' => "\x{f47}\x{f7c}\x{f62}\x{f0b}\x{f47}\x{f72}\x{f0b}\x{f61}\x{f0d}",
+                                         'GM' => "\x{f42}\x{fb7}\x{f58}\x{f0b}\x{f56}\x{f72}\x{f0b}\x{f61}\x{f0d}",
+                                         'LV' => "\x{f63}\x{f4f}\x{f0b}\x{f56}\x{f72}\x{f0b}\x{f61}\x{f0d}",
+                                         'RU' => "\x{f68}\x{f74}\x{f0b}\x{f62}\x{f74}\x{f0b}\x{f66}\x{f74}\x{f0b}",
+                                         'LB' => "\x{f63}\x{f7a}\x{f56}\x{f0b}\x{f53}\x{f7c}\x{f53}\x{f0d}",
+                                         'FK' => "\x{f55}\x{f63}\x{f90}\x{f0b}\x{f63}\x{f53}\x{f9c}\x{f0b}\x{f42}\x{fb3}\x{f72}\x{f44}\x{f0b}\x{f55}\x{fb2}\x{f53}\x{f0d}",
+                                         'DE' => "\x{f60}\x{f47}\x{f62}\x{f0b}\x{f58}\x{f53}\x{f0b}",
+                                         'FI' => "\x{f55}\x{f72}\x{f53}\x{f0b}\x{f63}\x{f53}\x{f84}\x{f4c}\x{f0d}",
+                                         'MV' => "\x{f58}\x{f63}\x{f0b}\x{f51}\x{fad}\x{f72}\x{f56}\x{f0d}",
+                                         'LU' => "\x{f63}\x{f40}\x{f0b}\x{f5b}\x{f58}\x{f0b}\x{f56}\x{f7c}\x{f62}\x{f92}\x{f0d}",
+                                         'VE' => "\x{f5d}\x{f7a}\x{f0b}\x{f53}\x{f72}\x{f0b}\x{f5b}\x{f74}\x{f60}\x{f7a}\x{f0b}\x{f63}\x{f0d}",
+                                         'BH' => "\x{f56}\x{fb7}\x{f71}\x{f0b}\x{f62}\x{f7a}\x{f53}\x{f0d}",
+                                         'GI' => "\x{f47}\x{f72}\x{f56}\x{f0b}\x{f62}\x{f71}\x{f63}\x{f0b}\x{f4a}\x{f62}\x{f0d}",
+                                         'RO' => "\x{f62}\x{f7c}\x{f0b}\x{f58}\x{f71}\x{f0b}\x{f53}\x{f72}\x{f61}\x{f0d}",
+                                         'TV' => "\x{f50}\x{f74}\x{f0b}\x{f5d}\x{f0b}\x{f63}\x{f74}\x{f0d}",
+                                         'IN' => "\x{f62}\x{f92}\x{fb1}\x{f0b}\x{f42}\x{f62}\x{f0b}",
+                                         'AR' => "\x{f68}\x{f62}\x{f0b}\x{f47}\x{f7a}\x{f53}\x{f0b}\x{f4a}\x{f72}\x{f0b}\x{f53}\x{f0d}",
+                                         'SN' => "\x{f66}\x{f7a}\x{f0b}\x{f53}\x{f72}\x{f0b}\x{f42}\x{fb7}\x{f63}\x{f0d}",
+                                         'MX' => "\x{f58}\x{f7a}\x{f40}\x{f0b}\x{f66}\x{f72}\x{f0b}\x{f40}\x{f7c}\x{f0d}",
+                                         'AW' => "\x{f68}\x{f0b}\x{f62}\x{f74}\x{f0b}\x{f56}\x{f0d}",
+                                         'MC' => "\x{f58}\x{f7c}\x{f0b}\x{f53}\x{f0b}\x{f40}\x{f7c}\x{f0d}",
+                                         'HN' => "\x{f67}\x{f7c}\x{f53}\x{f0b}\x{f51}\x{f74}\x{f0b}\x{f62}\x{f66}\x{f84}\x{f0d}",
+                                         'BR' => "\x{f56}\x{f0b}\x{f62}\x{f71}\x{f0b}\x{f5b}\x{f72}\x{f63}\x{f0d}",
+                                         'IL' => "\x{f68}\x{f72}\x{f0b}\x{f5b}\x{f84}\x{f0b}\x{f62}\x{f7a}\x{f63}\x{f0d}",
+                                         'SB' => "\x{f66}\x{f7c}\x{f0b}\x{f63}\x{f7c}\x{f0b}\x{f58}\x{f7c}\x{f53}\x{f0d} \x{f42}\x{fb3}\x{f72}\x{f44}\x{f0b}\x{f55}\x{fb2}\x{f53}\x{f0b}\x{f5a}\x{f7c}\x{f0b}\x{f41}\x{f42}\x{f0d}",
+                                         'NZ' => "\x{f53}\x{f72}\x{f60}\x{f74}\x{f0b}\x{f5b}\x{f72}\x{f0b}\x{f63}\x{f53}\x{f84}\x{f4c}\x{f0d}",
+                                         'HU' => "\x{f67}\x{f44}\x{f92}\x{f0b}\x{f62}\x{f72}\x{f0d}",
+                                         'DO' => "\x{f4c}\x{f7c}\x{f0b}\x{f58}\x{f72}\x{f53}\x{f53}\x{f72}\x{f0b}\x{f40}\x{f53}\x{f0b}\x{f66}\x{fa4}\x{fb1}\x{f72}\x{f0b}\x{f58}\x{f50}\x{f74}\x{f53}\x{f0b}\x{f62}\x{f92}\x{fb1}\x{f63}\x{f0b}\x{f41}\x{f56}\x{f0d}",
+                                         'UG' => "\x{f61}\x{f74}\x{f0b}\x{f42}\x{f53}\x{f0b}\x{f4c}\x{f0d}",
+                                         'KH' => "\x{f40}\x{f58}\x{f0b}\x{f56}\x{f7c}\x{f0b}\x{f4c}\x{f72}\x{f0b}\x{f61}\x{f0d}",
+                                         'GB' => "\x{f51}\x{f56}\x{fb1}\x{f72}\x{f53}\x{f0b}\x{f47}\x{f72}\x{f0b}",
+                                         'BB' => "\x{f56}\x{f71}\x{f62}\x{fa6}\x{f0b}\x{f4c}\x{f7c}\x{f66}\x{f84}\x{f0d}",
+                                         'HT' => "\x{f67}\x{f7a}\x{f0b}\x{f4f}\x{f72}\x{f0d}",
+                                         'DK' => "\x{f4c}\x{f7a}\x{f53}\x{f0b}\x{f58}\x{f71}\x{f62}\x{f90}\x{f0d}",
+                                         'PA' => "\x{f54}\x{f0b}\x{f53}\x{f71}\x{f0b}\x{f58}\x{f0d}",
+                                         'QA' => "\x{f40}\x{f0b}\x{f4f}\x{f71}\x{f62}\x{f0d}",
+                                         'GD' => "\x{f42}\x{fb7}\x{f0b}\x{f62}\x{f72}\x{f0b}\x{f53}\x{f0b}\x{f4c}\x{f0d}",
+                                         'MO' => "\x{f58}\x{f7a}\x{f0b}\x{f40}\x{f60}\x{f7c}\x{f0d}",
+                                         'ZZ' => "\x{f58}\x{f72}\x{f60}\x{f72}\x{f0b}\x{f64}\x{f7a}\x{f66}\x{f0b}\x{f62}\x{f9f}\x{f7c}\x{f42}\x{f66}\x{f0b}\x{f58}\x{f0b}\x{f56}\x{fb1}\x{f74}\x{f44}\x{f0b}\x{f56}\x{f60}\x{f72}\x{f0b}\x{f41}\x{f7c}\x{f62}\x{f0b}\x{f61}\x{f74}\x{f42}",
+                                         'HR' => "\x{f40}\x{f74}\x{f62}\x{f7c}\x{f0b}\x{f64}\x{f72}\x{f0b}\x{f61}\x{f0d}",
+                                         'KW' => "\x{f40}\x{f74}\x{f0b}\x{f5d}\x{f7a}\x{f51}\x{f0b}\x{f62}\x{f92}\x{fb1}\x{f63}\x{f0b}\x{f41}\x{f56}\x{f0d}",
+                                         'CZ' => "\x{f45}\x{f7b}\x{f42}\x{f0b}\x{f66}\x{fa4}\x{fb1}\x{f72}\x{f0b}\x{f58}\x{f50}\x{f74}\x{f53}\x{f0b}\x{f62}\x{f92}\x{fb1}\x{f63}\x{f0b}\x{f41}\x{f56}\x{f0d}",
+                                         'MZ' => "\x{f58}\x{f7c}\x{f0b}\x{f5b}\x{f58}\x{f0b}\x{f56}\x{f72}\x{f42}\x{f0d}",
+                                         'ES' => "\x{f66}\x{f72}\x{f0b}\x{f54}\x{f53}\x{f0d}",
+                                         'BO' => "\x{f56}\x{f7c}\x{f0b}\x{f63}\x{f72}\x{f0b}\x{f5d}\x{f72}\x{f61}\x{f0d}",
+                                         'ST' => "\x{f66}\x{f0b}\x{f60}\x{f7c}\x{f0b}\x{f4f}\x{f7c}\x{f51}\x{f0b}\x{f58}\x{f51}\x{f0d} \x{f51}\x{f44}\x{f0c}\x{f0d} \x{f54}\x{f84}\x{f62}\x{f72}\x{f53}\x{f0b}\x{f66}\x{f72}\x{f0b}\x{f54}\x{f7a}\x{f0d}",
+                                         'AU' => "\x{f68}\x{f66}\x{f9f}\x{fb2}\x{f7a}\x{f0b}\x{f63}\x{f72}\x{f0b}\x{f61}\x{f0d}",
+                                         'AL' => "\x{f68}\x{f63}\x{f0b}\x{f56}\x{f71}\x{f0b}\x{f53}\x{f72}\x{f0b}\x{f61}\x{f0d}",
+                                         '142' => "\x{f68}\x{f7a}\x{f0b}\x{f64}\x{f72}\x{f0b}\x{f61}\x{f0d}",
+                                         'IR' => "\x{f68}\x{f72}\x{f0b}\x{f62}\x{f71}\x{f53}\x{f0d}",
+                                         'TR' => "\x{f4f}\x{f74}\x{f62}\x{f40}\x{f72}\x{f0d}",
+                                         'BI' => "\x{f56}\x{f74}\x{f0b}\x{f62}\x{f74}\x{f53}\x{f0b}\x{f4c}\x{f72}\x{f0d}",
+                                         'GN' => "\x{f42}\x{fb7}\x{f72}\x{f0b}\x{f53}\x{f72}\x{f0b}\x{f61}\x{f0d}",
+                                         'GW' => "\x{f42}\x{fb7}\x{f72}\x{f0b}\x{f53}\x{f72}\x{f0b}\x{f61}\x{f0b}\x{f56}\x{f72}\x{f66}\x{f84}\x{f0b}\x{f66}\x{f7c}\x{f0d}",
+                                         'GR' => "\x{f42}\x{fb7}\x{f72}\x{f0b}\x{f62}\x{f71}\x{f72}\x{f0b}\x{f66}\x{f72}\x{f0d}",
+                                         'AG' => "\x{f68}\x{f7a}\x{f53}\x{f0b}\x{f4a}\x{f72}\x{f0b}\x{f42}\x{f74}\x{f0b}\x{f51}\x{f44}\x{f0b}\x{f0d} \x{f56}\x{fb7}\x{f62}\x{f0b}\x{f56}\x{f74}\x{f0b}\x{f4c}\x{f0d}",
+                                         'SI' => "\x{f66}\x{f0b}\x{f63}\x{f7d}\x{f0b}\x{f5d}\x{f7a}\x{f0b}\x{f53}\x{f72}\x{f0b}\x{f61}\x{f0d}",
+                                         'CO' => "\x{f40}\x{f7c}\x{f0b}\x{f63}\x{f7c}\x{f58}\x{f0b}\x{f56}\x{f72}\x{f0b}\x{f61}\x{f0d}",
+                                         'AI' => "\x{f68}\x{f44}\x{f0b}\x{f42}\x{f74}\x{f60}\x{f72}\x{f0b}\x{f63}\x{f0d}",
+                                         'AQ' => "\x{f63}\x{fb7}\x{f7c}\x{f0b}\x{f62}\x{fa9}\x{f7a}\x{f60}\x{f72}\x{f0b}\x{f58}\x{f50}\x{f60}\x{f0b}\x{f42}\x{fb3}\x{f72}\x{f44}\x{f0b}\x{f0d}",
+                                         'JO' => "\x{f47}\x{f7c}\x{f62}\x{f0b}\x{f4c}\x{f53}\x{f0d}",
+                                         'SM' => "\x{f66}\x{f53}\x{f0b}\x{f58}\x{f7a}\x{f0b}\x{f62}\x{f72}\x{f0b}\x{f53}\x{f7c}\x{f0d}",
+                                         'UA' => "\x{f61}\x{f74}\x{f0b}\x{f40}\x{fb2}\x{f53}\x{f0d}",
+                                         'CL' => "\x{f45}\x{f72}\x{f0b}\x{f63}\x{f72}\x{f0d}",
+                                         'CU' => "\x{f41}\x{fb1}\x{f74}\x{f60}\x{f74}\x{f0b}\x{f56}\x{f0d}",
+                                         'KN' => "\x{f66}\x{f7a}\x{f53}\x{f9a}\x{f0d} \x{f40}\x{f72}\x{f4a}\x{f9a}\x{f66}\x{f84}\x{f0d} \x{f51}\x{f44}\x{f0c}\x{f0d} \x{f53}\x{f7a}\x{f0b}\x{f56}\x{f72}\x{f66}\x{f84}\x{f0d}",
+                                         'ML' => "\x{f58}\x{f0b}\x{f63}\x{f72}\x{f0d}",
+                                         'SC' => "\x{f66}\x{f71}\x{f0b}\x{f64}\x{f7b}\x{f63}\x{f0d}",
+                                         'ET' => "\x{f68}\x{f72}\x{f0b}\x{f50}\x{f72}\x{f60}\x{f7c}\x{f0b}\x{f54}\x{f72}\x{f0b}\x{f61}\x{f0d}",
+                                         'IS' => "\x{f68}\x{f0b}\x{f68}\x{f72}\x{f0b}\x{f66}\x{f72}\x{f0b}\x{f63}\x{f53}\x{f51}\x{f0d}",
+                                         'NL' => "\x{f67}\x{f60}\x{f7c}\x{f0b}\x{f63}\x{f53}\x{f0d}",
+                                         'EC' => "\x{f68}\x{f72}\x{f0b}\x{f41}\x{fad}\x{f0b}\x{f4c}\x{f7c}\x{f62}\x{f0d}",
+                                         'HK' => "\x{f67}\x{f7c}\x{f44}\x{f0b}\x{f40}\x{f7c}\x{f44}\x{f0c}\x{f0d}",
+                                         'MY' => "\x{f58}\x{f0b}\x{f63}\x{f7a}\x{f0b}\x{f64}\x{f72}\x{f0b}\x{f61}\x{f0d}",
+                                         'CR' => "\x{f40}\x{f7c}\x{f0b}\x{f66}\x{f84}\x{f4a}\x{f0b}\x{f62}\x{f72}\x{f0b}\x{f40}\x{f0d}",
+                                         'VA' => "\x{f5d}\x{f7a}\x{f0b}\x{f4a}\x{f72}\x{f0b}\x{f40}\x{f53}\x{f0d}",
+                                         'SD' => "\x{f66}\x{f74}\x{f0b}\x{f51}\x{f71}\x{f53}\x{f0d}",
+                                         'RS' => "\x{f66}\x{f7a}\x{f62}\x{f0b}\x{f56}\x{f72}\x{f0b}\x{f61}\x{f0d}",
+                                         'CN' => "\x{f62}\x{f92}\x{fb1}\x{f0b}\x{f53}\x{f42}",
+                                         'BG' => "\x{f56}\x{f74}\x{f63}\x{f0b}\x{f42}\x{f0b}\x{f62}\x{f72}\x{f0b}\x{f61}\x{f0d}",
+                                         'MH' => "\x{f58}\x{f71}\x{f62}\x{f0b}\x{f64}\x{f63}\x{f0b}\x{f42}\x{fb3}\x{f72}\x{f44}\x{f0b}\x{f55}\x{fb2}\x{f7a}\x{f53}\x{f0d}",
+                                         'UY' => "\x{f68}\x{f74}\x{f0b}\x{f62}\x{f74}\x{f0b}\x{f42}\x{fb7}\x{f7a}\x{f0d}",
+                                         'PY' => "\x{f54}\x{f71}\x{f0b}\x{f62}\x{f0b}\x{f42}\x{f7a}\x{f0d}",
+                                         'BS' => "\x{f56}\x{fb7}\x{f71}\x{f0b}\x{f58}\x{f66}\x{f84}\x{f0d}",
+                                         '053' => "\x{f68}\x{f66}\x{f9f}\x{fb2}\x{f7a}\x{f0b}\x{f63}\x{f72}\x{f0b}\x{f61}\x{f0b}\x{f51}\x{f44}\x{f0b}\x{f0d} \x{f53}\x{f72}\x{f60}\x{f74}\x{f0b}\x{f5b}\x{f72}\x{f0b}\x{f63}\x{f53}\x{f84}\x{f4c}\x{f0d}",
+                                         'MU' => "\x{f58}\x{f7d}\x{f0b}\x{f62}\x{f72}\x{f64}\x{f66}\x{f84}\x{f0d}",
+                                         'CH' => "\x{f67}\x{fb2}\x{f74}\x{f51}\x{f0b}\x{f67}\x{fb2}\x{f72}\x{f0d}",
+                                         'LI' => "\x{f63}\x{f7a}\x{f42}\x{f0b}\x{f4f}\x{f7a}\x{f53}\x{f0b}\x{f5a}\x{f72}\x{f53}\x{f0d}",
+                                         'GH' => "\x{f42}\x{fb7}\x{f0b}\x{f53}\x{f0d}",
+                                         'KG' => "\x{f41}\x{f72}\x{f62}\x{f0b}\x{f42}\x{f72}\x{f5b}\x{f0b}\x{f66}\x{f9f}\x{f71}\x{f53}\x{f0d}",
+                                         'NU' => "\x{f53}\x{f72}\x{f60}\x{f74}\x{f0b}\x{f5d}\x{f0d}",
+                                         'US' => "\x{f68}\x{f0b}\x{f58}\x{f7a}\x{f0b}\x{f62}\x{f72}\x{f0b}\x{f40}\x{f0d}",
+                                         'PE' => "\x{f54}\x{f7a}\x{f0b}\x{f62}\x{f74}\x{f0d}",
+                                         'SL' => "\x{f66}\x{f7a}\x{f0b}\x{f61}\x{f62}\x{f0b}\x{f62}\x{f0d} \x{f63}\x{f72}\x{f60}\x{f7c}\x{f53}\x{f0d}",
+                                         'BZ' => "\x{f56}\x{f7a}\x{f0b}\x{f63}\x{f72}\x{f5b}\x{f0d}",
+                                         '001' => "\x{f60}\x{f5b}\x{f58}\x{f0b}\x{f42}\x{fb3}\x{f72}\x{f44}\x{f0b}\x{f0d}",
+                                         '150' => "\x{f61}\x{f74}\x{f0b}\x{f62}\x{f7c}\x{f56}\x{f0d}",
+                                         'CY' => "\x{f66}\x{f71}\x{f61}\x{f7a}\x{f0b}\x{f54}\x{f0b}\x{f62}\x{f66}\x{f84}\x{f0d}",
+                                         'FJ' => "\x{f55}\x{f72}\x{f0b}\x{f47}\x{f72}\x{f0d}",
+                                         'IE' => "\x{f68}\x{f0b}\x{f61}\x{f62}\x{f0b}\x{f63}\x{f53}\x{f4c}\x{f0d}",
+                                         'ER' => "\x{f68}\x{f7a}\x{f0b}\x{f62}\x{f72}\x{f0b}\x{f4f}\x{fb2}\x{f7a}\x{f0b}\x{f68}\x{f0d}",
+                                         'IQ' => "\x{f68}\x{f72}\x{f0b}\x{f62}\x{f42}\x{f0d}",
+                                         'MW' => "\x{f58}\x{f71}\x{f0b}\x{f63}\x{f71}\x{f0b}\x{f5d}\x{f72}\x{f0d}",
+                                         'LY' => "\x{f63}\x{f72}\x{f0b}\x{f56}\x{f72}\x{f0b}\x{f61}\x{f0d}",
+                                         'GT' => "\x{f42}\x{fb7}\x{f7c}\x{f0b}\x{f4a}\x{f7a}\x{f0b}\x{f58}\x{f0b}\x{f63}\x{f0d}",
+                                         'GY' => "\x{f42}\x{fb7}\x{f74}\x{f0b}\x{f61}\x{f71}\x{f0b}\x{f53}\x{f0d}",
+                                         'BM' => "\x{f56}\x{f62}\x{f0b}\x{f58}\x{f74}\x{f0b}\x{f4c}\x{f0d}",
+                                         'PK' => "\x{f54}\x{f40}\x{f72}\x{f0b}\x{f66}\x{f9f}\x{f71}\x{f53}\x{f0d}",
+                                         'LT' => "\x{f63}\x{f72}\x{f0b}\x{f50}\x{f74}\x{f0b}\x{f68}\x{f7a}\x{f0b}\x{f53}\x{f72}\x{f0b}\x{f61}\x{f0d}",
+                                         'SG' => "\x{f66}\x{f72}\x{f44}\x{f92}\x{f0b}\x{f54}\x{f74}\x{f62}\x{f0d}",
+                                         'TD' => "\x{f45}\x{f7b}\x{f4c}\x{f0d}",
+                                         'SO' => "\x{f66}\x{f7c}\x{f0b}\x{f58}\x{f71}\x{f63}\x{f72}\x{f0b}\x{f61}\x{f0d}",
+                                         'SK' => "\x{f66}\x{f0b}\x{f63}\x{f7d}\x{f0b}\x{f5d}\x{f40}\x{fb1}\x{f0d}",
+                                         'BD' => "\x{f56}\x{f44}\x{f92}\x{f0b}\x{f63}\x{f0b}\x{f51}\x{f7a}\x{f64}\x{f0d}"
+                                       },
+                      'languages' => {
+                                       'uk' => "\x{f61}\x{f74}\x{f0b}\x{f40}\x{fb2}\x{f0b}\x{f53}\x{f72}\x{f0b}\x{f66}\x{f90}\x{f51}\x{f0d}",
+                                       'pt' => "\x{f55}\x{f72}\x{f0b}\x{f50}\x{f7c}\x{f0b}\x{f61}\x{f60}\x{f72}\x{f0d}",
+                                       'ne' => "\x{f53}\x{f7a}\x{f0b}\x{f54}\x{f0b}\x{f63}\x{f72}",
+                                       'hi' => "\x{f67}\x{f72}\x{f53}\x{f0b}\x{f51}\x{f72}",
+                                       'tr' => "\x{f50}\x{f74}\x{f62}\x{f0b}\x{f41}\x{f7a}\x{f60}\x{f72}\x{f0b}\x{f66}\x{f90}\x{f51}\x{f0d}",
+                                       'gaa' => "\x{f42}\x{f71}\x{f0b}\x{f66}\x{f90}\x{f51}\x{f0d}",
+                                       'en_US' => "\x{f51}\x{f56}\x{f72}\x{f53}\x{f0b}\x{f47}\x{f72}\x{f60}\x{f72}\x{f0b}\x{f66}\x{f90}\x{f51}\x{f0d} (\x{f68}\x{f0b}\x{f62}\x{f72}\x{f0b})",
+                                       'es' => "\x{f5e}\x{f72}\x{f0b}\x{f54}\x{f53}\x{f0b}\x{f61}\x{f60}\x{f72}\x{f0d}",
+                                       'da' => "\x{f4f}\x{f7a}\x{f53}\x{f0b}\x{f58}\x{f42}\x{f0b}\x{f42}\x{f72}\x{f0b}\x{f66}\x{f90}\x{f51}\x{f0d}",
+                                       'ug' => "\x{f61}\x{f74}\x{f0b}\x{f42}\x{f74}\x{f62}\x{f0b}\x{f66}\x{f90}\x{f51}\x{f0d}",
+                                       'ru' => "\x{f68}\x{f74}\x{f0b}\x{f62}\x{f74}\x{f0b}\x{f66}\x{f74}\x{f0b}\x{f66}\x{f90}\x{f51}\x{f0b}",
+                                       'my' => "\x{f60}\x{f56}\x{f62}\x{f0b}\x{f58}\x{f60}\x{f72}\x{f0b}\x{f66}\x{f90}\x{f51}\x{f0d}",
+                                       'fr' => "\x{f67}\x{fa5}\x{f0b}\x{f62}\x{f53}\x{f0b}\x{f66}\x{f72}\x{f60}\x{f72}\x{f0b}\x{f0d}",
+                                       'or' => "\x{f68}\x{f7d}\x{f0b}\x{f62}\x{f72}\x{f0b}\x{f61}\x{f0b}\x{f66}\x{f90}\x{f51}\x{f0d}",
+                                       'vi' => "\x{f61}\x{f7c}\x{f0b}\x{f53}\x{f53}\x{f0b}\x{f66}\x{f90}\x{f51}\x{f0d}",
+                                       'sa' => "\x{f66}\x{f7e}\x{f0b}\x{f66}\x{f90}\x{fb2}\x{f80}\x{f0b}\x{f4f}\x{f0d}",
+                                       'ta' => "\x{f4f}\x{f71}\x{f0b}\x{f58}\x{f72}\x{f63}\x{f0b}\x{f66}\x{f90}\x{f51}\x{f0d}",
+                                       'id' => "\x{f68}\x{f72}\x{f53}\x{f0b}\x{f51}\x{f7c}\x{f0b}\x{f53}\x{f72}\x{f0b}\x{f66}\x{f72}\x{f0b}\x{f66}\x{f90}\x{f51}\x{f0d}",
+                                       'th' => "\x{f50}\x{f60}\x{f60}\x{f72}\x{f0b}\x{f61}\x{f74}\x{f63}\x{f0b}\x{f66}\x{f90}\x{f51}\x{f0d}",
+                                       'si' => "\x{f5e}\x{f72}\x{f0b}\x{f63}\x{f53}\x{f0b}\x{f66}\x{f90}\x{f51}\x{f0d}",
+                                       'bo' => "\x{f54}\x{f7c}\x{f51}\x{f0b}\x{f66}\x{f90}\x{f51}\x{f0b}",
+                                       'en_GB' => "\x{f51}\x{f56}\x{f72}\x{f53}\x{f0b}\x{f47}\x{f72}\x{f60}\x{f72}\x{f0b}\x{f66}\x{f90}\x{f51}\x{f0d} (\x{f51}\x{f56}\x{f72}\x{f53}\x{f0b}\x{f47}\x{f72}\x{f60}\x{f72}\x{f0b}\x{f62}\x{f92}\x{fb1}\x{f63}\x{f0b}\x{f41}\x{f56}\x{f0b})",
+                                       'ko' => "\x{f41}\x{f7c}\x{f0b}\x{f62}\x{f7a}\x{f0b}\x{f61}\x{f60}\x{f72}\x{f0b}\x{f66}\x{f90}\x{f51}\x{f0d}",
+                                       'en' => "\x{f51}\x{f56}\x{f72}\x{f53}\x{f0b}\x{f47}\x{f72}\x{f60}\x{f72}\x{f0b}\x{f66}\x{f90}\x{f51}\x{f0d}",
+                                       'zza' => "\x{f5f}\x{f0b}\x{f5f}\x{f71}\x{f0b}\x{f66}\x{f90}\x{f51}\x{f0d}",
+                                       'de' => "\x{f60}\x{f47}\x{f62}\x{f0b}\x{f58}\x{f53}\x{f0b}\x{f42}\x{fb1}\x{f72}\x{f0d}",
+                                       'zun' => "\x{f5f}\x{f74}\x{f0b}\x{f53}\x{f72}\x{f0b}\x{f66}\x{f90}\x{f51}\x{f0d}",
+                                       'zu' => "\x{f5f}\x{f74}\x{f0b}\x{f63}\x{f74}\x{f0b}\x{f66}\x{f90}\x{f51}\x{f0d}",
+                                       'zh_Hant' => "\x{f66}\x{fb2}\x{f7c}\x{f63}\x{f0b}\x{f62}\x{f92}\x{fb1}\x{f74}\x{f53}\x{f0b}\x{f42}\x{fb1}\x{f72}\x{f0d}",
+                                       'ur' => "\x{f5d}\x{f74}\x{f60}\x{f74}\x{f0b}\x{f4f}\x{f74}\x{f60}\x{f74}\x{f0b}\x{f66}\x{f90}\x{f51}\x{f0d}",
+                                       'zen' => "\x{f5f}\x{f7a}\x{f0b}\x{f53}\x{f0b}\x{f42}\x{f71}\x{f0b}\x{f66}\x{f90}\x{f51}\x{f0d}",
+                                       'la' => "\x{f63}\x{f71}\x{f0b}\x{f4f}\x{f72}\x{f53}\x{f0b}\x{f66}\x{f90}\x{f51}\x{f0d}",
+                                       'ms' => "\x{f58}\x{f0b}\x{f63}\x{f0b}\x{f61}\x{f0b}\x{f66}\x{f90}\x{f51}\x{f0d}",
+                                       'nn' => "\x{f53}\x{f7c}\x{f0b}\x{f5d}\x{f7a}\x{f0b}\x{f66}\x{f90}\x{f51}\x{f0d}",
+                                       'bn' => "\x{f56}\x{fb7}\x{f44}\x{f0b}\x{f42}\x{f0b}\x{f63}\x{f60}\x{f72}\x{f0b}\x{f66}\x{f90}\x{f51}\x{f0d}",
+                                       'ja' => "\x{f62}\x{f72}\x{f0b}\x{f54}\x{f72}\x{f53}\x{f0b}\x{f66}\x{f90}\x{f51}\x{f0b}",
+                                       'mr' => "\x{f58}\x{f0b}\x{f62}\x{f0b}\x{f50}\x{f72}\x{f0b}\x{f66}\x{f90}\x{f51}\x{f0d}",
+                                       'gu' => "\x{f42}\x{f74}\x{f47}\x{f0b}\x{f62}\x{f71}\x{f4f}\x{f72}\x{f0b}\x{f66}\x{f90}\x{f51}\x{f0d}",
+                                       'zh_Hans' => "\x{f66}\x{f9f}\x{f56}\x{f66}\x{f0b}\x{f56}\x{f62}\x{fa1}\x{f60}\x{f72}\x{f0d} \x{f40}\x{fb2}\x{f74}\x{f44}\x{f0b}\x{f42}\x{f7c}\x{f60}\x{f72}\x{f0d}",
+                                       'sv' => "\x{f67}\x{fb2}\x{f74}\x{f60}\x{f72}\x{f0b}\x{f4f}\x{f53}\x{f0b}\x{f66}\x{f90}\x{f51}\x{f0d}",
+                                       'en_CA' => "\x{f51}\x{f56}\x{f72}\x{f53}\x{f0b}\x{f47}\x{f72}\x{f60}\x{f72}\x{f0b}\x{f66}\x{f90}\x{f51}\x{f0d} (\x{f41}\x{f7a}\x{f0b}\x{f53}\x{f0b}\x{f4c}\x{f0b})",
+                                       'und' => "\x{f58}\x{f72}\x{f60}\x{f72}\x{f0b}\x{f64}\x{f7a}\x{f66}\x{f0b}\x{f62}\x{f9f}\x{f7c}\x{f42}\x{f66}\x{f0b}\x{f58}\x{f0b}\x{f56}\x{fb1}\x{f74}\x{f44}\x{f0b}\x{f56}\x{f0d} \x{f61}\x{f44}\x{f0b}\x{f53}\x{f0b}\x{f46}\x{f51}\x{f0b}\x{f63}\x{fb7}\x{f42}\x{f0b}\x{f45}\x{f53}\x{f0b}\x{f42}\x{fb1}\x{f72}\x{f0b}\x{f66}\x{f90}\x{f51}\x{f0b}\x{f56}\x{f62}\x{fa1}\x{f0d}",
+                                       'it' => "\x{f51}\x{f56}\x{fb1}\x{f72}\x{f0b}\x{f4f}\x{f0b}\x{f0b}\x{f63}\x{f60}\x{f72}\x{f0b}\x{f58}\x{f72}\x{f0d}",
+                                       'dz' => "\x{f62}\x{fab}\x{f7c}\x{f44}\x{f0b}\x{f41}",
+                                       'te' => "\x{f4f}\x{f7a}\x{f0b}\x{f63}\x{f74}\x{f0b}\x{f42}\x{f74}\x{f0b}\x{f66}\x{f90}\x{f51}\x{f0d}",
+                                       'kn' => "\x{f40}\x{f53}\x{fa3}\x{f0b}\x{f4c}\x{f0b}\x{f66}\x{f90}\x{f51}\x{f0d}",
+                                       'zh' => "\x{f62}\x{f92}\x{fb1}\x{f0b}\x{f66}\x{f90}\x{f51}\x{f0b}",
+                                       'pl' => "\x{f54}\x{f7c}\x{f0b}\x{f63}\x{f53}\x{f0b}\x{f66}\x{f90}\x{f51}\x{f0d}",
+                                       'nl' => "\x{f67}\x{f60}\x{f7c}\x{f0b}\x{f63}\x{f53}\x{f0b}\x{f66}\x{f90}\x{f51}\x{f0d}",
+                                       'mn' => "\x{f66}\x{f7c}\x{f42}\x{f0b}\x{f66}\x{f90}\x{f51}\x{f0d}",
+                                       'pt_BR' => "\x{f54}\x{f0b}\x{f5e}\x{f60}\x{f72}\x{f0b}\x{f58}\x{f72}\x{f0d} \x{f55}\x{f72}\x{f0b}\x{f50}\x{f7c}\x{f0b}\x{f61}\x{f60}\x{f72}\x{f0b}\x{f58}\x{f72}\x{f0d}"
+                                     },
+                      'scripts' => {
+                                     'Mymr' => "\x{f60}\x{f56}\x{f62}\x{f0b}\x{f58}\x{f60}\x{f72}\x{f0b}\x{f66}\x{f90}\x{f51}\x{f0b}\x{f61}\x{f72}\x{f42}",
+                                     'Gujr' => "\x{f42}\x{f74}\x{f47}\x{f0b}\x{f62}\x{f71}\x{f4f}\x{f72}\x{f0b}\x{f66}\x{f90}\x{f51}\x{f0d}",
+                                     'Deva' => "\x{f51}\x{f7a}\x{f0b}\x{f56}\x{f0b}\x{f53}\x{f71}\x{f0b}\x{f42}\x{f0b}\x{f62}\x{f71}\x{f72}\x{f0b}\x{f66}\x{f90}\x{f51}\x{f0b}\x{f61}\x{f72}\x{f42}",
+                                     'Arab' => "\x{f60}\x{f0b}\x{f63}\x{f0b}\x{f54}\x{f7c}\x{f60}\x{f72}\x{f0b}\x{f66}\x{f90}\x{f51}\x{f0b}\x{f61}\x{f72}\x{f42}\x{f0b}\x{f0d}",
+                                     'Hant' => "\x{f42}\x{f53}\x{f60}\x{f0b}\x{f51}\x{f74}\x{f66}\x{f0b}\x{f62}\x{f92}\x{fb1}\x{f60}\x{f72}\x{f0b}\x{f66}\x{f90}\x{f51}\x{f0b}\x{f61}\x{f72}\x{f42}\x{f0d}",
+                                     'Latn' => "\x{f63}\x{f0b}\x{f4f}\x{f72}\x{f53}\x{f0b}\x{f66}\x{f90}\x{f51}\x{f0b}\x{f61}\x{f72}\x{f42}\x{f0b}\x{f0d}",
+                                     'Zzzz' => "\x{f58}\x{f72}\x{f60}\x{f72}\x{f0b}\x{f64}\x{f7a}\x{f66}\x{f0b}\x{f62}\x{f9f}\x{f7c}\x{f42}\x{f66}\x{f0b}\x{f58}\x{f0b}\x{f56}\x{fb1}\x{f74}\x{f44}\x{f0b}\x{f56}\x{f0d} \x{f61}\x{f44}\x{f0b}\x{f53}\x{f0b}\x{f46}\x{f51}\x{f0b}\x{f63}\x{fb7}\x{f42}\x{f0b}\x{f45}\x{f53}\x{f0b}\x{f42}\x{fb1}\x{f72}\x{f0b}\x{f5f}\x{f72}\x{f53}\x{f0b}\x{f56}\x{fb2}\x{f72}\x{f66}\x{f0d}",
+                                     'Hans' => "\x{f66}\x{fb3}\x{f0b}\x{f56}\x{f66}\x{fa1}\x{f74}\x{f60}\x{f72}\x{f0b}\x{f62}\x{f92}\x{fb1}\x{f60}\x{f72}\x{f0b}\x{f66}\x{f90}\x{f51}\x{f0b}\x{f61}\x{f72}\x{f42}\x{f0d}",
+                                     'Cyrl' => "\x{f42}\x{f7c}\x{f0b}\x{f66}\x{f60}\x{f72}\x{f0b}\x{f63}\x{f0b}\x{f67}\x{fa5}\x{f74}\x{f0b}\x{f66}\x{f90}\x{f51}\x{f0b}\x{f61}\x{f72}\x{f42}\x{f0b}\x{f0d}",
+                                     'Tibt' => "\x{f56}\x{f7c}\x{f51}\x{f0b}\x{f61}\x{f72}\x{f42}\x{f0b}",
+                                     'Zxxx' => "\x{f66}\x{f99}\x{f53}\x{f0b}\x{f56}\x{f62}\x{f92}\x{fb1}\x{f74}\x{f51}\x{f0d} \x{f61}\x{f72}\x{f42}\x{f0b}\x{f62}\x{f72}\x{f42}\x{f66}\x{f0b}\x{f66}\x{f74}\x{f0b}\x{f58}\x{f0b}\x{f56}\x{f40}\x{f7c}\x{f51}\x{f0b}\x{f54}\x{f60}\x{f72}\x{f0b}\x{f5f}\x{f72}\x{f53}\x{f0b}\x{f50}\x{f7c}\x{f0d}\x{f0b}"
+                                   }
+                    },
+  'delimiters' => {
+                    'alternateQuotationEnd' => "\x{2019}",
+                    'quotationEnd' => "\x{201d}",
+                    'quotationStart' => "\x{201c}",
+                    'alternateQuotationStart' => "\x{2018}"
+                  },
+  'iso4217' => 'INR'
+};

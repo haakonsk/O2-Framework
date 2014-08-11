@@ -1,0 +1,937 @@
+{
+  'territory' => 'CD',
+  'language' => 'lu',
+  'number' => {
+                'percentFormat' => {
+                                     'percentFormatLength' => {
+                                                              'standard' => '#,##0%'
+                                                            }
+                                   },
+                'measurement' => {},
+                'symbols' => {
+                               'infinity' => "\x{221e}",
+                               'nan' => 'NaN',
+                               'plusSign' => '+',
+                               'superscriptingExponent' => "×",
+                               'exponential' => 'E',
+                               'group' => '.',
+                               'percentSign' => '%',
+                               'decimal' => ',',
+                               'perMille' => "\x{2030}",
+                               'alias' => '',
+                               'minusSign' => '-',
+                               'list' => ';'
+                             },
+                'scientificFormat' => {
+                                        'scientificFormatLength' => {
+                                                                    'standard' => '#E0'
+                                                                  }
+                                      },
+                'decimalFormat' => {
+                                     'decimalFormatLength' => {
+                                                              'short' => '0K00K000K0M00M000M0G00G000G0T00T000T',
+                                                              'standard' => '#,##0.###'
+                                                            }
+                                   },
+                'currencyFormat' => {
+                                      'currencyFormatLength' => {
+                                                                'standard' => "#,##0.00¤"
+                                                              }
+                                    },
+                'currencies' => {
+                                  'BZD' => {
+                                           'symbol' => '$'
+                                         },
+                                  'SGD' => {
+                                           'symbol' => '$'
+                                         },
+                                  'TWD' => {
+                                           'symbol' => 'NT$'
+                                         },
+                                  'SLL' => {
+                                           'displayName' => 'Leone'
+                                         },
+                                  'USD' => {
+                                           'symbol' => '$',
+                                           'displayName' => 'Ndola wa Ameriki'
+                                         },
+                                  'MAD' => {
+                                           'displayName' => 'Ndiriha wa Maroke'
+                                         },
+                                  'ERN' => {
+                                           'displayName' => 'Nakfa wa Elitle'
+                                         },
+                                  'SAR' => {
+                                           'displayName' => 'Riyale wa Alabu Nsawu'
+                                         },
+                                  'SSP' => {
+                                           'symbol' => "£"
+                                         },
+                                  'KYD' => {
+                                           'symbol' => '$'
+                                         },
+                                  'AUD' => {
+                                           'symbol' => '$',
+                                           'displayName' => 'Ndola wa Ositali'
+                                         },
+                                  'NGN' => {
+                                           'symbol' => "\x{20a6}",
+                                           'displayName' => 'Naira wa Nizerya'
+                                         },
+                                  'CRC' => {
+                                           'symbol' => "\x{20a1}"
+                                         },
+                                  'GHC' => {
+                                           'displayName' => 'Sedi wa Ngana'
+                                         },
+                                  'KRW' => {
+                                           'symbol' => "\x{20a9}"
+                                         },
+                                  'TRY' => {
+                                           'symbol' => 'TL'
+                                         },
+                                  'GIP' => {
+                                           'symbol' => "£"
+                                         },
+                                  'LAK' => {
+                                           'symbol' => "\x{20ad}"
+                                         },
+                                  'CLP' => {
+                                           'symbol' => '$'
+                                         },
+                                  'NAD' => {
+                                           'symbol' => '$',
+                                           'displayName' => 'Ndola wa Namibi'
+                                         },
+                                  'DZD' => {
+                                           'displayName' => 'Ndina wa Alijeri'
+                                         },
+                                  'JMD' => {
+                                           'symbol' => '$'
+                                         },
+                                  'BSD' => {
+                                           'symbol' => '$'
+                                         },
+                                  'SZL' => {
+                                           'displayName' => 'Lilangeni'
+                                         },
+                                  'UYU' => {
+                                           'symbol' => '$'
+                                         },
+                                  'MXN' => {
+                                           'symbol' => '$'
+                                         },
+                                  'BWP' => {
+                                           'displayName' => 'Pula wa Botswana'
+                                         },
+                                  'GYD' => {
+                                           'symbol' => '$'
+                                         },
+                                  'LYD' => {
+                                           'displayName' => 'Ndina wa Libi'
+                                         },
+                                  'BYR' => {
+                                           'symbol' => "\x{440}."
+                                         },
+                                  'EGP' => {
+                                           'displayName' => 'Pauni wa Mushidi'
+                                         },
+                                  'THB' => {
+                                           'symbol' => "\x{e3f}"
+                                         },
+                                  'MUR' => {
+                                           'displayName' => 'Rupia wa Morisi'
+                                         },
+                                  'SDG' => {
+                                           'displayName' => 'Ndina wa Suda'
+                                         },
+                                  'LRD' => {
+                                           'symbol' => '$',
+                                           'displayName' => 'Ndola wa Liberya'
+                                         },
+                                  'AED' => {
+                                           'displayName' => 'Ndiriha wa Lemila alabu'
+                                         },
+                                  'JPY' => {
+                                           'symbol' => "¥",
+                                           'displayName' => "Yeni wa Zap\x{254}"
+                                         },
+                                  'ZAR' => {
+                                           'displayName' => 'Rande wa Afrika wa Mwinshi'
+                                         },
+                                  'RWF' => {
+                                           'displayName' => 'Nfalanga wa Rwanda'
+                                         },
+                                  'AOA' => {
+                                           'displayName' => 'Kwanza wa Angola'
+                                         },
+                                  'PYG' => {
+                                           'symbol' => "\x{20b2}"
+                                         },
+                                  'CAD' => {
+                                           'symbol' => '$',
+                                           'displayName' => 'Ndola wa Kanada'
+                                         },
+                                  'CUP' => {
+                                           'symbol' => '$'
+                                         },
+                                  'TTD' => {
+                                           'symbol' => '$'
+                                         },
+                                  'RUR' => {
+                                           'symbol' => "\x{440}."
+                                         },
+                                  'XCD' => {
+                                           'symbol' => 'EC$'
+                                         },
+                                  'BBD' => {
+                                           'symbol' => '$'
+                                         },
+                                  'XOF' => {
+                                           'symbol' => 'CFA',
+                                           'displayName' => 'Nfalanga CFA BCEAO'
+                                         },
+                                  'KMF' => {
+                                           'displayName' => 'Nfalanga wa Komoru'
+                                         },
+                                  'CNY' => {
+                                           'symbol' => "¥",
+                                           'displayName' => 'Yuani Renminbi wa Shine'
+                                         },
+                                  'GNS' => {
+                                           'displayName' => 'Nfalanga wa Ngina'
+                                         },
+                                  'MNT' => {
+                                           'symbol' => "\x{20ae}"
+                                         },
+                                  'INR' => {
+                                           'symbol' => "\x{20b9}",
+                                           'displayName' => 'Rupi wa Inde'
+                                         },
+                                  'KES' => {
+                                           'displayName' => 'Nshili wa Kenya'
+                                         },
+                                  'GBP' => {
+                                           'symbol' => "£",
+                                           'displayName' => 'Pauni wa Angeletele'
+                                         },
+                                  'CDF' => {
+                                           'symbol' => 'FC',
+                                           'displayName' => 'Nfalanga wa Kongu'
+                                         },
+                                  'PHP' => {
+                                           'symbol' => "\x{20b1}"
+                                         },
+                                  'KZT' => {
+                                           'symbol' => "\x{20b8}"
+                                         },
+                                  'ZMK' => {
+                                           'displayName' => "Kwasha wa Zambi (1968\x{2013}2012)"
+                                         },
+                                  'HKD' => {
+                                           'symbol' => '$'
+                                         },
+                                  'NZD' => {
+                                           'symbol' => '$'
+                                         },
+                                  'BRL' => {
+                                           'symbol' => 'R$'
+                                         },
+                                  'SOS' => {
+                                           'displayName' => 'Nshili wa Somali'
+                                         },
+                                  'SCR' => {
+                                           'displayName' => 'Rupya wa Seshele'
+                                         },
+                                  'FJD' => {
+                                           'symbol' => '$'
+                                         },
+                                  'SHP' => {
+                                           'displayName' => 'Pauni wa Santu Elena'
+                                         },
+                                  'ILS' => {
+                                           'symbol' => "\x{20aa}"
+                                         },
+                                  'LSL' => {
+                                           'displayName' => 'Loti wa Lesoto'
+                                         },
+                                  'ESP' => {
+                                           'symbol' => "\x{20a7}"
+                                         },
+                                  'UAH' => {
+                                           'symbol' => "\x{20b4}"
+                                         },
+                                  'ZMW' => {
+                                           'displayName' => 'Kwasha wa Zambi'
+                                         },
+                                  'UGX' => {
+                                           'displayName' => 'Nshili wa Uganda'
+                                         },
+                                  'DJF' => {
+                                           'displayName' => 'Nfalanga wa Dzibuti'
+                                         },
+                                  'BND' => {
+                                           'symbol' => '$'
+                                         },
+                                  'MGA' => {
+                                           'displayName' => 'Nfalanga wa Madagasikare'
+                                         },
+                                  'BMD' => {
+                                           'symbol' => '$'
+                                         },
+                                  'TND' => {
+                                           'displayName' => 'Ndina wa Tinizi'
+                                         },
+                                  'MRO' => {
+                                           'displayName' => 'Ugwiya wa Moritani'
+                                         },
+                                  'VND' => {
+                                           'symbol' => "\x{20ab}"
+                                         },
+                                  'SBD' => {
+                                           'symbol' => '$'
+                                         },
+                                  'GHS' => {
+                                           'symbol' => "\x{20b5}"
+                                         },
+                                  'MZM' => {
+                                           'displayName' => 'Metikali wa Mozambiki'
+                                         },
+                                  'SDP' => {
+                                           'displayName' => 'Pauni wa Suda'
+                                         },
+                                  'CVE' => {
+                                           'displayName' => 'Esikuludo wa Kapevere'
+                                         },
+                                  'COP' => {
+                                           'symbol' => '$'
+                                         },
+                                  'TZS' => {
+                                           'displayName' => 'Nshili wa Tanzani'
+                                         },
+                                  'BIF' => {
+                                           'displayName' => 'Nfalanga wa Bulundi'
+                                         },
+                                  'GMD' => {
+                                           'displayName' => 'Ndalasi wa Ngambi'
+                                         },
+                                  'ARS' => {
+                                           'symbol' => '$'
+                                         },
+                                  'ZWD' => {
+                                           'displayName' => 'Ndola wa Zimbabwe'
+                                         },
+                                  'MWK' => {
+                                           'displayName' => 'Kwasha wa Malawi'
+                                         },
+                                  'BDT' => {
+                                           'symbol' => "\x{9f3}"
+                                         },
+                                  'KHR' => {
+                                           'symbol' => "\x{17db}"
+                                         },
+                                  'EUR' => {
+                                           'symbol' => "\x{20ac}",
+                                           'displayName' => 'Iro'
+                                         },
+                                  'CHF' => {
+                                           'displayName' => 'Nfalanga wa Swise'
+                                         },
+                                  'BHD' => {
+                                           'displayName' => 'Ndina wa Bahrene'
+                                         },
+                                  'SRD' => {
+                                           'symbol' => '$'
+                                         },
+                                  'STD' => {
+                                           'displayName' => 'Dobra wa Sao Tome ne Presipe'
+                                         },
+                                  'XAF' => {
+                                           'symbol' => 'FCFA',
+                                           'displayName' => 'Nfalanga CFA BEAC'
+                                         },
+                                  'DOP' => {
+                                           'symbol' => '$'
+                                         },
+                                  'ETB' => {
+                                           'displayName' => 'Bira wa Etshiopi'
+                                         },
+                                  'XPF' => {
+                                           'symbol' => 'CFPF'
+                                         }
+                                }
+              },
+  'locale' => 'lu_CD',
+  'characters' => {
+                    'word-initial' => "\x{2026} {0}",
+                    'standard' => '?',
+                    'word-medial' => "{0} \x{2026} {1}",
+                    'index' => '[A B C D E F H I J K L M N O P Q S T U V W Y Z]',
+                    'medial' => "{0}\x{2026}{1}",
+                    'word-final' => "{0} \x{2026}",
+                    'final' => "{0}\x{2026}",
+                    'auxiliary' => '[g r x]',
+                    'initial' => "\x{2026}{0}",
+                    'punctuation' => '[\\- , ; \\: ! ? . ( ) \\[ \\] \\{ \\}]'
+                  },
+  'calendar' => {
+                  'calendarType' => 'gregorian',
+                  'timeFormat' => {
+                                    'short' => 'HH:mm',
+                                    'pm' => '',
+                                    'am' => '',
+                                    'medium' => 'HH:mm:ss',
+                                    'long' => 'HH:mm:ss z',
+                                    'full' => 'HH:mm:ss zzzz'
+                                  },
+                  'timeZones' => {
+                                   'regionFormat' => '{0} (+0)',
+                                   'gmtFormat' => 'GMT{0}',
+                                   'hourFormat' => '+HH:mm;-HH:mm',
+                                   'zones' => {
+                                                'Antarctica/DumontDUrville' => {
+                                                                               'type' => 'Antarctica/DumontDUrville',
+                                                                               'exemplarCity' => "Dumont d\x{2019}Urville"
+                                                                             },
+                                                'America/Indiana/Tell_City' => {
+                                                                               'type' => 'America/Indiana/Tell_City',
+                                                                               'exemplarCity' => 'Tell City, Indiana'
+                                                                             },
+                                                'America/St_Lucia' => {
+                                                                      'type' => 'America/St_Lucia',
+                                                                      'exemplarCity' => 'St. Lucia'
+                                                                    },
+                                                'Asia/Calcutta' => {
+                                                                   'type' => 'Asia/Calcutta',
+                                                                   'exemplarCity' => 'Kolkata'
+                                                                 },
+                                                'America/Indiana/Knox' => {
+                                                                          'type' => 'America/Indiana/Knox',
+                                                                          'exemplarCity' => 'Knox, Indiana'
+                                                                        },
+                                                'America/Indiana/Vincennes' => {
+                                                                               'type' => 'America/Indiana/Vincennes',
+                                                                               'exemplarCity' => 'Vincennes, Indiana'
+                                                                             },
+                                                'Africa/Asmera' => {
+                                                                   'type' => 'Africa/Asmera',
+                                                                   'exemplarCity' => 'Asmara'
+                                                                 },
+                                                'America/Indiana/Winamac' => {
+                                                                             'type' => 'America/Indiana/Winamac',
+                                                                             'exemplarCity' => 'Winamac, Indiana'
+                                                                           },
+                                                'America/St_Thomas' => {
+                                                                       'type' => 'America/St_Thomas',
+                                                                       'exemplarCity' => 'St. Thomas'
+                                                                     },
+                                                'America/Indiana/Marengo' => {
+                                                                             'type' => 'America/Indiana/Marengo',
+                                                                             'exemplarCity' => 'Marengo, Indiana'
+                                                                           },
+                                                'America/Indiana/Petersburg' => {
+                                                                                'type' => 'America/Indiana/Petersburg',
+                                                                                'exemplarCity' => 'Petersburg, Indiana'
+                                                                              },
+                                                'America/Lower_Princes' => {
+                                                                           'type' => 'America/Lower_Princes',
+                                                                           'exemplarCity' => 'Lower Prince\'s Quarter'
+                                                                         },
+                                                'America/North_Dakota/Beulah' => {
+                                                                                 'type' => 'America/North_Dakota/Beulah',
+                                                                                 'exemplarCity' => 'Beulah, North Dakota'
+                                                                               },
+                                                'Atlantic/St_Helena' => {
+                                                                        'type' => 'Atlantic/St_Helena',
+                                                                        'exemplarCity' => 'St. Helena'
+                                                                      },
+                                                'Asia/Saigon' => {
+                                                                 'type' => 'Asia/Saigon',
+                                                                 'exemplarCity' => 'Ho Chi Minh'
+                                                               },
+                                                'America/Indiana/Vevay' => {
+                                                                           'type' => 'America/Indiana/Vevay',
+                                                                           'exemplarCity' => 'Vevay, Indiana'
+                                                                         },
+                                                'America/Coral_Harbour' => {
+                                                                           'type' => 'America/Coral_Harbour',
+                                                                           'exemplarCity' => 'Atikokan'
+                                                                         },
+                                                'America/St_Barthelemy' => {
+                                                                           'type' => 'America/St_Barthelemy',
+                                                                           'exemplarCity' => 'St. Barthelemy'
+                                                                         },
+                                                'America/North_Dakota/New_Salem' => {
+                                                                                    'type' => 'America/North_Dakota/New_Salem',
+                                                                                    'exemplarCity' => 'New Salem, North Dakota'
+                                                                                  },
+                                                'Etc/Unknown' => {
+                                                                 'type' => 'Etc/Unknown',
+                                                                 'exemplarCity' => 'Unknown'
+                                                               },
+                                                'Atlantic/Faeroe' => {
+                                                                     'type' => 'Atlantic/Faeroe',
+                                                                     'exemplarCity' => 'Faroe'
+                                                                   },
+                                                'America/Godthab' => {
+                                                                     'type' => 'America/Godthab',
+                                                                     'exemplarCity' => 'Nuuk'
+                                                                   },
+                                                'America/St_Kitts' => {
+                                                                      'type' => 'America/St_Kitts',
+                                                                      'exemplarCity' => 'St. Kitts'
+                                                                    },
+                                                'America/Scoresbysund' => {
+                                                                          'type' => 'America/Scoresbysund',
+                                                                          'exemplarCity' => 'Ittoqqortoormiit'
+                                                                        },
+                                                'America/St_Johns' => {
+                                                                      'type' => 'America/St_Johns',
+                                                                      'exemplarCity' => "St. John\x{2019}s"
+                                                                    },
+                                                'Pacific/Ponape' => {
+                                                                    'type' => 'Pacific/Ponape',
+                                                                    'exemplarCity' => 'Pohnpei'
+                                                                  },
+                                                'Asia/Katmandu' => {
+                                                                   'type' => 'Asia/Katmandu',
+                                                                   'exemplarCity' => 'Kathmandu'
+                                                                 },
+                                                'America/Kentucky/Monticello' => {
+                                                                                 'type' => 'America/Kentucky/Monticello',
+                                                                                 'exemplarCity' => 'Monticello, Kentucky'
+                                                                               },
+                                                'America/St_Vincent' => {
+                                                                        'type' => 'America/St_Vincent',
+                                                                        'exemplarCity' => 'St. Vincent'
+                                                                      },
+                                                'America/North_Dakota/Center' => {
+                                                                                 'type' => 'America/North_Dakota/Center',
+                                                                                 'exemplarCity' => 'Center, North Dakota'
+                                                                               },
+                                                'Pacific/Truk' => {
+                                                                  'type' => 'Pacific/Truk',
+                                                                  'exemplarCity' => 'Chuuk'
+                                                                }
+                                              },
+                                   'fallbackFormat' => '{1} ({0})',
+                                   'gmtZeroFormat' => 'GMT'
+                                 },
+                  'eras' => {
+                              'eraNames' => {
+                                            'alias' => {
+                                                       '' => ''
+                                                     },
+                                            'era' => {
+                                                     '1' => 'Kunyima kwa Yezu Kli',
+                                                     '0' => 'Kumpala kwa Yezu Kli'
+                                                   }
+                                          },
+                              'eraNarrow' => {
+                                             'alias' => {
+                                                        '' => ''
+                                                      }
+                                           },
+                              'eraAbbr' => {
+                                           'era' => {
+                                                    '1' => 'kny. Y. K.',
+                                                    '0' => 'kmp. Y.K.'
+                                                  }
+                                         }
+                            },
+                  'days' => {
+                              'format' => {
+                                          'short' => {
+                                                     '' => ''
+                                                   },
+                                          'abbreviated' => {
+                                                           '' => '',
+                                                           'fri' => 'Ngv',
+                                                           'wed' => 'Ndg',
+                                                           'sun' => 'Lum',
+                                                           'tue' => 'Ndy',
+                                                           'mon' => 'Nko',
+                                                           'sat' => 'Lub',
+                                                           'thu' => 'Njw'
+                                                         },
+                                          'narrow' => {
+                                                      '' => ''
+                                                    },
+                                          'wide' => {
+                                                    'fri' => "Ngòvya",
+                                                    'tue' => "Ndàayà",
+                                                    'sun' => 'Lumingu',
+                                                    'sat' => 'Lubingu',
+                                                    'mon' => 'Nkodya',
+                                                    'wed' => "Ndangù",
+                                                    'thu' => "Njòwa"
+                                                  }
+                                        },
+                              'stand-alone' => {
+                                               'short' => {
+                                                          '' => ''
+                                                        },
+                                               'abbreviated' => {
+                                                                '' => ''
+                                                              },
+                                               'narrow' => {
+                                                           'fri' => 'N',
+                                                           'tue' => 'N',
+                                                           'sun' => 'L',
+                                                           'sat' => 'L',
+                                                           'mon' => 'N',
+                                                           'wed' => 'N',
+                                                           'thu' => 'N'
+                                                         },
+                                               'wide' => {
+                                                         '' => ''
+                                                       }
+                                             }
+                            },
+                  'months' => {
+                                'format' => {
+                                            'abbreviated' => {
+                                                             '' => '',
+                                                             '6' => 'Luf',
+                                                             '11' => 'Kas',
+                                                             '3' => 'Lus',
+                                                             '7' => 'Kab',
+                                                             '9' => 'Lut',
+                                                             '12' => 'Cis',
+                                                             '2' => 'Lui',
+                                                             '8' => 'Lush',
+                                                             '1' => 'Cio',
+                                                             '4' => 'Muu',
+                                                             '10' => 'Lun',
+                                                             '5' => 'Lum'
+                                                           },
+                                            'narrow' => {
+                                                        '' => ''
+                                                      },
+                                            'wide' => {
+                                                      '6' => 'Lufuimi',
+                                                      '11' => "Kaswèkèsè",
+                                                      '3' => "Lusòlo",
+                                                      '7' => "Kabàlàshìpù",
+                                                      '9' => 'Lutongolo',
+                                                      '12' => "Ciswà",
+                                                      '2' => "Lùishi",
+                                                      '8' => "Lùshìkà",
+                                                      '1' => 'Ciongo',
+                                                      '4' => "Mùuyà",
+                                                      '10' => "Lungùdi",
+                                                      '5' => "Lumùngùlù"
+                                                    }
+                                          },
+                                'stand-alone' => {
+                                                 'abbreviated' => {
+                                                                  '' => ''
+                                                                },
+                                                 'narrow' => {
+                                                             '6' => 'L',
+                                                             '11' => 'K',
+                                                             '3' => 'L',
+                                                             '7' => 'K',
+                                                             '9' => 'L',
+                                                             '12' => 'C',
+                                                             '2' => 'L',
+                                                             '8' => 'L',
+                                                             '1' => 'C',
+                                                             '4' => 'M',
+                                                             '10' => 'L',
+                                                             '5' => 'L'
+                                                           },
+                                                 'wide' => {
+                                                           '' => ''
+                                                         }
+                                               }
+                              },
+                  'dateFormat' => {
+                                    'short' => 'd/M/y',
+                                    'medium' => 'd MMM y',
+                                    'long' => 'd MMMM y',
+                                    'full' => 'EEEE d MMMM y'
+                                  }
+                },
+  'displayNames' => {
+                      'territories' => {
+                                         'GL' => 'Ngowelande',
+                                         'DJ' => 'Djibuti',
+                                         'JM' => 'Jamaiki',
+                                         'PG' => "Papwazi wa Ngin\x{25b} wa mumu",
+                                         'AT' => 'Otilisi',
+                                         'KI' => 'Kiribati',
+                                         'SZ' => 'Swazilandi',
+                                         'YT' => 'Mayote',
+                                         'BN' => 'Brineyi',
+                                         'ZM' => 'Zambi',
+                                         'CD' => 'Ditunga wa Kongu',
+                                         'BW' => 'Mbotswana',
+                                         'AO' => 'Angola',
+                                         'ZW' => 'Zimbabwe',
+                                         'VC' => 'Santu vesa ne Ngelenadine',
+                                         'PR' => 'Mpotoriku',
+                                         'JP' => 'Japu',
+                                         'NA' => 'Namibi',
+                                         'SH' => 'Santu eleni',
+                                         'TJ' => 'Tazikisita',
+                                         'LC' => 'Santu lisi',
+                                         'MA' => 'Maroke',
+                                         'VU' => 'Vanuatu',
+                                         'SV' => 'Savadore',
+                                         'MT' => 'Malite',
+                                         'MN' => 'Mongoli',
+                                         'MP' => 'Lutanda lua Mariane wa muulu',
+                                         'IT' => 'Itali',
+                                         'RE' => 'Lenyo',
+                                         'WS' => 'Samoa',
+                                         'FR' => 'Nfalanse',
+                                         'EG' => 'Mushidi',
+                                         'UZ' => 'Uzibekisita',
+                                         'PW' => 'Palau',
+                                         'TK' => 'Tokelau',
+                                         'LR' => 'Liberiya',
+                                         'RW' => 'Rwanda',
+                                         'TN' => 'Tinizi',
+                                         'BE' => 'Belejiki',
+                                         'EE' => 'Esitoni',
+                                         'CK' => "Lutanda lua Kook\x{25b}",
+                                         'BY' => 'Byelorisi',
+                                         'SA' => 'Alabu Nsawudi',
+                                         'NO' => 'Noriveje',
+                                         'LS' => 'Lesoto',
+                                         'KR' => 'Kore wa mwinshi',
+                                         'ZA' => "Afrika ya Súdi",
+                                         'PT' => 'Mputulugeshi',
+                                         'BF' => 'Bukinafaso',
+                                         'CA' => 'Kanada',
+                                         'AM' => 'Ameni',
+                                         'CM' => 'Kamerune',
+                                         'SR' => 'Suriname',
+                                         'MG' => 'Madagasikari',
+                                         'NP' => "Nepál\x{25b}",
+                                         'BT' => 'Butani',
+                                         'PL' => 'Mpoloni',
+                                         'TM' => 'Tukemenisita',
+                                         'GA' => 'Ngabu',
+                                         'CF' => 'Ditunga dya Afrika wa munkatshi',
+                                         'BA' => 'Mbosini ne Hezegovine',
+                                         'AE' => 'Lemila alabu',
+                                         'TH' => 'Tayilanda',
+                                         'KY' => 'Lutanda lua Kayima',
+                                         'LA' => 'Lawosi',
+                                         'PH' => 'Nfilipi',
+                                         'NI' => 'Nikaragwa',
+                                         'NC' => 'Kaledoni wa mumu',
+                                         'GU' => 'Ngwame',
+                                         'KZ' => 'Kazakusita',
+                                         'MM' => 'Myamare',
+                                         'NR' => 'Nauru',
+                                         'NE' => 'Nijere',
+                                         'DM' => 'Duminiku',
+                                         'TO' => 'Tonga',
+                                         'MR' => 'Moritani',
+                                         'AD' => 'Andore',
+                                         'SE' => 'Suwedi',
+                                         'AZ' => 'Ajelbayidja',
+                                         'AF' => 'Afuganisita',
+                                         'NG' => 'Nijerya',
+                                         'KE' => 'Kenya',
+                                         'BJ' => 'Bene',
+                                         'OM' => 'Omane',
+                                         'VN' => 'Viyetiname',
+                                         'VG' => 'Lutanda lua Vierzi wa Angeletele',
+                                         'YE' => 'Yemenu',
+                                         'CI' => 'Kotedivuale',
+                                         'DZ' => 'Alijeri',
+                                         'LK' => 'Sirilanka',
+                                         'ID' => 'Indonezi',
+                                         'FM' => 'Mikronezi',
+                                         'GE' => 'Joriji',
+                                         'GM' => 'Gambi',
+                                         'LV' => 'Letoni',
+                                         'RU' => 'Risi',
+                                         'LB' => 'Liba',
+                                         'FK' => 'Lutanda lua Maluni',
+                                         'DE' => 'Alemanu',
+                                         'FI' => 'Filande',
+                                         'MV' => 'Madive',
+                                         'LU' => 'Likisambulu',
+                                         'VE' => 'Venezuela',
+                                         'PN' => 'Pikairni',
+                                         'BH' => 'Bahrene',
+                                         'GI' => 'Jibeletale',
+                                         'WF' => 'Walise ne Futuna',
+                                         'RO' => 'Romani',
+                                         'VI' => 'Lutanda lua Vierzi wa Ameriki',
+                                         'TV' => 'Tuvalu',
+                                         'IN' => 'Inde',
+                                         'GP' => 'Ngwadelupe',
+                                         'AR' => 'Alijantine',
+                                         'SN' => 'Senegale',
+                                         'MX' => 'Meksike',
+                                         'AW' => 'Aruba',
+                                         'MC' => 'Monaku',
+                                         'HN' => 'Ondurase',
+                                         'BR' => 'Mnulezile',
+                                         'IL' => 'Isirayele',
+                                         'SB' => 'Lutanda lua Solomu',
+                                         'PS' => 'Palesine',
+                                         'NZ' => 'Zelanda wa mumu',
+                                         'HU' => 'Ongili',
+                                         'DO' => 'Ditunga wa Duminiku',
+                                         'UG' => 'Uganda',
+                                         'KH' => 'Kambodza',
+                                         'TG' => 'Togu',
+                                         'GB' => 'Angeletele',
+                                         'BB' => 'Barebade',
+                                         'HT' => 'Ayiti',
+                                         'DK' => 'Danemalaku',
+                                         'PA' => 'Panama',
+                                         'QA' => 'Katari',
+                                         'CV' => 'Lutanda lua Kapevele',
+                                         'GD' => 'Ngelenade',
+                                         'GF' => 'Giyane wa Nfalanse',
+                                         'KM' => 'Komoru',
+                                         'HR' => 'Krowasi',
+                                         'KW' => 'Koweti',
+                                         'TC' => 'Lutanda lua Tuluki ne Kaiko',
+                                         'MQ' => 'Martiniki',
+                                         'CZ' => 'Ditunga dya Tsheka',
+                                         'MZ' => 'Mozambiki',
+                                         'ES' => 'Nsipani',
+                                         'BO' => 'Mbolivi',
+                                         'ST' => "Sao Tome ne Presip\x{25b}",
+                                         'AU' => 'Ositali',
+                                         'AL' => 'Alubani',
+                                         'IR' => 'Ira',
+                                         'CG' => 'Kongu',
+                                         'TR' => 'Tuluki',
+                                         'MD' => 'Molidavi',
+                                         'BI' => 'Burundi',
+                                         'GN' => 'Ngine',
+                                         'GW' => 'Nginebisau',
+                                         'MK' => 'Masedwane',
+                                         'GR' => 'Ngeleka',
+                                         'AG' => 'Antiga ne Barbuda',
+                                         'SI' => 'Siloveni',
+                                         'CO' => 'Kolombi',
+                                         'AI' => 'Angiye',
+                                         'AN' => 'Antiye wa Olande',
+                                         'JO' => 'Jodani',
+                                         'SM' => 'Santu Marine',
+                                         'UA' => 'Ukreni',
+                                         'CL' => 'Shili',
+                                         'CU' => 'Kuba',
+                                         'KN' => "Santu krístofe ne Neves",
+                                         'ML' => 'Mali',
+                                         'SC' => 'Seshele',
+                                         'ET' => 'Etshiopi',
+                                         'IS' => 'Isilande',
+                                         'NL' => "Oland\x{25b}",
+                                         'MS' => 'Musera',
+                                         'EC' => 'Ekwatele',
+                                         'MY' => 'Malezi',
+                                         'CR' => 'Kositarika',
+                                         'VA' => 'Nvatika',
+                                         'IO' => 'Lutanda lwa Angeletele ku mbu wa Indiya',
+                                         'SD' => 'Suda',
+                                         'CN' => 'Shine',
+                                         'BG' => 'Biligari',
+                                         'MH' => 'Lutanda lua Marishale',
+                                         'UY' => 'Irigwei',
+                                         'PY' => 'Palagwei',
+                                         'BS' => 'Bahamase',
+                                         'TL' => 'Timoru wa diboku',
+                                         'MU' => 'Morise',
+                                         'CH' => 'Swise',
+                                         'LI' => 'Lishuteni',
+                                         'GH' => 'Ngana',
+                                         'KG' => 'Kigizisita',
+                                         'NU' => 'Nyue',
+                                         'US' => 'Ameriki',
+                                         'PE' => 'Peru',
+                                         'SL' => 'Siera Leone',
+                                         'BZ' => 'Belize',
+                                         'CY' => 'Shipele',
+                                         'FJ' => 'Fuji',
+                                         'IE' => 'Irelande',
+                                         'TW' => 'Taiwani',
+                                         'KP' => 'Kore wa muulu',
+                                         'PF' => 'Polinezi wa Nfalanse',
+                                         'ER' => 'Elitele',
+                                         'IQ' => 'Iraki',
+                                         'AS' => 'Samoa wa Ameriki',
+                                         'TZ' => 'Tanzani',
+                                         'MW' => 'Malawi',
+                                         'LY' => 'Libi',
+                                         'GT' => 'Ngwatemala',
+                                         'GY' => 'Ngiyane',
+                                         'BM' => 'Bermuda',
+                                         'PK' => 'Pakisita',
+                                         'GQ' => 'Gine Ekwatele',
+                                         'LT' => 'Litwani',
+                                         'SG' => 'Singapure',
+                                         'PM' => "Santu pététo ne Mikelu",
+                                         'TT' => 'Tinidade ne Tobago',
+                                         'NF' => 'Lutanda lua Norfok',
+                                         'TD' => 'Tshadi',
+                                         'SO' => 'Somali',
+                                         'SY' => 'Siri',
+                                         'SK' => 'Silovaki',
+                                         'BD' => 'Benguladeshi'
+                                       },
+                      'languages' => {
+                                       'uk' => 'Nkrani',
+                                       'pt' => "Mputulug\x{25b}si",
+                                       'ne' => 'nepali',
+                                       'hi' => 'Hindi',
+                                       'tr' => 'Ntuluki',
+                                       'es' => 'Lihispania',
+                                       'ru' => 'Lirisi',
+                                       'fr' => "Mfwàlànsa",
+                                       'ro' => 'Liromani',
+                                       'vi' => 'Liviyetinamu',
+                                       'ta' => 'Mtamuili',
+                                       'id' => 'Lindonezia',
+                                       'th' => 'Ntailandi',
+                                       'rw' => 'kinyarwanda',
+                                       'so' => 'Lisomali',
+                                       'ko' => 'Likoreya',
+                                       'en' => 'Lingelesa',
+                                       'ak' => 'Liakan',
+                                       'de' => 'Lizelumani',
+                                       'be' => 'Belarusi',
+                                       'cs' => 'Tsheki',
+                                       'zu' => 'Nzulu',
+                                       'ur' => 'Urdu',
+                                       'ha' => 'Hausa',
+                                       'pa' => 'Lipunjabi',
+                                       'yo' => 'Nyoruba',
+                                       'ms' => 'Limalezia',
+                                       'bn' => 'Bengali',
+                                       'am' => 'Liamhariki',
+                                       'ja' => 'Liyapani',
+                                       'bg' => 'Bulegari',
+                                       'sv' => 'Lisuwidi',
+                                       'it' => 'Litali',
+                                       'zh' => "shin\x{25b}",
+                                       'hu' => 'Hongili',
+                                       'fa' => 'Mpepajemi',
+                                       'ig' => 'Igbo',
+                                       'pl' => 'Mpoloni',
+                                       'ar' => 'Arabi',
+                                       'nl' => 'olandi',
+                                       'el' => 'Giliki',
+                                       'jv' => 'Java',
+                                       'lu' => 'Tshiluba'
+                                     }
+                    },
+  'delimiters' => {
+                    'alternateQuotationEnd' => "\x{2019}",
+                    'quotationEnd' => "\x{201d}",
+                    'quotationStart' => "\x{201c}",
+                    'alternateQuotationStart' => "\x{2018}"
+                  },
+  'iso4217' => 'CDF'
+};

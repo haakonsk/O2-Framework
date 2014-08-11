@@ -1,0 +1,42 @@
+<o2 use Html::Form />
+
+<o2 header />
+
+<o2 addCssFile file="gui/system/model/common" />
+
+<h1>Running registerClass for $q->{package}</h1>
+
+<o2 if "$errorMsg">
+  <p class="error">$errorMsg</p>
+</o2:if>
+<o2 else>
+  <p class="info">Class saved, looks like this:</p>
+  <table>
+    <tr>
+      <td>editTemplate</td>
+      <td>$class->getEditTemplate()</td>
+    </tr>
+    <tr>
+      <td>editUrl</td>
+      <td>$class->getEditUrl()</td>
+    </tr>
+    <tr>
+      <td>newUrl</td>
+      <td>$class->getNewUrl()</td>
+    </tr>
+    <tr>
+      <td>managerClass</td>
+      <td>$class->getManagerClass()</td>
+    </tr>
+    <tr>
+      <td>isCreatableInO2cms</td>
+      <td><o2 if "$class->isCreatableInO2cms()" then="Yes" else="No" /></td>
+    </tr>
+    <tr>
+      <td>canBeCreatedUnderCategories</td>
+      <td><o2 join ", ">$class->getCanBeCreatedUnderCategories()</o2:join></td>
+    </tr>
+  </table>
+</o2:else>
+
+<o2 footer />

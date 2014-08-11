@@ -1,0 +1,35 @@
+<o2 use O2Doc::Tutorial />
+
+<o2 docSection title="autoCompleteInput">
+  An input field based on <o2 docLink type="external" href="http://docs.jquery.com/Plugins/Autocomplete/autocomplete" title="AutoComplete" /> in jquery.<br><br>
+  Makes an input field autocompleteable. When the user types something into the autoCompleteInput, a request is sent to the backend to generate a list of values that the
+  user can choose from.<br><br>
+  Two input fields will be created for each autoCompleteInput, one visible and one hidden. The visible one has the same name as what you specify in the name attribute. The
+  hidden one has the string "-hidden" appended to this name. With the attributes guiModule and method, you specify the module and method responsible for generating the list
+  of items that the user may choose from. This method should return an array ref with the items. Each item must have a contentHtml entry. value (which will become the value
+  of the hidden input field), onClick and class are optional.
+  An example of this:<br>
+  <o2 docCode lang="perl">
+    return [
+      { contentHtml => "<b>O</b>ne", value => 1 },
+      { contentHtml => "Tw<b>o</b>", value => 2 },
+    ];
+  </o2:docCode>
+  <o2 docSection title="Syntax">
+    <o2 docCode lang="o2ml">
+      <o2 autoCompleteInput name="breakfast-input" guiModule="GR::Gui::VK::Report::FoodSearch" method="search" max="10" />
+    </o2:docCode>
+    <o2 docCodeResult useModule="Html::Form::Input::AutoComplete" seeGeneratedHtmlAsDisplayed="0" />
+  </o2:docSection>
+  <o2 docSection title="Attributes">
+    <o2 docList class="attributes">
+      <o2 docListItem class="required">name - The name of the input field. A hidden input field whose name has the string "-hidden" appended to the main input field's name will
+        also be created. So if name="myInput", then an input field with name="myInput" and a hidden input field with name="myInput-hidden" will be created.</o2:docListItem>
+      <o2 docListItem class="required">guiModule</o2:docListItem>
+      <o2 docListItem class="required">method</o2:docListItem>
+      <o2 docListItem class="optional">params</o2:docListItem>
+      <o2 docListItem class="optional">onChange</o2:docListItem>
+      <o2 docListItem class="optional">Attributes from jquery</o2:docListItem>
+    </o2:docList>
+  </o2:docSection>
+</o2:docSection>

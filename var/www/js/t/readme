@@ -1,0 +1,28 @@
+To run tests one by one:
+  /o2cms/Test-Js/?file=<filename>
+Example:
+  /o2cms/Test-Js/?file=base.t
+where base.t.js resides in $ENV{O2ROOT}/var/www/js/t or $ENV{CUSTOMERROOT}/var/www/js/t.
+
+To run all tests:
+  /o2cms/Test-Js/harness
+
+Use the template below as a starting point for your test script.
+Warning: It's important to avoid naming conflicts in the global namespace.
+That's why I suggest encapsulating the functions in a hash/object as shown below.
+
+The test script shouldn't start running the tests itself, it should just tell "tester"
+which method must be invoked in order for the tests to start running. Do that with
+tester.setStartMethod(). The argument is a function reference.
+
+
+
+require("/js/<nameOfJsFileToTest>.js");
+
+var <nameOfJsFileToTest> = {
+  runTests : function() {
+    // Perform tests here
+  }
+};
+
+tester.setStartMethod(<nameOfJsFileToTest>.runTests);

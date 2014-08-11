@@ -1,0 +1,1758 @@
+{
+  'territory' => 'TO',
+  'language' => 'to',
+  'number' => {
+                'percentFormat' => {
+                                     'percentFormatLength' => {
+                                                              'standard' => '#,##0%'
+                                                            }
+                                   },
+                'measurement' => {},
+                'symbols' => {
+                               'infinity' => "\x{221e}",
+                               'nan' => 'TF',
+                               'plusSign' => '+',
+                               'superscriptingExponent' => "×",
+                               'exponential' => 'E',
+                               'group' => ',',
+                               'percentSign' => '%',
+                               'decimal' => '.',
+                               'perMille' => "\x{2030}",
+                               'alias' => '',
+                               'minusSign' => '-',
+                               'list' => ';'
+                             },
+                'scientificFormat' => {
+                                        'scientificFormatLength' => {
+                                                                    'standard' => '#E0'
+                                                                  }
+                                      },
+                'decimalFormat' => {
+                                     'decimalFormatLength' => {
+                                                              'short' => '0k00k000k0M00M000M0Ki00Ki000Ki0T00T000T',
+                                                              'standard' => '#,##0.###',
+                                                              'long' => '0 afe0 mano0 kilu0 miliona00 miliona000 miliona0 piliona00 piliona000 piliona0 tiliona00 tiliona000 tiliona'
+                                                            }
+                                   },
+                'currencyFormat' => {
+                                      'currencyFormatLength' => {
+                                                                'standard' => "¤ #,##0.00"
+                                                              }
+                                    },
+                'currencies' => {
+                                  'KZT' => {
+                                           'symbol' => "\x{20b8}"
+                                         },
+                                  'NZD' => {
+                                           'symbol' => '$'
+                                         },
+                                  'HKD' => {
+                                           'symbol' => '$'
+                                         },
+                                  'BZD' => {
+                                           'symbol' => '$'
+                                         },
+                                  'BRL' => {
+                                           'symbol' => 'R$'
+                                         },
+                                  'SGD' => {
+                                           'symbol' => '$'
+                                         },
+                                  'TWD' => {
+                                           'symbol' => 'NT$'
+                                         },
+                                  'USD' => {
+                                           'symbol' => '$'
+                                         },
+                                  'SSP' => {
+                                           'symbol' => "£"
+                                         },
+                                  'KYD' => {
+                                           'symbol' => '$'
+                                         },
+                                  'AUD' => {
+                                           'symbol' => '$'
+                                         },
+                                  'NGN' => {
+                                           'symbol' => "\x{20a6}"
+                                         },
+                                  'CRC' => {
+                                           'symbol' => "\x{20a1}"
+                                         },
+                                  'KRW' => {
+                                           'symbol' => "\x{20a9}"
+                                         },
+                                  'TRY' => {
+                                           'symbol' => 'TL'
+                                         },
+                                  'GIP' => {
+                                           'symbol' => "£"
+                                         },
+                                  'LAK' => {
+                                           'symbol' => "\x{20ad}"
+                                         },
+                                  'FJD' => {
+                                           'symbol' => '$'
+                                         },
+                                  'CLP' => {
+                                           'symbol' => '$'
+                                         },
+                                  'NAD' => {
+                                           'symbol' => '$'
+                                         },
+                                  'JMD' => {
+                                           'symbol' => '$'
+                                         },
+                                  'ILS' => {
+                                           'symbol' => "\x{20aa}"
+                                         },
+                                  'TOP' => {
+                                           'symbol' => 'T$',
+                                           'displayName' => 'Tongan Pa\'anga'
+                                         },
+                                  'BSD' => {
+                                           'symbol' => '$'
+                                         },
+                                  'ESP' => {
+                                           'symbol' => "\x{20a7}"
+                                         },
+                                  'UYU' => {
+                                           'symbol' => '$'
+                                         },
+                                  'UAH' => {
+                                           'symbol' => "\x{20b4}"
+                                         },
+                                  'MXN' => {
+                                           'symbol' => '$'
+                                         },
+                                  'GYD' => {
+                                           'symbol' => '$'
+                                         },
+                                  'BYR' => {
+                                           'symbol' => "\x{440}."
+                                         },
+                                  'THB' => {
+                                           'symbol' => "\x{e3f}"
+                                         },
+                                  'LRD' => {
+                                           'symbol' => '$'
+                                         },
+                                  'BND' => {
+                                           'symbol' => '$'
+                                         },
+                                  'JPY' => {
+                                           'symbol' => "¥"
+                                         },
+                                  'BMD' => {
+                                           'symbol' => '$'
+                                         },
+                                  'PYG' => {
+                                           'symbol' => "\x{20b2}"
+                                         },
+                                  'VND' => {
+                                           'symbol' => "\x{20ab}"
+                                         },
+                                  'CAD' => {
+                                           'symbol' => '$'
+                                         },
+                                  'CUP' => {
+                                           'symbol' => '$'
+                                         },
+                                  'SBD' => {
+                                           'symbol' => '$'
+                                         },
+                                  'GHS' => {
+                                           'symbol' => "\x{20b5}"
+                                         },
+                                  'TTD' => {
+                                           'symbol' => '$'
+                                         },
+                                  'RUR' => {
+                                           'symbol' => "\x{440}."
+                                         },
+                                  'XCD' => {
+                                           'symbol' => 'EC$'
+                                         },
+                                  'BBD' => {
+                                           'symbol' => '$'
+                                         },
+                                  'COP' => {
+                                           'symbol' => '$'
+                                         },
+                                  'XOF' => {
+                                           'symbol' => 'CFA'
+                                         },
+                                  'ARS' => {
+                                           'symbol' => '$'
+                                         },
+                                  'BDT' => {
+                                           'symbol' => "\x{9f3}"
+                                         },
+                                  'KHR' => {
+                                           'symbol' => "\x{17db}"
+                                         },
+                                  'CNY' => {
+                                           'symbol' => "¥"
+                                         },
+                                  'MNT' => {
+                                           'symbol' => "\x{20ae}"
+                                         },
+                                  'EUR' => {
+                                           'symbol' => "\x{20ac}"
+                                         },
+                                  'INR' => {
+                                           'symbol' => "\x{20b9}"
+                                         },
+                                  'SRD' => {
+                                           'symbol' => '$'
+                                         },
+                                  'GBP' => {
+                                           'symbol' => "£"
+                                         },
+                                  'XAF' => {
+                                           'symbol' => 'FCFA'
+                                         },
+                                  'PHP' => {
+                                           'symbol' => "\x{20b1}"
+                                         },
+                                  'DOP' => {
+                                           'symbol' => '$'
+                                         },
+                                  'XPF' => {
+                                           'symbol' => 'CFPF'
+                                         }
+                                }
+              },
+  'locale' => 'to_TO',
+  'characters' => {
+                    'word-initial' => "\x{2026} {0}",
+                    'standard' => '?',
+                    'word-medial' => "{0} \x{2026} {1}",
+                    'index' => "[A E F H I K L M N {NG} O P S T U V \x{2bb}]",
+                    'medial' => "{0}\x{2026}{1}",
+                    'word-final' => "{0} \x{2026}",
+                    'final' => "{0}\x{2026}",
+                    'auxiliary' => "[à \x{103} â å ä æ b c ç d è \x{115} ê ë g ì \x{12d} î ï j ñ ò \x{14f} ô ö ø \x{153} q r ù \x{16d} û ü w x y ÿ z]",
+                    'initial' => "\x{2026}{0}",
+                    'punctuation' => '[\\- , ; \\: ! ? . ( ) \\[ \\] \\{ \\}]'
+                  },
+  'calendar' => {
+                  'calendarType' => 'gregorian',
+                  'timeFormat' => {
+                                    'short' => 'h:mm a',
+                                    'pm' => '',
+                                    'am' => '',
+                                    'medium' => 'h:mm:ss a',
+                                    'long' => 'HH:mm:ss z',
+                                    'full' => 'h:mm:ss a zzzz'
+                                  },
+                  'timeZones' => {
+                                   'regionFormat' => '{0} (+0)',
+                                   'gmtFormat' => 'GMT{0}',
+                                   'hourFormat' => '+HH:mm;-HH:mm',
+                                   'metazone' => "
+				
+					houa faka\x{2bb}uvea mo futuna
+				
+			",
+                                   'zones' => {
+                                                'Antarctica/DumontDUrville' => {
+                                                                               'type' => 'Antarctica/DumontDUrville',
+                                                                               'exemplarCity' => {
+                                                                                                 'draft' => 'unconfirmed',
+                                                                                                 'content' => "Dumont d\x{2019}Urville"
+                                                                                               }
+                                                                             },
+                                                'Europe/Athens' => {
+                                                                   'type' => 'Europe/Athens',
+                                                                   'exemplarCity' => {
+                                                                                     'draft' => 'unconfirmed',
+                                                                                     'content' => "\x{2bb}Atenisi"
+                                                                                   }
+                                                                 },
+                                                'Pacific/Pago_Pago' => {
+                                                                       'type' => 'Pacific/Pago_Pago',
+                                                                       'exemplarCity' => {
+                                                                                         'draft' => 'unconfirmed',
+                                                                                         'content' => 'Pangopango'
+                                                                                       }
+                                                                     },
+                                                'America/Indiana/Vincennes' => {
+                                                                               'type' => 'America/Indiana/Vincennes',
+                                                                               'exemplarCity' => {
+                                                                                                 'draft' => 'unconfirmed',
+                                                                                                 'content' => 'Vincennes, Indiana'
+                                                                                               }
+                                                                             },
+                                                'America/Los_Angeles' => {
+                                                                         'type' => 'America/Los_Angeles',
+                                                                         'exemplarCity' => "Houa Pule\x{2bb}anga fakataha \x{2bb}Amelika (Los Angeles)"
+                                                                       },
+                                                'America/Indiana/Marengo' => {
+                                                                             'type' => 'America/Indiana/Marengo',
+                                                                             'exemplarCity' => {
+                                                                                               'draft' => 'unconfirmed',
+                                                                                               'content' => 'Marengo, Indiana'
+                                                                                             }
+                                                                           },
+                                                'America/Indiana/Petersburg' => {
+                                                                                'type' => 'America/Indiana/Petersburg',
+                                                                                'exemplarCity' => {
+                                                                                                  'draft' => 'unconfirmed',
+                                                                                                  'content' => 'Petersburg, Indiana'
+                                                                                                }
+                                                                              },
+                                                'Atlantic/St_Helena' => {
+                                                                        'type' => 'Atlantic/St_Helena',
+                                                                        'exemplarCity' => {
+                                                                                          'draft' => 'unconfirmed',
+                                                                                          'content' => 'St. Helena'
+                                                                                        }
+                                                                      },
+                                                'America/Coral_Harbour' => {
+                                                                           'type' => 'America/Coral_Harbour',
+                                                                           'exemplarCity' => {
+                                                                                             'draft' => 'unconfirmed',
+                                                                                             'content' => 'Atikokan'
+                                                                                           }
+                                                                         },
+                                                'Atlantic/Faeroe' => {
+                                                                     'type' => 'Atlantic/Faeroe',
+                                                                     'exemplarCity' => {
+                                                                                       'draft' => 'unconfirmed',
+                                                                                       'content' => 'Faroe'
+                                                                                     }
+                                                                   },
+                                                'America/Godthab' => {
+                                                                     'type' => 'America/Godthab',
+                                                                     'exemplarCity' => 'Nuuk'
+                                                                   },
+                                                'America/St_Kitts' => {
+                                                                      'type' => 'America/St_Kitts',
+                                                                      'exemplarCity' => {
+                                                                                        'draft' => 'unconfirmed',
+                                                                                        'content' => 'St. Kitts'
+                                                                                      }
+                                                                    },
+                                                'America/Scoresbysund' => {
+                                                                          'type' => 'America/Scoresbysund',
+                                                                          'exemplarCity' => 'Ittoqqortoormiit'
+                                                                        },
+                                                'Europe/London' => {
+                                                                   'type' => 'Europe/London',
+                                                                   'exemplarCity' => {
+                                                                                     'draft' => 'unconfirmed',
+                                                                                     'content' => 'Lonitoni'
+                                                                                   }
+                                                                 },
+                                                'Australia/Brisbane' => {
+                                                                        'type' => 'Australia/Brisbane',
+                                                                        'exemplarCity' => 'Pelisipane'
+                                                                      },
+                                                'America/St_Johns' => {
+                                                                      'type' => 'America/St_Johns',
+                                                                      'exemplarCity' => {
+                                                                                        'draft' => 'unconfirmed',
+                                                                                        'content' => "St. John\x{2019}s"
+                                                                                      }
+                                                                    },
+                                                'Pacific/Guam' => {
+                                                                  'type' => 'Pacific/Guam',
+                                                                  'exemplarCity' => {
+                                                                                    'draft' => 'unconfirmed',
+                                                                                    'content' => 'Kuami'
+                                                                                  }
+                                                                },
+                                                'America/Phoenix' => {
+                                                                     'type' => 'America/Phoenix',
+                                                                     'exemplarCity' => "Houa Pule\x{2bb}anga fakataha \x{2bb}Amelika (Phoenix)"
+                                                                   },
+                                                'Europe/Rome' => {
+                                                                 'type' => 'Europe/Rome',
+                                                                 'exemplarCity' => {
+                                                                                   'draft' => 'unconfirmed',
+                                                                                   'content' => 'Loma'
+                                                                                 }
+                                                               },
+                                                'America/Indiana/Knox' => {
+                                                                          'type' => 'America/Indiana/Knox',
+                                                                          'exemplarCity' => {
+                                                                                            'draft' => 'unconfirmed',
+                                                                                            'content' => 'Knox, Indiana'
+                                                                                          }
+                                                                        },
+                                                'Africa/Asmera' => {
+                                                                   'type' => 'Africa/Asmera',
+                                                                   'exemplarCity' => {
+                                                                                     'draft' => 'unconfirmed',
+                                                                                     'content' => 'Asmara'
+                                                                                   }
+                                                                 },
+                                                'America/Lower_Princes' => {
+                                                                           'type' => 'America/Lower_Princes',
+                                                                           'exemplarCity' => {
+                                                                                             'draft' => 'unconfirmed',
+                                                                                             'content' => 'Lower Prince\'s Quarter'
+                                                                                           }
+                                                                         },
+                                                'Pacific/Honolulu' => {
+                                                                      'type' => 'Pacific/Honolulu',
+                                                                      'exemplarCity' => "Houa Pule\x{2bb}anga fakataha \x{2bb}Amelika (Honolulu)"
+                                                                    },
+                                                'Asia/Jerusalem' => {
+                                                                    'type' => 'Asia/Jerusalem',
+                                                                    'exemplarCity' => {
+                                                                                      'draft' => 'unconfirmed',
+                                                                                      'content' => "Sel\x{16b}salema"
+                                                                                    }
+                                                                  },
+                                                'Pacific/Wallis' => {
+                                                                    'type' => 'Pacific/Wallis',
+                                                                    'exemplarCity' => {
+                                                                                      'draft' => 'unconfirmed',
+                                                                                      'content' => "\x{2bb}Uvea"
+                                                                                    }
+                                                                  },
+                                                'America/Indiana/Vevay' => {
+                                                                           'type' => 'America/Indiana/Vevay',
+                                                                           'exemplarCity' => {
+                                                                                             'draft' => 'unconfirmed',
+                                                                                             'content' => 'Vevay, Indiana'
+                                                                                           }
+                                                                         },
+                                                'Asia/Saigon' => {
+                                                                 'type' => 'Asia/Saigon',
+                                                                 'exemplarCity' => {
+                                                                                   'draft' => 'unconfirmed',
+                                                                                   'content' => 'Ho Chi Minh'
+                                                                                 }
+                                                               },
+                                                'America/Rio_Branco' => {
+                                                                        'type' => 'America/Rio_Branco',
+                                                                        'exemplarCity' => "Houa Pal\x{101}sili (Rio Branco)"
+                                                                      },
+                                                'America/St_Barthelemy' => {
+                                                                           'type' => 'America/St_Barthelemy',
+                                                                           'exemplarCity' => {
+                                                                                             'draft' => 'unconfirmed',
+                                                                                             'content' => 'St. Barthelemy'
+                                                                                           }
+                                                                         },
+                                                'Pacific/Tahiti' => {
+                                                                    'type' => 'Pacific/Tahiti',
+                                                                    'exemplarCity' => {
+                                                                                      'draft' => 'unconfirmed',
+                                                                                      'content' => 'Tahisi'
+                                                                                    }
+                                                                  },
+                                                'America/North_Dakota/New_Salem' => {
+                                                                                    'type' => 'America/North_Dakota/New_Salem',
+                                                                                    'exemplarCity' => {
+                                                                                                      'draft' => 'unconfirmed',
+                                                                                                      'content' => 'New Salem, North Dakota'
+                                                                                                    }
+                                                                                  },
+                                                'Pacific/Fiji' => {
+                                                                  'type' => 'Pacific/Fiji',
+                                                                  'exemplarCity' => {
+                                                                                    'draft' => 'unconfirmed',
+                                                                                    'content' => 'Fisi'
+                                                                                  }
+                                                                },
+                                                'America/New_York' => {
+                                                                      'type' => 'America/New_York',
+                                                                      'exemplarCity' => "Houa Pule\x{2bb}anga fakataha \x{2bb}Amelika (New York)"
+                                                                    },
+                                                'America/Kentucky/Monticello' => {
+                                                                                 'type' => 'America/Kentucky/Monticello',
+                                                                                 'exemplarCity' => {
+                                                                                                   'draft' => 'unconfirmed',
+                                                                                                   'content' => 'Monticello, Kentucky'
+                                                                                                 }
+                                                                               },
+                                                'America/St_Vincent' => {
+                                                                        'type' => 'America/St_Vincent',
+                                                                        'exemplarCity' => {
+                                                                                          'draft' => 'unconfirmed',
+                                                                                          'content' => 'St. Vincent'
+                                                                                        }
+                                                                      },
+                                                'America/North_Dakota/Center' => {
+                                                                                 'type' => 'America/North_Dakota/Center',
+                                                                                 'exemplarCity' => {
+                                                                                                   'draft' => 'unconfirmed',
+                                                                                                   'content' => 'Center, North Dakota'
+                                                                                                 }
+                                                                               },
+                                                'Pacific/Easter' => {
+                                                                    'type' => 'Pacific/Easter',
+                                                                    'exemplarCity' => 'Lapanui'
+                                                                  },
+                                                'Asia/Calcutta' => {
+                                                                   'type' => 'Asia/Calcutta',
+                                                                   'exemplarCity' => {
+                                                                                     'draft' => 'unconfirmed',
+                                                                                     'content' => 'Kolkata'
+                                                                                   }
+                                                                 },
+                                                'Australia/Melbourne' => {
+                                                                         'type' => 'Australia/Melbourne',
+                                                                         'exemplarCity' => {
+                                                                                           'draft' => 'unconfirmed',
+                                                                                           'content' => 'Melipoane'
+                                                                                         }
+                                                                       },
+                                                'Europe/Vatican' => {
+                                                                    'type' => 'Europe/Vatican',
+                                                                    'exemplarCity' => {
+                                                                                      'draft' => 'unconfirmed',
+                                                                                      'content' => 'Vatikani'
+                                                                                    }
+                                                                  },
+                                                'America/Campo_Grande' => {
+                                                                          'type' => 'America/Campo_Grande',
+                                                                          'exemplarCity' => "Houa Pal\x{101}sili (Campo Grande)"
+                                                                        },
+                                                'America/Indiana/Winamac' => {
+                                                                             'type' => 'America/Indiana/Winamac',
+                                                                             'exemplarCity' => {
+                                                                                               'draft' => 'unconfirmed',
+                                                                                               'content' => 'Winamac, Indiana'
+                                                                                             }
+                                                                           },
+                                                'Pacific/Nauru' => {
+                                                                   'type' => 'Pacific/Nauru',
+                                                                   'exemplarCity' => {
+                                                                                     'draft' => 'unconfirmed',
+                                                                                     'content' => 'Naulu'
+                                                                                   }
+                                                                 },
+                                                'Antarctica/South_Pole' => {
+                                                                           'type' => 'Antarctica/South_Pole',
+                                                                           'exemplarCity' => {
+                                                                                             'draft' => 'unconfirmed',
+                                                                                             'content' => 'pole tonga'
+                                                                                           }
+                                                                         },
+                                                'Etc/Unknown' => {
+                                                                 'type' => 'Etc/Unknown',
+                                                                 'exemplarCity' => "Hala\x{2bb}ata"
+                                                               },
+                                                'Pacific/Tarawa' => {
+                                                                    'type' => 'Pacific/Tarawa',
+                                                                    'exemplarCity' => {
+                                                                                      'draft' => 'unconfirmed',
+                                                                                      'content' => 'Talava'
+                                                                                    }
+                                                                  },
+                                                'Australia/Adelaide' => {
+                                                                        'type' => 'Australia/Adelaide',
+                                                                        'exemplarCity' => 'Atelaite'
+                                                                      },
+                                                'Pacific/Rarotonga' => {
+                                                                       'type' => 'Pacific/Rarotonga',
+                                                                       'exemplarCity' => {
+                                                                                         'draft' => 'unconfirmed',
+                                                                                         'content' => 'Lalotonga'
+                                                                                       }
+                                                                     },
+                                                'Pacific/Ponape' => {
+                                                                    'type' => 'Pacific/Ponape',
+                                                                    'exemplarCity' => {
+                                                                                      'draft' => 'unconfirmed',
+                                                                                      'content' => "Ponap\x{113}"
+                                                                                    }
+                                                                  },
+                                                'Asia/Katmandu' => {
+                                                                   'type' => 'Asia/Katmandu',
+                                                                   'exemplarCity' => {
+                                                                                     'draft' => 'unconfirmed',
+                                                                                     'content' => 'Kathmandu'
+                                                                                   }
+                                                                 },
+                                                'Pacific/Truk' => {
+                                                                  'type' => 'Pacific/Truk',
+                                                                  'exemplarCity' => {
+                                                                                    'draft' => 'unconfirmed',
+                                                                                    'content' => "T\x{16b}ke"
+                                                                                  }
+                                                                },
+                                                'America/Chicago' => {
+                                                                     'type' => 'America/Chicago',
+                                                                     'exemplarCity' => "Houa Pule\x{2bb}anga fakataha \x{2bb}Amelika (Chicago)"
+                                                                   },
+                                                'America/Indiana/Tell_City' => {
+                                                                               'type' => 'America/Indiana/Tell_City',
+                                                                               'exemplarCity' => {
+                                                                                                 'draft' => 'unconfirmed',
+                                                                                                 'content' => 'Tell City, Indiana'
+                                                                                               }
+                                                                             },
+                                                'America/St_Lucia' => {
+                                                                      'type' => 'America/St_Lucia',
+                                                                      'exemplarCity' => {
+                                                                                        'draft' => 'unconfirmed',
+                                                                                        'content' => 'St. Lucia'
+                                                                                      }
+                                                                    },
+                                                'America/Denver' => {
+                                                                    'type' => 'America/Denver',
+                                                                    'exemplarCity' => "Houa Pule\x{2bb}anga fakataha \x{2bb}Amelika (Denver)"
+                                                                  },
+                                                'Pacific/Auckland' => {
+                                                                      'type' => 'Pacific/Auckland',
+                                                                      'exemplarCity' => {
+                                                                                        'draft' => 'unconfirmed',
+                                                                                        'content' => "\x{2bb}Aokalani"
+                                                                                      }
+                                                                    },
+                                                'Europe/Paris' => {
+                                                                  'type' => 'Europe/Paris',
+                                                                  'exemplarCity' => {
+                                                                                    'draft' => 'unconfirmed',
+                                                                                    'content' => 'Palesi'
+                                                                                  }
+                                                                },
+                                                'America/St_Thomas' => {
+                                                                       'type' => 'America/St_Thomas',
+                                                                       'exemplarCity' => {
+                                                                                         'draft' => 'unconfirmed',
+                                                                                         'content' => 'St. Thomas'
+                                                                                       }
+                                                                     },
+                                                'America/North_Dakota/Beulah' => {
+                                                                                 'type' => 'America/North_Dakota/Beulah',
+                                                                                 'exemplarCity' => {
+                                                                                                   'draft' => 'unconfirmed',
+                                                                                                   'content' => 'Beulah, North Dakota'
+                                                                                                 }
+                                                                               },
+                                                'America/Anchorage' => {
+                                                                       'type' => 'America/Anchorage',
+                                                                       'exemplarCity' => "Houa Pule\x{2bb}anga fakataha \x{2bb}Amelika (Anchorage)"
+                                                                     },
+                                                'Pacific/Kosrae' => {
+                                                                    'type' => 'Pacific/Kosrae',
+                                                                    'exemplarCity' => {
+                                                                                      'draft' => 'unconfirmed',
+                                                                                      'content' => 'Kosilae'
+                                                                                    }
+                                                                  },
+                                                'Pacific/Niue' => {
+                                                                  'type' => 'Pacific/Niue',
+                                                                  'exemplarCity' => {
+                                                                                    'draft' => 'unconfirmed',
+                                                                                    'content' => "Niu\x{113}"
+                                                                                  }
+                                                                },
+                                                'America/Sao_Paulo' => {
+                                                                       'type' => 'America/Sao_Paulo',
+                                                                       'exemplarCity' => "Houa Pal\x{101}sili (Sao Paulo)"
+                                                                     },
+                                                'Australia/Sydney' => {
+                                                                      'type' => 'Australia/Sydney',
+                                                                      'exemplarCity' => {
+                                                                                        'draft' => 'unconfirmed',
+                                                                                        'content' => "Sen\x{113}"
+                                                                                      }
+                                                                    },
+                                                'America/Indianapolis' => {
+                                                                          'type' => 'America/Indianapolis',
+                                                                          'exemplarCity' => "Houa Pule\x{2bb}anga fakataha \x{2bb}Amelika (Indianapolis)"
+                                                                        }
+                                              },
+                                   'fallbackFormat' => '{1} ({0})',
+                                   'gmtZeroFormat' => 'GMT'
+                                 },
+                  'eras' => {
+                              'eraNames' => {
+                                            'alias' => {
+                                                       '' => ''
+                                                     },
+                                            'era' => {
+                                                     '1' => 'TS',
+                                                     '0' => 'KM'
+                                                   }
+                                          },
+                              'eraNarrow' => {
+                                             'alias' => {
+                                                        '' => ''
+                                                      },
+                                             'era' => {
+                                                      '1' => 'TS',
+                                                      '0' => 'KM'
+                                                    }
+                                           },
+                              'eraAbbr' => {
+                                           'era' => {
+                                                    '1' => 'TS',
+                                                    '0' => 'KM'
+                                                  }
+                                         }
+                            },
+                  'days' => {
+                              'format' => {
+                                          'short' => {
+                                                     '' => '',
+                                                     'fri' => 'Fal',
+                                                     'wed' => 'Pul',
+                                                     'sun' => "S\x{101}p",
+                                                     'tue' => 'Tus',
+                                                     'mon' => "M\x{14d}n",
+                                                     'sat' => 'Tok',
+                                                     'thu' => "Tu\x{2bb}a"
+                                                   },
+                                          'abbreviated' => {
+                                                           '' => '',
+                                                           'fri' => 'Fal',
+                                                           'wed' => 'Pul',
+                                                           'sun' => "S\x{101}p",
+                                                           'tue' => "T\x{16b}s",
+                                                           'mon' => "M\x{14d}n",
+                                                           'sat' => 'Tok',
+                                                           'thu' => "Tu\x{2bb}a"
+                                                         },
+                                          'narrow' => {
+                                                      '' => '',
+                                                      'fri' => 'F',
+                                                      'wed' => 'P',
+                                                      'sun' => 'S',
+                                                      'tue' => 'T',
+                                                      'mon' => 'M',
+                                                      'sat' => 'T',
+                                                      'thu' => 'T'
+                                                    },
+                                          'wide' => {
+                                                    'fri' => 'Falaite',
+                                                    'tue' => "T\x{16b}site",
+                                                    'sun' => "S\x{101}pate",
+                                                    'sat' => 'Tokonaki',
+                                                    'mon' => "M\x{14d}nite",
+                                                    'wed' => 'Pulelulu',
+                                                    'thu' => "Tu\x{2bb}apulelulu"
+                                                  }
+                                        },
+                              'stand-alone' => {
+                                               'short' => {
+                                                          '' => '',
+                                                          'fri' => 'Fal',
+                                                          'wed' => 'Pul',
+                                                          'sun' => "S\x{101}p",
+                                                          'tue' => 'Tus',
+                                                          'mon' => "M\x{14d}n",
+                                                          'sat' => 'Tok',
+                                                          'thu' => "Tu\x{2bb}a"
+                                                        },
+                                               'abbreviated' => {
+                                                                '' => '',
+                                                                'fri' => 'Fal',
+                                                                'wed' => 'Pul',
+                                                                'sun' => "S\x{101}p",
+                                                                'tue' => "T\x{16b}s",
+                                                                'mon' => "M\x{14d}n",
+                                                                'sat' => 'Tok',
+                                                                'thu' => "Tu\x{2bb}a"
+                                                              },
+                                               'narrow' => {
+                                                           'fri' => 'F',
+                                                           'tue' => 'T',
+                                                           'sun' => 'S',
+                                                           'sat' => 'T',
+                                                           'mon' => 'M',
+                                                           'wed' => 'P',
+                                                           'thu' => 'T'
+                                                         },
+                                               'wide' => {
+                                                         '' => '',
+                                                         'fri' => 'Falaite',
+                                                         'wed' => 'Pulelulu',
+                                                         'sun' => "S\x{101}pate",
+                                                         'tue' => "T\x{16b}site",
+                                                         'mon' => "M\x{14d}nite",
+                                                         'sat' => 'Tokonaki',
+                                                         'thu' => "Tu\x{2bb}apulelulu"
+                                                       }
+                                             }
+                            },
+                  'months' => {
+                                'format' => {
+                                            'abbreviated' => {
+                                                             '' => '',
+                                                             '6' => 'Sun',
+                                                             '11' => "N\x{14d}v",
+                                                             '3' => "Ma\x{2bb}a",
+                                                             '7' => 'Siu',
+                                                             '9' => 'Sep',
+                                                             '12' => "T\x{12b}s",
+                                                             '2' => "F\x{113}p",
+                                                             '8' => "\x{2bb}Aok",
+                                                             '1' => "S\x{101}n",
+                                                             '4' => "\x{2bb}Epe",
+                                                             '10' => "\x{2bb}Oka",
+                                                             '5' => "M\x{113}"
+                                                           },
+                                            'narrow' => {
+                                                        '' => '',
+                                                        '6' => 'S',
+                                                        '11' => 'N',
+                                                        '3' => 'M',
+                                                        '7' => 'S',
+                                                        '9' => 'S',
+                                                        '12' => 'T',
+                                                        '2' => 'F',
+                                                        '8' => 'A',
+                                                        '1' => 'S',
+                                                        '4' => 'E',
+                                                        '10' => 'O',
+                                                        '5' => 'M'
+                                                      },
+                                            'wide' => {
+                                                      '6' => 'Sune',
+                                                      '11' => "N\x{14d}vema",
+                                                      '3' => "Ma\x{2bb}asi",
+                                                      '7' => 'Siulai',
+                                                      '9' => 'Sepitema',
+                                                      '12' => "T\x{12b}sema",
+                                                      '2' => "F\x{113}pueli",
+                                                      '8' => "\x{2bb}Aokosi",
+                                                      '1' => "S\x{101}nuali",
+                                                      '4' => "\x{2bb}Epeleli",
+                                                      '10' => "\x{2bb}Okatopa",
+                                                      '5' => "M\x{113}"
+                                                    }
+                                          },
+                                'stand-alone' => {
+                                                 'abbreviated' => {
+                                                                  '' => '',
+                                                                  '6' => 'Sun',
+                                                                  '11' => "N\x{14d}v",
+                                                                  '3' => "Ma\x{2bb}a",
+                                                                  '7' => 'Siu',
+                                                                  '9' => 'Sep',
+                                                                  '12' => "T\x{12b}s",
+                                                                  '2' => "F\x{113}p",
+                                                                  '8' => "\x{2bb}Aok",
+                                                                  '1' => "S\x{101}n",
+                                                                  '4' => "\x{2bb}Epe",
+                                                                  '10' => "\x{2bb}Oka",
+                                                                  '5' => "M\x{113}"
+                                                                },
+                                                 'narrow' => {
+                                                             '6' => 'S',
+                                                             '11' => 'N',
+                                                             '3' => 'M',
+                                                             '7' => 'S',
+                                                             '9' => 'S',
+                                                             '12' => 'T',
+                                                             '2' => 'F',
+                                                             '8' => 'A',
+                                                             '1' => 'S',
+                                                             '4' => 'E',
+                                                             '10' => 'O',
+                                                             '5' => 'M'
+                                                           },
+                                                 'wide' => {
+                                                           '' => '',
+                                                           '6' => 'Sune',
+                                                           '11' => "N\x{14d}vema",
+                                                           '3' => "Ma\x{2bb}asi",
+                                                           '7' => 'Siulai',
+                                                           '9' => 'Sepitema',
+                                                           '12' => "T\x{12b}sema",
+                                                           '2' => "F\x{113}pueli",
+                                                           '8' => "\x{2bb}Aokosi",
+                                                           '1' => "S\x{101}nuali",
+                                                           '4' => "\x{2bb}Epeleli",
+                                                           '10' => "\x{2bb}Okatopa",
+                                                           '5' => "M\x{113}"
+                                                         }
+                                               }
+                              },
+                  'dateFormat' => {
+                                    'short' => 'd/M/yy',
+                                    'medium' => 'd MMM y',
+                                    'long' => 'd MMMM y',
+                                    'full' => 'EEEE d MMMM y'
+                                  }
+                },
+  'displayNames' => {
+                      'territories' => {
+                                         'DJ' => 'Siputi',
+                                         'JM' => 'Samaika',
+                                         '030' => "\x{2bb}\x{112}sia fakahahake",
+                                         'AT' => "\x{2bb}Aositulia",
+                                         'SZ' => 'Suasilani',
+                                         'YT' => 'Meioti',
+                                         'BN' => 'Pulunei',
+                                         'ZM' => 'Semipia',
+                                         'PR' => 'Pueto Liko',
+                                         'SH' => "S\x{101} Helena",
+                                         'MA' => 'Moloko',
+                                         'SV' => "\x{2bb}Ele Salavatoa",
+                                         'MT' => 'Malita',
+                                         'MP' => "\x{2bb}Otumotu Maliana tokelau",
+                                         'UZ' => "\x{2bb}Usipekitani",
+                                         'PW' => 'Palau',
+                                         'TK' => 'Tokelau',
+                                         'LR' => 'Laipelia',
+                                         'TN' => "Tun\x{12b}sia",
+                                         'EE' => "\x{2bb}Esit\x{14d}nia",
+                                         'CK' => "\x{2bb}Otumotu Kuki",
+                                         'BY' => 'Pelalusi',
+                                         'NO' => "Noau\x{113}",
+                                         'KR' => "K\x{14d}lea tonga",
+                                         'IC' => "\x{2bb}Otumotu Kaneli",
+                                         'BF' => 'Pekano Faso',
+                                         'AM' => "\x{2bb}\x{100}minia",
+                                         'SR' => 'Sulinami',
+                                         'MG' => 'Matakasika',
+                                         'BT' => "P\x{16b}tani",
+                                         '009' => "\x{2bb}Os\x{113}nia",
+                                         'CF' => "Lipapilika \x{2bb}Afilika Lotoloto",
+                                         '014' => "\x{2bb}Afilika fakahahake",
+                                         'BA' => "Posinia mo Hesik\x{14d}vina",
+                                         'AE' => "\x{2bb}Alepea Fakatahataha",
+                                         'TH' => 'Taileni',
+                                         'EA' => 'Siuta mo Melila',
+                                         '002' => "\x{2bb}Afilika",
+                                         '057' => 'Potu fonua Mikolonisia',
+                                         'CC' => "\x{2bb}Otumotu Koko",
+                                         'NC' => "Niu Kalet\x{14d}nia",
+                                         'EU' => "\x{2bb}Iulope fakatahataha",
+                                         'TO' => 'Tonga',
+                                         'SE' => "Su\x{113}teni",
+                                         'AZ' => "\x{2bb}Asapaisani",
+                                         'AF' => "\x{2bb}Afik\x{101}nisitani",
+                                         'NG' => 'Naisilia',
+                                         'KE' => "Keni\x{101}",
+                                         'BJ' => 'Penini',
+                                         'XK' => "K\x{14d}sovo",
+                                         'OM' => "\x{2bb}Omani",
+                                         '145' => "\x{2bb}\x{112}sia fakahihifo",
+                                         'LK' => "S\x{12b}langik\x{101}",
+                                         'ID' => "\x{2bb}Initon\x{113}sia",
+                                         'FM' => 'Mikolonisia',
+                                         'GM' => 'Kamipia',
+                                         'LV' => 'Lativia',
+                                         'RU' => "L\x{16b}sia",
+                                         '154' => "\x{2bb}Iulope fakatokelau",
+                                         '034' => "\x{2bb}\x{112}sia fakatonga",
+                                         'FI' => 'Finilani',
+                                         'LU' => 'Lakisimipeki',
+                                         'VE' => 'Venesuela',
+                                         '054' => 'Melanisia',
+                                         'VI' => "\x{2bb}Otumotu Vilikini faka\x{2bb}amelika",
+                                         'TV' => "T\x{16b}valu",
+                                         'SN' => 'Senekalo',
+                                         'MX' => 'Mekisikou',
+                                         'IL' => "\x{2bb}Isileli",
+                                         'GG' => "Kuenis\x{12b}",
+                                         'HU' => 'Hungakalia',
+                                         'DO' => 'Lipapilika Tominika',
+                                         'BQ' => "Kalipiane fakah\x{14d}lani",
+                                         'KH' => "Kemip\x{14d}tia",
+                                         'TG' => 'Toko',
+                                         'BB' => "P\x{101}peitosi",
+                                         'JE' => "Selus\x{12b}",
+                                         'DK' => "Tenima\x{2bb}ake",
+                                         'PA' => "Panam\x{101}",
+                                         'QA' => "Kat\x{101}",
+                                         'CV' => "Mui\x{2bb}i Vete",
+                                         'TA' => 'Tulisiteni ta Kunuha',
+                                         'GD' => "Kelenat\x{101}",
+                                         'MO' => 'Makau',
+                                         'MF' => "S\x{101} M\x{101}tini (fakafalanis\x{113})",
+                                         'HR' => 'Kuloisia',
+                                         'CZ' => 'Lipapilika Seki',
+                                         'BL' => "S\x{101} Pat\x{113}lemi",
+                                         'ST' => "Sao Tom\x{113} mo Pilinisipe",
+                                         'AU' => "\x{2bb}Aositel\x{113}lia",
+                                         'IR' => "\x{2bb}Iulaani",
+                                         '003' => "\x{2bb}Amelika tokelau",
+                                         'CG' => 'Lipapilika Kongo',
+                                         'GW' => 'Kini-Pisau',
+                                         'BI' => 'Puluniti',
+                                         'MK' => "Maset\x{14d}nia (FYROM)",
+                                         'GR' => 'Kalisi',
+                                         '021' => "\x{2bb}Amelika fakatokelau",
+                                         'AG' => 'Anitikua mo Palaputa',
+                                         'AI' => 'Anikuila',
+                                         'AN' => "Netaleni \x{2bb}Enitilisi",
+                                         'UA' => "\x{2bb}Iukuleini",
+                                         'EH' => 'Sahala fakahihifo',
+                                         'KN' => "S\x{101} Kitisi mo Nevisi",
+                                         'SC' => "\x{2bb}Otumotu Seiseli",
+                                         'NL' => "H\x{14d}lani",
+                                         'MS' => "Mo\x{2bb}ungaselati",
+                                         'HK' => 'Hongi Kongi',
+                                         'EC' => "\x{2bb}Ekuetoa",
+                                         'MY' => "Mal\x{113}sia",
+                                         '013' => "\x{2bb}Amelika lotoloto",
+                                         'CR' => 'Kosita Lika',
+                                         'VA' => 'Kolo Vatikani',
+                                         'IO' => "Potu fonua moana \x{2bb}Initia fakapilit\x{101}nia",
+                                         'SD' => "S\x{16b}teni",
+                                         'RS' => "S\x{113}pia",
+                                         'CN' => 'Siaina',
+                                         'UY' => "\x{2bb}Ulukuei",
+                                         'PY' => 'Palakuei',
+                                         '053' => "\x{2bb}Aositel\x{113}l\x{113}sia",
+                                         'MU' => 'Maulitiusi',
+                                         'LI' => 'Lekitenisaini',
+                                         'CH' => 'Suisilani',
+                                         'KG' => "K\x{12b}kisitani",
+                                         'GH' => 'Kana',
+                                         'NU' => "Niu\x{113}",
+                                         'US' => "\x{2bb}Amelika",
+                                         'PE' => "Pel\x{16b}",
+                                         'SL' => 'Siela Leone',
+                                         '001' => "M\x{101}mani",
+                                         'FJ' => 'Fisi',
+                                         '143' => "\x{2bb}\x{112}sia lotoloto",
+                                         'ER' => "\x{2bb}Elitulia",
+                                         'IQ' => "\x{2bb}Iulaaki",
+                                         'AS' => "Ha\x{2bb}amoa \x{2bb}Amelika",
+                                         'TZ' => "Tenis\x{101}nia",
+                                         'LY' => 'Lipia',
+                                         'GT' => 'Kuatamala',
+                                         'BM' => "P\x{113}muta",
+                                         'BV' => 'Motu Puveti',
+                                         'LT' => 'Lifiuania',
+                                         '017' => "\x{2bb}Afilika lotoloto",
+                                         'SG' => 'Singapoa',
+                                         'PM' => "S\x{101} Piea mo Mikeloni",
+                                         'TT' => 'Tilinitati mo Topako',
+                                         'SY' => "S\x{12b}lia",
+                                         'SK' => "Sil\x{14d}vakia",
+                                         '011' => "\x{2bb}Afilika fakahihifo",
+                                         'AC' => "Motu \x{2bb}Asenisini",
+                                         'GL' => 'Kulinilani',
+                                         'PG' => 'Papuaniukini',
+                                         'KI' => 'Kilipasi',
+                                         'CD' => 'Kongo (LTK)',
+                                         'AO' => "\x{2bb}Engikola",
+                                         'BW' => 'Potisiuana',
+                                         'ZW' => 'Simipapuei',
+                                         'VC' => "S\x{101} Viniseni mo Kulenatini",
+                                         'JP' => 'Siapani',
+                                         'NA' => 'Namipia',
+                                         'TJ' => 'Tasikitani',
+                                         'LC' => "S\x{101} L\x{16b}sia",
+                                         'VU' => 'Vanuatu',
+                                         'MN' => "Mongok\x{14d}lia",
+                                         'IT' => "\x{2bb}\x{12a}tali",
+                                         'RE' => "Li\x{2bb}iunioni",
+                                         'WS' => "Ha\x{2bb}amoa",
+                                         '151' => "\x{2bb}Iulope fakahahake",
+                                         '015' => "\x{2bb}Afilika fakatokelau",
+                                         'CW' => 'Kulasao',
+                                         'EG' => "\x{2bb}Isipite",
+                                         'FR' => "Falanis\x{113}",
+                                         'RW' => "Luanit\x{101}",
+                                         'UM' => "\x{2bb}Otumotu si\x{2bb}i \x{2bb}o \x{2bb}Amelika",
+                                         'BE' => 'Pelesiume',
+                                         'LS' => 'Lesoto',
+                                         'SA' => "Saute \x{2bb}Alepea",
+                                         'ZA' => "\x{2bb}Afilika tonga",
+                                         'DG' => "Tieko K\x{101}sia",
+                                         'PT' => 'Potukali',
+                                         'CA' => "K\x{101}nata",
+                                         'CM' => 'Kemaluni',
+                                         'NP' => 'Nepali',
+                                         'PL' => 'Polani',
+                                         'TM' => 'Tekimenisitani',
+                                         'GA' => 'Kaponi',
+                                         'KY' => "\x{2bb}Otumotu Keimeni",
+                                         'LA' => 'Lau',
+                                         'PH' => 'Filipaini',
+                                         'NI' => 'Nikalakua',
+                                         'GU' => 'Kuamu',
+                                         'TF' => "Potu fonua tonga fakafalanis\x{113}",
+                                         'KZ' => 'Kasakitani',
+                                         '029' => 'Kalipiane',
+                                         'SJ' => "Sivolop\x{101}ti mo Sani Maieni",
+                                         'MM' => 'Pema',
+                                         'NR' => 'Naulu',
+                                         'DM' => 'Tominika',
+                                         'NE' => 'Nisia',
+                                         'AD' => "\x{2bb}Enitola",
+                                         'MR' => 'Maulitenia',
+                                         '039' => "\x{2bb}Iulope fakatonga",
+                                         'GS' => "\x{2bb}Otumotu Se\x{14d}sia-tonga mo Saniuisi-tonga",
+                                         'ME' => 'Monitenikalo',
+                                         'AX' => "\x{2bb}Otumotu \x{2bb}Alani",
+                                         'VN' => 'Vietinemi',
+                                         'VG' => "\x{2bb}Otumotu Vilikini fakapilit\x{101}nia",
+                                         'YE' => 'Iemeni',
+                                         'CI' => "Mat\x{101}fonua \x{2bb}Aivili",
+                                         'DZ' => "\x{2bb}Aisilia",
+                                         'GE' => "Se\x{14d}sia",
+                                         '005' => "\x{2bb}Amelika tonga",
+                                         'CX' => 'Motu Kilisimasi',
+                                         'LB' => 'Lepanoni',
+                                         '018' => "\x{2bb}Afilika fakatonga",
+                                         'FK' => "\x{2bb}Otumotu Fokulani",
+                                         'DE' => 'Siamane',
+                                         'MV' => 'Malativisi',
+                                         'PN' => "\x{2bb}Otumotu Pitikeni",
+                                         'BH' => 'Paleini',
+                                         'GI' => "Sipal\x{101}lit\x{101}",
+                                         'WF' => "\x{2bb}Uvea mo Futuna",
+                                         'RO' => "Lom\x{113}nia",
+                                         'AR' => "\x{2bb}Asenitina",
+                                         'GP' => 'Kuatalupe',
+                                         'IN' => "\x{2bb}Initia",
+                                         'AW' => "\x{2bb}Alupa",
+                                         'FO' => "\x{2bb}Otumotu Faloe",
+                                         'BR' => "Pal\x{101}sili",
+                                         'HN' => 'Honitulasi',
+                                         'MC' => 'Monako',
+                                         'SB' => "\x{2bb}Otumotu Solomone",
+                                         'NZ' => "Nu\x{2bb}usila",
+                                         'PS' => 'Palesitaine',
+                                         'UG' => "\x{2bb}Iukanit\x{101}",
+                                         'SX' => "S\x{101} M\x{101}tini (fakah\x{14d}lani)",
+                                         'GB' => "Pilit\x{101}nia",
+                                         'HT' => 'Haiti',
+                                         '019' => "Ongo \x{2bb}Amelika",
+                                         'QO' => "\x{2bb}Os\x{113}nia mama\x{2bb}o",
+                                         'SS' => "S\x{16b}tani fakatonga",
+                                         'GF' => "Kuiana fakafalanis\x{113}",
+                                         'ZZ' => "Potu fonua ta\x{2bb}e\x{2bb}iloa pe hala",
+                                         'KM' => 'Komolosi',
+                                         'KW' => 'Kueiti',
+                                         'MQ' => 'Mateniki',
+                                         'TC' => "\x{2bb}Otumotu Tuki mo Kaikosi",
+                                         'CP' => 'Motu Kilipatoni',
+                                         'ES' => 'Sipeini',
+                                         'MZ' => "Mos\x{113}mipiki",
+                                         'BO' => "Pol\x{12b}via",
+                                         'AL' => "\x{2bb}Alipania",
+                                         '142' => "\x{2bb}\x{112}sia",
+                                         '419' => "\x{2bb}Amelika fakalatina",
+                                         'TR' => 'Toake',
+                                         'MD' => 'Molotova',
+                                         'GN' => 'Kini',
+                                         'CO' => 'Kolomipia',
+                                         'SI' => "Sil\x{14d}venia",
+                                         'AQ' => "\x{2bb}Anit\x{101}tika",
+                                         'JO' => 'Soatane',
+                                         '061' => "Polin\x{12b}sia",
+                                         'SM' => "S\x{101} Malino",
+                                         'CU' => 'Kiupa',
+                                         'CL' => 'Sili',
+                                         'ML' => "M\x{101}li",
+                                         'ET' => "\x{2bb}\x{12a}ti\x{14d}pia",
+                                         'IS' => "\x{2bb}Aisilani",
+                                         '035' => "\x{2bb}\x{112}sia fakatongahahake",
+                                         'BG' => 'Pulukalia',
+                                         'MH' => "\x{2bb}Otumotu M\x{101}solo",
+                                         'BS' => 'Pahama',
+                                         'TL' => 'Timoa Hahake',
+                                         'BZ' => 'Pelise',
+                                         '150' => "\x{2bb}Iulope",
+                                         'CY' => 'Saipalesi',
+                                         '155' => "\x{2bb}Iulope fakahihifo",
+                                         'IM' => 'Motu Mani',
+                                         'IE' => "\x{2bb}Aealani",
+                                         'TW' => 'Taiuani',
+                                         'KP' => "K\x{14d}lea tokelau",
+                                         'PF' => "Polinisia fakafalanis\x{113}",
+                                         'MW' => 'Malaui',
+                                         'GY' => 'Kuiana',
+                                         'GQ' => "\x{2bb}Ekueta Kini",
+                                         'PK' => "P\x{101}kisitani",
+                                         'NF' => "Motu N\x{14d}foliki",
+                                         'SO' => "S\x{14d}malia",
+                                         'TD' => "S\x{101}ti",
+                                         'BD' => "Pengil\x{101}tesi",
+                                         'HM' => "\x{2bb}Otumotu Heati mo Makitonali"
+                                       },
+                      'languages' => {
+                                       'sid' => 'lea fakasitamo',
+                                       'ne' => 'lea fakanepali',
+                                       'tr' => 'lea fakatoake',
+                                       'ki' => 'lea fakakikuiu',
+                                       'gor' => 'lea fakakolonitalo',
+                                       'tlh' => 'lea fakatilingoni',
+                                       'my' => 'lea fakapema',
+                                       'gl' => 'lea fakakalisia',
+                                       'see' => 'lea fakaseneka',
+                                       'lun' => "lea fakalunit\x{101}",
+                                       'kum' => 'lea fakakumiki',
+                                       'krc' => 'lea fakakalate-palakili',
+                                       'ckb' => "lea fakak\x{16b}tisi-solani",
+                                       'ro' => "lea fakal\x{14d}menia",
+                                       'tn' => 'lea suana',
+                                       'co' => "lea fakak\x{14d}sika",
+                                       'bas' => "lea fakapasa\x{2bb}a",
+                                       'br' => 'lea fakapeletoni',
+                                       'lam' => "lea fakalamip\x{101}",
+                                       'mwl' => "lea fakamilanit\x{113}si",
+                                       'de_CH' => "lea fakasiamane-suisis\x{101}lani ma'olunga",
+                                       'cy' => "lea fakau\x{113}lesi",
+                                       'bo' => 'lea fakatipeti',
+                                       'bkm' => 'lea fakakome',
+                                       'pt_PT' => "lea fakapotukali-\x{2bb}eulope",
+                                       'syc' => "lea fakasailiakimu\x{2bb}a",
+                                       'gil' => 'lea fakakilipasi',
+                                       'cs' => 'lea fakaseki',
+                                       'kut' => 'lea fakakutenai',
+                                       'km' => "lea fakakemip\x{14d}tia",
+                                       'af' => "lea faka\x{2bb}afilikana",
+                                       'ti' => 'lea fakatikilinia',
+                                       'ky' => 'lea fakakiataisi',
+                                       'fr_CA' => "lea fakafalanis\x{113}-k\x{101}nata",
+                                       'ga' => "lea faka\x{2bb}aelani",
+                                       'rar' => 'lea fakalalotonga',
+                                       'hsb' => "lea fakas\x{14d}pia-hake",
+                                       'bax' => 'lea fakapamuni',
+                                       'ada' => "lea faka\x{2bb}atangim\x{113}",
+                                       'ka' => "lea fakase\x{14d}sia",
+                                       'kea' => 'lea fakakapuvelitianu',
+                                       'dak' => 'lea fakatakota',
+                                       'arn' => 'lea fakamapuse',
+                                       'mi' => 'lea fakamauli',
+                                       'sv' => "lea fakasu\x{113}teni",
+                                       'und' => "lea ta\x{2bb}e\x{2bb}iloa",
+                                       'rof' => "lea fakalomip\x{14d}",
+                                       'hu' => 'lea fakahungakalia',
+                                       'za' => 'lea fakasuangi',
+                                       'fa' => "lea fakap\x{113}sia",
+                                       'pau' => 'lea fakapalau',
+                                       'byn' => 'lea fakapilini',
+                                       'wal' => "lea faka\x{2bb}uolaita",
+                                       'man' => "lea fakamanit\x{12b}ngiko",
+                                       'se' => 'lea sami fakatokelau',
+                                       'mgh' => "lea fakamak\x{16b}a-me\x{2bb}eto",
+                                       'dyu' => 'lea fakatiula',
+                                       'mic' => 'lea fakamikemaki',
+                                       'kv' => 'lea fakakomi',
+                                       've' => "lea fakavenit\x{101}",
+                                       'na' => 'lea fakanaulu',
+                                       'dje' => "lea fakatis\x{101}ma",
+                                       'son' => 'lea fakasongai',
+                                       'kcg' => 'lea fakatiapi',
+                                       'ba' => 'lea fakapasikili',
+                                       'bin' => 'lea fakapini',
+                                       'teo' => 'lea fakateso',
+                                       'sco' => 'lea fakasikotilani',
+                                       'no' => "lea fakanou\x{113}",
+                                       'shi' => 'lea fakataselihiti',
+                                       'pra' => 'lea fakapalakiliti',
+                                       'lv' => 'lea fakalativia',
+                                       'zgh' => 'lea fakatamasaiti moloko',
+                                       'ln' => 'lea lingikala',
+                                       'rom' => 'lea fakalomani',
+                                       'id' => "lea faka\x{2bb}init\x{14d}nesia",
+                                       'arc' => "lea faka\x{2bb}al\x{101}miti",
+                                       'kde' => "lea fakamak\x{14d}nite",
+                                       'trv' => 'lea fakataloko',
+                                       'si' => 'lea fakasingihala',
+                                       'mas' => 'lea fakamasai',
+                                       'kac' => 'lea fakakasini',
+                                       'om' => "lea faka\x{2bb}olomo",
+                                       'rwk' => "lea fakalu\x{101}",
+                                       'fi' => 'lea fakafinilani',
+                                       'ab' => "lea faka\x{2bb}apakasia",
+                                       'kkj' => 'lea fakakako',
+                                       'chm' => "lea fakamal\x{12b}",
+                                       'mai' => 'lea fakamaitili',
+                                       'wo' => "lea faka\x{2bb}uolofo",
+                                       'li' => "lea fakalimip\x{16b}liki",
+                                       'kpe' => 'lea fakakepele',
+                                       'seh' => 'lea fakasena',
+                                       'jpr' => "lea faka\x{2bb}iuteo-p\x{113}sia",
+                                       'fan' => 'lea fakafangi',
+                                       'zen' => 'lea fakasenaka',
+                                       'ii' => "lea fakasisiuani-\x{12b}",
+                                       'gv' => "lea fakamangik\x{12b}",
+                                       'yue' => "lea kenit\x{113}nisi",
+                                       'nia' => 'lea fakaniasi',
+                                       'bra' => 'lea fakapalai',
+                                       'fil' => 'lea fakafilipaini',
+                                       'pa' => "lea fakap\x{16b}nusapi",
+                                       'gay' => 'lea fakakaio',
+                                       'am' => "lea faka\x{2bb}ameliki",
+                                       'jgo' => "lea fakanik\x{14d}mipa",
+                                       'maf' => 'lea fakamafa',
+                                       'bi' => 'lea fakapisilama',
+                                       'ee' => "lea faka\x{2bb}eue",
+                                       'ace' => "lea faka\x{2bb}atis\x{113}",
+                                       'kj' => 'lea fakakuaniama',
+                                       'en_CA' => "lea fakap\x{101}langi-k\x{101}nata",
+                                       'umb' => "lea faka\x{2bb}umip\x{16b}nitu",
+                                       'alt' => "lea faka\x{2bb}alitai-tonga",
+                                       'bem' => "lea fakap\x{113}mipa",
+                                       'xal' => 'lea fakakalimiki',
+                                       'lag' => 'lea fakalangi',
+                                       'car' => 'lea fakakalipa',
+                                       'fy' => 'lea fakafilisia hihifo',
+                                       'eo' => "lea faka\x{2bb}esipulanito",
+                                       'mn' => "lea fakamongok\x{14d}lia",
+                                       'nv' => 'lea fakanavaho',
+                                       'gd' => 'lea fakakaeliki',
+                                       'as' => "lea faka\x{2bb}asamia",
+                                       'ae' => "lea faka\x{2bb}avesitani",
+                                       'nqo' => "lea fakanik\x{14d}",
+                                       'ia' => "lea fakavaha\x{2bb}alea",
+                                       'bua' => 'lea puliati',
+                                       'map' => "lea faka\x{2bb}aositel\x{113}liamotu",
+                                       'cr' => "lea fakakel\x{12b}",
+                                       'vi' => 'lea fakavietinemi',
+                                       'mgo' => 'lea fakameta',
+                                       'sg' => 'lea sango',
+                                       'mdf' => "lea fakamokisi\x{101}",
+                                       'bm' => 'lea fakapamipala',
+                                       'nl_BE' => "lea fakah\x{14d}lani-pelesiume",
+                                       'nr' => 'lea fakanetepele-tonga',
+                                       'luy' => "lea fakalu\x{12b}a",
+                                       'kam' => 'lea fakakamipa',
+                                       'yao' => "lea faka\x{2bb}iao",
+                                       'kw' => 'lea fakakoniuali',
+                                       'pon' => "lea fakaponap\x{113}",
+                                       'tum' => 'lea fakatumepuka',
+                                       'pag' => 'lea fakapangasina',
+                                       'nym' => 'lea fakaniamiuesi',
+                                       'uz' => "lea faka\x{2bb}usipeki",
+                                       'fiu' => "lea fakafino-\x{2bb}\x{16b}kilia",
+                                       'ht' => 'lea fakahaiti',
+                                       'suk' => 'lea fakasukuma',
+                                       'bej' => 'lea fakapesa',
+                                       'brx' => "lea fakap\x{14d}to",
+                                       'yo' => "lea faka\x{2bb}i\x{14d}lupa",
+                                       'dgr' => "lea fakat\x{14d}kelipi",
+                                       'ter' => 'lea fakateleno',
+                                       'mni' => 'lea fakamanipuli',
+                                       'gu' => 'lea fakakutalati',
+                                       'bg' => 'lea fakapulukalia',
+                                       'guz' => "lea fakakus\x{12b}",
+                                       'raj' => 'lea fakalasasitani',
+                                       'kos' => 'lea fakakosilae',
+                                       'del' => 'lea fakatelauale',
+                                       'chr' => "lea fakaselok\x{12b}",
+                                       'sq' => "lea faka\x{2bb}alap\x{113}nia",
+                                       'ca' => 'lea fakakatalani',
+                                       'es_419' => "lea fakasip\x{113}nisi l\x{101}tini-\x{2bb}amelika",
+                                       'asa' => "lea faka\x{2bb}asu",
+                                       'srn' => "lea fakasuranane-tongik\x{14d}",
+                                       'sk' => "lea fakasol\x{101}vaki",
+                                       'oj' => "lea faka\x{2bb}osipiu\x{101}",
+                                       'nds' => 'lea fakasiamane-hifo',
+                                       'luo' => 'lea fakaluo',
+                                       'eka' => "lea faka\x{2bb}ekaiuki",
+                                       'ty' => 'lea fakatahiti',
+                                       'gaa' => "lea fakak\x{101}",
+                                       'jrb' => "lea faka\x{2bb}iuteo-\x{2bb}alepea",
+                                       'es' => "lea fakas\x{12b}penisi",
+                                       'sw' => 'lea fakasuahili',
+                                       'bez' => 'lea fakapena',
+                                       'yap' => "lea faka\x{2bb}iapi",
+                                       'hup' => 'lea fakahupa',
+                                       'sa' => 'lea fakasanisukuliti',
+                                       'new' => 'lea fakanewali',
+                                       'mua' => 'lea fakamunitangi',
+                                       'anp' => "lea faka\x{2bb}angika",
+                                       'akk' => "lea faka\x{2bb}akatia",
+                                       'osa' => "lea faka\x{2bb}os\x{113}se",
+                                       'krl' => 'lea fakakalelia',
+                                       'loz' => 'lea fakalosi',
+                                       'et' => "lea faka\x{2bb}esit\x{14d}nia",
+                                       'tl' => 'lea fakatekaloka',
+                                       'dyo' => "lea fakaiola-fon\x{12b}",
+                                       'nd' => 'lea netepele fakatokelau',
+                                       'sad' => 'lea fakasanitaue',
+                                       'mk' => "lea fakamasit\x{14d}nia",
+                                       'hil' => 'lea fakahilikainoni',
+                                       'en' => "lea fakap\x{101}langi",
+                                       'udm' => "lea faka\x{2bb}utimuliti",
+                                       'aus' => "lea faka\x{2bb}aositel\x{113}lia",
+                                       'zza' => "lea fakas\x{101}s\x{101}",
+                                       'de' => 'lea fakasiamane',
+                                       'zu' => 'lea fakasulu',
+                                       'snk' => "lea fakasoninek\x{113}",
+                                       'kbd' => "lea fakakap\x{101}litia",
+                                       'tzm' => "lea fakatamasaiti \x{2bb}atilasi-loloto",
+                                       'mag' => 'lea fakamakahi',
+                                       'wak' => "lea faka\x{2bb}uasiani",
+                                       'swc' => "lea fakakongo suahil\x{12b}",
+                                       'hz' => 'lea fakahelelo',
+                                       'nn' => "lea fakanoau\x{113}-ninosiki",
+                                       'haw' => "lea fakahauai\x{2bb}i",
+                                       'bn' => 'lea fakapengikali',
+                                       'sel' => 'lea fakaselikupi',
+                                       'pal' => "lea fakap\x{101}lavi",
+                                       'frr' => 'lea fakafilisia tokelau',
+                                       'fr_CH' => "lea fakafalanis\x{113}-suisis\x{101}lani",
+                                       'min' => 'lea fakaminangikapau',
+                                       'he' => "lea fakahepel\x{16b}",
+                                       'ban' => 'lea fakapali',
+                                       'zh' => 'lea fakasiaina',
+                                       'lol' => "lea fakamongik\x{14d}",
+                                       'en_AU' => "lea fakap\x{101}langi-\x{2bb}aositel\x{113}lia",
+                                       'sm' => "lea fakaha\x{2bb}amoa",
+                                       'ar' => "lea faka\x{2bb}alepea",
+                                       'ny' => 'lea sua',
+                                       'grb' => "lea fakak\x{113}po",
+                                       'was' => "lea faka\x{2bb}uasi\x{14d}",
+                                       'sat' => 'lea fakasanitali',
+                                       'tyv' => "lea fakatuv\x{12b}nia",
+                                       'mwr' => 'lea fakamaliwali',
+                                       'bum' => 'lea fakapulu',
+                                       'egy' => "lea faka\x{2bb}isipitemu\x{2bb}a",
+                                       'twq' => 'lea fakatasauaki',
+                                       'pt_BR' => "lea fakapotukali-pal\x{101}sili",
+                                       'sus' => "lea fakasus\x{16b}",
+                                       'khq' => "lea fakakoila-s\x{12b}ni",
+                                       'ksh' => 'lea fakakolongia',
+                                       'byv' => "lea fakamet\x{16b}mipa",
+                                       'da' => "lea fakatenima\x{2bb}ake",
+                                       'ug' => "lea faka\x{2bb}uik\x{16b}li",
+                                       'sbp' => 'lea fakasangu',
+                                       'moh' => 'lea fakamohauki',
+                                       'gsw' => "lea fakasiamane-suisis\x{101}lani",
+                                       'tpi' => 'lea toki pisini',
+                                       'ta' => 'lea fakatamili',
+                                       'ady' => "lea faka\x{2bb}atik\x{113}",
+                                       'efi' => "lea \x{2bb}efiki",
+                                       'rw' => 'lea fakaluanita',
+                                       'mos' => 'lea fakamosi',
+                                       'doi' => 'lea fakatokili',
+                                       'yav' => "lea faka\x{2bb}iangipeni",
+                                       'nzi' => 'lea fakanesima',
+                                       'ibb' => "lea faka\x{2bb}ipipio",
+                                       'st' => 'lea sofo fakatonga',
+                                       'ain' => "lea faka\x{2bb}ainu",
+                                       'ko' => "lea fakak\x{14d}lea",
+                                       'saq' => 'lea fakasamipulu',
+                                       'ak' => "lea faka\x{2bb}akani",
+                                       'bss' => "lea faka\x{2bb}ak\x{14d}se",
+                                       'chp' => 'lea fakasipeuiani',
+                                       'zun' => 'lea fakasuni',
+                                       'mfe' => 'lea fakamolisieni',
+                                       'mo' => "lea fakamolit\x{101}via",
+                                       'cop' => 'lea fakakopitika',
+                                       'mis' => 'lea kehekehe',
+                                       'zh_Hant' => 'lea fakasiaina-tukufakaholo',
+                                       'ssy' => 'lea fakasaho',
+                                       'ps' => "lea fakapasit\x{14d}",
+                                       'ksf' => 'lea fakapafia',
+                                       'av' => "lea faka\x{2bb}avaliki",
+                                       'sms' => 'lea fakasami-sikolita',
+                                       'fon' => "lea fakaf\x{14d}ngi",
+                                       'kab' => 'lea fakakapile',
+                                       'rap' => 'lea fakalapanui',
+                                       'is' => "lea faka\x{2bb}aisilani",
+                                       'qu' => 'lea fakakuetisa',
+                                       'shn' => 'lea fakasiani',
+                                       'mt' => 'lea fakamolota',
+                                       'men' => "lea fakamenet\x{12b}",
+                                       'hy' => "lea faka\x{2bb}\x{101}menia",
+                                       'la' => 'lea fakalatina',
+                                       'ybb' => "lea faka\x{2bb}i\x{113}mipa",
+                                       'ms' => 'lea fakamalei',
+                                       'bh' => 'lea fakapihali',
+                                       'myv' => "lea faka\x{2bb}elisia",
+                                       'tsi' => "lea fakatis\x{12b}misiani",
+                                       'oc' => "lea faka\x{2bb}okitane",
+                                       'pap' => "lea fakapapiam\x{113}nito",
+                                       'zxx' => "\x{2bb}ikai ha lea",
+                                       'art' => "lea fa\x{2bb}u",
+                                       'it' => "lea faka\x{2bb}\x{12b}tali",
+                                       'tiv' => 'lea fakativi',
+                                       'scn' => "lea fakasis\x{12b}lia",
+                                       'nyo' => 'lea fakaniolo',
+                                       'kha' => "lea fakak\x{101}si",
+                                       'sma' => 'lea fakasami-tonga',
+                                       'mdr' => 'lea fakamanetali',
+                                       'hai' => 'lea fakahaita',
+                                       'vot' => 'lea fakavotiki',
+                                       'naq' => 'lea fakanama',
+                                       'ach' => "lea faka\x{2bb}akoli",
+                                       'ale' => "lea faka\x{2bb}aleuti",
+                                       'vai' => 'lea fakavai',
+                                       'ng' => "lea fakanetongik\x{101}",
+                                       'dv' => 'lea tivehi',
+                                       'kru' => 'lea fakakuluki',
+                                       'jv' => 'lea fakasava',
+                                       'lu' => 'lea fakalupa-katanga',
+                                       'smj' => 'lea fakasami-lule',
+                                       'tli' => "lea fakalingik\x{12b}te",
+                                       'swb' => 'lea fakakomolo',
+                                       'pt' => 'lea fakapotukali',
+                                       'hi' => "lea fakahinit\x{12b}",
+                                       'ks' => 'lea fakakesimia',
+                                       'mh' => "lea fakam\x{101}solo",
+                                       'gwi' => "lea faka\x{2bb}u\x{12b}sini",
+                                       'smn' => "lea fakasami-\x{2bb}inali",
+                                       'kg' => "lea fakakongik\x{14d}",
+                                       'lad' => 'lea fakalatino',
+                                       'csb' => 'lea fakakasiupia',
+                                       'vun' => "lea fakav\x{16b}niso",
+                                       'os' => "lea \x{2bb}osetiki",
+                                       'ho' => 'lea fakahili-motu',
+                                       'fr' => "lea fakafalanis\x{113}",
+                                       'got' => 'lea fakakotika',
+                                       'jmc' => 'lea fakamasame',
+                                       'kaa' => 'lea fakakala-kalipaki',
+                                       'ewo' => "lea faka\x{2bb}eu\x{14d}nito",
+                                       'sr' => "lea fakas\x{113}pia",
+                                       'kok' => "lea fakakonikan\x{12b}",
+                                       'vo' => 'lea fakavolapiki',
+                                       'bfd' => 'lea fakapafuti',
+                                       'ff' => "lea fakaful\x{101}",
+                                       'xog' => 'lea fakasoka',
+                                       'tet' => "lea fakat\x{113}tamu",
+                                       'tem' => "lea fakatimen\x{113}",
+                                       'lus' => 'lea fakamiso',
+                                       'fj' => 'lea fakafisi',
+                                       'srr' => "lea fakas\x{113}l\x{113}le",
+                                       'pam' => 'lea fakapamipanga',
+                                       'tkl' => 'lea fakatokelau',
+                                       'sn' => 'lea sona',
+                                       'inh' => "lea faka\x{2bb}ingusi",
+                                       'cpe' => "lea takote-fakapilit\x{101}nia",
+                                       'sd' => "lea fakas\x{12b}niti",
+                                       'yi' => "lea faka\x{12b}tisi",
+                                       'bho' => 'lea fakaposipuli',
+                                       'cch' => "lea faka\x{2bb}atisami",
+                                       'arp' => "lea faka\x{2bb}alapaho",
+                                       'frs' => 'lea fakafilisia hahake',
+                                       'gon' => "lea fakakonit\x{12b}",
+                                       'ha' => 'lea fakahausa',
+                                       'gba' => 'lea fakakapaia',
+                                       'hit' => 'lea fakahitite',
+                                       'lg' => 'lea fakakanita',
+                                       'war' => "lea faka\x{2bb}ualai",
+                                       'mad' => 'lea fakamatula',
+                                       'bug' => 'lea fakapukisi',
+                                       'sl' => 'lea fakasolovenia',
+                                       'rup' => "lea faka\x{2bb}alomania",
+                                       'mul' => 'lea tuifio',
+                                       'dua' => 'lea fakatuala',
+                                       'tig' => "lea fakatikil\x{12b}nia",
+                                       'mye' => 'lea fakamiene',
+                                       'mr' => 'lea fakamalati',
+                                       'cad' => 'lea fakakato',
+                                       'rm' => "lea fakalaito-lom\x{113}nia",
+                                       'kaj' => "lea fakasis\x{16b}",
+                                       'dz' => 'lea fakaputeni',
+                                       'ilo' => "lea faka\x{2bb}iloko",
+                                       'kn' => 'lea fakakanata',
+                                       'rn' => 'lea luaniti',
+                                       'uga' => "lea faka\x{2bb}\x{16b}kaliti",
+                                       'nog' => 'lea fakanokai',
+                                       'cho' => 'lea fakasokitau',
+                                       'nmg' => 'lea fakakuasio',
+                                       'crh' => 'lea fakatoake-kilimea',
+                                       'ik' => "lea faka\x{2bb}inupiaki",
+                                       'hmn' => "lea fakam\x{14d}ngi",
+                                       'tk' => "lea fakat\x{113}kimeni",
+                                       'sga' => "lea faka\x{2bb}aelani-motu\x{2bb}a",
+                                       'mg' => 'lea fakamalakasi',
+                                       'su' => "lea fakasunit\x{101}",
+                                       'es_MX' => "lea fakasip\x{113}nisi-mekisikou",
+                                       'de_AT' => "lea fakasiamane-\x{2bb}aositulia",
+                                       'bbj' => 'lea fakakomala',
+                                       'sc' => "lea fakasalet\x{12b}nia",
+                                       'en_US' => "lea fakap\x{101}langi-\x{2bb}amelika",
+                                       'kln' => 'lea fakakalenisini',
+                                       'sgn' => "lea faka\x{2bb}ilonga",
+                                       'chy' => 'lea fakaseiene',
+                                       'ru' => "lea fakal\x{16b}sia",
+                                       'nnh' => "lea fakangiemip\x{14d}ni",
+                                       'zap' => 'lea fakasapoteki',
+                                       'nb' => "lea fakanoua\x{113}-pokimali",
+                                       'nso' => 'lea sofo fakatokelau',
+                                       'ku' => "lea fakak\x{113}tisi",
+                                       'az' => "lea faka\x{2bb}asapaisani",
+                                       'lo' => 'lea fakalau',
+                                       'sah' => 'lea fakasaka',
+                                       'ksb' => 'lea fakasiamipala',
+                                       'aa' => "lea faka\x{2bb}af\x{101}la",
+                                       'lb' => 'lea fakalakisimipeki',
+                                       'fur' => "lea fakafulil\x{101}ni",
+                                       'mus' => 'lea fakakileki',
+                                       'ts' => 'lea songa',
+                                       'ml' => "lea faka\x{2bb}initia-mal\x{101}ialami",
+                                       'grc' => "lea fakakalisimu\x{2bb}a",
+                                       'en_GB' => "lea fakapilit\x{101}nia",
+                                       'sas' => 'lea fakasasaki',
+                                       'peo' => "lea fakap\x{113}sia motu\x{2bb}a",
+                                       'bal' => 'lea fakapalusi',
+                                       'agq' => "lea faka\x{2bb}akihemi",
+                                       'nyn' => 'lea fakanianikole',
+                                       'dav' => 'lea fakataita',
+                                       'mer' => 'lea fakamelu',
+                                       'kl' => "lea fakakala\x{2bb}alisuti",
+                                       'bs' => 'lea fakaposinia',
+                                       'iu' => "lea faka\x{2bb}inuketituti",
+                                       'to' => 'lea fakatonga',
+                                       'es_ES' => "lea fakasip\x{113}nisi-'iulope",
+                                       'cu' => 'lea fakasilavia fakasiasi',
+                                       'ch' => 'lea fakakamolo',
+                                       'eu' => "lea fakap\x{101}siki",
+                                       'lah' => 'lea lanita',
+                                       'wa' => "lea faka\x{2bb}ualonia",
+                                       'zh_Hans' => 'lea fakasiaina-fakafaingofua',
+                                       'pl' => "lea fakap\x{14d}lani",
+                                       'ay' => "lea \x{2bb}aimala",
+                                       'lez' => 'lea fakalesikia',
+                                       'den' => 'lea fakasilave',
+                                       'mak' => 'lea fakamakasali',
+                                       'lui' => 'lea fakaluiseno',
+                                       'an' => "lea faka\x{2bb}alakoni",
+                                       'gez' => "lea fakasi\x{2bb}isi",
+                                       'kfo' => 'lea fakakolo',
+                                       'lua' => 'lea fakalupa-lulua',
+                                       'uk' => "lea faka\x{2bb}iuk\x{101}lia",
+                                       'nus' => 'lea fakanueli',
+                                       'ceb' => 'lea fakasepuano',
+                                       'kr' => 'lea fakakanuli',
+                                       'tt' => 'lea fakatatale',
+                                       'smi' => 'lea fakasami',
+                                       'ast' => "lea faka\x{2bb}asit\x{16b}lia",
+                                       'fo' => 'lea fakafaloe',
+                                       'syr' => "lea fakasuli\x{101}i\x{101}",
+                                       'ss' => 'lea fakasuasilani',
+                                       'or' => "lea faka\x{2bb}initia-\x{2bb}ol\x{101}ea",
+                                       'sh' => "lea s\x{113}pia-kuloisia",
+                                       'xh' => "lea fakat\x{14d}sa",
+                                       'th' => 'lea fakataileni',
+                                       'so' => 'lea fakasomali',
+                                       'tut' => "lea faka\x{2bb}alitai",
+                                       'iba' => "lea faka\x{2bb}ipani",
+                                       'kmb' => "lea fakakimip\x{16b}nitu",
+                                       'sam' => "lea fakasamalitani-\x{2bb}al\x{101}miti",
+                                       'dar' => "lea fakatalaku\x{101}",
+                                       'phn' => 'lea fakafoinikia',
+                                       'bik' => 'lea fakapikoli',
+                                       'lt' => 'lea fakalituania',
+                                       'gn' => 'lea fakakualani',
+                                       'hr' => 'lea fakakuloisia',
+                                       'be' => 'lea fakapelalusi',
+                                       'niu' => "lea fakaniu\x{113}",
+                                       'din' => "lea fakatingik\x{101}",
+                                       'ur' => "lea faka\x{2bb}etiu",
+                                       'cv' => 'lea fakasuvasa',
+                                       'chk' => "lea fakat\x{16b}ke",
+                                       'arw' => "lea faka\x{2bb}alauaki",
+                                       'tmh' => 'lea fakatamasieki',
+                                       'ce' => 'lea fakasese',
+                                       'chn' => 'lea fakasinuki-takote',
+                                       'awa' => "lea faka\x{2bb}auati",
+                                       'ja' => 'lea fakasiapani',
+                                       'tvl' => "lea fakat\x{16b}valu",
+                                       'dsb' => "lea fakas\x{14d}pia-hifo",
+                                       'tg' => "lea fakat\x{101}siki",
+                                       'pi' => "lea fakap\x{101}li",
+                                       'tog' => 'lea fakaniasa-tonga',
+                                       'ar_001' => "lea faka\x{2bb}alepea (m\x{101}mani)",
+                                       'te' => "lea faka\x{2bb}initia-teluku",
+                                       'ses' => 'lea fakakoilapolo-seni',
+                                       'bla' => "lea fakasikesik\x{101}",
+                                       'cay' => 'lea fakakaiuka',
+                                       'ig' => "lea faka\x{2bb}ikip\x{14d}",
+                                       'nl' => "lea fakah\x{14d}lani",
+                                       'cgg' => 'lea fakakika',
+                                       'wae' => "lea faka\x{2bb}ualiseli",
+                                       'ebu' => "lea faka\x{2bb}emip\x{16b}",
+                                       'mnc' => "lea fakamanis\x{16b}",
+                                       'nap' => 'lea fakanapoletano',
+                                       'el' => 'lea fakakalisi',
+                                       'kk' => 'lea fakakasaki'
+                                     },
+                      'scripts' => {
+                                     'Goth' => 'tohinima fakakotika',
+                                     'Knda' => "tohinima faka\x{2bb}initia-kanata",
+                                     'Cakm' => "tohinima fakasakim\x{101}",
+                                     'Hant' => 'tohinima fakasiaina-tukufakaholo',
+                                     'Wole' => 'tohinima fakauoleai',
+                                     'Lepc' => "tohinima fakalepas\x{101}",
+                                     'Ethi' => "tohinima faka\x{2bb}\x{12b}ti\x{14d}pia",
+                                     'Zsym' => "tohinima faka\x{2bb}ilonga",
+                                     'Hans' => 'tohinima fakasiaina-fakafaingofua',
+                                     'Olck' => "tohinima faka\x{2bb}olisiki",
+                                     'Syrn' => "tohinima fakasuli\x{101}i\x{101}-hahake",
+                                     'Mand' => 'tohinima fakamanitaea',
+                                     'Kali' => "tohinima fakakaial\x{12b}",
+                                     'Armi' => "tohinima faka\x{2bb}al\x{101}miti-\x{2bb}emipaea",
+                                     'Syrj' => "tohinima fakasuli\x{101}i\x{101}-hihifo",
+                                     'Yiii' => "tohinima faka\x{12b}\x{12b}",
+                                     'Tale' => 'tohinima fakatai-lue',
+                                     'Ugar' => "lea faka\x{2bb}\x{16b}kaliti",
+                                     'Thaa' => "tohinima fakat\x{101}na",
+                                     'Bali' => 'tohinima fakapali',
+                                     'Thai' => 'tohinima fakataileni',
+                                     'Maya' => 'tohinima tongitapu fakamaia',
+                                     'Xpeo' => "tohinima fakap\x{113}siamu\x{2bb}a",
+                                     'Copt' => 'tohinima fakakopitika',
+                                     'Tavt' => 'tohinima fakatai-vieti',
+                                     'Syre' => "tohinima fakasuli\x{101}i\x{101}-\x{2bb}esitelangelo",
+                                     'Mtei' => 'tohinima fakametei-maieki',
+                                     'Mlym' => "tohinima faka\x{2bb}initia-mal\x{101}ialami",
+                                     'Nkoo' => "tohinima fakanik\x{14d}",
+                                     'Kore' => "tohinima fakak\x{14d}lea",
+                                     'Zxxx' => "tohinima ta\x{2bb}etohitohi\x{2bb}i",
+                                     'Tfng' => "tohinima fakatifin\x{101}ki",
+                                     'Hang' => "tohinima fakak\x{14d}lea-h\x{101}ng\x{16b}lu",
+                                     'Sinh' => 'tohinima fakasingihala',
+                                     'Mymr' => 'tohinima fakapema',
+                                     'Laoo' => 'tohinima fakalau',
+                                     'Deva' => "tohinima faka\x{2bb}initia-tevan\x{101}kal\x{12b}",
+                                     'Cher' => "tohinima fakaselok\x{12b}",
+                                     'Bugi' => 'tohinima fakapukisi',
+                                     'Latn' => 'tohinima fakalatina',
+                                     'Kana' => 'tohinima fakasiapani katakana',
+                                     'Jpan' => 'tohinima fakasiapani',
+                                     'Beng' => 'tohinima fakapengikali',
+                                     'Gujr' => "tohinima faka\x{2bb}initia-kutalati",
+                                     'Orya' => "tohinima faka\x{2bb}initia-\x{2bb}ol\x{101}ea",
+                                     'Hira' => 'tohinima fakasiapani hilakana',
+                                     'Zzzz' => "tohinima ta\x{2bb}e\x{2bb}iloa",
+                                     'Talu' => "tohinima fakatai-lue fo\x{2bb}ou",
+                                     'Mong' => "tohinima fakamongok\x{14d}lia",
+                                     'Zmth' => 'tohinima fakamatematika',
+                                     'Bamu' => 'tohinima fakapamumi',
+                                     'Egyp' => "tohinima tongitapu faka\x{2bb}isipite",
+                                     'Roro' => 'tohinima fakalongolongo',
+                                     'Hani' => 'tohinima fakasiaina',
+                                     'Lisu' => "tohinima fakafal\x{101}se",
+                                     'Java' => 'tohinima fakasava',
+                                     'Khmr' => "tohinima fakakemip\x{14d}tia",
+                                     'Zyyy' => 'tohinima fakatatau',
+                                     'Vaii' => 'tohinima fakavai',
+                                     'Lana' => 'tohinima fakalana',
+                                     'Cans' => "tohinima fakatupu\x{2bb}i-k\x{101}nata fakatahataha",
+                                     'Tglg' => 'tohinima fakatakaloka',
+                                     'Sund' => "tohinima fakasunit\x{101}",
+                                     'Limb' => "tohinima fakalimip\x{16b}",
+                                     'Plrd' => "tohinima fakafon\x{113}tiki-pol\x{101}ti",
+                                     'Tibt' => 'tohinima fakataipeti',
+                                     'Saur' => "tohinima fakasaulasit\x{101}",
+                                     'Geor' => "tohinima fakase\x{14d}sia",
+                                     'Batk' => "tohinima fakap\x{101}taki",
+                                     'Guru' => "tohinima fakak\x{16b}muki",
+                                     'Syrc' => "tohinima fakasuli\x{101}i\x{101}",
+                                     'Grek' => 'tohinima fakakalisi',
+                                     'Taml' => 'tohinima fakatamili',
+                                     'Cham' => 'tohinima fakasami',
+                                     'Arab' => "tohinima faka\x{2bb}alepea",
+                                     'Sylo' => 'tohinima fakasailoti-nakili',
+                                     'Brai' => 'tohinima laukonga ki he kui',
+                                     'Bopo' => 'tohinima fakapopomofo',
+                                     'Armn' => "tohinima faka\x{2bb}\x{101}menia",
+                                     'Hebr' => "tohinima fakahepel\x{16b}",
+                                     'Phnx' => 'tohinima fakafoinikia',
+                                     'Telu' => "tohinima faka\x{2bb}initia-teluku",
+                                     'Cyrl' => "tohinima fakal\x{16b}sia"
+                                   }
+                    },
+  'delimiters' => {
+                    'alternateQuotationEnd' => "\x{2019}",
+                    'quotationEnd' => "\x{201d}",
+                    'quotationStart' => "\x{201c}",
+                    'alternateQuotationStart' => "\x{2018}"
+                  },
+  'iso4217' => 'TOP'
+};

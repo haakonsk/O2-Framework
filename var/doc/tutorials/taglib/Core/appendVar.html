@@ -1,0 +1,33 @@
+<o2 use O2Doc::Tutorial />
+
+<o2 docSection title="appendVar">
+  Appends one string to another. An optional delimiter string may be inserted between the two.
+  <o2 docSection title="Syntax">
+    <o2 docCode lang="o2ml">
+      <o2 setVar "$myString">initialString</o2:setVar>
+      <o2 appendVar "$myString">AppendedString</o2:appendVar>
+      <p>$myString<p>
+    </o2:docCode>
+    <o2 docCodeResult seeGeneratedHtml="0" />
+    <o2 setVar "$myString"></o2:setVar>
+    or
+    <o2 docCode lang="o2ml">
+      <o2 appendVar "$myString" delimiter=", ">initialString</o2:setVar>
+      <o2 appendVar "$myString" delimiter=", ">AppendedString</o2:appendVar>
+      <p>$myString<p>
+    </o2:docCode>
+    <o2 docCodeResult seeGeneratedHtml="0" />
+  </o2:docSection>
+  <o2 docSection>
+    <o2 docNote>
+      As you can see, the delimiter is inserted before the appended string, but not if the string it is appended to is empty.
+      This makes it easy to use within loops.
+    </o2:docNote>
+  </o2:docSection>
+  <o2 docSection title="Attributes">
+    <o2 docList class="attributes">
+      <o2 docListItem class="optional">delimiter - a string to insert between appended elements</o2:docListItem>
+    </o2:docList>
+  </o2:docSection>
+  See also <o2 docLink type="tag" id="setVar" /> and <o2 docLink type="tag" id="join" />.
+</o2:docSection>

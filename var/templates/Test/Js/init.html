@@ -1,0 +1,10 @@
+<o2 use Html />
+
+jsUrl=$jsUrl
+<o2 header onLoad="tester.startTesting();" />
+
+<o2 addCssFile file="jsTests" />
+<o2 addJsFile  file="t/testUtils" />
+<o2 addJsFile  file="$jsUrl" />
+
+<o2 footer />

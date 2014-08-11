@@ -1,0 +1,2201 @@
+{
+  'territory' => 'ES',
+  'language' => 'gl',
+  'number' => {
+                'percentFormat' => {
+                                     'percentFormatLength' => {
+                                                              'standard' => '#,##0%'
+                                                            }
+                                   },
+                'measurement' => {},
+                'symbols' => {
+                               'infinity' => "\x{221e}",
+                               'nan' => 'NaN',
+                               'plusSign' => '+',
+                               'superscriptingExponent' => "×",
+                               'exponential' => 'E',
+                               'group' => '.',
+                               'percentSign' => '%',
+                               'decimal' => ',',
+                               'perMille' => "\x{2030}",
+                               'alias' => '',
+                               'minusSign' => '-',
+                               'list' => ';'
+                             },
+                'scientificFormat' => {
+                                        'scientificFormatLength' => {
+                                                                    'standard' => '#E0'
+                                                                  }
+                                      },
+                'decimalFormat' => {
+                                     'decimalFormatLength' => {
+                                                              'short' => "0K0K00K00K000K000K0M0M00M00M000M000M0k M0k M00k M00k M000k M000k M0 B0 B00 B00 B000 B000 B",
+                                                              'standard' => '#,##0.###',
+                                                              'long' => "0 mil0 mil00 mil00 mil000 mil000 mil0 millón0 millóns00 millón00 millóns000 millón000 millóns0 mil millóns0 mil millóns00 mil millóns00 mil millóns000 mil millóns000 mil millóns0 billóns0 billóns00 billóns00 billóns000 billóns000 billóns"
+                                                            }
+                                   },
+                'currencyFormat' => {
+                                      'currencyFormatLength' => {
+                                                                'standard' => "¤#,##0.00;(¤#,##0.00)"
+                                                              }
+                                    },
+                'currencies' => {
+                                  'BZD' => {
+                                           'symbol' => '$',
+                                           'displayName' => "Dólar beliceño"
+                                         },
+                                  'YER' => {
+                                           'displayName' => "Rial iemení"
+                                         },
+                                  'MXP' => {
+                                           'displayName' => "Peso de prata mexicano (1861\x{2013}1992)"
+                                         },
+                                  'NLG' => {
+                                           'displayName' => "Florín holandés"
+                                         },
+                                  'SLL' => {
+                                           'displayName' => 'Leone de Serra Leoa'
+                                         },
+                                  'ERN' => {
+                                           'displayName' => 'Nakfa eritreo'
+                                         },
+                                  'FRF' => {
+                                           'displayName' => 'francos franceses'
+                                         },
+                                  'NGN' => {
+                                           'symbol' => "\x{20a6}",
+                                           'displayName' => 'Naira nixeriano'
+                                         },
+                                  'CRC' => {
+                                           'symbol' => "\x{20a1}",
+                                           'displayName' => "colóns costarricenses"
+                                         },
+                                  'VEF' => {
+                                           'displayName' => "bolívares venezolanos"
+                                         },
+                                  'LAK' => {
+                                           'symbol' => "\x{20ad}",
+                                           'displayName' => 'Kip laosiano'
+                                         },
+                                  'CLP' => {
+                                           'symbol' => '$',
+                                           'displayName' => 'pesos chilenos'
+                                         },
+                                  'PEI' => {
+                                           'displayName' => 'Inti peruano'
+                                         },
+                                  'DZD' => {
+                                           'displayName' => 'Dinar alxeriano'
+                                         },
+                                  'CUC' => {
+                                           'displayName' => 'Peso cubano convertible'
+                                         },
+                                  'SZL' => {
+                                           'displayName' => 'Lilanxeni de Suacilandia'
+                                         },
+                                  'MOP' => {
+                                           'displayName' => 'Pataca de Macau'
+                                         },
+                                  'BYR' => {
+                                           'symbol' => "\x{440}.",
+                                           'displayName' => 'Rublo bielorruso'
+                                         },
+                                  'ESB' => {
+                                           'displayName' => "Peseta española (conta convertible)"
+                                         },
+                                  'MUR' => {
+                                           'displayName' => 'Rupia de Mauricio'
+                                         },
+                                  'WST' => {
+                                           'displayName' => 'Tala samoano'
+                                         },
+                                  'SUR' => {
+                                           'displayName' => "rublos soviéticos"
+                                         },
+                                  'LRD' => {
+                                           'symbol' => '$',
+                                           'displayName' => "Dólar liberiano"
+                                         },
+                                  'MMK' => {
+                                           'displayName' => 'Kiat birmano'
+                                         },
+                                  'KGS' => {
+                                           'displayName' => 'Som quirguizo'
+                                         },
+                                  'IDR' => {
+                                           'displayName' => 'rupias indonesias'
+                                         },
+                                  'PYG' => {
+                                           'symbol' => "\x{20b2}",
+                                           'displayName' => "Guaranís paraguaios"
+                                         },
+                                  'GTQ' => {
+                                           'displayName' => 'Quetzal guatemalteco'
+                                         },
+                                  'CAD' => {
+                                           'symbol' => '$CA',
+                                           'displayName' => "dólares canadianos"
+                                         },
+                                  'AWG' => {
+                                           'displayName' => "Florín arubeño"
+                                         },
+                                  'PKR' => {
+                                           'displayName' => "Rupia paquistaní"
+                                         },
+                                  'TTD' => {
+                                           'symbol' => '$',
+                                           'displayName' => "Dólar de Trinidade e Tobago"
+                                         },
+                                  'RUR' => {
+                                           'symbol' => "\x{440}.",
+                                           'displayName' => "Rublo ruso (1991\x{2013}1998)"
+                                         },
+                                  'UZS' => {
+                                           'displayName' => 'Som usbeco'
+                                         },
+                                  'XCD' => {
+                                           'symbol' => 'EC$',
+                                           'displayName' => "Dólar Caribe-Leste"
+                                         },
+                                  'VUV' => {
+                                           'displayName' => 'Vatu vanuatense'
+                                         },
+                                  'XOF' => {
+                                           'symbol' => 'CFA',
+                                           'displayName' => 'Franco CFA BCEAO'
+                                         },
+                                  'KMF' => {
+                                           'displayName' => 'Franco comoriano'
+                                         },
+                                  'AZN' => {
+                                           'displayName' => 'Manat acerbaixano'
+                                         },
+                                  'XPD' => {
+                                           'displayName' => 'Paladio'
+                                         },
+                                  'VEB' => {
+                                           'displayName' => "bolívares venezolanos (1871\x{2013}2008)"
+                                         },
+                                  'ANG' => {
+                                           'displayName' => "Florín das Antillas Neerlandesas"
+                                         },
+                                  'MNT' => {
+                                           'symbol' => "\x{20ae}",
+                                           'displayName' => 'Tugrik mongol'
+                                         },
+                                  'LBP' => {
+                                           'displayName' => 'Libra libanesa'
+                                         },
+                                  'KES' => {
+                                           'displayName' => "Chelín kenyano"
+                                         },
+                                  'BTN' => {
+                                           'displayName' => "Ngultrum butanés"
+                                         },
+                                  'GBP' => {
+                                           'symbol' => "£",
+                                           'displayName' => 'libras esterlinas'
+                                         },
+                                  'CDF' => {
+                                           'displayName' => "Franco congolés"
+                                         },
+                                  'CLF' => {
+                                           'displayName' => 'unidades de fomento chilenas'
+                                         },
+                                  'SEK' => {
+                                           'displayName' => 'coroas suecas'
+                                         },
+                                  'BRB' => {
+                                           'displayName' => 'cruzeiros novos brasileiros'
+                                         },
+                                  'AFN' => {
+                                           'displayName' => 'Afgani afgano'
+                                         },
+                                  'KZT' => {
+                                           'symbol' => "\x{20b8}",
+                                           'displayName' => 'Tenge casaco'
+                                         },
+                                  'ZMK' => {
+                                           'displayName' => "Kwacha zambiano (1968\x{2013}2012)"
+                                         },
+                                  'DKK' => {
+                                           'displayName' => 'coroas dinamarquesas'
+                                         },
+                                  'MXV' => {
+                                           'displayName' => "Unidade de inversión mexicana"
+                                         },
+                                  'AMD' => {
+                                           'displayName' => 'Dram armenio'
+                                         },
+                                  'SCR' => {
+                                           'displayName' => 'Rupia de Seixeles'
+                                         },
+                                  'UYI' => {
+                                           'displayName' => 'Peso en unidades indexadas uruguaio'
+                                         },
+                                  'FJD' => {
+                                           'symbol' => '$',
+                                           'displayName' => "Dólar fixiano"
+                                         },
+                                  'PES' => {
+                                           'displayName' => 'Sol peruano'
+                                         },
+                                  'SHP' => {
+                                           'displayName' => 'Libra de Santa Helena'
+                                         },
+                                  'ALL' => {
+                                           'displayName' => "Lek albanés"
+                                         },
+                                  'TOP' => {
+                                           'displayName' => "Pa\x{2bb}anga de Tonga"
+                                         },
+                                  'NIC' => {
+                                           'displayName' => "Córdoba nicaragüense"
+                                         },
+                                  'ZMW' => {
+                                           'displayName' => 'Kwacha zambiano'
+                                         },
+                                  'UGX' => {
+                                           'displayName' => "Chelín ugandés"
+                                         },
+                                  'GQE' => {
+                                           'displayName' => 'Ekwele guineana'
+                                         },
+                                  'OMR' => {
+                                           'displayName' => "Rial omaní"
+                                         },
+                                  'DJF' => {
+                                           'displayName' => 'Franco xibutiano'
+                                         },
+                                  'BND' => {
+                                           'symbol' => '$',
+                                           'displayName' => "Dólar de Brunei"
+                                         },
+                                  'TND' => {
+                                           'displayName' => 'Dinar tunesino'
+                                         },
+                                  'PTE' => {
+                                           'displayName' => 'escudos portugueses'
+                                         },
+                                  'IEP' => {
+                                           'displayName' => 'libras irlandesas'
+                                         },
+                                  'SBD' => {
+                                           'symbol' => '$',
+                                           'displayName' => "Dólar das Illas Salomón"
+                                         },
+                                  'GHS' => {
+                                           'symbol' => "\x{20b5}",
+                                           'displayName' => 'Cedi de Gana'
+                                         },
+                                  'GNF' => {
+                                           'displayName' => 'Franco guineano'
+                                         },
+                                  'BOB' => {
+                                           'displayName' => 'bolivianos'
+                                         },
+                                  'CVE' => {
+                                           'displayName' => 'Escudo caboverdiano'
+                                         },
+                                  'GMD' => {
+                                           'displayName' => 'Dalasi gambiano'
+                                         },
+                                  'ARP' => {
+                                           'displayName' => 'pesos arxentinos (ARP)'
+                                         },
+                                  'ARS' => {
+                                           'symbol' => '$',
+                                           'displayName' => 'pesos arxentinos'
+                                         },
+                                  'MWK' => {
+                                           'displayName' => 'Kwacha de Malaui'
+                                         },
+                                  'BDT' => {
+                                           'symbol' => "\x{9f3}",
+                                           'displayName' => 'Taka de Bangladesh'
+                                         },
+                                  'GRD' => {
+                                           'displayName' => 'Dracma grego'
+                                         },
+                                  'KWD' => {
+                                           'displayName' => "Dinar kuwaití"
+                                         },
+                                  'EUR' => {
+                                           'symbol' => "\x{20ac}",
+                                           'displayName' => 'euros'
+                                         },
+                                  'CHF' => {
+                                           'displayName' => 'francos suizos'
+                                         },
+                                  'XAG' => {
+                                           'displayName' => 'Prata'
+                                         },
+                                  'SRD' => {
+                                           'symbol' => '$',
+                                           'displayName' => "Dólar surinamés"
+                                         },
+                                  'ADP' => {
+                                           'displayName' => 'pesetas andorranas'
+                                         },
+                                  'DOP' => {
+                                           'symbol' => '$',
+                                           'displayName' => 'pesos dominicanos'
+                                         },
+                                  'PEN' => {
+                                           'displayName' => 'Sol novo peruano'
+                                         },
+                                  'KPW' => {
+                                           'displayName' => 'Won norcoreano'
+                                         },
+                                  'SVC' => {
+                                           'displayName' => "colóns salvadoreños"
+                                         },
+                                  'SGD' => {
+                                           'symbol' => '$',
+                                           'displayName' => "Dólar de Singapur"
+                                         },
+                                  'BOP' => {
+                                           'displayName' => 'pesos bolivianos'
+                                         },
+                                  'TWD' => {
+                                           'symbol' => 'NT$',
+                                           'displayName' => "novos dólares taiwaneses"
+                                         },
+                                  'USD' => {
+                                           'symbol' => '$',
+                                           'displayName' => "dólares estadounidenses"
+                                         },
+                                  'MAD' => {
+                                           'displayName' => "Dirham marroquí"
+                                         },
+                                  'BGN' => {
+                                           'displayName' => "Lev búlgaro"
+                                         },
+                                  'XXX' => {
+                                           'displayName' => "unidades monetarias descoñecidas ou non válidas"
+                                         },
+                                  'SAR' => {
+                                           'displayName' => 'riais sauditas'
+                                         },
+                                  'SSP' => {
+                                           'symbol' => "£",
+                                           'displayName' => 'libras sursudanesa'
+                                         },
+                                  'AUD' => {
+                                           'symbol' => '$',
+                                           'displayName' => "dólares australianos"
+                                         },
+                                  'KYD' => {
+                                           'symbol' => '$',
+                                           'displayName' => "Dólar das Illas Caimán"
+                                         },
+                                  'KRW' => {
+                                           'symbol' => "\x{20a9}",
+                                           'displayName' => 'wons surcoreanos'
+                                         },
+                                  'GIP' => {
+                                           'symbol' => "£",
+                                           'displayName' => "libras xibraltareñas"
+                                         },
+                                  'TRY' => {
+                                           'symbol' => 'TL',
+                                           'displayName' => 'liras turcas'
+                                         },
+                                  'XAU' => {
+                                           'displayName' => 'Ouro'
+                                         },
+                                  'NAD' => {
+                                           'symbol' => '$',
+                                           'displayName' => "Dólar namibio"
+                                         },
+                                  'CZK' => {
+                                           'displayName' => 'Coroa checa'
+                                         },
+                                  'JMD' => {
+                                           'symbol' => '$',
+                                           'displayName' => "Dólar xamaicano"
+                                         },
+                                  'BSD' => {
+                                           'symbol' => '$',
+                                           'displayName' => "Dólar das Bahamas"
+                                         },
+                                  'BEC' => {
+                                           'displayName' => 'francos belgas (convertibles)'
+                                         },
+                                  'BEL' => {
+                                           'displayName' => 'francos belgas (financeiros)'
+                                         },
+                                  'MAF' => {
+                                           'displayName' => "Franco marroquí"
+                                         },
+                                  'MXN' => {
+                                           'symbol' => '$MX',
+                                           'displayName' => 'pesos mexicanos'
+                                         },
+                                  'UYU' => {
+                                           'symbol' => '$',
+                                           'displayName' => 'pesos uruguaios'
+                                         },
+                                  'GYD' => {
+                                           'symbol' => '$',
+                                           'displayName' => "Dólar güianés"
+                                         },
+                                  'BWP' => {
+                                           'displayName' => 'Pula botsuano'
+                                         },
+                                  'LYD' => {
+                                           'displayName' => 'Dinar libio'
+                                         },
+                                  'THB' => {
+                                           'symbol' => "\x{e3f}",
+                                           'displayName' => 'bahts tailandeses'
+                                         },
+                                  'EGP' => {
+                                           'displayName' => 'Libra exipcia'
+                                         },
+                                  'SDG' => {
+                                           'displayName' => 'Libra sudanesa'
+                                         },
+                                  'MKD' => {
+                                           'displayName' => 'Dinar macedonio'
+                                         },
+                                  'AED' => {
+                                           'displayName' => "Dirham dos Emiratos Árabes Unidos"
+                                         },
+                                  'JPY' => {
+                                           'symbol' => "¥JP",
+                                           'displayName' => 'iens xaponeses'
+                                         },
+                                  'JOD' => {
+                                           'displayName' => 'Dinar xordano'
+                                         },
+                                  'ZAR' => {
+                                           'displayName' => 'rands sudafricanos'
+                                         },
+                                  'LUL' => {
+                                           'displayName' => "Franco financeiro luxemburgués"
+                                         },
+                                  'HRK' => {
+                                           'displayName' => 'Kuna croata'
+                                         },
+                                  'RWF' => {
+                                           'displayName' => "Franco ruandés"
+                                         },
+                                  'AOA' => {
+                                           'displayName' => "Kwanza angoleño"
+                                         },
+                                  'CUP' => {
+                                           'symbol' => '$',
+                                           'displayName' => 'pesos cubanos'
+                                         },
+                                  'PGK' => {
+                                           'displayName' => "Kina de Papúa Nova Guinea"
+                                         },
+                                  'BBD' => {
+                                           'symbol' => '$',
+                                           'displayName' => "Dólar de Barbados"
+                                         },
+                                  'RON' => {
+                                           'displayName' => "lei romanés"
+                                         },
+                                  'LKR' => {
+                                           'displayName' => 'Rupia de Sri Lanka'
+                                         },
+                                  'BEF' => {
+                                           'displayName' => 'francos belgas'
+                                         },
+                                  'PLN' => {
+                                           'displayName' => 'zlotys polacos'
+                                         },
+                                  'TJS' => {
+                                           'displayName' => 'Somoni taxico'
+                                         },
+                                  'IQD' => {
+                                           'displayName' => "Dinar iraquí"
+                                         },
+                                  'MDL' => {
+                                           'displayName' => 'Leu moldavo'
+                                         },
+                                  'MYR' => {
+                                           'displayName' => 'Ringgit malaio'
+                                         },
+                                  'CNY' => {
+                                           'symbol' => "CN¥",
+                                           'displayName' => "iuáns chineses"
+                                         },
+                                  'LVL' => {
+                                           'displayName' => "Lats letón"
+                                         },
+                                  'GNS' => {
+                                           'displayName' => 'Syli guineano'
+                                         },
+                                  'ITL' => {
+                                           'displayName' => 'Lira italiana'
+                                         },
+                                  'LUC' => {
+                                           'displayName' => "Franco convertible luxemburgués"
+                                         },
+                                  'INR' => {
+                                           'symbol' => "\x{20b9}",
+                                           'displayName' => 'rupias indias'
+                                         },
+                                  'FKP' => {
+                                           'displayName' => 'Libra das Malvinas'
+                                         },
+                                  'NIO' => {
+                                           'displayName' => "Córdoba de ouro nicaragüense"
+                                         },
+                                  'BRC' => {
+                                           'displayName' => 'cruzados brasileiros'
+                                         },
+                                  'PHP' => {
+                                           'symbol' => "\x{20b1}",
+                                           'displayName' => 'Peso filipino'
+                                         },
+                                  'HNL' => {
+                                           'displayName' => "Lempira hondureño"
+                                         },
+                                  'NZD' => {
+                                           'symbol' => '$',
+                                           'displayName' => "Dólar neozelandés"
+                                         },
+                                  'HKD' => {
+                                           'symbol' => '$HK',
+                                           'displayName' => "dólares de Hong Kong"
+                                         },
+                                  'BRL' => {
+                                           'symbol' => 'R$',
+                                           'displayName' => 'reais brasileiros'
+                                         },
+                                  'RSD' => {
+                                           'displayName' => 'Dinar serbio'
+                                         },
+                                  'ESA' => {
+                                           'displayName' => "Peseta española (conta A)"
+                                         },
+                                  'SOS' => {
+                                           'displayName' => "Chelín somalí"
+                                         },
+                                  'MZN' => {
+                                           'displayName' => 'meticais de Mozambique'
+                                         },
+                                  'NOK' => {
+                                           'displayName' => 'coroas norueguesas'
+                                         },
+                                  'BRR' => {
+                                           'displayName' => 'cruzeiros brasileiros'
+                                         },
+                                  'GEL' => {
+                                           'displayName' => 'Lari xeorxiano'
+                                         },
+                                  'ISK' => {
+                                           'displayName' => 'Coroa islandesa'
+                                         },
+                                  'ILS' => {
+                                           'symbol' => "\x{20aa}",
+                                           'displayName' => "Novo shequel israelí"
+                                         },
+                                  'LSL' => {
+                                           'displayName' => 'Loti de Lesoto'
+                                         },
+                                  'UYP' => {
+                                           'displayName' => "Peso uruguaio (1975\x{2013}1993)"
+                                         },
+                                  'ESP' => {
+                                           'group' => '.',
+                                           'pattern' => "#,##0.00 ¤",
+                                           'symbol' => "\x{20a7}",
+                                           'decimal' => ',',
+                                           'displayName' => 'pesetas'
+                                         },
+                                  'HUF' => {
+                                           'displayName' => "Florín húngaro"
+                                         },
+                                  'UAH' => {
+                                           'symbol' => "\x{20b4}",
+                                           'displayName' => "Grivna ucraína"
+                                         },
+                                  'LUF' => {
+                                           'displayName' => "Franco luxemburgués"
+                                         },
+                                  'RUB' => {
+                                           'displayName' => 'rublos rusos'
+                                         },
+                                  'MGA' => {
+                                           'displayName' => 'Ariary malgaxe'
+                                         },
+                                  'BMD' => {
+                                           'symbol' => '$',
+                                           'displayName' => "Dólar das Bemudas"
+                                         },
+                                  'IRR' => {
+                                           'displayName' => 'Rial iraniano'
+                                         },
+                                  'ECV' => {
+                                           'displayName' => 'Unidade de valor constante ecuatoriana'
+                                         },
+                                  'QAR' => {
+                                           'displayName' => "Rial qatarí"
+                                         },
+                                  'MVR' => {
+                                           'displayName' => 'Rupia maldiva'
+                                         },
+                                  'MRO' => {
+                                           'displayName' => 'Ouguiya mauritano'
+                                         },
+                                  'VND' => {
+                                           'symbol' => "\x{20ab}",
+                                           'displayName' => 'Dong vietnamita'
+                                         },
+                                  'ECS' => {
+                                           'displayName' => 'sucres ecuatorianos'
+                                         },
+                                  'BOV' => {
+                                           'displayName' => 'MVDOL boliviano'
+                                         },
+                                  'BRE' => {
+                                           'displayName' => 'cruzeiros brasileiros (BRE)'
+                                         },
+                                  'NPR' => {
+                                           'displayName' => 'Rupia nepalesa'
+                                         },
+                                  'COP' => {
+                                           'symbol' => '$',
+                                           'displayName' => 'pesos colombianos'
+                                         },
+                                  'TZS' => {
+                                           'displayName' => "Chelín tanzano"
+                                         },
+                                  'BIF' => {
+                                           'displayName' => "Franco burundés"
+                                         },
+                                  'XPT' => {
+                                           'displayName' => 'Platino'
+                                         },
+                                  'SYP' => {
+                                           'displayName' => 'Libra siria'
+                                         },
+                                  'KHR' => {
+                                           'symbol' => "\x{17db}",
+                                           'displayName' => 'Riel camboxano'
+                                         },
+                                  'BHD' => {
+                                           'displayName' => "Dinar de Baréin"
+                                         },
+                                  'DEM' => {
+                                           'displayName' => "marcos alemáns"
+                                         },
+                                  'HTG' => {
+                                           'displayName' => 'Gourde haitiano'
+                                         },
+                                  'STD' => {
+                                           'displayName' => "Dobra de San Tomé e Príncipe"
+                                         },
+                                  'PAB' => {
+                                           'displayName' => "Balboa panameño"
+                                         },
+                                  'XAF' => {
+                                           'symbol' => 'FCFA',
+                                           'displayName' => 'Franco CFA BEAC'
+                                         },
+                                  'BAM' => {
+                                           'displayName' => 'Marco convertible de Bosnia e Hercegovina'
+                                         },
+                                  'LTL' => {
+                                           'displayName' => 'Litas lituana'
+                                         },
+                                  'BRN' => {
+                                           'displayName' => 'cruzados novos brasileiros'
+                                         },
+                                  'TMT' => {
+                                           'displayName' => 'Manat turcomano'
+                                         },
+                                  'ETB' => {
+                                           'displayName' => "Birr etíope"
+                                         },
+                                  'XPF' => {
+                                           'symbol' => 'CFPF',
+                                           'displayName' => 'Franco CFP'
+                                         }
+                                }
+              },
+  'locale' => 'gl_ES',
+  'characters' => {
+                    'word-initial' => "\x{2026} {0}",
+                    'standard' => '?',
+                    'word-medial' => "{0} \x{2026} {1}",
+                    'index' => "[A B C D E F G H I J K L M N Ñ O P Q R S T U V W X Y Z]",
+                    'medial' => "{0}\x{2026}{1}",
+                    'word-final' => "{0} \x{2026}",
+                    'final' => "{0}\x{2026}",
+                    'auxiliary' => "[ª à â ä ã ç è ê ë ì î ï º ò ô ö õ ù û]",
+                    'initial' => "\x{2026}{0}",
+                    'punctuation' => '[\\- , ; \\: ! ? . ( ) \\[ \\] \\{ \\}]'
+                  },
+  'calendar' => {
+                  'calendarType' => 'gregorian',
+                  'timeFormat' => {
+                                    'short' => 'HH:mm',
+                                    'pm' => '',
+                                    'am' => '',
+                                    'medium' => 'HH:mm:ss',
+                                    'long' => 'HH:mm:ss z',
+                                    'full' => 'HH:mm:ss zzzz'
+                                  },
+                  'timeZones' => {
+                                   'regionFormat' => "Horario estándar de {0}",
+                                   'gmtFormat' => 'GMT{0}',
+                                   'hourFormat' => '+HH:mm;-HH:mm',
+                                   'metazone' => "
+				
+					Horario de Ekaterimburgo
+					Horario estándar de Ekaterimburgo
+					Horario de verán de Ekaterimburgo
+				
+			",
+                                   'zones' => {
+                                                'America/Bogota' => {
+                                                                    'type' => 'America/Bogota',
+                                                                    'exemplarCity' => "Bogotá"
+                                                                  },
+                                                'America/Mazatlan' => {
+                                                                      'type' => 'America/Mazatlan',
+                                                                      'exemplarCity' => "Mazatlán"
+                                                                    },
+                                                'America/Indiana/Vincennes' => {
+                                                                               'type' => 'America/Indiana/Vincennes',
+                                                                               'exemplarCity' => 'Vincennes, Indiana'
+                                                                             },
+                                                'Europe/Belgrade' => {
+                                                                     'type' => 'Europe/Belgrade',
+                                                                     'exemplarCity' => 'Belgrado'
+                                                                   },
+                                                'America/Asuncion' => {
+                                                                      'type' => 'America/Asuncion',
+                                                                      'exemplarCity' => "Asunción"
+                                                                    },
+                                                'America/Los_Angeles' => {
+                                                                         'type' => 'America/Los_Angeles',
+                                                                         'exemplarCity' => "Os Ánxeles"
+                                                                       },
+                                                'Africa/Lome' => {
+                                                                 'type' => 'Africa/Lome',
+                                                                 'exemplarCity' => "Lomé"
+                                                               },
+                                                'America/Indiana/Petersburg' => {
+                                                                                'type' => 'America/Indiana/Petersburg',
+                                                                                'exemplarCity' => 'Petersburgo, Indiana'
+                                                                              },
+                                                'Atlantic/St_Helena' => {
+                                                                        'type' => 'Atlantic/St_Helena',
+                                                                        'exemplarCity' => 'Santa Helena'
+                                                                      },
+                                                'Pacific/Saipan' => {
+                                                                    'type' => 'Pacific/Saipan',
+                                                                    'exemplarCity' => "Saipán"
+                                                                  },
+                                                'Asia/Baghdad' => {
+                                                                  'type' => 'Asia/Baghdad',
+                                                                  'exemplarCity' => 'Bagdad'
+                                                                },
+                                                'America/Coral_Harbour' => {
+                                                                           'type' => 'America/Coral_Harbour',
+                                                                           'exemplarCity' => 'Atikokan'
+                                                                         },
+                                                'Asia/Yerevan' => {
+                                                                  'type' => 'Asia/Yerevan',
+                                                                  'exemplarCity' => "Iereván"
+                                                                },
+                                                'Atlantic/Faeroe' => {
+                                                                     'type' => 'Atlantic/Faeroe',
+                                                                     'exemplarCity' => 'Faroe'
+                                                                   },
+                                                'America/St_Kitts' => {
+                                                                      'type' => 'America/St_Kitts',
+                                                                      'exemplarCity' => 'San Cristovo'
+                                                                    },
+                                                'Africa/Dakar' => {
+                                                                  'type' => 'Africa/Dakar',
+                                                                  'exemplarCity' => 'Dacar'
+                                                                },
+                                                'Europe/London' => {
+                                                                   'type' => 'Europe/London',
+                                                                   'exemplarCity' => 'Londres'
+                                                                 },
+                                                'America/Anguilla' => {
+                                                                      'type' => 'America/Anguilla',
+                                                                      'exemplarCity' => 'Anguila'
+                                                                    },
+                                                'America/St_Johns' => {
+                                                                      'type' => 'America/St_Johns',
+                                                                      'exemplarCity' => "St. John\x{2019}s"
+                                                                    },
+                                                'Africa/Bamako' => {
+                                                                   'type' => 'Africa/Bamako',
+                                                                   'exemplarCity' => 'Bamaco'
+                                                                 },
+                                                'Europe/Ljubljana' => {
+                                                                      'type' => 'Europe/Ljubljana',
+                                                                      'exemplarCity' => 'Liubliana'
+                                                                    },
+                                                'Asia/Muscat' => {
+                                                                 'type' => 'Asia/Muscat',
+                                                                 'exemplarCity' => 'Mascat'
+                                                               },
+                                                'America/Grenada' => {
+                                                                     'type' => 'America/Grenada',
+                                                                     'exemplarCity' => 'Granada'
+                                                                   },
+                                                'America/Indiana/Knox' => {
+                                                                          'type' => 'America/Indiana/Knox',
+                                                                          'exemplarCity' => 'Knox, Indiana'
+                                                                        },
+                                                'Asia/Samarkand' => {
+                                                                    'type' => 'Asia/Samarkand',
+                                                                    'exemplarCity' => {
+                                                                                      'draft' => 'contributed',
+                                                                                      'content' => 'Samarcanda'
+                                                                                    }
+                                                                  },
+                                                'Africa/Addis_Ababa' => {
+                                                                        'type' => 'Africa/Addis_Ababa',
+                                                                        'exemplarCity' => "Adís Abeba"
+                                                                      },
+                                                'America/Merida' => {
+                                                                    'type' => 'America/Merida',
+                                                                    'exemplarCity' => "Mérida"
+                                                                  },
+                                                'Asia/Ulaanbaatar' => {
+                                                                      'type' => 'Asia/Ulaanbaatar',
+                                                                      'exemplarCity' => "Ulán Bátor"
+                                                                    },
+                                                'America/Cayman' => {
+                                                                    'type' => 'America/Cayman',
+                                                                    'exemplarCity' => "Caimán"
+                                                                  },
+                                                'America/Guyana' => {
+                                                                    'type' => 'America/Guyana',
+                                                                    'exemplarCity' => "Güiana"
+                                                                  },
+                                                'America/Indiana/Vevay' => {
+                                                                           'type' => 'America/Indiana/Vevay',
+                                                                           'exemplarCity' => 'Vevay, Indiana'
+                                                                         },
+                                                'Atlantic/Reykjavik' => {
+                                                                        'type' => 'Atlantic/Reykjavik',
+                                                                        'exemplarCity' => 'Reiquiavik'
+                                                                      },
+                                                'Europe/Bucharest' => {
+                                                                      'type' => 'Europe/Bucharest',
+                                                                      'exemplarCity' => 'Bucarest'
+                                                                    },
+                                                'Pacific/Tahiti' => {
+                                                                    'type' => 'Pacific/Tahiti',
+                                                                    'exemplarCity' => "Tahití"
+                                                                  },
+                                                'America/North_Dakota/New_Salem' => {
+                                                                                    'type' => 'America/North_Dakota/New_Salem',
+                                                                                    'exemplarCity' => 'New Salem, Dakota do Norte'
+                                                                                  },
+                                                'Europe/Istanbul' => {
+                                                                     'type' => 'Europe/Istanbul',
+                                                                     'exemplarCity' => 'Estanbul'
+                                                                   },
+                                                'America/Cancun' => {
+                                                                    'type' => 'America/Cancun',
+                                                                    'exemplarCity' => "Cancún"
+                                                                  },
+                                                'Pacific/Fiji' => {
+                                                                  'type' => 'Pacific/Fiji',
+                                                                  'exemplarCity' => 'Fidxi'
+                                                                },
+                                                'Asia/Singapore' => {
+                                                                    'type' => 'Asia/Singapore',
+                                                                    'exemplarCity' => 'Singapur'
+                                                                  },
+                                                'America/Antigua' => {
+                                                                     'type' => 'America/Antigua',
+                                                                     'exemplarCity' => 'Antiga'
+                                                                   },
+                                                'America/New_York' => {
+                                                                      'type' => 'America/New_York',
+                                                                      'exemplarCity' => 'Nova York'
+                                                                    },
+                                                'America/El_Salvador' => {
+                                                                         'type' => 'America/El_Salvador',
+                                                                         'exemplarCity' => 'O Salvador'
+                                                                       },
+                                                'America/Maceio' => {
+                                                                    'type' => 'America/Maceio',
+                                                                    'exemplarCity' => {
+                                                                                      'draft' => 'contributed',
+                                                                                      'content' => "Maceió"
+                                                                                    }
+                                                                  },
+                                                'America/St_Vincent' => {
+                                                                        'type' => 'America/St_Vincent',
+                                                                        'exemplarCity' => 'San Vicente'
+                                                                      },
+                                                'America/North_Dakota/Center' => {
+                                                                                 'type' => 'America/North_Dakota/Center',
+                                                                                 'exemplarCity' => 'Center, Dakota do Norte'
+                                                                               },
+                                                'Pacific/Easter' => {
+                                                                    'type' => 'Pacific/Easter',
+                                                                    'exemplarCity' => {
+                                                                                      'draft' => 'contributed',
+                                                                                      'content' => 'Illa de Pascua'
+                                                                                    }
+                                                                  },
+                                                'Africa/Johannesburg' => {
+                                                                         'type' => 'Africa/Johannesburg',
+                                                                         'exemplarCity' => 'Xohanesburgo'
+                                                                       },
+                                                'Europe/Prague' => {
+                                                                   'type' => 'Europe/Prague',
+                                                                   'exemplarCity' => 'Praga'
+                                                                 },
+                                                'Asia/Calcutta' => {
+                                                                   'type' => 'Asia/Calcutta',
+                                                                   'exemplarCity' => 'Calcuta'
+                                                                 },
+                                                'Indian/Comoro' => {
+                                                                   'type' => 'Indian/Comoro',
+                                                                   'exemplarCity' => 'Illas Comores'
+                                                                 },
+                                                'America/Indiana/Winamac' => {
+                                                                             'type' => 'America/Indiana/Winamac',
+                                                                             'exemplarCity' => 'Winamac, Indiana'
+                                                                           },
+                                                'Africa/Porto-Novo' => {
+                                                                       'type' => 'Africa/Porto-Novo',
+                                                                       'exemplarCity' => 'Porto Novo'
+                                                                     },
+                                                'Europe/Warsaw' => {
+                                                                   'type' => 'Europe/Warsaw',
+                                                                   'exemplarCity' => 'Varsovia'
+                                                                 },
+                                                'Europe/Brussels' => {
+                                                                     'type' => 'Europe/Brussels',
+                                                                     'exemplarCity' => 'Bruxelas'
+                                                                   },
+                                                'America/Guadeloupe' => {
+                                                                        'type' => 'America/Guadeloupe',
+                                                                        'exemplarCity' => 'Guadalupe'
+                                                                      },
+                                                'America/Buenos_Aires' => {
+                                                                          'type' => 'America/Buenos_Aires',
+                                                                          'exemplarCity' => {
+                                                                                            'draft' => 'contributed',
+                                                                                            'content' => 'Bos Aires'
+                                                                                          }
+                                                                        },
+                                                'America/Havana' => {
+                                                                    'type' => 'America/Havana',
+                                                                    'exemplarCity' => 'Habana'
+                                                                  },
+                                                'Atlantic/South_Georgia' => {
+                                                                            'type' => 'Atlantic/South_Georgia',
+                                                                            'exemplarCity' => 'Xeorxia do Sur'
+                                                                          },
+                                                'America/Cambridge_Bay' => {
+                                                                           'type' => 'America/Cambridge_Bay',
+                                                                           'exemplarCity' => "Abadía de Cambridge"
+                                                                         },
+                                                'Africa/Ouagadougou' => {
+                                                                        'type' => 'Africa/Ouagadougou',
+                                                                        'exemplarCity' => "Uagadugú"
+                                                                      },
+                                                'America/Araguaina' => {
+                                                                       'type' => 'America/Araguaina',
+                                                                       'exemplarCity' => "Araguaína"
+                                                                     },
+                                                'Atlantic/Cape_Verde' => {
+                                                                         'type' => 'Atlantic/Cape_Verde',
+                                                                         'exemplarCity' => 'Cabo Verde'
+                                                                       },
+                                                'Africa/Lusaka' => {
+                                                                   'type' => 'Africa/Lusaka',
+                                                                   'exemplarCity' => 'Lusaca'
+                                                                 },
+                                                'Pacific/Truk' => {
+                                                                  'type' => 'Pacific/Truk',
+                                                                  'exemplarCity' => 'Chuuk'
+                                                                },
+                                                'Europe/Isle_of_Man' => {
+                                                                        'type' => 'Europe/Isle_of_Man',
+                                                                        'exemplarCity' => 'Illa de Man'
+                                                                      },
+                                                'America/St_Lucia' => {
+                                                                      'type' => 'America/St_Lucia',
+                                                                      'exemplarCity' => 'St. Lucia'
+                                                                    },
+                                                'Europe/Kaliningrad' => {
+                                                                        'type' => 'Europe/Kaliningrad',
+                                                                        'exemplarCity' => {
+                                                                                          'draft' => 'contributed',
+                                                                                          'content' => 'Kaliningrado'
+                                                                                        }
+                                                                      },
+                                                'Africa/Mogadishu' => {
+                                                                      'type' => 'Africa/Mogadishu',
+                                                                      'exemplarCity' => 'Mogadixo'
+                                                                    },
+                                                'Europe/Guernsey' => {
+                                                                     'type' => 'Europe/Guernsey',
+                                                                     'exemplarCity' => 'Guernesei'
+                                                                   },
+                                                'America/St_Thomas' => {
+                                                                       'type' => 'America/St_Thomas',
+                                                                       'exemplarCity' => 'St. Thomas'
+                                                                     },
+                                                'America/Jamaica' => {
+                                                                     'type' => 'America/Jamaica',
+                                                                     'exemplarCity' => 'Xamaica'
+                                                                   },
+                                                'Asia/Anadyr' => {
+                                                                 'type' => 'Asia/Anadyr',
+                                                                 'exemplarCity' => 'Anadir'
+                                                               },
+                                                'America/Argentina/Tucuman' => {
+                                                                               'type' => 'America/Argentina/Tucuman',
+                                                                               'exemplarCity' => {
+                                                                                                 'draft' => 'contributed',
+                                                                                                 'content' => "Tucumán"
+                                                                                               }
+                                                                             },
+                                                'Indian/Mauritius' => {
+                                                                      'type' => 'Indian/Mauritius',
+                                                                      'exemplarCity' => 'Mauricio'
+                                                                    },
+                                                'Europe/Gibraltar' => {
+                                                                      'type' => 'Europe/Gibraltar',
+                                                                      'exemplarCity' => 'Xibraltar'
+                                                                    },
+                                                'America/Cuiaba' => {
+                                                                    'type' => 'America/Cuiaba',
+                                                                    'exemplarCity' => "Cuiabá"
+                                                                  },
+                                                'Africa/Sao_Tome' => {
+                                                                     'type' => 'Africa/Sao_Tome',
+                                                                     'exemplarCity' => "São Tomé"
+                                                                   },
+                                                'America/Sao_Paulo' => {
+                                                                       'type' => 'America/Sao_Paulo',
+                                                                       'exemplarCity' => {
+                                                                                         'draft' => 'contributed',
+                                                                                         'content' => "São Paulo"
+                                                                                       }
+                                                                     },
+                                                'Africa/Algiers' => {
+                                                                    'type' => 'Africa/Algiers',
+                                                                    'exemplarCity' => 'Alxer'
+                                                                  },
+                                                'America/Indianapolis' => {
+                                                                          'type' => 'America/Indianapolis',
+                                                                          'exemplarCity' => "Indianápolis"
+                                                                        },
+                                                'Asia/Riyadh' => {
+                                                                 'type' => 'Asia/Riyadh',
+                                                                 'exemplarCity' => 'Riad'
+                                                               },
+                                                'Antarctica/DumontDUrville' => {
+                                                                               'type' => 'Antarctica/DumontDUrville',
+                                                                               'exemplarCity' => {
+                                                                                                 'draft' => 'contributed',
+                                                                                                 'content' => 'Dumont-d\'Urville'
+                                                                                               }
+                                                                             },
+                                                'Europe/Volgograd' => {
+                                                                      'type' => 'Europe/Volgograd',
+                                                                      'exemplarCity' => {
+                                                                                        'draft' => 'contributed',
+                                                                                        'content' => 'Volgogrado'
+                                                                                      }
+                                                                    },
+                                                'Indian/Christmas' => {
+                                                                      'type' => 'Indian/Christmas',
+                                                                      'exemplarCity' => 'Illa de Nadal'
+                                                                    },
+                                                'Asia/Tokyo' => {
+                                                                'type' => 'Asia/Tokyo',
+                                                                'exemplarCity' => 'Toquio'
+                                                              },
+                                                'Asia/Thimphu' => {
+                                                                  'type' => 'Asia/Thimphu',
+                                                                  'exemplarCity' => 'Timbu'
+                                                                },
+                                                'Asia/Jayapura' => {
+                                                                   'type' => 'Asia/Jayapura',
+                                                                   'exemplarCity' => 'Jaiapura'
+                                                                 },
+                                                'America/Port-au-Prince' => {
+                                                                            'type' => 'America/Port-au-Prince',
+                                                                            'exemplarCity' => "Porto Príncipe"
+                                                                          },
+                                                'Asia/Damascus' => {
+                                                                   'type' => 'Asia/Damascus',
+                                                                   'exemplarCity' => 'Damasco'
+                                                                 },
+                                                'America/Indiana/Marengo' => {
+                                                                             'type' => 'America/Indiana/Marengo',
+                                                                             'exemplarCity' => 'Marengo, Indiana'
+                                                                           },
+                                                'America/Bahia_Banderas' => {
+                                                                            'type' => 'America/Bahia_Banderas',
+                                                                            'exemplarCity' => "Baía de Bandeiras"
+                                                                          },
+                                                'America/Mexico_City' => {
+                                                                         'type' => 'America/Mexico_City',
+                                                                         'exemplarCity' => "Cidade de México"
+                                                                       },
+                                                'America/Belem' => {
+                                                                   'type' => 'America/Belem',
+                                                                   'exemplarCity' => {
+                                                                                     'draft' => 'contributed',
+                                                                                     'content' => "Belém"
+                                                                                   }
+                                                                 },
+                                                'Asia/Kabul' => {
+                                                                'type' => 'Asia/Kabul',
+                                                                'exemplarCity' => 'Cabul'
+                                                              },
+                                                'America/Godthab' => {
+                                                                     'type' => 'America/Godthab',
+                                                                     'exemplarCity' => 'Nuuk'
+                                                                   },
+                                                'America/Scoresbysund' => {
+                                                                          'type' => 'America/Scoresbysund',
+                                                                          'exemplarCity' => 'Ittoqqortoormiit'
+                                                                        },
+                                                'Asia/Baku' => {
+                                                               'type' => 'Asia/Baku',
+                                                               'exemplarCity' => "Bacú"
+                                                             },
+                                                'Asia/Yekaterinburg' => {
+                                                                        'type' => 'Asia/Yekaterinburg',
+                                                                        'exemplarCity' => {
+                                                                                          'draft' => 'contributed',
+                                                                                          'content' => 'Ecaterinburgo'
+                                                                                        }
+                                                                      },
+                                                'Africa/El_Aaiun' => {
+                                                                     'type' => 'Africa/El_Aaiun',
+                                                                     'exemplarCity' => "O Aiún"
+                                                                   },
+                                                'Asia/Amman' => {
+                                                                'type' => 'Asia/Amman',
+                                                                'exemplarCity' => "Amán"
+                                                              },
+                                                'Europe/Copenhagen' => {
+                                                                       'type' => 'Europe/Copenhagen',
+                                                                       'exemplarCity' => 'Copenhaguen'
+                                                                     },
+                                                'Africa/Tunis' => {
+                                                                  'type' => 'Africa/Tunis',
+                                                                  'exemplarCity' => "Túnez"
+                                                                },
+                                                'Asia/Almaty' => {
+                                                                 'type' => 'Asia/Almaty',
+                                                                 'exemplarCity' => 'Almati'
+                                                               },
+                                                'Africa/Asmera' => {
+                                                                   'type' => 'Africa/Asmera',
+                                                                   'exemplarCity' => 'Asmak'
+                                                                 },
+                                                'America/Cordoba' => {
+                                                                     'type' => 'America/Cordoba',
+                                                                     'exemplarCity' => {
+                                                                                       'draft' => 'contributed',
+                                                                                       'content' => "Córdoba"
+                                                                                     }
+                                                                   },
+                                                'America/Lower_Princes' => {
+                                                                           'type' => 'America/Lower_Princes',
+                                                                           'exemplarCity' => 'Lower Prince\'s Quarter'
+                                                                         },
+                                                'America/Curacao' => {
+                                                                     'type' => 'America/Curacao',
+                                                                     'exemplarCity' => "Curaçao"
+                                                                   },
+                                                'Pacific/Honolulu' => {
+                                                                      'type' => 'Pacific/Honolulu',
+                                                                      'exemplarCity' => {
+                                                                                        'draft' => 'contributed',
+                                                                                        'content' => "Honolulú"
+                                                                                      }
+                                                                    },
+                                                'Asia/Saigon' => {
+                                                                 'type' => 'Asia/Saigon',
+                                                                 'exemplarCity' => 'Ho Chi Minh'
+                                                               },
+                                                'Europe/Tirane' => {
+                                                                   'type' => 'Europe/Tirane',
+                                                                   'exemplarCity' => 'Tirana'
+                                                                 },
+                                                'America/St_Barthelemy' => {
+                                                                           'type' => 'America/St_Barthelemy',
+                                                                           'exemplarCity' => "San Bartolomé"
+                                                                         },
+                                                'America/Rio_Branco' => {
+                                                                        'type' => 'America/Rio_Branco',
+                                                                        'exemplarCity' => "Río Branco"
+                                                                      },
+                                                'America/Argentina/Rio_Gallegos' => {
+                                                                                    'type' => 'America/Argentina/Rio_Gallegos',
+                                                                                    'exemplarCity' => {
+                                                                                                      'draft' => 'contributed',
+                                                                                                      'content' => "Río Gallegos"
+                                                                                                    }
+                                                                                  },
+                                                'Atlantic/Canary' => {
+                                                                     'type' => 'Atlantic/Canary',
+                                                                     'exemplarCity' => {
+                                                                                       'draft' => 'contributed',
+                                                                                       'content' => 'Illas Canarias'
+                                                                                     }
+                                                                   },
+                                                'America/Kentucky/Monticello' => {
+                                                                                 'type' => 'America/Kentucky/Monticello',
+                                                                                 'exemplarCity' => 'Monticello, Kentucky'
+                                                                               },
+                                                'Europe/Vatican' => {
+                                                                    'type' => 'Europe/Vatican',
+                                                                    'exemplarCity' => 'Vaticano'
+                                                                  },
+                                                'America/Monterrey' => {
+                                                                       'type' => 'America/Monterrey',
+                                                                       'exemplarCity' => 'Monterrei'
+                                                                     },
+                                                'Europe/Lisbon' => {
+                                                                   'type' => 'Europe/Lisbon',
+                                                                   'exemplarCity' => 'Lisboa'
+                                                                 },
+                                                'America/Cayenne' => {
+                                                                     'type' => 'America/Cayenne',
+                                                                     'exemplarCity' => 'Caiena'
+                                                                   },
+                                                'Asia/Seoul' => {
+                                                                'type' => 'Asia/Seoul',
+                                                                'exemplarCity' => "Seúl"
+                                                              },
+                                                'Europe/Luxembourg' => {
+                                                                       'type' => 'Europe/Luxembourg',
+                                                                       'exemplarCity' => 'Luxemburgo'
+                                                                     },
+                                                'Antarctica/South_Pole' => {
+                                                                           'type' => 'Antarctica/South_Pole',
+                                                                           'exemplarCity' => 'Polo Sur'
+                                                                         },
+                                                'Europe/Monaco' => {
+                                                                   'type' => 'Europe/Monaco',
+                                                                   'exemplarCity' => "Mónaco"
+                                                                 },
+                                                'Etc/Unknown' => {
+                                                                 'type' => 'Etc/Unknown',
+                                                                 'exemplarCity' => "Cidade descoñecida"
+                                                               },
+                                                'Asia/Jakarta' => {
+                                                                  'type' => 'Asia/Jakarta',
+                                                                  'exemplarCity' => {
+                                                                                    'draft' => 'contributed',
+                                                                                    'content' => 'Iacarta'
+                                                                                  }
+                                                                },
+                                                'Europe/Amsterdam' => {
+                                                                      'type' => 'Europe/Amsterdam',
+                                                                      'exemplarCity' => "Ámsterdan"
+                                                                    },
+                                                'Europe/Moscow' => {
+                                                                   'type' => 'Europe/Moscow',
+                                                                   'exemplarCity' => {
+                                                                                     'draft' => 'contributed',
+                                                                                     'content' => 'Moscova'
+                                                                                   }
+                                                                 },
+                                                'Africa/Ndjamena' => {
+                                                                     'type' => 'Africa/Ndjamena',
+                                                                     'exemplarCity' => 'Xamena'
+                                                                   },
+                                                'Pacific/Ponape' => {
+                                                                    'type' => 'Pacific/Ponape',
+                                                                    'exemplarCity' => 'Pohnpei'
+                                                                  },
+                                                'Asia/Katmandu' => {
+                                                                   'type' => 'Asia/Katmandu',
+                                                                   'exemplarCity' => 'Kathmandu'
+                                                                 },
+                                                'Africa/Tripoli' => {
+                                                                    'type' => 'Africa/Tripoli',
+                                                                    'exemplarCity' => "Trípoli"
+                                                                  },
+                                                'Africa/Khartoum' => {
+                                                                     'type' => 'Africa/Khartoum',
+                                                                     'exemplarCity' => "Khartún"
+                                                                   },
+                                                'America/Indiana/Tell_City' => {
+                                                                               'type' => 'America/Indiana/Tell_City',
+                                                                               'exemplarCity' => 'Tell City, Indiana'
+                                                                             },
+                                                'Europe/Zaporozhye' => {
+                                                                       'type' => 'Europe/Zaporozhye',
+                                                                       'exemplarCity' => 'Zaporizhia'
+                                                                     },
+                                                'Europe/Vienna' => {
+                                                                   'type' => 'Europe/Vienna',
+                                                                   'exemplarCity' => 'Viena'
+                                                                 },
+                                                'America/Grand_Turk' => {
+                                                                        'type' => 'America/Grand_Turk',
+                                                                        'exemplarCity' => 'Gran Turca'
+                                                                      },
+                                                'Europe/Paris' => {
+                                                                  'type' => 'Europe/Paris',
+                                                                  'exemplarCity' => "París"
+                                                                },
+                                                'Africa/Accra' => {
+                                                                  'type' => 'Africa/Accra',
+                                                                  'exemplarCity' => 'Acra'
+                                                                },
+                                                'America/Port_of_Spain' => {
+                                                                           'type' => 'America/Port_of_Spain',
+                                                                           'exemplarCity' => "Porto España"
+                                                                         },
+                                                'Europe/Berlin' => {
+                                                                   'type' => 'Europe/Berlin',
+                                                                   'exemplarCity' => "Berlín"
+                                                                 },
+                                                'America/North_Dakota/Beulah' => {
+                                                                                 'type' => 'America/North_Dakota/Beulah',
+                                                                                 'exemplarCity' => 'Beulah, Dakota do Norte'
+                                                                               },
+                                                'America/Belize' => {
+                                                                    'type' => 'America/Belize',
+                                                                    'exemplarCity' => 'Belice'
+                                                                  },
+                                                'Africa/Djibouti' => {
+                                                                     'type' => 'Africa/Djibouti',
+                                                                     'exemplarCity' => "Xibutí"
+                                                                   },
+                                                'Europe/Dublin' => {
+                                                                   'type' => 'Europe/Dublin',
+                                                                   'exemplarCity' => "Dublín"
+                                                                 },
+                                                'Atlantic/Bermuda' => {
+                                                                      'type' => 'Atlantic/Bermuda',
+                                                                      'exemplarCity' => 'Bermudas'
+                                                                    },
+                                                'Europe/Tallinn' => {
+                                                                    'type' => 'Europe/Tallinn',
+                                                                    'exemplarCity' => "Talín"
+                                                                  },
+                                                'Indian/Maldives' => {
+                                                                     'type' => 'Indian/Maldives',
+                                                                     'exemplarCity' => 'Maldivas'
+                                                                   },
+                                                'Pacific/Galapagos' => {
+                                                                       'type' => 'Pacific/Galapagos',
+                                                                       'exemplarCity' => {
+                                                                                         'draft' => 'contributed',
+                                                                                         'content' => "Illas Galápagos"
+                                                                                       }
+                                                                     },
+                                                'Asia/Aden' => {
+                                                               'type' => 'Asia/Aden',
+                                                               'exemplarCity' => "Adén"
+                                                             },
+                                                'America/Martinique' => {
+                                                                        'type' => 'America/Martinique',
+                                                                        'exemplarCity' => 'Martinica'
+                                                                      },
+                                                'America/Panama' => {
+                                                                    'type' => 'America/Panama',
+                                                                    'exemplarCity' => "Panamá"
+                                                                  },
+                                                'Indian/Reunion' => {
+                                                                    'type' => 'Indian/Reunion',
+                                                                    'exemplarCity' => "Reunión"
+                                                                  },
+                                                'Australia/Sydney' => {
+                                                                      'type' => 'Australia/Sydney',
+                                                                      'exemplarCity' => 'Sidney'
+                                                                    },
+                                                'Europe/Zurich' => {
+                                                                   'type' => 'Europe/Zurich',
+                                                                   'exemplarCity' => "Zúric"
+                                                                 },
+                                                'America/Puerto_Rico' => {
+                                                                         'type' => 'America/Puerto_Rico',
+                                                                         'exemplarCity' => 'Porto Rico'
+                                                                       }
+                                              },
+                                   'fallbackFormat' => '{1} ({0})',
+                                   'gmtZeroFormat' => 'GMT'
+                                 },
+                  'eras' => {
+                              'eraNames' => {
+                                            'alias' => {
+                                                       '' => ''
+                                                     },
+                                            'era' => {
+                                                     '1' => 'despois de Cristo',
+                                                     '0' => 'antes de Cristo'
+                                                   }
+                                          },
+                              'eraNarrow' => {
+                                             'alias' => {
+                                                        '' => ''
+                                                      }
+                                           },
+                              'eraAbbr' => {
+                                           'era' => {
+                                                    '1' => 'CE',
+                                                    '0' => 'BCE'
+                                                  }
+                                         }
+                            },
+                  'days' => {
+                              'format' => {
+                                          'short' => {
+                                                     '' => '',
+                                                     'fri' => 've',
+                                                     'wed' => 'mc',
+                                                     'sun' => 'dom',
+                                                     'tue' => 'mt',
+                                                     'mon' => 'luns',
+                                                     'sat' => "sáb",
+                                                     'thu' => 'xv'
+                                                   },
+                                          'abbreviated' => {
+                                                           '' => '',
+                                                           'fri' => 'ven',
+                                                           'wed' => "mér",
+                                                           'sun' => 'dom',
+                                                           'tue' => 'mar',
+                                                           'mon' => 'lun',
+                                                           'sat' => "sáb",
+                                                           'thu' => 'xov'
+                                                         },
+                                          'narrow' => {
+                                                      '' => '',
+                                                      'fri' => 'V',
+                                                      'wed' => 'M',
+                                                      'sun' => 'D',
+                                                      'tue' => 'M',
+                                                      'mon' => 'L',
+                                                      'sat' => 'S',
+                                                      'thu' => 'X'
+                                                    },
+                                          'wide' => {
+                                                    'fri' => 'venres',
+                                                    'tue' => 'martes',
+                                                    'sun' => 'domingo',
+                                                    'sat' => "sábado",
+                                                    'mon' => 'luns',
+                                                    'wed' => "mércores",
+                                                    'thu' => 'xoves'
+                                                  }
+                                        },
+                              'stand-alone' => {
+                                               'short' => {
+                                                          '' => '',
+                                                          'fri' => 'Ven',
+                                                          'wed' => 'Mc',
+                                                          'sun' => 'Dom',
+                                                          'tue' => 'Mt',
+                                                          'mon' => 'Luns',
+                                                          'sat' => "Sáb",
+                                                          'thu' => 'Xv'
+                                                        },
+                                               'abbreviated' => {
+                                                                '' => '',
+                                                                'fri' => 'Ven',
+                                                                'wed' => "Mér",
+                                                                'sun' => 'Dom',
+                                                                'tue' => 'Mar',
+                                                                'mon' => 'Lun',
+                                                                'sat' => "Sáb",
+                                                                'thu' => 'Xov'
+                                                              },
+                                               'narrow' => {
+                                                           'fri' => 'V',
+                                                           'tue' => 'M',
+                                                           'sun' => 'D',
+                                                           'sat' => 'S',
+                                                           'mon' => 'L',
+                                                           'wed' => 'M',
+                                                           'thu' => 'X'
+                                                         },
+                                               'wide' => {
+                                                         '' => '',
+                                                         'fri' => 'Venres',
+                                                         'wed' => "Mércores",
+                                                         'sun' => 'Domingo',
+                                                         'tue' => 'Martes',
+                                                         'mon' => 'Luns',
+                                                         'sat' => "Sábado",
+                                                         'thu' => 'Xoves'
+                                                       }
+                                             }
+                            },
+                  'months' => {
+                                'format' => {
+                                            'abbreviated' => {
+                                                             '' => '',
+                                                             '6' => "xuñ",
+                                                             '11' => 'nov',
+                                                             '3' => 'mar',
+                                                             '7' => 'xul',
+                                                             '9' => 'set',
+                                                             '12' => 'dec',
+                                                             '2' => 'feb',
+                                                             '8' => 'ago',
+                                                             '1' => 'xan',
+                                                             '4' => 'abr',
+                                                             '10' => 'out',
+                                                             '5' => 'mai'
+                                                           },
+                                            'narrow' => {
+                                                        '' => '',
+                                                        '6' => 'X',
+                                                        '11' => 'N',
+                                                        '3' => 'M',
+                                                        '7' => 'X',
+                                                        '9' => 'S',
+                                                        '12' => 'D',
+                                                        '2' => 'F',
+                                                        '8' => 'A',
+                                                        '1' => 'X',
+                                                        '4' => 'A',
+                                                        '10' => 'O',
+                                                        '5' => 'M'
+                                                      },
+                                            'wide' => {
+                                                      '6' => "xuño",
+                                                      '11' => 'novembro',
+                                                      '3' => 'marzo',
+                                                      '7' => 'xullo',
+                                                      '9' => 'setembro',
+                                                      '12' => 'decembro',
+                                                      '2' => 'febreiro',
+                                                      '8' => 'agosto',
+                                                      '1' => 'xaneiro',
+                                                      '4' => 'abril',
+                                                      '10' => 'outubro',
+                                                      '5' => 'maio'
+                                                    }
+                                          },
+                                'stand-alone' => {
+                                                 'abbreviated' => {
+                                                                  '' => '',
+                                                                  '6' => "Xuñ",
+                                                                  '11' => 'Nov',
+                                                                  '3' => 'Mar',
+                                                                  '7' => 'Xul',
+                                                                  '9' => 'Set',
+                                                                  '12' => 'Dec',
+                                                                  '2' => 'Feb',
+                                                                  '8' => 'Ago',
+                                                                  '1' => 'Xan',
+                                                                  '4' => 'Abr',
+                                                                  '10' => 'Out',
+                                                                  '5' => 'Mai'
+                                                                },
+                                                 'narrow' => {
+                                                             '6' => 'X',
+                                                             '11' => 'N',
+                                                             '3' => 'M',
+                                                             '7' => 'X',
+                                                             '9' => 'S',
+                                                             '12' => 'D',
+                                                             '2' => 'F',
+                                                             '8' => 'A',
+                                                             '1' => 'X',
+                                                             '4' => 'A',
+                                                             '10' => 'O',
+                                                             '5' => 'M'
+                                                           },
+                                                 'wide' => {
+                                                           '' => '',
+                                                           '6' => "Xuño",
+                                                           '11' => 'Novembro',
+                                                           '3' => 'Marzo',
+                                                           '7' => 'Xullo',
+                                                           '9' => 'Setembro',
+                                                           '12' => 'Decembro',
+                                                           '2' => 'Febreiro',
+                                                           '8' => 'Agosto',
+                                                           '1' => 'Xaneiro',
+                                                           '4' => 'Abril',
+                                                           '10' => 'Outubro',
+                                                           '5' => 'Maio'
+                                                         }
+                                               }
+                              },
+                  'dateFormat' => {
+                                    'short' => 'dd/MM/yy',
+                                    'medium' => 'd MMM, y',
+                                    'long' => 'dd MMMM y',
+                                    'full' => 'EEEE dd MMMM y'
+                                  }
+                },
+  'displayNames' => {
+                      'territories' => {
+                                         'DJ' => 'Xibuti',
+                                         'JM' => 'Xamaica',
+                                         '030' => 'Asia Oriental',
+                                         'AT' => 'Austria',
+                                         'SZ' => 'Suacilandia',
+                                         'YT' => 'Mayotte',
+                                         'BN' => 'Brunei',
+                                         'ZM' => 'Zambia',
+                                         'PR' => 'Porto Rico',
+                                         'SH' => 'Santa Helena',
+                                         'MA' => 'Marrocos',
+                                         'SV' => 'El Salvador',
+                                         'MT' => 'Malta',
+                                         'MP' => 'Illas Marianas do norte',
+                                         'UZ' => "Uzbekistán",
+                                         'PW' => 'Palau',
+                                         'TK' => 'Tokelau',
+                                         'LR' => 'Liberia',
+                                         'TN' => 'Tunisia',
+                                         'EE' => 'Estonia',
+                                         'CK' => 'Illas Cook',
+                                         'BY' => 'Bielorrusia',
+                                         'NO' => 'Noruega',
+                                         'KR' => 'Corea do Sur',
+                                         'IC' => 'Illas Canarias',
+                                         'BF' => 'Burkina Faso',
+                                         'AM' => 'Armenia',
+                                         'SR' => 'Surinam',
+                                         'MG' => 'Madagascar',
+                                         'BT' => "Bután",
+                                         '009' => "Oceanía",
+                                         'CF' => "República Africana Central",
+                                         '014' => "África Oriental",
+                                         'BA' => 'Bosnia e Hercegovina',
+                                         'AE' => "Emiratos Árabes Unidos",
+                                         'TH' => 'Tailandia',
+                                         'EA' => 'Ceuta e Melilla',
+                                         '002' => "África",
+                                         '057' => "Rexión da Micronesia",
+                                         'CC' => 'Illas Cocos (Keeling)',
+                                         'NC' => 'Nova Caledonia',
+                                         'EU' => "Unión Europea",
+                                         'TO' => 'Tonga',
+                                         'SE' => 'Suecia',
+                                         'AZ' => "Acerbaixán",
+                                         'AF' => "Afganistán",
+                                         'NG' => 'Nixeria',
+                                         'KE' => 'Quenia',
+                                         'BJ' => 'Benin',
+                                         'XK' => 'Kosovo',
+                                         'OM' => "Omán",
+                                         '145' => 'Asia Occidental',
+                                         'LK' => 'Sri Lanka',
+                                         'ID' => 'Indonesia',
+                                         'FM' => 'Micronesia',
+                                         'GM' => 'Gambia',
+                                         'LV' => 'Letonia',
+                                         'RU' => 'Rusia',
+                                         '154' => 'Europa Septentrional',
+                                         '034' => 'Sul de Asia',
+                                         'FI' => 'Finlandia',
+                                         'LU' => 'Luxemburgo',
+                                         'VE' => 'Venezuela',
+                                         '054' => 'Melanesia',
+                                         'VI' => 'Illas Virxes Estadounidenses',
+                                         'TV' => 'Tuvalu',
+                                         'SN' => 'Senegal',
+                                         'MX' => "México",
+                                         'IL' => 'Israel',
+                                         'GG' => 'Guernsey',
+                                         'HU' => "Hungría",
+                                         'DO' => "República Dominicana",
+                                         'BQ' => "Caribe neerlandés",
+                                         'KH' => 'Cambodia',
+                                         'TG' => 'Togo',
+                                         'BB' => 'Barbados',
+                                         'JE' => 'Jersey',
+                                         'DK' => 'Dinamarca',
+                                         'PA' => "Panamá",
+                                         'QA' => 'Qatar',
+                                         'CV' => 'Cabo Verde',
+                                         'TA' => "Tristán da Cunha",
+                                         'GD' => 'Granada',
+                                         'MO' => 'Macau',
+                                         'MF' => "San Martiño",
+                                         'HR' => 'Croacia',
+                                         'CZ' => "República Checa",
+                                         'BL' => "San Bartolomé",
+                                         'ST' => "San Tomé e Príncipe",
+                                         'AU' => 'Australia',
+                                         'IR' => "Irán",
+                                         '003' => "Norteamérica",
+                                         'CG' => 'Congo (RC)',
+                                         'GW' => 'Guinea-Bissau',
+                                         'BI' => 'Burundi',
+                                         'MK' => 'Macedonia (ARIM)',
+                                         'GR' => 'Grecia',
+                                         '021' => "América do Norte",
+                                         'AG' => 'Antiga e Barbuda',
+                                         'AI' => 'Anguila',
+                                         'AN' => 'Antillas Holandesas',
+                                         'UA' => "Ucraína",
+                                         'EH' => 'Sahara Occidental',
+                                         'KN' => 'San Cristovo e Nevis',
+                                         'SC' => 'Seixeles',
+                                         'NL' => "Países Baixos",
+                                         'MS' => 'Montserrat',
+                                         'HK' => 'Hong Kong',
+                                         'EC' => 'Ecuador',
+                                         'MY' => 'Malaisia',
+                                         '013' => "América Central",
+                                         'CR' => 'Costa Rica',
+                                         'VA' => 'Cidade do Vaticano',
+                                         'IO' => "Territorio Británico do Océano Índico",
+                                         'SD' => "Sudán",
+                                         'RS' => 'Serbia',
+                                         'CN' => 'China',
+                                         'UY' => 'Uruguai',
+                                         'PY' => 'Paraguai',
+                                         '053' => 'Australasia',
+                                         'MU' => 'Mauricio',
+                                         'LI' => 'Liechtenstein',
+                                         'CH' => "Suíza",
+                                         'KG' => "Quirguicistán",
+                                         'GH' => 'Gana',
+                                         'NU' => 'Niue',
+                                         'US' => "Estados Unidos de América",
+                                         'PE' => "Perú",
+                                         'SL' => 'Serra Leoa',
+                                         '001' => 'Mundo',
+                                         'FJ' => 'Fixi',
+                                         '143' => 'Asia Central',
+                                         'ER' => 'Eritrea',
+                                         'IQ' => 'Iraq',
+                                         'AS' => 'Samoa Americana',
+                                         'TZ' => 'Tanzania',
+                                         'LY' => 'Libia',
+                                         'GT' => 'Guatemala',
+                                         'BM' => 'Bermudas',
+                                         'BV' => 'Illa Bouvet',
+                                         'LT' => 'Lituania',
+                                         '017' => "África Central",
+                                         'SG' => 'Singapur',
+                                         'PM' => "San Pedro e Miguelón",
+                                         'TT' => 'Trindade e Tobago',
+                                         'SY' => 'Siria',
+                                         'SK' => 'Eslovaquia',
+                                         '011' => "África Occidental",
+                                         'AC' => "Illa de Ascensión",
+                                         'GL' => 'Grenlandia',
+                                         'PG' => "Papúa Nova Guinea",
+                                         'KI' => 'Kiribati',
+                                         'CD' => 'Congo (RDC)',
+                                         'AO' => 'Angola',
+                                         'BW' => 'Botsuana',
+                                         'ZW' => 'Cimbabue',
+                                         'VC' => 'San Vicente e Granadinas',
+                                         'JP' => "Xapón",
+                                         'NA' => 'Namibia',
+                                         'TJ' => "Taxiquistán",
+                                         'LC' => "Santa Lucía",
+                                         'VU' => 'Vanuatu',
+                                         'MN' => 'Mongolia',
+                                         'IT' => 'Italia',
+                                         'RE' => "Reunión",
+                                         'WS' => 'Samoa',
+                                         '151' => 'Europa do Leste',
+                                         '015' => "África Septentrional",
+                                         'CW' => "Curaçao",
+                                         'EG' => 'Exipto',
+                                         'FR' => 'Francia',
+                                         'RW' => 'Ruanda',
+                                         'UM' => 'Illas Menores Distantes dos EUA.',
+                                         'BE' => "Bélxica",
+                                         'LS' => 'Lesotho',
+                                         'SA' => 'Arabia Saudita',
+                                         'ZA' => "Sudáfrica",
+                                         'DG' => "Diego García",
+                                         'PT' => 'Portugal',
+                                         'CA' => "Canadá",
+                                         'CM' => "Camerún",
+                                         'NP' => 'Nepal',
+                                         'PL' => 'Polonia',
+                                         'TM' => "Turkmenistán",
+                                         'GA' => "Gabón",
+                                         'KY' => "Illas Caimán",
+                                         'LA' => 'Laos',
+                                         'PH' => 'Filipinas',
+                                         'NI' => 'Nicaragua',
+                                         'GU' => 'Guam',
+                                         'TF' => 'Territorios Franceses do Sul',
+                                         'KZ' => 'Kazakhstan',
+                                         '029' => 'Caribe',
+                                         'SJ' => 'Svalbard e Jan Mayen',
+                                         'MM' => 'Myanmar (Birmania)',
+                                         'NR' => 'Nauru',
+                                         'DM' => 'Dominica',
+                                         'NE' => "Níxer",
+                                         'AD' => 'Andorra',
+                                         'MR' => 'Mauritania',
+                                         '039' => 'Europa Meridional',
+                                         'GS' => 'Xeorxia do Sur e Illas Sandwich',
+                                         'ME' => 'Montenegro',
+                                         'AX' => 'Illas Aland',
+                                         'VN' => 'Vietnam',
+                                         'VG' => "Illas Virxes Británicas",
+                                         'YE' => 'Iemen',
+                                         'CI' => 'Costa do Marfil',
+                                         'DZ' => 'Arxelia',
+                                         'GE' => 'Xeorxia',
+                                         '005' => "Sudamérica",
+                                         'CX' => 'Illa Christmas',
+                                         'LB' => "Líbano",
+                                         '018' => "África Meridional",
+                                         'FK' => 'Illas Malvinas (Falkland)',
+                                         'DE' => "Alemaña",
+                                         'MV' => 'Maldivas',
+                                         'PN' => 'Illas Pitcairn',
+                                         'BH' => 'Bahrein',
+                                         'GI' => 'Xibraltar',
+                                         'WF' => 'Wallis e Futuna',
+                                         'RO' => "Romanía",
+                                         'AR' => 'Arxentina',
+                                         'GP' => 'Guadalupe',
+                                         'IN' => 'India',
+                                         'AW' => 'Aruba',
+                                         'FO' => 'Illas Feroe',
+                                         'BR' => 'Brasil',
+                                         'HN' => 'Honduras',
+                                         'MC' => "Mónaco",
+                                         'SB' => "Illas Salomón",
+                                         'NZ' => 'Nova Celandia',
+                                         'PS' => 'Palestina',
+                                         'UG' => 'Uganda',
+                                         'SX' => 'Sint Maarten',
+                                         'GB' => 'Reino Unido',
+                                         'HT' => "Haití",
+                                         '019' => "América",
+                                         'QO' => "Oceanía Distante",
+                                         'SS' => "Sudán do sur",
+                                         'GF' => "Güiana Francesa",
+                                         'ZZ' => "Rexión descoñecida",
+                                         'KM' => 'Comores',
+                                         'KW' => 'Kuwait',
+                                         'MQ' => 'Martinica',
+                                         'TC' => 'Illas Turks e Caicos',
+                                         'CP' => 'Illa Clipperton',
+                                         'ES' => "España",
+                                         'MZ' => 'Mozambique',
+                                         'BO' => 'Bolivia',
+                                         'AL' => 'Albania',
+                                         '142' => 'Asia',
+                                         '419' => "América Latina",
+                                         'TR' => "Turquía",
+                                         'MD' => 'Moldova',
+                                         'GN' => 'Guinea',
+                                         'CO' => 'Colombia',
+                                         'SI' => 'Eslovenia',
+                                         'AQ' => "Antártida",
+                                         'JO' => 'Xordania',
+                                         '061' => 'Polinesia',
+                                         'SM' => 'San Marino',
+                                         'CU' => 'Cuba',
+                                         'CL' => 'Chile',
+                                         'ML' => 'Mali',
+                                         'ET' => "Etiopía",
+                                         'IS' => 'Islandia',
+                                         '035' => "Sureste Asiático",
+                                         'BG' => 'Bulgaria',
+                                         'MH' => 'Illas Marshall',
+                                         'BS' => 'Bahamas',
+                                         'TL' => 'Timor Leste',
+                                         'BZ' => 'Belice',
+                                         '150' => 'Europa',
+                                         'CY' => 'Chipre',
+                                         '155' => 'Europa Occidental',
+                                         'IM' => 'Illa de Man',
+                                         'IE' => 'Irlanda',
+                                         'TW' => "Taiwán",
+                                         'KP' => 'Corea do Norte',
+                                         'PF' => 'Polinesia Francesa',
+                                         'MW' => 'Malaui',
+                                         'GY' => "Güiana",
+                                         'GQ' => 'Guinea Ecuatorial',
+                                         'PK' => "Paquistán",
+                                         'NF' => 'Illa Norfolk',
+                                         'SO' => 'Somalia',
+                                         'TD' => 'Chad',
+                                         'BD' => 'Bangladesh',
+                                         'HM' => 'Illa Heard e Illas McDonald'
+                                       },
+                      'languages' => {
+                                       'ne' => "nepalí",
+                                       'tr' => 'turco',
+                                       'tlh' => 'klingon',
+                                       'da' => "dinamarqués",
+                                       'ug' => 'uigur',
+                                       'my' => 'birmano',
+                                       'gl' => 'galego',
+                                       'ckb' => "curdo soraní",
+                                       'cel' => "lingua céltica",
+                                       'ro' => "romanés",
+                                       'gsw' => "alemán suízo",
+                                       'tn' => 'tswana',
+                                       'tpi' => 'tok pisin',
+                                       'ta' => 'tamil',
+                                       'efi' => 'ibibio',
+                                       'co' => 'corso',
+                                       'rw' => "ruandés",
+                                       'br' => "bretón",
+                                       'de_CH' => "alto alemán suízo",
+                                       'cy' => "galés",
+                                       'bo' => 'tibetano',
+                                       'st' => 'sesoto',
+                                       'pt_PT' => "portugués europeo",
+                                       'ko' => 'coreano',
+                                       'ak' => "akán",
+                                       'sem' => 'lingua semita',
+                                       'mfe' => 'crioulo mauritano',
+                                       'cs' => 'checo',
+                                       'mis' => "lingua miscelánea",
+                                       'zh_Hant' => "chinés tradicional",
+                                       'ps' => "paxtún",
+                                       'km' => 'cambodiano',
+                                       'af' => 'afrikaans',
+                                       'is' => "islandés",
+                                       'qu' => 'quechua',
+                                       'ti' => "tigriña",
+                                       'mt' => "maltés",
+                                       'ky' => 'quirguiz',
+                                       'fr_CA' => "francés canadiano",
+                                       'la' => "latín",
+                                       'hy' => 'armenio',
+                                       'ga' => "irlandés",
+                                       'ms' => 'malaio',
+                                       'bh' => 'bihari',
+                                       'ka' => 'xeorxiano',
+                                       'oc' => 'occitano',
+                                       'mi' => "maorí",
+                                       'zxx' => "sen contido lingüístico",
+                                       'sv' => 'sueco',
+                                       'und' => "lingua descoñecida ou non válida",
+                                       'it' => 'italiano',
+                                       'art' => 'lingua artificial',
+                                       'hu' => "húngaro",
+                                       'fa' => 'persa',
+                                       'ach' => 'acoli',
+                                       'ssa' => "lingua do nilo-sáhara",
+                                       'dv' => 'divehi',
+                                       'se' => 'sami do norte',
+                                       'sai' => 'lingua india sudamericana',
+                                       'jv' => "xavanés",
+                                       've' => 'venda',
+                                       'pt' => "portugués",
+                                       'ks' => 'cachemir',
+                                       'hi' => 'hindi',
+                                       'kg' => 'kongo',
+                                       'no' => "noruegués",
+                                       'lv' => "letón",
+                                       'os' => 'osetio',
+                                       'zgh' => "tamazight de Marrocos estándar",
+                                       'ln' => 'lingala',
+                                       'fr' => "francés",
+                                       'afa' => "lingua afro-asiática",
+                                       'id' => 'indonesio',
+                                       'arc' => 'arameo',
+                                       'sr' => 'serbio',
+                                       'si' => "cingalés",
+                                       'om' => 'oromo',
+                                       'tet' => "tetún",
+                                       'roa' => "lingua románica",
+                                       'ab' => 'abkhazo',
+                                       'fi' => "finés",
+                                       'fj' => 'fixiano',
+                                       'wo' => "wólof",
+                                       'sn' => 'shona',
+                                       'sd' => 'sindhi',
+                                       'yi' => 'yiddish',
+                                       'ha' => 'hausa',
+                                       'lg' => 'ganda',
+                                       'fil' => 'filipino',
+                                       'pa' => 'punjabi',
+                                       'sl' => 'esloveno',
+                                       'gem' => "lingua xermánica",
+                                       'am' => "amárico",
+                                       'mul' => 'varias linguas',
+                                       'mr' => 'marathi',
+                                       'ee' => "ewé",
+                                       'bat' => "lingua báltica",
+                                       'en_CA' => "inglés canadiano",
+                                       'rm' => 'romanche',
+                                       'dz' => 'dzongkha',
+                                       'kn' => 'kannada',
+                                       'bem' => 'bemba',
+                                       'rn' => 'rundi',
+                                       'fy' => "frisón",
+                                       'eo' => 'esperanto',
+                                       'mn' => 'mongol',
+                                       'gd' => "gaélico escocés",
+                                       'as' => "assamés",
+                                       'tk' => 'turcomano',
+                                       'mg' => 'malgaxe',
+                                       'su' => "sondanés",
+                                       'de_AT' => "alemán de austria",
+                                       'es_MX' => "español de México",
+                                       'en_US' => "inglés EUA",
+                                       'sgn' => 'lingua de signos',
+                                       'ru' => 'ruso',
+                                       'ia' => 'interlingua',
+                                       'nb' => "noruegués bokmal",
+                                       'nso' => 'sesotho sa leboa',
+                                       'ku' => 'kurdo',
+                                       'vi' => 'vietnamita',
+                                       'az' => 'acerbaixano',
+                                       'lo' => 'laotiano',
+                                       'sg' => 'sango',
+                                       'nl_BE' => 'flamenco',
+                                       'lb' => "luxemburgués",
+                                       'ts' => 'xitsonga',
+                                       'ml' => 'malabar',
+                                       'grc' => 'grego antigo',
+                                       'en_GB' => "inglés R.U.",
+                                       'tum' => 'tumbuka',
+                                       'uz' => 'uzbeco',
+                                       'fiu' => "lingua finno-úgrica",
+                                       'nyn' => 'nyankole',
+                                       'inc' => "lingua índica",
+                                       'ht' => 'haitiano',
+                                       'bs' => 'bosnio',
+                                       'yo' => 'ioruba',
+                                       'to' => "tonganés",
+                                       'nub' => 'lingua nubia',
+                                       'cu' => "eslavo eclesiástico",
+                                       'es_ES' => "castelán",
+                                       'eu' => "éuscaro",
+                                       'bg' => "búlgaro",
+                                       'gu' => 'guxaratiano',
+                                       'zh_Hans' => "chinés simplificado",
+                                       'ine' => 'lingua indoeuropea',
+                                       'chr' => 'cheroqui',
+                                       'sq' => "albanés",
+                                       'pl' => 'polaco',
+                                       'ca' => "catalán",
+                                       'cau' => "lingua caucásica",
+                                       'ay' => "aimará",
+                                       'es_419' => "español latinoamericano",
+                                       'sk' => 'eslovaco',
+                                       'apa' => 'lingua apache',
+                                       'cai' => 'lingua india centroamericana',
+                                       'ty' => 'tahitiano',
+                                       'an' => "aragonés",
+                                       'lua' => 'luba-lulua',
+                                       'uk' => "ucraíno",
+                                       'gaa' => 'ga',
+                                       'es' => "español",
+                                       'sw' => 'swahili',
+                                       'tt' => "tártaro",
+                                       'ast' => 'asturiano',
+                                       'sla' => "lingua eslávica",
+                                       'fo' => "faroés",
+                                       'ss' => 'swati',
+                                       'or' => 'oriya',
+                                       'phi' => 'lingua filipina',
+                                       'sh' => 'serbocroata',
+                                       'sa' => "sánscrito",
+                                       'xh' => 'xhosa',
+                                       'th' => "tailandés",
+                                       'so' => "somalí",
+                                       'et' => 'estoniano',
+                                       'loz' => 'lozi',
+                                       'tut' => 'lingua altaica',
+                                       'tl' => 'tagalo',
+                                       'nd' => 'ndebele do norte',
+                                       'mk' => 'macedonio',
+                                       'en' => "inglés",
+                                       'aus' => 'lingua australiana',
+                                       'lt' => 'lituano',
+                                       'de' => "alemán",
+                                       'gn' => "guaraní",
+                                       'hr' => 'croata',
+                                       'be' => 'bielorruso',
+                                       'zu' => "zulú",
+                                       'alg' => 'lingua algonquina',
+                                       'ur' => "urdú",
+                                       'tw' => 'twi',
+                                       'nn' => "noruegués nynorsk",
+                                       'haw' => 'hawaiano',
+                                       'nai' => 'lingua india norteamericana',
+                                       'bn' => "bengalí",
+                                       'ja' => "xaponés",
+                                       'tg' => 'taxico',
+                                       'fr_CH' => "francés suízo",
+                                       'ar_001' => "árabe estándar moderno",
+                                       'te' => 'telugu',
+                                       'he' => 'hebreo',
+                                       'zh' => "chinés",
+                                       'ig' => 'ibo',
+                                       'en_AU' => "inglés australiano",
+                                       'sm' => 'samoano',
+                                       'nl' => "holandés",
+                                       'ar' => "árabe",
+                                       'ny' => 'chewa',
+                                       'el' => 'grego',
+                                       'egy' => 'exipcio antigo',
+                                       'kk' => 'casaco',
+                                       'pt_BR' => "portugués brasileiro"
+                                     },
+                      'scripts' => {
+                                     'Knda' => "Kannadés",
+                                     'Jpan' => "Xaponés",
+                                     'Gujr' => 'Guxarati',
+                                     'Beng' => "Bengalí",
+                                     'Orya' => 'Oriya',
+                                     'Hant' => 'Han tradicional',
+                                     'Hira' => 'Hiragana',
+                                     'Zzzz' => "Escritura descoñecida",
+                                     'Ethi' => "Etíope",
+                                     'Mong' => 'Mongol',
+                                     'Zsym' => "Símbolos",
+                                     'Hans' => 'Han simplificado',
+                                     'Hani' => 'Han',
+                                     'Khmr' => 'Camboxano',
+                                     'Zyyy' => "Común",
+                                     'Cans' => 'Silabario aborixe canadiano unificado',
+                                     'Thaa' => 'Thaana',
+                                     'Tibt' => 'Tibetano',
+                                     'Thai' => "Tailandés",
+                                     'Geor' => 'Xeorxiano',
+                                     'Guru' => 'Gurmukhi',
+                                     'Grek' => 'Grego',
+                                     'Mlym' => 'Malabar',
+                                     'Taml' => "Támil",
+                                     'Kore' => 'Coreano',
+                                     'Zxxx' => 'Non escrita',
+                                     'Hang' => 'Hangul',
+                                     'Sinh' => "Cingalés",
+                                     'Deva' => 'Devanagari',
+                                     'Laoo' => 'Laosiano',
+                                     'Mymr' => 'Birmania',
+                                     'Arab' => "Perso-Árabe",
+                                     'Brai' => 'Braille',
+                                     'Latn' => 'Latino',
+                                     'Bopo' => 'Bopomofo',
+                                     'Armn' => 'Armenio',
+                                     'Hebr' => 'Hebreo',
+                                     'Telu' => "Telugú",
+                                     'Cyrl' => "Cirílico",
+                                     'Kana' => 'Katakana'
+                                   }
+                    },
+  'delimiters' => {
+                    'alternateQuotationEnd' => "\x{2019}",
+                    'quotationEnd' => "\x{201d}",
+                    'quotationStart' => "\x{201c}",
+                    'alternateQuotationStart' => "\x{2018}"
+                  },
+  'iso4217' => 'EUR'
+};

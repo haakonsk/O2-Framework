@@ -1,0 +1,101 @@
+<o2 use O2Doc::Tutorial />
+
+<o2 docSection title="ofcGraph, dataSet">
+  OFC is short for Open Flash Chart, and this is a taglib that integrates with Open Flash Chart to make very good-looking flash graphs.
+  The API is based on &lt;o2 gdGraph&gt;, so by substituting gdGraph with ofcGraph and gdDataSet with dataSet, you should get a
+  working graph. However, some of the attributes are unique to ofcGraph, while other gdGraph attributes will be ignored by ofcGraph.
+  <o2 docLink type="external" href="http://teethgrinder.co.uk/open-flash-chart/" title="Open Flash Chart's homepage" />.
+  <o2 docSection title="Syntax">
+    <o2 docCode lang="o2ml">
+      <o2 ofcGraph width="600" height="300" bgColor="#c9c9c9" bgColor2="#123456" bgFadeAngle="220" title="Click categories" xLabels="Jan, Feb, Mar, Apr, May, Jun" type="bars3d"
+        xLabel="Click category" yLabel="Click ratio %" titleStyle="font-size: 25px;" toolTip="#x_label#: #val#">
+        <o2 dataSet>10, 20, 30, 40, 50, 60</o2:dataSet>
+        <o2 dataSet>60, 50, 40, 30, 30, 10</o2:dataSet>
+      </o2:ofcGraph>
+    </o2:docCode>
+    <o2 docCodeResult useModule="Chart::OpenFlashChart" />
+
+    <o2 docCode lang="o2ml">
+      <o2 push "$links">http://www.vg.no</o2:push>
+      <o2 push "$links">http://www.dagbladet.no</o2:push>
+      <o2 push "$links">http://www.aftenposten.no</o2:push>
+      <o2 setVar "$six">6</o2:setVar>
+      <o2 ofcGraph width="600" height="400" title="Some data sets" xLabels="1.3, 2, 3, 4, 5, $six" type="SketchBar" xLabel="Page views" yLabel="Open Flash Chart">
+        <o2 dataSet description="Data set 1" randomness="7" links="$links">4, 3, 5, 2, 6, 5</o2:dataSet>
+        <o2 dataSet description="Data set 2" type="OutlinedBar">1, 1, 2, 3, 5, $six</o2:dataSet>
+      </o2:ofcGraph>
+    </o2:docCode>
+    <o2 docCodeResult useModule="Chart::OpenFlashChart" />
+
+    <o2 docCode lang="o2ml">
+      <o2 ofcGraph width="600" height="400" title="Some data sets" xLabels="1, 2, 3" type="Scatter" xLabel="Page views" yLabel="Open Flash Chart" circleSize="10">
+        <o2 dataSet description="Data set 1">4, -2, -2</o2:dataSet>
+        <o2 dataSet description="Data set 2" circleSize="5">10.2, 1, 2</o2:dataSet>
+      </o2:ofcGraph>
+    </o2:docCode>
+    <o2 docCodeResult useModule="Chart::OpenFlashChart" />
+
+  </o2:docSection>
+
+  <o2 docSection title="ofcGraph Attributes">
+    <o2 docList class="attributes">
+      <o2 docListItem class="optional">width [640] - in pixels</o2:docListItem>
+      <o2 docListItem class="optional">height [400] - in pixels</o2:docListItem>
+      <o2 docListItem class="optional">id - a unique id to identify the graph</o2:docListItem>
+      <o2 docListItem class="optional">xLabel - a description of the values along the x axis</o2:docListItem>
+      <o2 docListItem class="required">xLabels - an array reference or a string containing the labels for all the points along the x axis</o2:docListItem>
+      <o2 docListItem class="optional">xLabelSeparator [/,\s*/] - If the xLabels attribute isn't an array reference, but a string, then o2 needs to know where one value ends and the next one begins.
+        The default xLabelSeparator is a comma followed by zero or more spaces.</o2:docListItem>
+      <o2 docListItem class="optional">type - [Bar] - one of {Bar, Line, 3DBar, Area, HighLowClose, Scatter, OutlinedBar, GlassBar, FadeBar, Candle, SketchBar, LineWithDots}. HighLowClose
+        and Candle have not been implemented yet. Some of the types from GDGraph also work.</o2:docListItem>
+      <o2 docListItem class="optional">title - Shown above the graph</o2:docListItem>
+      <o2 docListItem class="optional">yLabel - a description of the values along the y axis</o2:docListItem>
+      <o2 docListItem class="optional">yStepSize - distance between horizontal lines in the graph. A default value will be used if not given</o2:docListItem>
+      <o2 docListItem class="optional">yMax - Maximum value shown on the y axis. If not given, a value near the maximum y value in the datasets is used</o2:docListItem>
+      <o2 docListItem class="optional">yMin - Minimum value shown on the y axis. If not given, a value near the minimum y value in the datasets is used</o2:docListItem>
+      <o2 docListItem class="optional">graphColor - default color of the graphs, may be overridden by each dataset's color attribute. If no color attributes are given, some default colors will be used</o2:docListItem>
+      <o2 docListItem class="optional">bgColor - background color</o2:docListItem>
+      <o2 docListItem class="optional">bgColor2 - used in combination with bgFadeAngle to have the background color change smoothly</o2:docListItem>
+      <o2 docListItem class="optional">bgFadeAngle - used in combination with bgColor2 to have the background color change smoothly</o2:docListItem>
+      <o2 docListItem class="optional">titleStyle [font-size: 25px] - a block of css for the title</o2:docListItem>
+      <o2 docListItem class="optional">toolTip [#x_label#&lt;br&gt;#x_label#] - Text to show when mouse is moved over a point in the graph. You can use some special values: #val#, #key#, &lt;br&gt;, #x_label#, #x_legend#, #tip#.
+        See <o2 docLink type="external" href="http://teethgrinder.co.uk/open-flash-chart/gallery-tool-tip.php" title="http://teethgrinder.co.uk/open-flash-chart/gallery-tool-tip.php" /></o2:docListItem>
+      <o2 docListItem class="optional">lineWidth    - default value for the width of all lines in the grid</o2:docListItem>
+      <o2 docListItem class="optional">solidDots    - default value (see corresponding attribute among the dataSet attributes)</o2:docListItem>
+      <o2 docListItem class="optional">dotSize      - default value (see corresponding attribute among the dataSet attributes)</o2:docListItem>
+      <o2 docListItem class="optional">opacity      - default value (see corresponding attribute among the dataSet attributes)</o2:docListItem>
+      <o2 docListItem class="optional">outlineColor - default value (see corresponding attribute among the dataSet attributes)</o2:docListItem>
+      <o2 docListItem class="optional">randomness   - default value (see corresponding attribute among the dataSet attributes)</o2:docListItem>
+      <o2 docListItem class="optional">circleSize   - default value (see corresponding attribute among the dataSet attributes)</o2:docListItem>
+    </o2:docList>
+  </o2:docSection>
+
+  <o2 docSection title="dataSet Attributes">
+    <o2 docList class="attributes">
+      <o2 docListItem class="required content">content - an array reference or string containing the data for this data set. If it's a string, comma is the default separator, but this can
+        be changed with the separator attribute</o2:docListItem>
+      <o2 docListItem class="optional">description - explanatory text for this data set - will be displayed below the graph</o2:docListItem>
+      <o2 docListItem class="optional">separator [/,\s*/] - If the content/dataSet isn't an array reference, but a string, then o2 needs to know where one value ends and the next one begins.
+        The default separator is a comma followed by zero or more spaces.</o2:docListItem>
+      <o2 docListItem class="optional">textSize [10] - font size of the description text (in pixels)</o2:docListItem>
+      <o2 docListItem class="optional">color - color of the bars or lines in this dataset</o2:docListItem>
+      <o2 docListItem class="optional">links - an array reference or a comma-separated string of links, one per value in the data set. In theory it should work with all types of graphs, but
+        in practice, it doesn't seem to work with Scatter or Area.</o2:docListItem>
+      Line, Scatter, Area, HighLowClose, Candle, LineWithDots:
+      <o2 docListItem class="optional">width - the width of the line</o2:docListItem>
+      LineWithDots:
+      <o2 docListItem class="optional">solidDots [1] - if the dots should be solid or hollow</o2:docListItem>
+      Bar, OutlinedBar, 3DBar, GlassBar, FadeBar, SketchBar, Area, HighLowClose, Candle:
+      <o2 docListItem class="optional">opacity [80] - how non-transparent the graph is (When the mouse is moved over, the graph becomes fully opaque)</o2:docListItem>
+      Area, LineWithDots:
+      <o2 docListItem class="optional">dotSize [5] - radius of dots in pixels</o2:docListItem>
+      Scatter:
+      <o2 docListItem class="optional">circleSize  - Radius of the circles (all the circles will get the same size)</o2:docListItem>
+      OutlinedBar:
+      <o2 docListItem class="optional">outlineColor [black] - color of the border of the OutlinedBar</o2:docListItem>
+      SketchBar:
+      <o2 docListItem class="optional">randomness [3] - how much the bars should deviate from perfectly drawn bars</o2:docListItem>
+    </o2:docList>
+  </o2:docSection>
+
+</o2:docSection>

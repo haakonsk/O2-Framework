@@ -1,0 +1,42 @@
+<o2 use O2Doc::Tutorial />
+
+<o2 docSection title="link">
+  Generates a link to. The page to link to may be set directly (through href (regular link) or src (button or image)),
+  or the <o2 docLink type="tag" id="urlMod" />-parameters can be used.
+  <o2 docSection title="Syntax">
+    <o2 docCode lang="o2ml">
+      <o2 link setClass="System-Documentation-Taglibs" setMethod="showDocumentation" setParams="module=Core&tag=call">Click here</o2:link>
+    </o2:docCode>
+    <o2 docCodeResult />
+    or
+    <o2 docCode lang="o2ml">
+      <o2 link type="image" src="/images/myNiceImage.gif" url="http://facebook.com" />
+    </o2:docCode>
+    <o2 docCodeResult seeGeneratedHtmlAsDisplayed="0" />
+    or
+    <o2 docCode lang="o2ml">
+      <o2 link type="button" setMethod="o2ml" removeParams="1">Click here</o2:link>
+    </o2:docCode>
+    <o2 docCodeResult />
+  </o2:docSection>
+  <o2 docSection title="Attributes">
+    <o2 docList class="attributes">
+      <o2 docListItem class="optional">type - by default an anchor tag (&lt;a&gt;) is used. Type can also be set to button or image.</o2:docListItem>
+      <o2 docListItem class="optional">src  - The source of the image. Only used if type is image.</o2:docListItem>
+      <o2 docListItem class="optional">href - What the link points to. Used if type is not specified (normal link).</o2:docListItem>
+      <o2 docListItem class="optional">onClick</o2:docListItem>
+      <o2 docListItem class="optional">url  - Same as href, but used when type is button or image.</o2:docListItem>
+      <o2 docListItem class="optional">border [0]</o2:docListItem>
+      <o2 docListItem class="optional">alt            - Default is the tag content (link text)</o2:docListItem>
+      <o2 docListItem class="optional">confirmMsg     - A message to display if the user needs to confirm the action he's about to perform</o2:docListItem>
+      <o2 docListItem class="optional">activeClass    - A class that will be appended to the regular class attribute if the current url equals the link's url</o2:docListItem>
+      <o2 docListItem class="optional">editObject     - Can be used in o2cms to link to a given object whose edit url will open in a new tab</o2:docListItem>
+      <o2 docListItem class="optional">newObjectClass - Can be used in o2cms to link to a given class' new-url, which will open in a new tab</o2:docListItem>
+      <o2 docListItem class="optional">startMenuItem  - Can be used in o2cms to link to a url from the start menu. Will open in a new tab. This attribute must match
+        the "id" attribute of the menu item in either customerStartMenu.conf or startMenu.conf</o2:docListItem>
+      <o2 docListItem class="optional">Attributes from <o2 docLink type="tag" id="urlMod" />. Used if url or href is not specified.</o2:docListItem>
+      <o2 docListItem class="required content">content - the link text</o2:docListItem>
+    </o2:docList>
+  </o2:docSection>
+  See also <o2 docLink type="tag" id="urlMod" /> and <o2 docLink type="tag" id="popupWindow" />.
+</o2:docSection>

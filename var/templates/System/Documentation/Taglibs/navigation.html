@@ -1,0 +1,81 @@
+<o2 use Html::Form />
+<o2 use O2Doc::Tutorial />
+<o2 use StringFormat />
+
+<o2 addCss>
+  ul.leftmenu {
+    padding-top : 0;
+  }
+  #tabs .header {
+    font-size   : 15px;
+    font-weight : bold;
+    background  : white;
+  }
+  #tabs .header span {
+    padding : 3px;
+    cursor  : pointer;
+  }
+  #tabs .tab {
+    padding-top : 5px;
+  }
+  #tabs .header .selected {
+    background : #ddf;
+  }
+  .tab {
+    display : none;
+  }
+  .tab.selected {
+    display : block;
+  }
+</o2:addCss>
+
+<o2 addJs>
+  function toggleTabs(event, headerElm) {
+    var otherHeaderElm = document.getElementById( headerElm.id === "headerTags" ? "headerModules" : "headerTags" );
+    o2.addClassName(headerElm, "selected");
+    o2.removeClassName(otherHeaderElm, "selected");
+    
+    var tabElm      = document.getElementById( headerElm.id === "headerTags"    ? "tagsTab" : "modulesTab" );
+    var otherTabElm = document.getElementById( headerElm.id === "headerModules" ? "tagsTab" : "modulesTab" );
+    o2.addClassName(    tabElm,      "selected");
+    o2.removeClassName( otherTabElm, "selected");
+  }
+</o2:addJs>
+
+<ul class="leftmenu">
+  <div id="tabs">
+    <div class="header">
+      <span id="headerTags" class="selected" eventHandlers="click:toggleTabs">Tags</span>
+      <span id="headerModules"               eventHandlers="click:toggleTabs">Modules</span>
+    </div>
+    
+    <div id="tagsTab" class="tab selected">
+      <li class="moduleName">$module</li>
+      <o2 foreach "$_tag in $tags" sortType="string">
+        <o2 if "$_tag eq $tag">
+          <li class="current">$_tag</li>
+        </o2:if>
+        <o2 else>
+          <li><o2 docLink type="tag" id="$_tag" /></li>
+        </o2:else>
+      </o2:foreach>
+    </div>
+    
+    <div id="modulesTab" class="tab">
+      <o2 foreach "$_module in $modules">
+        <o2 setVar "$_moduleWithDash"><o2 substitute from="::" to="-">$_module</o2:substitute></o2:setVar>
+        <o2 if "$_moduleWithDash eq $module">
+          <li class="current">$_module</li>
+        </o2:if>
+        <o2 else>
+          <li><o2 docLink type="tag" id="$_module-">$_module</o2:docLink></li>
+        </o2:else>
+      </o2:foreach>
+    </div>
+  </div>
+</ul>
+
+<o2 form setMethod="tagSearch" removeParams="1" class="tagSearchForm">
+  <o2 input type="text" name="searchQuery" label="Search for tag:" id="searchQuery" size="15" />
+  <o2 input type="submit" value="Search" class="noClass" />
+</o2:form>

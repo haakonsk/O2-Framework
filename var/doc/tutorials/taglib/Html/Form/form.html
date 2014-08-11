@@ -1,0 +1,115 @@
+<o2 use O2Doc::Tutorial />
+
+<o2 docSection title="form">
+  The o2 form tag lets you create rules for your input fields. If at least one rule isn't obeyed, the form will not be sent when the user clicks the submit button.
+  Instead, he will see an alert box, telling him what he did wrong - this message comes from the "ruleTitle" and "ruleMsg" attributes of the form tag and
+  <o2 docLink type="tag" id="input" /> tag, respectively (or other input field tags, like <o2 docLink type="tag" id="select" />, <o2 docLink type="tag" id="radioGroup" />,
+  <o2 docLink type="tag" id="checkboxGroup" /> and <o2 docLink type="tag" id="textarea" />).
+  <o2 docSection>
+    The validation may also be performed server side if you use this tag. The only thing
+    required for this is to call <code>\$obj->verifyRules();</code> in the Perl module. What the form tag does is to add an input field called "__rules" and one called
+    "__ruleHash". __rules contains a string with all the input fields, rules and rule-messages of the form, plus indentifies the script to handle the request. __ruleHash
+    is an MD5 hash of this string appended to a secret key. The verifyRules method checks that the hash value is correct and then checks if all the rules are obeyed. In
+    case one or more rules are not obeyed, the corresponding rule messages are displayed, and the script dies.
+  </o2:docSection>
+  <o2 docSection>
+    In order for the form validation to work, the Javascript file /js/rules.js must be included. If you use the <o2 docLink type="tag" id="html-header" /> tag,
+    this will be done automatically.
+  </o2:docSection>
+  <o2 docSection title="Syntax">
+    <o2 docCode lang="o2ml">
+      <o2 form method="post" ruleTitle="An error occured" setMethod="save" removeParams="1">
+        <o2 input type="text" name="name" rule="required" ruleMsg="The name field is required" label="Name" accesskey="n" />
+        <o2 input type="submit" value="Send" />
+      </o2:form>
+    </o2:docCode>
+    <o2 docCodeResult useModule="Html::Form" />
+    or
+    <o2 docCode lang="o2ml">
+      <o2 form method="post" ruleTitle="An error occured" setMethod="save" removeParams="1">
+        <o2 formTable>
+          <o2 input type="text" name="name2"    rule="required" ruleMsg="The name field is required"     label="Name"     accesskey="a" />
+          <o2 textarea          name="comments" rule="required" ruleMsg="The comments field is required" label="Comments" accesskey="c" />
+        </o2:formTable>
+        <o2 input type="submit" value="Send" />
+      </o2:form>
+    </o2:docCode>
+    <o2 docCodeResult useModule="Html::Form" />
+  </o2:docSection>
+  <o2 docSection title="Attributes">
+    <o2 docList class="attributes">
+      <o2 docListItem class="optional">ruleTitle - a text that will be displayed to the user if one or more fields could not be validated (according to the rules (see below))</o2:docListItem>
+      <o2 docListItem class="optional">class [o2Form]</o2:docListItem>
+      <o2 docListItem class="optional">onChange - javascript code that will be called every time an input field in the form changes value</o2:docListItem>
+      <o2 docListItem class="optional">disabled [0] - Should the input fields in the form be disabled?</o2:docListItem>
+      <o2 docListItem><o2 docLink type="tag" id="Html-urlMod">urlMod</o2:docLink> parameters can be used instead of the action attribute</o2:docListItem>
+      <o2 docListItem>Normal html attributes</o2:docListItem>
+    </o2:docList>
+  </o2:docSection>
+  <o2 docSection title="Validation rules">
+    <o2 docList>
+      <o2 docListItem>int             - value must be an integer in the specified interval. Example: rule="int:2,8"</o2:docListItem>
+      <o2 docListItem>float           - value must be a floating point number in the specified interval. Example: rule="float:1.2,2.4"</o2:docListItem>
+      <o2 docListItem>europeanDecimal - same as float, but comma (,) as decimal separator is okay as well</o2:docListItem>
+      <o2 docListItem>email           - value must be an email address. To say that the field is not required, do this: rule="email:notRequired"</o2:docListItem>
+      <o2 docListItem>hostname        - value must be a hostname. Same as for email for non-required fields.</o2:docListItem>
+      <o2 docListItem>url             - value must be a URL. Same as for email for non-required fields.</o2:docListItem>
+      <o2 docListItem>regex           - specify a regular expression that the value must match. Example: rule="regex:/^\d+$/"</o2:docListItem>
+      <o2 docListItem>required        - field is required</o2:docListItem>
+      <o2 docListItem>length          - specify minimum and maximum string length. Example: rule="length:0,10"</o2:docListItem>
+      <o2 docListItem>javascript      - write your own validation code in Javascript. Not sure if this works.</o2:docListItem>
+      <o2 docListItem>numChecked      - minimum and maximum number of checkboxes in the same checkbox group that are allowed to be checked. Example: rule="numChecked:1,3"
+      or rule="numChecked:2,*"</o2:docListItem>
+      <o2 docListItem>repeat          - the value must be equal to the value of some other input field (must be an input tag) with the specified name. Example: rule="repeat:password1"</o2:docListItem>
+    </o2:docList>
+  </o2:docSection>
+  <o2 docSection>
+    If input fields are used with the "label" attribute, but not the <o2 docLink type="tag" id="formTable" /> tag, including the following CSS could be a good starting
+    point for styling the form:
+    <o2 docCode lang="css">
+      .o2Form {
+        position: relative;
+        float: left;
+        width: 100%;
+      }
+      .o2Input label, .o2RadioGroupLabel, .o2CheckboxGroupLabel, div.o2Select label, .o2DateSelect label, .o2Textarea label {
+        float: left;
+        clear: left;
+        width: 190px;
+      }
+      .o2RadioGroup, .o2CheckboxGroup, .o2Select, .o2DateSelect, .o2Textarea, .o2Input {
+        position: relative;
+        min-height: 20px;
+      }
+      .o2Input input, .o2Textarea textarea, .o2DateSelect input, .o2RadioButtons, .o2Checkboxes {
+        float: left;
+      }
+    </o2:docCode>
+    Of course, the CSS should be in a central file.
+  </o2:docSection>
+  <o2 docSection title="Javascript functions">
+    When you use the &lt;o2 form&gt; tag, some extra Javascript functions become available (formFunctions.js). They are:
+    <o2 docList>
+      <o2 docListItem><code>o2.getRadioValue(form, name)</code>
+        - returns the value of the checked radio button in a radio-group, or <code class="inline">null</code> if none is checked</o2:docListItem>
+      <o2 docListItem><code>o2.isChecked(form, name, value)</code>
+        - returns <code class="inline">true</code> if the corresponding checkbox or radio button is checked, <code class="inline">false</code> otherwise</o2:docListItem>
+      <o2 docListItem><code>o2.getCheckboxValues(form, name)</code>
+        - returns an array with the values of all the checked checkboxes in a checkbox-group</o2:docListItem>
+      <o2 docListItem><code>o2.getSelectValues(form, name)</code>
+        - returns an array with the values of all the selected values in a select-menu. If only one item can be selected (ie multiple attribute not set),
+        <code class="inline">selectMenuName.value</code> returns the value of the selected item.</o2:docListItem>
+      <o2 docListItem><code>o2.getInputValue(form, name)</code>
+        - returns the value of the input field. Should work for all input types (including checkbox and select).</o2:docListItem>
+      <o2 docListItem><code>o2.getCurrentForm(element)</code>
+        - Returns the form containing <code style="display: inline;">element</code></o2:docListItem>
+      <o2 docListItem><code>o2.clearForm(form)</code>
+        - Removes all values from the form's input fields</o2:docListItem>
+    </o2:docList>
+  </o2:docSection>
+<o2 docSection title="Misc.">
+When the rules in a form are checked successfully, the system will try to execute the function o2.rules.onRuleCheckSuccess() if found (through eval). So if you want to have some javascript executed after the rules are checked but before the form is submitted, create the function o2.rules.onRuleCheckSuccess() locally.
+</o2:docSection>
+  See also <o2 docLink type="tag" id="formTable" />, <o2 docLink type="tag" id="input" />, <o2 docLink type="tag" id="select" />, <o2 docLink type="tag" id="radioGroup" />,
+  <o2 docLink type="tag" id="checkboxGroup" />, <o2 docLink type="tag" id="textarea" /> and <o2 docLink type="tag" id="inputCounter" />.
+</o2:docSection>

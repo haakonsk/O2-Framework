@@ -1,0 +1,49 @@
+<o2 use O2Doc::Tutorial />
+
+<o2 docSection title="docCode, docCodeResult">
+  The "docCode" tag puts a "code" tag around the tag content, with the "class" attribute set to whatever you specify in the "lang" attribute. If "lang" is "o2ml" or "html",
+  the code will be highlighted. The CSS file "/css/o2mlDocStyle.css" can be used to change the highlighting style.
+
+  <o2 docSection>
+    The "docCodeResult" tag prints two links; "See generated HTML" and "See how the generated HTML is displayed on a web page". Each link can be suppressed with an attribute
+    (see below). The tag can be used after a docCode tag with the lang attribute set to "o2ml".
+  </o2:docSection>
+
+  <o2 docSection title="Syntax">
+    <o2 docCode lang="o2ml">
+      <o2 docCode lang="o2ml">
+        <o2 calc>2 * (3 + 5)</o2:calc>
+      </o2:docCode>
+      <o2 docCodeResult />
+    </o2:docCode>
+    <o2 docCodeResult />
+    <o2 docNote>
+      The docCodeResult tag doesn't work in this example
+    </o2:docNote>
+    or
+    <o2 docCode lang="o2ml">
+      <o2 docCode lang="css">
+        code.css {
+          white-space: pre;
+        }
+      </o2:docCode>
+    </o2:docCode>
+    <o2 docCodeResult />
+  </o2:docSection>
+  <o2 docSection title="docCode attributes">
+    <o2 docList class="attributes">
+      <o2 docListItem class="required">lang            - the code language</o2:docListItem>
+      <o2 docListItem class="required content">content - the code to display</o2:docListItem>
+    </o2:docList>
+  </o2:docSection>
+
+  <o2 docSection title="docCodeResult attributes">
+    <o2 docList class="attributes">
+      <o2 docListItem class="optional">useModule                       - a module that must be <o2 docLink type="tag" id="Core-use" />d in order for the o2ml code
+      to be executed correctly, for example useModule="Html::Form"</o2:docListItem>
+      <o2 docListItem class="optional">seeGeneratedHtml [1]            - set this attribute to zero ("0") if you don't want the link "See generated HTML" to be displayed</o2:docListItem>
+      <o2 docListItem class="optional">seeGeneratedHtmlAsDisplayed [1] - set this attribute to zero ("0") if you don't want the link "See how the generated HTML
+      is displayed on a web page" to be displayed</o2:docListItem>
+    </o2:docList>
+  </o2:docSection>
+</o2:docSection>

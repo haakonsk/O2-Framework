@@ -1,0 +1,44 @@
+<o2 use O2Doc::Tutorial />
+
+<o2 docSection title="table">
+  Works much like a normal html table tag, but it is possible to make a table sortable.
+  If you don't want sorting on a particular column, just set the class attribute of the table header (th) tag to "nosort".
+  <o2 docSection title="Syntax">
+
+    <o2 docCode lang="o2ml">
+      <o2 form>
+        <o2 table sortable="1" rearrangeableRows="1">
+          <tr>
+            <th class="nosort">Name</th>
+            <th>E-mail</th>
+          </tr>
+          <tr id="john@gmail.com">
+            <td>John</td>
+            <td>john@gmail.com</td>
+          </tr>
+          <tr id="joe@gmail.com">
+            <td>Joe</td>
+            <td>joe@gmail.com</td>
+          </tr>
+        </o2:table>
+      </o2:form>
+    </o2:docCode>
+    <o2 docCodeResult useModule="Html::Form" />
+
+  </o2:docSection>
+  <o2 docSection title="Attributes">
+    <o2 docList class="attributes">
+      <o2 docListItem class="optional">sortable [0]          - should the table be sortable? If true (1), the table headers become clickable</o2:docListItem>
+      <o2 docListItem class="optional">rearrangeableRows [0] - should the table rows be rearrangeable? If true (1), you will be able to use drag and drop to rearrange the rows.
+        Hidden input fields with name="newRowOrderForTable_&lt;tableId&gt;[]" will be created, one for each row in the table, and in the correct order. You can get the IDs as
+        an array on the server side:
+        <o2 code lang="perl">
+          my @newOrder = $obj->getParam("newRowOrderForTable_<tableId>");
+        </o2:code>
+      </o2:docListItem>
+      <o2 docListItem class="optional">Normal html attributes</o2:docListItem>
+      <o2 docListItem class="required content">content - normal html table tags (tr and td)</o2:docListItem>
+    </o2:docList>
+  </o2:docSection>
+  See also <o2 docLink type="tag" id="urlMod" /> and <o2 docLink type="tag" id="popupWindow" />.
+</o2:docSection>

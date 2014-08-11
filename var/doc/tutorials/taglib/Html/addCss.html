@@ -1,0 +1,40 @@
+<o2 use O2Doc::Tutorial />
+
+<o2 docSection title="addCSS">
+  Adds CSS to the style tag in the head of a web page. You can use &lt;o2 addCss&gt; as a normal style tag, or you can specify a class-name
+  and the class' corresponding style in one of two ways (see the examples). When you don't use the addCss tag as a style tag, you can only
+  specify the style for a given class-name - not for IDs or HTML tags.
+  <o2 docSection title="Syntax">
+    <o2 docCode lang="o2ml">
+      <!-- Used as a style tag: -->
+      <o2 addCss>
+        #item1 {
+          color: green;
+        }
+      </o2:addCss>
+    </o2:docCode>
+    or
+    <o2 docCode lang="o2ml">
+      <o2 addCss myClass>
+        color: red;
+      </o2:addCss>
+    </o2:docCode>
+    or
+    <o2 docCode lang="o2ml">
+      <o2 addCss class="myClass">
+        color: red;
+      </o2:addCss>
+    </o2:docCode>
+  </o2:docSection>
+  <o2 docSection title="Attributes">
+    <o2 docList class="attributes">
+      <o2 docListItem class="optional">class - the class name</o2:docListItem>
+      <o2 docListItem class="param optional">param - the class name</o2:docListItem>
+      <o2 docListItem class="content required">content - the style</o2:docListItem>
+    </o2:docList>
+    <o2 docNote>
+      &lt;o2 header&gt; or &lt;o2 incStylesheet&gt; must be called on the same page for addCss to work.
+    </o2:docNote>
+    See also <o2 docLink type="tag" id="header" /> or <o2 docLink type="tag" id="incStylesheet" />.
+  </o2:docSection>
+</o2:docSection>

@@ -1,0 +1,33 @@
+#!/local/bin/perl
+
+# Dumps all fields in a O2 database. Useful for comparing two databases.
+# vonheim@20061206
+
+use O2::Context;
+use Data::Dumper;
+my $context = new O2::Context();
+my $dbh = $context->getDbh()->getDbh();
+
+
+my %fields = ();
+foreach my $table (getTableNames()) {
+  my $sth = $dbh->column_info( undef, undef, $table, '%');
+  while( my $row = $sth->fetchrow_hashref() ) {
+    $row->{TYPE_NAME} = uc($row->{TYPE_NAME});
+    my $allowNull = $row->{NULLABLE}==0 ? 'not null' : 'null';
+    my $size = $row->{TYPE_NAME} eq 'INT' ? '(intSize)' : "($row->{COLUMN_SIZE})";
+    $fields{"$row->{TABLE_NAME}-$row->{COLUMN_NAME}"} = "$row->{TABLE_NAME}: $row->{COLUMN_NAME} $row->{TYPE_NAME} $size $allowNull\n";
+  }
+}
+print sort values %fields;
+
+
+
+sub getTableNames {
+  my %names = ();
+  my $sth = $dbh->table_info('%','','','TABLE');
+  while( my $row = $sth->fetchrow_hashref() ) {
+    $names{$row->{TABLE_NAME}} = 1 if $row->{TABLE_TYPE} eq 'TABLE';
+  }
+  return keys %names;
+}

@@ -1,0 +1,32 @@
+<o2 use O2Doc::Tutorial />
+<o2 use DateFormat locale="en_US" />
+
+<o2 docSection title="dateFormat">
+  Formats a date according to the current locale.
+  <o2 docSection title="Syntax">
+    <o2 docCode lang="o2ml">
+      <o2 use DateFormat locale="en_US" />
+      
+      <o2 dateFormat format="full">1153200000</o2:dateFormat>
+    </o2:docCode>
+    <o2 docCodeResult seeGeneratedHtmlAsDisplayed="0" />
+    
+    <o2 docCode lang="o2ml">
+      <o2 dateFormat format="full" locale="nb_NO">1153200000</o2:dateFormat>
+    </o2:docCode>
+    <o2 docCodeResult useModule="DateFormat" seeGeneratedHtmlAsDisplayed="0" />
+    
+    <o2 docCode lang="o2ml">
+      <o2 dateFormat format="full">1153200000</o2:dateFormat>
+    </o2:docCode>
+    <o2 docCodeResult useModule="DateFormat" seeGeneratedHtmlAsDisplayed="0" />
+    
+  </o2:docSection>
+  <o2 docSection title="Attributes">
+    <o2 docList class="attributes">
+      <o2 docListItem class="optional">locale - for example en_US</o2:docListItem>
+      <o2 docListItem class="optional">format - should be one of {full, short, medium, long}. The config variable o2.defaultDateFormat determines the default format.</o2:docListItem>
+      <o2 docListItem class="content optional">content [today] - epoch seconds or <o2 docLink type="external" href="http://en.wikipedia.org/wiki/ISO_8601" title="ISO 8601" />-formatted.</o2:docListItem>
+    </o2:docList>
+  </o2:docSection>
+</o2:docSection>

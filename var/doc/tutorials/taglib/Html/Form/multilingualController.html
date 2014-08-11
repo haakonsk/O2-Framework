@@ -1,0 +1,28 @@
+<o2 use O2Doc::Tutorial />
+
+<o2 docSection title="multilingualController">
+  MultilingualController is used in forms, to change current locale of the object you're currently editing, so that you can give different values to the
+  same multilingual field for different languages.
+  <o2 docSection title="Syntax">
+    <o2 docCode lang="o2ml">
+      <o2 multilingualController />
+    </o2:docCode>
+    <o2 docCodeResult seeGeneratedHtml="0" />
+  </o2:docSection>
+  <o2 docSection title="Attributes">
+    <o2 docList class="attributes">
+      <o2 docListItem class="optional">object           - If given, the available locales are fetched from this object, otherwise they're fetched from o2.conf (o2.locales)</o2:docListItem>
+      <o2 docListItem class="optional">type [text]      - one of {text, flag}</o2:docListItem>
+      <o2 docListItem class="optional">reloadPage [0]   - Should the page be reloaded after the language has been changed?</o2:docListItem>
+      <o2 docListItem class="optional">reloadConfirmMsg - The page will be reloaded only if the user says yes to this message</o2:docListItem>
+      <o2 docListItem class="optional">onSwitchPre      - javascript code to execute just before the language is about to change</o2:docListItem>
+      <o2 docListItem class="optional">onSwitchPost     - javascript code to execute just after the language has been changed</o2:docListItem>
+    </o2:docList>
+  </o2:docSection>
+  <o2 docSection>
+    If you don't like the default style, you can create a css file at O2CUSTOMERROOT/var/www/css/multilingualController.css.
+  </o2:docSection>
+  <o2 docSection>
+    See also <o2 docLink type="tag" id="Html-Locale-localeSwitch" />, <o2 docLink type="tag" id="textarea" /> and <o2 docLink type="tag" id="input" />.
+  </o2:docSection>
+</o2:docSection>

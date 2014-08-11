@@ -1,0 +1,23 @@
+<o2 use O2Doc::Tutorial />
+
+<o2 docSection title="ajaxLink">
+  ajaxLink inherits from <o2 docLink type="tag" id="Html-link" />. When clicking the link, the user remains on
+  the same page (no reloading) whild an ajax request is sent to the server.
+  <o2 docSection title="Syntax">
+    <o2 docCode lang="o2ml">
+      <o2 addJs where="pre">
+        function handleServerResponse(result) {
+          alert(result["randomNumber"]);
+        }
+      </o2:addJs>
+      <o2 ajaxLink setMethod="getRandomNumber" removeParams="1" handler="handleServerResponse">Get a random number</o2:ajaxLink>
+    </o2:docCode>
+    <o2 docCodeResult useModule="Html::Ajax" seeGeneratedHtmlAsDisplayed="0" />
+  </o2:docSection>
+  <o2 docSection title="Attributes">
+    <o2 docList class="attributes">
+      <o2 include "$ENV->{O2ROOT}/var/doc/tutorials/taglib/Html/Ajax/ajaxAttributes.html.inc" />
+      <o2 docListItem>&lt;o2 <o2 docLink type="tag" id="Html-link" />&gt; attributes</o2:docListItem>
+    </o2:docList>
+  </o2:docSection>
+</o2:docSection>

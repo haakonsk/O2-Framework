@@ -1,0 +1,18 @@
+<o2 use O2Doc::Tutorial />
+
+<o2 docSection title="dump">
+  Dumps a variable. For debug purposes.
+  <o2 docSection title="Syntax">
+    <o2 docCode lang="o2ml">
+      <o2 setVar "$person">{name => 'Håkon', email => 'haakonsk@redpill-linpro.com'}</o2:setVar>
+      <o2 dump $person />
+    </o2:docCode>
+    <o2 docCodeResult useModule="DataDumper" seeGeneratedHtmlAsDisplayed="0" />
+  </o2:docSection>
+  <o2 docSection title="Attributes">
+    <o2 docList class="attributes">
+      <o2 docListItem class="param required">param - the variable to dump</o2:docListItem>
+    </o2:docList>
+  </o2:docSection>
+  See also <o2 docLink type="tag" id="Html-pldsDump" /> and <o2 docLink type="tag" id="Html-objectDump" />.
+</o2:docSection>

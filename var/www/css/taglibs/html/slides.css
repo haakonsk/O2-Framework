@@ -1,0 +1,44 @@
+body {
+  font        : 100px sans-serif;
+  white-space : nowrap;
+  margin      : auto 5%;
+}
+.slide .header,
+.slide .footer {
+  position  : absolute;
+  font-size : 38px;
+  color     : #666;
+}
+.slide .header {
+  left : 10px;
+}
+.slide .footer {
+  bottom : 0;
+  right  : 10px;
+}
+.slide .slideMain {
+  position   : relative;
+  float      : left;
+  margin     : auto;
+  text-align : center;
+}
+.slide .leftAlign {
+  text-align : left;
+}
+.slide .rightAlign {
+  text-align : right;
+}
+.slide .centerAlign {
+  text-align : center;
+}
+.slides pre {
+  border        : 2px dashed #666;
+  margin-bottom : 0;
+}
+.slides pre.inlinePre {
+  display : inline;
+  border  : 0;
+}
+.slides em {
+  color : red;
+}

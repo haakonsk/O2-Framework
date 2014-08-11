@@ -1,0 +1,72 @@
+<o2 use O2Doc::Tutorial />
+
+<o2 docSection title="select, option">
+  Much like a normal select tag, but also supports form validation, and you can specify the selected option with the value attribute of the
+  &lt;o2 select&gt; tag (instead of writing selected="selected" on the option tag).
+  <o2 docSection title="Syntax">
+    <o2 docCode lang="o2ml">
+      <o2 form method="post" action="">
+        <o2 select name="year" value="2005"> 
+          <o2 option value="2006">This year</o2:option>
+          <o2 option value="2005">Last year</o2:option>
+          <o2 option value="2004">The year before last year</o2:option>
+       </o2:select>
+      </o2:form>
+    </o2:docCode>
+    <o2 docCodeResult useModule="Html::Form" />
+    or
+    <o2 docCode lang="o2ml">
+      <o2 form method="post" action="">
+        <o2 select name="year[]" values="2003,2004" multiple="multiple" size="3" label="Choose year" accesskey="c"> 
+          <o2 option value="2006" />
+          <o2 option value="2005" />
+          <o2 option value="2004" />
+          <o2 option value="2003" />
+          <o2 option value="2002" />
+       </o2:select>
+      </o2:form>
+    </o2:docCode>
+    <o2 docCodeResult useModule="Html::Form" />
+
+    If the value attribute of the option tag is omitted, the content of the option tag is copied to the value attribute - and the other way around: if content
+    is omitted, value is copied to content, so
+    <o2 docCode lang="o2ml">
+      <o2 option>2006</o2:option>
+    </o2:docCode>
+    and
+    <o2 docCode lang="o2ml">
+      <o2 option value="2006" />
+    </o2:docCode>
+    both are equivalent to
+    <o2 docCode lang="o2ml">
+      <o2 option value="2006">2006</o2:option>
+    </o2:docCode>
+  </o2:docSection>
+  <o2 docSection title="select attributes">
+    <o2 docList class="attributes">
+      <o2 docListItem class="required">name</o2:docListItem>
+      <o2 docListItem class="optional">value           - if only one item is selected, you can use this attribute instead of "values"</o2:docListItem>
+      <o2 docListItem class="optional">values          - a comma-separated list of, or an array reference containing, the selected values (applicable if the "multiple" attribute is set)</o2:docListItem>
+      <o2 docListItem class="optional">label           - a text associated with the select menu. See also the <o2 docLink type="tag" id="formTable" /> tag.</o2:docListItem>
+      <o2 docListItem class="optional">labelClass      - extra class for the label</o2:docListItem>
+      <o2 docListItem class="optional">accesskey       - if label is specified, you can also specify an accesskey</o2:docListItem>
+      <o2 docListItem class="optional">focus [0]       - should this field receive focus when the page loads? (At most one focused field per page)</o2:docListItem>
+      <o2 docListItem class="optional">class [select]</o2:docListItem>
+      <o2 docListItem class="optional">rule            - a rule that must be obeyed (see the <o2 docLink type="tag" id="form" /> tag for the rules)</o2:docListItem>
+      <o2 docListItem class="optional">ruleMsg         - the text that will be displayed to the user in case the rule wasn't obeyed</o2:docListItem>
+      <o2 docListItem class="required content">content - the option tags</o2:docListItem>
+      <o2 docListItem>Normal html attributes</o2:docListItem>
+    </o2:docList>
+  </o2:docSection>
+  <o2 docSection title="option attributes">
+    <o2 docList class="attributes">
+      <o2 docListItem class="optional">value           - same as the HTML attribute of the same name, but defaults to the value of the "content" attribute</o2:docListItem>
+      <o2 docListItem class="optional content">content - same as the content of the HTML option tag, but defaults to the value of the "value" attribute</o2:docListItem>
+      <o2 docListItem>Normal html attributes</o2:docListItem>
+    </o2:docList>
+    <o2 docNote>
+      Either "value" or "content" or both must be specified.
+    </o2:docNote>
+  </o2:docSection>
+  See also <o2 docLink type="tag" id="comboBox" />, <o2 docLink type="tag" id="form" /> and <o2 docLink type="tag" id="formTable" />.
+</o2:docSection>

@@ -1,0 +1,2404 @@
+{
+  'territory' => 'XK',
+  'language' => 'sq',
+  'number' => {
+                'percentFormat' => {
+                                     'percentFormatLength' => {
+                                                              'standard' => '#,##0%'
+                                                            }
+                                   },
+                'measurement' => {},
+                'symbols' => {
+                               'infinity' => "\x{221e}",
+                               'nan' => 'NaN',
+                               'plusSign' => '+',
+                               'superscriptingExponent' => "×",
+                               'exponential' => 'E',
+                               'group' => " ",
+                               'percentSign' => '%',
+                               'decimal' => ',',
+                               'perMille' => "\x{2030}",
+                               'alias' => '',
+                               'minusSign' => '-',
+                               'list' => ';'
+                             },
+                'scientificFormat' => {
+                                        'scientificFormatLength' => {
+                                                                    'standard' => '#E0'
+                                                                  }
+                                      },
+                'decimalFormat' => {
+                                     'decimalFormatLength' => {
+                                                              'short' => "0 mijë0 mijë00 mijë00 mijë000000 mijë0 Mln0 Mln00 Mln00 Mln000 Mln000 Mln0 Mld0 Mld00 Mld00 Mld000 Mld000 Mld0 Bln0 Bln00 Bln00 Bln000 Bln000 Bln",
+                                                              'standard' => '#,##0.###',
+                                                              'long' => "0 mijë0 mijë00 mijë00 mijë000 mijë000 mijë0 milion0 milion00 milion00 milion000 milion000 milion0 miliard0 miliard00 miliard00 miliard000 miliard000 miliard0 bilion0 bilion00 bilion00 bilion000 bilion000 bilion"
+                                                            }
+                                   },
+                'currencyFormat' => {
+                                      'currencyFormatLength' => {
+                                                                'standard' => "#,##0.00 ¤"
+                                                              }
+                                    },
+                'currencies' => {
+                                  'BZD' => {
+                                           'symbol' => '$',
+                                           'displayName' => "dollarë belize"
+                                         },
+                                  'YER' => {
+                                           'displayName' => "rialë jemeni"
+                                         },
+                                  'SLL' => {
+                                           'displayName' => "leonë të Sierra Leones"
+                                         },
+                                  'ERN' => {
+                                           'displayName' => 'nakfa eritreje'
+                                         },
+                                  'NGN' => {
+                                           'symbol' => "\x{20a6}",
+                                           'displayName' => 'naira nigeriane'
+                                         },
+                                  'CRC' => {
+                                           'symbol' => "\x{20a1}",
+                                           'displayName' => "kolonë kostarikan"
+                                         },
+                                  'VEF' => {
+                                           'displayName' => "bolivarë venezuelian"
+                                         },
+                                  'LAK' => {
+                                           'symbol' => "\x{20ad}",
+                                           'displayName' => 'kipa laosi'
+                                         },
+                                  'CLP' => {
+                                           'symbol' => '$',
+                                           'displayName' => 'peso kiliane'
+                                         },
+                                  'DZD' => {
+                                           'displayName' => "dinarë algjerian"
+                                         },
+                                  'CUC' => {
+                                           'displayName' => "peso kubane të shkëmbyeshme"
+                                         },
+                                  'SZL' => {
+                                           'displayName' => "lilangenë svazilandi"
+                                         },
+                                  'MOP' => {
+                                           'displayName' => "pataka të Makaos"
+                                         },
+                                  'BYR' => {
+                                           'symbol' => "\x{440}.",
+                                           'displayName' => 'rubla bjelloruse'
+                                         },
+                                  'MUR' => {
+                                           'displayName' => 'rupi mauritiane'
+                                         },
+                                  'WST' => {
+                                           'displayName' => 'tala samoane'
+                                         },
+                                  'LRD' => {
+                                           'symbol' => '$',
+                                           'displayName' => "dollarë liberian"
+                                         },
+                                  'MMK' => {
+                                           'displayName' => 'kiata mianmari'
+                                         },
+                                  'KGS' => {
+                                           'displayName' => 'soma kirgize'
+                                         },
+                                  'IDR' => {
+                                           'displayName' => 'rupi indoneziane'
+                                         },
+                                  'PYG' => {
+                                           'symbol' => "\x{20b2}",
+                                           'displayName' => "guaranë paraguaian"
+                                         },
+                                  'GTQ' => {
+                                           'displayName' => "kuecalë guatemalas"
+                                         },
+                                  'CAD' => {
+                                           'symbol' => 'CA$',
+                                           'displayName' => "dollarë kanadez"
+                                         },
+                                  'AWG' => {
+                                           'displayName' => "florinë aruban"
+                                         },
+                                  'PKR' => {
+                                           'displayName' => 'rupi pakistaneze'
+                                         },
+                                  'TTD' => {
+                                           'symbol' => '$',
+                                           'displayName' => "dollarë të Trinidadit dhe Tobagos"
+                                         },
+                                  'RUR' => {
+                                           'symbol' => "\x{440}."
+                                         },
+                                  'UZS' => {
+                                           'displayName' => 'soma uzbeke'
+                                         },
+                                  'XCD' => {
+                                           'symbol' => 'EC$',
+                                           'displayName' => "dollarë të Karaibeve Lindore"
+                                         },
+                                  'VUV' => {
+                                           'displayName' => 'vatu vanuatuje'
+                                         },
+                                  'XOF' => {
+                                           'symbol' => 'CFA',
+                                           'displayName' => "franga të Bregut të Fildishtë"
+                                         },
+                                  'KMF' => {
+                                           'displayName' => 'franga komori'
+                                         },
+                                  'AZN' => {
+                                           'displayName' => 'manata azere'
+                                         },
+                                  'ANG' => {
+                                           'displayName' => "gilderë antilian holandez"
+                                         },
+                                  'MNT' => {
+                                           'symbol' => "\x{20ae}",
+                                           'displayName' => 'tugrika mongole'
+                                         },
+                                  'LBP' => {
+                                           'displayName' => 'sterlina libaneze'
+                                         },
+                                  'KES' => {
+                                           'displayName' => 'shilinga keniane'
+                                         },
+                                  'BTN' => {
+                                           'displayName' => "ngultrumë butanez"
+                                         },
+                                  'GBP' => {
+                                           'symbol' => "£",
+                                           'displayName' => 'sterlina britanike'
+                                         },
+                                  'CDF' => {
+                                           'displayName' => 'franga kongole'
+                                         },
+                                  'SEK' => {
+                                           'displayName' => 'korona suedeze'
+                                         },
+                                  'AFN' => {
+                                           'displayName' => "afganë afgan"
+                                         },
+                                  'KZT' => {
+                                           'symbol' => "\x{20b8}",
+                                           'displayName' => 'tenga kazake'
+                                         },
+                                  'DKK' => {
+                                           'displayName' => 'korona daneze'
+                                         },
+                                  'AMD' => {
+                                           'displayName' => 'drami armen'
+                                         },
+                                  'SCR' => {
+                                           'displayName' => "rupi të Sejshellzave"
+                                         },
+                                  'FJD' => {
+                                           'symbol' => '$',
+                                           'displayName' => "dollarë fixhi"
+                                         },
+                                  'SHP' => {
+                                           'displayName' => "stërlina të Ishullit të Shën Helenës"
+                                         },
+                                  'ALL' => {
+                                           'symbol' => "Lekë",
+                                           'displayName' => "lekë shqiptar"
+                                         },
+                                  'TOP' => {
+                                           'displayName' => 'panga tongane'
+                                         },
+                                  'ZMW' => {
+                                           'displayName' => "kuaça zambiku"
+                                         },
+                                  'UGX' => {
+                                           'displayName' => 'shilinga ugandeze'
+                                         },
+                                  'OMR' => {
+                                           'displayName' => "rialë omani"
+                                         },
+                                  'DJF' => {
+                                           'displayName' => 'franga xhibutiane'
+                                         },
+                                  'BND' => {
+                                           'symbol' => '$',
+                                           'displayName' => "dollarë brunei"
+                                         },
+                                  'TND' => {
+                                           'displayName' => "dinarë tunizian"
+                                         },
+                                  'SBD' => {
+                                           'symbol' => '$',
+                                           'displayName' => "dollarë të Ishujve Solomon"
+                                         },
+                                  'GHS' => {
+                                           'symbol' => "\x{20b5}",
+                                           'displayName' => 'sejda ganeze'
+                                         },
+                                  'GNF' => {
+                                           'displayName' => 'franga guineje'
+                                         },
+                                  'BOB' => {
+                                           'displayName' => "bolivianë bolivian"
+                                         },
+                                  'CVE' => {
+                                           'displayName' => "eskudo të Kepit të Gjelbër"
+                                         },
+                                  'GMD' => {
+                                           'displayName' => "dalasë gambian"
+                                         },
+                                  'ARS' => {
+                                           'symbol' => '$',
+                                           'displayName' => 'peso argjentinase'
+                                         },
+                                  'MWK' => {
+                                           'displayName' => "kuaça malaviane"
+                                         },
+                                  'BDT' => {
+                                           'symbol' => "\x{9f3}",
+                                           'displayName' => 'taka bangladeshi'
+                                         },
+                                  'KWD' => {
+                                           'displayName' => "dinarë kuvajtian"
+                                         },
+                                  'EUR' => {
+                                           'symbol' => "\x{20ac}",
+                                           'displayName' => 'euro'
+                                         },
+                                  'CHF' => {
+                                           'displayName' => 'franga zvicerane'
+                                         },
+                                  'SRD' => {
+                                           'symbol' => '$',
+                                           'displayName' => "dollarë surinamez"
+                                         },
+                                  'DOP' => {
+                                           'symbol' => '$',
+                                           'displayName' => 'peso dominikane'
+                                         },
+                                  'PEN' => {
+                                           'displayName' => 'sola nuevo-peruane'
+                                         },
+                                  'KPW' => {
+                                           'displayName' => "uonë të Koresë së Veriut"
+                                         },
+                                  'SGD' => {
+                                           'symbol' => '$',
+                                           'displayName' => "dollarë singapori"
+                                         },
+                                  'TWD' => {
+                                           'symbol' => 'NT$',
+                                           'displayName' => "dollarë tajvanez"
+                                         },
+                                  'USD' => {
+                                           'symbol' => 'US$',
+                                           'displayName' => "dollarë amerikan"
+                                         },
+                                  'BGN' => {
+                                           'displayName' => 'leva bullgare'
+                                         },
+                                  'MAD' => {
+                                           'displayName' => "dirhamë maroken"
+                                         },
+                                  'XXX' => {
+                                           'displayName' => "njësi të panjohura valute"
+                                         },
+                                  'SAR' => {
+                                           'displayName' => "rialë saudit"
+                                         },
+                                  'SSP' => {
+                                           'symbol' => "£",
+                                           'displayName' => "stërlina të Sudanit të Jugut"
+                                         },
+                                  'AUD' => {
+                                           'symbol' => 'A$',
+                                           'displayName' => "dollarë australian"
+                                         },
+                                  'KYD' => {
+                                           'symbol' => '$',
+                                           'displayName' => "dollarë të Ishujve Kajman"
+                                         },
+                                  'KRW' => {
+                                           'symbol' => "\x{20a9}",
+                                           'displayName' => "uonë të Koresë së Jugut"
+                                         },
+                                  'GIP' => {
+                                           'symbol' => "£",
+                                           'displayName' => 'sterlina gjibraltari'
+                                         },
+                                  'TRY' => {
+                                           'symbol' => 'TL',
+                                           'displayName' => 'lira turke'
+                                         },
+                                  'NAD' => {
+                                           'symbol' => '$',
+                                           'displayName' => "dollarë namibie"
+                                         },
+                                  'CZK' => {
+                                           'displayName' => "koruna çeke"
+                                         },
+                                  'JMD' => {
+                                           'symbol' => '$',
+                                           'displayName' => "dollarë xhamajkan"
+                                         },
+                                  'BSD' => {
+                                           'symbol' => '$',
+                                           'displayName' => "dollarë bahamez"
+                                         },
+                                  'MXN' => {
+                                           'symbol' => 'MX$',
+                                           'displayName' => 'peso meksikane'
+                                         },
+                                  'UYU' => {
+                                           'symbol' => '$',
+                                           'displayName' => 'peso uruguaiane'
+                                         },
+                                  'GYD' => {
+                                           'symbol' => '$',
+                                           'displayName' => "dollarë guajanez"
+                                         },
+                                  'BWP' => {
+                                           'displayName' => 'pula botsvane'
+                                         },
+                                  'LYD' => {
+                                           'displayName' => "dinarë libian"
+                                         },
+                                  'THB' => {
+                                           'symbol' => "\x{e3f}",
+                                           'displayName' => 'bata tajlandeze'
+                                         },
+                                  'EGP' => {
+                                           'displayName' => "stërlina egjiptiane"
+                                         },
+                                  'SDG' => {
+                                           'displayName' => "stërlina sudaneze"
+                                         },
+                                  'MKD' => {
+                                           'displayName' => "denarë maqedonas"
+                                         },
+                                  'AED' => {
+                                           'displayName' => "dirhamë të Emirateve të Bashkuara Arabe"
+                                         },
+                                  'JPY' => {
+                                           'symbol' => "JP¥",
+                                           'displayName' => "jenë japonez"
+                                         },
+                                  'JOD' => {
+                                           'displayName' => "dinarë jordanez"
+                                         },
+                                  'ZAR' => {
+                                           'displayName' => "randa të Afrikës së Jugut"
+                                         },
+                                  'HRK' => {
+                                           'displayName' => 'kuna kroate'
+                                         },
+                                  'RWF' => {
+                                           'displayName' => 'franga ruandeze'
+                                         },
+                                  'AOA' => {
+                                           'displayName' => 'kuanza angole'
+                                         },
+                                  'CUP' => {
+                                           'symbol' => '$',
+                                           'displayName' => 'peso kubane'
+                                         },
+                                  'BBD' => {
+                                           'symbol' => '$',
+                                           'displayName' => "dollarë barbadian"
+                                         },
+                                  'PGK' => {
+                                           'displayName' => "kina të Papua-Guineas së Re"
+                                         },
+                                  'RON' => {
+                                           'displayName' => 'leu rumune'
+                                         },
+                                  'LKR' => {
+                                           'displayName' => 'rupi sri-lanke'
+                                         },
+                                  'PLN' => {
+                                           'displayName' => 'zllota polake'
+                                         },
+                                  'TJS' => {
+                                           'displayName' => 'somona taxhike'
+                                         },
+                                  'IQD' => {
+                                           'displayName' => "dinarë irakian"
+                                         },
+                                  'MDL' => {
+                                           'displayName' => 'leu moldave'
+                                         },
+                                  'MYR' => {
+                                           'displayName' => "ringitë malajzian"
+                                         },
+                                  'CNY' => {
+                                           'symbol' => "CN¥",
+                                           'displayName' => "juanë kinez"
+                                         },
+                                  'LVL' => {
+                                           'displayName' => 'lata letoneze'
+                                         },
+                                  'INR' => {
+                                           'symbol' => "\x{20b9}",
+                                           'displayName' => 'rupi indiane'
+                                         },
+                                  'FKP' => {
+                                           'displayName' => "stërlina të Ishujve Folkland"
+                                         },
+                                  'NIO' => {
+                                           'displayName' => 'kordoba nikaraguane'
+                                         },
+                                  'PHP' => {
+                                           'symbol' => "\x{20b1}",
+                                           'displayName' => 'peso filipinase'
+                                         },
+                                  'HNL' => {
+                                           'displayName' => 'lempira hondurase'
+                                         },
+                                  'NZD' => {
+                                           'symbol' => 'NZ$',
+                                           'displayName' => "dollarë të Zelandës së Re"
+                                         },
+                                  'HKD' => {
+                                           'symbol' => 'HK$',
+                                           'displayName' => "dollarë të Hong Kongut"
+                                         },
+                                  'BRL' => {
+                                           'symbol' => 'R$',
+                                           'displayName' => "realë brazilian"
+                                         },
+                                  'RSD' => {
+                                           'displayName' => "dinarë serb"
+                                         },
+                                  'SOS' => {
+                                           'displayName' => 'shilinga somaleze'
+                                         },
+                                  'MZN' => {
+                                           'displayName' => "metikalë mozambiku"
+                                         },
+                                  'NOK' => {
+                                           'displayName' => 'krona norvegjeze'
+                                         },
+                                  'GEL' => {
+                                           'displayName' => 'lari gjeorgjiane'
+                                         },
+                                  'ISK' => {
+                                           'displayName' => 'krona islandeze'
+                                         },
+                                  'ILS' => {
+                                           'symbol' => "\x{20aa}",
+                                           'displayName' => "shekelë izrealite"
+                                         },
+                                  'ESP' => {
+                                           'symbol' => "\x{20a7}"
+                                         },
+                                  'HUF' => {
+                                           'displayName' => 'forinta hungareze'
+                                         },
+                                  'UAH' => {
+                                           'symbol' => "\x{20b4}",
+                                           'displayName' => 'rivni ukrainase'
+                                         },
+                                  'RUB' => {
+                                           'displayName' => 'rubla ruse'
+                                         },
+                                  'BMD' => {
+                                           'symbol' => '$',
+                                           'displayName' => "dollarë bermude"
+                                         },
+                                  'IRR' => {
+                                           'displayName' => "rialë iranian"
+                                         },
+                                  'MGA' => {
+                                           'displayName' => "arierë malagas"
+                                         },
+                                  'QAR' => {
+                                           'displayName' => "rialë katari"
+                                         },
+                                  'MVR' => {
+                                           'displayName' => 'rufi maldivi'
+                                         },
+                                  'VND' => {
+                                           'symbol' => "\x{20ab}",
+                                           'displayName' => 'donga vietnameze'
+                                         },
+                                  'MRO' => {
+                                           'displayName' => 'ugija mauritane'
+                                         },
+                                  'NPR' => {
+                                           'displayName' => 'rupi nepaleze'
+                                         },
+                                  'COP' => {
+                                           'symbol' => '$',
+                                           'displayName' => 'peso kolumbiane'
+                                         },
+                                  'TZS' => {
+                                           'displayName' => 'shilinga tanzanie'
+                                         },
+                                  'BIF' => {
+                                           'displayName' => 'franga burundiane'
+                                         },
+                                  'SYP' => {
+                                           'displayName' => 'sterlina siriane'
+                                         },
+                                  'KHR' => {
+                                           'symbol' => "\x{17db}",
+                                           'displayName' => "rialë kamboxhian"
+                                         },
+                                  'BHD' => {
+                                           'displayName' => "dinarë bahreini"
+                                         },
+                                  'HTG' => {
+                                           'displayName' => "gurdë haitian"
+                                         },
+                                  'STD' => {
+                                           'displayName' => "dobra të Sao Tomes dhe Prinsipes"
+                                         },
+                                  'XAF' => {
+                                           'symbol' => 'FCFA',
+                                           'displayName' => 'franga kamerunase'
+                                         },
+                                  'PAB' => {
+                                           'displayName' => 'balboa panameze'
+                                         },
+                                  'BAM' => {
+                                           'displayName' => "marka të Bosnjë-Hercegovinës [të shkëmbyeshme]"
+                                         },
+                                  'LTL' => {
+                                           'displayName' => 'lita lituaneze'
+                                         },
+                                  'TMT' => {
+                                           'displayName' => 'manata turkmene'
+                                         },
+                                  'ETB' => {
+                                           'displayName' => 'bira etiopase'
+                                         },
+                                  'XPF' => {
+                                           'symbol' => 'CFPF',
+                                           'displayName' => "franga franceze të Polinezisë"
+                                         }
+                                }
+              },
+  'locale' => 'sq_XK',
+  'characters' => {
+                    'word-initial' => "\x{2026} {0}",
+                    'standard' => '?',
+                    'word-medial' => "{0} \x{2026} {1}",
+                    'index' => "[A B C Ç D {DH} E Ë F G {GJ} H I J K L {LL} M N {NJ} O P Q R {RR} S {SH} T {TH} U V X {XH} Y Z {ZH}]",
+                    'word-final' => "{0} \x{2026}",
+                    'medial' => "{0}\x{2026}{1}",
+                    'final' => "{0}\x{2026}",
+                    'auxiliary' => '[w]',
+                    'initial' => "\x{2026}{0}",
+                    'punctuation' => '[\\- , ; \\: ! ? . ( ) \\[ \\] \\{ \\}]'
+                  },
+  'calendar' => {
+                  'calendarType' => 'gregorian',
+                  'timeFormat' => {
+                                    'short' => 'HH:mm',
+                                    'pm' => '',
+                                    'am' => '',
+                                    'medium' => 'HH:mm:ss',
+                                    'long' => 'HH:mm:ss z',
+                                    'full' => 'HH:mm:ss zzzz'
+                                  },
+                  'timeZones' => {
+                                   'regionFormat' => 'Ora standarde: {0}',
+                                   'gmtFormat' => 'GMT{0}',
+                                   'hourFormat' => '+HH:mm;-HH:mm',
+                                   'metazone' => '
+				
+					Ora e Ekaterinburgut
+					Ora standarde e Ekaterinburgut
+					Ora verore e Ekaterinburgut
+				
+			',
+                                   'zones' => {
+                                                'America/Bogota' => {
+                                                                    'type' => 'America/Bogota',
+                                                                    'exemplarCity' => "Bogotë"
+                                                                  },
+                                                'America/Whitehorse' => {
+                                                                        'type' => 'America/Whitehorse',
+                                                                        'exemplarCity' => 'Uajt\'hors'
+                                                                      },
+                                                'America/Indiana/Vincennes' => {
+                                                                               'type' => 'America/Indiana/Vincennes',
+                                                                               'exemplarCity' => 'Vincenes, Indiana'
+                                                                             },
+                                                'Africa/Conakry' => {
+                                                                    'type' => 'Africa/Conakry',
+                                                                    'exemplarCity' => 'Konakri'
+                                                                  },
+                                                'Europe/Belgrade' => {
+                                                                     'type' => 'Europe/Belgrade',
+                                                                     'exemplarCity' => 'Beograd'
+                                                                   },
+                                                'America/Nassau' => {
+                                                                    'type' => 'America/Nassau',
+                                                                    'exemplarCity' => 'Nasao'
+                                                                  },
+                                                'Asia/Dhaka' => {
+                                                                'type' => 'Asia/Dhaka',
+                                                                'exemplarCity' => 'Daka'
+                                                              },
+                                                'America/Los_Angeles' => {
+                                                                         'type' => 'America/Los_Angeles',
+                                                                         'exemplarCity' => 'Los Anxhelos'
+                                                                       },
+                                                'Asia/Aqtau' => {
+                                                                'type' => 'Asia/Aqtau',
+                                                                'exemplarCity' => 'Aktau'
+                                                              },
+                                                'Africa/Bujumbura' => {
+                                                                      'type' => 'Africa/Bujumbura',
+                                                                      'exemplarCity' => "Buxhumburë"
+                                                                    },
+                                                'Asia/Baghdad' => {
+                                                                  'type' => 'Asia/Baghdad',
+                                                                  'exemplarCity' => 'Bagdad'
+                                                                },
+                                                'America/Juneau' => {
+                                                                    'type' => 'America/Juneau',
+                                                                    'exemplarCity' => 'Xhunou'
+                                                                  },
+                                                'Asia/Beirut' => {
+                                                                 'type' => 'Asia/Beirut',
+                                                                 'exemplarCity' => 'Bejrut'
+                                                               },
+                                                'Atlantic/Faeroe' => {
+                                                                     'type' => 'Atlantic/Faeroe',
+                                                                     'exemplarCity' => 'Faroe'
+                                                                   },
+                                                'America/St_Kitts' => {
+                                                                      'type' => 'America/St_Kitts',
+                                                                      'exemplarCity' => "Shën Kits"
+                                                                    },
+                                                'Asia/Pyongyang' => {
+                                                                    'type' => 'Asia/Pyongyang',
+                                                                    'exemplarCity' => 'Penian'
+                                                                  },
+                                                'America/St_Johns' => {
+                                                                      'type' => 'America/St_Johns',
+                                                                      'exemplarCity' => "Shën Gjon"
+                                                                    },
+                                                'Australia/Currie' => {
+                                                                      'type' => 'Australia/Currie',
+                                                                      'exemplarCity' => 'Kuri'
+                                                                    },
+                                                'Europe/Jersey' => {
+                                                                   'type' => 'Europe/Jersey',
+                                                                   'exemplarCity' => 'Xhersej'
+                                                                 },
+                                                'America/Hermosillo' => {
+                                                                        'type' => 'America/Hermosillo',
+                                                                        'exemplarCity' => 'Hermosilo'
+                                                                      },
+                                                'Europe/Ljubljana' => {
+                                                                      'type' => 'Europe/Ljubljana',
+                                                                      'exemplarCity' => "Lubjanë"
+                                                                    },
+                                                'Asia/Muscat' => {
+                                                                 'type' => 'Asia/Muscat',
+                                                                 'exemplarCity' => 'Muskat'
+                                                               },
+                                                'America/Grenada' => {
+                                                                     'type' => 'America/Grenada',
+                                                                     'exemplarCity' => "Grenadë"
+                                                                   },
+                                                'America/Indiana/Knox' => {
+                                                                          'type' => 'America/Indiana/Knox',
+                                                                          'exemplarCity' => 'Noks, Indiana'
+                                                                        },
+                                                'Asia/Bahrain' => {
+                                                                  'type' => 'Asia/Bahrain',
+                                                                  'exemplarCity' => 'Bahrein'
+                                                                },
+                                                'Africa/Addis_Ababa' => {
+                                                                        'type' => 'Africa/Addis_Ababa',
+                                                                        'exemplarCity' => "Adis Ababë"
+                                                                      },
+                                                'America/Halifax' => {
+                                                                     'type' => 'America/Halifax',
+                                                                     'exemplarCity' => 'Halifaks'
+                                                                   },
+                                                'Asia/Ulaanbaatar' => {
+                                                                      'type' => 'Asia/Ulaanbaatar',
+                                                                      'exemplarCity' => 'Ulanbatar'
+                                                                    },
+                                                'Asia/Jerusalem' => {
+                                                                    'type' => 'Asia/Jerusalem',
+                                                                    'exemplarCity' => 'Jeruzalem'
+                                                                  },
+                                                'America/Cayman' => {
+                                                                    'type' => 'America/Cayman',
+                                                                    'exemplarCity' => 'Kajman'
+                                                                  },
+                                                'America/Guyana' => {
+                                                                    'type' => 'America/Guyana',
+                                                                    'exemplarCity' => "Gujanë"
+                                                                  },
+                                                'America/Indiana/Vevay' => {
+                                                                           'type' => 'America/Indiana/Vevay',
+                                                                           'exemplarCity' => "Vevëj, Indiana"
+                                                                         },
+                                                'Europe/Chisinau' => {
+                                                                     'type' => 'Europe/Chisinau',
+                                                                     'exemplarCity' => 'Kishineu'
+                                                                   },
+                                                'Asia/Kuwait' => {
+                                                                 'type' => 'Asia/Kuwait',
+                                                                 'exemplarCity' => 'Kuvajt'
+                                                               },
+                                                'Atlantic/Reykjavik' => {
+                                                                        'type' => 'Atlantic/Reykjavik',
+                                                                        'exemplarCity' => 'Rejkjavik'
+                                                                      },
+                                                'Pacific/Wake' => {
+                                                                  'type' => 'Pacific/Wake',
+                                                                  'exemplarCity' => 'Ueik'
+                                                                },
+                                                'Asia/Krasnoyarsk' => {
+                                                                      'type' => 'Asia/Krasnoyarsk',
+                                                                      'exemplarCity' => 'Krasnojarsk'
+                                                                    },
+                                                'Europe/Bucharest' => {
+                                                                      'type' => 'Europe/Bucharest',
+                                                                      'exemplarCity' => 'Bukuresht'
+                                                                    },
+                                                'Africa/Blantyre' => {
+                                                                     'type' => 'Africa/Blantyre',
+                                                                     'exemplarCity' => "Blantirë"
+                                                                   },
+                                                'America/Dawson_Creek' => {
+                                                                          'type' => 'America/Dawson_Creek',
+                                                                          'exemplarCity' => 'Gjiri i Dousonit'
+                                                                        },
+                                                'America/North_Dakota/New_Salem' => {
+                                                                                    'type' => 'America/North_Dakota/New_Salem',
+                                                                                    'exemplarCity' => 'Nju Salem, Dakota e Veriut'
+                                                                                  },
+                                                'Europe/Istanbul' => {
+                                                                     'type' => 'Europe/Istanbul',
+                                                                     'exemplarCity' => 'Stamboll'
+                                                                   },
+                                                'Pacific/Fiji' => {
+                                                                  'type' => 'Pacific/Fiji',
+                                                                  'exemplarCity' => 'Fixhi'
+                                                                },
+                                                'Pacific/Marquesas' => {
+                                                                       'type' => 'Pacific/Marquesas',
+                                                                       'exemplarCity' => 'Markez'
+                                                                     },
+                                                'Australia/Broken_Hill' => {
+                                                                           'type' => 'Australia/Broken_Hill',
+                                                                           'exemplarCity' => "Brokën Hill"
+                                                                         },
+                                                'America/New_York' => {
+                                                                      'type' => 'America/New_York',
+                                                                      'exemplarCity' => 'Nju Jork'
+                                                                    },
+                                                'America/Blanc-Sablon' => {
+                                                                          'type' => 'America/Blanc-Sablon',
+                                                                          'exemplarCity' => 'Blank-Sablon'
+                                                                        },
+                                                'America/Shiprock' => {
+                                                                      'type' => 'America/Shiprock',
+                                                                      'exemplarCity' => 'Shiprok'
+                                                                    },
+                                                'Asia/Shanghai' => {
+                                                                   'type' => 'Asia/Shanghai',
+                                                                   'exemplarCity' => 'Shangai'
+                                                                 },
+                                                'Asia/Calcutta' => {
+                                                                   'type' => 'Asia/Calcutta',
+                                                                   'exemplarCity' => "Kalkutë"
+                                                                 },
+                                                'Indian/Comoro' => {
+                                                                   'type' => 'Indian/Comoro',
+                                                                   'exemplarCity' => 'Komore'
+                                                                 },
+                                                'Europe/Warsaw' => {
+                                                                   'type' => 'Europe/Warsaw',
+                                                                   'exemplarCity' => "Varshavë"
+                                                                 },
+                                                'Europe/Brussels' => {
+                                                                     'type' => 'Europe/Brussels',
+                                                                     'exemplarCity' => 'Bruksel'
+                                                                   },
+                                                'America/Guadeloupe' => {
+                                                                        'type' => 'America/Guadeloupe',
+                                                                        'exemplarCity' => 'Guadelupe'
+                                                                      },
+                                                'America/Havana' => {
+                                                                    'type' => 'America/Havana',
+                                                                    'exemplarCity' => "Havanë"
+                                                                  },
+                                                'Antarctica/Casey' => {
+                                                                      'type' => 'Antarctica/Casey',
+                                                                      'exemplarCity' => 'Kejsi'
+                                                                    },
+                                                'Pacific/Kwajalein' => {
+                                                                       'type' => 'Pacific/Kwajalein',
+                                                                       'exemplarCity' => 'Kuaxhalein'
+                                                                     },
+                                                'Africa/Ouagadougou' => {
+                                                                        'type' => 'Africa/Ouagadougou',
+                                                                        'exemplarCity' => "Uagëdugu"
+                                                                      },
+                                                'Africa/Abidjan' => {
+                                                                    'type' => 'Africa/Abidjan',
+                                                                    'exemplarCity' => 'Abixhan'
+                                                                  },
+                                                'America/Rainy_River' => {
+                                                                         'type' => 'America/Rainy_River',
+                                                                         'exemplarCity' => 'Lumi i Shirave'
+                                                                       },
+                                                'Asia/Makassar' => {
+                                                                   'type' => 'Asia/Makassar',
+                                                                   'exemplarCity' => 'Makasar'
+                                                                 },
+                                                'America/Catamarca' => {
+                                                                       'type' => 'America/Catamarca',
+                                                                       'exemplarCity' => 'Katamarka'
+                                                                     },
+                                                'Pacific/Truk' => {
+                                                                  'type' => 'Pacific/Truk',
+                                                                  'exemplarCity' => "Çuk"
+                                                                },
+                                                'Europe/Isle_of_Man' => {
+                                                                        'type' => 'Europe/Isle_of_Man',
+                                                                        'exemplarCity' => 'Ishulli i Manit'
+                                                                      },
+                                                'America/Yellowknife' => {
+                                                                         'type' => 'America/Yellowknife',
+                                                                         'exemplarCity' => 'Jellounajf'
+                                                                       },
+                                                'Pacific/Majuro' => {
+                                                                    'type' => 'Pacific/Majuro',
+                                                                    'exemplarCity' => 'Mahuro'
+                                                                  },
+                                                'Atlantic/Stanley' => {
+                                                                      'type' => 'Atlantic/Stanley',
+                                                                      'exemplarCity' => 'Stenli'
+                                                                    },
+                                                'America/St_Thomas' => {
+                                                                       'type' => 'America/St_Thomas',
+                                                                       'exemplarCity' => "Shën Tomas"
+                                                                     },
+                                                'America/Jamaica' => {
+                                                                     'type' => 'America/Jamaica',
+                                                                     'exemplarCity' => "Xhamajkë"
+                                                                   },
+                                                'Asia/Anadyr' => {
+                                                                 'type' => 'Asia/Anadyr',
+                                                                 'exemplarCity' => 'Anadir'
+                                                               },
+                                                'America/Cuiaba' => {
+                                                                    'type' => 'America/Cuiaba',
+                                                                    'exemplarCity' => 'Kujaba'
+                                                                  },
+                                                'Asia/Sakhalin' => {
+                                                                   'type' => 'Asia/Sakhalin',
+                                                                   'exemplarCity' => 'Sakalin'
+                                                                 },
+                                                'America/Tijuana' => {
+                                                                     'type' => 'America/Tijuana',
+                                                                     'exemplarCity' => 'Tihuana'
+                                                                   },
+                                                'Africa/Algiers' => {
+                                                                    'type' => 'Africa/Algiers',
+                                                                    'exemplarCity' => 'Algjer'
+                                                                  },
+                                                'Asia/Colombo' => {
+                                                                  'type' => 'Asia/Colombo',
+                                                                  'exemplarCity' => 'Kolombo'
+                                                                },
+                                                'Antarctica/DumontDUrville' => {
+                                                                               'type' => 'Antarctica/DumontDUrville',
+                                                                               'exemplarCity' => "Dumont d\x{2019}Urvillë"
+                                                                             },
+                                                'America/Boise' => {
+                                                                   'type' => 'America/Boise',
+                                                                   'exemplarCity' => "Boizë"
+                                                                 },
+                                                'Indian/Christmas' => {
+                                                                      'type' => 'Indian/Christmas',
+                                                                      'exemplarCity' => 'Krishtlindje'
+                                                                    },
+                                                'America/Dawson' => {
+                                                                    'type' => 'America/Dawson',
+                                                                    'exemplarCity' => 'Douson'
+                                                                  },
+                                                'Pacific/Kiritimati' => {
+                                                                        'type' => 'Pacific/Kiritimati',
+                                                                        'exemplarCity' => 'Kiritimat'
+                                                                      },
+                                                'America/Yakutat' => {
+                                                                     'type' => 'America/Yakutat',
+                                                                     'exemplarCity' => 'Jakutat'
+                                                                   },
+                                                'America/Danmarkshavn' => {
+                                                                          'type' => 'America/Danmarkshavn',
+                                                                          'exemplarCity' => "Denmarkshavën"
+                                                                        },
+                                                'America/Glace_Bay' => {
+                                                                       'type' => 'America/Glace_Bay',
+                                                                       'exemplarCity' => "Gjiri i Ngrirë"
+                                                                     },
+                                                'Africa/Bissau' => {
+                                                                   'type' => 'Africa/Bissau',
+                                                                   'exemplarCity' => 'Bisau'
+                                                                 },
+                                                'Africa/Dar_es_Salaam' => {
+                                                                          'type' => 'Africa/Dar_es_Salaam',
+                                                                          'exemplarCity' => 'Dar es Salam'
+                                                                        },
+                                                'Asia/Amman' => {
+                                                                'type' => 'Asia/Amman',
+                                                                'exemplarCity' => 'Aman'
+                                                              },
+                                                'Africa/El_Aaiun' => {
+                                                                     'type' => 'Africa/El_Aaiun',
+                                                                     'exemplarCity' => 'El Ajun'
+                                                                   },
+                                                'America/Costa_Rica' => {
+                                                                        'type' => 'America/Costa_Rica',
+                                                                        'exemplarCity' => "Kosta Rikë"
+                                                                      },
+                                                'Africa/Tunis' => {
+                                                                  'type' => 'Africa/Tunis',
+                                                                  'exemplarCity' => 'Tuniz'
+                                                                },
+                                                'Asia/Tbilisi' => {
+                                                                  'type' => 'Asia/Tbilisi',
+                                                                  'exemplarCity' => 'Tbilis'
+                                                                },
+                                                'Africa/Asmera' => {
+                                                                   'type' => 'Africa/Asmera',
+                                                                   'exemplarCity' => "Asmarë"
+                                                                 },
+                                                'Pacific/Guadalcanal' => {
+                                                                         'type' => 'Pacific/Guadalcanal',
+                                                                         'exemplarCity' => 'Guadalkanal'
+                                                                       },
+                                                'America/Regina' => {
+                                                                    'type' => 'America/Regina',
+                                                                    'exemplarCity' => 'Rexhina'
+                                                                  },
+                                                'Pacific/Enderbury' => {
+                                                                       'type' => 'Pacific/Enderbury',
+                                                                       'exemplarCity' => 'Enderbur'
+                                                                     },
+                                                'Indian/Cocos' => {
+                                                                  'type' => 'Indian/Cocos',
+                                                                  'exemplarCity' => 'Kokos'
+                                                                },
+                                                'Asia/Saigon' => {
+                                                                 'type' => 'Asia/Saigon',
+                                                                 'exemplarCity' => "Ho Çi Min"
+                                                               },
+                                                'Australia/Perth' => {
+                                                                     'type' => 'Australia/Perth',
+                                                                     'exemplarCity' => "Përth"
+                                                                   },
+                                                'America/Creston' => {
+                                                                     'type' => 'America/Creston',
+                                                                     'exemplarCity' => 'Kreston'
+                                                                   },
+                                                'America/St_Barthelemy' => {
+                                                                           'type' => 'America/St_Barthelemy',
+                                                                           'exemplarCity' => "Shën Bartolemeo"
+                                                                         },
+                                                'America/Argentina/Rio_Gallegos' => {
+                                                                                    'type' => 'America/Argentina/Rio_Gallegos',
+                                                                                    'exemplarCity' => 'Rio Galegos'
+                                                                                  },
+                                                'Europe/Skopje' => {
+                                                                   'type' => 'Europe/Skopje',
+                                                                   'exemplarCity' => 'Shkup'
+                                                                 },
+                                                'Asia/Phnom_Penh' => {
+                                                                     'type' => 'Asia/Phnom_Penh',
+                                                                     'exemplarCity' => 'Pnom Pen'
+                                                                   },
+                                                'Atlantic/Canary' => {
+                                                                     'type' => 'Atlantic/Canary',
+                                                                     'exemplarCity' => 'Kanari'
+                                                                   },
+                                                'America/Kentucky/Monticello' => {
+                                                                                 'type' => 'America/Kentucky/Monticello',
+                                                                                 'exemplarCity' => "Montiçelo, Kentaki"
+                                                                               },
+                                                'America/Swift_Current' => {
+                                                                           'type' => 'America/Swift_Current',
+                                                                           'exemplarCity' => "Rryma e Shpejtë"
+                                                                         },
+                                                'Europe/Vatican' => {
+                                                                    'type' => 'Europe/Vatican',
+                                                                    'exemplarCity' => 'Vatikan'
+                                                                  },
+                                                'Australia/Melbourne' => {
+                                                                         'type' => 'Australia/Melbourne',
+                                                                         'exemplarCity' => 'Melburn'
+                                                                       },
+                                                'America/Monterrey' => {
+                                                                       'type' => 'America/Monterrey',
+                                                                       'exemplarCity' => 'Monterrej'
+                                                                     },
+                                                'America/Menominee' => {
+                                                                       'type' => 'America/Menominee',
+                                                                       'exemplarCity' => 'Menomini'
+                                                                     },
+                                                'America/Cayenne' => {
+                                                                     'type' => 'America/Cayenne',
+                                                                     'exemplarCity' => "Kajenë"
+                                                                   },
+                                                'America/Miquelon' => {
+                                                                      'type' => 'America/Miquelon',
+                                                                      'exemplarCity' => 'Mikuelon'
+                                                                    },
+                                                'America/Iqaluit' => {
+                                                                     'type' => 'America/Iqaluit',
+                                                                     'exemplarCity' => 'Ikaluit'
+                                                                   },
+                                                'Australia/Adelaide' => {
+                                                                        'type' => 'Australia/Adelaide',
+                                                                        'exemplarCity' => 'Adelajde'
+                                                                      },
+                                                'Europe/Moscow' => {
+                                                                   'type' => 'Europe/Moscow',
+                                                                   'exemplarCity' => "Moskë"
+                                                                 },
+                                                'Pacific/Ponape' => {
+                                                                    'type' => 'Pacific/Ponape',
+                                                                    'exemplarCity' => 'Ponapei'
+                                                                  },
+                                                'Europe/Malta' => {
+                                                                  'type' => 'Europe/Malta',
+                                                                  'exemplarCity' => "Maltë"
+                                                                },
+                                                'Asia/Katmandu' => {
+                                                                   'type' => 'Asia/Katmandu',
+                                                                   'exemplarCity' => 'Katmandu'
+                                                                 },
+                                                'Africa/Banjul' => {
+                                                                   'type' => 'Africa/Banjul',
+                                                                   'exemplarCity' => 'Banxhul'
+                                                                 },
+                                                'Africa/Khartoum' => {
+                                                                     'type' => 'Africa/Khartoum',
+                                                                     'exemplarCity' => 'Kartum'
+                                                                   },
+                                                'Africa/Libreville' => {
+                                                                       'type' => 'Africa/Libreville',
+                                                                       'exemplarCity' => "Librevilë"
+                                                                     },
+                                                'America/Argentina/La_Rioja' => {
+                                                                                'type' => 'America/Argentina/La_Rioja',
+                                                                                'exemplarCity' => 'La Rioha'
+                                                                              },
+                                                'Indian/Mayotte' => {
+                                                                    'type' => 'Indian/Mayotte',
+                                                                    'exemplarCity' => "Majotë"
+                                                                  },
+                                                'America/Argentina/Salta' => {
+                                                                             'type' => 'America/Argentina/Salta',
+                                                                             'exemplarCity' => "Saltë"
+                                                                           },
+                                                'Asia/Choibalsan' => {
+                                                                     'type' => 'Asia/Choibalsan',
+                                                                     'exemplarCity' => "Çoibalsan"
+                                                                   },
+                                                'Africa/Djibouti' => {
+                                                                     'type' => 'Africa/Djibouti',
+                                                                     'exemplarCity' => 'Xhibuti'
+                                                                   },
+                                                'America/Argentina/San_Juan' => {
+                                                                                'type' => 'America/Argentina/San_Juan',
+                                                                                'exemplarCity' => 'San Huan'
+                                                                              },
+                                                'America/Thunder_Bay' => {
+                                                                         'type' => 'America/Thunder_Bay',
+                                                                         'exemplarCity' => "Gjiri i Bubullimës"
+                                                                       },
+                                                'Indian/Maldives' => {
+                                                                     'type' => 'Indian/Maldives',
+                                                                     'exemplarCity' => 'Maldiv'
+                                                                   },
+                                                'Australia/Eucla' => {
+                                                                     'type' => 'Australia/Eucla',
+                                                                     'exemplarCity' => 'Eukla'
+                                                                   },
+                                                'America/Martinique' => {
+                                                                        'type' => 'America/Martinique',
+                                                                        'exemplarCity' => "Martinikë"
+                                                                      },
+                                                'Asia/Tehran' => {
+                                                                 'type' => 'Asia/Tehran',
+                                                                 'exemplarCity' => 'Teheran'
+                                                               },
+                                                'America/Chihuahua' => {
+                                                                       'type' => 'America/Chihuahua',
+                                                                       'exemplarCity' => "Çihahua"
+                                                                     },
+                                                'Australia/Sydney' => {
+                                                                      'type' => 'Australia/Sydney',
+                                                                      'exemplarCity' => 'Sidnej'
+                                                                    },
+                                                'America/Moncton' => {
+                                                                     'type' => 'America/Moncton',
+                                                                     'exemplarCity' => 'Monkton'
+                                                                   },
+                                                'America/Goose_Bay' => {
+                                                                       'type' => 'America/Goose_Bay',
+                                                                       'exemplarCity' => "Gjiri i Patës"
+                                                                     },
+                                                'Australia/Lindeman' => {
+                                                                        'type' => 'Australia/Lindeman',
+                                                                        'exemplarCity' => "Lindëmen"
+                                                                      },
+                                                'America/Asuncion' => {
+                                                                      'type' => 'America/Asuncion',
+                                                                      'exemplarCity' => 'Asunsion'
+                                                                    },
+                                                'America/Indiana/Petersburg' => {
+                                                                                'type' => 'America/Indiana/Petersburg',
+                                                                                'exemplarCity' => "Petërsburg, Indiana"
+                                                                              },
+                                                'Atlantic/St_Helena' => {
+                                                                        'type' => 'Atlantic/St_Helena',
+                                                                        'exemplarCity' => "Shën Helenë"
+                                                                      },
+                                                'Africa/Brazzaville' => {
+                                                                        'type' => 'Africa/Brazzaville',
+                                                                        'exemplarCity' => "Brazavillë"
+                                                                      },
+                                                'Antarctica/Macquarie' => {
+                                                                          'type' => 'Antarctica/Macquarie',
+                                                                          'exemplarCity' => 'Mekuari'
+                                                                        },
+                                                'America/Coral_Harbour' => {
+                                                                           'type' => 'America/Coral_Harbour',
+                                                                           'exemplarCity' => 'Atikokan'
+                                                                         },
+                                                'Asia/Yerevan' => {
+                                                                  'type' => 'Asia/Yerevan',
+                                                                  'exemplarCity' => 'Jerevan'
+                                                                },
+                                                'Europe/London' => {
+                                                                   'long' => {
+                                                                             'daylight' => 'Ora verore britanike'
+                                                                           },
+                                                                   'type' => 'Europe/London',
+                                                                   'exemplarCity' => "Londër"
+                                                                 },
+                                                'America/Anguilla' => {
+                                                                      'type' => 'America/Anguilla',
+                                                                      'exemplarCity' => "Anguilë"
+                                                                    },
+                                                'Asia/Aqtobe' => {
+                                                                 'type' => 'Asia/Aqtobe',
+                                                                 'exemplarCity' => 'Aktobe'
+                                                               },
+                                                'Australia/Lord_Howe' => {
+                                                                         'type' => 'Australia/Lord_Howe',
+                                                                         'exemplarCity' => 'Lord Houi'
+                                                                       },
+                                                'Europe/Rome' => {
+                                                                 'type' => 'Europe/Rome',
+                                                                 'exemplarCity' => "Romë"
+                                                               },
+                                                'America/Thule' => {
+                                                                   'type' => 'America/Thule',
+                                                                   'exemplarCity' => 'Dhule'
+                                                                 },
+                                                'Asia/Rangoon' => {
+                                                                  'type' => 'Asia/Rangoon',
+                                                                  'exemplarCity' => 'Rangun'
+                                                                },
+                                                'Asia/Macau' => {
+                                                                'type' => 'Asia/Macau',
+                                                                'exemplarCity' => 'Makao'
+                                                              },
+                                                'America/Cancun' => {
+                                                                    'type' => 'America/Cancun',
+                                                                    'exemplarCity' => 'Kankun'
+                                                                  },
+                                                'America/Louisville' => {
+                                                                        'type' => 'America/Louisville',
+                                                                        'exemplarCity' => "Luizvilë"
+                                                                      },
+                                                'Asia/Singapore' => {
+                                                                    'type' => 'Asia/Singapore',
+                                                                    'exemplarCity' => 'Singapor'
+                                                                  },
+                                                'Europe/Podgorica' => {
+                                                                      'type' => 'Europe/Podgorica',
+                                                                      'exemplarCity' => "Podgoricë"
+                                                                    },
+                                                'Asia/Chongqing' => {
+                                                                    'type' => 'Asia/Chongqing',
+                                                                    'exemplarCity' => "Çongqing"
+                                                                  },
+                                                'America/Maceio' => {
+                                                                    'type' => 'America/Maceio',
+                                                                    'exemplarCity' => 'Makejo'
+                                                                  },
+                                                'America/St_Vincent' => {
+                                                                        'type' => 'America/St_Vincent',
+                                                                        'exemplarCity' => "Shën Vinsent"
+                                                                      },
+                                                'America/North_Dakota/Center' => {
+                                                                                 'type' => 'America/North_Dakota/Center',
+                                                                                 'exemplarCity' => "Qendër, Dakota e Veriut"
+                                                                               },
+                                                'Pacific/Easter' => {
+                                                                    'type' => 'Pacific/Easter',
+                                                                    'exemplarCity' => "Pashkë"
+                                                                  },
+                                                'Africa/Johannesburg' => {
+                                                                         'type' => 'Africa/Johannesburg',
+                                                                         'exemplarCity' => 'Johanesburg'
+                                                                       },
+                                                'Europe/Prague' => {
+                                                                   'type' => 'Europe/Prague',
+                                                                   'exemplarCity' => "Pragë"
+                                                                 },
+                                                'America/Resolute' => {
+                                                                      'type' => 'America/Resolute',
+                                                                      'exemplarCity' => "Rezolutë"
+                                                                    },
+                                                'America/Indiana/Winamac' => {
+                                                                             'type' => 'America/Indiana/Winamac',
+                                                                             'exemplarCity' => 'Uinamak, Indiana'
+                                                                           },
+                                                'Pacific/Chatham' => {
+                                                                     'type' => 'Pacific/Chatham',
+                                                                     'exemplarCity' => "Çatman"
+                                                                   },
+                                                'America/Eirunepe' => {
+                                                                      'type' => 'America/Eirunepe',
+                                                                      'exemplarCity' => 'Ejrunep'
+                                                                    },
+                                                'America/Dominica' => {
+                                                                      'type' => 'America/Dominica',
+                                                                      'exemplarCity' => "Dominikë"
+                                                                    },
+                                                'America/Rankin_Inlet' => {
+                                                                          'type' => 'America/Rankin_Inlet',
+                                                                          'exemplarCity' => 'Gryka Inlet'
+                                                                        },
+                                                'America/Cambridge_Bay' => {
+                                                                           'type' => 'America/Cambridge_Bay',
+                                                                           'exemplarCity' => 'Gjiri i Kembrixhit'
+                                                                         },
+                                                'Atlantic/South_Georgia' => {
+                                                                            'type' => 'Atlantic/South_Georgia',
+                                                                            'exemplarCity' => 'Gjeorgjia e Jugut'
+                                                                          },
+                                                'Pacific/Tarawa' => {
+                                                                    'type' => 'Pacific/Tarawa',
+                                                                    'exemplarCity' => "Taravë"
+                                                                  },
+                                                'America/Araguaina' => {
+                                                                       'type' => 'America/Araguaina',
+                                                                       'exemplarCity' => 'Araguajana'
+                                                                     },
+                                                'Pacific/Pitcairn' => {
+                                                                      'type' => 'Pacific/Pitcairn',
+                                                                      'exemplarCity' => 'Pitkern'
+                                                                    },
+                                                'Asia/Yakutsk' => {
+                                                                  'type' => 'Asia/Yakutsk',
+                                                                  'exemplarCity' => 'Jakutsk'
+                                                                },
+                                                'Atlantic/Cape_Verde' => {
+                                                                         'type' => 'Atlantic/Cape_Verde',
+                                                                         'exemplarCity' => 'Kepi Verde'
+                                                                       },
+                                                'Pacific/Johnston' => {
+                                                                      'type' => 'Pacific/Johnston',
+                                                                      'exemplarCity' => 'Xhonson'
+                                                                    },
+                                                'Africa/Cairo' => {
+                                                                  'type' => 'Africa/Cairo',
+                                                                  'exemplarCity' => 'Kajro'
+                                                                },
+                                                'America/Winnipeg' => {
+                                                                      'type' => 'America/Winnipeg',
+                                                                      'exemplarCity' => 'Uinipeg'
+                                                                    },
+                                                'Africa/Windhoek' => {
+                                                                     'type' => 'Africa/Windhoek',
+                                                                     'exemplarCity' => 'Vint\'huk'
+                                                                   },
+                                                'America/St_Lucia' => {
+                                                                      'type' => 'America/St_Lucia',
+                                                                      'exemplarCity' => "Shën Luçia"
+                                                                    },
+                                                'Africa/Casablanca' => {
+                                                                       'type' => 'Africa/Casablanca',
+                                                                       'exemplarCity' => "Kazablankë"
+                                                                     },
+                                                'Europe/Guernsey' => {
+                                                                     'type' => 'Europe/Guernsey',
+                                                                     'exemplarCity' => 'Guernsej'
+                                                                   },
+                                                'Asia/Vientiane' => {
+                                                                    'type' => 'Asia/Vientiane',
+                                                                    'exemplarCity' => "Vjentjanë"
+                                                                  },
+                                                'America/Argentina/Tucuman' => {
+                                                                               'type' => 'America/Argentina/Tucuman',
+                                                                               'exemplarCity' => 'Tukuman'
+                                                                             },
+                                                'Africa/Nouakchott' => {
+                                                                       'type' => 'Africa/Nouakchott',
+                                                                       'exemplarCity' => 'Nouakot'
+                                                                     },
+                                                'Europe/Gibraltar' => {
+                                                                      'type' => 'Europe/Gibraltar',
+                                                                      'exemplarCity' => 'Gjibraltar'
+                                                                    },
+                                                'Europe/Andorra' => {
+                                                                    'type' => 'Europe/Andorra',
+                                                                    'exemplarCity' => "Andorrë"
+                                                                  },
+                                                'Asia/Nicosia' => {
+                                                                  'type' => 'Asia/Nicosia',
+                                                                  'exemplarCity' => 'Nikozi'
+                                                                },
+                                                'Pacific/Midway' => {
+                                                                    'type' => 'Pacific/Midway',
+                                                                    'exemplarCity' => 'Miduej'
+                                                                  },
+                                                'Asia/Riyadh' => {
+                                                                 'type' => 'Asia/Riyadh',
+                                                                 'exemplarCity' => 'Riad'
+                                                               },
+                                                'Europe/Athens' => {
+                                                                   'type' => 'Europe/Athens',
+                                                                   'exemplarCity' => "Athinë"
+                                                                 },
+                                                'America/Jujuy' => {
+                                                                   'type' => 'America/Jujuy',
+                                                                   'exemplarCity' => 'Huhui'
+                                                                 },
+                                                'Asia/Qyzylorda' => {
+                                                                    'type' => 'Asia/Qyzylorda',
+                                                                    'exemplarCity' => 'Kizilorda'
+                                                                  },
+                                                'Asia/Khandyga' => {
+                                                                   'type' => 'Asia/Khandyga',
+                                                                   'exemplarCity' => "Kandigë"
+                                                                 },
+                                                'Asia/Tokyo' => {
+                                                                'type' => 'Asia/Tokyo',
+                                                                'exemplarCity' => 'Tokio'
+                                                              },
+                                                'Asia/Thimphu' => {
+                                                                  'type' => 'Asia/Thimphu',
+                                                                  'exemplarCity' => 'Thimpu'
+                                                                },
+                                                'Asia/Jayapura' => {
+                                                                   'type' => 'Asia/Jayapura',
+                                                                   'exemplarCity' => "Xhajapurë"
+                                                                 },
+                                                'Antarctica/Syowa' => {
+                                                                      'type' => 'Antarctica/Syowa',
+                                                                      'exemplarCity' => 'Sjoua'
+                                                                    },
+                                                'America/Port-au-Prince' => {
+                                                                            'type' => 'America/Port-au-Prince',
+                                                                            'exemplarCity' => 'Port-o-Prins'
+                                                                          },
+                                                'Asia/Damascus' => {
+                                                                   'type' => 'Asia/Damascus',
+                                                                   'exemplarCity' => 'Damask'
+                                                                 },
+                                                'America/Indiana/Marengo' => {
+                                                                             'type' => 'America/Indiana/Marengo',
+                                                                             'exemplarCity' => 'Marengo, Indiana'
+                                                                           },
+                                                'Asia/Qatar' => {
+                                                                'type' => 'Asia/Qatar',
+                                                                'exemplarCity' => 'Katar'
+                                                              },
+                                                'Europe/Sofia' => {
+                                                                  'type' => 'Europe/Sofia',
+                                                                  'exemplarCity' => 'Sofje'
+                                                                },
+                                                'America/Mexico_City' => {
+                                                                         'type' => 'America/Mexico_City',
+                                                                         'exemplarCity' => "Qyteti i Meksikës"
+                                                                       },
+                                                'Atlantic/Azores' => {
+                                                                     'type' => 'Atlantic/Azores',
+                                                                     'exemplarCity' => 'Azor'
+                                                                   },
+                                                'America/Godthab' => {
+                                                                     'type' => 'America/Godthab',
+                                                                     'exemplarCity' => 'Njuk'
+                                                                   },
+                                                'Antarctica/Davis' => {
+                                                                      'type' => 'Antarctica/Davis',
+                                                                      'exemplarCity' => 'Dejvis'
+                                                                    },
+                                                'America/Scoresbysund' => {
+                                                                          'type' => 'America/Scoresbysund',
+                                                                          'exemplarCity' => 'Itokorturmit'
+                                                                        },
+                                                'Australia/Brisbane' => {
+                                                                        'type' => 'Australia/Brisbane',
+                                                                        'exemplarCity' => 'Brisbejn'
+                                                                      },
+                                                'Indian/Chagos' => {
+                                                                   'type' => 'Indian/Chagos',
+                                                                   'exemplarCity' => "Çagos"
+                                                                 },
+                                                'America/Vancouver' => {
+                                                                       'type' => 'America/Vancouver',
+                                                                       'exemplarCity' => 'Vankuver'
+                                                                     },
+                                                'Asia/Yekaterinburg' => {
+                                                                        'type' => 'Asia/Yekaterinburg',
+                                                                        'exemplarCity' => 'Ekaterinburg'
+                                                                      },
+                                                'Pacific/Port_Moresby' => {
+                                                                          'type' => 'Pacific/Port_Moresby',
+                                                                          'exemplarCity' => 'Port Moresbi'
+                                                                        },
+                                                'America/Phoenix' => {
+                                                                     'type' => 'America/Phoenix',
+                                                                     'exemplarCity' => 'Feniks'
+                                                                   },
+                                                'Europe/Copenhagen' => {
+                                                                       'type' => 'Europe/Copenhagen',
+                                                                       'exemplarCity' => 'Kopenhagen'
+                                                                     },
+                                                'Antarctica/McMurdo' => {
+                                                                        'type' => 'Antarctica/McMurdo',
+                                                                        'exemplarCity' => 'Mekmurdo'
+                                                                      },
+                                                'Asia/Almaty' => {
+                                                                 'type' => 'Asia/Almaty',
+                                                                 'exemplarCity' => 'Almati'
+                                                               },
+                                                'America/Cordoba' => {
+                                                                     'type' => 'America/Cordoba',
+                                                                     'exemplarCity' => 'Kordoba'
+                                                                   },
+                                                'America/Caracas' => {
+                                                                     'type' => 'America/Caracas',
+                                                                     'exemplarCity' => 'Karakas'
+                                                                   },
+                                                'America/Curacao' => {
+                                                                     'type' => 'America/Curacao',
+                                                                     'exemplarCity' => "Kuraçao"
+                                                                   },
+                                                'America/Lower_Princes' => {
+                                                                           'type' => 'America/Lower_Princes',
+                                                                           'exemplarCity' => "Louer Prinsis Kuortër"
+                                                                         },
+                                                'America/Tegucigalpa' => {
+                                                                         'type' => 'America/Tegucigalpa',
+                                                                         'exemplarCity' => 'Tegusigalpa'
+                                                                       },
+                                                'Africa/Juba' => {
+                                                                 'type' => 'Africa/Juba',
+                                                                 'exemplarCity' => 'Xhuba'
+                                                               },
+                                                'Pacific/Wallis' => {
+                                                                    'type' => 'Pacific/Wallis',
+                                                                    'exemplarCity' => 'Uollis'
+                                                                  },
+                                                'Africa/Niamey' => {
+                                                                   'type' => 'Africa/Niamey',
+                                                                   'exemplarCity' => 'Niamej'
+                                                                 },
+                                                'Europe/Tirane' => {
+                                                                   'type' => 'Europe/Tirane',
+                                                                   'exemplarCity' => "Tiranë"
+                                                                 },
+                                                'America/Ojinaga' => {
+                                                                     'type' => 'America/Ojinaga',
+                                                                     'exemplarCity' => 'Ohinaga'
+                                                                   },
+                                                'America/Rio_Branco' => {
+                                                                        'type' => 'America/Rio_Branco',
+                                                                        'exemplarCity' => 'Rio Branko'
+                                                                      },
+                                                'America/Guatemala' => {
+                                                                       'type' => 'America/Guatemala',
+                                                                       'exemplarCity' => "Guatemalë"
+                                                                     },
+                                                'Africa/Ceuta' => {
+                                                                  'type' => 'Africa/Ceuta',
+                                                                  'exemplarCity' => 'Theuta'
+                                                                },
+                                                'America/Santa_Isabel' => {
+                                                                          'type' => 'America/Santa_Isabel',
+                                                                          'exemplarCity' => 'Santa Izabela'
+                                                                        },
+                                                'America/Noronha' => {
+                                                                     'type' => 'America/Noronha',
+                                                                     'exemplarCity' => 'Noronja'
+                                                                   },
+                                                'America/Campo_Grande' => {
+                                                                          'type' => 'America/Campo_Grande',
+                                                                          'exemplarCity' => 'Kampo Grande'
+                                                                        },
+                                                'Europe/Lisbon' => {
+                                                                   'type' => 'Europe/Lisbon',
+                                                                   'exemplarCity' => "Lisbonë"
+                                                                 },
+                                                'Asia/Kamchatka' => {
+                                                                    'type' => 'Asia/Kamchatka',
+                                                                    'exemplarCity' => "Kamçatkë"
+                                                                  },
+                                                'America/Lima' => {
+                                                                  'type' => 'America/Lima',
+                                                                  'exemplarCity' => "Limë"
+                                                                },
+                                                'Australia/Darwin' => {
+                                                                      'type' => 'Australia/Darwin',
+                                                                      'exemplarCity' => 'Darvin'
+                                                                    },
+                                                'Asia/Seoul' => {
+                                                                'type' => 'Asia/Seoul',
+                                                                'exemplarCity' => 'Seul'
+                                                              },
+                                                'Europe/Luxembourg' => {
+                                                                       'type' => 'Europe/Luxembourg',
+                                                                       'exemplarCity' => 'Luksemburg'
+                                                                     },
+                                                'Antarctica/South_Pole' => {
+                                                                           'type' => 'Antarctica/South_Pole',
+                                                                           'exemplarCity' => 'Poli i Jugut'
+                                                                         },
+                                                'Antarctica/Mawson' => {
+                                                                       'type' => 'Antarctica/Mawson',
+                                                                       'exemplarCity' => 'Mauson'
+                                                                     },
+                                                'Europe/Monaco' => {
+                                                                   'type' => 'Europe/Monaco',
+                                                                   'exemplarCity' => 'Monako'
+                                                                 },
+                                                'Etc/Unknown' => {
+                                                                 'type' => 'Etc/Unknown',
+                                                                 'exemplarCity' => 'Qytet i panjohur'
+                                                               },
+                                                'Europe/Bratislava' => {
+                                                                       'type' => 'Europe/Bratislava',
+                                                                       'exemplarCity' => "Bratisllavë"
+                                                                     },
+                                                'Asia/Jakarta' => {
+                                                                  'type' => 'Asia/Jakarta',
+                                                                  'exemplarCity' => "Xhakartë"
+                                                                },
+                                                'Africa/Ndjamena' => {
+                                                                     'type' => 'Africa/Ndjamena',
+                                                                     'exemplarCity' => "Nxhamenë"
+                                                                   },
+                                                'America/Guayaquil' => {
+                                                                       'type' => 'America/Guayaquil',
+                                                                       'exemplarCity' => 'Guajakuil'
+                                                                     },
+                                                'America/Chicago' => {
+                                                                     'type' => 'America/Chicago',
+                                                                     'exemplarCity' => "Çikago"
+                                                                   },
+                                                'America/Indiana/Tell_City' => {
+                                                                               'type' => 'America/Indiana/Tell_City',
+                                                                               'exemplarCity' => 'Tell Siti, Indiana'
+                                                                             },
+                                                'Europe/Zaporozhye' => {
+                                                                       'type' => 'Europe/Zaporozhye',
+                                                                       'exemplarCity' => 'Zaporozhje'
+                                                                     },
+                                                'Pacific/Auckland' => {
+                                                                      'type' => 'Pacific/Auckland',
+                                                                      'exemplarCity' => 'Okland'
+                                                                    },
+                                                'Europe/Vienna' => {
+                                                                   'type' => 'Europe/Vienna',
+                                                                   'exemplarCity' => "Vjenë"
+                                                                 },
+                                                'Arctic/Longyearbyen' => {
+                                                                         'type' => 'Arctic/Longyearbyen',
+                                                                         'exemplarCity' => "Long'jëbjen"
+                                                                       },
+                                                'America/Argentina/Ushuaia' => {
+                                                                               'type' => 'America/Argentina/Ushuaia',
+                                                                               'exemplarCity' => 'Ushuaja'
+                                                                             },
+                                                'Asia/Kuching' => {
+                                                                  'type' => 'Asia/Kuching',
+                                                                  'exemplarCity' => "Kuçing"
+                                                                },
+                                                'Asia/Karachi' => {
+                                                                  'type' => 'Asia/Karachi',
+                                                                  'exemplarCity' => "Karaçi"
+                                                                },
+                                                'Africa/Accra' => {
+                                                                  'type' => 'Africa/Accra',
+                                                                  'exemplarCity' => 'Akra'
+                                                                },
+                                                'America/Port_of_Spain' => {
+                                                                           'type' => 'America/Port_of_Spain',
+                                                                           'exemplarCity' => "Porti i Spanjës"
+                                                                         },
+                                                'America/North_Dakota/Beulah' => {
+                                                                                 'type' => 'America/North_Dakota/Beulah',
+                                                                                 'exemplarCity' => 'Beula, Dakota e Veriut'
+                                                                               },
+                                                'America/Anchorage' => {
+                                                                       'type' => 'America/Anchorage',
+                                                                       'exemplarCity' => 'Ankorejxh'
+                                                                     },
+                                                'Asia/Taipei' => {
+                                                                 'type' => 'Asia/Taipei',
+                                                                 'exemplarCity' => 'Tajpej'
+                                                               },
+                                                'Europe/Dublin' => {
+                                                                   'long' => {
+                                                                             'daylight' => "Ora verore e Irlandës"
+                                                                           },
+                                                                   'type' => 'Europe/Dublin'
+                                                                 },
+                                                'Atlantic/Bermuda' => {
+                                                                      'type' => 'Atlantic/Bermuda',
+                                                                      'exemplarCity' => "Bermudë"
+                                                                    },
+                                                'Africa/Freetown' => {
+                                                                     'type' => 'Africa/Freetown',
+                                                                     'exemplarCity' => 'Fritaun'
+                                                                   },
+                                                'Pacific/Kosrae' => {
+                                                                    'type' => 'Pacific/Kosrae',
+                                                                    'exemplarCity' => 'Kosre'
+                                                                  },
+                                                'Europe/Tallinn' => {
+                                                                    'type' => 'Europe/Tallinn',
+                                                                    'exemplarCity' => 'Talin'
+                                                                  },
+                                                'America/Montserrat' => {
+                                                                        'type' => 'America/Montserrat',
+                                                                        'exemplarCity' => 'Monteserat'
+                                                                      },
+                                                'Europe/Zurich' => {
+                                                                   'type' => 'Europe/Zurich',
+                                                                   'exemplarCity' => 'Cyrih'
+                                                                 },
+                                                'America/Tortola' => {
+                                                                     'type' => 'America/Tortola',
+                                                                     'exemplarCity' => "Tortolë"
+                                                                   },
+                                                'Europe/Sarajevo' => {
+                                                                     'type' => 'Europe/Sarajevo',
+                                                                     'exemplarCity' => "Sarajevë"
+                                                                   },
+                                                'America/Puerto_Rico' => {
+                                                                         'type' => 'America/Puerto_Rico',
+                                                                         'exemplarCity' => 'Porto Riko'
+                                                                       },
+                                                'Europe/Stockholm' => {
+                                                                      'type' => 'Europe/Stockholm',
+                                                                      'exemplarCity' => 'Stokholm'
+                                                                    }
+                                              },
+                                   'fallbackFormat' => '{1} ({0})',
+                                   'gmtZeroFormat' => 'GMT'
+                                 },
+                  'eras' => {
+                              'eraNames' => {
+                                            'alias' => {
+                                                       '' => ''
+                                                     },
+                                            'era' => {
+                                                     '1' => "erës sonë",
+                                                     '0' => "para erës sonë"
+                                                   }
+                                          },
+                              'eraNarrow' => {
+                                             'alias' => {
+                                                        '' => ''
+                                                      },
+                                             'era' => {
+                                                      '1' => 'e.s.',
+                                                      '0' => 'p.e.s.'
+                                                    }
+                                           },
+                              'eraAbbr' => {
+                                           'era' => {
+                                                    '1' => 'e.s.',
+                                                    '0' => 'p.e.s'
+                                                  }
+                                         }
+                            },
+                  'days' => {
+                              'format' => {
+                                          'short' => {
+                                                     '' => '',
+                                                     'fri' => 'Pre',
+                                                     'wed' => "Mër",
+                                                     'sun' => 'Die',
+                                                     'tue' => 'Mar',
+                                                     'mon' => "Hën",
+                                                     'sat' => 'Sht',
+                                                     'thu' => 'Enj'
+                                                   },
+                                          'abbreviated' => {
+                                                           '' => '',
+                                                           'fri' => 'Pre',
+                                                           'wed' => "Mër",
+                                                           'sun' => 'Die',
+                                                           'tue' => 'Mar',
+                                                           'mon' => "Hën",
+                                                           'sat' => 'Sht',
+                                                           'thu' => 'Enj'
+                                                         },
+                                          'narrow' => {
+                                                      '' => '',
+                                                      'fri' => 'P',
+                                                      'wed' => 'M',
+                                                      'sun' => 'D',
+                                                      'tue' => 'M',
+                                                      'mon' => 'H',
+                                                      'sat' => 'S',
+                                                      'thu' => 'E'
+                                                    },
+                                          'wide' => {
+                                                    'fri' => 'e premte',
+                                                    'tue' => "e martë",
+                                                    'sun' => 'e diel',
+                                                    'sat' => "e shtunë",
+                                                    'mon' => "e hënë",
+                                                    'wed' => "e mërkurë",
+                                                    'thu' => 'e enjte'
+                                                  }
+                                        },
+                              'stand-alone' => {
+                                               'short' => {
+                                                          '' => '',
+                                                          'fri' => 'Pre',
+                                                          'wed' => "Mër",
+                                                          'sun' => 'Die',
+                                                          'tue' => 'Mar',
+                                                          'mon' => "Hën",
+                                                          'sat' => 'Sht',
+                                                          'thu' => 'Enj'
+                                                        },
+                                               'abbreviated' => {
+                                                                '' => '',
+                                                                'fri' => 'Pre',
+                                                                'wed' => "Mër",
+                                                                'sun' => 'Die',
+                                                                'tue' => 'Mar',
+                                                                'mon' => "Hën",
+                                                                'sat' => 'Sht',
+                                                                'thu' => 'Enj'
+                                                              },
+                                               'narrow' => {
+                                                           'fri' => 'P',
+                                                           'tue' => 'M',
+                                                           'sun' => 'D',
+                                                           'sat' => 'S',
+                                                           'mon' => 'H',
+                                                           'wed' => 'M',
+                                                           'thu' => 'E'
+                                                         },
+                                               'wide' => {
+                                                         '' => '',
+                                                         'fri' => 'e premte',
+                                                         'wed' => "e mërkurë",
+                                                         'sun' => 'e diel',
+                                                         'tue' => "e martë",
+                                                         'mon' => "e hënë",
+                                                         'sat' => "e shtunë",
+                                                         'thu' => 'e enjte'
+                                                       }
+                                             }
+                            },
+                  'months' => {
+                                'format' => {
+                                            'abbreviated' => {
+                                                             '' => '',
+                                                             '6' => 'Qer',
+                                                             '11' => "Nën",
+                                                             '3' => 'Mar',
+                                                             '7' => 'Kor',
+                                                             '9' => 'Sht',
+                                                             '12' => 'Dhj',
+                                                             '2' => 'Shk',
+                                                             '8' => 'Gsh',
+                                                             '1' => 'Jan',
+                                                             '4' => 'Pri',
+                                                             '10' => 'Tet',
+                                                             '5' => 'Maj'
+                                                           },
+                                            'narrow' => {
+                                                        '' => '',
+                                                        '6' => 'Q',
+                                                        '11' => 'N',
+                                                        '3' => 'M',
+                                                        '7' => 'K',
+                                                        '9' => 'S',
+                                                        '12' => 'D',
+                                                        '2' => 'S',
+                                                        '8' => 'G',
+                                                        '1' => 'J',
+                                                        '4' => 'P',
+                                                        '10' => 'T',
+                                                        '5' => 'M'
+                                                      },
+                                            'wide' => {
+                                                      '6' => 'qershor',
+                                                      '11' => "nëntor",
+                                                      '3' => 'mars',
+                                                      '7' => 'korrik',
+                                                      '9' => 'shtator',
+                                                      '12' => 'dhjetor',
+                                                      '2' => 'shkurt',
+                                                      '8' => 'gusht',
+                                                      '1' => 'janar',
+                                                      '4' => 'prill',
+                                                      '10' => 'tetor',
+                                                      '5' => 'maj'
+                                                    }
+                                          },
+                                'stand-alone' => {
+                                                 'abbreviated' => {
+                                                                  '' => '',
+                                                                  '6' => 'Qer',
+                                                                  '11' => "Nën",
+                                                                  '3' => 'Mar',
+                                                                  '7' => 'Kor',
+                                                                  '9' => 'Sht',
+                                                                  '12' => 'Dhj',
+                                                                  '2' => 'Shk',
+                                                                  '8' => 'Gsh',
+                                                                  '1' => 'Jan',
+                                                                  '4' => 'Pri',
+                                                                  '10' => 'Tet',
+                                                                  '5' => 'Maj'
+                                                                },
+                                                 'narrow' => {
+                                                             '6' => 'Q',
+                                                             '11' => 'N',
+                                                             '3' => 'M',
+                                                             '7' => 'K',
+                                                             '9' => 'S',
+                                                             '12' => 'D',
+                                                             '2' => 'S',
+                                                             '8' => 'G',
+                                                             '1' => 'J',
+                                                             '4' => 'P',
+                                                             '10' => 'T',
+                                                             '5' => 'M'
+                                                           },
+                                                 'wide' => {
+                                                           '' => '',
+                                                           '6' => 'qershor',
+                                                           '11' => "nëntor",
+                                                           '3' => 'mars',
+                                                           '7' => 'korrik',
+                                                           '9' => 'shtator',
+                                                           '12' => 'dhjetor',
+                                                           '2' => 'shkurt',
+                                                           '8' => 'gusht',
+                                                           '1' => 'janar',
+                                                           '4' => 'prill',
+                                                           '10' => 'tetor',
+                                                           '5' => 'maj'
+                                                         }
+                                               }
+                              },
+                  'dateFormat' => {
+                                    'short' => 'dd/MM/yy',
+                                    'medium' => 'dd/MM/y',
+                                    'long' => 'dd MMMM y',
+                                    'full' => 'EEEE, dd MMMM y'
+                                  }
+                },
+  'displayNames' => {
+                      'territories' => {
+                                         'DJ' => 'Xhibut',
+                                         'JM' => "Xhamajkë",
+                                         '030' => 'Azia Lindore',
+                                         'AT' => 'Austri',
+                                         'SZ' => "Svazilandë",
+                                         'YT' => "Majotë",
+                                         'BN' => 'Brunej',
+                                         'ZM' => 'Zambi',
+                                         'PR' => 'Porto Riko',
+                                         'SH' => "Shën Helena",
+                                         'MA' => 'Marok',
+                                         'SV' => 'El Salvador',
+                                         'MT' => "Maltë",
+                                         'MP' => "Ishujt e Marianës Veriore",
+                                         'UZ' => 'Uzbekistan',
+                                         'PW' => 'Palau',
+                                         'TK' => 'Tokelau',
+                                         'LR' => 'Liberi',
+                                         'TN' => 'Tunizi',
+                                         'EE' => 'Estoni',
+                                         'CK' => 'Ishujt Kuk',
+                                         'BY' => 'Bjellorusi',
+                                         'NO' => 'Norvegji',
+                                         'KR' => 'Koreja e Jugut',
+                                         'IC' => 'Ishujt Kanarie',
+                                         'BF' => 'Burkina Faso',
+                                         'AM' => 'Armeni',
+                                         'SR' => 'Surinami',
+                                         'MG' => 'Madagaskar',
+                                         'BT' => 'Butan',
+                                         '009' => 'Oqeani',
+                                         'CF' => 'Republika Afrikano-Qendrore',
+                                         '014' => 'Afrika Lindore',
+                                         'BA' => "Bosnjë e Hercegovinë",
+                                         'AE' => 'Emiratet e Bashkuara Arabe',
+                                         'TH' => "Tajlandë",
+                                         'EA' => 'Theuta e Melila',
+                                         '002' => "Afrikë",
+                                         '057' => 'Rajoni Mikronezian',
+                                         'CC' => 'Ishujt Kokos',
+                                         'NC' => 'Kaledonia e Re',
+                                         'EU' => 'Bashkimi Europian',
+                                         'TO' => 'Tonga',
+                                         'SE' => 'Suedi',
+                                         'AZ' => 'Azerbajxhan',
+                                         'AF' => 'Afganistan',
+                                         'NG' => 'Nigeri',
+                                         'KE' => 'Kenia',
+                                         'BJ' => 'Benin',
+                                         'XK' => "Kosovë",
+                                         'OM' => 'Oman',
+                                         '145' => "Azia Perëndimore",
+                                         'LK' => "Sri Lankë",
+                                         'ID' => 'Indonezi',
+                                         'FM' => 'Mikronezi',
+                                         'GM' => 'Gambi',
+                                         'LV' => 'Letoni',
+                                         'RU' => 'Rusi',
+                                         '154' => 'Europa Veriore',
+                                         '034' => 'Azia Jugore',
+                                         'FI' => "Finlandë",
+                                         'LU' => 'Luksemburg',
+                                         'VE' => "Venezuelë",
+                                         '054' => 'Melanezia',
+                                         'VI' => "Ishujt e Virgjër Amerikanë",
+                                         'TV' => 'Tuvalu',
+                                         'SN' => 'Senegali',
+                                         'MX' => "Meksikë",
+                                         'IL' => 'Izrael',
+                                         'GG' => 'Guernsej',
+                                         'HU' => 'Hungari',
+                                         'DO' => 'Republika Dominikane',
+                                         'BQ' => 'Karaibet Holandeze',
+                                         'KH' => 'Kamboxhia',
+                                         'TG' => 'Togo',
+                                         'BB' => 'Barbados',
+                                         'JE' => 'Xhersej',
+                                         'DK' => "Danimarkë",
+                                         'PA' => 'Panama',
+                                         'QA' => 'Katar',
+                                         'CV' => "Kepi i Gjelbër",
+                                         'TA' => 'Tristan da Kuna',
+                                         'GD' => "Grenadë",
+                                         'MO' => 'Makao',
+                                         'MF' => "Shën Martin",
+                                         'HR' => 'Kroaci',
+                                         'CZ' => "Republika Çeke",
+                                         'BL' => "Shën Bartolemeo",
+                                         'ST' => 'Sao Tome e Prinsipe',
+                                         'AU' => 'Australi',
+                                         'IR' => 'Iran',
+                                         '003' => 'Amerika e Veriut',
+                                         'CG' => 'Kongo (Republika)',
+                                         'BI' => 'Burund',
+                                         'GW' => 'Guine-Bisau',
+                                         'MK' => 'Maqedoni (IRJM)',
+                                         'GR' => 'Greqi',
+                                         '021' => 'Amerika Veriore',
+                                         'AG' => 'Antigua e Barbuda',
+                                         'AI' => "Anguilë",
+                                         'UA' => "Ukrainë",
+                                         'EH' => "Saharaja Perëndimore",
+                                         'KN' => "Shën Kits e Nevis",
+                                         'SC' => 'Sishel',
+                                         'NL' => "Holandë",
+                                         'MS' => 'Ishulli i Montseratit',
+                                         'HK' => 'Hong Kong',
+                                         'EC' => 'Ekuador',
+                                         'MY' => 'Malajzi',
+                                         '013' => 'Amerika Qendrore',
+                                         'CR' => 'Kosta Rika',
+                                         'VA' => 'Vatikan',
+                                         'IO' => 'Territori Britanik i Oqeanit Indian',
+                                         'SD' => 'Sudan',
+                                         'RS' => 'Serbi',
+                                         'CN' => "Kinë",
+                                         'UY' => 'Uruguai',
+                                         'PY' => 'Paraguai',
+                                         '053' => 'Australazia',
+                                         'MU' => 'Mauritius',
+                                         'LI' => "Lihtënshtajn",
+                                         'CH' => "Zvicër",
+                                         'KG' => 'Kirgistan',
+                                         'GH' => "Ganë",
+                                         'NU' => 'Niue',
+                                         'US' => 'SHBA',
+                                         'PE' => 'Peru',
+                                         'SL' => 'Siera Leone',
+                                         '001' => "Botë",
+                                         'FJ' => 'Fixhi',
+                                         '143' => 'Azia Qendrore',
+                                         'ER' => 'Eritre',
+                                         'IQ' => 'Irak',
+                                         'AS' => 'Samoa Amerikane',
+                                         'TZ' => 'Tanzani',
+                                         'LY' => 'Libi',
+                                         'GT' => "Guatemalë",
+                                         'BM' => "Bermudë",
+                                         'BV' => 'Ishujt Bove',
+                                         'LT' => 'Lituani',
+                                         '017' => 'Afrika e Mesme',
+                                         'SG' => 'Singapor',
+                                         'PM' => "Shën Peir dhe Mikuelon",
+                                         'TT' => 'Trinidad e Tobago',
+                                         'SY' => 'Siri',
+                                         'SK' => 'Sllovaki',
+                                         '011' => "Afrika Perëndimore",
+                                         'AC' => 'Ishulli Asenshion',
+                                         'GL' => "Grenlandë",
+                                         'PG' => 'Papua Guineja e Re',
+                                         'KI' => 'Qiribati',
+                                         'CD' => 'Kongo (RDK)',
+                                         'AO' => "Angolë",
+                                         'BW' => "Botsvanë",
+                                         'ZW' => 'Zimbabve',
+                                         'VC' => "Shën Vinsent dhe Grenadinet",
+                                         'JP' => 'Japoni',
+                                         'NA' => 'Namibi',
+                                         'TJ' => 'Taxhikistan',
+                                         'LC' => "Shën Luçia",
+                                         'VU' => 'Vanuatu',
+                                         'MN' => 'Mongoli',
+                                         'IT' => 'Itali',
+                                         'RE' => 'Reunion',
+                                         'WS' => 'Samoa',
+                                         '151' => 'Europa Lindore',
+                                         '015' => 'Afrika Veriore',
+                                         'CW' => "Kuraçao",
+                                         'EG' => 'Egjipt',
+                                         'FR' => "Francë",
+                                         'RW' => "Ruandë",
+                                         'UM' => "Ishujt periferikë të SHBA-së",
+                                         'BE' => "Belgjikë",
+                                         'LS' => 'Lesoto',
+                                         'SA' => 'Arabi Saudite',
+                                         'ZA' => 'Afrika e Jugut',
+                                         'DG' => 'Diego Garsia',
+                                         'PT' => 'Portugali',
+                                         'CA' => 'Kanada',
+                                         'CM' => 'Kamerun',
+                                         'NP' => 'Nepal',
+                                         'PL' => 'Poloni',
+                                         'TM' => 'Turkmenistan',
+                                         'GA' => 'Gabon',
+                                         'KY' => 'Ishujt Kajman',
+                                         'LA' => 'Laos',
+                                         'PH' => 'Filipine',
+                                         'NI' => 'Nikaragua',
+                                         'GU' => 'Guam',
+                                         'TF' => 'Territoret Australiane Franceze',
+                                         'KZ' => 'Kazakistan',
+                                         '029' => 'Karaibe',
+                                         'SJ' => 'Svalbard e Zhan Majen',
+                                         'MM' => 'Mianmar (Burma)',
+                                         'NR' => 'Nauru',
+                                         'DM' => "Dominikë",
+                                         'NE' => 'Niger',
+                                         'AD' => "Andorrë",
+                                         'MR' => 'Mauritani',
+                                         '039' => 'Europa Jugore',
+                                         'GS' => "Xhorxha Jugore dhe Ishujt Senduiç të Jugut",
+                                         'ME' => 'Mali i Zi',
+                                         'AX' => 'Ishujt Aland',
+                                         'VN' => 'Vietnam',
+                                         'VG' => "Ishujt e Virgjër Britanikë",
+                                         'YE' => 'Jemen',
+                                         'CI' => "Bregu i Fildishtë",
+                                         'DZ' => 'Algjeri',
+                                         'GE' => 'Gjeorgji',
+                                         '005' => 'Amerika e Jugut',
+                                         'CX' => 'Ishulli i Krishtlindjes',
+                                         'LB' => 'Liban',
+                                         '018' => 'Afrika Jugore',
+                                         'FK' => 'Ishujt Folkland (Ishujt Malvine)',
+                                         'DE' => 'Gjermani',
+                                         'MV' => 'Maldive',
+                                         'PN' => 'Ishujt Pitkern',
+                                         'BH' => 'Bahrein',
+                                         'GI' => 'Gjibraltar',
+                                         'WF' => 'Uollis e Futina',
+                                         'RO' => 'Rumani',
+                                         'AR' => "Argjentinë",
+                                         'GP' => 'Guadalupe',
+                                         'IN' => 'Indi',
+                                         'AW' => "Arubë",
+                                         'FO' => 'Ishujt Faroe',
+                                         'BR' => 'Brazil',
+                                         'HN' => 'Honduras',
+                                         'MC' => 'Monako',
+                                         'SB' => 'Ishujt Solomon',
+                                         'NZ' => 'Zelanda e Re',
+                                         'PS' => "Palestinë",
+                                         'UG' => "Ugandë",
+                                         'SX' => "Shën Martin (Sint Maarten-pjesa e Mbretërisë së Holandës)",
+                                         'GB' => "Mbretëria e Bashkuar",
+                                         'HT' => 'Haiti',
+                                         '019' => "Amerikë",
+                                         'QO' => "Oqeania e Largët (Lindja e Largët)",
+                                         'SS' => 'Sudani i Jugut',
+                                         'GF' => 'Guajana Franceze',
+                                         'ZZ' => 'Rajon i panjohur',
+                                         'KM' => 'Komore',
+                                         'KW' => 'Kuvajt',
+                                         'MQ' => 'Ishulli i Martinikut',
+                                         'TC' => 'Ishujt Turke dhe Kaike',
+                                         'CP' => "Ishulli Klipërton",
+                                         'ES' => "Spanjë",
+                                         'MZ' => 'Mozambik',
+                                         'BO' => 'Bolivi',
+                                         'AL' => "Shqipëri",
+                                         '142' => 'Azi',
+                                         '419' => 'Amerika Latine',
+                                         'TR' => 'Turqi',
+                                         'MD' => 'Moldavi',
+                                         'GN' => 'Guine',
+                                         'CO' => 'Kolumbi',
+                                         'SI' => 'Slloveni',
+                                         'AQ' => "Antarktikë",
+                                         'JO' => 'Jordani',
+                                         '061' => 'Polinezia',
+                                         'SM' => 'San Marino',
+                                         'CU' => "Kubë",
+                                         'CL' => 'Kili',
+                                         'ML' => 'Mali',
+                                         'ET' => 'Etiopi',
+                                         'IS' => "Islandë",
+                                         '035' => 'Azia Jug-Lindore',
+                                         'BG' => 'Bullgari',
+                                         'MH' => 'Ishujt Marshall',
+                                         'BS' => 'Bahamas',
+                                         'TL' => 'Timori Lindor',
+                                         'BZ' => 'Beliz',
+                                         '150' => "Europë",
+                                         'CY' => 'Qipro',
+                                         '155' => "Europa Perëndimore",
+                                         'IM' => 'Ishulli i Manit',
+                                         'IE' => "Irlandë",
+                                         'TW' => 'Tajvan',
+                                         'KP' => 'Koreja e Veriut',
+                                         'PF' => 'Polinezia Franceze',
+                                         'MW' => 'Malavi',
+                                         'GY' => "Guajanë",
+                                         'GQ' => 'Guineja Ekuatoriale',
+                                         'PK' => 'Pakistan',
+                                         'NF' => 'Ishujt Norfolk',
+                                         'SO' => 'Somali',
+                                         'TD' => "Çad",
+                                         'BD' => 'Bangladesh',
+                                         'HM' => "Ishulli Hërd dhe Ishujt Mekdonald"
+                                       },
+                      'languages' => {
+                                       'ne' => 'Nepalisht',
+                                       'tr' => 'Turqisht',
+                                       'tlh' => 'Klingon',
+                                       'da' => 'Danisht',
+                                       'ug' => 'Ujgure',
+                                       'my' => 'Birmanisht',
+                                       'gl' => 'Galike',
+                                       'ro' => 'Rumanisht',
+                                       'gsw' => "Gjermanisht (Zvicër)",
+                                       'ta' => 'Tamile',
+                                       'br' => 'Breton',
+                                       'de_CH' => "Gjermanisht (Zvicër-Dialekti i Alpeve)",
+                                       'cy' => 'Uellsisht',
+                                       'bo' => 'Tibetiane',
+                                       'st' => 'Sesotho',
+                                       'pt_PT' => "Portugalisht (Europë)",
+                                       'ko' => 'Koreanisht',
+                                       'cs' => "Çekisht",
+                                       'zh_Hant' => "Kinezçe Tradicionale",
+                                       'ps' => 'Pashto',
+                                       'km' => 'Kmere (Kamboxhiane)',
+                                       'af' => 'Afrikane',
+                                       'is' => 'Islandisht',
+                                       'qu' => "Keçua",
+                                       'ti' => 'Tigrinje',
+                                       'mt' => 'Malteze',
+                                       'ky' => 'Kirgize',
+                                       'la' => 'Latinisht',
+                                       'hy' => 'Armenisht',
+                                       'ga' => 'Irlandisht',
+                                       'ms' => 'Malajisht',
+                                       'bh' => 'Bihari',
+                                       'ka' => 'Gjeorgjisht',
+                                       'oc' => 'Oksitanisht',
+                                       'mi' => 'Maorisht',
+                                       'zxx' => "Mungesë përmbajtjeje gjuhësore",
+                                       'sv' => 'Suedisht',
+                                       'und' => 'E panjohur',
+                                       'it' => 'Italisht',
+                                       'hu' => 'Hungarisht',
+                                       'fa' => 'Persisht',
+                                       'jv' => 'Javanisht',
+                                       'pt' => 'Portugalisht',
+                                       'hi' => 'Indisht',
+                                       'ks' => 'Kashmire',
+                                       'no' => 'Norvegjisht',
+                                       'lv' => 'Letonisht',
+                                       'zgh' => 'Tamazishte Standarde Marokene',
+                                       'ln' => 'Lingala',
+                                       'fr' => "Frëngjisht",
+                                       'id' => 'Indonezisht',
+                                       'sr' => 'Serbisht',
+                                       'si' => 'Sinhale',
+                                       'ab' => 'Abkazisht',
+                                       'fi' => 'Finlandisht',
+                                       'fj' => 'Fixhiane',
+                                       'wo' => 'Ulufisht',
+                                       'sd' => 'Sindi',
+                                       'yi' => 'Jiden',
+                                       'ha' => 'Hausisht',
+                                       'fil' => 'Filipinase',
+                                       'pa' => 'Panxhabe',
+                                       'sl' => 'Sllovenisht',
+                                       'am' => 'Amarike',
+                                       'mr' => 'Maratisht',
+                                       'rm' => 'Rome',
+                                       'kn' => 'Kanada',
+                                       'eo' => 'Esperanto',
+                                       'fy' => 'Frizianisht',
+                                       'mn' => 'Mongolisht',
+                                       'gd' => 'Galisht',
+                                       'as' => 'Asamezisht',
+                                       'tk' => 'Turkmenisht',
+                                       'mg' => 'Malageze',
+                                       'su' => 'Sundanisht',
+                                       'en_US' => 'Anglisht (SHBA)',
+                                       'ru' => 'Rusisht',
+                                       'ia' => 'Interlingua',
+                                       'nb' => 'Bokmalisht (Norvegji)',
+                                       'ku' => 'Kurde',
+                                       'az' => 'Azere',
+                                       'lo' => 'Laosisht',
+                                       'vi' => 'Vietnamisht',
+                                       'lb' => 'Luksemburgase',
+                                       'nl_BE' => 'Fleminge',
+                                       'ml' => 'Malajalame',
+                                       'en_GB' => 'Anglisht (Britani)',
+                                       'uz' => 'Uzbeke',
+                                       'ht' => 'Haitianshe',
+                                       'bs' => 'Boshnjakisht',
+                                       'yo' => 'Jorubisht',
+                                       'to' => 'Tonganisht',
+                                       'es_ES' => "Spanjisht (Europë)",
+                                       'eu' => 'Baske',
+                                       'bg' => 'Bullgarisht',
+                                       'gu' => 'Guxharatisht',
+                                       'zh_Hans' => "Kinezçe e Thjeshtuar",
+                                       'ca' => 'Katalonisht',
+                                       'pl' => 'Polonisht',
+                                       'sq' => 'Shqip',
+                                       'sk' => 'Sllovakisht',
+                                       'uk' => 'Ukrainisht',
+                                       'es' => 'Spanjisht',
+                                       'sw' => 'Suahili',
+                                       'tt' => 'Tatarisht',
+                                       'fo' => 'Faroisht',
+                                       'or' => 'Orije',
+                                       'sa' => 'Sanskritisht',
+                                       'sh' => 'Serbo-Kroatisht',
+                                       'xh' => 'Xhose',
+                                       'th' => 'Tajlandisht',
+                                       'ie' => 'Gjuha nderkombtare',
+                                       'et' => 'Estonisht',
+                                       'so' => 'Somalisht',
+                                       'mk' => 'Maqedonisht',
+                                       'en' => 'Anglisht',
+                                       'lt' => 'Lituanisht',
+                                       'hr' => 'Kroatisht',
+                                       'gn' => 'Guarane',
+                                       'de' => 'Gjermanisht',
+                                       'be' => 'Bjellorusisht',
+                                       'zu' => 'Zulu',
+                                       'ur' => 'Urdu',
+                                       'tw' => 'Twi',
+                                       'haw' => 'Havajane',
+                                       'nn' => 'Ninorske (Norvegji)',
+                                       'ja' => 'Japonisht',
+                                       'bn' => 'Bengalisht',
+                                       'tg' => 'Taxhikisht',
+                                       'ar_001' => 'Arabishte Standarde Moderne',
+                                       'he' => 'Hebraisht',
+                                       'te' => 'Teluge',
+                                       'zh' => 'Kinezisht',
+                                       'ig' => 'Igbe',
+                                       'ar' => 'Arabisht',
+                                       'nl' => 'Holandisht',
+                                       'el' => 'Greqisht',
+                                       'kk' => 'Kazake'
+                                     },
+                      'scripts' => {
+                                     'Knda' => 'Kanada',
+                                     'Jpan' => 'Japonez',
+                                     'Gujr' => 'Guxharatas',
+                                     'Beng' => 'Bengal',
+                                     'Orya' => 'Orija',
+                                     'Hant' => 'Han Tradicional',
+                                     'Hira' => 'Hiragan',
+                                     'Zzzz' => 'I panjohur',
+                                     'Ethi' => 'Etiopian',
+                                     'Mong' => 'Mongol',
+                                     'Zsym' => 'Me simbole',
+                                     'Hans' => "Han i Thjeshtësuar",
+                                     'Hani' => 'Han',
+                                     'Khmr' => 'Kmer',
+                                     'Zyyy' => "I zakonshëm",
+                                     'Thaa' => 'Tana',
+                                     'Tibt' => 'Tibetian',
+                                     'Thai' => 'Tajlandez',
+                                     'Geor' => 'Gjeorgjian',
+                                     'Guru' => 'Gurmuk',
+                                     'Grek' => 'Grek',
+                                     'Mlym' => 'Malajalam',
+                                     'Taml' => 'Tamil',
+                                     'Kore' => 'Korean',
+                                     'Zxxx' => 'I pashkruar',
+                                     'Hang' => 'Hangul',
+                                     'Sinh' => 'Sinhal',
+                                     'Deva' => 'Devanagar',
+                                     'Laoo' => 'Lao',
+                                     'Mymr' => 'Birman',
+                                     'Arab' => 'Arabik',
+                                     'Brai' => 'Brail',
+                                     'Latn' => 'Latin',
+                                     'Bopo' => 'Bopomof',
+                                     'Armn' => 'Armen',
+                                     'Hebr' => 'Hebraik',
+                                     'Cyrl' => 'Cirilik',
+                                     'Kana' => 'Katakan',
+                                     'Telu' => 'Telug'
+                                   }
+                    },
+  'delimiters' => {
+                    'alternateQuotationEnd' => "\x{2019}",
+                    'quotationEnd' => "\x{201d}",
+                    'quotationStart' => "\x{201c}",
+                    'alternateQuotationStart' => "\x{2018}"
+                  },
+  'iso4217' => undef
+};

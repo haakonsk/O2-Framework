@@ -1,0 +1,19 @@
+<o2 use O2Doc::Tutorial />
+
+<o2 docSection title="use">
+  Uses a taglib module, to make a set of tags available.
+  <o2 docSection title="Syntax">
+    <o2 docCode lang="o2ml">
+      <o2 use Html::Form />
+    </o2:docCode>
+    The above example makes the tags defined in the module Html::Form available. This means you can use
+    the tags &lt;o2 input&gt; and &lt;o2 select&gt;, among others.
+  </o2:docSection>
+  <o2 docSection>
+    Perl looks for the module under lib/O2/Template/Taglibs, or for backend taglibs under lib/O2CMS/Template/Taglibs
+    or for plugin taglibs under lib/O2Plugin/&lt;pluginName&gt;/Template/Taglibs.
+  </o2:docSection>
+  <o2 docSection>
+    The core module (Core.pm) is always included and doesn't have to be 'used'.
+  </o2:docSection>
+</o2:docSection>

@@ -1,0 +1,18 @@
+<o2 use O2Doc::Tutorial />
+<o2 use Html::Form />
+
+<o2 docSection title="addJsLangFile">
+  By using this tag, language variables are made available from Javascript, and can be accessed not only from Javascript in the template, but from
+  javascript files, as well:<br>
+  <code>var str = o2.lang.getString("o2.desktop.btnYes");</code>
+  <o2 docSection title="Syntax">
+    <o2 docCode lang="o2ml">
+      <o2 addJsLangFile file="o2/desktop" />
+    </o2:docCode>
+  </o2:docSection>
+  <o2 docSection title="Attributes">
+    <o2 docList class="attributes">
+      <o2 docListItem class="required">file - the language file, without the .conf extension.</o2:docListItem>
+    </o2:docList>
+  </o2:docSection>
+</o2:docSection>

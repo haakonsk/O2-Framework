@@ -1,0 +1,25 @@
+<o2 use O2Doc::Tutorial />
+
+<o2 docSection title="docSection">
+  Creates a paragraph, with an optional title/header. Sections can be nested - inner sections have smaller headers.
+  <o2 docSection title="Syntax">
+    <o2 docCode lang="o2ml">
+      <o2 docSection title="Outer title">
+        Outer content
+        <o2 docSection title="Inner title">
+          Inner content
+        </o2:docSection>
+      </o2:docSection>
+    </o2:docCode>
+    <o2 docCodeResult />
+    <o2 docNote>
+      The first header tag is h3 instead of h1 because other docSection tags have been used on this documentation page (with titles "DocSection" and "Syntax").
+    </o2:docNote>
+  </o2:docSection>
+  <o2 docSection title="Attributes">
+    <o2 docList class="attributes">
+      <o2 docListItem class="optional">title - the header</o2:docListItem>
+      <o2 docListItem class="required content">content - the content of the paragraph</o2:docListItem>
+    </o2:docList>
+  </o2:docSection>
+</o2:docSection>

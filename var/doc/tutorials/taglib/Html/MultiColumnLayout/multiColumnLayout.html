@@ -1,0 +1,54 @@
+<o2 use O2Doc::Tutorial />
+
+<o2 docSection title="multiColumnLayout, column">
+  &lt;o2 multiColumnLayout&gt; allows you to lay out as many columns as you would like in a table-like way without the table-tag being used (which is good
+  for screen readers and search engine ratings). It's also a very easy-to-use alternative to writing div tags and styling them manually. This tag gives you
+  good control over the widths of each individual column and the width of all the columns as a whole. Javascript is used to set the width and height of the
+  columns. 
+  <o2 docSection title="Syntax">
+    <o2 docCode lang="o2ml">
+      <o2 addCss>
+        .column {
+          padding : 10px;
+        }
+      </o2:addCss>
+
+      <o2 multiColumnLayout width="500">
+
+        <o2 column width="200">
+          Column 1 - lskdnfgksnd edkfbsdkjb d bsdjgfbs kdjb skjdb skjdb kjb
+        </o2:column>
+
+        <o2 column width="33%">
+          Column 2
+        </o2:column>
+
+        <o2 column>
+          Column 3
+        </o2:column>
+
+        <o2 column>
+          Column 4
+        </o2:column>
+
+      </o2:multiColumnLayout>
+    </o2:docCode>
+    <o2 docCodeResult useModule="Html::MultiColumnLayout" />
+  </o2:docSection>
+
+  <o2 docSection title="multiColumnLayout attributes">
+    <o2 docList class="attributes">
+      <o2 docListItem class="optional">width</o2:docListItem>
+    </o2:docList>
+    Other attributes will be passed on to the &lt;div&gt; that's created.
+  </o2:docSection>
+
+  <o2 docSection title="column attributes">
+    <o2 docList class="attributes">
+      <o2 docListItem class="optional">width - you may specify the width in pixels or as a percentage value of the available width after absolute column widths
+        (specified in pixels) have been subtracted. All columns without a specified width are distributed evenly in the available horizontal space.</o2:docListItem>
+    </o2:docList>
+    Other attributes will be passed on to the &lt;div&gt; that's created.
+  </o2:docSection>
+
+</o2:docSection>

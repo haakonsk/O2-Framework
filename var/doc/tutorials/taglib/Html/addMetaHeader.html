@@ -1,0 +1,25 @@
+<o2 use O2Doc::Tutorial />
+
+<o2 docSection title="addMetaHeader">
+  Adds a meta header in the head of a web page.
+  <o2 docSection title="Syntax">
+    <o2 docCode lang="o2ml">
+      <o2 addMetaHeader name="description" value="My beautiful web page!" />
+    </o2:docCode>
+    or
+    <o2 docCode lang="o2ml">
+      <o2 addMetaHeader name="description">My beautiful web page!</o2:addMetaHeader>
+    </o2:docCode>
+  </o2:docSection>
+  <o2 docSection title="Attributes">
+    <o2 docList class="attributes">
+      <o2 docListItem class="required">name - name of the meta tag (http-equiv)</o2:docListItem>
+      <o2 docListItem class="optional">value - value of the meta tag (content)</o2:docListItem>
+      <o2 docListItem class="content optional">content - same as value</o2:docListItem>
+    </o2:docList>
+    <o2 docNote>
+      &lt;o2 header&gt; or &lt;o2 incMetaHeader&gt; must be called on the same page in order for addMetaHeader to work.
+    </o2:docNote>
+    See also <o2 docLink type="tag" id="header" /> or <o2 docLink type="tag" id="incMetaHeader" />.
+  </o2:docSection>
+</o2:docSection>

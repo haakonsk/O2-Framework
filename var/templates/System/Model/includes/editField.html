@@ -1,0 +1,41 @@
+<o2 popupDialog id="$popupDialogId" submitText="$lang->getString('btnSave')" closeText="$lang->getString('btnCancel')" width="400">
+  
+  <h1>$title</h1>
+  
+  <o2 form method="post" name="$formName" setMethod="saveField" ruleTitle="$lang->getString('ruleTitleAnErrorOccurred')">
+    <o2 formTable>
+      <o2 input type="hidden"                                       name="originalName" value="$field->getName()" />
+      <o2 input type="text" label="(*) $lang->getString('lblName')" name="name"         value="$field->getName()"             rule="required" ruleMsg="$lang->getString('ruleMsgName')" />
+      <o2 comboBox label="(*) $lang->getString('lblType')"          name="type"         value="$field->getType()" width="248" rule="required" ruleMsg="$lang->getString('ruleMsgType')">
+        <o2 foreach "$type in $model->getAvailableFieldTypes( $field->getName() )">
+          <o2 option value="$type" />
+        </o2:foreach>
+      </o2:comboBox>
+      <o2 input type="text" label="$lang->getString('lblLength')" name="length" value="$field->getLength()" rule="europeanDecimal:notRequired" ruleMsg="$lang->getString('ruleMsgLength')" />
+      <o2 radioGroup label="$lang->getString('lblListType')" name="listType" value="$field->getListType(1)">
+        <o2 radio value="" label="$lang->getString('listTypeNone')" />
+        <o2 foreach "$type in $model->getAvailableListTypes()">
+          <o2 radio label="$type" value="$type" />
+        </o2:foreach>
+      </o2:radioGroup>
+      <o2 radioGroup label="Not null" name="notNull" value="$field->getNotNull()">
+        <o2 radio label="$lang->getString('answerYes')" value="1" />
+        <o2 radio label="$lang->getString('answerNo')"  value="0" />
+      </o2:radioGroup>
+      <o2 radioGroup label="$lang->getString('lblIsMultilingual')" name="isMultilingual" value="$field->isMultilingual()">
+        <o2 radio label="$lang->getString('answerYes')" value="1" />
+        <o2 radio label="$lang->getString('answerNo')"  value="0" />
+      </o2:radioGroup>
+      <o2 input type="text" label="$lang->getString('lblDefaultValue')" name="defaultValue" value="$field->getDefaultValue()" />
+      <o2 setVar "$validValues"></o2:setVar>
+      <o2 if "$field->getValidValues()">
+        <o2 foreach "$value in $field->getValidValues()">
+          <o2 appendVar "$validValues" delimiter=", ">$value</o2:appendVar>
+        </o2:foreach>
+      </o2:if>
+      <o2 textarea label="$lang->getString('lblValidValues')" name="validValues" value="$validValues" />
+      <o2 textarea label="$lang->getString('lblComment')" name="comment" value="$field->getComment()" />
+    </o2:formTable>
+    <p>(*) $lang->getString("txtRequired")</p>
+  </o2:form>
+</o2:popupDialog>

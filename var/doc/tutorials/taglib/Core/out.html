@@ -1,0 +1,19 @@
+<o2 use O2Doc::Tutorial />
+
+<o2 docSection title="out">
+  Sometimes, when you try to write something to the web page, things don't turn out the way you expect. In that
+  case, try putting an &lt;o2 out&gt; tag around your values.
+  <o2 docSection title="Syntax">
+    <o2 docCode lang="o2ml">
+      <o2 out>$someVariable</o2:out>
+    </o2:docCode>
+  </o2:docSection>
+  <o2 docSection>
+    An example from the real world... Here I couldn't get the concatenation right without the out tags.
+    <o2 docExample>
+      <o2 docCode lang="o2ml">
+        <o2 setVar "$date"><o2 out>$monthNumeric</o2:out><o2 out>$monthDay2Digits</o2:out></o2:setVar>
+      </o2:docCode>
+    </o2:docExample>
+  </o2:docSection>
+</o2:docSection>

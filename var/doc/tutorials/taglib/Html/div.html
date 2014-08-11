@@ -1,0 +1,27 @@
+<o2 use O2Doc::Tutorial />
+
+<o2 docSection title="div">
+  The only special attribute is the src attribute. The content of the div will be fetched from the URL specified here. If the first character
+  of the src attribute is a slash (/), the document will be fetched from the current server.
+  <o2 docSection title="Syntax">
+    <o2 docCode lang="o2ml">
+      <o2 div src="http://www.dagbladet.no" id="myDiv" />
+    </o2:docCode>
+  </o2:docSection>
+  <o2 docSection>
+    <o2 docExample>
+      <o2 docCode lang="o2ml">
+        <o2 div src="/index.html" />
+      </o2:docCode>
+    </o2:docExample>
+  </o2:docSection>
+  <o2 docSection title="Attributes">
+    <o2 docList class="attributes">
+      <o2 docListItem class="optional">src</o2:docListItem>
+      <o2 docListItem>normal html attributes</o2:docListItem>
+    </o2:docList>
+  </o2:docSection>
+  <o2 docSection>
+    See also the <o2 docLink type="tag" id="iframe" /> tag.
+  </o2:docSection>
+</o2:docSection>

@@ -1,0 +1,127 @@
+<o2 use Html::Form />
+<o2 use Html::Ajax />
+
+<o2 use I18N />
+<o2 setResourcePath>System.Model</o2:setResourcePath>
+
+<o2 use Js::Lang />
+<o2 addJsLangFile file="System/Model" />
+
+<o2 addCssFile file="gui/system/model/common" />
+
+<o2 addJs>
+  o2.systemModel.editIndex = function(indexName) {
+    document.forms["editIndex_" + indexName].parentNode.style.display = "block";
+  }
+  o2.systemModel.cancelEditIndex = function(indexName) {
+    document.forms["editIndex_" + indexName].parentNode.style.display = "none";
+  }
+  o2.systemModel.createNewIndex = function() {
+    document.forms.addIndex.parentNode.style.display = "block";
+  }
+  o2.systemModel.cancelAddIndex = function() {
+    document.forms.addIndex.parentNode.style.display = "none";
+  }
+</o2:addJs>
+
+<o2 addCss>
+  img {
+    cursor : pointer;
+  }
+  .popupBox {
+    left    : 50px;
+    top     : 200px;
+    padding : 10px;
+  }
+</o2:addCss>
+
+<o2 header title="$lang->getString('hdrManageIndexes', className => $q->{package})" />
+
+<div id="indexWrapper">
+  <o2 include "includes/iconUrls.html" />
+  
+  <h1>$lang->getString("hdrManageIndexes", className => $q->{package})</h1>
+  
+  <o2 if "$q->{errorMsg}">
+    <p class="error">$q->{errorMsg}</p>
+  </o2:if>
+  <table>
+    <tr>
+      <th>$lang->getString('hdrIndexName')</th>
+      <th>$lang->getString('hdrColumns')</th>
+      <th colspan="3"></th>
+    </tr>
+    <o2 foreach "$index in $indexes">
+      <tr>
+        <td>$index->getName()</td>
+        <td><o2 join ", ">$index->getColumnNames()</o2:join></td>
+        <td><o2 if "$index->isUnique()">$lang->getString("txtUnique")</o2:if></td>
+        <o2 if "$index->getName() ne 'PRIMARY' || $index->getColumnName() ne 'objectId'">
+          <td><o2 link     type="image" src="$editIconUrl"   alt="M" title="Edit $index->getName()" onClick="o2.systemModel.editIndex('$index->getName()')" /></td>
+          <td><o2 ajaxLink type="image" src="$deleteIconUrl" alt="X" title="Delete $index->getName()" confirmMsg="$lang->getString('System.Model.confirmDeleteIndex', indexName => $index->getName())" setMethod="deleteIndex" setParam="indexName=$index->getName()" target="indexWrapper" where="replace" method="post" /></td>
+        </o2:if>
+      </tr>
+    </o2:foreach>
+  </table>
+  
+  <p><o2 link type="image" src="$addIconUrl" alt="+" title="$lang->getString('linkNewIndex')" onClick="o2.systemModel.createNewIndex();" /></p>
+  
+  <o2 foreach "$index in $indexes">
+    <div class="editIndex popupBox">
+      <o2 ajaxForm method="post" name="editIndex_$index->getName()" setMethod="saveIndex" setParams="package=$q->{package}" target="indexWrapper" where="replace">
+        <o2 input type="hidden" name="originalIndexName" value="$index->getName()" />      
+        <o2 formTable>
+          <o2 setVar "$rule"><o2 if "$index->isUnique()" then="" else="required" /></o2:setVar>
+          <o2 input type="text" label="$lang->getString('lblIndexName')" name="indexName" value="$index->getName()" size="40" rule="required" ruleMsg="$lang->getString('ruleMsgIndexNameRequired')" />
+          <o2 checkboxGroup name="isUnique" label="$lang->getString('lblIsUnique')" values="$index->isUnique()">
+            <o2 checkbox value="1" label="$lang->getString('answerYes')" />
+          </o2:checkboxGroup>
+          
+          <o2 multiInput label="$lang->getString('lblColumns')" resizable="1" rearrangeable="1">
+            <o2 foreach "$column in $index->getColumnNames()">
+              <o2 row>
+                <o2 select name="columns[]" value="$column">
+                  <o2 foreach "$col in $columns">
+                    <o2 option value="$col->getName()" />
+                  </o2:foreach>
+                </o2:select>
+              </o2:row>
+            </o2:foreach>
+          </o2:multiInput>
+          
+        </o2:formTable>
+        <p>
+          <o2 input type="submit" value="$lang->getString('btnSave')" />
+          <o2 input type="button" onClick="o2.systemModel.cancelEditIndex('$index->getName()')" value="$lang->getString('btnCancel')" />
+        </p>
+      </o2:ajaxForm>
+    </div>
+  </o2:foreach>
+  
+  <div class="addIndex popupBox">
+    <o2 ajaxForm method="post" name="addIndex" setMethod="saveIndex" setParams="package=$q->{package}" target="indexWrapper" where="replace">
+      <o2 formTable>
+        <o2 input type="text" label="$lang->getString('lblIndexName')" name="indexName" rule="required" ruleMsg="Index name is required" />
+        
+        <o2 checkboxGroup name="isUnique" label="$lang->getString('lblIsUnique')">
+          <o2 checkbox value="1" label="$lang->getString('answerYes')" />
+        </o2:checkboxGroup>
+        
+        <o2 multiInput label="$lang->getString('lblColumns')" resizable="1" rearrangeable="1">
+          <o2 select name="columns[]">
+            <o2 foreach "$column in $columns">
+              <o2 option value="$column->getName()" />
+            </o2:foreach>
+          </o2:select>
+        </o2:multiInput>
+        
+      </o2:formTable>
+      <p>
+        <o2 input type="submit" value="$lang->getString('btnSave')" />
+        <o2 input type="button" onClick="o2.systemModel.cancelAddIndex()" value="$lang->getString('btnCancel')" />
+      </p>
+    </o2:ajaxForm>
+  </div>
+</div>
+
+<o2 footer />

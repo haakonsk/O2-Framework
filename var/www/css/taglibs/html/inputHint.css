@@ -1,0 +1,140 @@
+.hasToolTip {
+  position : relative;
+  display  : inline-block;
+}
+
+.infoBubble {
+  width      : 16px;
+  height     : 16px;
+  background : url("/images/help-icon.png") no-repeat 0 0;
+  margin     : 0 5px;
+  top        : 1px;
+  position   : relative;
+  display    : inline-block;
+}
+
+.inputHint {
+  background            : #ff6c00;
+  border                : 1px solid white;
+  -moz-border-radius    : 4px;
+  -webkit-border-radius : 4px;
+  border-radius         : 4px;
+  box-shadow            : 1px 1px 5px rgba(0,0,0,0.3);
+  color                 : white;
+  display               : none;
+  left                  : 325px;
+  padding               : 5px;
+  position              : absolute;
+  top                   : 5px;
+  width                 : 160px;
+  text-align            : left;
+  text-transform        : none;
+  font-size             : 13px;
+  font-weight           : normal;
+  line-height           : 16px;
+}
+
+.csstransitions .o2InputWrapper:hover .inputHint,
+.csstransitions .o2InputWrapper.showHint .inputHint {
+  left : 325px;
+}
+
+.short .inputHint,
+.csstransitions .short:hover .inputHint,
+.csstransitions .short.showHint .inputHint {
+  left : 185px;
+}
+
+.medium .inputHint,
+.csstransitions .medium:hover .inputHint,
+.csstransitions .medium.showHint .inputHint{
+  left : 225px;
+}
+
+.o2DateSelect.medium .inputHint,
+.csstransitions .o2DateSelect.medium:hover .inputHint,
+.csstransitions .o2DateSelect.medium.showHint .inputHint {
+  left : 244px;
+}
+
+.floated .inputHint,
+.csstransitions .floated:hover .inputHint,
+.csstransitions .floated.showHint .inputHint {
+  left : 90px;
+  top  : 50px;
+}
+
+.infoBubble .inputHint,
+.csstransitions .infoBubble:hover .inputHint,
+.csstransitions .infoBubble.showHint .inputHint {
+  left : 23px;
+  top  : -3px;
+}
+
+.hasToolTip .inputHint,
+.csstransitions .hasToolTip:hover .inputHint,
+.csstransitions .hasToolTip.showHint .inputHint {
+  left  : auto;
+  right : -176px;
+}
+
+.inputHint:before {
+  background : url("/images/toolTipArrow.png") no-repeat 0 0;
+  width      : 8px;
+  height     : 9px;
+  position   : absolute;
+  top        : 6px;
+  left       : -7px;
+  z-index    : 2;
+  display    : block;
+  content    : " ";
+}
+
+.o2InputWrapper.missing .inputHint,
+.hasError .inputHint {
+  background-color : #896da4; 
+}
+
+.o2InputWrapper.missing .inputHint:before,
+.hasError .inputHint:before {
+  background-image : url("/images/toolTipArrowError.png");
+}
+
+.o2InputWrapper.showHint {
+  z-index: 2;
+}
+
+
+.o2InputWrapper:hover {
+  direction: ltr; /* "Nudge" to make the always buggy IE7 recognize the changed z-index */
+  z-index: 3;
+}
+
+.ui-dialog-content .o2InputWrapper:hover {
+  z-index: auto;
+}
+
+.csstransitions .inputHint { /*detected by Modernizr, using css to fade in */
+  opacity: 0;
+  display: block;
+  left: -99999px;
+  -webkit-transition: opacity ease .3s;
+  -moz-transition: opacity ease .3s;
+  -o-transition: opacity ease .3s;
+  transition: opacity ease .3s;
+}
+
+.o2InputWrapper:hover .inputHint,
+.o2InputWrapper.showHint .inputHint,
+.infoBubble:hover .inputHint,
+.hasToolTip:hover .inputHint {
+  display: block;
+  z-index: 2;
+}
+
+.csstransitions .o2InputWrapper:hover .inputHint,
+.csstransitions .o2InputWrapper.showHint .inputHint,
+.csstransitions .infoBubble:hover .inputHint,
+.csstransitions .hasToolTip:hover .inputHint {
+  opacity: 1;
+}

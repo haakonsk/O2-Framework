@@ -1,0 +1,24 @@
+<o2 use O2Doc::Tutorial />
+
+<o2 docSection title="pldsDump">
+  Dumps a variable (perl data structure), much like <o2 docLink type="tag" id="DataDumper-dump" />.
+  <o2 docSection title="Syntax">
+    <o2 docCode lang="o2ml">
+      <o2 setVar "$var">{ 'name' => 'John' }</o2:setVar>
+      <o2 pldsDump>$var</o2:pldsDump>
+    </o2:docCode>
+    <o2 docCodeResult seeGeneratedHtmlAsDisplayed="0" />
+    or
+    <o2 docCode lang="o2ml">
+      <o2 pldsDump $var />
+    </o2:docCode>
+  </o2:docSection>
+  <o2 docSection title="Attributes">
+    <o2 docList class="attributes">
+      <o2 docListItem class="content">content</o2:docListItem>
+      <o2 docListItem class="param">param</o2:docListItem>
+    </o2:docList>
+    Either content or param must contain the variable to be dumped.
+  </o2:docSection>
+  See also <o2 docLink type="tag" id="DataDumper-dump" /> and <o2 docLink type="tag" id="objectDump" />.
+</o2:docSection>

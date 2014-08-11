@@ -1,0 +1,125 @@
+CREATE TABLE IF NOT EXISTS O2_OBJ_OBJECT (
+  objectId        int(11)      NOT NULL auto_increment,
+  parentId        int(11)               default NULL,
+  name            varchar(255) NOT NULL default '',
+  className       varchar(128) NOT NULL default '',
+  createTime      int(11)      NOT NULL default '0',
+  changeTime      int(11)      NOT NULL default '0',
+  status          varchar(32)  NOT NULL default '',
+  ownerId         int(11)               default NULL,
+  PRIMARY KEY  (objectId),
+  INDEX        (parentId)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 DEFAULT COLLATE=utf8_danish_ci AUTO_INCREMENT=1;
+
+
+CREATE TABLE IF NOT EXISTS O2_OBJ_OBJECT_BIT (
+  objectId int(11)      NOT NULL default '0',
+  name     varchar(255) NOT NULL default '',
+  value    tinyint(1)            default NULL,
+  PRIMARY KEY  (objectId,name)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 DEFAULT COLLATE=utf8_danish_ci;
+
+
+CREATE TABLE IF NOT EXISTS O2_OBJ_OBJECT_FLOAT (
+  objectId int(11)      NOT NULL default '0',
+  name     varchar(255) NOT NULL default '',
+  value    double                default NULL,
+  PRIMARY KEY  (objectId,name)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 DEFAULT COLLATE=utf8_danish_ci;
+
+
+CREATE TABLE IF NOT EXISTS O2_OBJ_OBJECT_INT (
+  objectId int(11)      NOT NULL default '0',
+  name     varchar(255) NOT NULL default '',
+  value    int(11)               default NULL,
+  PRIMARY KEY  (objectId,name)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 DEFAULT COLLATE=utf8_danish_ci;
+
+
+CREATE TABLE IF NOT EXISTS O2_OBJ_OBJECT_OBJECT (
+  objectId int(11)      NOT NULL default '0',
+  name     varchar(255) NOT NULL default '',
+  value    int(11)               default NULL,
+  PRIMARY KEY  (objectId,name)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 DEFAULT COLLATE=utf8_danish_ci;
+
+
+CREATE TABLE IF NOT EXISTS O2_OBJ_OBJECT_PROPERTY (
+  objectId int(11)      NOT NULL default '0',
+  name     varchar(255) NOT NULL default '',
+  value    varchar(255)          default NULL,
+  PRIMARY KEY  (objectId,name)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 DEFAULT COLLATE=utf8_danish_ci;
+
+
+CREATE TABLE IF NOT EXISTS O2_OBJ_OBJECT_TEXT (
+  objectId int(11)      NOT NULL default '0',
+  name     varchar(255) NOT NULL default '',
+  value    longtext,
+  KEY objectIdIndex (objectId)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 DEFAULT COLLATE=utf8_danish_ci;
+
+
+CREATE TABLE IF NOT EXISTS O2_OBJ_OBJECT_VARCHAR (
+  objectId int(11)      NOT NULL default '0',
+  name     varchar(255) NOT NULL default '',
+  value    varchar(255)          default NULL,
+  PRIMARY KEY  (objectId,name)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 DEFAULT COLLATE=utf8_danish_ci;
+
+
+CREATE TABLE IF NOT EXISTS O2_OBJ_OBJECT_DATE (
+  objectId int(11)      NOT NULL default '0',
+  name     varchar(255) NOT NULL default '',
+  value    date                  default NULL,
+  PRIMARY KEY  (objectId,name)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 DEFAULT COLLATE=utf8_danish_ci;
+
+
+CREATE TABLE IF NOT EXISTS O2_CONSOLE_LOG (
+  id        int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  logType   varchar(255) NOT NULL,
+  timestamp int(11) NOT NULL,
+  package   varchar(255),
+  method    varchar(255),
+  line      int(11),
+  message   varchar(255),
+  info      text,
+  url       varchar(4095),
+  referrer  varchar(4095),
+  userId    int(11),
+  ip        varchar(255),
+  processId int(11)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 DEFAULT COLLATE=utf8_danish_ci;
+
+
+CREATE TABLE IF NOT EXISTS O2_STATUS_CHANGE_LOG (
+  objectId  int(11),
+  userId    int(11),
+  oldStatus varchar(255),
+  newStatus varchar(255),
+  dateTime  datetime,
+  caller    text,
+  url       varchar(2047),
+  KEY objectIdIndex (objectId)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 DEFAULT COLLATE=utf8_danish_ci;
+
+
+CREATE TABLE IF NOT EXISTS O2_SCRIPT_LOG (
+  scriptName  text,
+  date        timestamp
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 DEFAULT COLLATE=utf8_danish_ci;
+
+
+CREATE TABLE IF NOT EXISTS O2_BACKGROUND_PROCESS (
+  randomId varchar(10),
+  pid int(11) NOT NULL,
+  command varchar(1000) NOT NULL,
+  counter int(11) NOT NULL,
+  max int(11) NOT NULL,
+  exclusive int NOT NULL,
+  startTime int NOT NULL,
+  PRIMARY KEY (randomId),
+  INDEX (pid),
+  INDEX (startTime)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 DEFAULT COLLATE=utf8_danish_ci;

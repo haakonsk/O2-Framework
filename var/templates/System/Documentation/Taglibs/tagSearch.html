@@ -1,0 +1,40 @@
+<o2 use Html />
+<o2 use O2Doc::Tutorial />
+
+<o2 header />
+
+<o2 addCssFile file="defaultStyle" />
+
+<o2 addCss>
+  body {
+    padding : 10px;
+  }
+</o2:addCss>
+
+<h1>O2 Markup Language Documentation</h1>
+
+<h2>Search results for "$q->{searchQuery}"</h2>
+
+<o2 setVar "$atLeastOneResult">0</o2:setVar>
+<ol>
+  <o2 for "$i = 0; $i < @{$sortedTags}; $i++">
+    <o2 setVar "$atLeastOneResult">1</o2:setVar>
+    <li><o2 link setMethod="showDocumentation" setParams="module=$sortedModules->[$i]&amp;tag=$sortedTagNames->[$i]">$sortedTags->[$i]</o2:link> (<o2 out>$sortedSimilarityPercentage->[$i]</o2:out>%)</li>
+  </o2:foreach>
+</ol>
+
+<o2 if "$atLeastOneResult">
+  <p>The percentage in parenthesis tells how good the match is. Only matches that are better 50% (or exactly 50%) are listed.</p>
+</o2:if>
+<o2 else>
+  <h3>No results</h3>
+  <o2 docNote>
+    You can only search for tag names - not module names.
+  </o2:docNote>
+</o2:else>
+
+<p>
+  <a href="#" onclick="history.back(1); return false;">Back</a>
+</p>
+
+<o2 footer />

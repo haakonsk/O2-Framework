@@ -1,0 +1,48 @@
+<o2 use O2Doc::Tutorial />
+
+<o2 docSection title="popupWindow">
+  Same as <o2 docLink type="tag" id="link" />, only opens the link in a new window.
+  <o2 docSection title="Syntax">
+    <o2 docCode lang="o2ml">
+      <o2 popupWindow setClass="System-Documentation-Taglibs" setMethod="showDocumentation" setParams="module=Core">Click here</o2:popupWindow>
+    </o2:docCode>
+    <o2 docCodeResult />
+    or
+    <o2 docCode lang="o2ml">
+      <o2 popupWindow type="image" src="/images/myNiceImage.gif" href="http://facebook.com" />
+    </o2:docCode>
+    <o2 docCodeResult seeGeneratedHtmlAsDisplayed="0" />
+    or
+    <o2 docCode lang="o2ml">
+      <o2 popupWindow type="button" setMethod="o2ml" removeParams="1">Click here</o2:popupWindow>
+    </o2:docCode>
+    <o2 docCodeResult />
+  </o2:docSection>
+  <o2 docNote>
+    In contrast to <o2 docLink type="tag" id="link" />, the href attribute must be used instead of the url attribute.
+  </o2:docNote>
+  <o2 docSection title="Attributes">
+    <o2 docList class="attributes">
+      <o2 docListItem class="optional">type</o2:docListItem>
+      <o2 docListItem class="optional">src</o2:docListItem>
+      <o2 docListItem class="optional">href</o2:docListItem>
+      <o2 docListItem class="optional">onClick</o2:docListItem>
+      <o2 docListItem class="optional">border</o2:docListItem>
+      <o2 docListItem class="optional">alt</o2:docListItem>
+      <o2 docListItem class="optional">windowTitle - Title of opened window</o2:docListItem>
+      <o2 docListItem class="optional">toolbar     - Show tool bar in opened window?</o2:docListItem>
+      <o2 docListItem class="optional">location    - Show navigation tool bar in opened window?</o2:docListItem>
+      <o2 docListItem class="optional">directories</o2:docListItem>
+      <o2 docListItem class="optional">status      - Show status line in opened window?</o2:docListItem>
+      <o2 docListItem class="optional">menubar     - Show menu bar in opened window?</o2:docListItem>
+      <o2 docListItem class="optional">scrollbars  - Enable scrollbars in opened window?</o2:docListItem>
+      <o2 docListItem class="optional">resizeable  - Allow resizing of opened window</o2:docListItem>
+      <o2 docListItem class="optional">width       - Width of opened window</o2:docListItem>
+      <o2 docListItem class="optional">height      - Height of opened window</o2:docListItem>
+      <o2 docListItem class="optional">ignoreSingleClickOnDblClick - This causes the onClick event not to be executed if the click is part of a onDblClick event</o2:docListItem>
+      <o2 docListItem class="required">content     - Link text</o2:docListItem>
+      <o2 docListItem class="optional"><o2 docLink type="tag" id="Html-urlMod" /> attributes</o2:docListItem>
+      <o2 docListItem class="optional">Normal html attributes</o2:docListItem>
+    </o2:docList>
+  </o2:docSection>
+</o2:docSection>

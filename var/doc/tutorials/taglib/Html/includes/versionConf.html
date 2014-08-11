@@ -1,0 +1,6 @@
+As you can see from the generated HTML above, there's a "v" parameter in the file's URL. All CSS and Javascript files included with
+<o2 docLink type="tag" id="addCssFile" /> or <o2 docLink type="tag" id="addJsFile" /> (or automatically included with a tag or tag lib) get
+this "v" parameter, which is the version of the repository where the file resides. So the version number will be different depending on
+whether the CSS/Javascript file is located in O2 Framework, O2 CMS or in customer code. The "v" parameter is intended to make sure the
+browser discards its cached version of the CSS/Javascript file when the file is changed on disk. The config file version.conf contains the
+version number.

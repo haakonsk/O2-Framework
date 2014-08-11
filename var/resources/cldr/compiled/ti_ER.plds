@@ -1,0 +1,891 @@
+{
+  'territory' => 'ER',
+  'language' => 'ti',
+  'number' => {
+                'percentFormat' => {
+                                     'percentFormatLength' => {
+                                                              'standard' => '#,##0%'
+                                                            }
+                                   },
+                'measurement' => {},
+                'symbols' => {
+                               'infinity' => "\x{221e}",
+                               'nan' => 'NaN',
+                               'plusSign' => '+',
+                               'superscriptingExponent' => "×",
+                               'exponential' => 'E',
+                               'group' => ',',
+                               'percentSign' => '%',
+                               'decimal' => '.',
+                               'perMille' => "\x{2030}",
+                               'alias' => '',
+                               'minusSign' => '-',
+                               'list' => ';'
+                             },
+                'scientificFormat' => {
+                                        'scientificFormatLength' => {
+                                                                    'standard' => '#E0'
+                                                                  }
+                                      },
+                'decimalFormat' => {
+                                     'decimalFormatLength' => {
+                                                              'short' => '0K00K000K0M00M000M0G00G000G0T00T000T',
+                                                              'standard' => '#,##0.###'
+                                                            }
+                                   },
+                'currencyFormat' => {
+                                      'currencyFormatLength' => {
+                                                                'standard' => "¤#,##0.00"
+                                                              }
+                                    },
+                'currencies' => {
+                                  'KZT' => {
+                                           'symbol' => "\x{20b8}"
+                                         },
+                                  'NZD' => {
+                                           'symbol' => '$'
+                                         },
+                                  'HKD' => {
+                                           'symbol' => '$'
+                                         },
+                                  'BZD' => {
+                                           'symbol' => '$'
+                                         },
+                                  'BRL' => {
+                                           'symbol' => 'R$',
+                                           'displayName' => "\x{12e8}\x{1265}\x{122b}\x{12da}\x{120d} \x{122a}\x{120d}"
+                                         },
+                                  'SGD' => {
+                                           'symbol' => '$'
+                                         },
+                                  'TWD' => {
+                                           'symbol' => 'NT$'
+                                         },
+                                  'USD' => {
+                                           'symbol' => '$',
+                                           'displayName' => "\x{12e8}\x{12a0}\x{121c}\x{122a}\x{12ab}\x{1295} \x{12f6}\x{120b}\x{122d}"
+                                         },
+                                  'ERN' => {
+                                           'symbol' => 'Nfk'
+                                         },
+                                  'SSP' => {
+                                           'symbol' => "£"
+                                         },
+                                  'KYD' => {
+                                           'symbol' => '$'
+                                         },
+                                  'AUD' => {
+                                           'symbol' => '$'
+                                         },
+                                  'NGN' => {
+                                           'symbol' => "\x{20a6}"
+                                         },
+                                  'CRC' => {
+                                           'symbol' => "\x{20a1}"
+                                         },
+                                  'KRW' => {
+                                           'symbol' => "\x{20a9}"
+                                         },
+                                  'TRY' => {
+                                           'symbol' => 'TL'
+                                         },
+                                  'GIP' => {
+                                           'symbol' => "£"
+                                         },
+                                  'LAK' => {
+                                           'symbol' => "\x{20ad}"
+                                         },
+                                  'FJD' => {
+                                           'symbol' => '$'
+                                         },
+                                  'CLP' => {
+                                           'symbol' => '$'
+                                         },
+                                  'NAD' => {
+                                           'symbol' => '$'
+                                         },
+                                  'JMD' => {
+                                           'symbol' => '$'
+                                         },
+                                  'ILS' => {
+                                           'symbol' => "\x{20aa}"
+                                         },
+                                  'BSD' => {
+                                           'symbol' => '$'
+                                         },
+                                  'ESP' => {
+                                           'symbol' => "\x{20a7}"
+                                         },
+                                  'UYU' => {
+                                           'symbol' => '$'
+                                         },
+                                  'UAH' => {
+                                           'symbol' => "\x{20b4}"
+                                         },
+                                  'MXN' => {
+                                           'symbol' => '$'
+                                         },
+                                  'GYD' => {
+                                           'symbol' => '$'
+                                         },
+                                  'BYR' => {
+                                           'symbol' => "\x{440}."
+                                         },
+                                  'THB' => {
+                                           'symbol' => "\x{e3f}"
+                                         },
+                                  'LRD' => {
+                                           'symbol' => '$'
+                                         },
+                                  'BND' => {
+                                           'symbol' => '$'
+                                         },
+                                  'RUB' => {
+                                           'displayName' => "\x{12e8}\x{122b}\x{123b} \x{1229}\x{1265}\x{120d}"
+                                         },
+                                  'JPY' => {
+                                           'symbol' => "¥",
+                                           'displayName' => "\x{12e8}\x{1303}\x{1353}\x{1295} \x{12e8}\x{1295}"
+                                         },
+                                  'BMD' => {
+                                           'symbol' => '$'
+                                         },
+                                  'PYG' => {
+                                           'symbol' => "\x{20b2}"
+                                         },
+                                  'VND' => {
+                                           'symbol' => "\x{20ab}"
+                                         },
+                                  'CAD' => {
+                                           'symbol' => '$'
+                                         },
+                                  'CUP' => {
+                                           'symbol' => '$'
+                                         },
+                                  'SBD' => {
+                                           'symbol' => '$'
+                                         },
+                                  'GHS' => {
+                                           'symbol' => "\x{20b5}"
+                                         },
+                                  'TTD' => {
+                                           'symbol' => '$'
+                                         },
+                                  'RUR' => {
+                                           'symbol' => "\x{440}."
+                                         },
+                                  'XCD' => {
+                                           'symbol' => 'EC$'
+                                         },
+                                  'BBD' => {
+                                           'symbol' => '$'
+                                         },
+                                  'COP' => {
+                                           'symbol' => '$'
+                                         },
+                                  'XOF' => {
+                                           'symbol' => 'CFA'
+                                         },
+                                  'ARS' => {
+                                           'symbol' => '$'
+                                         },
+                                  'BDT' => {
+                                           'symbol' => "\x{9f3}"
+                                         },
+                                  'KHR' => {
+                                           'symbol' => "\x{17db}"
+                                         },
+                                  'CNY' => {
+                                           'symbol' => "¥",
+                                           'displayName' => "\x{12e8}\x{127b}\x{12ed}\x{1293} \x{12e9}\x{12a0}\x{1295} \x{1228}\x{1295}\x{121a}\x{1295}\x{1262}"
+                                         },
+                                  'MNT' => {
+                                           'symbol' => "\x{20ae}"
+                                         },
+                                  'EUR' => {
+                                           'symbol' => "\x{20ac}",
+                                           'displayName' => "\x{12a0}\x{12cd}\x{122e}"
+                                         },
+                                  'INR' => {
+                                           'symbol' => "\x{20b9}",
+                                           'displayName' => "\x{12e8}\x{1215}\x{1295}\x{12f5} \x{1229}\x{1352}"
+                                         },
+                                  'SRD' => {
+                                           'symbol' => '$'
+                                         },
+                                  'GBP' => {
+                                           'symbol' => "£",
+                                           'displayName' => "\x{12e8}\x{12a5}\x{1295}\x{130d}\x{120a}\x{12dd} \x{1353}\x{12cd}\x{1295}\x{12f5} \x{1235}\x{1270}\x{122d}\x{120a}\x{1295}\x{130d}"
+                                         },
+                                  'XAF' => {
+                                           'symbol' => 'FCFA'
+                                         },
+                                  'PHP' => {
+                                           'symbol' => "\x{20b1}"
+                                         },
+                                  'DOP' => {
+                                           'symbol' => '$'
+                                         },
+                                  'ETB' => {
+                                           'symbol' => 'Br',
+                                           'displayName' => "\x{12e8}\x{12a2}\x{1275}\x{12ee}\x{1335}\x{12eb} \x{1265}\x{122d}"
+                                         },
+                                  'XPF' => {
+                                           'symbol' => 'CFPF'
+                                         }
+                                }
+              },
+  'locale' => 'ti_ER',
+  'characters' => {
+                    'word-initial' => "\x{2026} {0}",
+                    'standard' => '?',
+                    'word-medial' => "{0} \x{2026} {1}",
+                    'index' => "[\x{1200} \x{1208} \x{1210} \x{1218} \x{1220} \x{1228} \x{1230} \x{1238} \x{1240} \x{1248} \x{1250} \x{1258} \x{1260} \x{1268} \x{1270} \x{1278} \x{1280} \x{1288} \x{1290} \x{1298} \x{12a0} \x{12a8} \x{12b0} \x{12b8} \x{12c0} \x{12c8} \x{12d0} \x{12d8} \x{12e0} \x{12e8} \x{12f0} \x{1300} \x{1308} \x{1310} \x{1320} \x{1328} \x{1330} \x{1338} \x{1340} \x{1348} \x{1350}]",
+                    'medial' => "{0}\x{2026}{1}",
+                    'word-final' => "{0} \x{2026}",
+                    'final' => "{0}\x{2026}",
+                    'auxiliary' => "[\x{1390} \x{1391} \x{1392} \x{1393} \x{1394} \x{1395} \x{1396} \x{1397} \x{1398} \x{1399} \x{1207} \x{2d80} \x{1380} \x{1381} \x{1382} \x{1383} \x{2d81} \x{2d82} \x{2d83} \x{2d84} \x{1247} \x{1384} \x{1385} \x{1386} \x{1387} \x{2d85} \x{2d86} \x{2d87} \x{1287} \x{2d88} \x{2d89} \x{2d8a} \x{12af} \x{12cf} \x{2d8b} \x{12ef} \x{2d8c} \x{12f8} \x{12f9} \x{12fa} \x{12fb} \x{12fc} \x{12fd} \x{12fe} \x{12ff} \x{2d8d} \x{2d8e} \x{130f} \x{1318} \x{1319} \x{131a} \x{131b} \x{131c} \x{131d} \x{131e} \x{131f} \x{2d93} \x{2d94} \x{2d95} \x{2d96} \x{2d8f} \x{2d90} \x{2d91} \x{1347} \x{1388} \x{1389} \x{138a} \x{138b} \x{138c} \x{138d} \x{138e} \x{138f} \x{2d92} \x{1358} \x{1359} \x{135a} \x{2da0} \x{2da1} \x{2da2} \x{2da3} \x{2da4} \x{2da5} \x{2da6} \x{2da8} \x{2da9} \x{2daa} \x{2dab} \x{2dac} \x{2dad} \x{2dae} \x{2db0} \x{2db1} \x{2db2} \x{2db3} \x{2db4} \x{2db5} \x{2db6} \x{2db8} \x{2db9} \x{2dba} \x{2dbb} \x{2dbc} \x{2dbd} \x{2dbe} \x{2dc0} \x{2dc1} \x{2dc2} \x{2dc3} \x{2dc4} \x{2dc5} \x{2dc6} \x{2dc8} \x{2dc9} \x{2dca} \x{2dcb} \x{2dcc} \x{2dcd} \x{2dce} \x{2dd0} \x{2dd1} \x{2dd2} \x{2dd3} \x{2dd4} \x{2dd5} \x{2dd6} \x{2dd8} \x{2dd9} \x{2dda} \x{2ddb} \x{2ddc} \x{2ddd} \x{2dde}]",
+                    'initial' => "\x{2026}{0}",
+                    'punctuation' => '[\\- , ; \\: ! ? . ( ) \\[ \\] \\{ \\}]'
+                  },
+  'calendar' => {
+                  'calendarType' => 'gregorian',
+                  'timeFormat' => {
+                                    'short' => 'h:mm a',
+                                    'pm' => '',
+                                    'am' => '',
+                                    'medium' => 'h:mm:ss a',
+                                    'long' => 'h:mm:ss a z',
+                                    'full' => 'h:mm:ss a zzzz'
+                                  },
+                  'timeZones' => {
+                                   'regionFormat' => '{0} (+0)',
+                                   'gmtFormat' => 'GMT{0}',
+                                   'hourFormat' => '+HH:mm;-HH:mm',
+                                   'zones' => {
+                                                'Antarctica/DumontDUrville' => {
+                                                                               'type' => 'Antarctica/DumontDUrville',
+                                                                               'exemplarCity' => "Dumont d\x{2019}Urville"
+                                                                             },
+                                                'America/Indiana/Tell_City' => {
+                                                                               'type' => 'America/Indiana/Tell_City',
+                                                                               'exemplarCity' => 'Tell City, Indiana'
+                                                                             },
+                                                'America/St_Lucia' => {
+                                                                      'type' => 'America/St_Lucia',
+                                                                      'exemplarCity' => 'St. Lucia'
+                                                                    },
+                                                'Asia/Calcutta' => {
+                                                                   'type' => 'Asia/Calcutta',
+                                                                   'exemplarCity' => 'Kolkata'
+                                                                 },
+                                                'America/Indiana/Knox' => {
+                                                                          'type' => 'America/Indiana/Knox',
+                                                                          'exemplarCity' => 'Knox, Indiana'
+                                                                        },
+                                                'America/Indiana/Vincennes' => {
+                                                                               'type' => 'America/Indiana/Vincennes',
+                                                                               'exemplarCity' => 'Vincennes, Indiana'
+                                                                             },
+                                                'Africa/Asmera' => {
+                                                                   'type' => 'Africa/Asmera',
+                                                                   'exemplarCity' => 'Asmara'
+                                                                 },
+                                                'America/Indiana/Winamac' => {
+                                                                             'type' => 'America/Indiana/Winamac',
+                                                                             'exemplarCity' => 'Winamac, Indiana'
+                                                                           },
+                                                'America/St_Thomas' => {
+                                                                       'type' => 'America/St_Thomas',
+                                                                       'exemplarCity' => 'St. Thomas'
+                                                                     },
+                                                'America/Indiana/Marengo' => {
+                                                                             'type' => 'America/Indiana/Marengo',
+                                                                             'exemplarCity' => 'Marengo, Indiana'
+                                                                           },
+                                                'America/Indiana/Petersburg' => {
+                                                                                'type' => 'America/Indiana/Petersburg',
+                                                                                'exemplarCity' => 'Petersburg, Indiana'
+                                                                              },
+                                                'America/Lower_Princes' => {
+                                                                           'type' => 'America/Lower_Princes',
+                                                                           'exemplarCity' => 'Lower Prince\'s Quarter'
+                                                                         },
+                                                'America/North_Dakota/Beulah' => {
+                                                                                 'type' => 'America/North_Dakota/Beulah',
+                                                                                 'exemplarCity' => 'Beulah, North Dakota'
+                                                                               },
+                                                'Atlantic/St_Helena' => {
+                                                                        'type' => 'Atlantic/St_Helena',
+                                                                        'exemplarCity' => 'St. Helena'
+                                                                      },
+                                                'Asia/Saigon' => {
+                                                                 'type' => 'Asia/Saigon',
+                                                                 'exemplarCity' => 'Ho Chi Minh'
+                                                               },
+                                                'America/Indiana/Vevay' => {
+                                                                           'type' => 'America/Indiana/Vevay',
+                                                                           'exemplarCity' => 'Vevay, Indiana'
+                                                                         },
+                                                'America/Coral_Harbour' => {
+                                                                           'type' => 'America/Coral_Harbour',
+                                                                           'exemplarCity' => 'Atikokan'
+                                                                         },
+                                                'America/St_Barthelemy' => {
+                                                                           'type' => 'America/St_Barthelemy',
+                                                                           'exemplarCity' => 'St. Barthelemy'
+                                                                         },
+                                                'America/North_Dakota/New_Salem' => {
+                                                                                    'type' => 'America/North_Dakota/New_Salem',
+                                                                                    'exemplarCity' => 'New Salem, North Dakota'
+                                                                                  },
+                                                'Etc/Unknown' => {
+                                                                 'type' => 'Etc/Unknown',
+                                                                 'exemplarCity' => 'Unknown'
+                                                               },
+                                                'Atlantic/Faeroe' => {
+                                                                     'type' => 'Atlantic/Faeroe',
+                                                                     'exemplarCity' => 'Faroe'
+                                                                   },
+                                                'America/Godthab' => {
+                                                                     'type' => 'America/Godthab',
+                                                                     'exemplarCity' => 'Nuuk'
+                                                                   },
+                                                'America/St_Kitts' => {
+                                                                      'type' => 'America/St_Kitts',
+                                                                      'exemplarCity' => 'St. Kitts'
+                                                                    },
+                                                'America/Scoresbysund' => {
+                                                                          'type' => 'America/Scoresbysund',
+                                                                          'exemplarCity' => 'Ittoqqortoormiit'
+                                                                        },
+                                                'America/St_Johns' => {
+                                                                      'type' => 'America/St_Johns',
+                                                                      'exemplarCity' => "St. John\x{2019}s"
+                                                                    },
+                                                'Pacific/Ponape' => {
+                                                                    'type' => 'Pacific/Ponape',
+                                                                    'exemplarCity' => 'Pohnpei'
+                                                                  },
+                                                'Asia/Katmandu' => {
+                                                                   'type' => 'Asia/Katmandu',
+                                                                   'exemplarCity' => 'Kathmandu'
+                                                                 },
+                                                'America/Kentucky/Monticello' => {
+                                                                                 'type' => 'America/Kentucky/Monticello',
+                                                                                 'exemplarCity' => 'Monticello, Kentucky'
+                                                                               },
+                                                'America/St_Vincent' => {
+                                                                        'type' => 'America/St_Vincent',
+                                                                        'exemplarCity' => 'St. Vincent'
+                                                                      },
+                                                'America/North_Dakota/Center' => {
+                                                                                 'type' => 'America/North_Dakota/Center',
+                                                                                 'exemplarCity' => 'Center, North Dakota'
+                                                                               },
+                                                'Pacific/Truk' => {
+                                                                  'type' => 'Pacific/Truk',
+                                                                  'exemplarCity' => 'Chuuk'
+                                                                }
+                                              },
+                                   'fallbackFormat' => '{1} ({0})',
+                                   'gmtZeroFormat' => 'GMT'
+                                 },
+                  'eras' => {
+                              'eraNames' => {
+                                            'alias' => {
+                                                       '' => ''
+                                                     }
+                                          },
+                              'eraNarrow' => {
+                                             'alias' => {
+                                                        '' => ''
+                                                      }
+                                           },
+                              'eraAbbr' => {
+                                           'era' => {
+                                                    '1' => "\x{12d3}/\x{121d}",
+                                                    '0' => "\x{12d3}/\x{12d3}"
+                                                  }
+                                         }
+                            },
+                  'days' => {
+                              'format' => {
+                                          'short' => {
+                                                     '' => ''
+                                                   },
+                                          'abbreviated' => {
+                                                           '' => ''
+                                                         },
+                                          'narrow' => {
+                                                      '' => ''
+                                                    },
+                                          'wide' => {
+                                                    'fri' => "\x{12d3}\x{122d}\x{1262}",
+                                                    'tue' => "\x{1230}\x{1209}\x{1235}",
+                                                    'sun' => "\x{1230}\x{1295}\x{1260}\x{1275}",
+                                                    'sat' => "\x{1240}\x{12f3}\x{121d}",
+                                                    'mon' => "\x{1230}\x{1291}\x{12ed}",
+                                                    'wed' => "\x{1228}\x{1261}\x{12d5}",
+                                                    'thu' => "\x{1213}\x{1219}\x{1235}"
+                                                  }
+                                        },
+                              'stand-alone' => {
+                                               'short' => {
+                                                          '' => ''
+                                                        },
+                                               'abbreviated' => {
+                                                                '' => ''
+                                                              },
+                                               'narrow' => {
+                                                           'fri' => "\x{12d3}",
+                                                           'tue' => "\x{1220}",
+                                                           'sun' => "\x{1230}",
+                                                           'sat' => "\x{1240}",
+                                                           'mon' => "\x{1230}",
+                                                           'wed' => "\x{1228}",
+                                                           'thu' => "\x{1283}"
+                                                         },
+                                               'wide' => {
+                                                         '' => ''
+                                                       }
+                                             }
+                            },
+                  'months' => {
+                                'format' => {
+                                            'abbreviated' => {
+                                                             '' => '',
+                                                             '6' => "\x{1230}\x{1290}",
+                                                             '11' => "\x{1215}\x{12f3}\x{122d}",
+                                                             '3' => "\x{1218}\x{130b}\x{1262}",
+                                                             '7' => "\x{1213}\x{121d}\x{1208}",
+                                                             '9' => "\x{1218}\x{1235}\x{12a8}",
+                                                             '12' => "\x{1273}\x{1215}\x{1233}",
+                                                             '2' => "\x{1208}\x{12ab}\x{1272}",
+                                                             '8' => "\x{1290}\x{1213}\x{1230}",
+                                                             '1' => "\x{1325}\x{122a}",
+                                                             '4' => "\x{121a}\x{12eb}\x{12dd}",
+                                                             '10' => "\x{1325}\x{1245}\x{121d}",
+                                                             '5' => "\x{130d}\x{1295}\x{1266}"
+                                                           },
+                                            'narrow' => {
+                                                        '' => ''
+                                                      },
+                                            'wide' => {
+                                                      '6' => "\x{1230}\x{1290}",
+                                                      '11' => "\x{1215}\x{12f3}\x{122d}",
+                                                      '3' => "\x{1218}\x{130b}\x{1262}\x{1275}",
+                                                      '7' => "\x{1213}\x{121d}\x{1208}",
+                                                      '9' => "\x{1218}\x{1235}\x{12a8}\x{1228}\x{121d}",
+                                                      '12' => "\x{1273}\x{1215}\x{1233}\x{1235}",
+                                                      '2' => "\x{1208}\x{12ab}\x{1272}\x{1275}",
+                                                      '8' => "\x{1290}\x{1213}\x{1230}",
+                                                      '1' => "\x{1325}\x{122a}",
+                                                      '4' => "\x{121a}\x{12eb}\x{12dd}\x{12eb}",
+                                                      '10' => "\x{1325}\x{1245}\x{121d}\x{1272}",
+                                                      '5' => "\x{130d}\x{1295}\x{1266}\x{1275}"
+                                                    }
+                                          },
+                                'stand-alone' => {
+                                                 'abbreviated' => {
+                                                                  '' => ''
+                                                                },
+                                                 'narrow' => {
+                                                             '6' => "\x{1301}",
+                                                             '11' => "\x{1296}",
+                                                             '3' => "\x{121b}",
+                                                             '7' => "\x{1301}",
+                                                             '9' => "\x{1234}",
+                                                             '12' => "\x{12f2}",
+                                                             '2' => "\x{134c}",
+                                                             '8' => "\x{12a6}",
+                                                             '1' => "\x{1303}",
+                                                             '4' => "\x{12a4}",
+                                                             '10' => "\x{12a6}",
+                                                             '5' => "\x{121c}"
+                                                           },
+                                                 'wide' => {
+                                                           '' => ''
+                                                         }
+                                               }
+                              },
+                  'dateFormat' => {
+                                    'short' => 'dd/MM/yy',
+                                    'medium' => 'dd-MMM-y',
+                                    'long' => 'dd MMMM y',
+                                    'full' => "EEEE\x{1361} dd MMMM \x{1218}\x{12d3}\x{120d}\x{1272} y G"
+                                  }
+                },
+  'displayNames' => {
+                      'territories' => {
+                                         'DJ' => "\x{1302}\x{1261}\x{1272}",
+                                         'JM' => "\x{1303}\x{121b}\x{12ed}\x{12ab}",
+                                         'AT' => "\x{12a6}\x{1235}\x{1275}\x{122a}\x{12eb}",
+                                         'SZ' => "\x{1231}\x{12cb}\x{12da}\x{120b}\x{1295}\x{12f5}",
+                                         'YT' => "\x{121c}\x{12ed}\x{12a6}\x{1274}",
+                                         'BN' => "\x{1265}\x{1229}\x{1292}",
+                                         'ZM' => "\x{12db}\x{121d}\x{1262}\x{12eb}",
+                                         'PR' => "\x{1356}\x{122d}\x{1273} \x{122a}\x{12ae}",
+                                         'SH' => "\x{1234}\x{1295}\x{1275} \x{1204}\x{1208}\x{1293}",
+                                         'MA' => "\x{121e}\x{122e}\x{12ae}",
+                                         'SV' => "\x{12a4}\x{120d} \x{1233}\x{120d}\x{126b}\x{12f6}\x{122d}",
+                                         'MT' => "\x{121b}\x{120d}\x{1273}",
+                                         'MP' => "\x{12e8}\x{1230}\x{121c}\x{1293}\x{12ca} \x{121b}\x{122a}\x{12eb}\x{1293} \x{12f0}\x{1234}\x{1276}\x{127d}",
+                                         'UZ' => "\x{12e9}\x{12dd}\x{1260}\x{12aa}\x{1235}\x{1273}\x{1295}",
+                                         'PW' => "\x{1353}\x{120b}\x{12cd}",
+                                         'TK' => "\x{1276}\x{12ad}\x{120b}\x{12cd}",
+                                         'LR' => "\x{120b}\x{12ed}\x{1264}\x{122a}\x{12eb}",
+                                         'TN' => "\x{1271}\x{1292}\x{12da}\x{12eb}",
+                                         'EE' => "\x{12a4}\x{1235}\x{1276}\x{1292}\x{12eb}",
+                                         'CK' => "\x{12a9}\x{12ad} \x{12f0}\x{1234}\x{1276}\x{127d}",
+                                         'BY' => "\x{1264}\x{120b}\x{1229}\x{1235}",
+                                         'NO' => "\x{1296}\x{122d}\x{12cc}",
+                                         'KR' => "\x{12f0}\x{1261}\x{1265} \x{12ae}\x{122a}\x{12eb}",
+                                         'BF' => "\x{1261}\x{122d}\x{12aa}\x{1293} \x{134b}\x{1236}",
+                                         'AM' => "\x{12a0}\x{122d}\x{121c}\x{1292}\x{12eb}",
+                                         'SR' => "\x{1231}\x{122a}\x{1293}\x{121d}",
+                                         'MG' => "\x{121b}\x{12f3}\x{130b}\x{1235}\x{12ab}\x{122d}",
+                                         'BT' => "\x{1261}\x{1205}\x{1273}\x{1295}",
+                                         '009' => "\x{12a6}\x{123d}\x{1292}\x{12eb}",
+                                         'CF' => "\x{12e8}\x{1218}\x{12ab}\x{12a8}\x{1208}\x{129b}\x{12cd} \x{12a0}\x{134d}\x{122a}\x{12ab} \x{122a}\x{1350}\x{1265}\x{120a}\x{12ad}",
+                                         '014' => "\x{121d}\x{1235}\x{122b}\x{1243}\x{12ca} \x{12a0}\x{134d}\x{122a}\x{12ab}",
+                                         'BA' => "\x{1266}\x{1235}\x{1292}\x{12eb} \x{12a5}\x{1293} \x{1204}\x{122d}\x{12de}\x{130e}\x{126a}\x{1292}\x{12eb}",
+                                         'AE' => "\x{12e8}\x{1270}\x{1263}\x{1260}\x{1229}\x{1275} \x{12a0}\x{1228}\x{1265} \x{12a4}\x{121d}\x{122c}\x{1275}\x{1235}",
+                                         'TH' => "\x{1273}\x{12ed}\x{120b}\x{1295}\x{12f5}",
+                                         '002' => "\x{12a0}\x{134d}\x{122a}\x{12ab}",
+                                         'CC' => "\x{12ae}\x{12ae}\x{1235} \x{12ac}\x{120a}\x{1295}\x{130d} \x{12f0}\x{1234}\x{1276}\x{127d}",
+                                         'NC' => "\x{1292}\x{12cd} \x{12ab}\x{120c}\x{12f6}\x{1292}\x{12eb}",
+                                         'TO' => "\x{1276}\x{1295}\x{130b}",
+                                         'SE' => "\x{1235}\x{12ca}\x{12f5}\x{1295}",
+                                         'AZ' => "\x{12a0}\x{12d8}\x{122d}\x{1263}\x{1303}\x{1295}",
+                                         'AF' => "\x{12a0}\x{134d}\x{130b}\x{1292}\x{1235}\x{1273}\x{1295}",
+                                         'NG' => "\x{1293}\x{12ed}\x{1304}\x{122a}\x{12eb}",
+                                         'KE' => "\x{12ac}\x{1295}\x{12eb}",
+                                         'BJ' => "\x{1264}\x{1292}\x{1295}",
+                                         'OM' => "\x{12a6}\x{121b}\x{1295}",
+                                         '145' => "\x{121d}\x{12d5}\x{122b}\x{1263}\x{12ca} \x{12a5}\x{1235}\x{12eb}",
+                                         'LK' => "\x{1232}\x{122a}\x{120b}\x{1295}\x{12ab}",
+                                         'ID' => "\x{12a2}\x{1295}\x{12f6}\x{1294}\x{12e2}\x{12eb}",
+                                         'FM' => "\x{121a}\x{12ad}\x{122e}\x{1294}\x{12e2}\x{12eb}",
+                                         'GM' => "\x{130b}\x{121d}\x{1262}\x{12eb}",
+                                         'LV' => "\x{120b}\x{1275}\x{126a}\x{12eb}",
+                                         'RU' => "\x{122b}\x{123a}\x{12eb}",
+                                         '154' => "\x{1230}\x{121c}\x{1293}\x{12ca} \x{12a0}\x{12cd}\x{122e}\x{1353}",
+                                         '034' => "\x{121d}\x{1225}\x{122b}\x{1243}\x{12ca} \x{12a5}\x{1235}\x{12eb}",
+                                         'FI' => "\x{134a}\x{1295}\x{120b}\x{1295}\x{12f5}",
+                                         'LU' => "\x{1209}\x{12ad}\x{1230}\x{121d}\x{1260}\x{122d}\x{130d}",
+                                         'VE' => "\x{126c}\x{1295}\x{12d9}\x{12cc}\x{120b}",
+                                         '054' => "\x{121c}\x{120b}\x{1294}\x{1232}\x{12eb}",
+                                         'VI' => "\x{12e8}\x{12a0}\x{121c}\x{122a}\x{12ab} \x{1268}\x{122d}\x{1302}\x{1295} \x{12f0}\x{1234}\x{1276}\x{127d}",
+                                         'TV' => "\x{1271}\x{126b}\x{1209}",
+                                         'SN' => "\x{1234}\x{1294}\x{130b}\x{120d}",
+                                         'MX' => "\x{121c}\x{12ad}\x{1232}\x{12ae}",
+                                         'IL' => "\x{12a5}\x{1235}\x{122b}\x{12a4}\x{120d}",
+                                         'HU' => "\x{1200}\x{1295}\x{130b}\x{122a}",
+                                         'DO' => "\x{12f6}\x{121a}\x{1292}\x{12ad} \x{122a}\x{1351}\x{1265}\x{120a}\x{12ad}",
+                                         'KH' => "\x{12ab}\x{121d}\x{1266}\x{12f2}\x{12eb}",
+                                         'TG' => "\x{1276}\x{1310}",
+                                         'BB' => "\x{1263}\x{122d}\x{1264}\x{12f6}\x{1235}",
+                                         'DK' => "\x{12f4}\x{1295}\x{121b}\x{122d}\x{12ad}",
+                                         'PA' => "\x{1353}\x{1293}\x{121b}",
+                                         'QA' => "\x{12b3}\x{1273}\x{122d}",
+                                         'CV' => "\x{12ac}\x{1355} \x{126c}\x{122d}\x{12f4}",
+                                         'GD' => "\x{130d}\x{122c}\x{1293}\x{12f3}",
+                                         'MO' => "\x{121b}\x{12ab}\x{12ce}",
+                                         'HR' => "\x{12ad}\x{122e}\x{12a4}\x{123d}\x{12eb}",
+                                         'CZ' => "\x{127c}\x{12ad} \x{122a}\x{1351}\x{1265}\x{120a}\x{12ad}",
+                                         'ST' => "\x{1233}\x{12a6} \x{1276}\x{121c} \x{12a5}\x{1293} \x{1355}\x{122a}\x{1295}\x{1232}\x{1354}",
+                                         'AU' => "\x{12a0}\x{12cd}\x{1235}\x{1275}\x{122c}\x{120a}\x{12eb}",
+                                         'IR' => "\x{12a2}\x{122b}\x{1295}",
+                                         'CG' => "\x{12ae}\x{1295}\x{1310}",
+                                         'BI' => "\x{1265}\x{1229}\x{1295}\x{12f2}",
+                                         'GW' => "\x{1262}\x{1233}\x{12ce}",
+                                         'MK' => "\x{121b}\x{12a8}\x{12f6}\x{1292}\x{12eb}",
+                                         'GR' => "\x{130d}\x{122a}\x{12ad}",
+                                         'AG' => "\x{12a0}\x{1295}\x{1272}\x{1313} \x{12a5}\x{1293} \x{1263}\x{1229}\x{12f3}",
+                                         '021' => "\x{1230}\x{121c}\x{1293}\x{12ca} \x{12a0}\x{121c}\x{122a}\x{12ab}",
+                                         'AI' => "\x{12a0}\x{1295}\x{1309}\x{12a2}\x{120b}",
+                                         'AN' => "\x{1294}\x{12d8}\x{122d}\x{120b}\x{1295}\x{12f5}\x{1235} \x{12a0}\x{1295}\x{1272}\x{120d}\x{1235}",
+                                         'UA' => "\x{12e9}\x{12ad}\x{122c}\x{1295}",
+                                         'EH' => "\x{121d}\x{12d5}\x{122b}\x{1263}\x{12ca} \x{1233}\x{1205}\x{122b}",
+                                         'KN' => "\x{1245}\x{12f1}\x{1235} \x{12aa}\x{1275}\x{1235} \x{12a5}\x{1293} \x{1294}\x{126a}\x{1235}",
+                                         'SC' => "\x{1232}\x{123c}\x{120d}\x{1235}",
+                                         'NL' => "\x{1294}\x{12d8}\x{122d}\x{120b}\x{1295}\x{12f5}",
+                                         'MS' => "\x{121e}\x{1295}\x{1275}\x{1234}\x{122b}\x{1275}",
+                                         'EC' => "\x{12a2}\x{12b3}\x{12f6}\x{122d}",
+                                         'HK' => "\x{1206}\x{1295}\x{130d} \x{12ae}\x{1295}\x{130d}",
+                                         'MY' => "\x{121b}\x{120c}\x{12e2}\x{12eb}",
+                                         'CR' => "\x{12ae}\x{1235}\x{1273} \x{122a}\x{12ab}",
+                                         'VA' => "\x{126b}\x{1272}\x{12ab}\x{1295}",
+                                         'IO' => "\x{12e8}\x{1265}\x{122a}\x{1273}\x{1292}\x{12eb} \x{1205}\x{1295}\x{12f5} \x{12cd}\x{1242}\x{12eb}\x{1296}\x{1235} \x{130d}\x{12db}\x{1275}",
+                                         'SD' => "\x{1231}\x{12f3}\x{1295}",
+                                         'CN' => "\x{127b}\x{12ed}\x{1293}",
+                                         'UY' => "\x{12a1}\x{122b}\x{1313}\x{12ed}",
+                                         'PY' => "\x{1353}\x{122b}\x{1313}\x{12ed}",
+                                         '053' => "\x{12a0}\x{12cd}\x{1235}\x{1275}\x{122b}\x{120a}\x{12eb} \x{12a5}\x{1293} \x{1292}\x{12cd} \x{12da}\x{120b}\x{1295}\x{12f5}",
+                                         'MU' => "\x{121b}\x{1229}\x{1238}\x{1235}",
+                                         'LI' => "\x{120a}\x{127d}\x{1270}\x{1295}\x{1235}\x{1273}\x{12ed}\x{1295}",
+                                         'CH' => "\x{1235}\x{12ca}\x{12d8}\x{122d}\x{120b}\x{1295}\x{12f5}",
+                                         'GH' => "\x{130b}\x{1293}",
+                                         'NU' => "\x{1292}\x{12a1}\x{12ed}",
+                                         'US' => "\x{12a0}\x{121c}\x{122a}\x{12ab}",
+                                         'PE' => "\x{1354}\x{1229}",
+                                         'SL' => "\x{1234}\x{122b}\x{120a}\x{12ee}\x{1295}",
+                                         '001' => "\x{12d3}\x{1208}\x{121d}",
+                                         'FJ' => "\x{134a}\x{1302}",
+                                         'ER' => "\x{12a4}\x{122d}\x{1275}\x{122b}",
+                                         'IQ' => "\x{12a2}\x{122b}\x{1245}",
+                                         'AS' => "\x{12e8}\x{12a0}\x{121c}\x{122a}\x{12ab} \x{1233}\x{121e}\x{12a0}",
+                                         'TZ' => "\x{1273}\x{1295}\x{12db}\x{1292}\x{12eb}",
+                                         'LY' => "\x{120a}\x{1262}\x{12eb}",
+                                         'GT' => "\x{1309}\x{12cb}\x{1272}\x{121b}\x{120b}",
+                                         'BM' => "\x{1264}\x{122d}\x{1219}\x{12f3}",
+                                         'BV' => "\x{12e8}\x{1266}\x{12cd}\x{126c}\x{1275} \x{12f0}\x{1234}\x{1275}",
+                                         'LT' => "\x{120a}\x{1271}\x{12cc}\x{1292}\x{12eb}",
+                                         '017' => "\x{1218}\x{12ab}\x{12a8}\x{1208}\x{129b} \x{12a0}\x{134d}\x{122a}\x{12ab}",
+                                         'SG' => "\x{1232}\x{1295}\x{130b}\x{1356}\x{122d}",
+                                         'PM' => "\x{1245}\x{12f1}\x{1235} \x{1352}\x{12ec}\x{122d} \x{12a5}\x{1293} \x{121a}\x{12a9}\x{12a4}\x{120e}\x{1295}",
+                                         'TT' => "\x{1275}\x{122a}\x{1292}\x{12f3}\x{12f5} \x{12a5}\x{1293} \x{1276}\x{1263}\x{130e}",
+                                         'SY' => "\x{1232}\x{122a}\x{12eb}",
+                                         'SK' => "\x{1235}\x{120e}\x{126b}\x{12aa}\x{12eb}",
+                                         '011' => "\x{121d}\x{12d5}\x{122b}\x{1263}\x{12ca} \x{12a0}\x{134d}\x{122a}\x{12ab}",
+                                         'GL' => "\x{130d}\x{122a}\x{1295}\x{120b}\x{1295}\x{12f5}",
+                                         'PG' => "\x{1353}\x{1351}\x{12cb} \x{1292}\x{12cd} \x{130a}\x{1292}",
+                                         'KI' => "\x{12aa}\x{122a}\x{1263}\x{1272}",
+                                         'CD' => "\x{12ae}\x{1295}\x{130e}",
+                                         'AO' => "\x{12a0}\x{1295}\x{1310}\x{120b}",
+                                         'BW' => "\x{1266}\x{1275}\x{1235}\x{12cb}\x{1293}",
+                                         'ZW' => "\x{12da}\x{121d}\x{1267}\x{1264}",
+                                         'VC' => "\x{1245}\x{12f1}\x{1235} \x{126a}\x{1295}\x{1234}\x{1295}\x{1275} \x{12a5}\x{1293} \x{130d}\x{122c}\x{1293}\x{12f2}\x{1295}\x{1235}",
+                                         'JP' => "\x{1303}\x{1353}\x{1295}",
+                                         'NA' => "\x{1293}\x{121a}\x{1262}\x{12eb}",
+                                         'TJ' => "\x{1273}\x{1303}\x{12aa}\x{1235}\x{1273}\x{1295}",
+                                         'LC' => "\x{1234}\x{1295}\x{1275} \x{1209}\x{127a}\x{12eb}",
+                                         'VU' => "\x{126b}\x{1291}\x{12a0}\x{1271}",
+                                         'MN' => "\x{121e}\x{1295}\x{130e}\x{120a}\x{12eb}",
+                                         'IT' => "\x{1323}\x{120a}\x{12eb}\x{1295}",
+                                         'RE' => "\x{122a}\x{12e9}\x{1292}\x{12e8}\x{1295}",
+                                         'WS' => "\x{1233}\x{121e}\x{12a0}",
+                                         '151' => "\x{121d}\x{1235}\x{122b}\x{1243}\x{12ca} \x{12a0}\x{12cd}\x{122e}\x{1353}",
+                                         '015' => "\x{1230}\x{121c}\x{1293}\x{12ca} \x{12a0}\x{134d}\x{122a}\x{12ab}",
+                                         'EG' => "\x{130d}\x{1265}\x{133d}",
+                                         'FR' => "\x{1348}\x{1228}\x{1295}\x{1233}\x{12ed}",
+                                         'RW' => "\x{1229}\x{12cb}\x{1295}\x{12f3}",
+                                         'BE' => "\x{1264}\x{120d}\x{1304}\x{121d}",
+                                         'UM' => "\x{12e8}\x{12a0}\x{121c}\x{122a}\x{12ab} \x{122b}\x{1245} \x{12eb}\x{1209} \x{12a0}\x{1293}\x{1233} \x{12f0}\x{1234}\x{1276}\x{127d}",
+                                         'LS' => "\x{120c}\x{1236}\x{1276}",
+                                         'SA' => "\x{1233}\x{12cd}\x{12f5}\x{12a0}\x{1228}\x{1262}\x{12eb}",
+                                         'ZA' => "\x{12f0}\x{1261}\x{1265} \x{12a0}\x{134d}\x{122a}\x{12ab}",
+                                         'PT' => "\x{1356}\x{122d}\x{1271}\x{130b}\x{120d}",
+                                         'CA' => "\x{12ab}\x{1293}\x{12f3}",
+                                         'CM' => "\x{12ab}\x{121c}\x{1229}\x{1295}",
+                                         'NP' => "\x{1294}\x{1353}\x{120d}",
+                                         'PL' => "\x{1356}\x{120b}\x{1295}\x{12f5}",
+                                         'GA' => "\x{130b}\x{1266}\x{1295}",
+                                         'TM' => "\x{1271}\x{122d}\x{12ad}\x{121c}\x{1292}\x{1235}\x{1273}\x{1295}",
+                                         'KY' => "\x{12ab}\x{12ed}\x{121b}\x{1295} \x{12f0}\x{1234}\x{1276}\x{127d}",
+                                         'LA' => "\x{120b}\x{12a6}\x{1235}",
+                                         'PH' => "\x{134a}\x{120a}\x{1352}\x{1295}\x{1235}",
+                                         'NI' => "\x{1292}\x{12ab}\x{122b}\x{1313}",
+                                         'GU' => "\x{1309}\x{12cb}\x{121d}",
+                                         'TF' => "\x{12e8}\x{1348}\x{1228}\x{1295}\x{1233}\x{12ed} \x{12f0}\x{1261}\x{1263}\x{12ca} \x{130d}\x{12db}\x{1276}\x{127d}",
+                                         '029' => "\x{12ab}\x{122a}\x{1262}\x{12eb}\x{1295}",
+                                         'SJ' => "\x{12e8}\x{1235}\x{126b}\x{120d}\x{1263}\x{122d}\x{12f5} \x{12a5}\x{1293} \x{12e3}\x{1295} \x{121b}\x{12e8}\x{1295} \x{12f0}\x{1234}\x{1276}\x{127d}",
+                                         'MM' => "\x{121b}\x{12eb}\x{1295}\x{121b}\x{122d}",
+                                         'NR' => "\x{1293}\x{12a1}\x{1229}",
+                                         'DM' => "\x{12f6}\x{121a}\x{1292}\x{12ab}",
+                                         'NE' => "\x{1292}\x{1300}\x{122d}",
+                                         'AD' => "\x{12a0}\x{1295}\x{12f6}\x{122b}",
+                                         'MR' => "\x{121e}\x{122a}\x{1274}\x{1292}\x{12eb}",
+                                         '039' => "\x{12f0}\x{1261}\x{1263}\x{12ca} \x{12a0}\x{12cd}\x{122e}\x{1353}",
+                                         'GS' => "\x{12f0}\x{1261}\x{1265} \x{1306}\x{122d}\x{1302}\x{12eb} \x{12a5}\x{1293} \x{12e8}\x{12f0}\x{1261}\x{12f5} \x{1233}\x{1295}\x{12f5}\x{12ca}\x{127d} \x{12f0}\x{1234}\x{1276}\x{127d}",
+                                         'AX' => "\x{12e8}\x{12a0}\x{120b}\x{1295}\x{12f5} \x{12f0}\x{1234}\x{1276}\x{127d}",
+                                         'VG' => "\x{12e8}\x{12a5}\x{1295}\x{130d}\x{120a}\x{12dd} \x{12f5}\x{1295}\x{130d}\x{120d} \x{12f0}\x{1234}\x{1276}\x{127d}",
+                                         'VN' => "\x{126c}\x{1275}\x{1293}\x{121d}",
+                                         'YE' => "\x{12e8}\x{1218}\x{1295}",
+                                         'CI' => "\x{12ae}\x{1275} \x{12f2}\x{126f}\x{122d}",
+                                         'DZ' => "\x{12a0}\x{120d}\x{1304}\x{122a}\x{12eb}",
+                                         'GE' => "\x{1306}\x{122d}\x{1302}\x{12eb}",
+                                         '005' => "\x{12f0}\x{1261}\x{1263}\x{12ca} \x{12a0}\x{121c}\x{122a}\x{12ab}",
+                                         'CX' => "\x{12e8}\x{1308}\x{1293} \x{12f0}\x{1234}\x{1276}\x{127d}",
+                                         'LB' => "\x{120a}\x{1263}\x{1296}\x{1235}",
+                                         '018' => "\x{12f0}\x{1261}\x{1263}\x{12ca} \x{12a0}\x{134d}\x{122a}\x{12ab}",
+                                         'FK' => "\x{12e8}\x{134e}\x{120d}\x{12ad}\x{120b}\x{1295}\x{12f5} \x{12f0}\x{1234}\x{1276}\x{127d}",
+                                         'DE' => "\x{1300}\x{122d}\x{1218}\x{1295}",
+                                         'MV' => "\x{121b}\x{120d}\x{12f2}\x{126d}\x{1235}",
+                                         'PN' => "\x{1352}\x{1275}\x{12ab}\x{12a2}\x{122d}\x{1295}",
+                                         'BH' => "\x{1263}\x{1205}\x{122c}\x{1295}",
+                                         'GI' => "\x{130a}\x{1265}\x{122b}\x{120d}\x{1273}\x{122d}",
+                                         'RO' => "\x{122e}\x{121c}\x{1292}\x{12eb}",
+                                         'WF' => "\x{12cb}\x{120a}\x{1235} \x{12a5}\x{1293} \x{1349}\x{1271}\x{1293} \x{12f0}\x{1234}\x{1276}\x{127d}",
+                                         'AR' => "\x{12a0}\x{122d}\x{1300}\x{1295}\x{1272}\x{1293}",
+                                         'GP' => "\x{1309}\x{12cb}\x{12f0}\x{1209}\x{1355}",
+                                         'IN' => "\x{1205}\x{1295}\x{12f5}",
+                                         'AW' => "\x{12a0}\x{1229}\x{1263}",
+                                         'FO' => "\x{12e8}\x{134b}\x{122e}\x{12ed} \x{12f0}\x{1234}\x{1276}\x{127d}",
+                                         'BR' => "\x{1265}\x{122b}\x{12da}\x{120d}",
+                                         'HN' => "\x{1206}\x{1295}\x{12f1}\x{122b}\x{1235}",
+                                         'MC' => "\x{121e}\x{1293}\x{12ae}",
+                                         'SB' => "\x{1230}\x{120e}\x{121e}\x{1295} \x{12f0}\x{1234}\x{1275}",
+                                         'NZ' => "\x{1292}\x{12cd} \x{12da}\x{120b}\x{1295}\x{12f5}",
+                                         'PS' => "\x{12e8}\x{134d}\x{120d}\x{1235}\x{1324}\x{121d} \x{130d}\x{12db}\x{1275}",
+                                         'UG' => "\x{12e9}\x{130b}\x{1295}\x{12f3}",
+                                         'GB' => "\x{12a5}\x{1295}\x{130d}\x{120a}\x{12dd}",
+                                         'HT' => "\x{1200}\x{12ed}\x{1272}",
+                                         '019' => "\x{12a0}\x{121c}\x{122a}\x{12ab}\x{12ce}\x{127d}",
+                                         'QO' => "\x{12c8}\x{1323} \x{12eb}\x{1208} \x{12a6}\x{123d}\x{1292}\x{12eb}",
+                                         'GF' => "\x{12e8}\x{1348}\x{1228}\x{1295}\x{1233}\x{12ed} \x{1309}\x{12ca}\x{12a0}\x{1293}",
+                                         'KM' => "\x{12ae}\x{121e}\x{122e}\x{1235}",
+                                         'KW' => "\x{12ad}\x{12cc}\x{1275}",
+                                         'MQ' => "\x{121b}\x{122d}\x{1272}\x{1292}\x{12ad}",
+                                         'TC' => "\x{12e8}\x{1271}\x{122d}\x{12ae}\x{127d}\x{1293} \x{12e8}\x{12ab}\x{12a2}\x{12ae}\x{1235} \x{12f0}\x{1234}\x{1276}\x{127d}",
+                                         'ES' => "\x{1235}\x{1354}\x{1295}",
+                                         'MZ' => "\x{121e}\x{12db}\x{121d}\x{1262}\x{12ad}",
+                                         'BO' => "\x{1266}\x{120a}\x{126a}\x{12eb}",
+                                         '142' => "\x{12a5}\x{1235}\x{12eb}",
+                                         'AL' => "\x{12a0}\x{120d}\x{1263}\x{1292}\x{12eb}",
+                                         'MD' => "\x{121e}\x{120d}\x{12f6}\x{126b}",
+                                         'TR' => "\x{1271}\x{122d}\x{12ad}",
+                                         'GN' => "\x{130a}\x{1292}",
+                                         'CO' => "\x{12ae}\x{120e}\x{121d}\x{1262}\x{12eb}",
+                                         'SI' => "\x{1235}\x{120e}\x{126c}\x{1292}\x{12eb}",
+                                         'AQ' => "\x{12a0}\x{1295}\x{1273}\x{122d}\x{12ad}\x{1272}\x{12ab}",
+                                         'JO' => "\x{1306}\x{122d}\x{12f3}\x{1295}",
+                                         '061' => "\x{1356}\x{120a}\x{1294}\x{12e2}\x{12eb}",
+                                         'SM' => "\x{1233}\x{1295} \x{121b}\x{122a}\x{1296}",
+                                         'CU' => "\x{12a9}\x{1263}",
+                                         'CL' => "\x{127a}\x{120a}",
+                                         'ML' => "\x{121b}\x{120a}",
+                                         'ET' => "\x{12a2}\x{1275}\x{12ee}\x{1335}\x{12eb}",
+                                         'IS' => "\x{12a0}\x{12ed}\x{1235}\x{120b}\x{1295}\x{12f5}",
+                                         'BG' => "\x{1261}\x{120d}\x{130c}\x{122a}\x{12eb}",
+                                         'MH' => "\x{121b}\x{122d}\x{123b}\x{120d} \x{12a0}\x{12ed}\x{120b}\x{1295}\x{12f5}",
+                                         'BS' => "\x{1263}\x{1203}\x{121b}\x{1235}",
+                                         'TL' => "\x{121d}\x{1235}\x{122b}\x{1245} \x{1272}\x{121e}\x{122d}",
+                                         'BZ' => "\x{1264}\x{120a}\x{12d8}",
+                                         '150' => "\x{12a0}\x{12cd}\x{122e}\x{1353}",
+                                         'CY' => "\x{1233}\x{12ed}\x{1355}\x{1228}\x{1235}",
+                                         '155' => "\x{121d}\x{12d5}\x{122b}\x{1263}\x{12ca} \x{12a0}\x{12cd}\x{122e}\x{1353}",
+                                         'IE' => "\x{12a0}\x{12e8}\x{122d}\x{120b}\x{1295}\x{12f5}",
+                                         'TW' => "\x{1273}\x{12ed}\x{12cb}\x{1295}",
+                                         'KP' => "\x{1230}\x{121c}\x{1295} \x{12ae}\x{122a}\x{12eb}",
+                                         'PF' => "\x{12e8}\x{1348}\x{1228}\x{1295}\x{1233}\x{12ed} \x{1356}\x{120a}\x{1294}\x{12e2}\x{12eb}",
+                                         'MW' => "\x{121b}\x{120b}\x{12ca}",
+                                         'GY' => "\x{1309}\x{12eb}\x{1293}",
+                                         'GQ' => "\x{12a2}\x{12b3}\x{1276}\x{122a}\x{12eb}\x{120d} \x{130a}\x{1292}",
+                                         'PK' => "\x{1353}\x{12aa}\x{1235}\x{1273}\x{1295}",
+                                         'NF' => "\x{1296}\x{122d}\x{134e}\x{120d}\x{12ad} \x{12f0}\x{1234}\x{1275}",
+                                         'SO' => "\x{1231}\x{121b}\x{120c}",
+                                         'TD' => "\x{127b}\x{12f5}",
+                                         'HM' => "\x{12e8}\x{12a7}\x{122d}\x{12f5} \x{12a5}\x{1293} \x{12e8}\x{121b}\x{12ad}\x{12f6}\x{1293}\x{120d}\x{12f5} \x{12f0}\x{1234}\x{1276}\x{127d}",
+                                         'BD' => "\x{1263}\x{1295}\x{130d}\x{120b}\x{12f2}\x{123d}"
+                                       },
+                      'languages' => {
+                                       'su' => "\x{1231}\x{12f3}\x{1295}\x{129b}",
+                                       'ne' => "\x{1294}\x{1356}\x{120a}\x{129b}",
+                                       'tr' => "\x{1271}\x{122d}\x{12a8}\x{129b}",
+                                       'tlh' => "\x{12ad}\x{120a}\x{1295}\x{130d}\x{12a6}\x{1295}\x{129b}",
+                                       'da' => "\x{12f4}\x{1292}\x{123d}",
+                                       'ru' => "\x{122b}\x{123d}\x{129b}",
+                                       'gl' => "\x{130b}\x{1208}\x{126a}\x{129b}",
+                                       'ia' => "\x{12a2}\x{1295}\x{1274}\x{122d} \x{124b}\x{1295}\x{124b}",
+                                       'ro' => "\x{122e}\x{121b}\x{1292}\x{12eb}\x{1295}",
+                                       'ku' => "\x{12a9}\x{122d}\x{12f5}\x{123d}",
+                                       'vi' => "\x{126a}\x{1275}\x{1293}\x{121d}\x{129b}",
+                                       'az' => "\x{12a0}\x{12dc}\x{122d}\x{1263}\x{12ed}\x{1303}\x{1295}\x{129b}",
+                                       'ta' => "\x{1273}\x{121a}\x{120d}\x{129b}",
+                                       'br' => "\x{1265}\x{122c}\x{1276}\x{1295}",
+                                       'ml' => "\x{121b}\x{120b}\x{12eb}\x{120b}\x{121d}\x{129b}",
+                                       'cy' => "\x{12c8}\x{120d}\x{123d}",
+                                       'st' => "\x{1230}\x{1234}\x{1276}",
+                                       'pt_PT' => "\x{1356}\x{122d}\x{1271}\x{130b}\x{120d}\x{129b} (\x{1293}\x{12ed} \x{1356}\x{122d}\x{1271}\x{130b}\x{120d})",
+                                       'ko' => "\x{12ae}\x{122a}\x{12eb}\x{129b}",
+                                       'uz' => "\x{12a1}\x{12dd}\x{1260}\x{12ad}\x{129b}",
+                                       'cs' => "\x{127c}\x{12ad}\x{129b}",
+                                       'ps' => "\x{1353}\x{123d}\x{1276}",
+                                       'af' => "\x{12a0}\x{134d}\x{122a}\x{1243}\x{1295}\x{1230}\x{129b}",
+                                       'is' => "\x{12a0}\x{12ed}\x{1235}\x{120b}\x{1295}\x{12f0}\x{129b}",
+                                       'bs' => "\x{1266}\x{1235}\x{1292}\x{12eb}\x{1295}",
+                                       'ti' => "\x{1275}\x{130d}\x{122d}\x{129b}",
+                                       'mt' => "\x{121b}\x{120d}\x{1272}\x{1235}\x{129b}",
+                                       'ky' => "\x{12aa}\x{1229}\x{130b}\x{12da}",
+                                       'la' => "\x{120b}\x{1272}\x{1295}\x{129b}",
+                                       'ga' => "\x{12a0}\x{12ed}\x{122a}\x{123d}",
+                                       'ms' => "\x{121b}\x{120b}\x{12ed}\x{129b}",
+                                       'bh' => "\x{1262}\x{1203}\x{122a}",
+                                       'ka' => "\x{130a}\x{12ee}\x{122d}\x{130a}\x{12eb}\x{129b}",
+                                       'eu' => "\x{1263}\x{1235}\x{12ad}\x{129b}",
+                                       'oc' => "\x{12a6}\x{12aa}\x{1273}\x{1295}\x{129b}",
+                                       'bg' => "\x{1261}\x{120d}\x{130b}\x{122a}\x{129b}",
+                                       'gu' => "\x{1309}\x{1303}\x{122b}\x{1272}\x{129b}",
+                                       'sv' => "\x{1235}\x{12ca}\x{12f5}\x{1295}\x{129b}",
+                                       'it' => "\x{1323}\x{120a}\x{12eb}\x{1295}\x{129b}",
+                                       'hu' => "\x{1200}\x{1295}\x{130b}\x{122a}\x{129b}",
+                                       'sq' => "\x{12a0}\x{120d}\x{1264}\x{1292}\x{129b}",
+                                       'pl' => "\x{1356}\x{120a}\x{123d}",
+                                       'ca' => "\x{12ab}\x{1273}\x{120b}\x{1295}",
+                                       'fa' => "\x{1350}\x{122d}\x{1232}\x{12eb}\x{129b}",
+                                       'sk' => "\x{1235}\x{120e}\x{1268}\x{12ad}\x{129b}",
+                                       'jv' => "\x{1303}\x{126b}\x{1295}\x{129b}",
+                                       'uk' => "\x{12e9}\x{12ad}\x{1228}\x{1292}\x{129b}",
+                                       'pt' => "\x{1356}\x{122d}\x{1271}\x{130b}\x{120a}\x{129b}",
+                                       'hi' => "\x{1215}\x{1295}\x{12f0}\x{129b}",
+                                       'es' => "\x{1235}\x{1353}\x{1292}\x{123d}",
+                                       'sw' => "\x{1230}\x{12cb}\x{1202}\x{120a}\x{129b}",
+                                       'no' => "\x{1296}\x{122d}\x{12cc}\x{1302}\x{12eb}\x{1295}",
+                                       'lv' => "\x{120b}\x{1272}\x{126a}\x{12eb}\x{1295}",
+                                       'fo' => "\x{134b}\x{122e}\x{129b}",
+                                       'fr' => "\x{1348}\x{1228}\x{1295}\x{1233}\x{12ed}\x{129b}",
+                                       'or' => "\x{12a6}\x{122a}\x{12eb}",
+                                       'sh' => "\x{1230}\x{122d}\x{1266}- \x{12ad}\x{122e}\x{12ca}\x{1273}\x{1295}",
+                                       'id' => "\x{12a5}\x{1295}\x{12f6}\x{1291}\x{1232}\x{129b}",
+                                       'xh' => "\x{12de}\x{1233}\x{129b}",
+                                       'th' => "\x{1273}\x{12ed}\x{129b}",
+                                       'sr' => "\x{1230}\x{122d}\x{1262}\x{129b}",
+                                       'si' => "\x{1235}\x{1295}\x{1203}\x{120d}\x{129b}",
+                                       'et' => "\x{12a4}\x{1235}\x{1276}\x{1292}\x{12a0}\x{1295}",
+                                       'mk' => "\x{121b}\x{12ad}\x{12f6}\x{1292}\x{129b}",
+                                       'en' => "\x{12a5}\x{1295}\x{130d}\x{120a}\x{12dd}\x{129b}",
+                                       'fi' => "\x{134a}\x{1292}\x{123d}",
+                                       'lt' => "\x{120a}\x{1271}\x{12a0}\x{1292}\x{12e8}\x{1295}",
+                                       'de' => "\x{1300}\x{122d}\x{1218}\x{1295}",
+                                       'gn' => "\x{1313}\x{122b}\x{1292}",
+                                       'hr' => "\x{12ad}\x{122e}\x{123d}\x{12eb}\x{1295}\x{129b}",
+                                       'be' => "\x{1264}\x{120b}\x{122b}\x{123b}\x{129b}",
+                                       'zu' => "\x{12d9}\x{1209}\x{129b}",
+                                       'ur' => "\x{12a1}\x{122d}\x{12f1}\x{129b}",
+                                       'yi' => "\x{12ea}\x{12f2}\x{123d}",
+                                       'tw' => "\x{1275}\x{12ca}",
+                                       'fil' => "\x{1273}\x{130b}\x{120e}\x{1308}\x{129b}",
+                                       'pa' => "\x{1351}\x{1295}\x{1303}\x{1262}\x{129b}",
+                                       'sl' => "\x{1235}\x{1241}\x{126a}\x{129b}",
+                                       'nn' => "\x{1296}\x{122d}\x{12cc}\x{12ed}\x{129b} (\x{1293}\x{12ed} \x{129d}\x{1296}\x{122d}\x{1235}\x{12ad})",
+                                       'am' => "\x{12a0}\x{121d}\x{1210}\x{1228}\x{129b}",
+                                       'bn' => "\x{1260}\x{1295}\x{130b}\x{120a}\x{129b}",
+                                       'ja' => "\x{1303}\x{1353}\x{1295}\x{129b}",
+                                       'mr' => "\x{121b}\x{122b}\x{1272}\x{129b}",
+                                       'te' => "\x{1270}\x{1209}\x{1309}\x{129b}",
+                                       'he' => "\x{12d5}\x{1265}\x{122b}\x{1235}\x{1325}",
+                                       'kn' => "\x{12ab}\x{121b}\x{12f0}\x{129b}",
+                                       'fy' => "\x{134d}\x{122a}\x{1230}\x{129b}",
+                                       'eo' => "\x{12a4}\x{1235}\x{1350}\x{122b}\x{1295}\x{1276}",
+                                       'ar' => "\x{12d3}\x{1228}\x{1260}\x{129b}",
+                                       'nl' => "\x{12f0}\x{127d}",
+                                       'gd' => "\x{12a5}\x{1235}\x{12ae}\x{1275}\x{1235} \x{130c}\x{120d}\x{12ad}\x{129b}",
+                                       'el' => "\x{130d}\x{122a}\x{12a8}\x{129b}",
+                                       'tk' => "\x{1293}\x{12ed} \x{1271}\x{122d}\x{12aa} \x{1230}\x{1265}\x{12d3}\x{12ed} (\x{1271}\x{122d}\x{12ab}\x{12ca})",
+                                       'pt_BR' => "\x{1356}\x{122d}\x{1271}\x{130b}\x{120d}\x{129b} (\x{1293}\x{12ed} \x{1265}\x{122b}\x{12da}\x{120d})"
+                                     },
+                      'scripts' => {
+                                     'Latn' => "\x{120b}\x{1272}\x{1295}",
+                                     'Ethi' => "\x{134a}\x{12f0}\x{120d}"
+                                   }
+                    },
+  'delimiters' => {
+                    'alternateQuotationEnd' => "\x{2019}",
+                    'quotationEnd' => "\x{201d}",
+                    'quotationStart' => "\x{201c}",
+                    'alternateQuotationStart' => "\x{2018}"
+                  },
+  'iso4217' => 'ERN'
+};

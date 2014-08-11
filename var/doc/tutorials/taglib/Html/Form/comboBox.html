@@ -1,0 +1,22 @@
+<o2 use O2Doc::Tutorial />
+<o2 use Html::Form />
+
+<o2 docSection title="comboBox">
+  Very similar to <o2 docLink type="tag" id="select" />, but in addition to choosing an element from the meny, the user may instead enter a string in the input field.
+  <o2 docSection title="Syntax">
+    <o2 docCode lang="o2ml">
+      <o2 comboBox name="sport" label="Sport">
+        <o2 option value="baseball">Baseball</o2:option>
+        <o2 option value="football">Football</o2:option>
+        <o2 option value="soccer">Soccer</o2:option>
+      </o2:comboBox>
+    </o2:docCode>
+    <o2 docCodeResult useModule="Html::Form" />
+  </o2:docSection>
+  <o2 docSection title="Attributes">
+    <o2 docList class="attributes">
+      <o2 docListItem class="required"><o2 docLink type="tag" id="select" /> attributes</o2:docListItem>
+    </o2:docList>
+  </o2:docSection>
+  See also <o2 docLink type="tag" id="select" />.
+</o2:docSection>

@@ -1,0 +1,31 @@
+/* localeSwitch tag */
+.localeSwitch a img {
+  border : 1px solid #aaa;
+}
+.localeSwitch a {
+  text-decoration : underline;
+}
+.localeSwitch a img:hover {
+  border-color : black;
+  background   : yellow;
+}
+.localeSwitch a.selected img:hover {
+  background-color : transparent;
+}
+.localeSwitch img {
+  padding : 1px;
+}
+.localeSwitch .selected {
+  color           : black;
+  cursor          : auto;
+  text-decoration : none;
+  font-weight     : bold;
+}
+.localeSwitch a:hover {
+  text-decoration : none;
+}
+.localeSwitch .selected img {
+  padding : 1px;
+  border  : 1px solid black;
+}
+/* end localeSwitch tag */

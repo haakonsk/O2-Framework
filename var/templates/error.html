@@ -1,0 +1,9 @@
+<o2 use Html />
+
+<h1><o2 if "$header" then="$header" else="$lang->getString('commonFiles.commonText.errorHeader')" /></h1>
+
+<p><o2 encodeEntities off>$msg</o2:encodeEntities></p>
+
+<o2 if "!$noBackLink">
+  <o2 backlink text="$lang->getString('commonFiles.commonText.back')" />
+</o2:if>

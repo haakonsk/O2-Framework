@@ -1,0 +1,20 @@
+<o2 use O2Doc::Tutorial />
+
+<o2 docSection title="setVar">
+  Creates a named variable and assigns a value to it. If the variable already exists, the old value is overwritten.
+  <o2 docSection title="Syntax">
+    <o2 docCode lang="o2ml">
+      <o2 setVar "$counter">0</o2:setVar>
+    </o2:docCode>
+    The above example creates a variable named counter, with an initial value of zero.
+    <o2 docCode lang="o2ml">
+      <o2 setVar "$logEntries" forceType="array">$object->getLogEntries()</o2:setVar>
+    </o2:docCode>
+  </o2:docSection>
+  <o2 docSection title="Attributes">
+    <o2 docList class="attributes">
+      <o2 docListItem class="optional">forceType - one of {hash, arrray}. If the method called doesn't return a reference, use forceType to transform the return value into
+        a reference of the specified type.</o2:docListItem>
+    </o2:docList>
+  </o2:docSection>
+</o2:docSection>

@@ -1,0 +1,15 @@
+{
+  audioCodec               => 'libmp3lame',
+  audioSamplingFrequency   => '22050',
+  audioBitrate             => '128000',
+  audioChannels            => '2',
+  videoSize                => '320x240',
+  videoBitrate             => (400*1000),
+  videoCodec               => 'wmv2',
+  videoFrameRate           => '25',
+  videoMotionEstimate      => 'full',
+  videoEncodePass          => 1,
+  defaultFileExtension     => 'wmv',
+#  videoSameQualityAsSource => 1,
+  videoIQFactor            => 1,
+}

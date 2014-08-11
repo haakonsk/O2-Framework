@@ -1,0 +1,936 @@
+{
+  'territory' => 'CF',
+  'language' => 'sg',
+  'number' => {
+                'percentFormat' => {
+                                     'percentFormatLength' => {
+                                                              'standard' => '#,##0%'
+                                                            }
+                                   },
+                'measurement' => {},
+                'symbols' => {
+                               'infinity' => "\x{221e}",
+                               'nan' => 'NaN',
+                               'plusSign' => '+',
+                               'superscriptingExponent' => "×",
+                               'exponential' => 'E',
+                               'group' => '.',
+                               'percentSign' => '%',
+                               'decimal' => ',',
+                               'perMille' => "\x{2030}",
+                               'alias' => '',
+                               'minusSign' => '-',
+                               'list' => ';'
+                             },
+                'scientificFormat' => {
+                                        'scientificFormatLength' => {
+                                                                    'standard' => '#E0'
+                                                                  }
+                                      },
+                'decimalFormat' => {
+                                     'decimalFormatLength' => {
+                                                              'short' => '0K00K000K0M00M000M0G00G000G0T00T000T',
+                                                              'standard' => '#,##0.###'
+                                                            }
+                                   },
+                'currencyFormat' => {
+                                      'currencyFormatLength' => {
+                                                                'standard' => "¤#,##0.00;¤-#,##0.00"
+                                                              }
+                                    },
+                'currencies' => {
+                                  'BZD' => {
+                                           'symbol' => '$'
+                                         },
+                                  'SGD' => {
+                                           'symbol' => '$'
+                                         },
+                                  'TWD' => {
+                                           'symbol' => 'NT$'
+                                         },
+                                  'SLL' => {
+                                           'displayName' => "leône tî Sierâ-Leône"
+                                         },
+                                  'USD' => {
+                                           'symbol' => '$',
+                                           'displayName' => "dol\$ara ttî äLetäa-Ôko tî Amerîka"
+                                         },
+                                  'MAD' => {
+                                           'displayName' => "dirâm tî Marôko"
+                                         },
+                                  'ERN' => {
+                                           'displayName' => "nakafa tî Eritrëe"
+                                         },
+                                  'SAR' => {
+                                           'displayName' => "riâli tî Saûdi Arabïi"
+                                         },
+                                  'SSP' => {
+                                           'symbol' => "£"
+                                         },
+                                  'KYD' => {
+                                           'symbol' => '$'
+                                         },
+                                  'AUD' => {
+                                           'symbol' => '$',
+                                           'displayName' => "dolära tî Ostralïi"
+                                         },
+                                  'NGN' => {
+                                           'symbol' => "\x{20a6}",
+                                           'displayName' => "nâîra tî Nizerïa"
+                                         },
+                                  'CRC' => {
+                                           'symbol' => "\x{20a1}"
+                                         },
+                                  'GHC' => {
+                                           'displayName' => "sêdi tî Ganäa"
+                                         },
+                                  'KRW' => {
+                                           'symbol' => "\x{20a9}"
+                                         },
+                                  'TRY' => {
+                                           'symbol' => 'TL'
+                                         },
+                                  'GIP' => {
+                                           'symbol' => "£"
+                                         },
+                                  'LAK' => {
+                                           'symbol' => "\x{20ad}"
+                                         },
+                                  'CLP' => {
+                                           'symbol' => '$'
+                                         },
+                                  'NAD' => {
+                                           'symbol' => '$',
+                                           'displayName' => "dolära tî Namibïi"
+                                         },
+                                  'DZD' => {
+                                           'displayName' => "dinäri tî Alzerïi"
+                                         },
+                                  'JMD' => {
+                                           'symbol' => '$'
+                                         },
+                                  'BSD' => {
+                                           'symbol' => '$'
+                                         },
+                                  'SZL' => {
+                                           'displayName' => "lilangùeni tî Swazïlânde"
+                                         },
+                                  'UYU' => {
+                                           'symbol' => '$'
+                                         },
+                                  'MXN' => {
+                                           'symbol' => '$'
+                                         },
+                                  'BWP' => {
+                                           'displayName' => "pûla tî Botswana"
+                                         },
+                                  'GYD' => {
+                                           'symbol' => '$'
+                                         },
+                                  'LYD' => {
+                                           'displayName' => "dinäar tî Libïi"
+                                         },
+                                  'BYR' => {
+                                           'symbol' => "\x{440}."
+                                         },
+                                  'EGP' => {
+                                           'displayName' => "pôndo tî Kâmitâ"
+                                         },
+                                  'THB' => {
+                                           'symbol' => "\x{e3f}"
+                                         },
+                                  'MUR' => {
+                                           'displayName' => "rupïi tî Mörîsi"
+                                         },
+                                  'SDG' => {
+                                           'displayName' => "pôndo tî Sudäan"
+                                         },
+                                  'LRD' => {
+                                           'symbol' => '$',
+                                           'displayName' => "dolära tî Liberïa"
+                                         },
+                                  'AED' => {
+                                           'displayName' => "dirâm tî âEmirâti tî Arâbo Ôko"
+                                         },
+                                  'JPY' => {
+                                           'symbol' => "¥",
+                                           'displayName' => "yêni tî Zapön"
+                                         },
+                                  'ZAR' => {
+                                           'displayName' => "rânde tî Mbongo-Afrîka"
+                                         },
+                                  'RWF' => {
+                                           'displayName' => "farânga tî Ruandäa"
+                                         },
+                                  'AOA' => {
+                                           'displayName' => "kwânza tî Angoläa"
+                                         },
+                                  'PYG' => {
+                                           'symbol' => "\x{20b2}"
+                                         },
+                                  'CAD' => {
+                                           'symbol' => '$',
+                                           'displayName' => "dolära tî kanadäa"
+                                         },
+                                  'CUP' => {
+                                           'symbol' => '$'
+                                         },
+                                  'TTD' => {
+                                           'symbol' => '$'
+                                         },
+                                  'RUR' => {
+                                           'symbol' => "\x{440}."
+                                         },
+                                  'XCD' => {
+                                           'symbol' => 'EC$'
+                                         },
+                                  'BBD' => {
+                                           'symbol' => '$'
+                                         },
+                                  'XOF' => {
+                                           'symbol' => 'CFA',
+                                           'displayName' => "farânga CFA (BCEAO)"
+                                         },
+                                  'KMF' => {
+                                           'displayName' => "farânga tî Kömôro"
+                                         },
+                                  'CNY' => {
+                                           'symbol' => "¥",
+                                           'displayName' => "yuan renminbi tî Shîni"
+                                         },
+                                  'GNS' => {
+                                           'displayName' => "sili tî Ginëe"
+                                         },
+                                  'MNT' => {
+                                           'symbol' => "\x{20ae}"
+                                         },
+                                  'INR' => {
+                                           'symbol' => "\x{20b9}",
+                                           'displayName' => "rupïi tî Ênnde"
+                                         },
+                                  'KES' => {
+                                           'displayName' => "shilîngi tî Kenyäa"
+                                         },
+                                  'GBP' => {
+                                           'symbol' => "£",
+                                           'displayName' => "pôndo tî Anglëe"
+                                         },
+                                  'CDF' => {
+                                           'displayName' => "farânga tî Kongöo"
+                                         },
+                                  'PHP' => {
+                                           'symbol' => "\x{20b1}"
+                                         },
+                                  'KZT' => {
+                                           'symbol' => "\x{20b8}"
+                                         },
+                                  'ZMK' => {
+                                           'displayName' => "kwâtia tî Zambïi (1968\x{2013}2012)"
+                                         },
+                                  'HKD' => {
+                                           'symbol' => '$'
+                                         },
+                                  'NZD' => {
+                                           'symbol' => '$'
+                                         },
+                                  'BRL' => {
+                                           'symbol' => 'R$'
+                                         },
+                                  'SOS' => {
+                                           'displayName' => "shilîngi tî Somalïi"
+                                         },
+                                  'SCR' => {
+                                           'displayName' => "rupïi tî Sëyshêle"
+                                         },
+                                  'FJD' => {
+                                           'symbol' => '$'
+                                         },
+                                  'SHP' => {
+                                           'displayName' => "pôndo tî Zûâ Sênt-Helêna"
+                                         },
+                                  'ILS' => {
+                                           'symbol' => "\x{20aa}"
+                                         },
+                                  'LSL' => {
+                                           'displayName' => "loti tî Lesôtho"
+                                         },
+                                  'ESP' => {
+                                           'symbol' => "\x{20a7}"
+                                         },
+                                  'UAH' => {
+                                           'symbol' => "\x{20b4}"
+                                         },
+                                  'ZMW' => {
+                                           'displayName' => "kwâtia tî Zambïi"
+                                         },
+                                  'UGX' => {
+                                           'displayName' => "shilîngi tî Ugandäa"
+                                         },
+                                  'DJF' => {
+                                           'displayName' => "farânga tî Dibutïi"
+                                         },
+                                  'BND' => {
+                                           'symbol' => '$'
+                                         },
+                                  'MGA' => {
+                                           'displayName' => "ariâri tî Madagasikära"
+                                         },
+                                  'BMD' => {
+                                           'symbol' => '$'
+                                         },
+                                  'TND' => {
+                                           'displayName' => "dinära tî Tunizïi"
+                                         },
+                                  'MRO' => {
+                                           'displayName' => "ugîya tî Moritanïi"
+                                         },
+                                  'VND' => {
+                                           'symbol' => "\x{20ab}"
+                                         },
+                                  'SBD' => {
+                                           'symbol' => '$'
+                                         },
+                                  'GHS' => {
+                                           'symbol' => "\x{20b5}"
+                                         },
+                                  'MZM' => {
+                                           'displayName' => "metikala tî Mozambîka"
+                                         },
+                                  'CVE' => {
+                                           'displayName' => "eskûêdo tî Kâpo-Vêre"
+                                         },
+                                  'COP' => {
+                                           'symbol' => '$'
+                                         },
+                                  'TZS' => {
+                                           'displayName' => "shilîngi tî Tanzanïi"
+                                         },
+                                  'BIF' => {
+                                           'displayName' => "farânga tî Burundïi"
+                                         },
+                                  'GMD' => {
+                                           'displayName' => "dalasi tî gambïi"
+                                         },
+                                  'ARS' => {
+                                           'symbol' => '$'
+                                         },
+                                  'ZWD' => {
+                                           'displayName' => "dolära tî Zimbäbwe"
+                                         },
+                                  'MWK' => {
+                                           'displayName' => "kwâtia tî Malawïi"
+                                         },
+                                  'BDT' => {
+                                           'symbol' => "\x{9f3}"
+                                         },
+                                  'KHR' => {
+                                           'symbol' => "\x{17db}"
+                                         },
+                                  'EUR' => {
+                                           'symbol' => "\x{20ac}",
+                                           'displayName' => "zoröo"
+                                         },
+                                  'CHF' => {
+                                           'displayName' => "farânga tî Sûîsi"
+                                         },
+                                  'BHD' => {
+                                           'displayName' => "dolùara tî Bahrâina"
+                                         },
+                                  'SRD' => {
+                                           'symbol' => '$'
+                                         },
+                                  'STD' => {
+                                           'displayName' => "dôbra tî Sâô Tomë na Prinsîpe"
+                                         },
+                                  'XAF' => {
+                                           'symbol' => 'FCFA',
+                                           'displayName' => "farânga CFA (BEAC)"
+                                         },
+                                  'DOP' => {
+                                           'symbol' => '$'
+                                         },
+                                  'ETB' => {
+                                           'displayName' => "bir tî Etiopïi"
+                                         },
+                                  'XPF' => {
+                                           'symbol' => 'CFPF'
+                                         }
+                                }
+              },
+  'locale' => 'sg_CF',
+  'characters' => {
+                    'word-initial' => "\x{2026} {0}",
+                    'standard' => '?',
+                    'word-medial' => "{0} \x{2026} {1}",
+                    'index' => '[A B D E F G H I J K L M N O P R S T U V W Y Z]',
+                    'medial' => "{0}\x{2026}{1}",
+                    'word-final' => "{0} \x{2026}",
+                    'final' => "{0}\x{2026}",
+                    'auxiliary' => '[c q x]',
+                    'initial' => "\x{2026}{0}",
+                    'punctuation' => '[\\- , ; \\: ! ? . ( ) \\[ \\] \\{ \\}]'
+                  },
+  'calendar' => {
+                  'calendarType' => 'gregorian',
+                  'timeFormat' => {
+                                    'short' => 'HH:mm',
+                                    'pm' => '',
+                                    'am' => '',
+                                    'medium' => 'HH:mm:ss',
+                                    'long' => 'HH:mm:ss z',
+                                    'full' => 'HH:mm:ss zzzz'
+                                  },
+                  'timeZones' => {
+                                   'regionFormat' => '{0} (+0)',
+                                   'gmtFormat' => 'GMT{0}',
+                                   'hourFormat' => '+HH:mm;-HH:mm',
+                                   'zones' => {
+                                                'Antarctica/DumontDUrville' => {
+                                                                               'type' => 'Antarctica/DumontDUrville',
+                                                                               'exemplarCity' => "Dumont d\x{2019}Urville"
+                                                                             },
+                                                'America/Indiana/Tell_City' => {
+                                                                               'type' => 'America/Indiana/Tell_City',
+                                                                               'exemplarCity' => 'Tell City, Indiana'
+                                                                             },
+                                                'America/St_Lucia' => {
+                                                                      'type' => 'America/St_Lucia',
+                                                                      'exemplarCity' => 'St. Lucia'
+                                                                    },
+                                                'Asia/Calcutta' => {
+                                                                   'type' => 'Asia/Calcutta',
+                                                                   'exemplarCity' => 'Kolkata'
+                                                                 },
+                                                'America/Indiana/Knox' => {
+                                                                          'type' => 'America/Indiana/Knox',
+                                                                          'exemplarCity' => 'Knox, Indiana'
+                                                                        },
+                                                'America/Indiana/Vincennes' => {
+                                                                               'type' => 'America/Indiana/Vincennes',
+                                                                               'exemplarCity' => 'Vincennes, Indiana'
+                                                                             },
+                                                'Africa/Asmera' => {
+                                                                   'type' => 'Africa/Asmera',
+                                                                   'exemplarCity' => 'Asmara'
+                                                                 },
+                                                'America/Indiana/Winamac' => {
+                                                                             'type' => 'America/Indiana/Winamac',
+                                                                             'exemplarCity' => 'Winamac, Indiana'
+                                                                           },
+                                                'America/St_Thomas' => {
+                                                                       'type' => 'America/St_Thomas',
+                                                                       'exemplarCity' => 'St. Thomas'
+                                                                     },
+                                                'America/Indiana/Marengo' => {
+                                                                             'type' => 'America/Indiana/Marengo',
+                                                                             'exemplarCity' => 'Marengo, Indiana'
+                                                                           },
+                                                'America/Indiana/Petersburg' => {
+                                                                                'type' => 'America/Indiana/Petersburg',
+                                                                                'exemplarCity' => 'Petersburg, Indiana'
+                                                                              },
+                                                'America/Lower_Princes' => {
+                                                                           'type' => 'America/Lower_Princes',
+                                                                           'exemplarCity' => 'Lower Prince\'s Quarter'
+                                                                         },
+                                                'America/North_Dakota/Beulah' => {
+                                                                                 'type' => 'America/North_Dakota/Beulah',
+                                                                                 'exemplarCity' => 'Beulah, North Dakota'
+                                                                               },
+                                                'Atlantic/St_Helena' => {
+                                                                        'type' => 'Atlantic/St_Helena',
+                                                                        'exemplarCity' => 'St. Helena'
+                                                                      },
+                                                'Asia/Saigon' => {
+                                                                 'type' => 'Asia/Saigon',
+                                                                 'exemplarCity' => 'Ho Chi Minh'
+                                                               },
+                                                'America/Indiana/Vevay' => {
+                                                                           'type' => 'America/Indiana/Vevay',
+                                                                           'exemplarCity' => 'Vevay, Indiana'
+                                                                         },
+                                                'America/Coral_Harbour' => {
+                                                                           'type' => 'America/Coral_Harbour',
+                                                                           'exemplarCity' => 'Atikokan'
+                                                                         },
+                                                'America/St_Barthelemy' => {
+                                                                           'type' => 'America/St_Barthelemy',
+                                                                           'exemplarCity' => 'St. Barthelemy'
+                                                                         },
+                                                'America/North_Dakota/New_Salem' => {
+                                                                                    'type' => 'America/North_Dakota/New_Salem',
+                                                                                    'exemplarCity' => 'New Salem, North Dakota'
+                                                                                  },
+                                                'Etc/Unknown' => {
+                                                                 'type' => 'Etc/Unknown',
+                                                                 'exemplarCity' => 'Unknown'
+                                                               },
+                                                'Atlantic/Faeroe' => {
+                                                                     'type' => 'Atlantic/Faeroe',
+                                                                     'exemplarCity' => 'Faroe'
+                                                                   },
+                                                'America/Godthab' => {
+                                                                     'type' => 'America/Godthab',
+                                                                     'exemplarCity' => 'Nuuk'
+                                                                   },
+                                                'America/St_Kitts' => {
+                                                                      'type' => 'America/St_Kitts',
+                                                                      'exemplarCity' => 'St. Kitts'
+                                                                    },
+                                                'America/Scoresbysund' => {
+                                                                          'type' => 'America/Scoresbysund',
+                                                                          'exemplarCity' => 'Ittoqqortoormiit'
+                                                                        },
+                                                'America/St_Johns' => {
+                                                                      'type' => 'America/St_Johns',
+                                                                      'exemplarCity' => "St. John\x{2019}s"
+                                                                    },
+                                                'Pacific/Ponape' => {
+                                                                    'type' => 'Pacific/Ponape',
+                                                                    'exemplarCity' => 'Pohnpei'
+                                                                  },
+                                                'Asia/Katmandu' => {
+                                                                   'type' => 'Asia/Katmandu',
+                                                                   'exemplarCity' => 'Kathmandu'
+                                                                 },
+                                                'America/Kentucky/Monticello' => {
+                                                                                 'type' => 'America/Kentucky/Monticello',
+                                                                                 'exemplarCity' => 'Monticello, Kentucky'
+                                                                               },
+                                                'America/St_Vincent' => {
+                                                                        'type' => 'America/St_Vincent',
+                                                                        'exemplarCity' => 'St. Vincent'
+                                                                      },
+                                                'America/North_Dakota/Center' => {
+                                                                                 'type' => 'America/North_Dakota/Center',
+                                                                                 'exemplarCity' => 'Center, North Dakota'
+                                                                               },
+                                                'Pacific/Truk' => {
+                                                                  'type' => 'Pacific/Truk',
+                                                                  'exemplarCity' => 'Chuuk'
+                                                                }
+                                              },
+                                   'fallbackFormat' => '{1} ({0})',
+                                   'gmtZeroFormat' => 'GMT'
+                                 },
+                  'eras' => {
+                              'eraNames' => {
+                                            'alias' => {
+                                                       '' => ''
+                                                     },
+                                            'era' => {
+                                                     '1' => "Na pekô tî Krîstu",
+                                                     '0' => "Kôzo na Krîstu"
+                                                   }
+                                          },
+                              'eraNarrow' => {
+                                             'alias' => {
+                                                        '' => ''
+                                                      }
+                                           },
+                              'eraAbbr' => {
+                                           'era' => {
+                                                    '1' => 'NpK',
+                                                    '0' => 'KnK'
+                                                  }
+                                         }
+                            },
+                  'days' => {
+                              'format' => {
+                                          'short' => {
+                                                     '' => ''
+                                                   },
+                                          'abbreviated' => {
+                                                           '' => '',
+                                                           'fri' => "Lâp",
+                                                           'wed' => 'Bk4',
+                                                           'sun' => 'Bk1',
+                                                           'tue' => 'Bk3',
+                                                           'mon' => 'Bk2',
+                                                           'sat' => "Lây",
+                                                           'thu' => 'Bk5'
+                                                         },
+                                          'narrow' => {
+                                                      '' => ''
+                                                    },
+                                          'wide' => {
+                                                    'fri' => "Lâpôsö",
+                                                    'tue' => "Bïkua-ptâ",
+                                                    'sun' => "Bikua-ôko",
+                                                    'sat' => "Lâyenga",
+                                                    'mon' => "Bïkua-ûse",
+                                                    'wed' => "Bïkua-usïö",
+                                                    'thu' => "Bïkua-okü"
+                                                  }
+                                        },
+                              'stand-alone' => {
+                                               'short' => {
+                                                          '' => ''
+                                                        },
+                                               'abbreviated' => {
+                                                                '' => ''
+                                                              },
+                                               'narrow' => {
+                                                           'fri' => 'P',
+                                                           'tue' => 'T',
+                                                           'sun' => 'K',
+                                                           'sat' => 'Y',
+                                                           'mon' => 'S',
+                                                           'wed' => 'S',
+                                                           'thu' => 'K'
+                                                         },
+                                               'wide' => {
+                                                         '' => ''
+                                                       }
+                                             }
+                            },
+                  'months' => {
+                                'format' => {
+                                            'abbreviated' => {
+                                                             '' => '',
+                                                             '6' => "Fön",
+                                                             '11' => 'Nab',
+                                                             '3' => "Mbä",
+                                                             '7' => 'Len',
+                                                             '9' => 'Mvu',
+                                                             '12' => 'Kak',
+                                                             '2' => 'Ful',
+                                                             '8' => "Kük",
+                                                             '1' => 'Nye',
+                                                             '4' => 'Ngu',
+                                                             '10' => 'Ngb',
+                                                             '5' => "Bêl"
+                                                           },
+                                            'narrow' => {
+                                                        '' => ''
+                                                      },
+                                            'wide' => {
+                                                      '6' => "Föndo",
+                                                      '11' => "Nabändüru",
+                                                      '3' => "Mbängü",
+                                                      '7' => 'Lengua',
+                                                      '9' => 'Mvuka',
+                                                      '12' => 'Kakauka',
+                                                      '2' => "Fulundïgi",
+                                                      '8' => "Kükürü",
+                                                      '1' => 'Nyenye',
+                                                      '4' => "Ngubùe",
+                                                      '10' => 'Ngberere',
+                                                      '5' => "Bêläwü"
+                                                    }
+                                          },
+                                'stand-alone' => {
+                                                 'abbreviated' => {
+                                                                  '' => ''
+                                                                },
+                                                 'narrow' => {
+                                                             '6' => 'F',
+                                                             '11' => 'N',
+                                                             '3' => 'M',
+                                                             '7' => 'L',
+                                                             '9' => 'M',
+                                                             '12' => 'K',
+                                                             '2' => 'F',
+                                                             '8' => 'K',
+                                                             '1' => 'N',
+                                                             '4' => 'N',
+                                                             '10' => 'N',
+                                                             '5' => 'B'
+                                                           },
+                                                 'wide' => {
+                                                           '' => ''
+                                                         }
+                                               }
+                              },
+                  'dateFormat' => {
+                                    'short' => 'd/M/y',
+                                    'medium' => 'd MMM, y',
+                                    'long' => 'd MMMM y',
+                                    'full' => 'EEEE d MMMM y'
+                                  }
+                },
+  'displayNames' => {
+                      'territories' => {
+                                         'GL' => "Gorolânde",
+                                         'DJ' => "Dibutùii",
+                                         'JM' => "Zamaîka",
+                                         'PG' => "Papû Finî Ginëe, Papuazïi",
+                                         'AT' => "Otrîsi",
+                                         'KI' => 'Kiribati',
+                                         'SZ' => "Swäzïlânde",
+                                         'YT' => "Mäyôte",
+                                         'BN' => "Brunêi",
+                                         'ZM' => "Zambïi",
+                                         'CD' => "Ködörösêse tî Ngunuhalëzo tî kongö",
+                                         'BW' => 'Botswana',
+                                         'AO' => "Angoläa",
+                                         'ZW' => "Zimbäbwe",
+                                         'VC' => "Sên-Vensäan na âGrenadîni",
+                                         'PR' => "Porto Rîko",
+                                         'JP' => "Zapöon",
+                                         'NA' => "Namibùii",
+                                         'SH' => "Sênt-Helêna",
+                                         'TJ' => "Taazikiistäan",
+                                         'LC' => "Sênt-Lisïi",
+                                         'MA' => "Marôko",
+                                         'VU' => "Vanuatü",
+                                         'SV' => "Salvadöro",
+                                         'MT' => "Mâlta",
+                                         'MN' => "Mongolïi",
+                                         'MP' => "Âzûâ Märïâni tî Banga",
+                                         'IT' => "Italùii",
+                                         'RE' => "Reinïon",
+                                         'WS' => "Samoäa",
+                                         'FR' => "Farânzi",
+                                         'EG' => "Kâmitâ",
+                                         'UZ' => "Uzbekistäan",
+                                         'PW' => 'Palau',
+                                         'TK' => 'Tokelau',
+                                         'LR' => "Liberïa",
+                                         'RW' => "Ruandäa",
+                                         'TN' => "Tunizïi",
+                                         'BE' => "Bêleze, Belezîki",
+                                         'EE' => "Estonïi",
+                                         'CK' => "âzûâ Kûku",
+                                         'BY' => "Belarüsi",
+                                         'SA' => "Saûdi Arabïi",
+                                         'NO' => "Nörvêzi",
+                                         'LS' => "Lesôtho",
+                                         'KR' => "Korëe tî Mbongo",
+                                         'ZA' => "Mbongo-Afrîka",
+                                         'PT' => "Pörtugäle, Ködörö Pûra",
+                                         'BF' => 'Burkina Faso',
+                                         'CA' => "Kanadäa",
+                                         'AM' => "Armenïi",
+                                         'CM' => "Kamerûne",
+                                         'SR' => "Surinäm",
+                                         'MG' => "Madagaskära",
+                                         'NP' => "Nëpâli",
+                                         'BT' => "Butäan",
+                                         'PL' => "Pölôni",
+                                         'TM' => "Turkumenistäan",
+                                         'GA' => "Gaböon",
+                                         'CF' => "Ködörösêse tî Bêafrîka",
+                                         'BA' => "Bosnïi na Herzegovînni",
+                                         'AE' => "Arâbo Emirâti Ôko",
+                                         'TH' => "Tailânde",
+                                         'KY' => "Âzûâ Ngundë, Kaimäni",
+                                         'LA' => "Lùaôsi",
+                                         'PH' => "Filipîni",
+                                         'NI' => 'Nikaragua',
+                                         'NC' => "Finî Kaledonïi",
+                                         'GU' => "Guâm",
+                                         'KZ' => "Kazakisitäan",
+                                         'MM' => "Myämâra",
+                                         'NR' => 'Nauru',
+                                         'NE' => "Nizëre",
+                                         'DM' => "Dömïnîka",
+                                         'TO' => 'Tonga',
+                                         'MR' => "Moritanïi",
+                                         'AD' => "Andôro",
+                                         'SE' => "Suêde",
+                                         'AZ' => "Zerebaidyäan, Azerbaidyäan,",
+                                         'AF' => "Faganïta, Afganïstäan",
+                                         'NG' => "Nizerïa",
+                                         'KE' => "Kenyäa",
+                                         'BJ' => "Benëen",
+                                         'OM' => "Omâni",
+                                         'VN' => "Vietnäm",
+                                         'VG' => "Âzôâ Viîrîggo tî Anglëe",
+                                         'YE' => "Yëmêni",
+                                         'CI' => "Kôdivüära",
+                                         'DZ' => "Alzerïi",
+                                         'LK' => "Sirî-Lanka",
+                                         'ID' => "Ênndonezïi",
+                                         'FM' => "Mikronezïi",
+                                         'GE' => "Zorzïi",
+                                         'GM' => "Gambïi",
+                                         'LV' => "Letonùii",
+                                         'RU' => "Rusïi",
+                                         'LB' => "Libùaan",
+                                         'FK' => "Âzûâ tî Mälüîni",
+                                         'DE' => "Zâmani",
+                                         'FI' => "Fëlânde",
+                                         'MV' => "Maldîva",
+                                         'LU' => "Lugzambûru",
+                                         'VE' => "Venezueläa",
+                                         'PN' => "Pitikêrni",
+                                         'BH' => "Bahrâina",
+                                         'GI' => "Zibraltära, Zibaratära",
+                                         'WF' => "Walîsi na Futuna",
+                                         'RO' => "Rumanïi",
+                                         'VI' => "Âzûâ Virîgo tî Amerîka",
+                                         'TV' => "Tüvalü",
+                                         'IN' => "Ênnde",
+                                         'GP' => "Guadelûpu",
+                                         'AR' => "Arzantîna",
+                                         'SN' => "Senegäle",
+                                         'MX' => "Mekisîki",
+                                         'AW' => "Arûba",
+                                         'MC' => "Monaköo",
+                                         'HN' => "Honduräsi",
+                                         'BR' => "Brezîli",
+                                         'IL' => "Israëli",
+                                         'SB' => "Zûâ Salomöon",
+                                         'PS' => "Sêse tî Palestîni",
+                                         'NZ' => "Finî Zelânde",
+                                         'HU' => "Hongirùii",
+                                         'DO' => "Ködörösêse tî Dominîka",
+                                         'UG' => "Ugandäa",
+                                         'KH' => "Kämbôzi",
+                                         'TG' => "Togö",
+                                         'GB' => "Ködörögbïä--Ôko",
+                                         'BB' => "Barabâda",
+                                         'HT' => "Haitïi",
+                                         'DK' => "Danemêrke",
+                                         'PA' => 'Panama',
+                                         'QA' => "Katära",
+                                         'CV' => "Azûâ tî Kâpo-Vêre",
+                                         'GD' => "Grenâda",
+                                         'SS' => "Sudäan-Mbongo",
+                                         'GF' => "Güyâni tî farânzi",
+                                         'KM' => "Kömôro",
+                                         'HR' => "Kroasïi",
+                                         'KW' => "Köwêti",
+                                         'TC' => "Âzûâ Turku na Kaîki",
+                                         'MQ' => "Märtïnîki",
+                                         'CZ' => "Ködörösêse tî Tyêki",
+                                         'MZ' => "Mözämbîka",
+                                         'ES' => "Espânye",
+                                         'BO' => "Bolivïi",
+                                         'ST' => "Sâô Tömê na Prinsîpe",
+                                         'AU' => "Ostralïi, Sotralïi",
+                                         'AL' => "Albanïi",
+                                         'IR' => "Iräan",
+                                         'CG' => "Kongö",
+                                         'TR' => "Turukïi",
+                                         'MD' => "Moldavùii",
+                                         'BI' => "Burundïi",
+                                         'GN' => "Ginëe",
+                                         'GW' => "Gninëe-Bisau",
+                                         'MK' => "Maseduäni",
+                                         'GR' => "Gerêsi",
+                                         'AG' => "Antîgua na Barbûda",
+                                         'SI' => "Solovenïi",
+                                         'CO' => "Kolombïi",
+                                         'AI' => "Angûîla",
+                                         'AN' => "Antîyi tî Holânde",
+                                         'JO' => "Zordanïi",
+                                         'SM' => "Sên-Marëen",
+                                         'UA' => "Ukrêni",
+                                         'CL' => "Shilïi",
+                                         'CU' => "Kubäa",
+                                         'KN' => "Sên-Krïstôfo-na-Nevîsi",
+                                         'ML' => "Malïi",
+                                         'SC' => "Sëyshêle",
+                                         'ET' => "Etiopïi",
+                                         'IS' => "Islânde",
+                                         'NL' => "Holände",
+                                         'MS' => "Monserâte",
+                                         'EC' => "Ekuatëre",
+                                         'MY' => "Malezïi",
+                                         'CR' => "Kôsta Rîka",
+                                         'VA' => "Letëe tî Vatikäan",
+                                         'IO' => "Sêse tî Anglëe na Ngûyämä tî Ênnde",
+                                         'SD' => "Sudäan",
+                                         'CN' => "Shîna",
+                                         'BG' => "Bulugarïi",
+                                         'MH' => "Âzûâ Märshâl",
+                                         'UY' => "Uruguëe",
+                                         'PY' => "Paraguëe",
+                                         'BS' => "Bahâmasa",
+                                         'TL' => "Timôro tî Tö",
+                                         'MU' => "Mörîsi",
+                                         'CH' => "Sûîsi",
+                                         'LI' => 'Liechtenstein,',
+                                         'GH' => "Ganäa",
+                                         'KG' => "Kirigizitùaan",
+                                         'NU' => 'Niue',
+                                         'US' => "ÂLeaa-Ôko tî Amerika",
+                                         'PE' => "Perüu",
+                                         'SL' => "Sierä-Leône",
+                                         'BZ' => "Belîzi",
+                                         'CY' => "Sîpri",
+                                         'FJ' => "Fidyïi",
+                                         'IE' => "Irlânde",
+                                         'TW' => "Tâiwâni",
+                                         'KP' => "Korëe tî Banga",
+                                         'PF' => "Polinezïi tî farânzi",
+                                         'ER' => "Eritrëe",
+                                         'IQ' => "Irâki",
+                                         'AS' => "Samöa tî Amerîka",
+                                         'TZ' => "Tanzanïi",
+                                         'MW' => "Malawïi",
+                                         'LY' => "Libïi",
+                                         'GT' => "Guatêmälä",
+                                         'GY' => "Gayâna",
+                                         'BM' => "Beremûda",
+                                         'PK' => "Pakistäan",
+                                         'GQ' => "Ginëe tî Ekuatëre",
+                                         'LT' => "Lituanïi",
+                                         'SG' => "Sïngäpûru",
+                                         'PM' => "Sên-Pyêre na Mikelöon",
+                                         'TT' => "Trinitùee na Tobagö",
+                                         'NF' => "Zûâ Nôrfôlko",
+                                         'TD' => "Tyâde",
+                                         'SO' => "Somalïi",
+                                         'SY' => "Sirïi",
+                                         'SK' => "Solovakïi",
+                                         'BD' => "Bengladêshi"
+                                       },
+                      'languages' => {
+                                       'uk' => "Ukrêni",
+                                       'pt' => "Portugëe, Pûra",
+                                       'ne' => "Nepalëe",
+                                       'hi' => "Hîndi",
+                                       'tr' => "Tûrûku",
+                                       'es' => "Espanyöl",
+                                       'ru' => "Rûsi",
+                                       'my' => "Miamära, Birimäni",
+                                       'fr' => "Farânzi",
+                                       'ro' => "Rumëen",
+                                       'vi' => "Vietnäm",
+                                       'sg' => "Sängö",
+                                       'ta' => "Tämûli",
+                                       'id' => "Enndonezïi",
+                                       'th' => "Thâi",
+                                       'rw' => "Ruandäa",
+                                       'so' => "Somalïi",
+                                       'ko' => "Koreyëen",
+                                       'en' => "Anglëe",
+                                       'ak' => "Akâan",
+                                       'de' => "Zâmani",
+                                       'be' => "Bielörûsi",
+                                       'cs' => "Tyêki",
+                                       'zu' => "Zûlu",
+                                       'ur' => "Ûrdu",
+                                       'km' => "Kmêre",
+                                       'ha' => "Haüsä",
+                                       'pa' => "Penzäbï",
+                                       'yo' => 'Yoruba',
+                                       'ms' => "Malëe",
+                                       'bn' => "Bengäli",
+                                       'am' => "Amarîki",
+                                       'ja' => "Zaponëe",
+                                       'bg' => "Bulugäri",
+                                       'sv' => "Sueduäa",
+                                       'it' => "Ênnde",
+                                       'zh' => "Shinuäa",
+                                       'hu' => "Hongruäa",
+                                       'fa' => "Farsî",
+                                       'ig' => "Ïgbö",
+                                       'pl' => "Polonëe",
+                                       'ar' => "Arâbo",
+                                       'nl' => "Holandëe",
+                                       'el' => "Gerêki",
+                                       'jv' => "Zavanëe"
+                                     }
+                    },
+  'delimiters' => {
+                    'alternateQuotationEnd' => "\x{2019}",
+                    'quotationEnd' => "\x{201d}",
+                    'quotationStart' => "\x{201c}",
+                    'alternateQuotationStart' => "\x{2018}"
+                  },
+  'iso4217' => 'XAF'
+};

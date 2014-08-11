@@ -1,0 +1,59 @@
+#!/usr/bin/env perl
+
+use O2 qw($context);
+use O2::Util::SetApacheEnv;
+use O2::Util::Args::Simple;
+
+BEGIN {
+  our $generatorType = shift;
+  $| = 1;
+}
+
+my @availableGenerators = qw(
+  skeleton
+  sql
+  controller
+  registerClass
+  test
+);
+
+my $generatorIsLegal = 0;
+foreach my $legal (@availableGenerators) {
+  if ($generatorType eq $legal) {
+    $generatorIsLegal = 1;
+    last;
+  }
+}
+
+die "Illegal generator '$generatorType', must be any of '" . join (', ', @availableGenerators) . "'\n" unless $generatorIsLegal;
+
+my $currentRoot = delete $ARGV{-currentRoot};
+my $className   = delete $ARGV{-className} or die "Need --className\n";
+if (!$currentRoot) {
+  $currentRoot
+    = $className =~ m{ \A O2::             }xms ? $context->getFwPath()
+    : $className =~ m{ \A O2CMS::          }xms ? $context->getCmsPath()
+    : $className =~ m{ \A O2Plugin:: (\w+) }xms ? $context->getPluginPath($1)
+    :                                             $context->getCustomerPath()
+    ;
+}
+
+my $superClassName = delete $ARGV{-superClassName} || 'O2::Obj::Object';
+
+# Check that all necessary environment variables are set:
+if (!$ENV{O2CUSTOMERROOT} || !$ENV{O2ROOT} || !$ENV{PERL5LIB}) {
+  print "\nOne or more environment variables missing.\nThe following three are needed: O2CUSTOMERROOT, O2ROOT and PERL5LIB\n";
+  print "Your values:\n";
+  print "\tO2CUSTOMERROOT: $ENV{O2CUSTOMERROOT}\n";
+  print "\tO2ROOT:         $ENV{O2ROOT}\n";
+  print "\tPERL5LIB:       $ENV{PERL5LIB}\n\n";
+  exit;
+}
+
+$context->getSingleton('O2::Model::Generator')->generate( 
+  $generatorType,
+  className      => $className,
+  superClassName => $superClassName,
+  currentRoot    => $currentRoot,
+  %ARGV,
+);

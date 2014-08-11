@@ -1,0 +1,85 @@
+<o2 use O2Doc::Tutorial />
+
+<o2 addCss>
+  table {
+    border-collapse : collapse;
+  }
+  table, td, th {
+    border : 1px solid black;
+  }
+  td {
+    padding     : 2px 4px;
+    font-family : monospace;
+  }
+  td + td {
+    font-family : inherit;
+  }
+</o2:addCss>
+
+<o2 docSection title="slides">
+  With this tag, you can create slides for a tutorial or something like that. The syntax is almost exactly like
+  that .xul-thing. But here you may use html and o2 tags, and variables, in the slides as you please, which also
+  means that you must use the entity code (&amp;#36;) if you want to display the dollar character.
+  <table>
+    <tr>
+      <th>Code</th>
+      <th>Explanation</th>
+    </tr>
+    <tr>
+      <td>----</td>
+      <td>New page</td>
+    </tr>
+    <tr>
+      <td>[[PRE:something]]</td>
+      <td>Preformatted text</td>
+    </tr>
+    <tr>
+      <td>[[EM:something]]</td>
+      <td>Emphasized text</td>
+    </tr>
+    <tr>
+      <td>[[image src="..." width="..." height="..."]]</td>
+      <td>Image</td>
+    </tr>
+    <tr>
+      <td>[[some url]]</td>
+      <td>Link</td>
+    </tr>
+    <tr>
+      <td>ALIGN::[left|center|right]</td>
+      <td>Alignment of current slide</td>
+    </tr>
+    <tr>
+      <td>HEADER::The header</td>
+      <td>Header text for this slide and the following ones</td>
+    </tr>
+    <tr>
+      <td>FOOTER::The footer</td>
+      <td>Footer text for this slide and the following ones</td>
+    </tr>
+  </table>
+  <o2 docSection title="Syntax">
+    <o2 docCode lang="o2ml">
+      <o2 slides header="My header" footer="My footer" align="left">
+        Slide 1
+        ksdfbsdk sdjkfbsk kjsbfkjsbd kjsbfkjsbdf
+        sdkfjbs skjdbfkjsbd kjbsdkjfbs jbsbdf
+        ----
+        ALIGN::center
+        Slide 2
+        skdjnf slnfd ksjdfn
+        [[PRE:
+        my &#36;a = 1;
+        ]]
+      </o2:slides>
+    </o2:docCode>
+    <o2 docCodeResult useModule="Html::Slides" seeGeneratedHtmlAsDisplayed="0" />
+  </o2:docSection>
+  <o2 docSection title="Attributes">
+    <o2 docList class="attributes">
+      <o2 docListItem class="optional">header - header text for all slides until the header is redefined with HEADER::</o2:docListItem>
+      <o2 docListItem class="optional">footer - footer text for all slides until the footer is redefined with FOOTER::</o2:docListItem>
+      <o2 docListItem class="optional">align [center] - default alignment for all slides. One of {left, center, right}</o2:docListItem>
+    </o2:docList>
+  </o2:docSection>
+</o2:docSection>

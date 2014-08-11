@@ -1,0 +1,20 @@
+<o2 use O2Doc::Tutorial />
+
+<o2 docSection title="stringCut">
+  Cuts the content string after a specified number of characters. If "boundaries" is true, cuts the string at the closest word boundary
+  before the number of characters you specified. This is equivalent to using <o2 docLink type="tag" id="wordCut" />.
+  <o2 docSection title="Syntax">
+    <o2 docCode lang="o2ml">
+      <o2 stringCut "8 [...]" boundaries="1">Hello world!</o2:stringCut>
+    </o2:docCode>
+    <o2 docCodeResult useModule="StringFormat" seeGeneratedHtmlAsDisplayed="0" />
+  </o2:docSection>
+  <o2 docSection title="Attributes">
+    <o2 docList class="attributes">
+      <o2 docListItem class="required content">content - the string to be cut</o2:docListItem>
+      <o2 docListItem class="required param">param     - the (maximal) number of characters to display, and optionally a string to be appended after the cut string.</o2:docListItem>
+      <o2 docListItem class="optional">boundaries [0]  - if true (1), the string will not be cut inside a word</o2:docListItem>
+    </o2:docList>
+  </o2:docSection>
+  See also <o2 docLink type="tag" id="wordCut" />.
+</o2:docSection>

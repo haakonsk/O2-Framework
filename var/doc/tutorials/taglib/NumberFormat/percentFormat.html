@@ -1,0 +1,28 @@
+<o2 use O2Doc::Tutorial />
+
+<o2 docSection title="percentFormat">
+  Formats a number in the percent format of a locale. If not specified, the default locale is used. To get the percentage value,
+  the input number is multiplied by 100.
+  Format, decimalSymbol and groupSymbol may also be given explicitly.
+  <o2 docSection title="Syntax">
+    <o2 docCode lang="o2ml">
+      <o2 percentFormat locale="en_US">0.95</o2:percentFormat>
+    </o2:docCode>
+    <o2 docCodeResult useModule="NumberFormat" seeGeneratedHtmlAsDisplayed="0" />
+    <o2 docCode lang="o2ml">
+      <o2 percentFormat isPercentAlready="1">37.5</o2:percentFormat>
+    </o2:docCode>
+    <o2 docCodeResult useModule="NumberFormat" seeGeneratedHtmlAsDisplayed="0" />
+  </o2:docSection>
+  <o2 docSection title="Attributes">
+    <o2 docList class="attributes">
+      <o2 docListItem class="optional">locale</o2:docListItem>
+      <o2 docListItem class="optional">isPercentAlready - If this argument is set to "1" , the input number is not multiplied by 100</o2:docListItem>
+      <o2 docListItem class="content required">content - the number to be formatted</o2:docListItem>
+      <o2 docListItem class="optional">format        - The default depends on the locale. For Norwegian Bokmål as well as for American English, the format it "#,##0.###"</o2:docListItem>
+      <o2 docListItem class="optional">decimalSymbol - The default depends on the locale. For Norwegian Bokmål, it's ",". For American English, it's "."</o2:docListItem>
+      <o2 docListItem class="optional">groupSymbol   - The default depends on the locale. For Norwegian Bokmål, it's " ". For American English, it's ","</o2:docListItem>
+    </o2:docList>
+  </o2:docSection>
+  See also <o2 docLink type="tag" id="numberFormat" />.
+</o2:docSection>

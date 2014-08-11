@@ -1,0 +1,47 @@
+<o2 use O2Doc::Tutorial />
+
+<o2 docSection title="flexigrid, flexiTh, flexiTd">
+  Turns an html table into a flexible grid.
+  The implementation is based on <o2 docLink type="external" href="http://flexigrid.info/" title="flexigrid for jquery" />.
+  <o2 docSection title="Syntax">
+    <o2 docCode lang="o2ml">
+      <o2 flexigrid>
+        <thead>
+          <tr>
+            <o2 flexiTh>Name</o2:flexiTh>
+            <o2 flexiTh>Age</o2:flexiTh>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <o2 flexiTd>John Smith</o2:flexiTd>
+            <o2 flexiTd>59</o2:flexiTd>
+          </tr>
+          <tr>
+            <o2 flexiTd>Jane Doe</o2:flexiTd>
+            <o2 flexiTd>42</o2:flexiTd>
+          </tr>
+        </tbody>
+      </o2:flexigrid>
+    </o2:docCode>
+    <o2 docCodeResult useModule="Html::Flexigrid" seeGeneratedHtml="0" />
+  </o2:docSection>
+  
+  <o2 docSection title="flexigrid attributes">
+    <o2 docList class="attributes">
+      <o2 docListItem class="optional">Normal attributes for the &lt;table&gt; tag.</o2:docListItem>
+    </o2:docList>
+  </o2:docSection>
+  
+  <o2 docSection title="flexiTh attributes">
+    <o2 docList class="attributes">
+      <o2 docListItem class="optional">Normal attributes for the &lt;th&gt; tag.</o2:docListItem>
+    </o2:docList>
+  </o2:docSection>
+  
+  <o2 docSection title="flexiTd attributes">
+    <o2 docList class="attributes">
+      <o2 docListItem class="optional">Normal attributes for the &lt;td&gt; tag.</o2:docListItem>
+    </o2:docList>
+  </o2:docSection>
+</o2:docSection>

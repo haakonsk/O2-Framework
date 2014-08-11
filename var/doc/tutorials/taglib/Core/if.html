@@ -1,0 +1,52 @@
+<o2 use O2Doc::Tutorial />
+
+<o2 docSection title="if, elsif, else">
+
+  Works like the equivalent construct in Perl. In addition, it can be used as the trinary operator in Perl:<br>
+  1 + 1 == 2  ?  "1+1 is 2"  :  "1+1 is not 2"<br>
+  In o2ml:<br>
+  &lt;o2 if "1 + 1 == 2" then="1+1 is 2" else="1+1 is not 2" /&gt;<br>
+  so, the question mark corresponds to the then attribute and the colon corresponds to the else attribute.
+
+  <o2 docSection title="Syntax">
+    <o2 docCode lang="o2ml">
+      <o2 setVar "$i">5</o2:setVar>
+      <o2 if "$i < 10">
+        Do one thing
+      </o2:if>
+      <o2 elsif "$i < 50">
+        Do a second thing instead
+      </o2:elsif>
+      <o2 else>
+        Do something else
+      </o2:else>
+    </o2:docCode>
+    <o2 docCodeResult seeGeneratedHtmlAsDisplayed="0" />
+    or
+    <o2 docCode lang="o2ml">
+      <o2 if "1 + 1 == 2" then="1+1 is 2" else="1+1 is not 2" />
+    </o2:docCode>
+    <o2 docCodeResult seeGeneratedHtmlAsDisplayed="0" />
+  </o2:docSection>
+  <o2 docSection title="Attributes">
+    <o2 docList class="attributes">
+      <o2 docListItem class="optional">then - if the condition is true, this is returned</o2:docListItem>
+      <o2 docListItem class="optional">else - if the condition is false, this is returned instead</o2:docListItem>
+      <o2 docListItem class="required param">param - the condition</o2:docListItem>
+    </o2:docList>
+  </o2:docSection>
+
+</o2:docSection>
+
+<div id_="test2" eventHandlers="click:test">DIV</div>
+<o2 use Html::Form />
+<o2 form eventHandler="click:test">
+  <o2 comboBox name="test" eventHandlers="click:test" />
+</o2:form>
+
+<o2 addJs>
+  function test(e, elm) {
+    console.log(e);
+    console.log(elm);
+  }
+</o2:addJs>

@@ -1,0 +1,44 @@
+# setup the O2 env vars for this customer
+# Provides a shell environment for O2 shell task
+# E.g. o2create likes this
+# Usage: source o2Shell customerName [sitename]
+
+OLDO2ROOT=$(echo $O2ROOT | tr -d \") # Remove quote characters
+
+# Start by resetting all relevant environment variables
+export O2DBSOURCE=
+export O2DBPASS=
+export O2DBUSER=
+export O2CUSTOMERROOT=
+export O2SITEROOT=
+export PERL5LIB=
+export O2DBD=
+export O2ROOT=
+export DOCUMENT_ROOT=
+export OSASTEMPLATES=
+
+# o2Shell.pl writes the new environment variables to /tmp/_o2Shell-<random>.tmp
+# So we just have to run o2Shell.pl, set the environment variables from _o2Shell.tmp and delete _o2Shell.tmp
+
+CWD=$(pwd)
+dir=`expr "$CWD" : '\(.*\)/bin'`
+SHELLVARSFILE=_o2Shell-$RANDOM.tmp
+# Go to tools directory. XXX Use same O2ROOT as o2Shell was invoked in.
+if [ $OLDO2ROOT ]; then
+  cd $OLDO2ROOT/bin/tools
+elif [ $dir ]; then
+  cd $dir/bin/tools
+fi
+perl o2Shell.pl $SHELLVARSFILE $1 $2
+cd $CWD
+
+if [ -f $SHELLVARSFILE ]; then
+  for line in $(cat $SHELLVARSFILE)
+    do
+      echo   $line
+      export $line
+  done
+
+  # Delete temporary file:
+  rm $SHELLVARSFILE
+fi

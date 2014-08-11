@@ -1,0 +1,35 @@
+<o2 use O2Doc::Tutorial />
+
+<o2 docSection title="addCssFile">
+  Includes a CSS file in the head of a web page.
+  <o2 docSection title="Syntax">
+    <o2 docCode lang="o2ml">
+      <o2 addCssFile file="popupMenu" />
+    </o2:docCode>
+    or
+    <o2 docCode lang="o2ml">
+      <o2 addCssFile file="/css/popupMenu.css" />
+    </o2:docCode>
+    or
+    <o2 docCode lang="o2ml">
+      <o2 addCssFile file="popupMenu" where="here" media="print" />
+    </o2:docCode>
+    <o2 docCodeResult useModule="Html" seeGeneratedHtmlAsDisplayed="0" />
+  </o2:docSection>
+  <o2 include "o2:var/doc/tutorials/taglib/Html/includes/versionConf.html" />
+  <o2 docSection title="Attributes">
+    <o2 docList class="attributes">
+      <o2 docListItem class="required">file        - the CSS file.</o2:docListItem>
+      <o2 docListItem class="optional">where [pre] - one of {pre, here}.</o2:docListItem>
+      <o2 docListItem class="optional">media       - the media type, this attribute is passed on to the generated link tag.</o2:docListItem>
+    </o2:docList>
+    If the file name ends with ".css", this filename will be used unmodified, otherwise the file must be in the directory /css, and
+    the extension ".css" will be appended to the given filename.
+    <o2 docNote>
+      &lt;o2 header&gt; or &lt;o2 incStylesheet&gt; must be called on the same page for addCssFile to work (when where="pre").
+    </o2:docNote>
+  </o2:docSection>
+  <o2 docSection>
+    See also <o2 docLink type="tag" id="addCss" />, <o2 docLink type="tag" id="header" /> and <o2 docLink type="tag" id="incStylesheet" />.
+  </o2:docSection>
+</o2:docSection>

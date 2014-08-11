@@ -1,0 +1,55 @@
+<o2 use O2Doc::Tutorial />
+
+<o2 docSection title="urlMod">
+  Generates a URL to a page on the server. Without parameters, urlMod returns a URL to the current page.
+  <o2 docSection title="Syntax">
+    <o2 docCode lang="o2ml">
+      <o2 urlMod setClass="System-Documentation-Taglibs" setMethod="showDocumentation" setParams="module=Core&tag=call" />
+    </o2:docCode>
+    <o2 docCodeResult seeGeneratedHtmlAsDisplayed="0" />
+    This code will generate a URL that looks something like this:
+    <o2 docSection>
+      /o2/System-Documentation-Taglibs/showDocumentation?module=Core&amp;tag=call
+    </o2:docSection>
+    <o2 docSection>
+      If the absoluteURL parameter is set to true (1), the URL would become something like this:
+    </o2:docSection>
+    <o2 docSection>
+      http://www.my-site.com/o2/System-Documentation-Taglibs/showDocumentation?module=Core&amp;tag=call
+    </o2:docSection>
+  </o2:docSection>
+  <o2 docSection title="Attributes">
+    <o2 docList class="attributes">
+      <o2 docListItem class="optional">setClass     - the path to the Perl module</o2:docListItem>
+      <o2 docListItem class="optional">setMethod    - the method that will be called (in the Perl module)</o2:docListItem>
+      <o2 docListItem class="optional">setParams    - all parameters (if there should be no parameters, use removeParams)</o2:docListItem>
+      <o2 docListItem class="optional">setParam     - set one parameter (the others will be as in the original URL)</o2:docListItem>
+      <o2 docListItem class="optional">setHash      - set the hash part of the url</o2:docListItem>
+      <o2 docListItem class="optional">removeParams - remove all parameters</o2:docListItem>
+      <o2 docListItem class="optional">removeParam  - remove the specified parameter</o2:docListItem>
+      <o2 docListItem class="optional">removeHash   - remove the hash part of the url</o2:docListItem>
+      <o2 docListItem class="optional">appendParam  - add one parameter</o2:docListItem>
+      <o2 docListItem class="optional">toggleParam  - toggle one parameter between a set of different values on each page urlMod is called (see example below)</o2:docListItem>
+      <o2 docListItem class="optional">absoluteURL [0]</o2:docListItem>
+    </o2:docList>
+  </o2:docSection>
+  <o2 docSection>
+    <o2 docExample>
+      <o2 docCode lang="o2ml">
+        <o2 urlMod toggleParam="number=1|2|3,character=a|b|c" />
+      </o2:docCode>
+      The URL generated might first look like this:
+      <o2 docSection>
+        /o2/System-Documentation-Taglibs/showDocumentation?number=1&amp;character=a
+      </o2:docSection>
+      On that page, the link will be
+      <o2 docSection>
+        /o2/System-Documentation-Taglibs/showDocumentation?number=2&amp;character=b
+      </o2:docSection>
+      After that, number will be 3 and character will be c, then they will 1 and a, and so on.
+    </o2:docExample>
+  </o2:docSection>
+  <o2 docSection>
+    See also <o2 docLink type="tag" id="O2-Publisher-objectUrl" />, <o2 docLink type="tag" id="link" /> and <o2 docLink type="tag" id="popupWindow" />.
+  </o2:docSection>
+</o2:docSection>

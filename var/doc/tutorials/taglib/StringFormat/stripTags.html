@@ -1,0 +1,22 @@
+<o2 use O2Doc::Tutorial />
+
+<o2 docSection title="stripTags">
+  Removes HTML tags from a string.
+  <o2 docSection title="Syntax">
+    <o2 docCode lang="o2ml">
+      <o2 setVar "$html">
+        <b>Hello</b> world!
+      </o2:setVar>
+      
+      <p>
+        <o2 stripTags>$html</o2:stripTags>
+      </p>
+    </o2:docCode>
+    <o2 docCodeResult useModule="StringFormat" />
+  </o2:docSection>
+  <o2 docSection title="Attributes">
+    <o2 docList class="attributes">
+      <o2 docListItem class="required content">content - the string that you want to remove HTML tags from</o2:docListItem>
+    </o2:docList>
+  </o2:docSection>
+</o2:docSection>

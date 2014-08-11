@@ -1,0 +1,24 @@
+<o2 use O2Doc::Tutorial />
+
+<o2 docSection title="localeSwitch">
+  Returns links to switch to other languages. Either text links or flag links.
+  <o2 docSection title="Syntax">
+    <o2 docCode lang="o2ml">
+      <o2 localeSwitch object="$context->getObjectById(245)" />
+    </o2:docCode>
+    <o2 docCodeResult useModule="Html::Locale" />
+    <o2 docCode lang="o2ml">
+      <o2 localeSwitch object="$context->getObjectById(245)" type="flag" class="myLocaleSwitch" orientation="vertical" />
+    </o2:docCode>
+    <o2 docCodeResult useModule="Html::Locale" />
+  </o2:docSection>
+  <o2 docList class="attributes">
+    <o2 docListItem class="required">object                   - the object you are setting currentLocale on</o2:docListItem>
+    <o2 docListItem class="optional">type [text]              - one of {text, flag}</o2:docListItem>
+    <o2 docListItem class="optional">orientation [horizontal] - one of {horizontal, vertical}</o2:docListItem>
+    <o2 docListItem class="optional">onClick                  - javascript code to be performed when one of the links is clicked</o2:docListItem>
+    <o2 docListItem class="optional">onSuccess                - javascript code to be performed when the language has been switched</o2:docListItem>
+    <o2 docListItem class="optional">class                    - class name of generated div tag. The div will also have a default class name of "localeSwitch".</o2:docListItem>
+    <o2 docListItem class="optional">Other html attributes    - ..are relayed to the div tag</o2:docListItem>
+  </o2:docList>
+</o2:docSection>

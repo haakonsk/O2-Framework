@@ -1,0 +1,262 @@
+@import url("common.css");
+
+a {
+  text-decoration : none !important;
+  color           : #00a !important;
+}
+a:hover {
+  text-decoration : underline !important;
+}
+
+img[onClick] {
+  cursor : pointer;
+}
+
+.content {
+  width      : 90%;
+  min-width  : 900px;
+  max-width  : 1200px;
+  margin     : auto;
+  margin-top : 50px;
+}
+
+.mainObject {
+  border                : 1px solid black;
+  -moz-border-radius    : 7px;
+  -webkit-border-radius : 7px;
+}
+
+div.className {
+  border-bottom : 1px solid black;
+  height        : 40px;
+  position      : relative;
+}
+
+h1 {
+  padding       : 5px 5px 5px 15px;
+  margin-top    : 5px;
+  margin-bottom : 5px;
+}
+
+.optionsMenu {
+  position    : absolute;
+  width       : 200px;
+  top         : 7px;
+  right       : 10px;
+  float       : right;
+  background  : #eee;
+  line-height : 20px;
+  cursor      : pointer;
+}
+
+.optionsMenu .header {
+  border                : 1px solid grey;
+  padding-left          : 5px;
+  -moz-border-radius    : 5px;
+  -webkit-border-radius : 5px;
+}
+
+.optionsMenu .body {
+  border     : 1px solid grey;
+  border-top : 0;
+  display    : none;
+}
+
+.optionsMenu .body .item {
+  position : relative;
+  width    : 198px;
+  height   : 20px;
+}
+
+.optionsMenu .body .item a {
+  position     : absolute;
+  top          : 0;
+  right        : 0;
+  bottom       : 0;
+  left         : 0;
+  color        : inherit !important;
+  padding-left : 5px;
+}
+
+.optionsMenu .body .item a:hover {
+  text-decoration : none !important;
+  background      : #ddd !important;
+}
+
+.mainObject .superClass {
+  padding       : 5px 5px 5px 12px;
+  border-bottom : 1px solid black;
+  font-size     : medium;
+  font-weight   : bold;
+}
+
+.mainObject .classComment {
+  padding       : 5px 5px 5px 12px;
+  border-bottom : 1px solid black;
+  font-size     : small;
+  font-weight   : normal;
+}
+
+.classComment img {
+  margin-left : 28px;
+}
+
+.editComment textarea {
+  width : 380px;
+}
+
+.mainObject .fields td {
+  vertical-align : top;
+}
+
+.mainObject .superClass img {
+  margin-right : 7px;
+}
+
+.mainObject .fields {
+  padding : 5px;
+}
+
+.mainObject .fields .type {
+  text-align : right;
+}
+
+.mainObject .fields .name {
+  font-weight : bold;
+}
+
+.mainObject .fields .attribute {
+  white-space : nowrap;
+}
+
+.mainObject .fields .attribute .label {
+  text-decoration : underline;
+}
+
+.mainObject .fields td {
+  padding-left  : 5px;
+  padding-right : 5px;
+}
+
+form {
+  margin  : 0;
+  padding : 5px;
+}
+
+form h1 {
+  margin-top : 0;
+}
+
+form input[type="text"], form textarea {
+  width : 250px;
+}
+
+input.comboBox {
+  width : 218px !important;
+}
+
+.o2ComboBoxList {
+  width : 253px;
+}
+
+.navigate {
+  width       : 30px;
+  margin      : 10px auto;
+  white-space : nowrap;
+}
+
+.mainObject .navigate {
+  width : 10px;
+}
+
+.comment {
+  color : #cc6600;
+}
+
+#tmpMsgContainer {
+  height : 50px;
+}
+
+[baseClass="O2::Obj::Object"] {
+  visibility : hidden;
+}
+
+ul.subClasses, ul#publicNativeMethods {
+  margin : 5px 0;
+}
+
+ul#publicNativeMethods, ul#overriddenMethods, ul#inheritedMethods, ul#o2ObjObjectMethods {
+  -moz-column-count    : 3;
+  -webkit-column-count : 3;
+  column-count         : 3;
+}
+
+ul#publicNativeMethods {
+  color : green;
+}
+
+ul#inheritedMethods, ul#o2ObjObjectMethods {
+  color : #b60;
+}
+
+ul#overriddenMethods {
+  color : red;
+}
+
+.subClassExplanation, .methodsExplanation {
+  display     : block;
+  border-top  : 1px solid black;
+  font-size   : 14px;
+  font-weight : bold;
+  padding     : 5px 5px 0 20px;
+}
+
+.nativeMethodsExplanation, .overriddenMethodsExplanation {
+  font-weight : bold;
+  padding     : 5px 5px 0 20px;
+}
+
+ul.subClasses li {
+  font-size : 14px;
+}
+
+.comboBox button {
+  background     : url("/images/comboBox/downArrow.gif") no-repeat center center;
+  cursor         : pointer;        
+  height         : 22px;
+  border         : 1px solid #aaa;
+  border-left    : 0;
+  padding        : 0;
+  width          : 16px;
+  vertical-align : top;
+}
+
+.fields .inherited,
+#inheritedMethods,
+#o2ObjObjectMethods {
+  display : none;
+}
+
+.fields .inherited * {
+  color : #888;
+}
+
+.fields .inherited a {
+  color : #448 !important;
+}
+
+.toggler {
+  margin-left : 10px;
+}
+
+.hasPrimaryIndex, .hasSecondaryIndex {
+  -moz-border-radius    : 3px;
+  -webkit-border-radius : 3px;
+}
+
+.hasPrimaryIndex {
+  background : #cfc;
+}
+.hasSecondaryIndex {
+  background : #fda;
+}

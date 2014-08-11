@@ -1,0 +1,48 @@
+<o2 setVar "$class"></o2:setVar>
+<o2 setVar "$title"></o2:setVar>
+
+<o2 if "$table && $table->hasPrimaryIndexOnColumn($field)">
+  <o2 setVar "$class">hasPrimaryIndex</o2:setVar>
+  <o2 setVar "$title">$lang->getString('helpTextCorrespondsToIndex')</o2:setVar>
+</o2:if>
+<o2 elsif "$table && $table->hasIndexOnColumn($field)">
+  <o2 setVar "$class">hasSecondaryIndex</o2:setVar>
+  <o2 setVar "$title">$lang->getString('helpTextSecondaryIndex')</o2:setVar>
+</o2:elsif>
+
+<tr title="$title">
+  <o2 setVar "$name">$field->getName()</o2:setVar>
+  <o2 setVar "$listType">$field->getListType(1)</o2:setVar>
+  <o2 if "$listType">
+    <o2 appendVar "$name"><o2 if "$listType eq 'array'" then="[]" else="{}" /></o2:appendVar>
+  </o2:if>
+  <o2 setVar "$otherAttributes"></o2:setVar>
+  <o2 setVar "$validValues"></o2:setVar>
+  <o2 foreach "$value in $field->getValidValues()">
+    <o2 appendVar "$validValues" delimiter=", ">$value</o2:appendVar>
+  </o2:foreach>
+  <o2 if "       $field->getNotNull()">     <o2 appendVar "$otherAttributes" delimiter=", "><span class="attribute">not null</span></o2:appendVar>                                                                                 </o2:if>
+  <o2 if "       $field->isMultilingual()"> <o2 appendVar "$otherAttributes" delimiter=", "><span class="attribute">$lang->getString("txtIsMultilingual")</span></o2:appendVar>                                                    </o2:if>
+  <o2 if "length $field->getDefaultValue()"><o2 appendVar "$otherAttributes" delimiter=", "><span class="attribute"><span class="label">$lang->getString("txtDefaultValue")</span>: $field->getDefaultValue()</span></o2:appendVar></o2:if>
+  <o2 if "scalar $field->getValidValues()"> <o2 appendVar "$otherAttributes" delimiter=", "><span class="attribute"><span class="label">$lang->getString("txtValidValues")</span>: </span>$validValues</o2:appendVar>              </o2:if>
+  
+  <o2 if "!$isInherited">
+    <td><o2 link type="image" src="$deleteIconUrl" alt="X" onClick="o2.systemModel.deleteField(this, '$field->getName()')" title="$lang->getString('txtDelete') $field->getName()" setMethod="deleteField" setParam="fieldName=$field->getName()" /></td>
+    <td><o2 link type="image" src="$editIconUrl"   alt="M" onClick="o2.popupDialog.display('$field->getName()_edit')"      title="$lang->getString('txtEdit') $field->getName()" /></td>
+  </o2:if>
+  <o2 else>
+    <td colspan="2"></td>
+  </o2:else>
+  
+  <td class="type">
+    <o2 if "$field->isObjectType() && $field->getType() ne 'object'">
+      <o2 link setParams="package=$field->getType()">$field->getType()</o2:link>
+    </o2:if>
+    <o2 else>
+      $gui->getFieldTypeAndLength($field)
+    </o2:else>
+  </td>
+  <td class="name $class">$name</td>
+  <td class="otherFieldAttributes"><o2 encodeEntities off>$otherAttributes</o2:encodeEntities></td>
+  <td class="comment"><o2 if "$field->getComment()" then="/* " />$field->getComment()<o2 if "$field->getComment()" then=" */" /></td>
+</tr>

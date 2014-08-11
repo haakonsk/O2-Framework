@@ -1,0 +1,44 @@
+<o2 use Html />
+<o2 use NumberFormat />
+
+<o2 header title="SQL Summary" />
+
+<o2 addJsFile file="tableSortable" />
+
+<a href="javascript:void(history.back());">[ BACK ]</a>
+<a href="#db_$worstPid">[ Worst statement: $worstPid ]</a>
+
+<p>
+  Total runtime:        <b><o2 numberFormat "#,##0.0000">$totalRunTime</o2:numberFormat>s</b>,
+  avg.query time:       <b><o2 numberFormat "#,##0.0000"><o2 calc>$totalRunTime / ($totalPids||1)</o2:calc></o2:numberFormat>s</b>,
+  total sql statements: <b>$totalPids</b>
+</p>
+
+<table border="1" class="sortable">
+  <tr>
+    <th>SQL no</td>
+    <th>Parent SQL</td>
+    <th>querytime</td>
+    <th>O2::DB method</td>
+    <th>SQL</td>
+    <th>caller info</td>
+  </tr>
+  
+  <o2 foreach "$pid => $data in $sqlData" sortBy="$data->{runTime}">
+    <o2 setVar "$bgColor"><o2 if "!$data->{endTime} || $data->{runTime} > 1" then="#f69" else="white" /></o2:setVar>
+    <tr style="background-color: $bgColor">
+      <td><a name="db_$pid">$pid</a></td>
+      <td>
+        <o2 if "$data->{parentPID}">
+          <a href="#db_$data->{parentPID}">($data->{parentPID})</a>
+        </o2:if>
+      </td>
+      <td><o2 numberFormat "#,##0.0000">$data->{runTime}</o2:numberFormat>s ($data->{runTime})</td>
+      <td>$data->{method}</td>
+      <td>$data->{sql}</td>
+      <td>$data->{package} (line $data->{line})</td>
+    </tr>
+  </o2:foreach>
+</table>
+
+<o2 footer />

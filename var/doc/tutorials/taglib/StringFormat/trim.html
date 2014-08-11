@@ -1,0 +1,21 @@
+<o2 use O2Doc::Tutorial />
+
+<o2 docSection title="trim">
+  Strips away all characters after maxLength characters (characters in tags aren't counted).
+  If there are end tags in the stripped away text, trim tries to append those end tags before trail.
+  <o2 docSection title="Syntax">
+    <o2 docCode lang="o2ml">
+      <o2 trim maxLength="10" trail="..." toolTip="1">The <p class="par"><i>text to be</i>trimmed</p></o2:trim>
+    </o2:docCode>
+    <o2 docCodeResult useModule="StringFormat" />
+  </o2:docSection>
+  <o2 docSection title="Attributes">
+    <o2 docList class="attributes">
+      <o2 docListItem class="optional">maxLength - if the content text is longer than maxLength, it is clipped after maxLength number of characters</o2:docListItem>
+      <o2 docListItem class="optional">trail     - if the string was clipped, the text in this attribute is inserted after the trimmed string</o2:docListItem>
+      <o2 docListItem class="optional">toolTip   - {1, 0} If set to 1, the untrimmed text can be seen when the mouse hovers over the trimmed text</o2:docListItem>
+      <o2 docListItem class="required content">content - the text to be trimmed</o2:docListItem>
+    </o2:docList>
+  </o2:docSection>
+  See also <o2 docLink type="tag" id="NumbersAndStrings-stringCut" /> and <o2 docLink type="tag" id="NumbersAndStrings-wordCut" />.
+</o2:docSection>

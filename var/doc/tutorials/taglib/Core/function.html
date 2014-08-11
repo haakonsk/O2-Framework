@@ -1,0 +1,62 @@
+<o2 use O2Doc::Tutorial />
+
+<o2 docSection title="function, call">
+  A template function can be used to separate a part of the template, which can later be included zero or more times
+  by calling the function.
+  <o2 docSection title="Syntax">
+    <o2 docCode lang="o2ml">
+      <!-- Define the function -->
+      <o2 function myFunc>
+        <p>This is a template within the template. $param1 + $param2  = <o2 calc>$param1 + $param2</o2:calc></p>
+      </o2:function>\n
+      <!-- Call the function -->
+      <o2 call myFunc param1="1" param2="2" />
+    </o2:docCode>
+    <o2 docCodeResult />
+  </o2:docSection>
+  <o2 docSection>
+    As you can see, the parameters you define inside the &lt;o2 call&gt; tag are available in the function as variables of the same name.
+    If you separate the opening &lt;o2 call&gt; tag and the closing &lt;o2 call&gt; tag, the content (between opening and closing tag) of the call tag
+    is available to the function template as a variable named "content". This wasn't a very good explanation, but see the following example.
+  </o2:docSection>
+  <o2 docSection>
+    <o2 docExample>
+      <o2 docCode lang="o2ml">
+        <!-- Define the function -->
+        <o2 function myFunc>
+          Hi $name! The weather is $weatherCondition today!<br>
+          Oh, btw: Check this out;<br>
+          $content
+        </o2:function>\n
+        <!-- Call the function -->
+        <o2 call myFunc name="Tarjei" weatherCondition="great">
+          Ibsens ripsbusker og andre buskevekster!
+        </o2:call>
+      </o2:docCode>
+    </o2:docExample>
+    <o2 docCodeResult />
+  </o2:docSection>
+  <o2 docSection>
+    <o2 docExample>
+      Functions can be used to do things recursively, as this example illustrates.
+      <o2 docCode lang="o2ml">
+        <!-- Define the function -->
+        <o2 function rec>
+          <li>$person->{name}
+            <o2 if "$person->{child}">
+              <li> Child:
+                <ul>
+                  <o2 call rec person="$person->{child}" />
+                </ul>
+              </li>
+            </o2:if>
+          </li>
+        </o2:function>\n
+        <!-- Call the function -->
+        <ul>
+          <o2 call rec person="$person" />
+        </ul>
+      </o2:docCode>
+    </o2:docExample>
+  </o2:docSection>
+</o2:docSection>

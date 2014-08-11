@@ -1,0 +1,17 @@
+<o2 use Html />
+
+<o2 header />
+
+<o2 addCssFile file="jsTests" />
+
+<o2 addJs where="pre">
+  var testFiles = new Array();
+  <o2 foreach "$file in $files">
+    testFiles.push("$file");
+  </o2:foreach>
+</o2:addJs>
+
+<o2 addJsFile file="t/harness"   />
+<o2 addJsFile file="t/testUtils" />
+
+<o2 footer />

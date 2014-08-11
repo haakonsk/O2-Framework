@@ -1,0 +1,35 @@
+<o2 use O2Doc::Tutorial />
+
+<o2 docSection title="getString">
+  Language specific text is stored under var/resources/ where each language has its own directory. To get the correct text for the
+  currently chosen language (active locale), use this tag (getString) or the global \$lang variable.
+  <o2 docSection title="Syntax">
+    <o2 docCode lang="o2ml">
+      <o2 getString>commonFiles.commonText.msgFormError</o2:getString>
+    </o2:docCode>
+    Another way of writing this is as follows:
+    <o2 docCode lang="o2ml">
+      $lang->getString("commonFiles.commonText.msgFormError")
+    </o2:docCode>
+  </o2:docSection>
+  <o2 docSection title="Language strings with variables">
+    If the language string contains variables, their values are passed as parameters in the getString tag. Suppose, for example there's
+    a language variable named subscriberPrintMapInfo in the file Shop/MapPurchase.conf. In swedish the value of this language variable is
+    "Du har kvar \$numMapsLeft av \$initialNumberOfMaps nedladdningar/utskrifter, Abonnemanget går ut \$expires". You can print the
+    variable in one of two ways. Either:
+    <o2 docCode lang="o2ml">
+      <o2 getString numMapsLeft="98" initialNumberOfMaps="100" expires="2007-07-18">Shop.MapPurchase.subscriberPrintMapInfo</o2:getString>
+    </o2:docCode>
+    or
+    <o2 docCode lang="o2ml">
+      $lang->getString("Shop.MapPurchase.subscriberPrintMapInfo", numMapsLeft => 98, initialNumberOfMaps => 100, expires => "2007-07-18")
+    </o2:docCode>
+  </o2:docSection>
+  <o2 docSection title="Attributes">
+    <o2 docList class="attributes">
+      <o2 docListItem class="content required">content - the resource path</o2:docListItem>
+      <o2 docListItem>Variable names and values (See example above)</o2:docListItem>
+    </o2:docList>
+  </o2:docSection>
+  See also <o2 docLink type="tag" id="setResourcePath" />.
+</o2:docSection>

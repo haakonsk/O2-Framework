@@ -1,0 +1,144 @@
+#!/usr/bin/env perl
+
+$| = 1;
+
+print"\e[2J\e[H";
+
+die "Use 'source /path/to/o2/bin/tools/o2Shell customername' before using o2doc\n" unless $ENV{O2ROOT} && $ENV{O2CUSTOMERROOT};
+
+my ($class, $method) = @ARGV;
+die "Usage o2doc classname\n" unless $class =~ m/^[\w:]+$/;
+
+if    ( $method           ) { showMethod( $class, $method ) }
+elsif ( $class =~ m/Obj/  ) { showObject( $class ) }
+else                        { showClass( $class ) }
+
+#----------------------------------------------------------------------------
+sub showObject {
+  require O2::Context;
+  require O2::Cgi;
+  my $cgi = O2::Cgi->new( tieStdout => 'no' );
+  $cgi->setParam( package => $class );
+  
+  my $context = O2::Context->new( cgi => $cgi );
+  
+  
+  require O2::Backend::Gui::System::Model;
+  my $gui = O2::Backend::Gui::System::Model->new( context => $context);
+  
+  $gui->showClass( 'showClassPlain.txt' );
+ 
+}
+#----------------------------------------------------------------------------
+sub showMethod {
+  my ($class, $method) = @_;
+  my $classString = _getClassAsString( $class );
+
+  $classString =~ m/(sub\s+$method\s*(\([^\)]+\))?\s*{)/ig;
+  
+  unless ($1) {
+    die "Could not find method $method in class $class\n";
+  }
+
+  my $startPos = pos($classString) - length($1);
+
+  my $numBlocks = 1;
+
+  while ( $numBlocks >= 1 ) {
+    $classString =~ m/(?<!\\)([\{\}])/g;
+    if ($1 eq '{') {
+      $numBlocks++;
+    }
+    elsif ($1 eq '}') {
+      $numBlocks--;
+    }
+  }
+
+  print "$method in $class\n", "-" x 30,"\n";
+
+  my $endPos = pos($classString);
+  foreach my $classMethod (_getMethodsFromString( $classString )) {
+    if ($classMethod->{method} =~ m/^$method$/i) {
+      print "Params   : $classMethod->{params}\n";
+      print "Comments : $classMethod->{comment}\n";
+      print "-" x 30, "\n";
+      last;
+    }
+  }
+
+  print "Code:\n", "-" x 30 , "\n";
+
+  print substr($classString, $startPos, $endPos-$startPos),"\n";
+
+}
+#----------------------------------------------------------------------------
+sub showClass {
+  my ($class) = @_;
+  my $classString = _getClassAsString( $class );
+  
+  $classString =~ m/^(.+?)package/s;
+  my $description = _cleanComment( $1 || '' );
+
+  my ( $base ) = $classString =~ m/use\w+base\w+([^;]+)/;
+  
+  print $class, "\n", "-" x 30,"\n",$description,"\n", "-" x 30, "\n";
+
+  print "Methods:\n", "-" x 30, "\n";
+
+  foreach my $method (_getMethodsFromString( $classString )) {
+    print "$method->{method} ($method->{params})".($method->{comment} ? " - $method->{comment}" : '')."\n\n";
+  }
+}
+#----------------------------------------------------------------------------
+sub _getMethodsFromString {
+  my ( $classString ) = @_;
+  my @methods;
+  while ( $classString =~ m/(^#[^\n]+\n)*?sub\s*(\w+)\s*{\s*my\s*(\(?[^\(\=]+\)?)\s*=\s*(\@_|shift)/msg ) {
+    push @methods, { 
+      method  => $2,
+      comment => _cleanComment( $1 || '' ),
+      params  => _cleanParams( $3 ),
+    }
+  }
+  return @methods;
+}
+#----------------------------------------------------------------------------
+sub _getClassAsString {
+  my ( $class ) = @_;
+  eval "require $class";
+  die "Could not find class $class: $@\n" if $@;
+  
+  my $transformedClassName = $class;
+  $transformedClassName =~ s§::§/§g;
+  $transformedClassName .= ".pm";
+  
+  $file = $INC{ $transformedClassName };
+
+  local $/ = undef;
+  open( FH, $file ) || die "Could not open class '$file': $!\n";
+  my $classContent = <FH>;
+  close( FH );
+  return $classContent;
+
+}
+#----------------------------------------------------------------------------
+sub _cleanComment {
+  my ($comment) = @_;
+
+  $comment =~ s/^\s*#[\s\-\=]+$//mg;
+  $comment =~ s/^[#\s]*$//mg;
+  $comment =~ s/#!\/.+//;
+  $comment =~ s/^\s+//sg;
+  $comment =~ s/^#\s?//mg;
+  $comment =~ s/\n\n/\n/g;
+  $comment =~ s/\s+$//sg;
+
+  return $comment;
+}
+#----------------------------------------------------------------------------
+sub _cleanParams {
+  my ($params) = @_;
+  $params =~ s/\(|\)//g;
+  $params =~ s/\s//g;
+  return $params;
+}

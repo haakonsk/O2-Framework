@@ -1,0 +1,25 @@
+/*
+  This file is intended to make all browsers display a web page in the same way when no other css is included.
+  The attribute cssReset="1" in <o2 header> causes this file to be included.
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+  margin         : 0;
+  padding        : 0;
+  border         : 0;
+  outline        : 0;
+  font-weight    : inherit;
+  font-style     : inherit;
+  vertical-align : baseline;
+}
+
+body {
+  background : white;
+}

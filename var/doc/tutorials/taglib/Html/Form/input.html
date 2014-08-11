@@ -1,0 +1,41 @@
+<o2 use O2Doc::Tutorial />
+
+<o2 docSection title="input">
+  Creates an input field. For input fields of type "text" or "password" the label associated with the field can be specified inside the &lt;o2 input&gt; tag. This allows for
+  very compact and readable template code. For radio button and checkbox groups, see <o2 docLink type="tag" id="Html/Form-radioGroup" /> and <o2 docLink type="tag" id="Html/Form-checkboxGroup" />.
+  <o2 docSection title="Syntax">
+    <o2 docCode lang="o2ml">
+      <o2 form method="post" ruleTitle="An error occured">
+        <o2 input type="text" name="name"  rule="required" label="Name"   accesskey="n" ruleMsg="The name field is required"                      />
+        <o2 input type="text" name="email" rule="email"    label="E-mail" accesskey="e" ruleMsg="The e-mail field must be a valid e-mail address" />
+        <o2 input type="submit" value="Send" />
+      </o2:form>
+    </o2:docCode>
+    <o2 docCodeResult useModule="Html::Form" />
+    Another way to write forms is to use the <o2 docLink type="tag" id="Html/Form-formTable" /> tag - the form fields are then put inside table cells.
+  </o2:docSection>
+  <o2 docSection title="Attributes">
+    <o2 docList class="attributes">
+      <o2 docListItem class="optional">rule           - a rule that must be obeyed (see the <o2 docLink type="tag" id="Html/Form-form" /> tag for the rules)</o2:docListItem>
+      <o2 docListItem class="optional">ruleMsg        - the text that will be displayed to the user in case the rule wasn't obeyed</o2:docListItem>
+      <o2 docListItem class="optional">counterId      - if you specify a counter ID, you should also have an <o2 docLink type="tag" id="Html/Form-inputCounter" /> tag</o2:docListItem>
+      <o2 docListItem class="optional">name</o2:docListItem>
+      <o2 docListItem class="optional">label          - the text associated with the input field (applies to "text" and "password" fields)</o2:docListItem>
+      <o2 docListItem class="optional">labelClass     - extra class for the label</o2:docListItem>
+      <o2 docListItem class="optional">accesskey      - if label is specified, you can also specify an accesskey</o2:docListItem>
+      <o2 docListItem class="optional">focus [0]      - should this field receive focus when the page loads? (At most one focused field per page)</o2:docListItem>
+      <o2 docListItem class="optional">containerStyle - the style of the generated tr or div tag that surrounds the input tag</o2:docListItem>
+      <o2 docListItem class="optional">numberFormat   - if the original number in the input field should be formatted in a special way (ex: numberFormat="0,##")</o2:docListItem>
+      <o2 docListItem class="optional">multilingual   - should the user be able to edit the input field in more than one language? (Also see
+        <o2 docLink type="tag" id="multilingualController" />)</o2:docListItem>
+      <o2 docListItem>Normal html attributes</o2:docListItem>
+    </o2:docList>
+  </o2:docSection>
+  <o2 docSection>
+    In order to look good, for example together with multiple <o2 docLink type="tag" id="Html/Form-input" /> fields or other radio button or checkbox groups,
+    the HTML output by the input tag must be styled with CSS, or the <o2 docLink type="tag" id="Html/Form-formTable" /> tag could be used.
+    See the <o2 docLink type="tag" id="Html/Form-form" /> tag for example CSS.
+  </o2:docSection>
+  See also <o2 docLink type="tag" id="Html/Form-form" />, <o2 docLink type="tag" id="Html/formTable" />, <o2 docLink type="tag" id="Html/Form-select" />, <o2 docLink type="tag" id="Html/Form-radioGroup" />,
+  <o2 docLink type="tag" id="Html/Form-checkboxGroup" />, <o2 docLink type="tag" id="Html/Form-textarea" />, <o2 docLink type="tag" id="Html/Form-inputCounter" /> and <o2 docLink type="tag" id="Html/Form-multilingualController" />.
+</o2:docSection>

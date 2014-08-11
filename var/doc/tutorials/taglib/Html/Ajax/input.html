@@ -1,0 +1,21 @@
+<o2 use O2Doc::Tutorial />
+
+<o2 docSection title="input">
+  Inherits from <o2 docLink type="tag" id="Html-Form-input" />. You can associate an ajax request with the input field if
+  you set the ajaxEvent attribute to the name of an html event (like onChange, onBlur etc). Whenever this event occurs,
+  an ajax request is sent to the server.
+  <o2 docSection title="Syntax">
+    <o2 docCode lang="o2ml">
+      <o2 input type="text" name="username" label="Username" accesskey="u" ajaxEvent="onChange" setMethod="checkUsernameExists" removeParams="1" target="usernameMsg" where="replace" />
+      <span id="usernameMsg"></span>
+    </o2:docCode>
+    <o2 docCodeResult useModule="Html::Ajax" seeGeneratedHtmlAsDisplayed="0" />
+  </o2:docSection>
+  <o2 docSection title="Attributes">
+    <o2 docList class="attributes">
+      <o2 docListItem class="optional">ajaxEvent</o2:docListItem>
+      <o2 include "$ENV->{O2ROOT}/var/doc/tutorials/taglib/Html/Ajax/ajaxAttributes.html.inc" />
+      <o2 docListItem>&lt;o2 <o2 docLink type="tag" id="Html/Form-input" />&gt; attributes</o2:docListItem>
+    </o2:docList>
+  </o2:docSection>
+</o2:docSection>

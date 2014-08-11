@@ -1,0 +1,11 @@
+<o2 use Html::Form />
+
+<o2 addCssFile file="gui/system/model/common" />
+
+<o2 header title="Icons updated for $q->{package}" />
+
+<o2 foreach "$url in $newIconUrls">
+  <img src="$url">
+</o2:foreach>
+
+<o2 footer />

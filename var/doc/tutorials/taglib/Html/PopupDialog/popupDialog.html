@@ -1,0 +1,51 @@
+<o2 use O2Doc::Tutorial />
+
+<o2 docSection title="popupDialog, button">
+  Defines a popup dialog. If the linkText attribute is given, a link with that text will open the popup. If you have given the popup an ID,
+  you can also open the popup with javascript:
+  <o2 docCode lang="perl">
+    o2.popupDialog.display("idOfPopupDialog");
+  </o2:docCode>
+  Only one popup can be displayed at one time, so to close with javascript, there's no need to specify the ID:
+  <o2 docCode lang="html">
+    o2.popupDialog.hide();
+  </o2:docCode>
+  The content of the popup can be specified in three different ways:
+  <ol>
+    <li>As content of the popupDialog tag.</li>
+    <li>With popupDialog's contentId attribute, which is the ID of an HTML element.</li>
+    <li>Using <o2 docLink type="tag" id="Html-urlMod" /> parameters in the popupDialog tag, or the src attribute. This causes an ajax call to fetch the popup dialog's content when it is displayed.</li>
+  </ol>
+  The implementation is based on <o2 docLink type="external" href="http://jqueryui.com/demos/dialog/" title="jquery's dialog element" />.
+  <o2 docSection title="Syntax">
+    <o2 docCode lang="o2ml">
+      <o2 popupDialog title="Login" submitText="Login" closeText="Lukk" width="200" height="200" linkText="Open popup">
+        <o2 form method="post" setMethod="login" removeParams="1" onSubmit="alert('You are now logged in!')">
+          <o2 input type="text"     name="username" label="Username" />
+          <o2 input type="password" name="password" label="Password" />
+        </o2:form>
+      </o2:popupDialog>
+    </o2:docCode>
+    <o2 docCodeResult useModule="Html::PopupDialog" seeGeneratedHtml="0" />
+  </o2:docSection>
+  
+  <o2 docSection title="popupDialog attributes">
+    <o2 docList class="attributes">
+      <o2 docListItem class="optional">id         - ID of the popup dialog.</o2:docListItem>
+      <o2 docListItem class="optional">contentId  - ID of an HTML element. If this is given, the HTML of the specified HTML element will be copied to the popup dialog and
+        become its content (when it is displayed).</o2:docListItem>
+      <o2 docListItem class="optional">submitText - the submit button's text. If submitText isn't given, there will not be a submit button.</o2:docListItem>
+      <o2 docListItem class="optional">src        - src of the popup dialog's content.</o2:docListItem>
+      <o2 docListItem class="optional">linkText   - if linkText is given a link with this text will be created. Clicking it will open the popup dialog.</o2:docListItem>
+      <o2 docListItem class="optional">onClose    - javascript to be executed when the close button is clicked</o2:docListItem>
+    </o2:docList>
+  </o2:docSection>
+  
+  <o2 docSection title="button attributes">
+    <o2 docList class="attributes">
+      <o2 docListItem class="optional">priority [primary] - Can be primary or secondary, determines how the button is displayed</o2:docListItem>
+      <o2 docListItem class="required">text               - The button text</o2:docListItem>
+      <o2 docListItem class="required">onClick            - Javascript code</o2:docListItem>
+    </o2:docList>
+  </o2:docSection>
+</o2:docSection>

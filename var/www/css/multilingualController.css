@@ -1,0 +1,53 @@
+#o2MultilingualControllerDiv a {
+  color           : black;
+  text-decoration : none;
+}
+
+/* Type text: */
+.o2MultilingualControllerTypeText a {
+  display: block; 
+  float: left;
+  padding: 3px 4px;
+  border: 1px solid #aaa;
+  margin: -3px 2px -1px;
+  line-height: 16px;
+  background: no-repeat 4px 3px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+.o2MultilingualControllerTypeText a:hover {
+  background  : #bcdaf1;
+}
+
+.o2MultilingualControllerTypeText .selected {
+  font-weight : bold;
+  background  : #9fc6e6;
+}
+
+.o2MultilingualControllerTypeText a.selected:hover {
+  background: #9fc6e6;
+}
+
+.o2MultilingualControllerTypeText .inUse {
+  color : #aaaaaa;
+}
+.o2MultilingualControllerTypeText .notInUse {
+  text-decoration : line-through;
+  color           : #aaaaaa;
+}
+/* Type flag: */
+.o2MultilingualControllerTypeFlag .selected img {
+  border     : 2px solid orange;
+  background : orange;
+}
+.o2MultilingualControllerTypeFlag .inUse img {
+  border     : 2px solid #aaaaaa;
+  background : #aaaaaa;
+}
+.o2MultilingualControllerTypeFlag .notInUse img {
+  border     : 2px solid #aaaaaa;
+  background : #aaaaaa;
+  opacity    : 0.5;
+}

@@ -1,0 +1,162 @@
+body {
+  padding: 10px;
+}
+h1 {
+  font-family: Consolas, "Lucida Console", "Courier New", monospace;
+  font-size: 26px;
+}
+h2, h3 {
+  border-bottom: 1px dotted #ccc;
+  padding-bottom: 5px;
+  letter-spacing: -1px;
+}
+p {
+  margin-top: 10px;
+}
+ul {
+  margin-left: 10px;
+  padding-left: 0px;
+  list-style: square;
+}
+li {
+  padding-bottom: 4px;
+  margin-left: 10px;
+}
+p.note, p.hint {
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  padding: 7px;
+  min-height: 17px;
+}
+p.note {
+  border: 1px solid #ffbb46;
+  background-color: #ffff99;
+}
+p.hint {
+  border: 1px solid #aa55ff;
+  background-color: #ddddff;
+}
+span.text_note, span.text_hint {
+  display: block;
+  float: left;
+  text-indent: -9999px;
+  width: 16px;
+  height: 17px;
+  margin-right: 7px;
+}
+span.text_note {
+  background: no-repeat url("/images/system/documentation/infoIcon.png") left top;
+}
+span.text_hint {
+  background: no-repeat url("/images/system/documentation/hintIcon.png") left top;
+}
+ul.attributes {
+  list-style: none;
+}
+ul.attributes li {
+  margin: 0 0 3px 0;
+  background: no-repeat url("/images/system/documentation/bullet.png") 0 4px;
+  padding-left: 7px;
+}
+
+ul.attributes li.required {
+  background: no-repeat url("/images/system/documentation/bulletRequired.png") 0 4px;
+}
+
+
+/*** Left menu ***/
+ul.leftmenu {
+  list-style-type: none;
+  border: 1px solid #ccccff;
+  background-color: #ddddff;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  overflow: ;
+  width: 230px;
+}
+ul.leftmenu li {
+  padding: 0px;
+  margin: 0px;
+}
+ul.leftmenu li.current {
+  background-color: white;
+}
+ul.leftmenu li.current {
+  padding-left: 5px;
+  padding-right: 5px;
+  background-color: white;
+}
+ul.leftmenu li a {
+  display: block;
+  padding: 0px 5px 0px 5px;
+  text-decoration: none;
+}
+ul.leftmenu li a:hover {
+  background-color: #ccccff;
+}
+ul.leftmenu li.moduleName {
+  padding: 0px 5px 7px 5px;
+  font-weight: bold;
+  text-decoration: underline;
+}
+p.leftmenu {
+  margin-left: 10px;
+  margin-top: 30px;
+}
+
+form.tagSearchForm {
+  margin-left: 10px;
+  margin-top: 30px;
+}
+form.tagSearchForm input {
+  display: block;
+}
+
+
+/* Comments */
+div.comments h2 {
+  margin-bottom: 8px;
+}
+
+div.comments p.addCommentLink {
+  position: absolute;
+  right: 10px;
+  top: 25px;
+}
+
+.attributes .required span {
+  color: #DB44A7;
+}
+.attributes .optional span {
+  color: #3AD3FF;
+}
+.attributes .param .attrName {
+  text-decoration: underline;
+}
+.attributes .content span {
+  font-weight: bold;
+}
+hr {
+  border: 0px;
+  border-top: 3px dotted #aaaaaa;
+}
+a.external {
+  color: #990000;
+}
+
+/* CODE EXAMPLE */
+.codeExample {
+  border             : 1px dotted #666;
+  display            : none; 
+  background-color   : #e2e2e2;
+  border-radius      : 4px;
+  -moz-border-radius : 4px;
+  min-width          : 300px;
+  padding            : 6px; 
+  position           : absolute; 
+  left               : 100px; 
+  z-index            : 10;
+}
+.codeExampleHtml div:first-child {
+  white-space : pre;
+}

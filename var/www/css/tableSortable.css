@@ -1,0 +1,33 @@
+div.sortableColumns .activeSort {
+  position : relative;
+}
+
+div.sortableColumns .activeSort .down,
+table.sortable      .activeSort .down span {
+  background : url("/images/datagrid/downarrow.png") no-repeat center transparent;
+}
+
+div.sortableColumns .activeSort .up,
+table.sortable      .activeSort .up span {
+  background : url("/images/datagrid/uparrow.png") no-repeat center transparent;
+}
+
+div.sortableColumns .activeSort span {
+  display  : block;
+  position : absolute;
+  right    : 5px;
+  top      : 0;
+  border   : 0;
+}
+
+table.sortable .activeSort span {
+  display  : block;
+  position : relative;
+  width    : 15px;
+  height   : 15px;
+  float    : right;
+}
+
+table.sortable .activeSort span span {
+  height : 15px;
+}

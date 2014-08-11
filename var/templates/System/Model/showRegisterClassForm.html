@@ -1,0 +1,58 @@
+<o2 use Html::Form />
+<o2 use Html::Ajax />
+
+<o2 use I18N />
+<o2 setResourcePath>System.Model</o2:setResourcePath>
+
+<o2 header title="$lang->getString('hdrRegisterClass', className => $q->{package})" />
+
+<o2 addCssFile file="gui/system/model/showRegisterClassForm" />
+
+<o2 addJs>
+  o2.systemModel.useUniversal = function() {
+    var form = document.forms.registerClass;
+    form.newUrl.value  = "/o2/Universal/newObject?class=$q->{package}&parentId=";
+    form.editUrl.value = "/o2/Universal/editObject?objectId=";
+  }
+  o2.systemModel.suggestEditTemplate = function() {
+    document.forms.registerClass.editTemplate.value = "$defaultEditTemplate";
+  }
+</o2:addJs>
+
+<o2 if "$superClassNotRegistered">
+  <p>Base class (<o2 link setParam="package=$superClassName">$superClassName</o2:link>) not registered</p>
+</o2:if>
+
+<o2 else>
+  <div id="registerClassWrapper">
+    
+    <h1>$lang->getString("hdrRegisterClass", className => $q->{package})</h1>
+    
+    <p>$lang->getString("aboutRegisterClass")</p>
+    
+    <p>
+      <a href="javascript: o2.systemModel.useUniversal()">$lang->getString("linkUseUniversalUrls")</a><br>
+      <a href="javascript: o2.systemModel.suggestEditTemplate()">$lang->getString("linkUseDefaultEditTemplate")</a>
+    </p>
+    
+    <o2 ajaxForm name="registerClass" method="post" setMethod="registerClass" target="registerClassWrapper" where="replace" novalidate="novalidate">
+      <o2 input type="hidden" name="package" value="$q->{package}" />
+      <o2 formTable>
+        <o2 input type="url" name="editUrl"      value="$class->getEditUrl()"      label="$lang->getString('lblEditUrl')"      size="75" />
+        <o2 input type="url" name="editTemplate" value="$class->getEditTemplate()" label="$lang->getString('lblEditTemplate')" size="75" />
+        <o2 input type="url" name="newUrl"       value="$class->getNewUrl()"       label="$lang->getString('lblNewUrl')"       size="75" />
+        <o2 checkboxGroup name="isCreatableInO2cms" label="$lang->getString('lblIsCreatableInO2cms')">
+          <o2 checkbox value="1" label="$lang->getString('answerYes')" checked="$class->isCreatableInO2cms()" />
+        </o2:checkboxGroup>
+        <o2 select name="canBeCreatedUnderCategories[]" label="$lang->getString('lblCanBeCreatedUnderCategories')" values="$class->getCanBeCreatedUnderCategories()" multiple="multiple" size="8">
+          <o2 foreach "$category in $categories">
+            <o2 option value="$category" />
+          </o2:foreach>
+        </o2:select>
+      </o2:formTable>
+    </o2:ajaxForm>
+    
+  </div>
+</o2:else>
+
+<o2 footer />

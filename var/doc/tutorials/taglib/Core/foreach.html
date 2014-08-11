@@ -1,0 +1,86 @@
+<o2 use O2Doc::Tutorial />
+
+<o2 docSection title="foreach, last">
+  Iterates through the elements of an array or a hash. The elements may be sorted, also randomly...
+  <o2 docSection title="Syntax">
+    Iterating through an array:
+    <o2 docCode lang="o2ml">
+      <o2 push "$list">a</o2:setVar>
+      <o2 push "$list">b</o2:setVar>
+      <o2 push "$list">c</o2:setVar>
+      <ul>
+        <o2 foreach "$item in $list">
+          <li>$item</li>
+        </o2:foreach>
+      </ul>
+    </o2:docCode>
+    <o2 docCodeResult />
+
+    Iterating through an array - with random sorting:
+    <o2 docCode lang="o2ml">
+      <ul>
+        <o2 foreach "$item in $list" sortBy="random" sortDirection="descending">
+          <li>$item</li>
+        </o2:foreach>
+      </ul>
+    </o2:docCode>
+    <o2 docCodeResult />
+
+    Iterating through an array - sorting by a method in \$item (provided \$item is an object)
+    <o2 docCode lang="o2ml">
+      <ul>
+        <o2 foreach "$item in $list" sortBy="$item->getId()" sortDirection="descending">
+          <li>$item</li>
+        </o2:foreach>
+      </ul>
+    </o2:docCode>
+
+    Iterating through a hash:
+    <o2 docCode lang="o2ml">
+      <ul>
+        <o2 foreach "$key => $value in $someHash">
+          <li>key = $key, value = $value</li>
+        </o2:foreach>
+      </ul>
+    </o2:docCode>
+
+    Iterating through a hash - with sorting:
+    <o2 docCode lang="o2ml">
+      <ul>
+        <o2 foreach "$key => $value in $someHash" sortBy="value" sortType="numeric">
+          <li>key = $key, value = $value</li>
+        </o2:foreach>
+      </ul>
+    </o2:docCode>
+
+    Iterating through a hash - sorting by a method in \$value (provided \$value is an object):
+    <o2 docCode lang="o2ml">
+      <ul>
+        <o2 foreach "$key => $value in $someHash" sortBy="$value->getName()" sortType="numeric">
+          <li>key = $key, value = $value</li>
+        </o2:foreach>
+      </ul>
+    </o2:docCode>
+  </o2:docSection>
+
+  <o2 docSection title="foreach attributes">
+    <o2 docList class="attributes">
+      <o2 docListItem class="optional">sortBy [key]              - can be one of {key, value, random} for hashes, or just 'random' for arrays.
+        In addition if an item of the array or a value of the hash is an object, it is possible to sort by a method or key in the object (see examples above).</o2:docListItem>
+      <o2 docListItem class="optional">sortDirection [ascending] - must be one of {ascending, descending}</o2:docListItem>
+      <o2 docListItem class="optional">sortType [string]         - must be one of {string, numeric} - more to come later (date)</o2:docListItem>
+      <o2 docListItem class="optional">limit                     - maximum number of times to go through the loop</o2:docListItem>
+      <o2 docListItem class="optional">label                     - A name to identify the loop. The 'last' tag might specify which foreach tag to break out of with the value of this attribute.</o2:docListItem>
+      <o2 docListItem class="required param">param - the foreach loop</o2:docListItem>
+      <o2 docListItem class="required content">content - what to print on each iteration of the loop</o2:docListItem>
+    </o2:docList>
+  </o2:docSection>
+  <o2 docSection title="last attributes">
+    <o2 docList class="attributes">
+      <o2 docListItem class="optional param">param - which foreach tag to break out of. If not given, breaks out of the innermost foreach loop.</o2:docListItem>
+      <o2 docListItem class="optional">if          - a condition that must be met if we should break out of the foreach loop</o2:docListItem>
+      <o2 docListItem class="optional">unless      - a condition that must not be met if we should break out of the foreach loop</o2:docListItem>
+    </o2:docList>
+  </o2:docSection>
+
+</o2:docSection>

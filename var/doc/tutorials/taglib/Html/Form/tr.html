@@ -1,0 +1,28 @@
+<o2 use O2Doc::Tutorial />
+
+<o2 docSection title="tr">
+  (table row)<br>
+  In order to use your own &lt;tr&gt; tags inside <o2 docLink type="tag" id="formTable" /> and tell o2 about it, use this tag.
+  No extra &lt;tr&gt; tags will be added until this tag is closed.
+  <o2 docSection title="Syntax">
+    <o2 docCode lang="o2ml">
+      <o2 form method="post" action="">
+        <o2 formTable>
+          <o2 input type="text" name="name"    label="Name"    />
+          <o2 input type="text" name="address" label="Address" />
+          <o2 tr>
+            <o2 input type="text" name="postalCode"  label="Zip code"    />
+            <o2 input type="text" name="postalPlace" label="Post office" />
+          </o2:tr>
+          <o2 input type="text" name="email"   label="Email"   />
+        </o2:formTable>
+        <p><o2 input type="submit" value="Send" /></p>
+      </o2:form>
+
+    </o2:docCode>
+    <o2 docCodeResult useModule="Html::Form" />
+  </o2:docSection>
+  <o2 docSection>
+    See also <o2 docLink type="tag" id="formTable" />.
+  </o2:docSection>
+</o2:docSection>

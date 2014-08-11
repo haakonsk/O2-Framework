@@ -1,0 +1,62 @@
+# Grammar for o2 templates
+# Used by Parse::RecDescent, via O2::Template::TreeParser.
+# (Hint: Use conf-mode in emacs to get some coloring.)
+
+# XXX Maybe write a stricter grammar, as well
+
+root                        : <skip: ''> # Don't want to skip anything
+#                              tagOrText(s) eofile { my @items = @item; pop @items; shift @items; bless \@items, $item[0]; }
+                              outerTagOrText(s?) eofile { my @items = @item; pop @items; shift @items; bless \@items, $item[0]; }
+outerTagOrText              : outerTag
+                            | variable
+                            | blanks
+                            | /[^<\$]+/
+outerTag                    : tag unopenedEndTag(s?)
+tagOrText                   : tag
+                            | variable
+                            | blanks
+                            | /[^<\$]+/
+tag                         : htmlComment
+                            | doctypeDeclaration
+                            | xmlDeclaration
+                            | o2Tag
+                            | htmlTag
+#o2Tag                       : ("<o2"  blanks tagName attributes(?) blanks(?) ("/>" | ">" tagOrText(s?) ("</o2>" | "</o2" (":" | " ") endTagName ">" | "</" endTagName ">" ) | ">"))
+doctypeDeclaration          : "<!DOCTYPE" /[^>]+/ ">"
+xmlDeclaration              : "<?xml"     /[^>]+/ ">"
+o2Tag                       : ("<o2"  blanks tagName attributes(?) blanks(?) ("/>" | ">" tagOrText(s?) ("</" endTagName ">" ) | ">"))
+htmlTag                     : "<" selfClosingTagName attributes(?) blanks(?) "></" selfClosingTagName ">"
+                            | "<" selfClosingTagName attributes(?) blanks(?) ">"
+                            | "<"            tagName attributes(?) blanks(?) ("/>" | ">" tagOrText(s?) "</" endTagName ">" | ">")
+htmlComment                 : "<!--" ("-" ...!"->" | /[^-]+/)(s?) "-->"
+#unopenedEndTag              : blanks(?) "</" ("o2" | "o2" (":" | " ") endTagName | endTagName) ">"
+unopenedEndTag              : blanks(?) "</" endTagName ">"
+tagName                     : /[^ \/>]+/
+endTagName                  : /[^>]+/ # tagName
+selfClosingTagName          : "br" | "hr" | "input" | "img" | "link" | "meta" | "param"
+blanks                      : /\s+/
+attributes                  : blanksAndAttribute(s)
+blanksAndAttribute          : blanks(?) attribute
+attribute                   : o2TagInsideOpeningTag
+                            | attributeKey "=" attributeValue
+                            | attributeValue
+o2TagInsideOpeningTag       : o2Tag
+attributeKey                : /\w+/ # Should this be less strict?
+attributeValue              : quotedText
+                            | /[^ \/>]+/
+quotedText                  : "'"  textWithinSingleQuotes "'" | "\"" textWithinDoubleQuotes "\""
+textWithinSingleQuotes      : (o2TagInsideOpeningTag | variable | "\$" | /[^\'\$\\]+/ | /\\./ | "\\" ) textWithinSingleQuotes | "" # Allows empty strings
+textWithinDoubleQuotes      : (o2TagInsideOpeningTag | variable | "\$" | /[^\"\$\\]+/ | /\\./ | "\\" ) textWithinDoubleQuotes | "" # Allows empty strings
+variable                    : ("\@" | "\%") "{\$" variableName variableContinuation(s?) "}"
+                            | ("\@" | "\%")  "\$" variableName variableContinuation(s?)
+                            | "\$"                variableName variableContinuation(s?)
+variableName                : /[a-zA-Z_]\w*/ # Should this be less strict?
+variableContinuation        : "->" (variableMethodCall | variableArrayIndex | variableHashIndex)
+variableMethodCall          : ("\$" | "") variableMethodName ("(" blanks(?) (variableMethodCallArguments | "") blanks(?) ")")(?) # Dollar as first character in method name is not allowed (ProhibitMethodVariable)
+variableArrayIndex          : "[" (variable | /[^\]\$]+/)(s?) "]"
+variableHashIndex           : "{" (variable | /[^\}\$]+/)(s?) "}"
+variableMethodName          : /[a-zA-Z_]\w*/ # Should this be less strict?
+variableMethodCallArguments : variableMethodCallArgument "," variableMethodCallArguments
+                            | variableMethodCallArgument
+variableMethodCallArgument  : variable | quotedText | /[^,)]+/
+eofile                      : /^\Z/

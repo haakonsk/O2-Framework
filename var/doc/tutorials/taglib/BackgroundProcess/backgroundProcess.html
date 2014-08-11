@@ -1,0 +1,53 @@
+<o2 use O2Doc::Tutorial />
+<o2 use Html::Highlight />
+
+<o2 docSection title="backgroundProcess, progressBar, startButton">
+  To enable us to display the progress of a long-running process, the process can be run in the background, which is what the backgroundProcess tag allows us to do.
+  Running background processes will be listed in the database table O2_BACKGROUND_PROCESS. The background process is responsible for updating the counter field of this
+  table, which is done by continuously calling setCounter on an instance of O2::Script::Detached, f ex:
+  <o2 code lang="perl">
+    my $detached = $context->getSingleton('O2::Script::Detached');
+    my $pid = $detached->getPid();
+    my $i = 0;
+    while (...) {
+      $i++;
+      $detached->setCounter($pid, $i) if $pid;
+      ...
+    }
+  </o2:code>
+  To know when the counter has reached 100%, the "max" attribute should be set on the "progressBar" tag.
+  <o2 docSection title="Syntax">
+    <o2 docCode lang="o2ml">
+      <o2 backgroundProcess exclusive="1" setMethod="createFoodProductsCsv" outputDocument="/tmp/foodProducts.csv">
+        <o2 startButton text="Generate CSV for food products" onStart="hideDownloadFoodProductsButton()" onEnd="showDownloadFoodProductsButton()" />
+        <o2 progressBar max="$numFoodProducts" width="99%" checkIntervalSeconds="3" estimateProgressBetweenChecks="1" checkTimeoutSeconds="2" />
+      </o2:backgroundProcess>
+    </o2:docCode>
+  </o2:docSection>
+  <o2 docSection title="backgroundProcess attributes">
+    <o2 docList class="attributes">
+      <o2 docListItem class="optional">id</o2:docListItem>
+      <o2 docListItem class="optional">exclusive [0]  - Can we have only one instance of this process running at the same time?</o2:docListItem>
+      <o2 docListItem class="optional">command        - raw command that will run in the background.</o2:docListItem>
+      <o2 docListItem class="optional">url            - may be used instead of the "command" attribute; the created command will fetch the given URL with wget.</o2:docListItem>
+      <o2 docListItem class="optional">outputDocument - if given, the generated output will be sent here.</o2:docListItem>
+      <o2 docListItem><o2 docLink type="tag" id="Html-urlMod">urlMod</o2:docLink> parameters can be used instead of the url attribute.</o2:docListItem>
+    </o2:docList>
+  </o2:docSection>
+  <o2 docSection title="progressBar attributes">
+    <o2 docList class="attributes">
+      <o2 docListItem class="optional">max - when the counter gets to this number, the process is done, and the progress bar is at 100%.</o2:docListItem>
+      <o2 docListItem class="optional">width - the width of the progress bar. If the designation is missing, it is assumed that the width is given in pixels.</o2:docListItem>
+      <o2 docListItem class="optional">checkIntervalSeconds - number of seconds between each ajax call to check the progress.</o2:docListItem>
+      <o2 docListItem class="optional">estimateProgressBetweenChecks [0] - if the progress bar should move smoothly between each progress check ajax call.</o2:docListItem>
+      <o2 docListItem class="optional">checkTimeoutSeconds - the number of seconds we wait for the ajax call (that checks progress) to return. After this number of seconds, the ajax call is aborted.</o2:docListItem>
+    </o2:docList>
+  </o2:docSection>
+  <o2 docSection title="startButton attributes">
+    <o2 docList class="attributes">
+      <o2 docListItem class="optional">text    - button text.</o2:docListItem>
+      <o2 docListItem class="optional">onStart - Javascript code to be executed when the button is clicked.</o2:docListItem>
+      <o2 docListItem class="optional">onEnd   - Javascript code to be executed when the progress bar reaches 100%.</o2:docListItem>
+    </o2:docList>
+  </o2:docSection>
+</o2:docSection>
