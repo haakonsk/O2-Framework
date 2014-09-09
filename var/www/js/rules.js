@@ -120,6 +120,9 @@ o2.rules.rules = {
       o2.parseDate(format, value);
     }
     catch (e) {
+      if (window.console) {
+        console.warn( "Date '" + value + "' does not match format '" + format + "': " + getExceptionMessage(e) );
+      }
       return false;
     }
     return true;
