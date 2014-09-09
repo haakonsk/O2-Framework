@@ -38,7 +38,7 @@ sub showDocumentation {
     $tag  = $obj->getParam('tag') || $tags[0];
     last if @tags;
   }
-  
+
   $obj->display(
     'showDocumentation.html',
     module   => $obj->getParam('module'),
@@ -51,29 +51,8 @@ sub showDocumentation {
 #--------------------------------------------------------------------------------------------------
 sub _getModules {
   my ($obj) = @_;
-  return sort qw(
-    BackgroundProcess
-    Cache
-    Chart::OpenFlashChart
-    Core
-    DataDumper
-    DateFormat
-    Html
-    Html::Ajax
-    Html::Flexigrid
-    Html::Form
-    Html::Form::Input::AutoComplete
-    Html::Locale
-    Html::MultiColumnLayout
-    Html::PopupDialog
-    Html::RandomColor
-    I18N
-    Jquery
-    JqueryUi
-    NumberFormat
-    O2Doc::Tutorial
-    StringFormat
-  );
+  my %taglibs = %{ $obj->getContext()->getConfig->get('template.taglibs') };
+  return sort keys %taglibs;
 }
 #--------------------------------------------------------------------------------------------------
 sub tagSearch {
