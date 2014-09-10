@@ -37,7 +37,7 @@ sub new {
   }
 
   $obj->enableO2DBCache() if $context->getMemcached()->canCacheSQL();
-  debug 'CALLED BY[' . join ('|', caller) . "] ->new DBH: " . join ',', %login;
+  $obj->debug('CALLED BY[' . join ('|', caller) . "] ->new DBH: " . join ',', %login);
   return $obj;
 }
 #-----------------------------------------------------------------------------
@@ -58,7 +58,7 @@ sub getDbh {
     $obj->{password},
     $obj->{attr},
   );
-  debug "DBI connect: ('$login[0]', '$login[1]', ...)";
+  $obj->debug("DBI connect: ('$login[0]', '$login[1]', ...)");
   $obj->{dbh} = DBI->connect(@login) or $obj->_error("DBI connect: ('$login[0]', '$login[1]', ...)");
   $obj->{dbh}->{LongReadLen} = 512*1024;
   $obj->{dbh}->{LongTruncOk} = 1;
@@ -104,7 +104,7 @@ sub selectColumn {
   my $pid;
   $pid = $obj->startProfiling( 'selectColumn', $obj->_expandPH($statement, @params), caller ) if $obj->{dbProfilingEnabled};
 
-  debug 'selectColumn(' . $obj->_expandPH($statement, @params) . ')', 2;
+  $obj->debug('selectColumn(' . $obj->_expandPH($statement, @params) . ')', 2);
   my @encodedPlaceHolders = $obj->_getDbUtil()->encodePlaceHolders(@params);
 
   my $arrayRef = $obj->getDbh()->selectcol_arrayref($statement, undef, @encodedPlaceHolders);
@@ -132,7 +132,7 @@ sub fetchAll {
   my $pid;
   $pid = $obj->startProfiling( 'fetchAll', $obj->_expandPH($statement, @placeHolders), caller ) if $obj->{dbProfilingEnabled};
 
-  debug 'fetchAll(' . $obj->_expandPH($statement, @placeHolders) . ')', 2;
+  $obj->debug('fetchAll(' . $obj->_expandPH($statement, @placeHolders) . ')', 2);
   my @encodedPlaceHolders = $obj->_getDbUtil()->encodePlaceHolders(@placeHolders);
   my $sth = $obj->getDbh()->prepare($statement);
   $sth->execute(@encodedPlaceHolders);
@@ -168,7 +168,7 @@ sub selectHash {
   my $pid;
   $pid = $obj->startProfiling('selectHash', $obj->_expandPH($sql, @placeholders), caller) if $obj->{dbProfilingEnabled};
 
-  debug 'selectHash(' . $obj->_expandPH($sql, @placeholders) . ')', 2;
+  $obj->debug('selectHash(' . $obj->_expandPH($sql, @placeholders) . ')', 2);
   my $sth = $obj->sql($sql, @placeholders);
   my %returnHash;
   while (my ($key, $value) = $sth->next()) {
@@ -186,7 +186,7 @@ sub selectHash {
 sub clone {
   my ($obj) = @_;
   my %login = %{ $obj->{login} };
-  debug 'clone() CALLED BY[' . join ('|', caller) . "] ->new DBH: " . join ',', %login;
+  $obj->debug('clone() CALLED BY[' . join ('|', caller) . "] ->new DBH: " . join ',', %login);
   return O2::DB->new(%login);
 }
 #-----------------------------------------------------------------------------
@@ -252,7 +252,7 @@ sub insert {
   my $pid;
   $pid = $obj->startProfiling( 'insert', $obj->_expandPH($sql, @values), caller ) if $obj->{dbProfilingEnabled};
 
-  debug 'insert(' . $obj->_expandPH($sql, @values) . ')';
+  $obj->debug('insert(' . $obj->_expandPH($sql, @values) . ')');
   my @encodedValues = $obj->_getDbUtil()->encodePlaceHolders(@values);
   my $numRowsAffected = eval {
     $obj->getDbh()->do($sql, undef, @encodedValues) or $obj->_error( $obj->_expandPH($sql, @values) );
@@ -278,7 +278,7 @@ sub idUpdate {
 
   my $pid;
   $pid = $obj->startProfiling('idUpdate', $sql, caller) if $obj->{dbProfilingEnabled};
-  debug 'idUpdate(' . $obj->_expandPH($sql, @values, $idValue) . ')';
+  $obj->debug('idUpdate(' . $obj->_expandPH($sql, @values, $idValue) . ')');
   my @encodedValues = $obj->_getDbUtil()->encodePlaceHolders(@values);
   my $numRowsAffected = eval {
     $obj->getDbh()->do($sql, undef, @encodedValues, $idValue);
@@ -335,7 +335,7 @@ sub sql {
     $obj->_error( "Illegal 'limit' expression in: " . $obj->_expandPH($sql, @placeholders) );
   }
   else {
-    debug 'sql(' . $obj->_expandPH($sql, @placeholders) . ')', ($sql =~ m{ \A \s* select }xmsi ? 2 : ());
+    $obj->debug( 'sql(' . $obj->_expandPH($sql, @placeholders) . ')', ($sql =~ m{ \A \s* select }xmsi ? 2 : ()) );
     my $sth = $obj->getDbh()->prepare($sql) or $obj->_error("prepare($sql)");
     eval {
       $sth->execute(@encodedPlaceHolders) or $obj->_error( "execute(): " . $obj->_expandPH($sql, @placeholders) );
@@ -368,7 +368,7 @@ sub limitSelect {
     $rowCount = 0;
   }
   else {
-    debug "Using manual limit($start,$rowCount)", 2;
+    $obj->debug("Using manual limit($start,$rowCount)", 2);
   }
 
   my $cacheVal = $obj->getCachedSql($sql, \@placeholders);
@@ -390,7 +390,7 @@ sub limitSelect {
 
   my @encodedPlaceHolders = $obj->_getDbUtil()->encodePlaceHolders(@placeholders);
 
-  debug 'limitSelect: ' . $obj->_expandPH($sql, @placeholders), 2;
+  $obj->debug('limitSelect: ' . $obj->_expandPH($sql, @placeholders), 2);
   my $sth = $dbh->prepare($sql) or $obj->_error("prepare($sql)");
   $sth->execute(@encodedPlaceHolders) or $obj->_error('execute(' . (join ',', @placeholders) . ')');
 
@@ -425,7 +425,7 @@ sub fetch {
 
   my @encodedPlaceHolders;
   @encodedPlaceHolders = $obj->_getDbUtil()->encodePlaceHolders(@placeholders) if @placeholders;
-  debug 'fetch(' . $obj->_expandPH($sql, @placeholders) . ')', 2;
+  $obj->debug('fetch(' . $obj->_expandPH($sql, @placeholders) . ')', 2);
 
   my $result = $obj->getDbh()->selectrow_hashref($sql, undef, @encodedPlaceHolders);
   $result    = $obj->_getDbUtil()->decodeResult($result);
@@ -452,7 +452,7 @@ sub fetchHashRef {
 
   my $pid;
   $pid = $obj->startProfiling( 'fetchHashRef', $obj->_expandPH($sql, @placeHolders), caller ) if $obj->{dbProfilingEnabled};
-  debug 'fetchHashRef(' . $obj->_expandPH($sql, @placeHolders) . ')', 2;
+  $obj->debug('fetchHashRef(' . $obj->_expandPH($sql, @placeHolders) . ')', 2);
   my @encodedPlaceHolders = $obj->_getDbUtil()->encodePlaceHolders(@placeHolders);
   my $result = $obj->getDbh()->selectrow_hashref($sql, undef, @encodedPlaceHolders);
   $result    = $obj->_getDbUtil()->decodeResult($result);
@@ -473,7 +473,7 @@ sub sqlHashRef {
 
   my $pid;
   $pid = $obj->startProfiling( 'sqlHashRef', $obj->_expandPH($sql, @placeholders), caller ) if $obj->{dbProfilingEnabled};
-  debug 'sqlHashRef(' . $obj->_expandPH($sql, @placeholders) . ')', 2;
+  $obj->debug('sqlHashRef(' . $obj->_expandPH($sql, @placeholders) . ')', 2);
   my @encodedPlaceHolders = $obj->_getDbUtil()->encodePlaceHolders(@placeholders);
   my %hash   =   map   {  $_->[0] => $_->[1]  }   @{  $obj->getDbh()->selectall_arrayref($sql, undef, @encodedPlaceHolders)  };
   my $result = $obj->_getDbUtil()->decodeResult(\%hash);
@@ -490,7 +490,7 @@ sub do {
 
   my $pid;
   $pid = $obj->startProfiling('do', $obj->_expandPH($sql, @placeholders), caller) if $obj->{dbProfilingEnabled};
-  debug 'do(' . $obj->_expandPH($sql, @placeholders) . ')';
+  $obj->debug('do(' . $obj->_expandPH($sql, @placeholders) . ')');
   my @encodedPlaceHolders = $obj->_getDbUtil()->encodePlaceHolders(@placeholders);
   my $result = $obj->getDbh()->do($sql, undef, @encodedPlaceHolders);
   $obj->endProfiling($pid) if $obj->{dbProfilingEnabled} && $pid;
@@ -526,6 +526,8 @@ sub _asArrayRef {
   return [ values %{$hashRef} ] if $sql =~ m{ \A show \s+ tables .+ }xmsi; # show tables is a bit special
 
   my $tmpSql = lc $sql;
+  return [ $hashRef->{'Create Table'} ] if $tmpSql =~ m{\Ashow create table \w+\z}msi;
+
   my $selectIdx = index ($tmpSql, 'select ', 0          ) + length('select ');
   my $fromIdx   = index ($tmpSql, ' from ',  $selectIdx );
   die "Error in sql: $sql" if $selectIdx == -1 || $fromIdx == -1 || $fromIdx <= $selectIdx;
@@ -672,7 +674,7 @@ sub getCachedSql {
   if ( $obj->{o2DBCacheHandler}->sqlIsCachable($sql) ) {
     my $sqlCacheStr = $obj->_expandPH($sql, @{$placeholders}); 
     my $cacheVal    = $obj->{o2DBCacheHandler}->getSQL($sqlCacheStr);
-    debug '"' . $obj->_expandPH( $sql, @{$placeholders} ) . '" was cached, retVal:' . $cacheVal, 2 if $cacheVal;
+    $obj->debug('"' . $obj->_expandPH( $sql, @{$placeholders} ) . '" was cached, retVal:' . $cacheVal, 2) if $cacheVal;
     return $cacheVal;
   }
 
@@ -717,6 +719,11 @@ sub enableDBCache {
 sub dbCacheEnabled {
   my ($obj) = @_;
   return $obj->{dbCacheEnabled} || 1; # default always on, well this depends of the DB config of course
+}
+#-----------------------------------------------------------------------------
+sub debug {
+  my ($obj, $msg, $level) = @_;
+  debug "(dataSource=$obj->{dataSource}) $msg", $level;
 }
 #-----------------------------------------------------------------------------
 sub enableProfiling {

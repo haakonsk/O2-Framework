@@ -664,7 +664,7 @@ sub _removeIds {
 }
 #-----------------------------------------------------------------------------
 sub save {
-  my ($obj, $object) = @_;
+  my ($obj, $object, %params) = @_;
   my $originalObjectId = $object->getId() || 0;
   $obj->_uncacheForCurrentRequest($originalObjectId) if $originalObjectId;
 
@@ -826,10 +826,19 @@ sub save {
   }
   $object->{metaClassNameWasChangedFrom} = undef;
   
-  # If object was archived, delete archive file:
-  if ($originalObjectId) {
-    my $path = $obj->getObjectArchivePath($originalObjectId);
-    $context->getSingleton('O2::File')->rmFile($path) if -f $path;
+  if ($params{archive}) {
+    # Object has been saved in archive-database, let's delete it from "normal" database:
+    $context->useNormalDbh();
+    $object->deletePermanently();
+    $context->usePreviousDbh();
+  }
+  else {
+    # Make sure to remove object from archive
+    $context->useArchiveDbh();
+    if ($db->fetch('select objectId from O2_OBJ_OBJECT where objectId = ?', $object->getId())) {
+      $object->deletePermanently();
+    }
+    $context->usePreviousDbh();
   }
 
   return $object;
@@ -1080,7 +1089,7 @@ sub deleteObjectPermanentlyById {
 
   $obj->_deleteFromDbTables($objectId);
 
-  my @revisionedObjectIds = $obj->{dbh}->selectColumn("select objectId from O2_OBJ_REVISIONEDOBJECT where revisionedObjectId = ?", $objectId);
+  my @revisionedObjectIds = $db->selectColumn("select objectId from O2_OBJ_REVISIONEDOBJECT where revisionedObjectId = ?", $objectId);
   foreach my $id (@revisionedObjectIds) {
     my $revisionedObject = $context->getObjectById($id);
     $revisionedObject->deletePermanently() if $revisionedObject;
@@ -1120,16 +1129,6 @@ sub _classNameToTableName {
 sub error {
   my ($obj, $msg) = @_;
   die $msg;
-}
-#-----------------------------------------------------------------------------
-sub getObjectArchivePath {
-  my ($obj, $objectId, %params) = @_;
-  return $context->getSingleton('O2::File')->distributePath(
-    id       => $objectId,
-    rootDir  => $context->getEnv('O2CUSTOMERROOT') . '/var/objects',
-    fileName => "$objectId.plds",
-    mkDirs   => $params{mkDirs} || 0,
-  );
 }
 #-----------------------------------------------------------------------------
 1;

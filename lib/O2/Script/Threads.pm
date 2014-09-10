@@ -46,7 +46,7 @@ sub run {
         exit;
       }
     }
-    return;
+    return 1;
   }
   
   $queue = Thread::Queue->new();
@@ -63,7 +63,7 @@ sub run {
   
   # Make sure main thread doesn't exit before all other threads are done
   sleep 1 while ($queue->pending() && !$interrupted);
-  print "\nDONE\n";
+  return $interrupted ? 0 : 1;
 }
 #-----------------------------------------------------------------------------
 sub _execute {

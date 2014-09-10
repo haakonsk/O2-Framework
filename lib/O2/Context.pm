@@ -14,7 +14,8 @@ sub new {
   
   my $obj = bless {}, $pkg;
   
-  $obj->{env} = {};
+  $obj->{env}      = {};
+  $obj->{dbhStack} = [];
   
   $obj->setEnv( 'O2ROOT',         delete $init{O2ROOT}         ) if exists $init{O2ROOT};
   $obj->setEnv( 'O2CMSROOT',      delete $init{O2CMSROOT}      ) if exists $init{O2CMSROOT};
@@ -136,15 +137,52 @@ sub getSystemUserId {
 }
 #------------------------------------------------------------------
 # returns database object
+sub createDbh {
+  my ($obj, %dbInfo) = @_;
+  if (!%dbInfo) {
+    %dbInfo = $obj->getConfig()->getHash('o2.database');
+  }
+
+  die 'Missing DB params' if !$dbInfo{username} || !$dbInfo{dataSource};
+
+  require O2::DB;
+  return $obj->{dbh} = O2::DB->new(%dbInfo);
+}
+#------------------------------------------------------------------
+# Get a handle to the database of archived objects (objects that we don't need to sync from prod)
+sub createArchiveDbh {
+  my ($obj) = @_;
+  my %dbInfo = $obj->getConfig()->getHash('o2.database');
+  $dbInfo{dataSource} .= '_archive';
+  return $obj->{archiveDbh} = $obj->createDbh(%dbInfo);
+}
+#------------------------------------------------------------------
 sub getDbh {
   my ($obj) = @_;
-  return $obj->{dbh} if $obj->{dbh};
-  
-  my %dbParams = $obj->getConfig()->getHash('o2.database');
-  die 'Missing DB params' if !$dbParams{username} || !$dbParams{dataSource};
-  
-  require O2::DB;
-  return $obj->{dbh} = O2::DB->new(%dbParams);
+  my $dbh = $obj->{dbh};
+  $dbh  ||= $obj->{dbh} = $obj->{normalDbh} = $obj->createDbh();
+  push @{ $obj->{dbhStack} }, $dbh unless @{ $obj->{dbhStack} };
+  return $dbh;
+}
+#------------------------------------------------------------------
+sub useNormalDbh {
+  my ($obj) = @_;
+  $obj->{normalDbh} ||= $obj->createDbh();
+  $obj->{dbh} = $obj->{normalDbh};
+  push @{ $obj->{dbhStack} }, $obj->{dbh};
+}
+#------------------------------------------------------------------
+sub useArchiveDbh {
+  my ($obj) = @_;
+  $obj->{archiveDbh} ||= $obj->createArchiveDbh();
+  $obj->{dbh} = $obj->{archiveDbh};
+  push @{ $obj->{dbhStack} }, $obj->{dbh};
+}
+#------------------------------------------------------------------
+sub usePreviousDbh {
+  my ($obj) = @_;
+  pop @{ $obj->{dbhStack} };
+  return $obj->{dbh} = $obj->{dbhStack}->[-1];
 }
 #------------------------------------------------------------------
 sub getConsole {

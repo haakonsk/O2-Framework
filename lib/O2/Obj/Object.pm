@@ -489,11 +489,11 @@ sub canSave {
 # When caching is on (Memcached), it looks like there's a problem with save calling save calling save etc when two objects
 # have links to eachother. Haven't figured out why it happens, but checking for isSaving is a workaround for that.
 sub save {
-  my ($obj) = @_;
+  my ($obj, %params) = @_;
   die sprintf "Can't call save on an object (ID: %d, className: %s) that's already in the process of being saved", $obj->getId(), $obj->getMetaClassName() if $obj->{isSaving};
   
   $obj->{isSaving} = 1;
-  $obj->getManager()->save($obj);
+  $obj->getManager()->save($obj, %params);
   $obj->{isSaving} = 0;
   return $obj;
 }
@@ -852,21 +852,12 @@ sub getPublishPlaces {
   return @publishPlaces;
 }
 #-----------------------------------------------------------------------------
-# Move object out of database, store in file
+# Move object out of main database, store in parallel database
 sub archive {
   my ($obj) = @_;
-  my $id = $obj->getId();
-
-  my $path = $obj->getManager()->getObjectArchivePath($id, mkDirs => 1);
-  warn $path;
-
-  $context->getSingleton('O2::File')->writeFile( $path, $obj->serialize() );
-
-  $obj->getManager()->_deleteFromDbTables($id);
-
-  # Clear cache:
-  $context->getCache()->deleteObjectById($id);
-  delete $O2::Mgr::UniversalManager::MANAGER_CACHE->{$id} if exists $O2::Mgr::UniversalManager::MANAGER_CACHE->{$id};
+  $context->useArchiveDbh();
+  $obj->save(archive => 1);
+  $context->usePreviousDbh();
 }
 #-----------------------------------------------------------------------------
 1;

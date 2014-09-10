@@ -56,7 +56,7 @@ sub getObjectByPlds {
 #------------------------------------------------------------------
 # returns object based on objectId. The actual retrieval is done by the manager matching the objectclass.
 sub getObjectById {
-  my ($obj, $objectId) = @_;
+  my ($obj, $objectId, %params) = @_;
   die 'getObjectById: No ID given' unless $objectId;
 
   my $manager = eval {
@@ -64,16 +64,17 @@ sub getObjectById {
   };
   die "Couldn't instantiate object with id $objectId: Error getting manager by objectId: $@" if $@;
 
-  if (!$manager) { # objectId not found in database or status=deleted
-    my $path = $context->getSingleton('O2::Mgr::ObjectManager')->getObjectArchivePath($objectId);
-    return unless -f $path;
+  if (!$manager && !$params{searchingArchive}) { # objectId not found in database or status=deleted
+    # Try to find object in archive database
+    $context->useArchiveDbh();
+    my $object = eval {
+      $obj->getObjectById($objectId, searchingArchive => 1);
+    };
+    my $errorMsg = $@;
+    $context->usePreviousDbh();
+    die "Couldn't instantiate object from archive database: $errorMsg" if $errorMsg;
 
-    my $plds = $context->getSingleton('O2::File')->getFile($path);
-    my $serializer = O2::Util::Serializer->new(
-      context => $context,
-      format  => 'PLDS',
-    );
-    return $serializer->unserialize($plds);
+    return $object;
   }
   return $manager->getObjectById($objectId);
 }
