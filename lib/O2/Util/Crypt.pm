@@ -5,7 +5,9 @@ use strict;
 #------------------------------------------------------------
 sub crypt {
   my ($pkg, $string, $salt) = @_; 
-  return crypt $string, $salt;
+  require Encode;
+  my $bytes = Encode::encode('utf-8', $string);
+  return crypt($bytes, $salt);
 }
 #------------------------------------------------------------
 sub salt {
