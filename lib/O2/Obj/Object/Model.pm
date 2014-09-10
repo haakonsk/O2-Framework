@@ -3,6 +3,7 @@ package O2::Obj::Object::Model;
 use strict;
 
 use O2 qw($context $db);
+use O2::Util::List qw(upush);
 
 #-----------------------------------------------------------------------------
 sub new {
@@ -631,6 +632,15 @@ sub getClassComment {
     $classComment .= $comment if $comment;
   }
   return $classComment;
+}
+#-----------------------------------------------------------------------------
+sub getUsedTableNames {
+  my ($obj) = @_;
+  my @tableNames;
+  foreach my $field ($obj->getFields()) {
+    upush @tableNames, $field->getTableName();
+  }
+  return @tableNames;
 }
 #-----------------------------------------------------------------------------
 1;
