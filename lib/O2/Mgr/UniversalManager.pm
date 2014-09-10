@@ -64,7 +64,9 @@ sub getObjectById {
   };
   die "Couldn't instantiate object with id $objectId: Error getting manager by objectId: $@" if $@;
 
-  if (!$manager && !$params{searchingArchive}) { # objectId not found in database or status=deleted
+  if (!$manager) { # objectId not found in database or status=deleted
+    return if $params{searchingArchive};
+
     # Try to find object in archive database
     $context->useArchiveDbh();
     my $object = eval {
