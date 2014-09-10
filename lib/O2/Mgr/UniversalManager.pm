@@ -58,12 +58,23 @@ sub getObjectByPlds {
 sub getObjectById {
   my ($obj, $objectId) = @_;
   die 'getObjectById: No ID given' unless $objectId;
-  
+
   my $manager = eval {
     $obj->getManagerByObjectId($objectId);
   };
   die "Couldn't instantiate object with id $objectId: Error getting manager by objectId: $@" if $@;
-  return unless $manager; # objectId not found or deleted status
+
+  if (!$manager) { # objectId not found in database or status=deleted
+    my $path = $context->getSingleton('O2::Mgr::ObjectManager')->getObjectArchivePath($objectId);
+    return unless -f $path;
+
+    my $plds = $context->getSingleton('O2::File')->getFile($path);
+    my $serializer = O2::Util::Serializer->new(
+      context => $context,
+      format  => 'PLDS',
+    );
+    return $serializer->unserialize($plds);
+  }
   return $manager->getObjectById($objectId);
 }
 #------------------------------------------------------------------

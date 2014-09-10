@@ -852,4 +852,21 @@ sub getPublishPlaces {
   return @publishPlaces;
 }
 #-----------------------------------------------------------------------------
+# Move object out of database, store in file
+sub archive {
+  my ($obj) = @_;
+  my $id = $obj->getId();
+
+  my $path = $obj->getManager()->getObjectArchivePath($id, mkDirs => 1);
+  warn $path;
+
+  $context->getSingleton('O2::File')->writeFile( $path, $obj->serialize() );
+
+  $obj->getManager()->_deleteFromDbTables($id);
+
+  # Clear cache:
+  $context->getCache()->deleteObjectById($id);
+  delete $O2::Mgr::UniversalManager::MANAGER_CACHE->{$id} if exists $O2::Mgr::UniversalManager::MANAGER_CACHE->{$id};
+}
+#-----------------------------------------------------------------------------
 1;

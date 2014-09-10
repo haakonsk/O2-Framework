@@ -565,7 +565,7 @@ sub _setListTypeHashAccessors {
         my %values;
         while (my ($key, $value) = each %rawValues) {
           next unless $value;
-          $value = $obj->getContext()->getObjectById($value) unless ref $value;
+          $value = $context->getObjectById($value) unless ref $value;
           $values{$key} = $value if $value;
         }
         my $values = $obj->getManager()->_fixHashValuesForGetter($field, \%values);
@@ -826,6 +826,12 @@ sub save {
   }
   $object->{metaClassNameWasChangedFrom} = undef;
   
+  # If object was archived, delete archive file:
+  if ($originalObjectId) {
+    my $path = $obj->getObjectArchivePath($originalObjectId);
+    $context->getSingleton('O2::File')->rmFile($path) if -f $path;
+  }
+
   return $object;
 }
 #-----------------------------------------------------------------------------
@@ -1072,6 +1078,19 @@ sub deleteObjectPermanentlyById {
   my ($obj, $objectId) = @_;
   $obj->_uncacheForCurrentRequest($objectId);
 
+  $obj->_deleteFromDbTables($objectId);
+
+  my @revisionedObjectIds = $obj->{dbh}->selectColumn("select objectId from O2_OBJ_REVISIONEDOBJECT where revisionedObjectId = ?", $objectId);
+  foreach my $id (@revisionedObjectIds) {
+    my $revisionedObject = $context->getObjectById($id);
+    $revisionedObject->deletePermanently() if $revisionedObject;
+  }
+
+  $obj->{cacheHandler}->deleteObjectById($objectId) if $obj->{cacheHandler}->canCacheObject();
+}
+#-----------------------------------------------------------------------------
+sub _deleteFromDbTables {
+  my ($obj, $objectId) = @_;
   my %removeFromTables = ('O2_OBJ_OBJECT' => 1);
   my $model = $obj->getModel();
   # find list tables used
@@ -1089,13 +1108,6 @@ sub deleteObjectPermanentlyById {
       $db->sql("delete from $tableName where objectId = ?", $objectId);
     };
   }
-  my @revisionedObjectIds = $db->selectColumn("select objectId from O2_OBJ_REVISIONEDOBJECT where revisionedObjectId = ?", $objectId);
-  foreach my $id (@revisionedObjectIds) {
-    my $revisionedObject = $context->getObjectById($id);
-    $revisionedObject->deletePermanently() if $revisionedObject;
-  }
-
-  $obj->{cacheHandler}->deleteObjectById($objectId) if $obj->{cacheHandler}->canCacheObject();
 }
 #-----------------------------------------------------------------------------
 sub _classNameToTableName {
@@ -1108,6 +1120,16 @@ sub _classNameToTableName {
 sub error {
   my ($obj, $msg) = @_;
   die $msg;
+}
+#-----------------------------------------------------------------------------
+sub getObjectArchivePath {
+  my ($obj, $objectId, %params) = @_;
+  return $context->getSingleton('O2::File')->distributePath(
+    id       => $objectId,
+    rootDir  => $context->getEnv('O2CUSTOMERROOT') . '/var/objects',
+    fileName => "$objectId.plds",
+    mkDirs   => $params{mkDirs} || 0,
+  );
 }
 #-----------------------------------------------------------------------------
 1;
