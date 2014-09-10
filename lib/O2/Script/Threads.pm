@@ -1,6 +1,7 @@
 package O2::Script::Threads;
 
 use strict;
+use warnings;
 
 $| = 1;
 
@@ -18,14 +19,15 @@ my $counter     :shared = 0;
 my $queue;
 my $total;
 
-$SIG{INT} = sub {
-  lock($interrupted);
-  $interrupted = 1;
-};
-
 #-----------------------------------------------------------------------------
 sub run {
   my (%params) = @_;
+
+  $SIG{INT} = sub {
+    lock($interrupted);
+    $interrupted = 1;
+  };
+
   my @ids = @{ $params{ids} };
   $total = @ids;
   
@@ -38,7 +40,7 @@ sub run {
     my $counter = 0;
     foreach my $id (@ids) {
       $params{itemCode}->($context, $id);
-      O2::Script::Common::showProgress(++$counter, $total);
+      O2::Script::Common::showProgress(++$counter, $total) if !exists $params{showProgress} || $params{showProgress};
       if ($interrupted) {
         print "\n";
         exit;
@@ -54,7 +56,7 @@ sub run {
   $queue->enqueue( @{ $params{ids} } );
   
   for my $i (1 .. $params{numThreads}) {
-    my $thread = threads->create( \&_execute, $params{itemCode} );
+    my $thread = threads->create( \&_execute, $params{itemCode}, showProgress => $params{showProgress} );
     push @threads, $thread;
     $thread->detach();
   }
@@ -65,7 +67,7 @@ sub run {
 }
 #-----------------------------------------------------------------------------
 sub _execute {
-  my ($code) = @_;
+  my ($code, %params) = @_;
   my $context = O2::Context->new();
   while ($queue->pending() && (my $id = $queue->dequeue())) {
     warn "Breaking out!" if $interrupted;
@@ -75,7 +77,7 @@ sub _execute {
       lock($counter);
       $counter++;
     }
-    O2::Script::Common::showProgress($counter, $total) if threads->tid() == 1;
+    O2::Script::Common::showProgress($counter, $total)  if (!exists $params{showProgress} || $params{showProgress})  &&  threads->tid() == 1;
     $code->($context, $id);
   }
 }
