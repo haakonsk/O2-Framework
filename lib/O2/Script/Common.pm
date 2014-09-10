@@ -54,6 +54,7 @@ sub getInstallation {
 #-----------------------------------------------------------------------------
 {
   my $startTime;
+  my $startPercentCompleted = 0;
 
   sub showProgress {
     my ($current, $total) = @_;
@@ -63,10 +64,13 @@ sub getInstallation {
     $percentCompleted    = substr $percentCompleted, 0, 6;
     $percentCompleted   .= '0' if length ($percentCompleted) == 5;
 
-    $startTime = Time::HiRes::gettimeofday() if $current == 1;
+    if (!$startTime) {
+      $startTime = Time::HiRes::gettimeofday();
+      $startPercentCompleted = 100 * $current / $total;
+    }
     my $numPercentCompleted  = 100 * $current / $total;
     my $numPercentRemaining  = 100 - $numPercentCompleted;
-    my $_numSecondsRemaining = $numPercentCompleted  ?  ((Time::HiRes::gettimeofday() - $startTime) * $numPercentRemaining / $numPercentCompleted)  :  100 * 3600 - 1;
+    my $_numSecondsRemaining = $numPercentCompleted > $startPercentCompleted ?  ((Time::HiRes::gettimeofday() - $startTime) * $numPercentRemaining / ($numPercentCompleted-$startPercentCompleted))  :  100 * 3600 - 1;
     my ($numHoursRemaining, $numMinutesRemaining, $numSecondsRemaining) = _getTime($_numSecondsRemaining);
     print "\e[60D" if $current > 1;
     printf "$percentCompleted%% completed      Estimated time remaining: % 3d:%02d:%02d", $numHoursRemaining, $numMinutesRemaining, $numSecondsRemaining;
