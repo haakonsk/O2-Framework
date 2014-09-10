@@ -742,4 +742,23 @@ sub endIgnoreTransactions {
   $obj->{transactionLevel} = delete $obj->{realTransactionLevel};
 }
 #--------------------------------------------------------------------------------------------
+sub walkDirRecursive {
+  my ($obj, $dir, %params) = @_;
+  my $fileHandler = $params{fileHandler};
+  my $dirHandler  = $params{dirHandler};
+  my @files = $obj->scanDir($dir, '^\w');
+  foreach my $file (@files) {
+    my $path = "$dir/$file";
+    if ($fileHandler && -f $path) {
+      $fileHandler->($path);
+    }
+    elsif ($dirHandler && -d $path) {
+      $dirHandler->($path);
+    }
+    if (-d $path) {
+      $obj->walkDirRecursive($path, %params);
+    }
+  }
+}
+#--------------------------------------------------------------------------------------------
 1;
