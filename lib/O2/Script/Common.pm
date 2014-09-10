@@ -80,6 +80,11 @@ sub getInstallation {
       printf "\n  It took %s %s $seconds seconds\n", ($hours ? "$hours hours" : ''), ($hours || $minutes ? "$minutes minutes and" : '');
     }
   }
+
+  sub resetProgressCounter {
+    $startTime             = undef;
+    $startPercentCompleted = undef;
+  }
 }
 #-----------------------------------------------------------------------------
 sub _getTime {
