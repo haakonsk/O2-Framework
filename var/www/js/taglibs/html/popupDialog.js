@@ -5,7 +5,6 @@ o2.popupDialog = {
 
   submitFunc          : null,
   currentOpenDialogId : null,
-  dialogCloseIsSet    : false,
 
   init : function() {
     if (!document.getElementById("o2PopupDialog")) {
@@ -70,23 +69,15 @@ o2.popupDialog = {
     o2.popupDialog.clear();
 
     if (!o2.popupDialog[id]) {
-      var params = {};
-      var linkTag = document.getElementById(id);
-      for (var i = 0; i < linkTag.attributes.length; i++) {
-        var attr = linkTag.attributes[i];
-        if (attr.name !== "id" && attr.name !== "class") {
-          params[ attr.name ] = attr.value;
-        }
-      }
-      o2.popupDialog.define(id, params);
-      var submitText = params.submitText || params.submittext;
-      if (submitText) {
-        o2.popupDialog.addSubmitBtn(id, submitText);
-      }
-      var closeText = params.closeText || params.closetext;
-      if (closeText) {
-        o2.popupDialog.addCloseBtn(id, closeText);
-      }
+      o2.popupDialog.define(id, {});
+    }
+    var submitText = o2.popupDialog[id].params.submitText || o2.popupDialog[id].params.submittext;
+    if (submitText) {
+      o2.popupDialog.addSubmitBtn(id, submitText);
+    }
+    var closeText = o2.popupDialog[id].params.closeText || o2.popupDialog[id].params.closetext;
+    if (closeText) {
+      o2.popupDialog.addCloseBtn(id, closeText);
     }
 
     var params = o2.popupDialog[id].params;
@@ -98,7 +89,6 @@ o2.popupDialog = {
     var contentHtml = params.contentHtml || params.contenthtml;
     if (params.onClose) {
       var onClose = params.onClose;
-      delete params.onClose;
       params.close = function() { eval(onClose); }
     }
 
@@ -106,12 +96,6 @@ o2.popupDialog = {
     $("#o2PopupDialog .modal-body"  ).css( "height", params.height );
     $("#o2PopupDialog .modal-dialog").css( "width",  params.width  );
     $("#o2PopupDialog").modal("toggle");
-    if (!o2.popupDialog.dialogCloseIsSet) {
-      o2.popupDialog.dialogCloseIsSet = true;
-      $("#o2PopupDialog").on("dialogclose", function (event, ui) {
-        o2.popupDialog.copyHtmlToHiddenContainer();
-      } );
-    }
     var popupDialog = document.getElementById("o2PopupDialog");
     $("#o2PopupDialog .modal-title").html(params.title);
     if (contentHtml) {
