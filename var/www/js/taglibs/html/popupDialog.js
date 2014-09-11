@@ -89,7 +89,7 @@ o2.popupDialog = {
     var contentHtml = params.contentHtml || params.contenthtml;
     $("#o2PopupDialog").unbind();
     if (params.onClose) {
-      $("#o2PopupDialog").on("hide.bs.modal", function() { eval(params.onClose); console.log("closing");});
+      $("#o2PopupDialog").on("hide.bs.modal", function() { eval(params.onClose); });
     }
 
     o2.popupDialog.drawButtons(id);
