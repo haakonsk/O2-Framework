@@ -44,8 +44,10 @@ my $svnLog = `svn log -v $commitRepo -r $fromRev:$toRev`;
 my @commits = split /------------------------------------------------------------------------\n/, $svnLog;
 foreach my $commit (@commits) {
   next unless $commit;
-  my ($revision, $committer, $date, $changedFiles, $comment) = $commit =~ m{ \A r (\d+) \s+ \| \s+ (\w+) \s+ \| \s+ (\S+) .+? Changed [ ] paths: \s+ (.+?) \n\n (.+) \z }xms;
+
+  my ($revision, $committer, $date, $changedFiles, $comment) = $commit =~ m{ \A r (\d+) \s+ \| \s+ (\w+) \s+ \| \s+ (\S+) .+? (?: Changed[ ]paths | Endrede[ ]filstier): \s+ (.+?) \n\n (.+) \z }xms;
   next unless checkUser($committer);
+
   my @files = split /\n/, $changedFiles;
   @files    = map { my ($filePath) = $_ =~ m{ [ ] (/.+) }xms; $filePath; } @files;
   my $commitInfo = {
@@ -80,6 +82,7 @@ $svnLog = `svn log -v $mergeRepo -r head:$fromRev`;
 my @commits = split /------------------------------------------------------------------------\n/, $svnLog;
 foreach my $commit (@commits) {
   next unless $commit;
+
   my ($revision, $committer, $comment) = $commit =~ m{ \A r (\d+) \s+ \| \s+ (\w+) .+ \n\n (.+) \z }xms;
   $comment =~ s{ \s+ \z }{}xms;
   if ($comment =~ m{ Merg (?: e | ing ) }xmsi) {
