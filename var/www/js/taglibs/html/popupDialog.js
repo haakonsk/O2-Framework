@@ -67,6 +67,7 @@ o2.popupDialog = {
 
   display : function(id, extraParams) {
     o2.popupDialog.currentOpenDialogId = id;
+    o2.popupDialog.clear();
 
     if (!o2.popupDialog[id]) {
       var params = {};
@@ -131,7 +132,7 @@ o2.popupDialog = {
   },
 
   hide : function() {
-    $("#o2PopupDialog").modal("toggle");
+    $("#o2PopupDialog").modal({ show : false });
   },
 
   findForm : function(elm) {
@@ -180,4 +181,9 @@ o2.popupDialog = {
     $("#o2PopupDialog .modal-footer").append(buttonElm);
   },
 
+  clear : function() {
+    $( "#o2PopupDialogLabel"          ).html("");
+    $( "#o2PopupDialogBody"           ).html("");
+    $( "#o2PopupDialog .modal-footer" ).html("");
+  },
 };
