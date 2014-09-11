@@ -396,6 +396,18 @@ sub setCookie {
   my ($header, $cookie) = O2::Cgi::Cookie::setCookie(@params);
   my ($cookieName, $cookieValue) = $cookie =~ m{  \A  ([^=]+)  =  ([^;]*)  }xms;
   $obj->{cookies}->{$cookieName} = $cookie;
+  $obj->_removeDeleteCookieHeaders($cookieName);
+}
+#--------------------------------------------------------------------------------------------
+sub _removeDeleteCookieHeaders {
+  my ($obj, $cookieName) = @_;
+  my @headers = @{ $obj->{headers} || [] };
+  foreach (my $i = 0; $i <= $#headers; $i += 2) {
+    if ($headers[$i+1] =~ m{ \A \Q$cookieName\E = }xms) {
+      splice @headers, $i, 2;
+      $obj->{headers} = \@headers;
+    }
+  }
 }
 #--------------------------------------------------------------------------------------------
 sub getCookie {
