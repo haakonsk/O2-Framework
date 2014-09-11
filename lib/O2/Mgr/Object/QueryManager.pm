@@ -24,6 +24,7 @@ sub initModel {
     skip              => { type => 'int'                                                                         },
     limit             => { type => 'int'                                                                         },
     inFolderCondition => { type => 'O2::Obj::Object::Query::Condition'                                           }, # Matching objects must be found in one of the given folders or one of its child/grand-child etc folders.
+    searchArchiveToo  => { type => 'bit'                                                                         },
     title             => { type => 'varchar', multilingual => 1                                                  },
     debug             => { type => 'bit'                                                                         },
     unionQuery        => { type => 'O2::Obj::Object::Query'                                                      }, # Object IDs returned from unionQuery will be added to object IDs otherwise gathered by original/parent query.
@@ -179,10 +180,11 @@ sub newObjectBySearchParams {
   
   my $object = $obj->newObject();
   $object->setClassNameByManagerClassName(ref $mgr);
-  $object->setSkip(    delete $params{-skip}    ) if exists $params{-skip};
-  $object->setLimit(   delete $params{-limit}   ) if exists $params{-limit};
-  $object->setOrderBy( delete $params{-orderBy} ) if exists $params{-orderBy};
-  $object->setDebug(   1                        ) if delete $params{-debug};
+  $object->setSkip(             delete $params{-skip}    ) if exists $params{-skip};
+  $object->setLimit(            delete $params{-limit}   ) if exists $params{-limit};
+  $object->setOrderBy(          delete $params{-orderBy} ) if exists $params{-orderBy};
+  $object->setSearchArchiveToo( 1                        ) if delete $params{-searchArchiveToo};
+  $object->setDebug(            1                        ) if delete $params{-debug};
   
   $obj->_addConditionGroups($object, $mgr, %params);
   return $object;
@@ -282,7 +284,7 @@ sub validateSearchFields {
   my ($obj, $mgr, %params) = @_;
   my $model = $mgr->getModel();
   foreach my $fieldName (keys %params) {
-    next if $fieldName =~ m[ -either | -limit | -skip | -orderBy | -debug | -isa | -ancestorId | -> | {\w+} ]xms;
+    next if $fieldName =~ m[ -either | -limit | -skip | -orderBy | -debug | -isa | -ancestorId | -searchArchiveToo | -> | {\w+} ]xms;
     
     $fieldName = 'id' if $fieldName eq 'objectId';
     die "Invalid field '$fieldName' in objectSearch or objectIdSearch" unless $obj->_getFieldsByName( $model, $fieldName, debug => $params{-debug}, allowSubClassField => 1 );

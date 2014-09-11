@@ -9,6 +9,11 @@ use O2::Util::List qw(upush);
 use Time::HiRes    qw(gettimeofday);
 
 #-----------------------------------------------------------------------------
+sub searchArchiveToo {
+  my ($obj) = @_;
+  return $obj->getSearchArchiveToo();
+}
+#-----------------------------------------------------------------------------
 sub setOrderBy {
   my ($obj, $value) = @_;
   
@@ -214,8 +219,12 @@ sub getUsedTables {
 }
 #-----------------------------------------------------------------------------
 sub getObjectIds {
-  my ($obj) = @_;
+  my ($obj, %params) = @_;
   my ($sql, @placeHolders) = $obj->getSql();
+  if ($params{useArchiveDbh}) {
+    warn "Using archive database for the next query" if $obj->getDebug();
+    $context->useArchiveDbh();
+  }
   warn $db->_expandPH($sql, @placeHolders) if $obj->getDebug();
   my $t0 = gettimeofday();
   my @objectIds = $db->selectColumn($sql, @placeHolders);
@@ -229,6 +238,10 @@ sub getObjectIds {
   my $limit = $obj->getLimit();
   splice @objectIds, 0, $skip if $skip;
   splice @objectIds, $limit   if $limit && @objectIds > $limit;
+  if ($obj->searchArchiveToo() && !$params{useArchiveDbh}) {
+    my @moreObjectIds = $obj->getObjectIds(useArchiveDbh => 1);
+    push @objectIds, @moreObjectIds;
+  }
   return wantarray ? @objectIds : \@objectIds;
 }
 #-----------------------------------------------------------------------------
