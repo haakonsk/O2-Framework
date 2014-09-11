@@ -117,7 +117,7 @@ o2._getXmlHttpRequest = function() {
 }
 
 o2._validateBrowser = function(url) {
-  if (url.match(/^[^.]+[.]css$/)) {
+  if (url.match(/^[^.]+([.]min)?[.]css$/)) {
     return true;
   }
   var userAgent = navigator.userAgent.toLowerCase();
