@@ -114,6 +114,9 @@ o2.popupDialog = {
         onSuccess    : "var elm = document.getElementById('o2PopupDialog').parentNode; elm.id = '" + id + "'; elm.style.display = '';"
       });
     }
+    if (window !== top.window) { // The Modal widget doesn't know where to place itself if it's not located in the top frame
+      $("#o2PopupDialog").css( "top", $(window.parent.document).scrollTop() );
+    }
   },
 
   hide : function() {
