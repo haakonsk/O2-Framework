@@ -102,7 +102,8 @@ o2.popupDialog = {
     }
 
     o2.popupDialog.drawButtons(id);
-    $("#o2PopupDialog .modal-body").css("height", params.height);
+    $("#o2PopupDialog .modal-body"  ).css( "height", params.height );
+    $("#o2PopupDialog .modal-dialog").css( "width",  params.width  );
     $("#o2PopupDialog").modal("toggle");
     if (!o2.popupDialog.dialogCloseIsSet) {
       o2.popupDialog.dialogCloseIsSet = true;
