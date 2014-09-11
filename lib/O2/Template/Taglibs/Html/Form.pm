@@ -987,9 +987,9 @@ sub row {
 <$rowTag class="multiInputRow $params{class}" $rowParams>
   $params{content}
   <$controlsTag class="controls">
-    <a href="#up"     class="iconBtn noText upBtn"     title="$moveUpTitle"   onClick="o2.multiInput.moveUp(    o2.getClosestAncestorByClassName(this, 'row') )">$moveUpLinkText</a>
-    <a href="#down"   class="iconBtn noText downBtn"   title="$moveDownTitle" onClick="o2.multiInput.moveDown(  o2.getClosestAncestorByClassName(this, 'row') )">$moveDownLinkText</a>
-    <a href="#delete" class="iconBtn noText deleteBtn" title="$deleteTitle"   onClick="o2.multiInput.deleteRow( o2.getClosestAncestorByClassName(this, 'row') )">$deleteLinkText</a>
+    <a href="#up"     class="iconBtn noText upBtn"     title="$moveUpTitle"   onClick="o2.multiInput.moveUp(    o2.getClosestAncestorByClassName(this, 'multiInputRow') )">$moveUpLinkText</a>
+    <a href="#down"   class="iconBtn noText downBtn"   title="$moveDownTitle" onClick="o2.multiInput.moveDown(  o2.getClosestAncestorByClassName(this, 'multiInputRow') )">$moveDownLinkText</a>
+    <a href="#delete" class="iconBtn noText deleteBtn" title="$deleteTitle"   onClick="o2.multiInput.deleteRow( o2.getClosestAncestorByClassName(this, 'multiInputRow') )">$deleteLinkText</a>
   </$controlsTag>
 </$rowTag>
 END

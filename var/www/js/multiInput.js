@@ -15,7 +15,7 @@ o2.multiInput.setupAll = function() {
 }
 
 o2.multiInput.setup = function(multiInput) {
-  var rows        = o2.getElementsByClassName("row", multiInput);
+  var rows        = o2.getElementsByClassName("multiInputRow", multiInput);
   var minNumLines = multiInput.getAttribute("minNumLines");
   var inputElements = o2.multiInput.getInputElementsIn( rows[0] );
   for (var j = 0; j < inputElements.length; j++) {
@@ -60,7 +60,7 @@ o2.multiInput.deleteRow = function(row) {
 }
 
 o2.multiInput.addRow = function(multiInput) {
-  var row = o2.getElementsByClassName("row", multiInput)[0];
+  var row = o2.getElementsByClassName("multiInputRow", multiInput)[0];
   var newRow = row.cloneNode(true);
   var inputElements = o2.multiInput.getInputElementsIn(newRow);
   for (var i = 0; i < inputElements.length; i++) {
