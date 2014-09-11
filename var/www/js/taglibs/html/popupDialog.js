@@ -87,15 +87,16 @@ o2.popupDialog = {
     var contentId   = params.contentId   || params.contentid;
     var contentUrl  = params.contentUrl  || params.contenturl;
     var contentHtml = params.contentHtml || params.contenthtml;
+    $("#o2PopupDialog").unbind();
     if (params.onClose) {
-      var onClose = params.onClose;
-      params.close = function() { eval(onClose); }
+      $("#o2PopupDialog").on("hide.bs.modal", function() { eval(params.onClose); console.log("closing");});
     }
 
     o2.popupDialog.drawButtons(id);
     $("#o2PopupDialog .modal-body"  ).css( "height", params.height );
     $("#o2PopupDialog .modal-dialog").css( "width",  params.width  );
     $("#o2PopupDialog").modal("toggle");
+
     var popupDialog = document.getElementById("o2PopupDialog");
     $("#o2PopupDialog .modal-title").html(params.title);
     if (contentHtml) {
