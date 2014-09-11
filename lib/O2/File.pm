@@ -33,6 +33,24 @@ sub closeFile {
   return 1;
 }
 #--------------------------------------------------------------------------------------------
+sub readLine {
+  my ($obj, $fh) = @_;
+  my ($line) = $obj->readLines($fh, 1);
+  return $line;
+}
+#--------------------------------------------------------------------------------------------
+sub readLines {
+  my ($obj, $fh, $numLines) = @_;
+  my @lines;
+  my $i = 0;
+  while (defined (my $line = <$fh>)) {
+    chomp $line;
+    push @lines, $line;
+    last if ++$i == $numLines;
+  }
+  return @lines;
+}
+#--------------------------------------------------------------------------------------------
 {
   my $insideGetFileRef = 0;
   
