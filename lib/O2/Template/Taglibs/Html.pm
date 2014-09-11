@@ -409,11 +409,6 @@ sub _getPrioritizedJavascript {
   return $javascript;
 }
 #----------------------------------------------------
-sub _isO2JsUrl {
-  my ($obj, $url) = @_;
-  return $url =~ m{ /o2 (?: www|cms ) / }xms;
-}
-#----------------------------------------------------
 sub _getJavascripts {
   my ($obj, $where, %params) = @_;
   
