@@ -17,7 +17,7 @@ o2.popupDialog = {
       html += '        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>';
       html += '        <h4 class="modal-title" id="o2PopupDialogLabel"></h4>';
       html += '      </div>';
-      html += '      <div class="modal-body"></div>';
+      html += '      <div class="modal-body" id="o2PopupDialogBody"></div>';
       html += '      <div class="modal-footer"></div>';
       html += '    </div>';
       html += '  </div>';
@@ -122,7 +122,7 @@ o2.popupDialog = {
       //popupDialog.parentNode.style.display = "none";
       o2.ajax.call({
         serverScript : contentUrl,
-        target       : "o2PopupDialog",
+        target       : "o2PopupDialogBody",
         where        : "replace",
         onSuccess    : "var elm = document.getElementById('o2PopupDialog').parentNode; elm.id = '" + id + "'; elm.style.display = '';"
       });
