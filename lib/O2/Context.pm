@@ -158,7 +158,9 @@ sub createDbh {
 sub createArchiveDbh {
   my ($obj) = @_;
   my %dbInfo = $obj->getConfig()->getHash('o2.database');
-  $dbInfo{dataSource} .= '_archive';
+  my $dbName = $dbInfo{dataSource};
+  $dbName    =~ s{ ; .* }{}xms;
+  $dbInfo{dataSource} =~ s{ \Q$dbName\E }{${dbName}_archive}xms;
   return $obj->{archiveDbh} = $obj->createDbh(%dbInfo);
 }
 #------------------------------------------------------------------
