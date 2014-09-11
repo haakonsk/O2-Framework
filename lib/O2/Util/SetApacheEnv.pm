@@ -64,7 +64,13 @@ sub main {
   
   my $apacheConfDir = $ENV{O2APACHECONFDIR} || '/www/apacheconf/o2Sites';
   my $configFile    = $ARGV{-configFile}    || "$apacheConfDir/$host.conf";
-  
+  if (!-e $configFile) {
+    require O2::Context;
+    ($configFile) = grep { $_ =~ m{ \Q$host\E }xms } $context->getSingleton('O2::File')->scanDir($apacheConfDir);
+    $configFile = "$apacheConfDir/$configFile";
+    die "Didn't find apache config file for $host in $apacheConfDir" if !$configFile || !-e $configFile;
+  }
+
   my $vhost = init($configFile);            
   checkConfig($vhost, $host);
   %APP_ENV_VARS = %{ setEnvVars($vhost, $host) };
