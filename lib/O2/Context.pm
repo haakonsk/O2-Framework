@@ -80,6 +80,11 @@ sub getBackendSession {
   return $obj->{backendSession} = $obj->getSingleton('O2CMS::Backend::Session', $backendSessionId);
 }
 #------------------------------------------------------------------
+sub getFrontendSession {
+  my ($obj) = @_;
+  return $obj->getSingleton('O2::HttpSession');
+}
+#------------------------------------------------------------------
 sub setSession {
   my ($obj, $session) = @_;
   $obj->{session} = $O2::session = $session;

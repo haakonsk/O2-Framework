@@ -18,27 +18,8 @@ sub login {
   
   my $member = $context->getSingleton('O2::Mgr::MemberManager')->getMemberByUsername($username);
   if ( $member && ($params{loginOnBehalf} || $member->isCorrectPassword($password)) ) {
-    # If permanent flag is set, we add a ttl to the session cookie
-    if ($params{permanent}) {
-      $session->set( 'cookieTtl', $config->get('session.backend.permanentTtl') );
-      $session->save();
-      $session->refreshCookie();
-    }
-    
-    $session->set(
-      'user',
-      {
-        username   => $member->getUsername(),
-        userId     => $member->getId(),
-        email      => $member->getEmail(),
-        firstname  => $member->getFirstName(),
-        middlename => $member->getMiddleName(),
-        lastname   => $member->getLastName(),
-      },
-    );
-    
-    $session->login();
-    
+    $member->login( undef, $params{permanent} );
+
     return $obj->loginOnBehalfSuccess($member, %params) if $params{loginOnBehalf};
     return $obj->ajaxSuccess()                          if $params{isAjaxRequest} && $params{refreshLogin};
     return $obj->loginSuccess($member, %params);

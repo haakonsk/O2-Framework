@@ -93,4 +93,39 @@ sub isCorrectPassword {
   return $correct eq $given;
 }
 #-----------------------------------------------------------------------------
+sub frontendLogin {
+  my ($obj, $permanent) = @_;
+  my $session = $context->getFrontendSession();
+  $obj->login($session, $permanent) or return 0;
+  $session->save();
+  return 1;
+}
+#-----------------------------------------------------------------------------
+sub login {
+  my ($obj, $session, $permanent) = @_;
+  $session ||= $obj->getContext()->getSession();
+
+  # If permanent flag is set, we add a ttl to the session cookie
+  if ($permanent) {
+    $session->set( 'cookieTtl', $config->get('session.backend.permanentTtl') );
+    $session->save();
+    $session->refreshCookie();
+  }
+
+  $session->set(
+    'user',
+    {
+      username   => $obj->getUsername(),
+      userId     => $obj->getId(),
+      email      => $obj->getEmail(),
+      firstname  => $obj->getFirstName(),
+      middlename => $obj->getMiddleName(),
+      lastname   => $obj->getLastName(),
+    },
+  );
+
+  $session->login();
+  return 1;
+}
+#-----------------------------------------------------------------------------
 1;
