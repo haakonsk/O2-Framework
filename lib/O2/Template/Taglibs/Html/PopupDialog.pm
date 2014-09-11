@@ -48,7 +48,7 @@ sub popupDialog {
   $obj->{parser}->popMethod('button', $obj);
 
   $contentHtml     = $obj->_jsEscape( $contentHtml           );
-  $params{title}   = $obj->_jsEscape( $params{title}         );
+  $params{title}   = $obj->_jsEscape( $params{title}         ) || '&nbsp;';
   $params{onClose} = $obj->_jsEscape( $params{onClose} || '' );
 
   my $closeText  = $params{closeText};
