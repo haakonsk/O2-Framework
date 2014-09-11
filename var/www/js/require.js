@@ -2,8 +2,6 @@ var o2 = {
   version : _o2Version,
 };
 
-var LOADING_JS_FILES = new Array();
-
 // Can require both javascript and css files.
 o2.require = function(url, onLoadCallback, isJson) {
   var urlWithoutVersion = o2.getUrlWithoutVersion(url);
@@ -27,37 +25,24 @@ o2.require = function(url, onLoadCallback, isJson) {
     newNode.setAttribute( "href", urlWithVersion );
     document.getElementsByTagName("head").item(0).appendChild(newNode);
   }
-  else if (isJson) {
-    LOADING_JS_FILES[urlWithoutVersion] = true;
-    o2._getUrlWithAjax(urlWithoutVersion, onLoadCallback);
-  }
-  else { // Let's just assume it's a javascript file
-    LOADING_JS_FILES[urlWithoutVersion] = true;
-    var newNode = document.createElement("script");
-    newNode.onreadystatechange = function() { // IE
-      if (newNode.readyState === "complete" || newNode.readyState === "loaded") {
-        delete LOADING_JS_FILES[urlWithoutVersion];
-        o2._executeRequireCallback(onLoadCallback, url);
-      }
-    };
-    newNode.onload = function() { // Firefox
-      delete LOADING_JS_FILES[urlWithoutVersion];
-      o2._executeRequireCallback(onLoadCallback, url);
+  else {
+    $.ajaxSetup({async:false});
+    if (isJson) {
+      $.getScript(urlWithoutVersion);
     }
-    newNode.onerror = function(e) {
-      console.warn("Failed to load " + url);
+    else { // Let's just assume it's a javascript file
+      $.getScript(url);
     }
-    newNode.setAttribute( "type", "text/javascript" );
-    newNode.setAttribute( "src",  urlWithVersion    );
-    document.getElementsByTagName("head").item(0).appendChild(newNode);
+    $.ajaxSetup({async:true});
+    includedJsUrls[urlWithoutVersion] = true;
   }
-  includedUrls[urlWithoutVersion] = true;
   if (o2.isJqueryUrl(urlWithoutVersion)) {
     includedUrls.jquery = true;
   }
   else if (o2.isJqueryUiUrl(urlWithoutVersion)) {
     includedUrls.jqueryUi = true;
   }
+  o2._executeRequireCallback(onLoadCallback, url);
 }
 
 o2.requireJs = function(file, onLoadCallback) {
@@ -85,28 +70,6 @@ o2._requireJsOrCss = function(type, file, onLoadCallback) {
   return o2.require(url, onLoadCallback, isJson);
 }
 
-/* Inspired by: http://www.hunlock.com/blogs/Howto_Dynamically_Insert_Javascript_And_CSS */
-o2._getUrlWithAjax = function(url, callback) {
-  var xmlHttp = o2._getXmlHttpRequest();
-  if (!xmlHttp) {
-    return false;
-  }
-  xmlHttp.onreadystatechange = function() {
-    if (xmlHttp.readyState == 4) {
-      if (xmlHttp.status == 200) {
-        var jsCode = xmlHttp.responseText;
-        eval(jsCode);
-        delete LOADING_JS_FILES[url];
-        o2._executeRequireCallback(callback, url);
-      }
-      delete xmlHttp;
-    }
-  }
-  xmlHttp.open("GET", url + '?timestamp=' + (new Date()).getTime(), true);
-  xmlHttp.send();
-  return true;
-}
-
 o2.hasBeenRequired = function(url) {
   var urlWithoutVersion = o2.getUrlWithoutVersion(url);
   if (o2.isJqueryUrl(urlWithoutVersion)) {
@@ -128,21 +91,13 @@ o2.isJqueryUiUrl = function(url) {
 
 o2.hasBeenRequiredAndLoaded = function(url) {
   var urlWithoutVersion = o2.getUrlWithoutVersion(url);
-  return o2.hasBeenRequired(urlWithoutVersion) && !LOADING_JS_FILES[urlWithoutVersion];
+  return o2.hasBeenRequired(urlWithoutVersion);
 }
 
 o2._executeRequireCallback = function(onLoadCallback, url) {
   if (onLoadCallback) {
     onLoadCallback.call(this, url);
   }
-}
-
-o2.allRequiredJsFilesLoaded = function() {
-  var count = 0;
-  for (var key in LOADING_JS_FILES) {
-    return false;
-  }
-  return true;
 }
 
 o2._getXmlHttpRequest = function() {

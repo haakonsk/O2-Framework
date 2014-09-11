@@ -12,17 +12,11 @@ var harness = {
   },
 
   startTesting : function(url) {
-    if (!o2.allRequiredJsFilesLoaded()) {
-      return setTimeout("harness.startTesting('" + url + "');", 100);
-    }
     tester.startTesting();
     harness.findNextFile(url);
   },
 
   findNextFile : function(url) { // url is the url of the js file that we just required
-    if (!o2.allRequiredJsFilesLoaded()) {
-      return setTimeout("harness.findNextFile('" + url + "');", 100);
-    }
     var i = 0;
     if (url) {
       var found = false;

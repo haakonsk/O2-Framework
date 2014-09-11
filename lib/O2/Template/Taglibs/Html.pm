@@ -49,6 +49,7 @@ sub register { # Method called by the tag-parser to see what and how methods sho
 
   my $obj = bless { parser => $params{parser} }, $package;
   $obj->{isHtmlTaglib} = 1;
+  $obj->addJSFile( file => 'jquery'  );
   $obj->addJsFile( file => 'require' );
   $obj->addJsFile( file => 'base'    );
 
