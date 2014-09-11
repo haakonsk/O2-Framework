@@ -652,6 +652,9 @@ sub _radioOrCheckbox {
 #----------------------------------------------------
 sub _getPrePostForInputFieldsWithLabel {
   my ($obj, $params) = @_;
+
+  $obj->addJS( content => "document.getElementById('$params->{id}').focus();", where => "post" ) if delete $params->{focus};;
+
   my $label = delete $params->{label};
   return ('', '') unless $label;
 
@@ -696,9 +699,6 @@ sub _getPrePostForInputFieldsWithLabel {
   $post .= "</$tag2>\n"           if $useTable;
   $post .= "</$tag1>" unless $obj->{parser}->getProperty('manualTrTdTags');
 
-  if (delete $params->{focus}) {
-    $obj->addJs( content => "document.getElementById('$params->{id}').focus();", where => "post" );
-  }
   return ($pre, $post);
 }
 #----------------------------------------------------
