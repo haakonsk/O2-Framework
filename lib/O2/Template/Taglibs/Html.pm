@@ -436,10 +436,12 @@ sub _getJavascripts {
         $incJavascripts .= "<!--[if $browser]>\n";
       }
       my $version = $obj->{parser}->getProperty('o2Version');
+      my $charset = $javascriptFiles->{$where}->{$jsUrl}->{charset};
+      $charset    = $charset ? "charset=$charset" : '';
       my $jsUrlWithParams = $jsUrl;
       $jsUrlWithParams   .= ($jsUrl =~ m{ [?] }xms  ?  '&amp;'  :  '?') . "v=$version" if $version;
-      
-      my $newIncJs = qq{<script type="text/javascript" src="$jsUrlWithParams"></script>\n};
+
+      my $newIncJs = qq{<script type="text/javascript" src="$jsUrlWithParams" $charset></script>\n};
       my $newPreJs = "includedUrls['$jsUrl'] = true;\n";
       
       if ($context->isAjaxRequest()) {
@@ -674,6 +676,7 @@ sub addJsFromFile {
 sub addJsFile {
   my ($obj, %params) = @_;
   $params{where} ||= 'pre';
+  my $charset = $params{charset} ? 'charset="utf-8"' : '';
 
   my $file = ${ $obj->{parser}->_parse( \$params{file} ) };
   my $jsUrl = $obj->getCustOrO2Url($file, 'js');
@@ -688,7 +691,7 @@ sub addJsFile {
     }
     my $version = $obj->{parser}->getProperty('o2Version');
     my $html = "<script type='text/javascript'>includedUrls['$jsUrl'] = true;</script>\n";
-    $html   .= qq{<script type="text/javascript" src="$jsUrl?v=$version"></script>};
+    $html   .= qq{<script type="text/javascript" src="$jsUrl?v=$version" $charset></script>};
     if ($params{browser}) {
       $html = "<!--[if lt $params{browser}]>\n$html\n<![endif]-->";
     }
@@ -701,6 +704,7 @@ sub addJsFile {
   $javascripts->{ $params{where} }->{$jsUrl} = {
     index   => scalar keys %{  $javascripts->{ $params{where} }  },
     browser => $params{browser},
+    charset => $params{charset},
   };
   $obj->{parser}->setProperty(javascriptFiles => $javascripts);
   return '';
