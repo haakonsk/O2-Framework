@@ -81,9 +81,8 @@ sub popupDialog {
   $obj->{parser}->_parse( \$params{linkText} );
   my $linkText = delete $params{linkText};
   my $paramsStr = $obj->_packTagAttribs(%params);
-  return qq{<button id="o2PopupDialogSubmit$params{id}" class="hidden" data-toggle="modal" data-target="#o2PopupDialog"></button>
-<a href="javascript:o2.popupDialog.display('$params{id}')" $paramsStr>$linkText</a>} if $linkText;
-  return qq{<button id="o2PopupDialogSubmit$params{id}" class="hidden" data-toggle="modal" data-target="#o2PopupDialog"></button>};
+  return qq{<a href="javascript:o2.popupDialog.display('$params{id}')" $paramsStr>$linkText</a>} if $linkText;
+  return '';
 }
 #------------------------------------------------------------------
 sub button {
