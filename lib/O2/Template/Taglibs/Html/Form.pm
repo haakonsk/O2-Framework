@@ -984,7 +984,7 @@ sub row {
   my $rowParams = $obj->_packTagAttribs(%rowParams);
 
   return <<"END";
-<$rowTag class="row $params{class}" $rowParams>
+<$rowTag class="multiInputRow $params{class}" $rowParams>
   $params{content}
   <$controlsTag class="controls">
     <a href="#up"     class="iconBtn noText upBtn"     title="$moveUpTitle"   onClick="o2.multiInput.moveUp(    o2.getClosestAncestorByClassName(this, 'row') )">$moveUpLinkText</a>
