@@ -110,20 +110,54 @@ o2.rules.rules = {
     return value == otherValue;
   },
   date : function(value, param) {
+    // XXX Allow "," in date range by wrapping dates in quotes
     if (param.match(/notRequired/) && !value.length) { return true; }
     if (!value) {
       return false;
     }
     param.replace(/:notRequired/, "");
-    var format = param;
+
+    var params = param.split(":");
+    if (params[params.length-1] === "notRequired") {
+      params.splice(params.length-1, 1); // Removes the last item
+    }
+    var format = params.splice(0, 1).toString(); // Removes and returns the first item
+    while (format && format.substring(0, 1).match(/[\"\']/) && !format.substring(format.length-1, format.length).match(/[\"\']/)) {
+      format += ":" + params.splice(0, 1);
+    }
+    format = format.replace(/^[\"\']/, ""); // Remove leading quotes
+    format = format.replace(/[\"\']$/, ""); // Remove trailing quotes
+    var givenDate;
     try {
-      o2.parseDate(format, value);
+      givenDate = o2ParseDate(format, value);
     }
     catch (e) {
       if (window.console) {
         console.warn( "Date '" + value + "' does not match format '" + format + "': " + getExceptionMessage(e) );
       }
       return false;
+    }
+    if (params.length > 0) { // We have a date range
+      var dateRange = params[0].split(",");
+      var from = dateRange[0];
+      var to   = dateRange[1];
+      var fromDate;
+      var toDate;
+      if (from === "today") {
+        fromDate = new Date();
+      }
+      else {
+        fromDate = o2ParseDate(format, from);
+      }
+      if (to === "today") {
+        toDate = new Date();
+      }
+      else {
+        toDate = o2ParseDate(format, from);
+      }
+      if (givenDate < fromDate || givenDate > toDate) {
+        return false;
+      }
     }
     return true;
   }
