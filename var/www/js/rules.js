@@ -139,27 +139,53 @@ o2.rules.rules = {
     }
     if (params.length > 0) { // We have a date range
       var dateRange = params[0].split(",");
-      var from = dateRange[0];
-      var to   = dateRange[1];
-      var fromDate;
-      var toDate;
-      if (from === "today") {
-        fromDate = new Date();
-      }
-      else {
-        fromDate = o2ParseDate(format, from);
-      }
-      if (to === "today") {
-        toDate = new Date();
-      }
-      else {
-        toDate = o2ParseDate(format, from);
-      }
+      var fromDate = o2.rules._getDate( dateRange[0], format );
+      var toDate   = o2.rules._getDate( dateRange[1], format );
       if (givenDate < fromDate || givenDate > toDate) {
         return false;
       }
     }
     return true;
+  }
+};
+
+o2.rules._getDate = function(dateStr, format) {
+  if (dateStr === "today") {
+    return new Date();
+  }
+  if (dateStr.match(/^[+-]\d+\w$/)) {
+    var matches = dateStr.match(/^([+-])(\d+)(\w)$/);
+    var now  = new Date();
+    var date = new Date();
+    var sign = matches[1];
+    var num  = matches[2];
+    var type = matches[3];
+    var delta = num * (sign === "-" ? -1 : 1);
+    if (type === "y") {
+      date.setFullYear( now.getFullYear() + delta );
+    }
+    else if (type === "M") {
+      date.setMonth( now.getMonth() + delta );
+    }
+    else if (type === "w") {
+      date.setDate( now.getDate() + 7*delta );
+    }
+    else if (type === "d") {
+      date.setDate( now.getDate() + delta );
+    }
+    else if (type === "h") {
+      date.setHours( now.getHours() + delta );
+    }
+    else if (type === "m") {
+      date.setMinutes( now.getMinutes() + delta );
+    }
+    else if (type === "s") {
+      date.setSeconds( now.getSeconds() + delta );
+    }
+    return date;
+  }
+  else {
+    return o2ParseDate(format, dateStr);
   }
 };
 
