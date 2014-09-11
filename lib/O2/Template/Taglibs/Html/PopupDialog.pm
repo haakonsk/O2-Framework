@@ -70,6 +70,7 @@ sub popupDialog {
   width       : '$params{width}',
   height      : '$params{height}'
 });};
+  delete $params{title};
   $jsContent .= qq{o2.popupDialog.addSubmitBtn( "$params{id}", "$submitText" );} if $submitText;
   $jsContent .= qq{o2.popupDialog.addCloseBtn(  "$params{id}", "$closeText"  );} if $closeText;
   $obj->addJs(
