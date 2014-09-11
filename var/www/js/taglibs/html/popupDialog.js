@@ -95,7 +95,7 @@ o2.popupDialog = {
     o2.popupDialog.drawButtons(id);
     $("#o2PopupDialog .modal-body"  ).css( "height", params.height );
     $("#o2PopupDialog .modal-dialog").css( "width",  params.width  );
-    $("#o2PopupDialog").modal("toggle");
+    $("#o2PopupDialog").modal("show");
 
     var popupDialog = document.getElementById("o2PopupDialog");
     $("#o2PopupDialog .modal-title").html(params.title);
