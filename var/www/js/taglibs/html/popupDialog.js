@@ -132,7 +132,7 @@ o2.popupDialog = {
   },
 
   hide : function() {
-    $("#o2PopupDialog").modal({ show : false });
+    $("#o2PopupDialog").modal("hide");
   },
 
   findForm : function(elm) {
