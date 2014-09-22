@@ -206,6 +206,7 @@ sub form {
     my @attributes = split /&/, $actionParams;
     foreach (@attributes) {
       my ($key, $value) = split /=/, $_, 2;
+      $value =~ s{\'}{&apos;}xmsg;
       $extraHiddenInputs .= "<input type='hidden' name='$key' value='$value'>\n" if $content !~ m{ name=[\"\'] $key [\"\'] }xms; # XXX Is this test good enough?
     }
   }

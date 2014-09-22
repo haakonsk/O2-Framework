@@ -14,7 +14,7 @@ sub register { # Method called by the tag-parser to see what and how methods sho
   );
   $obj->addCssFile( file => 'bootstrap.min'            );
   $obj->addJsFile(  file => 'bootstrap.min'            );
-  $obj->addCSSFile( file => 'jquery/jquery-ui'         );
+  $obj->addCssFile( file => 'jquery/jquery-ui'         );
   $obj->addJsFile(  file => 'taglibs/html/popupDialog' );
   $obj->addJs( # Allow HTML in the 'title' attribute (http://stackoverflow.com/questions/14488774/using-html-in-a-dialogs-title-in-jquery-ui-1-10)
     where   => 'pre',

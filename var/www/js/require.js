@@ -34,7 +34,7 @@ o2.require = function(url, onLoadCallback, isJson) {
       $.getScript(url);
     }
     $.ajaxSetup({async:true});
-    includedJsUrls[urlWithoutVersion] = true;
+    includedUrls[urlWithoutVersion] = true;
   }
   if (o2.isJqueryUrl(urlWithoutVersion)) {
     includedUrls.jquery = true;

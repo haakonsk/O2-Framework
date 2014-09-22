@@ -4,7 +4,7 @@ use strict;
 
 use base 'O2::Obj::Person';
 
-use O2 qw($config $db);
+use O2 qw($context $config $db);
 
 #-----------------------------------------------------------------------------
 sub isSerializable {

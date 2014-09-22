@@ -177,6 +177,7 @@ sub useNormalDbh {
   $obj->{normalDbh} ||= $obj->createDbh();
   $obj->{dbh} = $obj->{normalDbh};
   push @{ $obj->{dbhStack} }, $obj->{dbh};
+  return $O2::db = $O2::DB = $obj->{dbh};
 }
 #------------------------------------------------------------------
 sub useArchiveDbh {
@@ -184,12 +185,13 @@ sub useArchiveDbh {
   $obj->{archiveDbh} ||= $obj->createArchiveDbh();
   $obj->{dbh} = $obj->{archiveDbh};
   push @{ $obj->{dbhStack} }, $obj->{dbh};
+  return $O2::db = $O2::DB = $obj->{dbh};
 }
 #------------------------------------------------------------------
 sub usePreviousDbh {
   my ($obj) = @_;
   pop @{ $obj->{dbhStack} };
-  return $obj->{dbh} = $obj->{dbhStack}->[-1];
+  return $O2::db = $O2::DB = $obj->{dbh} = $obj->{dbhStack}->[-1];
 }
 #------------------------------------------------------------------
 sub getConsole {
