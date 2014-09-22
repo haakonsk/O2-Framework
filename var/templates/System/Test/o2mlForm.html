@@ -1,0 +1,26 @@
+<o2 use Html::Form />
+<o2 use Html::PopupDialog />
+
+<o2 addCssFile file="bootstrap.min" />
+<o2 addJsFile  file="bootstrap.min" />
+
+<o2 addCss>
+  textarea {
+    font-family : monospace;
+  }
+</o2:addCss>
+
+<o2 header />
+
+<h1 class="page-header">Test some HTML/O2 tags</h1>
+
+<o2 form setMethod="parseO2ml" removeParams="1" target="resultIframe">
+  <o2 textarea name="code" cols="150" rows="25" /><br>
+  <o2 input type="submit" value="Parse O2ML" class="btn" onClick="o2.popupDialog.display('result')" />
+</o2:form>
+
+<o2 popupDialog id="result" width="1000">
+  <iframe name="resultIframe" frameBorder="0" width="100%" height="500"></iframe>
+</o2:popupDialog>
+
+<o2 footer />
