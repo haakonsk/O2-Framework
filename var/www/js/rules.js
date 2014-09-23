@@ -298,8 +298,10 @@ o2.rules.getVerifyErrors = function() {
 
 o2.rules.checkNode = function(node, ignoreEmptyFields) {
   if (!node) return;
-  if (node.nodeType==1) {
-    if (node.disabled) {
+  if (node.nodeType == 1) {
+    var rule            = node.getAttribute("RULE");
+    var forceValidation = rule && rule.match(/:forceValidation/i);
+    if (node.disabled && !forceValidation) {
       return;
     }
     var isDragList = o2.hasClassName(node, "dragList");
@@ -307,8 +309,7 @@ o2.rules.checkNode = function(node, ignoreEmptyFields) {
       return;
     }
     if ( ( node.tagName === "INPUT" || node.tagName === "SELECT" || node.tagName === "TEXTAREA" || isDragList )
-         && node.getAttribute("RULE") && !node.disabled ) {
-      var rule = node.getAttribute("RULE")
+         && rule && (!node.disabled || forceValidation) ) {
       var ruleParts = rule.split(":");
       if (!o2.rules.rules[ ruleParts[0] ]) {
         alert("No such rule: "+ruleParts[0]);
