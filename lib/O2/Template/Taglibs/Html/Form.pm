@@ -412,6 +412,9 @@ sub _addInputCounterToElement {
 sub input {
   my ($obj, %params) = @_;
   $params{type} ||= 'text';
+  if ($params{type} eq 'number' && $params{numberFormat}) {
+    warn qq{Setting the value of an input field with type=number to something other than a numeric value (like you seem to be doing with the "numberFormat" attribute), will lead to some browsers deleting the value. (Field name: $params{name})};
+  }
   
   my %localeValues;
   %localeValues = $obj->_getLocaleValues(%params) if $params{multilingual};
