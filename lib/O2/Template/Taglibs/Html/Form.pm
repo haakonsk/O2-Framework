@@ -214,7 +214,7 @@ sub form {
     $extraHiddenInputs .= "<input type='hidden' name='isMultipartAjax' value='1'>\n";
   }
 
-  my $html = '<form ' . $obj->_packTagAttribs(%params) . ">\n";
+  my $html = '<form ' . $obj->_packTagAttribs(%params) . " novalidate='novalidate'>\n";
   $html   .= $extraHiddenInputs;
   $html   .= $content;
 
