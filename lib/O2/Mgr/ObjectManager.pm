@@ -274,7 +274,8 @@ sub setOriginalListFieldTableValues {
     my $sth = $db->sql( "select name,value from $tableName where objectId = ?", $object->getId() );
     $obj->{originalListFieldTableValues}->{ $object->getId() }->{$tableName} = {};
     while ( my ($name, $value) = $sth->next() ) {
-      $obj->{originalListFieldTableValues}->{ $object->getId() }->{$tableName}->{$name} = $value;
+      $obj->{originalListFieldTableValues}->{ $object->getId() }->{$tableName}->{$name}                 = $value;
+      $obj->{originalListFieldTableValues}->{ $object->getId() }->{$tableName}->{lowercase}->{lc $name} = $value;
     }
   }
 }
@@ -977,8 +978,9 @@ sub _saveListFields {
     foreach my $row (@{ $tables{$tableName} }) {
       my $name     = $row->{name};
       my $newValue = $row->{value};
-      $listFieldTableValues->{$tableName}->{$name} = $newValue;
-      my $rowExists     = exists $obj->{originalListFieldTableValues}->{ $object->getId() }->{$tableName}->{$name};
+      $listFieldTableValues->{$tableName}->{$name}                 = $newValue;
+      $listFieldTableValues->{$tableName}->{lowercase}->{lc $name} = $newValue;
+      my $rowExists     = exists $obj->{originalListFieldTableValues}->{ $object->getId() }->{$tableName}->{lowercase}->{lc $name};
       my $originalValue = delete $obj->{originalListFieldTableValues}->{ $object->getId() }->{$tableName}->{$name};
       $originalValue    = '' unless defined $originalValue;
       next if $newValue eq $originalValue;
