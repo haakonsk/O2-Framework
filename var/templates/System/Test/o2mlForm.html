@@ -6,6 +6,9 @@
   textarea {
     font-family : monospace;
   }
+  .o2RadioGroup, #textareaWrapper {
+    float : left;
+  }
 </o2:addCss>
 
 <o2 header />
@@ -13,8 +16,16 @@
 <h1 class="page-header">Test some HTML/O2 tags</h1>
 
 <o2 form setMethod="parseO2ml" removeParams="1" target="resultIframe">
-  <o2 textarea name="code" cols="150" rows="25" /><br>
-  <o2 input type="submit" value="Parse O2ML" class="btn" onClick="o2.popupDialog.display('result')" />
+  <div id="textareaWrapper">
+    <o2 textarea name="code" cols="100" rows="25" /><br>
+    <o2 input type="submit" value="Parse O2ML" class="btn" onClick="o2.popupDialog.display('result')" />
+  </div>
+  <o2 radioGroup name="pageTemplateId" label="Page template" display="block">
+    <o2 radio value="" label="None" checked="1" />
+    <o2 foreach "$pageTemplate in $pageTemplates" sortBy="$pageTemplate->getPrettyName()">
+      <o2 radio value="$pageTemplate->getId()" label="$pageTemplate->getPrettyName()" title="$pageTemplate->getFullPath()" />
+    </o2:foreach>
+  </o2:radioGroup>
 </o2:form>
 
 <o2 popupDialog id="result" width="1000">
