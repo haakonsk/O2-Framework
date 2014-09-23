@@ -188,6 +188,7 @@
 (setq o2ml-modules-and-tags
       [
        ["BackgroundProcess"               "backgroundProcess" "progressBar" "startButton"]
+       ["Bootstrap"                       ]
        ["Cache"                           "cache"]
        ["Core"                            "appendVar" "calc" "call" "comment" "doubleParse" "else" "elsif" "for" "foreach" "last" "function" "if" "include" "join" "macro" "noExec" "out" "postMacro" "preMacro" "push" "set" "setVar" "use" "warnLevel"]
        ["DataDumper"                      "dump"]
