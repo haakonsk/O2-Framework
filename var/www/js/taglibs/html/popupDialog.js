@@ -1,5 +1,5 @@
 o2.require("/js/DOMUtil.js");
-o2.require("/o2www/js/windowUtil.js");
+o2.require("/js/windowUtil.js");
 o2.require("/js/ajax.js");
 
 o2.popupDialog = {
