@@ -24,12 +24,15 @@ sub parseO2ml {
 
   require O2::Template;
   my $template = O2::Template->newFromString($code);
-  my $html = '';
-  $html = ${ $template->parse( $context->getDisplayParams() ) } if $code;
-  return print $html unless $pageTemplateId;
+  if (!$pageTemplateId) {
+    my $html = '';
+    $html = ${ $template->parse( $context->getDisplayParams() ) } if $code;
+    return print $html;
+  }
 
   my $tmpPath = $config->get('setup.tmpDir') . '/' . $context->getSingleton('O2::Util::Password')->generatePassword() . '.html';
-  $context->getSingleton('O2::File')->writeFile($tmpPath, $html);
+  my $fileMgr = $context->getSingleton('O2::File');
+  $fileMgr->writeFile($tmpPath, $code);
   my $pageTemplate = $context->getObjectById($pageTemplateId);
 
   if ($context->cmsIsEnabled()) {
@@ -49,6 +52,7 @@ sub parseO2ml {
     );
   }
 
+  $fileMgr->rmFile($tmpPath);
 }
 #---------------------------------------------------------------------------
 1;
