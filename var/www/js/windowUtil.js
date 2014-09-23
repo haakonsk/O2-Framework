@@ -52,3 +52,13 @@ o2.getWindowByDocument = function(doc) {
   }
   return win;
 }
+
+// The distance (in pixels) from the top of the current frame down to where the frame comes into view in the browser,
+// the part not visible due to scrolling.
+o2.getFrameTopToVisibleFrameTopOffset = function(win) {
+  if (win === top.window) {
+    return $(win.document).scrollTop();
+  }
+  var frameElm = o2.getFrameElement(win.document);
+  return o2.getFrameTopToVisibleFrameTopOffset(win.parent) + $(win.document).scrollTop() - (frameElm.tagName.toLowerCase() === "frame" ? 0 : $(frameElm).offset().top);
+}

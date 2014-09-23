@@ -1,4 +1,5 @@
 o2.require("/js/DOMUtil.js");
+o2.require("/o2www/js/windowUtil.js");
 o2.require("/js/ajax.js");
 
 o2.popupDialog = {
@@ -115,7 +116,11 @@ o2.popupDialog = {
       });
     }
     if (window !== top.window) { // The Modal widget doesn't know where to place itself if it's not located in the top frame
-      $("#o2PopupDialog").css( "top", $(window.parent.document).scrollTop() );
+      var topPosition = o2.getFrameTopToVisibleFrameTopOffset(window) - $(document).scrollTop();
+      if (topPosition < 0) {
+        topPosition = 0;
+      }
+      $("#o2PopupDialog").css("top", topPosition);
     }
   },
 
