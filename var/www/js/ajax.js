@@ -362,6 +362,9 @@ o2.ajax.handleServerResponse = function(result) {
     if (result.onError === "ignore") {
       return;
     }
+    if (result.onError === "alert") {
+      alert(result.errorMsg);
+    }
     if (result.onError) {
       eval(result.onError);
     }
