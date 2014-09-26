@@ -390,14 +390,14 @@ o2.ajax.handleServerResponse = function(result) {
       target              : result._target || "",
       content             : result._html,
       where               : result._where ? result._where : "replace",
-      ignoreMissingTarget : result.ignoreMissingTarget
+      ignoreMissingTarget : result.ignoreMissingTarget || result.onError === "ignore"
     });
   }
   else if (result._target && result._where.match(/^delete/)) {
     o2.ajax.updateContent({
       target              : result._target,
       where               : result._where,
-      ignoreMissingTarget : result.ignoreMissingTarget
+      ignoreMissingTarget : result.ignoreMissingTarget || result.onError === "ignore"
     });
   }
 
