@@ -657,7 +657,7 @@ sub _radioOrCheckbox {
 sub _getPrePostForInputFieldsWithLabel {
   my ($obj, $params) = @_;
 
-  $obj->addJS( content => "document.getElementById('$params->{id}').focus();", where => "post" ) if delete $params->{focus};;
+  $obj->addJs( content => "document.getElementById('$params->{id}').focus();", where => "post" ) if delete $params->{focus};
 
   my $label = delete $params->{label};
   return ('', '') unless $label;
