@@ -228,6 +228,7 @@ sub getObjectIds {
   warn $db->_expandPH($sql, @placeHolders) if $obj->getDebug();
   my $t0 = gettimeofday();
   my @objectIds = $db->selectColumn($sql, @placeHolders);
+  $context->usePreviousDbh() if $params{useArchiveDbh};
   my $dt = gettimeofday() - $t0;
   warn "It took $dt seconds. " . scalar(@objectIds) . ' results' if $obj->getDebug();
   
