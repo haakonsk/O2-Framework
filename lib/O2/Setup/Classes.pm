@@ -12,7 +12,16 @@ sub upgrade {
   my ($obj, $fakeIt) = @_;
   $obj->generateClassDocumentation();
   $obj->runUpgradeScripts('before', $fakeIt);
+
   $obj->updateDb();
+
+  # Do the same for archive database:
+  print "Switching to archive database handler\n" if $obj->verbose();
+  $context->useArchiveDbh();
+  $obj->updateDb();
+  $context->usePreviousDbh();
+  print "Switching back to normal database handler\n" if $obj->verbose();
+
   $obj->runUpgradeScripts('after', $fakeIt);
   return 1;
 }
