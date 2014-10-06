@@ -21,18 +21,29 @@ sub createDatabase {
   $dbName                  ||= $config->get('o2.database.dataSource') || "o2_$customer";
   $setupConf->{dbpassword} ||= $config->get('o2.database.password')   || $context->getSingleton('O2::Util::Password')->generatePassword(8);
   $dbCollation             ||= $config->get('o2.database.collation')  || $setupConf->{dbCollation};
-  my $user       = "'$customer'" . '@' . "'localhost'";
-  my $charSet    = $config->get('o2.database.characterSet');
-  
+  my $user    = "'$customer'" . '@' . "'localhost'";
+  my $charSet = $config->get('o2.database.characterSet');
+
+  # Create main database:
   my $sql = <<END;
 create database $dbName
   default character set $charSet
   default collate $dbCollation;
 GRANT SELECT, INSERT, UPDATE, DELETE, CREATE, ALTER, DROP, INDEX ON $dbName.* TO $user IDENTIFIED BY '$setupConf->{dbpassword}';
 END
-  
   $obj->executeSql($sql, $setupConf || { customer => $customer });
-  print "Created database\n" if $obj->verbose();
+  print "Created database $dbName\n" if $obj->verbose();
+
+  # Create archive database:
+  $dbName = "${dbName}_archive";
+  $sql = <<END;
+create database $dbName
+  default character set $charSet
+  default collate $dbCollation;
+GRANT SELECT, INSERT, UPDATE, DELETE, CREATE, ALTER, DROP, INDEX ON $dbName.* TO $user IDENTIFIED BY '$setupConf->{dbpassword}';
+END
+  $obj->executeSql($sql, $setupConf || { customer => $customer });
+  print "Created database $dbName\n" if $obj->verbose();
 }
 #---------------------------------------------------------------------
 sub createTables {
