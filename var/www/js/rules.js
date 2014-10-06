@@ -129,11 +129,11 @@ o2.rules.rules = {
     format = format.replace(/[\"\']$/, ""); // Remove trailing quotes
     var givenDate;
     try {
-      givenDate = o2ParseDate(format, value);
+      givenDate = o2.parseDate(format, value);
     }
     catch (e) {
       if (window.console) {
-        console.warn( "Date '" + value + "' does not match format '" + format + "': " + getExceptionMessage(e) );
+        console.warn( "Date '" + value + "' does not match format '" + format + "': " + o2.getExceptionMessage(e) );
       }
       return false;
     }
@@ -185,7 +185,7 @@ o2.rules._getDate = function(dateStr, format) {
     return date;
   }
   else {
-    return o2ParseDate(format, dateStr);
+    return o2.parseDate(format, dateStr);
   }
 };
 

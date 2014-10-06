@@ -61,7 +61,7 @@ sub registerTaglib {
   $taglib =~ s{ \A O2:: }{O2CMS::}xms if $taglib =~ m{ Taglibs::O2CMS:: }xms;
   
   my $prefix = $config->get('dispatcher.customerPackagePrefix');
-  if ($taglib =~ m{ Taglibs:: \Q$prefix\E }xms) {
+  if ($prefix && $taglib =~ m{ Taglibs:: \Q$prefix\E }xms) {
     $taglib =~ s{ \A O2:: }{$prefix}xms;
   }
   elsif (my ($plugin) = $taglib =~ m{ Taglibs::O2Plugin::(\w+) }xms) {
