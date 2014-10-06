@@ -34,11 +34,11 @@ sub install {
 #---------------------------------------------------------------------
 sub createFiles {
   my ($obj) = @_;
-  $obj->createFile( 'daily',          ["perl $customerPath/o2-fw/bin/tools/sessionGarbageCollector.pl"]                                        );
-  $obj->createFile( 'hourly',         [$context->cmsIsEnabled() ? "perl $customerPath/o2-cms/bin/tools/reAddAndIndexArticlesAndFiles.pl" : ()] );
-  $obj->createFile( 'quarter-hourly', []                                                                                                       );
-  $obj->createFile( 'fivemin',        []                                                                                                       );
-  $obj->createFile( 'onemin',         ["perl $customerPath/o2-fw/bin/tools/handleEvents.pl"]                                                   );
+  $obj->createFile( 'daily',          ["perl $customerPath/o2-fw/bin/tools/sessionGarbageCollector.pl", "perl $customerPath/o2-fw/bin/tools/consoleGarbageCollector.pl"] );
+  $obj->createFile( 'hourly',         [$context->cmsIsEnabled() ? "perl $customerPath/o2-cms/bin/tools/reAddAndIndexArticlesAndFiles.pl" : ()]                           );
+  $obj->createFile( 'quarter-hourly', []                                                                                                                                 );
+  $obj->createFile( 'fivemin',        []                                                                                                                                 );
+  $obj->createFile( 'onemin',         ["perl $customerPath/o2-fw/bin/tools/handleEvents.pl"]                                                                             );
 }
 #---------------------------------------------------------------------
 sub createFile {

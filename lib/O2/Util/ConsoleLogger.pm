@@ -2,7 +2,11 @@ package O2::Util::ConsoleLogger;
 
 use strict;
 
-use O2 qw($context);
+use O2 qw($context $db);
+
+# Log entries older than this number of days will be deleted:
+my $MAX_AGE_ERRORS     = 180; # Errors may cause strange bugs that we may not notice before long after they occurred, so we shouldn't delete them too early.
+my $MAX_AGE_NOT_ERRORS =  14; # Less important and we don't want the tables to grow too big.
 
 #--------------------------------------------------------------------------------
 sub new {
@@ -161,6 +165,12 @@ sub getStackTraceArray {
     ($package, $fileName, $line, $subroutine, $hasArgs, $wantarray, $evalText, $isRequire, $hints, $bitmask) = caller ($i++);
   }
   return @stack;
+}
+#--------------------------------------------------------------------------------
+sub deleteOldEntries {
+  my ($obj) = @_;
+  $db->sql( "delete from O2_CONSOLE_LOG where logType != 'error' and timestamp < ?", time - $MAX_AGE_NOT_ERRORS*24*60*60 );
+  $db->sql( "delete from O2_CONSOLE_LOG where logType  = 'error' and timestamp < ?", time - $MAX_AGE_ERRORS*24*60*60     );
 }
 #--------------------------------------------------------------------------------
 1;
