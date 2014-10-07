@@ -489,11 +489,24 @@ sub setVar {
     return '';
   }
 
-  $obj->{parser}->_parse( \$params{content} );
+  $obj->{parser}->_parse( \$params{content}, undef, dontParseVars => 1 );
 
   # Remove leading and trailing white space:
   $params{content} =~ s{ \A \s+    }{}xms;
   $params{content} =~ s{    \s+ \z }{}xms;
+
+  if ($params{content}) {
+    my ($matchedVariable, $ignoreError) = $obj->{parser}->matchVariable( $params{content} );
+    if ($matchedVariable && $matchedVariable eq $params{content}) {
+      $params{content} = $obj->{parser}->findVar($matchedVariable);
+    }
+    else {
+      eval {
+        $obj->{parser}->parseVars( \$params{content} );
+      };
+      $params{content} = $obj->{parser}->error($@) if $@;
+    }
+  }
 
   die "Could not set variable '$params{param}': $@" if $@ && !$ignoreError && !$params{ignoreError};
   $obj->{parser}->setVar( $params{param} => $params{content} );
@@ -613,6 +626,12 @@ sub if {
   }
   
   if ($results) {
+    my $content = $params{content};
+    $content    =~ s{ \A \s+    }{}xms;
+    $content    =~ s{    \s+ \z }{}xms;
+    my ($matchedVariable, $ignoreError) = $obj->{parser}->matchVariable($content);
+    return $content if $matchedVariable eq $content;
+
     $obj->{parser}->_parse( \$params{content} );
     $obj->{precedingIf} = { results => $results };
     return $params{content};

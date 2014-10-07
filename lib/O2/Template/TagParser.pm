@@ -158,7 +158,7 @@ sub encodeEntities {
 }
 #--------------------------------------------------------------------------------------------
 sub _parse {
-  my ($obj, $template, $parseMacros) = @_;
+  my ($obj, $template, $parseMacros, %params) = @_;
   die "Need scalar-reference for parsing" unless ref $template eq 'SCALAR';
   
   # XXX Premacros
@@ -268,12 +268,14 @@ sub _parse {
     substr (${$template}, $startPosition, ($endPosition - $startPosition)) = length $replaceContent ? $replaceContent : '';
     pos (${$template}) = $startPosition  +  (length ($replaceContent) || 0);
   }
-  
-  eval {
-    $obj->parseVars($template);
-  };
-  ${$template} = $obj->error($@) if $@;
-  
+
+  if (!$params{dontParseVars}) {
+    eval {
+      $obj->parseVars($template);
+    };
+    ${$template} = $obj->error($@) if $@;
+  }
+
   if ($parseMacros) {
     $obj->_setupEventHandlers($template);
     $obj->_parseMacros($template) if $obj->{macros};
