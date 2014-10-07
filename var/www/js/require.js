@@ -134,7 +134,7 @@ o2._validateBrowser = function(url) {
 }
 
 o2.getUrlWithVersion = function(url) {
-  if (url.match(/[&?]v=\d+/)) {
+  if (url.match(/[&?]v=\d*/)) {
     return url; // Already contains version (v) attribute
   }
   var urlWithoutVersion = o2.getUrlWithoutVersion(url);
@@ -142,5 +142,5 @@ o2.getUrlWithVersion = function(url) {
 }
 
 o2.getUrlWithoutVersion = function(url) {
-  return url.replace(/([&?])v=\d+(&|$)/, "$1").replace(/[?]$/, ""); // Remove v (version) attribute from url
+  return url.replace(/([&?])v=\d*(&|$)/, "$1").replace(/[?]$/, ""); // Remove v (version) attribute from url
 }
