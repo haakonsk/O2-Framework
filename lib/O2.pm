@@ -9,6 +9,8 @@ our @EXPORT_OK = qw($context $o2 $cgi $db $config $session $CONTEXT $O2 $CGI $DB
 our ($context, $o2, $cgi, $db, $config, $session); # Use lowercase
 our ($CONTEXT, $O2, $CGI, $DB, $CONFIG, $SESSION); #  or uppercase
 
+my %DEBUG_TYPE; # Key: caller-package
+
 BEGIN {
   if (exists $ENV{MOD_PERL}) {
     require O2::Dispatch::ModPerlGlobals::Context;
@@ -59,6 +61,7 @@ sub import {
   # Enable debugging:
   my ($callerPackage) = caller;
   my  $debugLevel = $main::debugLevel;
+  my  $debugType;
   if (!$debugLevel) {
     # Check if DEBUG has been set (with "use constant") in the calling package (must be set before O2 is used):
     {
@@ -68,6 +71,19 @@ sub import {
     die $@ if $@;
     $debugLevel = 0 if $debugLevel =~ m{ DEBUG }xms; # If the constant doesn't exist in the calling package...
   }
+
+  # Check if DEBUG_TYPE has been set (with "use constant") in the calling package (must be set before O2 is used):
+  {
+    no strict;
+    eval "\$debugType = ${callerPackage}::DEBUG_TYPE";
+  }
+  die $@ if $@;
+
+  # Log to database by default
+  $debugType   = 'db' if $DEBUG_TYPE{$callerPackage} =~ m{ DEBUG_TYPE }xms; # If the constant doesn't exist in the calling package...
+  $debugType ||= 'db';
+  $DEBUG_TYPE{$callerPackage} = $debugType;
+
   {
     no strict 'refs';
     *{"${callerPackage}::debug"}
@@ -107,7 +123,9 @@ sub _debug3 {
 #-----------------------------------------------------------------------------
 sub _debug {
   my ($msg) = @_;
-  return warn $msg;
+  my ($callerPackage) = caller;
+  return warn $msg if $DEBUG_TYPE{$callerPackage} eq 'warn';
+
   eval {
     $O2::context->getConsole()->_debug($msg, callerLevel => 4);
   };
