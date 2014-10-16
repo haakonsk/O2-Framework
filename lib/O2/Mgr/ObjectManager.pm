@@ -752,6 +752,7 @@ sub save {
     my %classColumns;
     foreach my $field ($model->getTableFieldsByClassName($className)) {
       my $value = $object->getModelValue( $field->getName() );
+      $value    = $field->getDefaultValue() unless defined $value;
       $value    = $context->getSingleton('O2::Mgr::DateTimeManager')->newObject($value) if $value && $field->getType() eq 'date';
       $classColumns{ $field->getName() } = $value;
       $classColumns{ $field->getName() } = $value->format('yyyy-MM-dd HH:mm:ss') if $value && $field->getType() eq 'date';
