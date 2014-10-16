@@ -61,7 +61,7 @@ sub getConfigValue {
       $confPath = $obj->{actualPath}->{$confPath} if $obj->{actualPath}->{$confPath};
       if ( !exists $obj->{files}->{$dirPath} ) {
         $obj->{files}->{$dirPath} = -d $dirPath;
-        $obj->_debug( "Fileoperation: Stat $dirPath - " . ($obj->{files}->{$dirPath} ? 'found' : 'missing') );
+        $obj->_debug( "$confKey: Fileoperation: Stat $dirPath - " . ($obj->{files}->{$dirPath} ? 'found' : 'missing') );
       }
       if (!$obj->{files}->{$dirPath}) {
         return $obj->{files}->{$dirPath} = $mergedConfigFile unless @confDirs;
@@ -82,7 +82,7 @@ sub getConfigValue {
         }
       }
       if (-f $confPath) {
-        $obj->_debug("Fileoperation: read $confPath");
+        $obj->_debug("$confKey: Fileoperation: read $confPath");
         $obj->{_lastFile} = $confPath;
         my $evaledFileContent = $obj->{files}->{$confPath};
         if (!$evaledFileContent) {
@@ -105,7 +105,7 @@ sub getConfigValue {
     if (!@confDirs) { # This is the last directory we're checking
       return $mergedConfigFile if $mergedConfigFile || -f $confPath;
       
-      $obj->_debug("Fileoperation: $confPath not found");
+      $obj->_debug("$confKey: Fileoperation: $confPath not found");
       return $obj->{cache}->{$confKey} = undef;
     }
   }
