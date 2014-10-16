@@ -701,10 +701,15 @@ sub getRequestUri {
 sub getCurrentUrl {
   my ($obj, %params) = @_; # includePort [0], includeQueryString [1], includeServer [0]
   return $obj->{currentUrl} if $obj->{currentUrl};
-  
+
+  # If this is an ajax request, we must discard query string parameters in currentUrl.
+  # Long GET ajax requests are turned into POST, so I think we have to do this to get some predictability.
+  my $isAjax = $obj->getParam('isAjaxRequest');
+
   my $url = $obj->getRequestUri();
+  $url    =~ s{ [?] .* }{}xms if $isAjax;
   my $queryString = $obj->getEnv('QUERY_STRING');
-  $url   .= "?$queryString" if $params{includeQueryString} && $queryString;
+  $url   .= "?$queryString" if $params{includeQueryString} && $queryString && !$isAjax;
   if ($params{includeServer}) {
     # Add server part of url (and possibly the port):
     if ($url !~ m{ \A http }xms) {
