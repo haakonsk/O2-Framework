@@ -23,8 +23,8 @@
   </o2:foreach>
   <o2 if "       $field->getNotNull()">     <o2 appendVar "$otherAttributes" delimiter=", "><span class="attribute">not null</span></o2:appendVar>                                                                                 </o2:if>
   <o2 if "       $field->isMultilingual()"> <o2 appendVar "$otherAttributes" delimiter=", "><span class="attribute">$lang->getString("txtIsMultilingual")</span></o2:appendVar>                                                    </o2:if>
-  <o2 if "length $field->getDefaultValue()"><o2 appendVar "$otherAttributes" delimiter=", "><span class="attribute"><span class="label">$lang->getString("txtDefaultValue")</span>: $field->getDefaultValue()</span></o2:appendVar></o2:if>
-  <o2 if "scalar $field->getValidValues()"> <o2 appendVar "$otherAttributes" delimiter=", "><span class="attribute"><span class="label">$lang->getString("txtValidValues")</span>: </span>$validValues</o2:appendVar>              </o2:if>
+  <o2 if "length $field->getDefaultValue()"><o2 appendVar "$otherAttributes" delimiter=", "><span class="attribute"><span class="attributeLabel">$lang->getString("txtDefaultValue")</span>: $field->getDefaultValue()</span></o2:appendVar></o2:if>
+  <o2 if "scalar $field->getValidValues()"> <o2 appendVar "$otherAttributes" delimiter=", "><span class="attribute"><span class="attributeLabel">$lang->getString("txtValidValues")</span>: </span>$validValues</o2:appendVar>              </o2:if>
   
   <o2 if "!$isInherited">
     <td><o2 link type="image" src="$deleteIconUrl" alt="X" onClick="o2.systemModel.deleteField(this, '$field->getName()')" title="$lang->getString('txtDelete') $field->getName()" setMethod="deleteField" setParam="fieldName=$field->getName()" /></td>
