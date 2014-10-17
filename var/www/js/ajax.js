@@ -1,5 +1,5 @@
 o2.require( "/js/o2escape.js"    );
-o2.require( "/js/htmlToDom.js"   );
+o2.require( "/js/jquery.js"      );
 o2.require( "/js/util/urlMod.js" );
 
 o2.ajax = {};
@@ -535,16 +535,27 @@ o2.ajax.updateContent = function(params) {
       continue;
     }
     if (where === "replace") {
-      o2.htmlToDom.setInnerHtml(elm, content);
+      $(elm).html(content);
     }
     else if (where === "delete") {
       elm.parentNode.removeChild(elm);
     }
     else if (where === "deleteContent") {
-      o2.htmlToDom.setInnerHtml(elm, "");
+      $(elm).html("");
     }
     else {
-      o2.htmlToDom.addInnerHtml(elm, content, where);
+      if (where == "before") {
+        alert("where == before not implemented");
+      }
+      else if (where == "after") {
+        alert("where == after not implemented");
+      }
+      else if (where === "bottom") {
+        $(elm).html( $(elm).html() + content );
+      }
+      else if (where === "top") {
+        $(elm).html( content + $(elm).html() );
+      }
     }
   }
 }

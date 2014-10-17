@@ -1,4 +1,4 @@
-o2.require("/js/htmlToDom.js");
+o2.require("/js/jquery.js");
 
 o2.checkboxGroup = {};
 
@@ -20,7 +20,7 @@ o2.checkboxGroup.submitEmptyCheckbox = function(formName, checkboxGroupName) {
       hiddenInputExists = true;
     }
     if (!hiddenInputExists) {
-      o2.htmlToDom.htmlToDom("<input type='hidden' name='" + checkboxGroupName + "' value=''>", form);
+      $(form).append( $("<input type='hidden' name='" + checkboxGroupName + "' value=''>") );
     }
   }
   else {
