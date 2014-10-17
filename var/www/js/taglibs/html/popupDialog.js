@@ -107,7 +107,6 @@ o2.popupDialog = {
       $("#o2PopupDialog .modal-body").html( document.getElementById(contentId).innerHTML );
     }
     else if (contentUrl) {
-      //popupDialog.parentNode.style.display = "none";
       o2.ajax.call({
         serverScript : contentUrl,
         target       : "o2PopupDialogBody",
@@ -143,13 +142,6 @@ o2.popupDialog = {
       }
     }
     return null;
-  },
-  
-  copyHtmlToHiddenContainer : function() {
-    var id = o2.popupDialog.currentOpenDialogId;
-    if (!id) {
-      return;
-    }
   },
   
   drawButtons : function(id) {
