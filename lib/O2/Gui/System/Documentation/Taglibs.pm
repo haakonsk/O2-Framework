@@ -4,7 +4,7 @@ use strict;
 
 use base 'O2::Gui';
 
-use O2 qw($context $cgi);
+use O2 qw($context $cgi $config);
 
 #--------------------------------------------------------------------------------------------------
 sub needsAuthentication {
@@ -51,7 +51,7 @@ sub showDocumentation {
 #--------------------------------------------------------------------------------------------------
 sub _getModules {
   my ($obj) = @_;
-  my %taglibs = %{ $obj->getContext()->getConfig->get('template.taglibs') };
+  my %taglibs = %{ $config->get('template.taglibs') };
   return sort keys %taglibs;
 }
 #--------------------------------------------------------------------------------------------------

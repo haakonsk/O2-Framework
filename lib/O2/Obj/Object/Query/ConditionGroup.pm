@@ -53,7 +53,7 @@ sub addHashCondition {
 #-----------------------------------------------------------------------------
 sub addScalarCondition {
   my ($obj, $field, $operator, $value, $isNumericArgument) = @_;
-  my $condition = $obj->getContext()->getSingleton('O2::Mgr::Object::Query::Condition::ScalarManager')->newObject();
+  my $condition = $context->getSingleton('O2::Mgr::Object::Query::Condition::ScalarManager')->newObject();
   $condition->setField(        $field    );
   $condition->setOperator(     $operator );
   $condition->setValue(        $value    );
