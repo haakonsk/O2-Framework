@@ -22,13 +22,9 @@ sub register { # Method called by the tag-parser to see what and how methods sho
   my $obj = bless { parser => $params{parser} }, $package;
   
   my $formTaglib = $obj->{parser}->getTaglibByName('Html::Form', %params);
-  $formTaglib->addJsFile(  file => 'ajax'             );
-  $formTaglib->addCssFile( file => 'ajax'             );
-  $formTaglib->addJsFile(  file => 'temporaryMessage' );
-  $formTaglib->addCssFile( file => 'temporaryMessage' );
-  
-  my $o2escapeFile = 'o2escape';
-  $formTaglib->addJsFile( file => 'o2escape' );
+  $formTaglib->addJsFile(  file => 'o2escape' );
+  $formTaglib->addJsFile(  file => 'ajax'     );
+  $formTaglib->addCssFile( file => 'ajax'     );
   
   $formTaglib->addJs(
     where   => 'onLoad',
@@ -141,7 +137,11 @@ sub _getAjaxJsCode {
     $urlMod->deleteUrlModParams($params);
     $params->{content} = $content;
   }
-
+  # Remove ajax params from URL
+  foreach my $param (qw(_target _where _html onSuccess onError onTimeout handler errorHandler ignoreMissingTarget ajaxId debug isAjaxRequest xmlHttpRequestSupported o2AjaxEncoding)) {
+    $url =~ s{ \b $param=[^&]+ &? }{}xms;
+  }
+  
   my $_params = "'";
   my $isAllParams = 0;
   $params->{formParams} = '' unless length $params->{formParams};
