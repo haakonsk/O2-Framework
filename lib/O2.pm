@@ -80,7 +80,7 @@ sub import {
   die $@ if $@;
 
   # Log to database by default
-  $debugType   = 'db' if $DEBUG_TYPE{$callerPackage} =~ m{ DEBUG_TYPE }xms; # If the constant doesn't exist in the calling package...
+  $debugType   = 'db' if exists $DEBUG_TYPE{$callerPackage} && $DEBUG_TYPE{$callerPackage} =~ m{ DEBUG_TYPE }xms; # If the constant doesn't exist in the calling package...
   $debugType ||= 'db';
   $DEBUG_TYPE{$callerPackage} = $debugType;
 
