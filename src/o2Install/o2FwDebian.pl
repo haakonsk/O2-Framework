@@ -14,7 +14,6 @@ system <<"END";
 
   sudo apt-get -y install libperlmenu-perl;
   sudo apt-get -y install mysql-server;
-  sudo apt-get -y install git;
   sudo apt-get -y install memcached;
   sudo apt-get -y install perlmagick; # Image::Magick
   sudo apt-get -y install unzip; # Needed to download/compile locales
@@ -37,10 +36,6 @@ system <<"END";
   fi;
   sudo cpanm --notest Chart::OFC;
   sudo cpanm Locale::Util;
-
-  if [ ! -d o2-fw/trunk ]; then
-    git clone https://github.com/haakonsk/O2-Framework o2-fw/trunk;
-  fi;
 
   if [ ! -d /www ]; then
     sudo mkdir /www;
@@ -77,12 +72,12 @@ if ($cmd) {
 }
 
 system <<"END";
-  export O2ROOT=$currentDir/o2-fw/trunk;
-  export PERL5LIB=$currentDir/o2-fw/trunk/lib;
+  export O2ROOT=$currentDir/O2-Framework;
+  export PERL5LIB=$currentDir/O2-Framework/lib;
   export O2CUSTOMERROOT=;
   export DOCUMENT_ROOT=;
   export O2SITEROOT=;
-  cd $currentDir/o2-fw/trunk/bin/setup;
+  cd $currentDir/O2-Framework/bin/setup;
   perl setup.pl install fw -v 1
 
   sudo service memcached restart;

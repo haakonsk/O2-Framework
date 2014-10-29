@@ -69,7 +69,8 @@ BEGIN {
   if (!$ENV{O2CMSROOT}) {
     $ENV{O2CMSROOT} = $ENV{O2ROOT};
     $ENV{O2CMSROOT} =~ s{o2-fw}{o2-cms}xms;
-    die "O2ROOT did not contain 'o2-fw'" if $ENV{O2ROOT} eq $ENV{O2CMSROOT};
+    $ENV{O2CMSROOT} =~ s{O2-Framework}{O2-CMS}xms;
+    die "O2ROOT did not contain 'o2-fw' or 'O2-Framework'" if $ENV{O2ROOT} eq $ENV{O2CMSROOT};
   }
   my %_INC = map { $_ => 1 } @INC;
   push @INC, "$ENV{O2ROOT}/lib"    unless $_INC{ $ENV{O2ROOT}    };
